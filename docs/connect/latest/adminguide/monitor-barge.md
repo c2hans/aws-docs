@@ -42,9 +42,9 @@ For instances that do not have a service-linked role, you must create one to ena
 For managers to barge live conversations, you assign them the **CallCenterManager** and **Agent** security profiles.
 
 To allow specific supervisors to barge live conversations, we recommend that you create a security profile specific for this purpose. They need the following security profile permissions:
-+ **Access metrics**. Enables you to access real-time metrics reports, which is where you choose which conversation you would like to monitor and barge.
-+ **Real-time contact monitoring**: Enables you to monitor both voice and chat conversations.
-+ **Real-time contact barge-in**: Enables you to barge both voice and chat conversations.
++ **Access metrics**. You can access real-time metrics reports, which is where you choose which conversation you would like to monitor and barge.
++ **Real-time contact monitoring**: You can monitor both voice and chat conversations.
++ **Real-time contact barge-in**: You can barge both voice and chat conversations.
 + **Access Contact Control Panel**
 
 ## Barge live calls with contacts

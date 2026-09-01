@@ -20,6 +20,7 @@ With OpenTelemetry metrics in CloudWatch, you get:
 + [Query metrics with PromQL](CloudWatch-PromQL.md)
 + [OTel metrics pricing and storage](metrics-otel-pricing.md)
 + [Migrate from Classic to OTel metrics](metrics-otel-migrate.md)
++ [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md)
 
 ## See also
 

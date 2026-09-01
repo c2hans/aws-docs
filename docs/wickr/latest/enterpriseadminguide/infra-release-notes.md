@@ -30,6 +30,7 @@ The infrastructure release notes provide details about the infrastructure versio
 + [Infrastructure 6.62 release](infra-release-notes-6.62.md)
 + [Infrastructure 6.66 release](infra-release-notes-6.66.md)
 + [Infrastructure 6.70 release](infra-release-notes-6.70.md)
++ [Infrastructure 6.74 release](infra-release-notes-6.74.md)
 
 ## See also
 

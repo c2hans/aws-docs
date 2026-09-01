@@ -7,73 +7,38 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 
 Retrieves a collection of WorkSpaces Instances based on specified filters.
 
-## Request Syntax
-<a name="API_ListWorkspaceInstances_RequestSyntax"></a>
-
-```
-{
-   "MaxResults": {{number}},
-   "NextToken": "{{string}}",
-   "ProvisionStates": [ "{{string}}" ]
-}
-```
-
 ## Request Parameters
 <a name="API_ListWorkspaceInstances_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
-
-The request accepts the following data in JSON format.
-
- ** [MaxResults](#API_ListWorkspaceInstances_RequestSyntax) **   <a name="workspacesinstances-ListWorkspaceInstances-request-MaxResults"></a>
+ ** MaxResults **
 Maximum number of WorkSpaces Instances to return in a single response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 25.
 Required: No
 
- ** [NextToken](#API_ListWorkspaceInstances_RequestSyntax) **   <a name="workspacesinstances-ListWorkspaceInstances-request-NextToken"></a>
+ ** NextToken **
 Pagination token for retrieving subsequent pages of WorkSpaces Instances.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
- ** [ProvisionStates](#API_ListWorkspaceInstances_RequestSyntax) **   <a name="workspacesinstances-ListWorkspaceInstances-request-ProvisionStates"></a>
+ ** ProvisionStates **
 Filter WorkSpaces Instances by their current provisioning states.
 Type: Array of strings
 Valid Values: `ALLOCATING | ALLOCATED | DEALLOCATING | DEALLOCATED | ERROR_ALLOCATING | ERROR_DEALLOCATING`
 Required: No
 
-## Response Syntax
-<a name="API_ListWorkspaceInstances_ResponseSyntax"></a>
-
-```
-{
-   "NextToken": "string",
-   "WorkspaceInstances": [
-      {
-         "EC2ManagedInstance": {
-            "InstanceId": "string"
-         },
-         "ProvisionState": "string",
-         "WorkspaceInstanceId": "string"
-      }
-   ]
-}
-```
-
 ## Response Elements
 <a name="API_ListWorkspaceInstances_ResponseElements"></a>
 
-If the action is successful, the service sends back an HTTP 200 response.
+The following elements are returned by the service.
 
-The following data is returned in JSON format by the service.
-
- ** [NextToken](#API_ListWorkspaceInstances_ResponseSyntax) **   <a name="workspacesinstances-ListWorkspaceInstances-response-NextToken"></a>
+ ** NextToken **
 Token for retrieving additional WorkSpaces Instances if the result set is paginated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 
- ** [WorkspaceInstances](#API_ListWorkspaceInstances_ResponseSyntax) **   <a name="workspacesinstances-ListWorkspaceInstances-response-WorkspaceInstances"></a>
+ ** WorkspaceInstances **
 Collection of WorkSpaces Instances returned by the query.
 Type: Array of [WorkspaceInstance](API_WorkspaceInstance.md) objects
 
@@ -86,7 +51,7 @@ For information about the errors that are common to all actions, see [Common Err
 Indicates insufficient permissions to perform the requested action.
  ** Message **
 Detailed explanation of the access denial.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Indicates an unexpected server-side error occurred.
@@ -106,7 +71,7 @@ Specific code for the throttling quota.
 Recommended wait time before retrying the request.
  ** ServiceCode **
 Code identifying the service experiencing throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 Indicates invalid input parameters in the request.

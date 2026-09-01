@@ -74,6 +74,7 @@ Required: No
  ** InstanceType **   <a name="workspacesinstances-Type-ManagedInstanceRequest-InstanceType"></a>
 Specifies the WorkSpace Instance type.
 Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `([a-z0-9-]+)\.([a-z0-9]+)`
 Required: No
 

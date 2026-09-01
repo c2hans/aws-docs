@@ -5,11 +5,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 # Lakehouse Analytics Starter Package
 <a name="lakehouse-analytics-starter-package"></a>
 
-The Lakehouse Analytics Starter Package deploys a complete analytics lakehouse: S3 data lake, Glue cataloguing and ETL, data quality enforcement, Athena and Redshift querying, and QuickSight BI — end-to-end with a single deploy command.
+The Lakehouse Analytics Starter Package deploys a complete analytics lakehouse: S3 data lake, Glue cataloging and ETL, data quality enforcement, Athena and Redshift querying, and QuickSight BI — end-to-end with a single deploy command.
 
-![lakehouse analytics](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/lakehouse_analytics.png)
+ **Lakehouse Analytics starter kit architecture**
 
-**Lakehouse Analytics starter kit architecture**
+![Lakehouse Analytics starter kit — S3 storage with Glue ETL and Athena/Redshift/QuickSight consumption.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/lakehouse_analytics.png)
+
 This architecture is particularly effective when:
 
 1. Data flows through ingestion, processing, quality validation, and consumption layers.
@@ -51,7 +52,7 @@ This architecture is particularly effective when:
 #### Prerequisites
 <a name="prerequisites-9"></a>
 
-Before deploying the Lakehouse Analytics Starter Package using the CLI method, ensure you have:
+Before deploying the Lakehouse Analytics Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 
@@ -94,7 +95,7 @@ context:
   backup_region: <region for Redshift snapshot copy>
   qs_identity_region: <region where QuickSight was subscribed>
 ```
-+ Review CDK Nag suppression TODOs in `governance/roles.yaml`.
++ Review the commented-out CDK Nag suppression blocks in `governance/roles.yaml`.
 
  **Step 3: Deploy the solution**
 

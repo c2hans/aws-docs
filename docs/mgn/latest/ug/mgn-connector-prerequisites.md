@@ -15,6 +15,9 @@ To use the MGN connector you must meet these prerequisites.
 + The *openssl* library must be installed on the server.
 + You must have the required [permissions](mgn-connector-permissions.md).
 
+**Note**
+The MGN connector is not supported for IPv6.
+
 ## Operating systems that support the MGN connector
 <a name="mgn-connector-os"></a>
 
@@ -39,7 +42,7 @@ Installation of the MGN Connector also installs the SSM agent.
 ## Security recommendations for MGN connector
 <a name="mgn-connector-security"></a>
 
-We recommend that the MGN connector server is only accessed by authorized personnel and has the required OS patches. We also recommend that the servers to which the MGN connector connects have all the required OS patches.
+We recommend that the MGN connector server is only accessed by authorized personnel and has all the required OS patches. We also recommend that the servers to which the MGN connector connects have all the required OS patches.
 
 If you configure [outputting logs to S3](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-create-iam-instance-profile.html#create-iam-instance-profile-ssn-logging), you will first [create an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). We recommend that you apply S3 bucket [S3 security practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)
 

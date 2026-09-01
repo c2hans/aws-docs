@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/lex-bot-analyt
 # Evaluate the performance of your conversational AI bot in Connect Customer
 <a name="lex-bot-analytics"></a>
 
-You can use the comprehensive analytics tools in Connect Customer to help you evaluate and optimize your conversational AI bot performance. These insights enable you to identify successful interactions, pinpoint failure points, and visualize conversation patterns to continuously improve customer experience.
+You can use the comprehensive analytics tools in Connect Customer to help you evaluate and optimize your conversational AI bot performance. With these insights, you can identify successful interactions, pinpoint failure points, and visualize conversation patterns to continuously improve customer experience.
 
 The analytics dashboard includes key metrics such as Utterance recognition rate and Conversation performance. These metrics help you understand both the success and failure rates of your bot's interactions with customers.
 

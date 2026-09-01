@@ -27,7 +27,7 @@ To end contacts programmatically, use the [StopContact](https://docs.aws.amazon.
 
    1. **View my contacts - View**: Allows agents to view contacts that they themselves had handled.
 
-1. **Restrict contact access** (Optional): Restrict a user's access to contacts on the **Contact search** and **Contact details** pages within their own hierarchy group or any hierarchy groups below them. For more information about this permissions, see [Manage who can search for contacts and access detailed information](contact-search.md#required-permissions-search-contacts).
+1. **Restrict contact access** (Optional): Restrict a user's access to contacts on the **Contact search** and **Contact details** pages within their own hierarchy group or any hierarchy groups below them. For more information about these permissions, see [Manage who can search for contacts and access detailed information](contact-search.md#required-permissions-search-contacts).
 
 1. **End Contact**: Enables a user to end contacts on the **Analytics & Optimization** pages. The following image shows the **Contact Actions - End contact** permission.
 ![The end contact permission.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-details-contact-end-permissions.png)

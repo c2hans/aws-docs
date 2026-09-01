@@ -20,9 +20,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AdditionalAnalyses](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-additionalanalyses)" : {{String}},
+  "[AggregationThresholds](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-aggregationthresholds)" : {{[ AggregationThreshold, ... ]}},
   "[AllowedAnalyses](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedanalyses)" : {{[ String, ... ]}},
   "[AllowedAnalysisProviders](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedanalysisproviders)" : {{[ String, ... ]}},
   "[AllowedResultReceivers](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedresultreceivers)" : {{[ String, ... ]}},
+  "[ComparisonControls](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-comparisoncontrols)" : {{ComparisonControls}},
   "[DifferentialPrivacy](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-differentialprivacy)" : {{DifferentialPrivacy}},
   "[DisallowedOutputColumns](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-disallowedoutputcolumns)" : {{[ String, ... ]}}
 }
@@ -33,12 +35,16 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AdditionalAnalyses](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-additionalanalyses): {{String}}
+  [AggregationThresholds](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-aggregationthresholds): {{
+    - AggregationThreshold}}
   [AllowedAnalyses](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedanalyses): {{
     - String}}
   [AllowedAnalysisProviders](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedanalysisproviders): {{
     - String}}
   [AllowedResultReceivers](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedresultreceivers): {{
     - String}}
+  [ComparisonControls](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-comparisoncontrols): {{
+    ComparisonControls}}
   [DifferentialPrivacy](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-differentialprivacy): {{
     DifferentialPrivacy}}
   [DisallowedOutputColumns](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-disallowedoutputcolumns): {{
@@ -53,6 +59,14 @@ The setting that controls whether additional analyses are allowed on the interme
 *Required*: No
 *Type*: String
 *Allowed values*: `ALLOWED | REQUIRED | NOT_ALLOWED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AggregationThresholds`  <a name="cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-aggregationthresholds"></a>
+The aggregation thresholds that each query output group must satisfy. AWS Clean Rooms filters out any group that represents fewer than the specified number of distinct identities. You can specify at most one threshold. You can't use aggregation thresholds with differential privacy, or when `allowedAnalyses` allows only jobs.
+*Required*: No
+*Type*: Array of [AggregationThreshold](aws-properties-cleanrooms-intermediatetable-aggregationthreshold.md)
+*Minimum*: `1`
+*Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AllowedAnalyses`  <a name="cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-allowedanalyses"></a>
@@ -75,6 +89,12 @@ The list of AWS account IDs that are allowed to receive results from queries run
 *Type*: Array of String
 *Maximum*: `12`
 *Minimum*: `12 | 0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ComparisonControls`  <a name="cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-comparisoncontrols"></a>
+The controls that restrict how a query can compare the columns in the intermediate table. You can't use comparison controls with differential privacy, or when `allowedAnalyses` allows only jobs.
+*Required*: No
+*Type*: [ComparisonControls](aws-properties-cleanrooms-intermediatetable-comparisoncontrols.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DifferentialPrivacy`  <a name="cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-differentialprivacy"></a>

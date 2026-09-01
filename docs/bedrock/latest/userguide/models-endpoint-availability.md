@@ -48,6 +48,8 @@ The following tables show which Amazon Bedrock endpoints support each model, org
 
 | Model name | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
+| [Claude Fable 5.1](model-card-anthropic-claude-fable-5-1.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Claude Mythos 5.1](model-card-anthropic-claude-mythos-5-1.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | [Claude Sonnet 5](model-card-anthropic-claude-sonnet-5.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Claude Mythos 5](model-card-anthropic-claude-mythos-5.md) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Claude Fable 5](model-card-anthropic-claude-fable-5.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |

@@ -20,9 +20,19 @@ The patch for the agent skills definition descriptor.
 Type: [UpdatedAgentSkillsDefinitionDescriptor](API_UpdatedAgentSkillsDefinitionDescriptor.md) object
 Required: No
 
+ ** agui **   <a name="agentregistrycontrol-Type-UpdatedDescriptorsFields-agui"></a>
+The patch for the AG-UI descriptor.
+Type: [UpdatedAgUiDescriptor](API_UpdatedAgUiDescriptor.md) object
+Required: No
+
  ** custom **   <a name="agentregistrycontrol-Type-UpdatedDescriptorsFields-custom"></a>
 The patch for the custom descriptor.
 Type: [UpdatedCustomDescriptor](API_UpdatedCustomDescriptor.md) object
+Required: No
+
+ ** http **   <a name="agentregistrycontrol-Type-UpdatedDescriptorsFields-http"></a>
+The patch for the HTTP descriptor.
+Type: [UpdatedHttpDescriptor](API_UpdatedHttpDescriptor.md) object
 Required: No
 
  ** mcpServer **   <a name="agentregistrycontrol-Type-UpdatedDescriptorsFields-mcpServer"></a>

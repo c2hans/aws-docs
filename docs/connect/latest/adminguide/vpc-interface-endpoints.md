@@ -13,7 +13,7 @@ You can establish a private connection between your VPC and a subset of endpoint
 + agent assist
 + Connect Customer Service
 
-Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/privatelink), a technology that enables you to privately access Connect Customer APIs without an internet gateway, NAT device, VPN connection, or Direct Connect connection. Instances in your VPC don't need public IP addresses to communicate with the Connect Customer APIs that integrate with AWS PrivateLink.
+Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/privatelink), a technology that you can use to privately access Connect Customer APIs without an internet gateway, NAT device, VPN connection, or Direct Connect connection. Instances in your VPC don't need public IP addresses to communicate with the Connect Customer APIs that integrate with AWS PrivateLink.
 
 For more information, see the [AWS PrivateLink Guide](https://docs.aws.amazon.com/vpc/latest/privatelink/).
 

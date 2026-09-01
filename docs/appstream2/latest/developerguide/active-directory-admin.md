@@ -17,6 +17,7 @@ Setting up and using Active Directory with WorkSpaces Applications involves the 
 + [Deleting a Directory Configuration](active-directory-config-delete.md)
 + [Configuring WorkSpaces Applications to Use Domain Trusts](active-directory-domain-trusts.md)
 + [Managing WorkSpaces Applications Computer Objects in Active Directory](active-directory-identify-objects.md)
++ [Configuring Active Directory Sites and Services for WorkSpaces Applications](active-directory-sites-services.md)
 
 ## See also
 

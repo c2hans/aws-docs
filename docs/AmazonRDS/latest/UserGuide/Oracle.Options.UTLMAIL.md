@@ -24,7 +24,7 @@ The following are some limitations to using UTL\_MAIL:
 When you enable UTL\_MAIL, only the master user for your DB instance is granted the execute privilege. If necessary, the master user can grant the execute privilege to other users so that they can use UTL\_MAIL.
 
 **Important**
-We recommend that you enable Oracle's built-in auditing feature to track the use of UTL\_MAIL procedures.
+We recommend that you enable the built-in auditing feature in Oracle to track the use of UTL\_MAIL procedures.
 
 ## Prerequisites for Oracle UTL\_MAIL
 <a name="Oracle.Options.UTLMAIL.PreReqs"></a>

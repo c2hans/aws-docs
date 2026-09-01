@@ -20,11 +20,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ContentTemplate](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-contenttemplate)" : {{String}},
-  "[FeatureHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featureheaders)" : {{[ Json, ... ]}},
+  "[FeatureHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featureheaders)" : {{[ String, ... ]}},
   "[FeaturesAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuresattribute)" : {{String}},
-  "[FeatureTypes](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuretypes)" : {{[ Json, ... ]}},
+  "[FeatureTypes](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuretypes)" : {{[ String, ... ]}},
   "[LabelAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelattribute)" : {{String}},
-  "[LabelHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelheaders)" : {{[ Json, ... ]}},
+  "[LabelHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelheaders)" : {{[ String, ... ]}},
   "[LabelIndex](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelindex)" : {{Integer}},
   "[MaxPayloadInMB](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxpayloadinmb)" : {{Integer}},
   "[MaxRecordCount](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxrecordcount)" : {{Integer}},
@@ -39,13 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [ContentTemplate](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-contenttemplate): {{String}}
   [FeatureHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featureheaders): {{
-    - Json}}
+    - String}}
   [FeaturesAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuresattribute): {{String}}
   [FeatureTypes](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuretypes): {{
-    - Json}}
+    - String}}
   [LabelAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelattribute): {{String}}
   [LabelHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelheaders): {{
-    - Json}}
+    - String}}
   [LabelIndex](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelindex): {{Integer}}
   [MaxPayloadInMB](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxpayloadinmb): {{Integer}}
   [MaxRecordCount](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxrecordcount): {{Integer}}
@@ -60,7 +60,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 A template string used to format a JSON record into an acceptable model container input. For example, a `ContentTemplate` string `'{"myfeatures":$features}'` will format a list of features `[1,2,3]` into the record string `'{"myfeatures":[1,2,3]}'`. Required only when the model container input is in JSON Lines format.
 *Required*: No
 *Type*: String
-*Pattern*: `.*`
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -68,16 +67,15 @@ A template string used to format a JSON record into an acceptable model containe
 `FeatureHeaders`  <a name="cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featureheaders"></a>
 The names of the features. If provided, these are included in the endpoint response payload to help readability of the `InvokeEndpoint` output. See the [Response](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-invoke-endpoint.html#clarify-online-explainability-response) section under **Invoke the endpoint** in the Developer Guide for more information.
 *Required*: No
-*Type*: Array of Json
-*Minimum*: `1`
-*Maximum*: `256`
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `64 | 256`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `FeaturesAttribute`  <a name="cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuresattribute"></a>
 Provides the JMESPath expression to extract the features from a model container input in JSON Lines format. For example, if `FeaturesAttribute` is the JMESPath expression `'myfeatures'`, it extracts a list of features `[1,2,3]` from request data `'{"myfeatures":[1,2,3]}'`.
 *Required*: No
 *Type*: String
-*Pattern*: `.*`
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -85,7 +83,7 @@ Provides the JMESPath expression to extract the features from a model container 
 `FeatureTypes`  <a name="cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuretypes"></a>
 A list of data types of the features (optional). Applicable only to NLP explainability. If provided, `FeatureTypes` must have at least one `'text'` string (for example, `['text']`). If `FeatureTypes` is not provided, the explainer infers the feature types based on the baseline data. The feature types are included in the endpoint response payload. For additional information see the [response](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-invoke-endpoint.html#clarify-online-explainability-response) section under **Invoke the endpoint** in the Developer Guide for more information.
 *Required*: No
-*Type*: Array of Json
+*Type*: Array of String
 *Minimum*: `1`
 *Maximum*: `256`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -95,7 +93,6 @@ A JMESPath expression used to locate the list of label headers in the model cont
 **Example**: If the model container output of a batch request is `'{"labels":["cat","dog","fish"],"probability":[0.6,0.3,0.1]}'`, then set `LabelAttribute` to `'labels'` to extract the list of label headers `["cat","dog","fish"]`
 *Required*: No
 *Type*: String
-*Pattern*: `.*`
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -103,9 +100,9 @@ A JMESPath expression used to locate the list of label headers in the model cont
 `LabelHeaders`  <a name="cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelheaders"></a>
 For multiclass classification problems, the label headers are the names of the classes. Otherwise, the label header is the name of the predicted label. These are used to help readability for the output of the `InvokeEndpoint` API. See the [response](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-invoke-endpoint.html#clarify-online-explainability-response) section under **Invoke the endpoint** in the Developer Guide for more information. If there are no label headers in the model container output, provide them manually using this parameter.
 *Required*: No
-*Type*: Array of Json
-*Minimum*: `1`
-*Maximum*: `16`
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `64 | 16`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `LabelIndex`  <a name="cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelindex"></a>
@@ -136,7 +133,6 @@ A JMESPath expression used to extract the probability (or score) from the model 
 **Example**: If the model container output of a single request is `'{"predicted_label":1,"probability":0.6}'`, then set `ProbabilityAttribute` to `'probability'`.
 *Required*: No
 *Type*: String
-*Pattern*: `.*`
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

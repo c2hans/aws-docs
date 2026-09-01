@@ -36,6 +36,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CompleteAttachmentUpload  **
+  - **IAM action:**  [support:AddAttachmentsToSet](#list_support-action-AddAttachmentsToSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [support:UploadAttachment](#list_support-action-UploadAttachment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
 - **   CreateCase  **
   - **IAM action:**  [support:CreateCase](#list_support-action-CreateCase)
   - **Condition key:**
@@ -47,6 +51,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   DescribeAttachmentUploadStatus  **
+  - **IAM action:**  [support:AddAttachmentsToSet](#list_support-action-AddAttachmentsToSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [support:UploadAttachment](#list_support-action-UploadAttachment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   DescribeCases  **
   - **IAM action:**  [support:DescribeCases](#list_support-action-DescribeCases)
@@ -107,6 +115,14 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [trustedadvisor:DescribeChecks](https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [trustedadvisor:ListChecks](https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor-api.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
 
+- **   GetAttachmentDownloadLink  **
+  - **IAM action:**  [support:DescribeAttachment](#list_support-action-DescribeAttachment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [support:DownloadAttachment](#list_support-action-DownloadAttachment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+
+- **   GetAttachmentUploadLinks  **
+  - **IAM action:**  [support:AddAttachmentsToSet](#list_support-action-AddAttachmentsToSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [support:UploadAttachment](#list_support-action-UploadAttachment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
 - **   RefreshTrustedAdvisorCheck  **
   - **IAM action:**  [support:RefreshTrustedAdvisorCheck](#list_support-action-RefreshTrustedAdvisorCheck)
   - **Condition key:**
@@ -148,7 +164,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 |   [DescribeTrustedAdvisorCheckSummaries](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeTrustedAdvisorCheckSummaries.html)  | Grants permission to get the summaries of the results of the Trusted Advisor checks that have the specified check identifiers |  |   | Read |
 |   [DescribeTrustedAdvisorChecks](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeTrustedAdvisorChecks.html)  | Grants permission to get a list of all available Trusted Advisor checks, including name, identifier, category and description |  |   | Read |
 |   [DisconnectLiveContactForCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to disconnect a live contact on AWS Support Center. This is an internally managed function |  |   | Write |
-|   [DownloadAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetAttachmentDownloadLink.html)  | Grants permission to get a presigned URL to download an attachment from an AWS Support case |  |   | Write |
+|   [DownloadAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetAttachmentDownloadLink.html)  | Grants permission to get a presigned URL to download an attachment from an AWS Support case |  |   | Read |
 |   [GetInteraction](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetInteraction.html)  | Grants permission to retrieve personalized troubleshooting assistance for account and technical issues for a specific interaction |  |   | Read |
 |   [InitiateCallForCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to initiate a call on AWS Support Center. This is an internally managed function |  |   | Write |
 |   [InitiateChatForCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to initiate a chat on AWS Support Center.This is an internally managed function |  |   | Write |

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/scop
 <a name="scoping-security-behavior"></a>
 
 **Note**
-The AWS IoT Device Defender detect feature will no longer be available to new customers starting August 31, 2026. If you would like to use the detect feature, sign up prior to August 31, 2026. To learn about alternatives to AWS IoT Device Defender detect, see [AWS IoT Device Defender detect feature availability change](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-detect-availability-change.html). There is no change to AWS IoT Device Defender audit availability.
+The AWS IoT Device Defender detect feature is no longer available to new customers. To learn about alternatives to AWS IoT Device Defender detect, see [AWS IoT Device Defender detect feature availability change](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-detect-availability-change.html). There is no change to AWS IoT Device Defender audit availability.
 
 Dimensions are attributes that you can define to get more precise data about metrics and behaviors in your security profile. You define the scope by providing a value or pattern that is used as a filter. For example, you can define a topic filter dimension that applies a metric only to MQTT topics that match a particular value, such as "data/bulb/\+/activity". For information about defining a dimension that you can use in your security profile, see [CreateDimension](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDimension.html).
 

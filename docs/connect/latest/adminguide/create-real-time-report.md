@@ -20,7 +20,7 @@ You can create a real-time metrics report to view real-time or near-real time me
 
 1. To add another report to the page, choose **New table** and then choose a report type. You can add multiple reports of the same report type.
 
-   There's no limit to the number of tables you can add, but you might start experiencing performance issues if you add a lot of them.
+   There's no limit to the number of tables you can add. However, you might start experiencing performance issues if you add a lot of them.
 
 1. To customize a report, choose the gear icon from its table.
 

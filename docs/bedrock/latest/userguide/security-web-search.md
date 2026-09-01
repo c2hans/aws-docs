@@ -17,14 +17,14 @@ Web Search supports three actions.
 | **Action** | **Description** | **Access level** |
 | --- | --- | --- |
 | bedrock-websearch:InvokeSearch | Issue a search query. Returns URLs, titles, and snippets from the Amazon Bedrock web index. Does not make outbound calls. | Read / Write |
-| bedrock-websearch:InvokeFetch | Retrieve cached page content for a specific URL from the Amazon Bedrock cache. Does not make live outbound calls. | Read / Write |
-| bedrock-websearch:ExternalWebAccess | Governs whether search and fetch may access the external web in addition to the Amazon Bedrock web index and cache. Applies to both operations. | Read / Write |
+| bedrock-websearch:InvokeFetch | Retrieve page content for a specific URL. Fetch uses the Amazon Bedrock cache only unless the request also enables external web access and the identity is allowed to use it. | Read / Write |
+| bedrock-websearch:ExternalWebAccess | Allow Fetch to retrieve from the external web after a cache miss. Search continues to use the Amazon Bedrock web index. | Read / Write |
 
 All three actions support the `*` resource type.
 
-The model decides when to call search and when to call fetch based on its reasoning over each request and the responses to previous tool calls. Both tools are exposed to the model whenever `web_search` is added to a request; IAM permissions don't change what the model sees, and each permission is evaluated only when the model actually attempts that call. When a call is denied, the model continues with the information it already has and tells you if it couldn't retrieve enough current information to answer.
+The model decides when to call search and when to call fetch based on its reasoning over each request and the responses to previous tool calls. Both tools are exposed to the model whenever `web_search` is added to a request; IAM permissions don't change what the model sees, and each permission is evaluated only when the model actually attempts that call. When a call is denied, the model can continue with the information it already has or obtained from another tool call. The model response is not guaranteed to disclose the denial. To audit denied calls, enable CloudTrail data event logging for Web Search.
 
-The two actions grant different capabilities. With `InvokeSearch` but not `InvokeFetch`, the model can run searches and ground its answer in the titles, URLs, and snippets that search returns, but cannot read the cached content of a page. With `InvokeFetch` but not `InvokeSearch`, the model cannot run searches to discover sources, but fetch still applies to any URL the model produces — one you provide in your request or one the model generates from its own knowledge — subject to that content being in the Amazon Bedrock cache. Fetch is not limited to URLs you supply, so if you intend to constrain the model to specific sources, restricting `InvokeSearch` alone does not achieve that.
+The two actions grant different capabilities. With `InvokeSearch` but not `InvokeFetch`, the model can run searches and ground its answer in the titles, URLs, and snippets that search returns, but cannot read the cached content of a page. With `InvokeFetch` but not `InvokeSearch`, the model cannot run searches to discover sources, but fetch still applies to any URL the model produces — one you provide in your request or one the model generates from its own knowledge — subject to the configured Fetch mode and permissions. Fetch is not limited to URLs you supply, so if you intend to constrain the model to specific sources, restricting `InvokeSearch` alone does not achieve that.
 
 ## Managed policies
 <a name="security-web-search-managed-policies"></a>
@@ -35,8 +35,11 @@ Web Search provides the following AWS managed policies.
 | --- | --- |
 | AmazonBedrockWebSearchFullAccess | Search and cached fetch actions only. No external web access with this policy. |
 | AmazonBedrockWebSearchReadOnly | Search and cached fetch actions in a read-only variant, with no external web access. Provided for parity with other AWS services and for policy automation that expects a ReadOnly policy per service. |
-| AmazonBedrockExternalWebSearchFullAccess | All Web Search actions, including ExternalWebAccess, with no condition-key restrictions. Intended for unrestricted use. |
-| AmazonBedrockExternalWebSearchReadOnly | All Web Search actions, including ExternalWebAccess, in a read-only variant. Provided for parity with other AWS services and for policy automation that expects a ReadOnly policy per service. |
+| AmazonBedrockExternalWebSearchFullAccess | All three Web Search actions, including ExternalWebAccess, on all Web Search resources. |
+| AmazonBedrockExternalWebSearchReadOnly | The same actions and resources as AmazonBedrockExternalWebSearchFullAccess, under a ReadOnly policy name provided for policy naming and automation conventions. |
+
+**Important**
+The current versions of `AmazonBedrockExternalWebSearchReadOnly` and `AmazonBedrockExternalWebSearchFullAccess` have identical effective permissions. The ReadOnly policy does not restrict external web retrieval. Use a custom policy if you need a narrower permission set.
 
 In addition to the web-search-specific policies above, the basic Web Search actions (`bedrock-websearch:InvokeSearch` and `bedrock-websearch:InvokeFetch`) have been added to the following AWS managed policies:
 + `AmazonBedrockFullAccess`
@@ -44,7 +47,7 @@ In addition to the web-search-specific policies above, the basic Web Search acti
 + `AmazonBedrockLimitedAccess`
 + `AmazonBedrockMantleInferenceAccess`
 
-None of these general policies grant `bedrock-websearch:ExternalWebAccess`, so identities that hold them can use Search and cached Fetch without an additional policy change, while retrieval from the live web must be granted explicitly. `AmazonBedrockFullAccess` is distinct from `AmazonBedrockExternalWebSearchFullAccess`, which grants all Web Search actions including `ExternalWebAccess`; `AmazonBedrockWebSearchFullAccess`, by contrast, grants search and cached fetch only.
+None of these general policies grant `bedrock-websearch:ExternalWebAccess`. Identities that hold them can use Search. To use cached Fetch without an additional policy change, explicitly set `external_web_access` to `false`. If you leave the parameter at its default of `true`, each Fetch attempt fails authorization before the cache is read. Retrieval from the external web must be granted explicitly. `AmazonBedrockFullAccess` is distinct from `AmazonBedrockExternalWebSearchFullAccess`, which grants all Web Search actions including `ExternalWebAccess`; `AmazonBedrockWebSearchFullAccess`, by contrast, grants search and cached fetch only.
 
 ## Condition key
 <a name="security-web-search-condition-keys"></a>

@@ -111,7 +111,7 @@ Starting with Mozilla Firefox version 154, Firefox enforces LNA restrictions on 
 Deploy the **LocalNetworkAccess** enterprise policy and add the loopback address `127.0.0.1` to the **SkipDomains** list. On Firefox, list the loopback address that the Connect Customer Client Application listens on, rather than your Contact Control Panel domain.
 
 **Note**
-This policy permits local network access to the loopback address from any site, not only from your Contact Control Panel. It is currently the most restrictive policy that allows screen recording to work on Firefox; a more narrowly scoped policy that limits the exemption to your Contact Control Panel is pending a future Firefox update.
+This policy permits local network access to the loopback address from any site, not only from your Contact Control Panel. It is currently the most restrictive policy that allows screen recording to work on Firefox. A more narrowly scoped policy that limits the exemption to your Contact Control Panel is pending a future Firefox update.
 
 Example `policies.json` configuration:
 

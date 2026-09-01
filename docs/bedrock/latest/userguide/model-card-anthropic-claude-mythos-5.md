@@ -66,13 +66,13 @@ The following tables show which endpoints and APIs are supported for Claude Myth
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Prompt caching](prompt-caching.html)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Count tokens](count-tokens.html)  |  + [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
+|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Count tokens](count-tokens.html)  |  + [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
 
-***Prompt caching using `bedrock-mantle` endpoint***
+***Implicit and Explicit Prompt Caching using `bedrock-mantle` endpoint***
 
 For more information, see [Prompt caching for faster model inference](prompt-caching.html).
 
-| **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoint** |
+| **Explicit Prompt Caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoint** |
 | --- | --- | --- | --- | --- |
 | Yes | 512 | 4 | 5 minutes, 1 hour | system, messages, and tools |
 

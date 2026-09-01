@@ -10,7 +10,7 @@ Managers can monitor or listen-in to live conversations between agents and conta
 Connect Customer provides two options to set up contact monitoring:
 + **Multi-party contacts**: Monitor live conversations that have up to six participants. There's no additional charge for this option.
 
-  This option enables you to [barge](monitor-barge.md) into live conversations (voice and chats), and record chat transcripts.
+  With this option, you can [barge](monitor-barge.md) into live conversations (voice and chats), and record chat transcripts.
 
   You enable this capability on the Connect Customer console by choosing **Enable Multi-Party Calls and Enhanced Monitoring for Voice** and **Enable Multi-Party Chats and Enhanced Monitoring for Chat**, as shown in the following image.
 ![The Telephony and chat options page, the enhanced contact monitoring capabilities section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/barge-voice-chat-enable.png)

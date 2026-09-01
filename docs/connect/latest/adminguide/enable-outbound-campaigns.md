@@ -24,7 +24,7 @@ You need a few things to use outbound campaigns:
 + Request a service quota increase for outbound campaign calls. By default, the service quota for concurrent campaign calls is 0. To submit a request, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 + Create a dedicated outbound campaigns queue to handle any contacts that will be routed to agents as a result of the campaign.
 + Assign the queue to the agent's routing profile.
-+ Create and publish a flow that includes a [Check call progress](check-call-progress.md) block. This block enables you to branch based on whether a person or a machine answered a call, for example.
++ Create and publish a flow that includes a [Check call progress](check-call-progress.md) block. With this block, you can branch based on whether a person or a machine answered a call, for example.
 
 ## Create an AWS KMS key
 <a name="create-kms-key-campaigns"></a>

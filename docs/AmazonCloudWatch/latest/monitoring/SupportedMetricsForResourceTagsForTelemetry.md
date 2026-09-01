@@ -244,39 +244,6 @@ The `AWS/Athena` namespace includes enriched metrics for the following resource 
 | ServiceProcessingTime | + `QueryState`, `QueryType`, `WorkGroup` |
 | TotalExecutionTime | + `QueryState`, `QueryType`, `WorkGroup` |
 
-## AWS/Backup
-<a name="supported-metrics-ns-aws-backup"></a>
-
-The `AWS/Backup` namespace includes enriched metrics for the following resource types.
-+ [AWS::Backup::BackupVault](#supported-metrics-aws-backup-aws-backup-backupvault)
-
-### AWS::Backup::BackupVault
-<a name="supported-metrics-aws-backup-aws-backup-backupvault"></a>
-
-| Metric | Dimensions |
-| --- | --- |
-| NumberOfBackupJobsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfBackupJobsCreated | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfBackupJobsExpired | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfBackupJobsFailed | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfBackupJobsPartial | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfBackupJobsPending | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfBackupJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfCopyJobsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfCopyJobsCreated | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfCopyJobsFailed | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfCopyJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRecoveryPointsCold | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRecoveryPointsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRecoveryPointsCreating | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRecoveryPointsDeleting | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRecoveryPointsExpired | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRecoveryPointsPartial | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRestoreJobsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRestoreJobsFailed | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRestoreJobsPending | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-| NumberOfRestoreJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
-
 ## AWS/ClientVPN
 <a name="supported-metrics-ns-aws-clientvpn"></a>
 
@@ -501,73 +468,6 @@ The `AWS/DataSync` namespace includes enriched metrics for the following resourc
 | FilesVerifiedDestination | + `TaskId` |
 | FilesVerifiedSource | + `TaskId` |
 
-## AWS/DocDB
-<a name="supported-metrics-ns-aws-docdb"></a>
-
-The `AWS/DocDB` namespace includes enriched metrics for the following resource types.
-+ [AWS::DocDB::DBCluster](#supported-metrics-aws-docdb-aws-docdb-dbcluster)
-
-### AWS::DocDB::DBCluster
-<a name="supported-metrics-aws-docdb-aws-docdb-dbcluster"></a>
-
-| Metric | Dimensions |
-| --- | --- |
-| BackupRetentionPeriodStorageUsed | + `DBClusterIdentifier` |
-| BufferCacheHitRatio | + `DBClusterIdentifier` |
-| CPUCreditBalance | + `DBClusterIdentifier` |
-| CPUCreditUsage | + `DBClusterIdentifier` |
-| CPUSurplusCreditBalance | + `DBClusterIdentifier` |
-| CPUSurplusCreditsCharged | + `DBClusterIdentifier` |
-| CPUUtilization | + `DBClusterIdentifier` |
-| ChangeStreamLogSize | + `DBClusterIdentifier` |
-| DBClusterReplicaLagMaximum | + `DBClusterIdentifier` |
-| DBClusterReplicaLagMinimum | + `DBClusterIdentifier` |
-| DBInstanceReplicaLag | + `DBClusterIdentifier` |
-| DatabaseConnections | + `DBClusterIdentifier` |
-| DatabaseConnectionsMax | + `DBClusterIdentifier` |
-| DatabaseCursors | + `DBClusterIdentifier` |
-| DatabaseCursorsMax | + `DBClusterIdentifier` |
-| DatabaseCursorsTimedOut | + `DBClusterIdentifier` |
-| DiskQueueDepth | + `DBClusterIdentifier` |
-| DocumentsDeleted | + `DBClusterIdentifier` |
-| DocumentsInserted | + `DBClusterIdentifier` |
-| DocumentsReturned | + `DBClusterIdentifier` |
-| DocumentsUpdated | + `DBClusterIdentifier` |
-| EngineUptime | + `DBClusterIdentifier` |
-| FreeLocalStorage | + `DBClusterIdentifier` |
-| FreeableMemory | + `DBClusterIdentifier` |
-| IndexBufferCacheHitRatio | + `DBClusterIdentifier` |
-| LowMemNumOperationsThrottled | + `DBClusterIdentifier` |
-| LowMemThrottleMaxQueueDepth | + `DBClusterIdentifier` |
-| LowMemThrottleQueueDepth | + `DBClusterIdentifier` |
-| NetworkReceiveThroughput | + `DBClusterIdentifier` |
-| NetworkThroughput | + `DBClusterIdentifier` |
-| NetworkTransmitThroughput | + `DBClusterIdentifier` |
-| OpcountersCommand | + `DBClusterIdentifier` |
-| OpcountersDelete | + `DBClusterIdentifier` |
-| OpcountersGetmore | + `DBClusterIdentifier` |
-| OpcountersInsert | + `DBClusterIdentifier` |
-| OpcountersQuery | + `DBClusterIdentifier` |
-| OpcountersUpdate | + `DBClusterIdentifier` |
-| ReadIOPS | + `DBClusterIdentifier` |
-| ReadLatency | + `DBClusterIdentifier` |
-| ReadThroughput | + `DBClusterIdentifier` |
-| SnapshotStorageUsed | + `DBClusterIdentifier` |
-| SwapUsage | + `DBClusterIdentifier` |
-| TTLDeletedDocuments | + `DBClusterIdentifier` |
-| TotalBackupStorageBilled | + `DBClusterIdentifier` |
-| TransactionsAborted | + `DBClusterIdentifier` |
-| TransactionsCommitted | + `DBClusterIdentifier` |
-| TransactionsOpen | + `DBClusterIdentifier` |
-| TransactionsOpenMax | + `DBClusterIdentifier` |
-| TransactionsStarted | + `DBClusterIdentifier` |
-| VolumeBytesUsed | + `DBClusterIdentifier` |
-| VolumeReadIOPs | + `DBClusterIdentifier` |
-| VolumeWriteIOPs | + `DBClusterIdentifier` |
-| WriteIOPS | + `DBClusterIdentifier` |
-| WriteLatency | + `DBClusterIdentifier` |
-| WriteThroughput | + `DBClusterIdentifier` |
-
 ## AWS/DynamoDB
 <a name="supported-metrics-ns-aws-dynamodb"></a>
 
@@ -612,6 +512,7 @@ The `AWS/EBS` namespace includes enriched metrics for the following resource typ
 | VolumeAvgReadLatency | + `InstanceId`, `VolumeId` |
 | VolumeAvgThroughput | + `InstanceId`, `VolumeId` |
 | VolumeAvgWriteLatency | + `InstanceId`, `VolumeId` |
+| VolumeConsumedReadWriteOps | + `VolumeId` |
 | VolumeIOPSExceededCheck | + `InstanceId`, `VolumeId` |
 | VolumeIdleTime | + `VolumeId` |
 | VolumeQueueLength | + `VolumeId` |
@@ -619,6 +520,7 @@ The `AWS/EBS` namespace includes enriched metrics for the following resource typ
 | VolumeReadOps | + `VolumeId` |
 | VolumeStalledIOCheck | + `InstanceId`, `VolumeId` |
 | VolumeThroughputExceededCheck | + `InstanceId`, `VolumeId` |
+| VolumeThroughputPercentage | + `VolumeId` |
 | VolumeTotalReadTime | + `VolumeId` |
 | VolumeTotalWriteTime | + `VolumeId` |
 | VolumeWriteBytes | + `VolumeId` |
@@ -644,29 +546,43 @@ The `AWS/EC2` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUCreditBalance | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| CPUCreditUsage | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| CPUSurplusCreditBalance | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| CPUSurplusCreditsCharged | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| CPUUtilization | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| DiskReadBytes | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| DiskReadOps | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| DiskWriteBytes | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| DiskWriteOps | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| EBSByteBalance% | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| EBSIOBalance% | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| InstanceEBSIOPSExceededCheck | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| InstanceEBSThroughputExceededCheck | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| MetadataNoToken | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| MetadataNoTokenRejected | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| NetworkIn | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| NetworkOut | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| NetworkPacketsIn | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| NetworkPacketsOut | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| StatusCheckFailed | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| StatusCheckFailed\_AttachedEBS | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| StatusCheckFailed\_Instance | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
-| StatusCheckFailed\_System | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| CPUCreditBalance | + `InstanceId` |
+| CPUCreditUsage | + `InstanceId` |
+| CPUSurplusCreditBalance | + `InstanceId` |
+| CPUSurplusCreditsCharged | + `InstanceId` |
+| CPUUtilization | + `InstanceId` |
+| DiskReadBytes | + `InstanceId` |
+| DiskReadOps | + `InstanceId` |
+| DiskWriteBytes | + `InstanceId` |
+| DiskWriteOps | + `InstanceId` |
+| EBSByteBalance% | + `InstanceId` |
+| EBSIOBalance% | + `InstanceId` |
+| EBSReadBytes | + `InstanceId` |
+| EBSReadOps | + `InstanceId` |
+| EBSWriteBytes | + `InstanceId` |
+| EBSWriteOps | + `InstanceId` |
+| GPUPowerUtilization | + `InstanceId` |
+| InstanceEBSIOPSExceededCheck | + `InstanceId` |
+| InstanceEBSThroughputExceededCheck | + `InstanceId` |
+| MetadataNoToken | + `InstanceId` |
+| MetadataNoTokenRejected | + `InstanceId` |
+| NetworkIn | + `InstanceId` |
+| NetworkMirrorIn | + `InstanceId` |
+| NetworkMirrorOut | + `InstanceId` |
+| NetworkOut | + `InstanceId` |
+| NetworkPacketsIn | + `InstanceId` |
+| NetworkPacketsMirrorIn | + `InstanceId` |
+| NetworkPacketsMirrorOut | + `InstanceId` |
+| NetworkPacketsOut | + `InstanceId` |
+| NetworkPacketsSkipMirrorIn | + `InstanceId` |
+| NetworkPacketsSkipMirrorOut | + `InstanceId` |
+| NetworkSkipMirrorIn | + `InstanceId` |
+| NetworkSkipMirrorOut | + `InstanceId` |
+| StatusCheckFailed | + `InstanceId` |
+| StatusCheckFailed\_Application | + `InstanceId` |
+| StatusCheckFailed\_AttachedEBS | + `InstanceId` |
+| StatusCheckFailed\_Instance | + `InstanceId` |
+| StatusCheckFailed\_System | + `InstanceId` |
 
 ### AWS::EC2::VPC
 <a name="supported-metrics-aws-ec2-aws-ec2-vpc"></a>
@@ -1288,12 +1204,17 @@ The `AWS/ElastiCache` namespace includes enriched metrics for the following reso
 | Metric | Dimensions |
 | --- | --- |
 | ActiveDefragHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| AllocatorFragmentationBytes | + `CacheClusterId`, `CacheNodeId` |
+| AllocatorFragmentationRatio | + `CacheClusterId`, `CacheNodeId` |
 | AuthenticationFailures | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| BlockedConnections | + `CacheClusterId`, `CacheNodeId` |
+| BytesReadFromDisk | + `CacheClusterId`, `CacheNodeId` |
 | BytesReadIntoMemcached | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | BytesUsedForCache | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId`<br />+ `CacheClusterId`, `CacheNodeId`, `Tier` |
 | BytesUsedForCacheItems | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | BytesUsedForHash | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | BytesWrittenOutFromMemcached | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| BytesWrittenToDisk | + `CacheClusterId`, `CacheNodeId` |
 | CPUCreditBalance | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CPUCreditUsage | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CPUUtilization | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
@@ -1303,6 +1224,9 @@ The `AWS/ElastiCache` namespace includes enriched metrics for the following reso
 | CasBadval | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CasHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CasMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ChannelAuthorizationFailures | + `CacheClusterId`, `CacheNodeId` |
+| ClusterBasedCmds | + `CacheClusterId`, `CacheNodeId` |
+| ClusterBasedCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
 | CmdConfigGet | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CmdConfigSet | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CmdFlush | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
@@ -1313,13 +1237,22 @@ The `AWS/ElastiCache` namespace includes enriched metrics for the following reso
 | CurrConfig | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CurrConnections | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | CurrItems | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId`<br />+ `CacheClusterId`, `CacheNodeId`, `Tier` |
+| CurrItemsWithVolatileFields | + `CacheClusterId`, `CacheNodeId` |
+| CurrVolatileItems | + `CacheClusterId`, `CacheNodeId` |
 | DB0AverageTTL | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DatabaseAuthorizationFailures | + `CacheClusterId`, `CacheNodeId` |
+| DatabaseCapacityUsageCountedForEvictPercentage | + `CacheClusterId`, `CacheNodeId` |
+| DatabaseCapacityUsagePercentage | + `CacheClusterId`, `CacheNodeId` |
+| DatabaseMemoryUsageCountedForEvictPercentage | + `CacheClusterId`, `CacheNodeId` |
 | DatabaseMemoryUsagePercentage | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | DecrHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | DecrMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | DeleteHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | DeleteMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DurabilityBufferExceededErrorCount | + `CacheClusterId`, `CacheNodeId` |
+| DurabilityLag | + `CacheClusterId`, `CacheNodeId` |
 | EngineCPUUtilization | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ErrorCount | + `CacheClusterId`, `CacheNodeId` |
 | EvalBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | EvalBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | EvictedUnfetched | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
@@ -1336,34 +1269,69 @@ The `AWS/ElastiCache` namespace includes enriched metrics for the following reso
 | HashBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | HyperLogLogBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | HyperLogLogBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| IamAuthenticationExpirations | + `CacheClusterId`, `CacheNodeId` |
+| IamAuthenticationThrottling | + `CacheClusterId`, `CacheNodeId` |
 | IncrHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | IncrMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | IsMaster | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| JsonBasedCmds | + `CacheClusterId`, `CacheNodeId` |
+| JsonBasedCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
+| JsonBasedGetCmds | + `CacheClusterId`, `CacheNodeId` |
+| JsonBasedGetCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
+| JsonBasedSetCmds | + `CacheClusterId`, `CacheNodeId` |
+| JsonBasedSetCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
 | KeyAuthorizationFailures | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | KeyBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | KeyBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | KeysTracked | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | ListBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | ListBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| MajorPageFaults | + `CacheClusterId`, `CacheNodeId` |
 | MasterLinkHealthStatus | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | MemoryFragmentationRatio | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkBandwidthInAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkBandwidthOutAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkBaselineMaxUsageInPercentage | + `CacheClusterId`, `CacheNodeId` |
+| NetworkBaselineMaxUsageOutPercentage | + `CacheClusterId`, `CacheNodeId` |
+| NetworkBaselineUsageInPercentage | + `CacheClusterId`, `CacheNodeId` |
+| NetworkBaselineUsageOutPercentage | + `CacheClusterId`, `CacheNodeId` |
 | NetworkBytesIn | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkBytesOut | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkConntrackAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkLinkLocalAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkMaxBytesIn | + `CacheClusterId`, `CacheNodeId` |
+| NetworkMaxBytesOut | + `CacheClusterId`, `CacheNodeId` |
+| NetworkMaxPacketsIn | + `CacheClusterId`, `CacheNodeId` |
+| NetworkMaxPacketsOut | + `CacheClusterId`, `CacheNodeId` |
 | NetworkPacketsIn | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkPacketsOut | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NetworkPacketsPerSecondAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NewConnections | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | NewItems | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NonKeyTypeCmds | + `CacheClusterId`, `CacheNodeId` |
+| NonKeyTypeCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
+| NumItemsReadFromDisk | + `CacheClusterId`, `CacheNodeId` |
+| NumItemsWrittenToDisk | + `CacheClusterId`, `CacheNodeId` |
+| ProcessedCommands | + `CacheClusterId`, `CacheNodeId` |
 | PubSubBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | PubSubBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| PubSubChannels | + `CacheClusterId`, `CacheNodeId` |
+| PubSubShardChannels | + `CacheClusterId`, `CacheNodeId` |
 | Reclaimed | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ReclaimedFields | + `CacheClusterId`, `CacheNodeId` |
+| RejectedConnections | + `CacheClusterId`, `CacheNodeId` |
 | ReplicationBytes | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | ReplicationLag | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | SaveInProgress | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SearchBasedCmds | + `CacheClusterId`, `CacheNodeId` |
+| SearchBasedCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
+| SearchBasedGetCmds | + `CacheClusterId`, `CacheNodeId` |
+| SearchBasedGetCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
+| SearchBasedSetCmds | + `CacheClusterId`, `CacheNodeId` |
+| SearchBasedSetCmdsLatency | + `CacheClusterId`, `CacheNodeId` |
+| SearchNumberOfIndexes | + `CacheClusterId`, `CacheNodeId` |
+| SearchTotalIndexedDocuments | + `CacheClusterId`, `CacheNodeId` |
+| SearchUsedMemoryBytes | + `CacheClusterId`, `CacheNodeId` |
 | SetBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | SetBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | SetTypeCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
@@ -1375,10 +1343,14 @@ The `AWS/ElastiCache` namespace includes enriched metrics for the following reso
 | StreamBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | StringBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | StringBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SuccessfulReadRequestLatency | + `CacheClusterId`, `CacheNodeId` |
+| SuccessfulWriteRequestLatency | + `CacheClusterId`, `CacheNodeId` |
 | SwapUsage | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | TouchHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 | TouchMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| TrafficManagementActive | + `CacheClusterId`, `CacheNodeId` |
 | UnusedMemory | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| UsedMemoryDataset | + `CacheClusterId`, `CacheNodeId` |
 
 ### AWS::ElastiCache::ReplicationGroup
 <a name="supported-metrics-aws-elasticache-aws-elasticache-replicationgroup"></a>
@@ -1574,8 +1546,8 @@ The `AWS/FSx` namespace includes enriched metrics for the following resource typ
 | DataWriteLatency | + `FileSystemId`, `StorageTargetId` |
 | DataWriteOperationTime | + `FileSystemId`, `VolumeId` |
 | DataWriteOperations | + `FileSystemId`<br />+ `FileSystemId`, `VolumeId` |
-| DirectoryCreateOperations | + `FileSystemId`, `StorageTargetId` |
-| DirectoryDeleteOperations | + `FileSystemId`, `StorageTargetId` |
+| DirectoryCreateOperations | + `FileSystemId`, `JobId`, `StorageTargetId`<br />+ `FileSystemId`, `StorageTargetId` |
+| DirectoryDeleteOperations | + `FileSystemId`, `JobId`, `StorageTargetId`<br />+ `FileSystemId`, `StorageTargetId` |
 | DiskIopsExceededCheck | + `FileSystemId`, `StorageTargetId` |
 | DiskIopsUtilization | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
 | DiskReadBytes | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
@@ -1585,9 +1557,9 @@ The `AWS/FSx` namespace includes enriched metrics for the following resource typ
 | DiskThroughputUtilization | + `FileSystemId` |
 | DiskWriteBytes | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
 | DiskWriteOperations | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
-| FileCreateOperations | + `FileSystemId`, `StorageTargetId` |
-| FileDeleteOperations | + `FileSystemId`, `StorageTargetId` |
-| FileOpenOperations | + `FileSystemId`, `StorageTargetId` |
+| FileCreateOperations | + `FileSystemId`, `JobId`, `StorageTargetId`<br />+ `FileSystemId`, `StorageTargetId` |
+| FileDeleteOperations | + `FileSystemId`, `JobId`, `StorageTargetId`<br />+ `FileSystemId`, `StorageTargetId` |
+| FileOpenOperations | + `FileSystemId`, `JobId`, `StorageTargetId`<br />+ `FileSystemId`, `StorageTargetId` |
 | FileServerCacheHitRatio | + `CacheType`, `FileSystemId`<br />+ `FileServer`, `FileSystemId` |
 | FileServerDiskIopsBalance | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
 | FileServerDiskIopsUtilization | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
@@ -1603,7 +1575,9 @@ The `AWS/FSx` namespace includes enriched metrics for the following resource typ
 | NetworkReceivedBytes | + `FileServer`, `FileSystemId` |
 | NetworkSentBytes | + `FileServer`, `FileSystemId` |
 | NetworkThroughputUtilization | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
+| RenameOperations | + `FileSystemId`, `JobId`, `StorageTargetId` |
 | RepositoryRenameOperations | + `FileSystemId`, `Publisher` |
+| StatOperations | + `FileSystemId`, `JobId`, `StorageTargetId` |
 | StorageCapacity | + `Aggregate`, `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`<br />+ `FileSystemId`, `VolumeId` |
 | StorageCapacityUtilization | + `Aggregate`, `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`, `VolumeId`<br />+ `FileSystemId`, `StorageTargetId`<br />+ `FileSystemId`, `VolumeId` |
 | StorageUsed | + `Aggregate`, `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`, `VolumeId`<br />+ `FileSystemId`, `VolumeId` |
@@ -2355,7 +2329,111 @@ The `AWS/Prometheus` namespace includes enriched metrics for the following resou
 <a name="supported-metrics-ns-aws-rds"></a>
 
 The `AWS/RDS` namespace includes enriched metrics for the following resource types.
++ [AWS::RDS::DBCluster](#supported-metrics-aws-rds-aws-rds-dbcluster)
 + [AWS::RDS::DBInstance](#supported-metrics-aws-rds-aws-rds-dbinstance)
+
+### AWS::RDS::DBCluster
+<a name="supported-metrics-aws-rds-aws-rds-dbcluster"></a>
+
+| Metric | Dimensions |
+| --- | --- |
+| AbortedClients | + `DBClusterIdentifier`, `Role` |
+| ActiveTransactions | + `DBClusterIdentifier`, `Role` |
+| AuroraBinlogReplicaLag | + `DBClusterIdentifier`, `Role` |
+| AuroraDMLRejectedMasterFull | + `DBClusterIdentifier`, `Role` |
+| AuroraReplicaLagMaximum | + `DBClusterIdentifier`, `Role` |
+| AuroraReplicaLagMinimum | + `DBClusterIdentifier`, `Role` |
+| AuroraVolumeBytesLeftTotal | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_attempted | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_executed | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_failed | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_in\_progress | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_below\_min\_rows | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_column\_bit | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_column\_geometry | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_column\_lob | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_column\_virtual | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_custom\_charset | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_fast\_ddl | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_few\_pages\_outside\_buffer\_pool | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_full\_text\_index | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_high\_buffer\_pool\_pct | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_index\_hint | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_innodb\_table\_format | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_long\_trx | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_no\_where\_clause | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_range\_scan | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_row\_length\_too\_long | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_small\_table | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_temporary\_table | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_tx\_isolation | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_unsupported\_access | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_not\_chosen\_update\_delete\_stmts | + `DBClusterIdentifier`, `Role` |
+| Aurora\_pq\_request\_throttled | + `DBClusterIdentifier`, `Role` |
+| BlockedTransactions | + `DBClusterIdentifier`, `Role` |
+| BufferCacheHitRatio | + `DBClusterIdentifier`, `Role` |
+| CPUUtilization | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| CommitLatency | + `DBClusterIdentifier`, `Role` |
+| CommitThroughput | + `DBClusterIdentifier`, `Role` |
+| ConnectionAttempts | + `DBClusterIdentifier`, `Role` |
+| DDLLatency | + `DBClusterIdentifier`, `Role` |
+| DDLThroughput | + `DBClusterIdentifier`, `Role` |
+| DMLLatency | + `DBClusterIdentifier`, `Role` |
+| DMLThroughput | + `DBClusterIdentifier`, `Role` |
+| DatabaseConnections | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| Deadlocks | + `DBClusterIdentifier`, `Role` |
+| DeleteLatency | + `DBClusterIdentifier`, `Role` |
+| DeleteThroughput | + `DBClusterIdentifier`, `Role` |
+| DiskQueueDepth | + `DBClusterIdentifier`, `Role` |
+| EBSByteBalance% | + `DBClusterIdentifier`, `Role` |
+| EBSIOBalance% | + `DBClusterIdentifier`, `Role` |
+| EngineUptime | + `DBClusterIdentifier`, `Role` |
+| ForwardingMasterDMLLatency | + `DBClusterIdentifier`, `Role` |
+| ForwardingMasterDMLThroughput | + `DBClusterIdentifier`, `Role` |
+| ForwardingMasterOpenSessions | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaDMLLatency | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaDMLThroughput | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaOpenSessions | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaReadWaitLatency | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaReadWaitThroughput | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaSelectLatency | + `DBClusterIdentifier`, `Role` |
+| ForwardingReplicaSelectThroughput | + `DBClusterIdentifier`, `Role` |
+| FreeLocalStorage | + `DBClusterIdentifier`, `Role` |
+| FreeStorageSpace | + `DBClusterIdentifier` |
+| FreeableMemory | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| InsertLatency | + `DBClusterIdentifier`, `Role` |
+| InsertThroughput | + `DBClusterIdentifier`, `Role` |
+| LoginFailures | + `DBClusterIdentifier`, `Role` |
+| NetworkReceiveThroughput | + `DBClusterIdentifier`, `Role` |
+| NetworkThroughput | + `DBClusterIdentifier`, `Role` |
+| NetworkTransmitThroughput | + `DBClusterIdentifier`, `Role` |
+| NumBinaryLogFiles | + `DBClusterIdentifier`, `Role` |
+| PurgeBoundary | + `DBClusterIdentifier`, `Role` |
+| PurgeFinishedPoint | + `DBClusterIdentifier`, `Role` |
+| Queries | + `DBClusterIdentifier`, `Role` |
+| ReadIOPS | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| ReadLatency | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| ReadThroughput | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| ResultSetCacheHitRatio | + `DBClusterIdentifier`, `Role` |
+| RollbackSegmentHistoryListLength | + `DBClusterIdentifier`, `Role` |
+| RowLockTime | + `DBClusterIdentifier`, `Role` |
+| SelectLatency | + `DBClusterIdentifier`, `Role` |
+| SelectThroughput | + `DBClusterIdentifier`, `Role` |
+| StorageNetworkReceiveThroughput | + `DBClusterIdentifier`, `Role` |
+| StorageNetworkThroughput | + `DBClusterIdentifier`, `Role` |
+| StorageNetworkTransmitThroughput | + `DBClusterIdentifier`, `Role` |
+| SumBinaryLogSize | + `DBClusterIdentifier`, `Role` |
+| SwapUsage | + `DBClusterIdentifier`, `Role` |
+| TruncateFinishedPoint | + `DBClusterIdentifier`, `Role` |
+| UpdateLatency | + `DBClusterIdentifier`, `Role` |
+| UpdateThroughput | + `DBClusterIdentifier`, `Role` |
+| VolumeBytesUsed | + `DbClusterIdentifier`, `EngineName` |
+| VolumeReadIOPs | + `DbClusterIdentifier`, `EngineName` |
+| VolumeWriteIOPs | + `DbClusterIdentifier`, `EngineName` |
+| WriteIOPS | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| WriteLatency | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
+| WriteThroughput | + `DBClusterIdentifier`<br />+ `DBClusterIdentifier`, `Role` |
 
 ### AWS::RDS::DBInstance
 <a name="supported-metrics-aws-rds-aws-rds-dbinstance"></a>
@@ -2559,9 +2637,16 @@ The `AWS/SQS` namespace includes enriched metrics for the following resource typ
 | Metric | Dimensions |
 | --- | --- |
 | ApproximateAgeOfOldestMessage | + `QueueName` |
+| ApproximateAgeOfOldestMessageInQuietGroups | + `QueueName` |
+| ApproximateNumberOfGroupsWithInflightMessages | + `QueueName` |
 | ApproximateNumberOfMessagesDelayed | + `QueueName` |
+| ApproximateNumberOfMessagesDelayedInQuietGroups | + `QueueName` |
 | ApproximateNumberOfMessagesNotVisible | + `QueueName` |
+| ApproximateNumberOfMessagesNotVisibleInQuietGroups | + `QueueName` |
 | ApproximateNumberOfMessagesVisible | + `QueueName` |
+| ApproximateNumberOfMessagesVisibleInQuietGroups | + `QueueName` |
+| ApproximateNumberOfNoisyGroups | + `QueueName` |
+| NumberOfDeduplicatedSentMessages | + `QueueName` |
 | NumberOfEmptyReceives | + `QueueName` |
 | NumberOfMessagesDeleted | + `QueueName` |
 | NumberOfMessagesReceived | + `QueueName` |

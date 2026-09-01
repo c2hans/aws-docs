@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [MaxResults](#API_ListTrafficDistributionGroupUsers_RequestSyntax) **   <a name="connect-ListTrafficDistributionGroupUsers-request-uri-MaxResults"></a>
 The maximum number of results to return per page.
-Valid Range: Minimum value of 1. Maximum value of 10.
+Valid Range: Minimum value of 1. Maximum value of 1000.
 
  ** [NextToken](#API_ListTrafficDistributionGroupUsers_RequestSyntax) **   <a name="connect-ListTrafficDistributionGroupUsers-request-uri-NextToken"></a>
 The token for the next set of results. Use the value returned in the previous response in the next request to retrieve the next set of results.

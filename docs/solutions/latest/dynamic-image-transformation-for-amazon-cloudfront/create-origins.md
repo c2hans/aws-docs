@@ -5,17 +5,43 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 # Create origins
 <a name="create-origins"></a>
 
-Origins define the source locations for your images.
+An origin defines a source location for your images. The Admin UI validates each field as you enter it; the examples below use values that satisfy those validation rules.
 
-1. In the Admin UI, navigate to the Origins section.
+ **Navigation:** In the Admin UI left navigation, select **Origins**, and then choose **Create origin**.
 
-1. Click **Create Origin** and provide:
-   +  **Origin Name**: Descriptive name for the origin
-   +  **Origin Domain**: Domain name (e.g., `my-bucket.s3.amazonaws.com`)
-   +  **Origin Path**: Optional path prefix (e.g., `/images`)
-   +  **Origin Headers**: Optional custom headers
+Provide the following fields:
++  **Name**: A unique name for the origin, 1-100 characters, using letters, numbers, spaces, underscores, or hyphens (for example, `Product images bucket`).
++  **Origin domain**: A valid DNS domain name (up to 253 characters) for an S3 bucket or HTTP server. Do not include a scheme (`https://`) or path.
++  **Origin path - optional**: A path prefix prepended to every origin request. When provided, it must start with `/`, contain only letters, numbers, underscores, or hyphens in each segment, and not end in a filename (for example, `/images`).
++  **Origin headers - optional**: One or more header name/value pairs added to every request the solution makes to this origin.
 
-1. Click **Save** to create the origin.
+After completing the fields, choose **Save** to create the origin.
+
+**Example: Amazon S3 origin**
+
+| Field | Value |
+| --- | --- |
+| Name |  `Product images bucket`  |
+| Origin domain |  `my-product-images.s3.us-east-1.amazonaws.com`  |
+| Origin path - optional |  `/catalog`  |
+| Origin headers - optional |  *(none)*  |
+
+**Example: external HTTP origin**
+
+| Field | Value |
+| --- | --- |
+| Name |  `Marketing CDN origin`  |
+| Origin domain |  `assets.example.com`  |
+| Origin path - optional |  `/media`  |
+| Origin headers - optional |  `x-origin-source` = `dit`  |
+
+ **Screenshot of the Origins > Create origin form in the Admin UI.**
+
+![Admin UI Create origin form](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-origin.png)
+
+ **Screenshot of the Origins list view in the Admin UI.**
+
+![Admin UI Origins list view](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-origins-list.png)
 
 ## See also
 

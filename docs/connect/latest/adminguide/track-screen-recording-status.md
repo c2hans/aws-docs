@@ -182,7 +182,7 @@ The following table lists the possible values in the `failureInfo` object.
 | CLIENT\_AUTH\_ERROR | The Amazon Connect Client Application failed to authenticate | CLIENT |
 | CLIENT\_CONNECTION\_ERROR | Amazon Connect Client Application is not connected | CLIENT |
 | MULTIPLE\_CCP\_INTERACTION | Detected multiple browser interactions with CCP | CLIENT |
-| USER\_ERROR | Request encountered an user configuration error | CLIENT |
+| USER\_ERROR | Request encountered a user configuration error | CLIENT |
 | SERVICE\_ISSUE | Request encountered a service exception | SERVICE |
 | UNKNOWN | Unknown failure | UNKNOWN |
 

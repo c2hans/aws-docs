@@ -9,14 +9,23 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
 ## August 2026
 <a name="release-notes-aug-2026"></a>
-+ Added support for Amazon Linux 2023 with kernel 6.18.
-+ Added support for Oracle Linux 9.6.
++ Amazon FSx for NetApp ONTAP support as a target storage type is now generally available. You can migrate block storage workloads directly to FSx for ONTAP as part of the same migration wave, without intermediate storage or separate migration tools. For setup instructions, see [FSx for ONTAP configuration](fsx-ontap.md).
++ Added support for the following operating systems:
+  + Amazon Linux 2023 with kernel 6.18
+  + Oracle Linux 9.6
+  + RHEL 10.2
+  + Rocky Linux 10.2
+  + AlmaLinux 10.2
 + The user-provided ID for a source server is now case insensitive. For more information, see [Edit server](add-server-server-page.md#server-edit-main).
++ Resolved an issue that caused the MS-SQL license conversion post-launch action to fail for SQL Server named instances.
 
 ## July 2026
 <a name="release-notes-jul-2026"></a>
 
-Added support for RHEL 9.8, Rocky Linux 9.8, and AlmaLinux 9.8.
+Added support for the following operating systems:
++ RHEL 9.8
++ Rocky Linux 9.8
++ AlmaLinux 9.8
 
 ## June 2026
 <a name="release-notes-jun-2026"></a>
@@ -266,7 +275,7 @@ Added support for RHEL 9.8, Rocky Linux 9.8, and AlmaLinux 9.8.
 ## November 2021
 <a name="release-notes-november-2021"></a>
 + Service launch in the following regions: Europe (Paris), Europe (Milan), Middle East (Bahrain), and Africa (Cape Town).
-+ Application Migration Service now supports an additional replication method that does not require agent installation on each source server. This option is available for source servers running on VMware vCenter versions 6.7 and 7.0. [Learn more about agentless replication](agentless-mgn.md).
++ MGN now supports an additional replication method that does not require agent installation on each source server. This option is available for source servers running on VMware vCenter versions 6.7 and 7.0. [Learn more about agentless replication](agentless-mgn.md).
 
 ## October 2021
 <a name="release-notes-october-2021"></a>

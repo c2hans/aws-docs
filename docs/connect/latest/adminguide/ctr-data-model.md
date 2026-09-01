@@ -728,6 +728,11 @@ Information about the person (customer) who contacts your contact center.
 Information about customer’s capabilities.
 Type: [Capabilities](#ctr-Capabilities)
 
+**DeviceInfo**  <a name="DeviceInfo-CTR"></a>
+Information about customer's device.
+This field is populated only for in-app and web calling contacts, when the initiation method is `WEBRTC_API`. Otherwise, this field is not present, because PSTN voice and chat contacts don't include device information.
+Type: [DeviceInfo](#ctr-deviceinfo)
+
 ## Capabilities
 <a name="ctr-Capabilities"></a>
 
@@ -922,7 +927,7 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
 **OriginRegion**
-The AWS Region where the contact was originally created and initiated. This might differ from the `ActiveRegion` if the contact has been transferred across regions.
+The AWS Region where the contact was originally created and initiated. This might differ from the `ActiveRegion` if the contact has been transferred across Regions.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 

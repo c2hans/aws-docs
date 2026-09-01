@@ -94,7 +94,7 @@ You can create a private connection using the AWS Management Console or the AWS 
 
 Before creating a private connection, verify that you have the following:
 + **An active Agent Space** – You need an existing Agent Space in your account. If you don't have one, see [Getting started with AWS DevOps Agent](getting-started-with-aws-devops-agent.md).
-+ **A privately reachable target service** – Your MCP server, observability platform, or other service must be reachable at a known private IP address or DNS name from the VPC where the resource gateway is deployed. The service can run in the same VPC, a peered VPC, or on-premises, as long as it's routable from the resource gateway subnets. The service must serve HTTPS traffic with a minimum TLS version of 1.2 on a port that you specify when creating the connection.
++ **A privately reachable target service** – Your MCP server, remote A2A agent, observability platform, or other service must be reachable at a known private IP address or DNS name from the VPC where the resource gateway is deployed. The service can run in the same VPC, a peered VPC, or on-premises, as long as it's routable from the resource gateway subnets. The service must serve HTTPS traffic with a minimum TLS version of 1.2 on a port that you specify when creating the connection.
 + **Subnets in your VPC** – Identify 1–20 subnets where the ENIs will be created. We recommend selecting subnets in multiple Availability Zones for high availability. These subnets must have network connectivity to your target service. One subnet per Availability Zone can be used by VPC Lattice.
 + **(Optional) Security groups** – If you want to control traffic with specific rules, prepare up to five security group IDs to attach to the ENIs. If you omit security groups, AWS DevOps Agent creates a default security group.
 
@@ -194,7 +194,7 @@ When the status is `ACTIVE`, your private connection is ready to use.
 ## Use a private connection with a capability provider
 <a name="use-a-private-connection-with-a-capability-provider"></a>
 
-To use a private connection, you can link to it during the registration of a capability provider. Supported capabilities that can be used with private connections include: `GitHub`, `GitLab`, `MCP Server`, and `Grafana`. You can perform this step using the AWS Management Console or the AWS CLI.
+To use a private connection, you can link to it during the registration of a capability provider. Supported capabilities that can be used with private connections include: `GitHub`, `GitLab`, `MCP Server`, `Remote Agent`, and `Grafana`. You can perform this step using the AWS Management Console or the AWS CLI.
 
 **Note**
 ** When registering a capability provider, AWS DevOps Agent validates that the endpoint is reachable and responding. Ensure your target service is running and accepting connections before completing registration.
@@ -226,8 +226,8 @@ In the AWS DevOps Agent console, private connections can be linked to a capabili
 #### Routing the endpoint and the OAuth token exchange through different private connections
 <a name="routing-the-endpoint-and-the-oauth-token-exchange-through-different-private-connections"></a>
 
-For OAuth-based MCP server capability providers, the agent makes requests to two different endpoints: the **target URL** (the MCP server endpoint you register) and the **exchange URL** (the OAuth token exchange endpoint). By default, a single `privateConnectionName` is used for both. If these two endpoints are reachable through different private network paths, you can route each one through its own private connection by using `targetUrlPrivateConnectionName` and `exchangeUrlPrivateConnectionName` instead:
-+ `targetUrlPrivateConnectionName` – the private connection used to reach the MCP server endpoint (target URL).
+For OAuth-based MCP server and remote agent capability providers, the agent makes requests to two different endpoints: the **target URL** (the MCP server or remote agent endpoint you register) and the **exchange URL** (the OAuth token exchange endpoint). By default, a single `privateConnectionName` is used for both. If these two endpoints are reachable through different private network paths, you can route each one through its own private connection by using `targetUrlPrivateConnectionName` and `exchangeUrlPrivateConnectionName` instead:
++ `targetUrlPrivateConnectionName` – the private connection used to reach the MCP server or remote agent endpoint (target URL).
 + `exchangeUrlPrivateConnectionName` – the private connection used to reach the OAuth token exchange endpoint (exchange URL).
 
 You can specify either or both. If you set only one, the other endpoint is reached over the public internet (it does not fall back to the other private connection).
@@ -387,6 +387,7 @@ aws devops-agent create-private-connection \
 <a name="related-topics"></a>
 + [VPC Endpoints (AWS PrivateLink)](aws-devops-agent-security-vpc-endpoints-aws-privatelink.md)
 + [Connecting MCP Servers](configuring-integrations-and-knowledge-connecting-mcp-servers.md)
++ [Connecting Remote A2A Agents](configuring-integrations-and-knowledge-connecting-remote-a2a-agents.md)
 + [Configuring integrations and knowledge](configuring-integrations-and-knowledge.md)
 + [AWS DevOps Agent Security](aws-devops-agent-security.md)
 + [DevOps Agent IAM permissions](aws-devops-agent-security-devops-agent-iam-permissions.md)

@@ -24,7 +24,7 @@ Length Constraints: Minimum length of 0. Maximum length of 2000000.
 Required: No
 
  ** StatefulRules **   <a name="networkfirewall-Type-RulesSource-StatefulRules"></a>
-An array of individual stateful rules inspection criteria to be used together in a stateful rule group. Use this option to specify simple Suricata rules with protocol, source and destination, ports, direction, and rule options. For information about the Suricata `Rules` format, see [Rules Format](https://suricata.readthedocs.io/en/suricata-7.0.8/rules/intro.html).
+An array of individual stateful rules inspection criteria to be used together in a stateful rule group. Use this option to specify simple Suricata rules with protocol, source and destination, ports, direction, and rule options. For information about the Suricata `Rules` format, see [Rules Format](https://suricata.readthedocs.io/en/suricata-8.0.3/rules/intro.html).
 Type: Array of [StatefulRule](API_StatefulRule.md) objects
 Required: No
 

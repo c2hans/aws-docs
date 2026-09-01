@@ -21,7 +21,7 @@ Response:
     {
       "originId": "550e8400-e29b-41d4-a716-446655440001",
       "originName": "my-s3-origin",
-      "originDomain": "my-images-bucket.s3.amazonaws.com",
+      "originDomain": "amzn-s3-demo-bucket.s3.amazonaws.com",
       "originPath": "/images",
       "originHeaders": {
         "x-custom-header": "value"
@@ -40,7 +40,7 @@ Response:
 POST /origins
 {
   "originName": "my-s3-origin",
-  "originDomain": "my-images-bucket.s3.amazonaws.com",
+  "originDomain": "amzn-s3-demo-bucket.s3.amazonaws.com",
   "originPath": "/images",
   "originHeaders": {
     "x-custom-header": "value"

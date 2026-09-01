@@ -11,7 +11,7 @@ In addition to the AWS Management Console and AWS Command Line Interface, you ca
 
 This API interface reference includes documentation for using DataSync programmatically. For complete information, see the * [AWS DataSync User Guide](https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html) *.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

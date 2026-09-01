@@ -53,7 +53,7 @@ For example, you might create one staffing group named General Enquiry, and anot
 ## Add rules
 <a name="staffing-groups-add-rules"></a>
 
-To generate a schedule, Connect Customer uses information from the forecast group, which reflects the historical demand pattern for your contact center. Staffing rules enable you to specify conditions that must be accounted for in the schedule, regardless of what the forecast predicts.
+To generate a schedule, Connect Customer uses information from the forecast group, which reflects the historical demand pattern for your contact center. With staffing rules, you can specify conditions that must be accounted for in the schedule, regardless of what the forecast predicts.
 
 For example, your contact center opens at 9AM but the forecast says no contacts arrive between 9AM-9:30AM. You can add a rule that, despite what the forecast predicts based on historical demand, there should be a minimum of one agent during this time. This forces Connect Customer to keep one agent in the schedule from 9-9:30AM. In addition, you can add a rule to set the **Working Hours** to start at 9AM, even though the forecast would start it at 9:30AM.
 

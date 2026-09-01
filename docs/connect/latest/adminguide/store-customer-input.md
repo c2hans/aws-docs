@@ -10,11 +10,11 @@ This topic defines the flow block to store input as a contact attribute and then
 ## Description
 <a name="store-customer-input-description"></a>
 
-This block is similar to **Get customer input**, but this one stores the input as a contact attribute (in the [Stored customer input](connect-attrib-list.md#attribs-system-table) system attribute) and allows you to encrypt it. This way, you can encrypt sensitive input such as credit card numbers. This block:
+This block is similar to **Get customer input**, but this one stores the input as a contact attribute (in the [Stored customer input](connect-attrib-list.md#attribs-system-table) system attribute) and you can encrypt it. This way, you can encrypt sensitive input such as credit card numbers. This block:
 + Plays a prompt to get a response from the customer. For example, "Please enter your credit card number" or "Please enter the phone number we should use to call you back."
 + Plays an interruptible audio prompt or play text-to-speech for a customer to respond to.
 + Stores numerical input as in the [Stored customer input](connect-attrib-list.md#attribs-system-table) system attribute.
-+ Allows you to specify a custom terminating keypress.
++ You can specify a custom terminating keypress.
 + When a call includes no customer input, the contact takes the **Success branch**. The [Stored customer input](connect-attrib-list.md#attribs-system-table) system attribute holds a value of `Timeout`.
 
 **Check for a timeout**

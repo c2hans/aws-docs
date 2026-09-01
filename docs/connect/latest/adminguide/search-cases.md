@@ -16,7 +16,7 @@ Regardless of whether you are on a contact, you have the option to do a general 
 ## View a case
 <a name="view-cases"></a>
 
-When you select any of the cases in the search results to view the case, a new tab opens. This enables you to have multiple cases open at the same time.
+When you select any of the cases in the search results to view the case, a new tab opens. With separate tabs, you can have multiple cases open at the same time.
 
 If you add a [Cases](cases-block.md) block to a flow, and configure it with **Link contact to case** enabled, then cases will open automatically when the agent accepts the contact.
 

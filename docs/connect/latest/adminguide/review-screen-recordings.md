@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/review-screen-
 
 Use screen recordings to identify areas for agent coaching (for example, long contact handle duration or non-compliance with business processes) by watching an agent's actions while they handle a call, chat, or task contact.
 
-The screen recording is synchronized with the voice recording and contact transcript, so you can hear or read what is being said at the same time.
+The screen recording is synchronized with the voice recording and contact transcript. You can hear or read what is being said at the same time.
 
 **Note**
 Screen recordings are only available for Completed contacts.
@@ -37,7 +37,7 @@ For information about how to add more permissions to an existing security profil
 
 1. Log in to Connect Customer with a user account that has the **Analytics and optimization** - **Screen recording - Access** permission in its security profile.
 
-   If you also have **Screen recording - Enable download button** permission, you can view a button on the **Contact details** page that enables you to download a screen recording and view it offline.
+   If you also have **Screen recording - Enable download button** permission, you can view a button on the **Contact details** page that you can use to download a screen recording and view it offline.
 
 1. On the navigation menu, choose **Analytics and optimization**, **Contact search**.
 

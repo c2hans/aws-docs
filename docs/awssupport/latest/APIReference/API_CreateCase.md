@@ -11,13 +11,20 @@ The Support API doesn't support requesting service limit increases. You can subm
 + Submit a request from the Support Center [Create Case](https://console.aws.amazon.com/support/home#/case/create) page.
 + Use the Service Quotas [RequestServiceQuotaIncrease](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_RequestServiceQuotaIncrease.html) operation.
 
-A successful `CreateCase` request returns an Support case number. You can use the [DescribeCases](API_DescribeCases.md) operation and specify the case number to get existing Support cases. After you create a case, use the [AddCommunicationToCase](API_AddCommunicationToCase.md) operation to add additional communication or attachments to an existing case.
+**Important**
+ AWS Support automatically redacts sensitive information from support cases to protect your data. The following information is replaced with `[REDACTED_BY_AWS]` and is not stored:
+ AWS secret keys - The complete key is replaced. Example: `[REDACTED_BY_AWS]`
+Private keys - The complete key is replaced. Example: `[REDACTED_BY_AWS]`
+Credit card numbers - The number is redacted, but the last 4 digits remain. Example: `[REDACTED_BY_AWS]-7016`
+This sensitive information is never required by AWS Support.
+
+A successful `CreateCase` request returns a Support case number. You can use the [DescribeCases](API_DescribeCases.md) operation and specify the case number to get existing Support cases. After you create a case, use the [AddCommunicationToCase](API_AddCommunicationToCase.md) operation to add additional communication or attachments to an existing case.
 
 The `caseId` is separate from the `displayId` that appears in the [AWS Support Center](https://console.aws.amazon.com/support). Use the [DescribeCases](API_DescribeCases.md) operation to get the `displayId`.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 ## Request Syntax
 <a name="API_CreateCase_RequestSyntax"></a>
@@ -28,11 +35,13 @@ If you call the AWS Support API from an account that doesn't have a Business, En
    "categoryCode": "{{string}}",
    "ccEmailAddresses": [ "{{string}}" ],
    "communicationBody": "{{string}}",
+   "dryRun": {{boolean}},
    "issueType": "{{string}}",
    "language": "{{string}}",
    "serviceCode": "{{string}}",
    "severityCode": "{{string}}",
-   "subject": "{{string}}"
+   "subject": "{{string}}",
+   "uploadIds": [ "{{string}}" ]
 }
 ```
 
@@ -44,7 +53,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [attachmentSetId](#API_CreateCase_RequestSyntax) **   <a name="AWSSupport-CreateCase-request-attachmentSetId"></a>
-The ID of a set of one or more attachments for the case. Create the set by using the [AddAttachmentsToSet](API_AddAttachmentsToSet.md) operation.
+The ID of a set of one or more attachments for the case. Create the set by using the [AddAttachmentsToSet](API_AddAttachmentsToSet.md) operation. Each attachment in the set must be 5 MB or smaller. To attach files larger than 5 MB, use `uploadIds`.
 Type: String
 
  ** [categoryCode](#API_CreateCase_RequestSyntax) **   <a name="AWSSupport-CreateCase-request-categoryCode"></a>
@@ -60,6 +69,10 @@ Array Members: Minimum number of 0 items. Maximum number of 10 items.
 The communication body text that describes the issue. This text appears in the **Description** field on the AWS Support Center [Create Case](https://console.aws.amazon.com/support/home#/case/create) page.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 8000.
+
+ ** [dryRun](#API_CreateCase_RequestSyntax) **   <a name="AWSSupport-CreateCase-request-dryRun"></a>
+Specifies whether to validate the request without actually creating the case. When set to `true`, the request is validated but no case is created, and the operation returns a `DryRunOperationException`. When omitted or set to `false`, the request runs normally.
+Type: Boolean
 
  ** [issueType](#API_CreateCase_RequestSyntax) **   <a name="AWSSupport-CreateCase-request-issueType"></a>
 The type of issue for the case. You can specify `customer-service` or `technical`. If you don't specify a value, the default is `technical`.
@@ -82,6 +95,12 @@ Type: String
  ** [subject](#API_CreateCase_RequestSyntax) **   <a name="AWSSupport-CreateCase-request-subject"></a>
 The title of the support case. The title appears in the **Subject** field on the AWS Support Center [Create Case](https://console.aws.amazon.com/support/home#/case/create) page.
 Type: String
+
+ ** [uploadIds](#API_CreateCase_RequestSyntax) **   <a name="AWSSupport-CreateCase-request-uploadIds"></a>
+A list of upload IDs that identify attachments to add to the case. Each `uploadId` is returned by the [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md) operation. The upload must reach the `attachment-ready` state by calling [CompleteAttachmentUpload](API_CompleteAttachmentUpload.md) before it can be passed here. Use `uploadIds` to attach files of any supported size, including files larger than 5 MB.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 
 ## Response Syntax
 <a name="API_CreateCase_ResponseSyntax"></a>
@@ -124,6 +143,10 @@ HTTP Status Code: 400
 The case creation limit for the account has been exceeded.
  ** message **
 An error message that indicates that you have exceeded the number of cases you can have open.
+HTTP Status Code: 400
+
+ ** DryRunOperationException **
+The request was valid, but the operation wasn't performed because `dryRun` was set to `true`.
 HTTP Status Code: 400
 
  ** InternalServerError **

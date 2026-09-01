@@ -11,12 +11,12 @@ For information about new functionality in the existing Connection and Contact A
 
 Following are key features for agents who use multi-party monitoring:
 + All agents see all of the connections in a call.
-+ All agents have exactly the same capabilities as any other agent on the call. This takes into affect the moment an agent accepts the invitation to join the call.
++ All agents have exactly the same capabilities as any other agent on the call. This takes effect the moment an agent accepts the invitation to join the call.
 + Before a warm transfer is complete, an agent can start talking to the caller as well as disconnect any other agent on the call.
 
 **Note**
 When calls have three or more participants, agents can add participants to the call even after a caller drops.
-The following example illustrates how previous and next contact IDs are mapped when an agent performs series of consults followed by a transfer.
+The following example illustrates how previous and next contact IDs are mapped when an agent performs a series of consults followed by a transfer.
 
 ![Contact IDs are mapped during a multi-party call.](http://docs.aws.amazon.com/connect/latest/adminguide/images/connect-consult-diagram.png)
 
@@ -34,7 +34,7 @@ The following table summarizes the differences between the agent's experience us
 
 | Three-party calls | Multi-party calls |
 | --- | --- |
-| Agent can control hold, resume, and disconnect only the parties they add. | All agents are have the same call control capabilities. |
+| Agent can control hold, resume, and disconnect only the parties they add. | All agents have the same call control capabilities. |
 | Agent can add one other participant to an existing call, for a total of three participants (the agent, the caller, and another participant). | Any agent on the call can add additional participants, as long as the total number of participants on the call, including themselves, does not exceed six. When calls have three or more participants, agents can add participants to the call even after a caller drops.  |
 | Agent can put only the party they added on hold. | Any agent on the call can put any party on hold. |
 | When a primary agent places a secondary agent on hold, the secondary agent can't take themselves off hold. | Any agent on the call can take themselves off hold. |
@@ -45,7 +45,7 @@ The following table summarizes the differences between the agent's experience us
 | Only the primary agent can disconnect a party on the call. The secondary agent can disconnect the caller only if the primary agent has disconnected. | All agents have the capability to disconnect any other party. |
 | The primary agent can see two connections (caller and another party), while a secondary agent sees only the transfer connection. | All agents can see all connections. |
 | An agent only sees **internal transfer** for another agent on the call. | An agent sees the quick connect ID for other agents, instead of just **internal transfer**. |
-| Not applicable. | When an party is being dialed, an agent on a multi-party call cannot add another party until the prior dial operation is completed (party added or call leg terminated). |
+| Not applicable. | When a party is being dialed, an agent on a multi-party call cannot add another party until the prior dial operation is completed (party added or call leg terminated). |
 | Additional WebRTC users cannot be added. | [Additional WebRTC users can be added](enable-multiuser-inapp.md).  |
 
 ## See also

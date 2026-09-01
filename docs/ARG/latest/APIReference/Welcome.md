@@ -18,7 +18,7 @@ For more information about Resource Groups, see the [AWS Resource Groups User Gu
 + Getting data about resources that are members of a group
 + Searching AWS resources based on a resource query
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

@@ -98,7 +98,7 @@ For preview dialing mode, please adjust contact flow to use profile id as the de
 
 ![Agent-assisted voice campaign creation interface with configuration options and settings.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create_campaign_agent-assisted-voice-1.png)
 
-When you select predictive dialing mode, the **Pacing controls** section lets you configure maximum ring time, dialing capacity allocation, agent allocation, and abandonment rate thresholds:
+When you select predictive dialing mode, the **Pacing controls** section helps you configure maximum ring time, dialing capacity allocation, agent allocation, and abandonment rate thresholds:
 
 The following image shows the pacing controls section.
 

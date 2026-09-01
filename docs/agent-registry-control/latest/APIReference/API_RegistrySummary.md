@@ -47,6 +47,11 @@ The timestamp when the registry was last updated
 Type: Timestamp
 Required: Yes
 
+ ** autoDetection **   <a name="agentregistrycontrol-Type-RegistrySummary-autoDetection"></a>
+The registry's auto-detection properties, including the requested configuration and the current detection status. Present only when auto-detection was configured for the registry.
+Type: [AutoDetection](API_AutoDetection.md) object
+Required: No
+
  ** description **   <a name="agentregistrycontrol-Type-RegistrySummary-description"></a>
 Registry description
 Type: String

@@ -11,7 +11,7 @@ We recommend creating a budget through AWS Cost Explorer to help manage costs. P
 
 Dynamic Image Transformation for Amazon CloudFront uses CloudFront’s pay-as-you-go pricing model by default. Depending on your expected traffic, you may be able to optimize costs by switching to CloudFront’s fixed-pricing model. Before deployment, evaluate your expected workload including monthly data transfer volume and image request count against CloudFront’s pricing models to determine which option provides the best value for your specific use case.
 
-To switch to these tiers after deployment, navigate to the CloudFront console, select your CloudFront distribution, under the Billing section click "Switch to a plan" and select one of the available fixed pricing plans.
+To switch to these tiers after deployment, navigate to the CloudFront console, select your CloudFront distribution, under the Billing section choose "Switch to a plan" and select one of the available fixed pricing plans.
 
 The pricing estimates below reflect costs when using the fixed-pricing tiers.
 

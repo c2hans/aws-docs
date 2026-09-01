@@ -28,6 +28,11 @@ Segment type describing a contact event.
 Type: [RealTimeContactAnalysisSegmentEvent](API_RealTimeContactAnalysisSegmentEvent.md) object
 Required: No
 
+ ** ExtractedInformation **   <a name="connect-Type-RealtimeContactAnalysisSegment-ExtractedInformation"></a>
+The extracted information from the conversation.
+Type: [RealTimeContactAnalysisSegmentExtractedInformation](API_RealTimeContactAnalysisSegmentExtractedInformation.md) object
+Required: No
+
  ** Issues **   <a name="connect-Type-RealtimeContactAnalysisSegment-Issues"></a>
 Segment type containing a list of detected issues.
 Type: [RealTimeContactAnalysisSegmentIssues](API_RealTimeContactAnalysisSegmentIssues.md) object

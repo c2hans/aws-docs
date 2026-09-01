@@ -291,6 +291,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ec2:AuthorizeSecurityGroupIngress](#list_ec2-action-AuthorizeSecurityGroupIngress)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   BatchModifyIpamRoutingPolicyRegistrations  **
+  - **IAM action:**  [ec2:BatchModifyIpamRoutingPolicyRegistrations](#list_ec2-action-BatchModifyIpamRoutingPolicyRegistrations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   BundleInstance  **
   - **IAM action:**  [ec2:BundleInstance](#list_ec2-action-BundleInstance)
   - **Condition key:**
@@ -513,10 +519,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateIpamInternetRegistryAssociation  **
-  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Tagging, Write
+  - **IAM action:**  [ec2:CreateIpamInternetRegistryAssociation](#list_ec2-action-CreateIpamInternetRegistryAssociation)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateIpamPolicy  **
   - **IAM action:**  [ec2:CreateIpamPolicy](#list_ec2-action-CreateIpamPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -537,6 +541,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateIpamResourceDiscovery  **
   - **IAM action:**  [ec2:CreateIpamResourceDiscovery](#list_ec2-action-CreateIpamResourceDiscovery)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateIpamRoutingPolicyRegistration  **
+  - **IAM action:**  [ec2:CreateIpamRoutingPolicyRegistration](#list_ec2-action-CreateIpamRoutingPolicyRegistration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateIpamScope  **
   - **IAM action:**  [ec2:CreateIpamScope](#list_ec2-action-CreateIpamScope)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -973,6 +983,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteIpamInternetRegistryAssociation  **
+  - **IAM action:**  [ec2:DeleteIpamInternetRegistryAssociation](#list_ec2-action-DeleteIpamInternetRegistryAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteIpamPolicy  **
   - **IAM action:**  [ec2:DeleteIpamPolicy](#list_ec2-action-DeleteIpamPolicy)
   - **Condition key:**
@@ -999,6 +1015,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteIpamResourceDiscovery  **
   - **IAM action:**  [ec2:DeleteIpamResourceDiscovery](#list_ec2-action-DeleteIpamResourceDiscovery)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteIpamRoutingPolicyRegistration  **
+  - **IAM action:**  [ec2:DeleteIpamRoutingPolicyRegistration](#list_ec2-action-DeleteIpamRoutingPolicyRegistration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -1483,6 +1505,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   DescribeAccountVpcEncryptionControl  **
+  - **IAM action:**  [ec2:DescribeAccountVpcEncryptionControl](#list_ec2-action-DescribeAccountVpcEncryptionControl)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   DescribeAddressTransfers  **
   - **IAM action:**  [ec2:DescribeAddressTransfers](#list_ec2-action-DescribeAddressTransfers)
   - **Condition key:**
@@ -1923,6 +1951,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeIpamExternalResourceVerificationTokens  **
   - **IAM action:**  [ec2:DescribeIpamExternalResourceVerificationTokens](#list_ec2-action-DescribeIpamExternalResourceVerificationTokens)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   DescribeIpamInternetRegistryAssociations  **
+  - **IAM action:**  [ec2:DescribeIpamInternetRegistryAssociations](#list_ec2-action-DescribeIpamInternetRegistryAssociations)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -2971,6 +3005,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   EnableIpamInternetRegistryAssociation  **
+  - **IAM action:**  [ec2:EnableIpamInternetRegistryAssociation](#list_ec2-action-EnableIpamInternetRegistryAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   EnableIpamOrganizationAdminAccount  **
   - **IAM action:**  [ec2:EnableIpamOrganizationAdminAccount](#list_ec2-action-EnableIpamOrganizationAdminAccount)
   - **Condition key:**
@@ -3251,6 +3291,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetIpamDiscoveredRoutes  **
+  - **IAM action:**  [ec2:GetIpamDiscoveredRoutes](#list_ec2-action-GetIpamDiscoveredRoutes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIpamInternetRegistryAssociationAsns  **
+  - **IAM action:**  [ec2:GetIpamInternetRegistryAssociationAsns](#list_ec2-action-GetIpamInternetRegistryAssociationAsns)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIpamInternetRegistryAssociationCidrs  **
+  - **IAM action:**  [ec2:GetIpamInternetRegistryAssociationCidrs](#list_ec2-action-GetIpamInternetRegistryAssociationCidrs)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetIpamPolicyAllocationRules  **
   - **IAM action:**  [ec2:GetIpamPolicyAllocationRules](#list_ec2-action-GetIpamPolicyAllocationRules)
   - **Condition key:**
@@ -3295,6 +3353,30 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetIpamResourceCidrs  **
   - **IAM action:**  [ec2:GetIpamResourceCidrs](#list_ec2-action-GetIpamResourceCidrs)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIpamRouteOriginAuthorizations  **
+  - **IAM action:**  [ec2:GetIpamRouteOriginAuthorizations](#list_ec2-action-GetIpamRouteOriginAuthorizations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIpamRouteProtectionFindings  **
+  - **IAM action:**  [ec2:GetIpamRouteProtectionFindings](#list_ec2-action-GetIpamRouteProtectionFindings)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIpamRoutingPolicyRegistrationDeltas  **
+  - **IAM action:**  [ec2:GetIpamRoutingPolicyRegistrationDeltas](#list_ec2-action-GetIpamRoutingPolicyRegistrationDeltas)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIpamRoutingPolicyRegistrations  **
+  - **IAM action:**  [ec2:GetIpamRoutingPolicyRegistrations](#list_ec2-action-GetIpamRoutingPolicyRegistrations)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -3539,6 +3621,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   ModifyAccountVpcEncryptionControl  **
+  - **IAM action:**  [ec2:ModifyAccountVpcEncryptionControl](#list_ec2-action-ModifyAccountVpcEncryptionControl)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   ModifyAddressAttribute  **
   - **IAM action:**  [ec2:ModifyAddressAttribute](#list_ec2-action-ModifyAddressAttribute)
   - **Condition key:**
@@ -3739,6 +3827,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ModifyIpamResourceDiscovery  **
   - **IAM action:**  [ec2:ModifyIpamResourceDiscovery](#list_ec2-action-ModifyIpamResourceDiscovery)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   ModifyIpamRoutingPolicyRegistration  **
+  - **IAM action:**  [ec2:ModifyIpamRoutingPolicyRegistration](#list_ec2-action-ModifyIpamRoutingPolicyRegistration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -4779,6 +4873,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [security-group-rule](#list_ec2-resource-security-group-rule) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)
   - **Access level:** Write
 
+- **   [BatchModifyIpamRoutingPolicyRegistrations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BatchModifyIpamRoutingPolicyRegistrations.html)  **
+  - **Description:** Grants permission to modify multiple routing policy registrations in a single operation
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [BundleInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleInstance.html)  **
   - **Description:** Grants permission to bundle an instance store-backed Windows instance
   - **Resource types (\*required):**
@@ -5070,6 +5170,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [ipam-external-resource-verification-token\*](#list_ec2-resource-ipam-external-resource-verification-token) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)
   - **Access level:** Write
 
+- **   [CreateIpamInternetRegistryAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamInternetRegistryAssociation.html)  **
+  - **Description:** Grants permission to create an association between an IPAM and a Regional Internet Registry (RIR) for Resource Public Key Infrastructure (RPKI) management
+  - **Resource types (\*required):** [ipam\*](#list_ec2-resource-ipam) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)
+  - **Access level:** Write
+
 - **   [CreateIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamPolicy.html)  **
   - **Description:** Grants permission to create a policy in Amazon VPC IP Address Manager (IPAM) that defines rules for allocating public IPv4 addresses from IPAM pools to AWS resources
   - **Resource types (\*required):** [ipam\*](#list_ec2-resource-ipam) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
@@ -5099,6 +5205,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create an IPAM resource discovery
   - **Resource types (\*required):** [ipam-resource-discovery\*](#list_ec2-resource-ipam-resource-discovery)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)
+  - **Access level:** Write
+
+- **   [CreateIpamRoutingPolicyRegistration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamRoutingPolicyRegistration.html)  **
+  - **Description:** Grants permission to create a routing policy registration and publish Route Origin Authorizations (ROAs) to the RPKI
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateIpamScope](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamScope.html)  **
@@ -5383,6 +5495,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [internet-gateway](#list_ec2-resource-internet-gateway) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:InternetGatewayID](#list_ec2-ec2_InternetGatewayID)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam](#list_ec2-resource-ipam) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-external-resource-verification-token](#list_ec2-resource-ipam-external-resource-verification-token) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [ipam-internet-registry-association](#list_ec2-resource-ipam-internet-registry-association) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-policy](#list_ec2-resource-ipam-policy) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-pool](#list_ec2-resource-ipam-pool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-pool-allocation](#list_ec2-resource-ipam-pool-allocation) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:CreateAction](#list_ec2-ec2_CreateAction)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
@@ -5797,6 +5910,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteIpamInternetRegistryAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamInternetRegistryAssociation.html)  **
+  - **Description:** Grants permission to delete an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamPolicy.html)  **
   - **Description:** Grants permission to delete an Amazon VPC IP Address Manager (IPAM) policy
   - **Resource types (\*required):** [ipam-policy\*](#list_ec2-resource-ipam-policy)
@@ -5824,6 +5943,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamResourceDiscovery.html)  **
   - **Description:** Grants permission to delete an IPAM resource discovery
   - **Resource types (\*required):** [ipam-resource-discovery\*](#list_ec2-resource-ipam-resource-discovery)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteIpamRoutingPolicyRegistration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamRoutingPolicyRegistration.html)  **
+  - **Description:** Grants permission to delete a routing policy registration
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -6070,6 +6195,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [internet-gateway](#list_ec2-resource-internet-gateway) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam](#list_ec2-resource-ipam) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-external-resource-verification-token](#list_ec2-resource-ipam-external-resource-verification-token) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [ipam-internet-registry-association](#list_ec2-resource-ipam-internet-registry-association) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-policy](#list_ec2-resource-ipam-policy) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-pool](#list_ec2-resource-ipam-pool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-pool-allocation](#list_ec2-resource-ipam-pool-allocation) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
@@ -6406,6 +6532,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DescribeAccountAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAccountAttributes.html)  **
   - **Description:** Grants permission to describe the attributes of the AWS account
+  - **Resource types (\*required):**
+  - **Condition keys:** [ec2:Region](#list_ec2-ec2_Region)
+  - **Access level:** List
+
+- **   [DescribeAccountVpcEncryptionControl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAccountVpcEncryptionControl.html)  **
+  - **Description:** Grants permission to describe the account-level VPC Encryption Control configuration
   - **Resource types (\*required):**
   - **Condition keys:** [ec2:Region](#list_ec2-ec2_Region)
   - **Access level:** List
@@ -6856,6 +6988,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DescribeIpamExternalResourceVerificationTokens](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamExternalResourceVerificationTokens.html)  **
   - **Description:** Grants permission to describe verification tokens, which proves ownership of an external resource
+  - **Resource types (\*required):**
+  - **Condition keys:** [ec2:Region](#list_ec2-ec2_Region)
+  - **Access level:** List
+
+- **   [DescribeIpamInternetRegistryAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamInternetRegistryAssociations.html)  **
+  - **Description:** Grants permission to describe IPAM internet registry associations
   - **Resource types (\*required):**
   - **Condition keys:** [ec2:Region](#list_ec2-ec2_Region)
   - **Access level:** List
@@ -7917,6 +8055,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:AvailabilityZone](#list_ec2-ec2_AvailabilityZone)<br />[ec2:AvailabilityZoneId](#list_ec2-ec2_AvailabilityZoneId)<br />[ec2:EbsOptimized](#list_ec2-ec2_EbsOptimized)<br />[ec2:InstanceAutoRecovery](#list_ec2-ec2_InstanceAutoRecovery)<br />[ec2:InstanceBandwidthWeighting](#list_ec2-ec2_InstanceBandwidthWeighting)<br />[ec2:InstanceID](#list_ec2-ec2_InstanceID)<br />[ec2:InstanceMarketType](#list_ec2-ec2_InstanceMarketType)<br />[ec2:InstanceMetadataTags](#list_ec2-ec2_InstanceMetadataTags)<br />[ec2:InstanceProfile](#list_ec2-ec2_InstanceProfile)<br />[ec2:InstanceType](#list_ec2-ec2_InstanceType)<br />[ec2:MetadataHttpEndpoint](#list_ec2-ec2_MetadataHttpEndpoint)<br />[ec2:MetadataHttpPutResponseHopLimit](#list_ec2-ec2_MetadataHttpPutResponseHopLimit)<br />[ec2:MetadataHttpTokens](#list_ec2-ec2_MetadataHttpTokens)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)<br />[ec2:RootDeviceType](#list_ec2-ec2_RootDeviceType)<br />[ec2:Tenancy](#list_ec2-ec2_Tenancy)
   - **Access level:** Write
 
+- **   [EnableIpamInternetRegistryAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIpamInternetRegistryAssociation.html)  **
+  - **Description:** Grants permission to enable Resource Public Key Infrastructure (RPKI) on an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [EnableIpamOrganizationAdminAccount](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIpamOrganizationAdminAccount.html)  **
   - **Description:** Grants permission to enable an AWS Organizations member account as an Amazon VPC IP Address Manager (IPAM) admin account
   - **Resource types (\*required):**
@@ -8200,6 +8344,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetIpamDiscoveredRoutes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamDiscoveredRoutes.html)  **
+  - **Description:** Grants permission to retrieve Border Gateway Protocol (BGP) routes discovered by IPAM resource discovery
+  - **Resource types (\*required):** [ipam-resource-discovery\*](#list_ec2-resource-ipam-resource-discovery)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetIpamInternetRegistryAssociationAsns](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamInternetRegistryAssociationAsns.html)  **
+  - **Description:** Grants permission to retrieve Autonomous System Numbers (ASNs) registered with an internet registry for an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetIpamInternetRegistryAssociationCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamInternetRegistryAssociationCidrs.html)  **
+  - **Description:** Grants permission to retrieve IP address CIDRs registered with an internet registry for an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetIpamPolicyAllocationRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPolicyAllocationRules.html)  **
   - **Description:** Grants permission to describe the rules that define how Amazon VPC IP Address Manager (IPAM) pools allocate IP addresses to AWS resource types within an IPAM policy
   - **Resource types (\*required):** [ipam-policy\*](#list_ec2-resource-ipam-policy)
@@ -8246,6 +8408,30 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to get information about the resources in an Amazon VPC IP Address Manager (IPAM) scope
   - **Resource types (\*required):** [ipam-pool](#list_ec2-resource-ipam-pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ipam-scope\*](#list_ec2-resource-ipam-scope) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetIpamRouteOriginAuthorizations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRouteOriginAuthorizations.html)  **
+  - **Description:** Grants permission to retrieve the current Route Origin Authorizations (ROAs) published to the RPKI for an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetIpamRouteProtectionFindings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRouteProtectionFindings.html)  **
+  - **Description:** Grants permission to retrieve route protection findings for an IPAM
+  - **Resource types (\*required):** [ipam\*](#list_ec2-resource-ipam)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetIpamRoutingPolicyRegistrationDeltas](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRoutingPolicyRegistrationDeltas.html)  **
+  - **Description:** Grants permission to retrieve the history of routing policy registration changes for an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetIpamRoutingPolicyRegistrations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRoutingPolicyRegistrations.html)  **
+  - **Description:** Grants permission to retrieve routing policy registrations for an IPAM internet registry association
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetLaunchTemplateData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetLaunchTemplateData.html)  **
@@ -8497,6 +8683,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Encrypted](#list_ec2-ec2_Encrypted)<br />[ec2:Owner](#list_ec2-ec2_Owner)<br />[ec2:ParentVolume](#list_ec2-ec2_ParentVolume)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)<br />[ec2:SnapshotCoolOffPeriod](#list_ec2-ec2_SnapshotCoolOffPeriod)<br />[ec2:SnapshotID](#list_ec2-ec2_SnapshotID)<br />[ec2:SnapshotLockDuration](#list_ec2-ec2_SnapshotLockDuration)<br />[ec2:SnapshotTime](#list_ec2-ec2_SnapshotTime)<br />[ec2:VolumeSize](#list_ec2-ec2_VolumeSize)
   - **Access level:** Write
 
+- **   [ModifyAccountVpcEncryptionControl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAccountVpcEncryptionControl.html)  **
+  - **Description:** Grants permission to modify the account-level VPC Encryption Control configuration
+  - **Resource types (\*required):**
+  - **Condition keys:** [ec2:Region](#list_ec2-ec2_Region)
+  - **Access level:** Write
+
 - **   [ModifyAddressAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAddressAttribute.html)  **
   - **Description:** Grants permission to modify an attribute of the specified Elastic IP address
   - **Resource types (\*required):** [elastic-ip\*](#list_ec2-resource-elastic-ip)
@@ -8705,6 +8897,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ModifyIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamResourceDiscovery.html)  **
   - **Description:** Grants permission to modify a resource discovery
   - **Resource types (\*required):** [ipam-resource-discovery\*](#list_ec2-resource-ipam-resource-discovery)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [ModifyIpamRoutingPolicyRegistration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamRoutingPolicyRegistration.html)  **
+  - **Description:** Grants permission to modify an existing routing policy registration
+  - **Resource types (\*required):** [ipam-internet-registry-association\*](#list_ec2-resource-ipam-internet-registry-association)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -9717,6 +9915,7 @@ The following resource types are defined by this service and can be used in the 
 |  [internet-gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)  | arn:${Partition}:ec2:${Region}:${Account}:internet-gateway/${InternetGatewayId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:InternetGatewayID](#list_ec2-ec2_InternetGatewayID)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |
 |  [ipam](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for-amazon-ec2.html#EC2_ARN_Format)  | arn:${Partition}:ec2::${Account}:ipam/${IpamId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |
 |  [ipam-external-resource-verification-token](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for-amazon-ec2.html#EC2_ARN_Format)  | arn:${Partition}:ec2::${Account}:ipam-external-resource-verification-token/${IpamExternalResourceVerificationTokenId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |
+|  [ipam-internet-registry-association](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for-amazon-ec2.html#EC2_ARN_Format)  | arn:${Partition}:ec2::${Account}:ipam-internet-registry-association/${IpamInternetRegistryAssociationId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |
 |  [ipam-policy](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for-amazon-ec2.html#EC2_ARN_Format)  | arn:${Partition}:ec2::${Account}:ipam-policy/${IpamPolicyId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |
 |  [ipam-pool](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for-amazon-ec2.html#EC2_ARN_Format)  | arn:${Partition}:ec2::${Account}:ipam-pool/${IpamPoolId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |
 |  [ipam-pool-allocation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for-amazon-ec2.html#EC2_ARN_Format)  | arn:${Partition}:ec2:${Region}:${Account}:ipam-pool-allocation/${IpamPoolAllocationId} | [aws:RequestTag/${TagKey}](#list_ec2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ec2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ec2-aws_TagKeys)<br />[ec2:Attribute](#list_ec2-ec2_Attribute)<br />[ec2:Attribute/${AttributeName}](#list_ec2-ec2_Attribute___AttributeName_)<br />[ec2:Region](#list_ec2-ec2_Region)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-ec2_ResourceTag___TagKey_) |

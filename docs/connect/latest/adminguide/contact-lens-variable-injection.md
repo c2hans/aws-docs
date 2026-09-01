@@ -10,7 +10,7 @@ When you create or manage rules programmatically using Connect Customer APIs (su
 For example, let's say you're setting up a task action and you want to add more context. Following is an example of how you could use variable injections to include the ID of the contact and the ID of the agent in the `Description` field of the task:
 + Customer is unhappy about the phone call. A swear word was detected during the conversation with agent `$.ContactLens.PostCall.Agent.AgentId` in the contact `$.ContactLens.PostCall.ContactId`
 
-When the action is triggered, his string would resolve to "Customer is unhappy about the phone call. A swear word was detected during a conversation with agent 12345678-1234-1234-1234-EXAMPLEID012 in the contact 87654321-1234-1234-1234-EXAMPLEID345"
+When the action is triggered, this string would resolve to "Customer is unhappy about the phone call. A swear word was detected during a conversation with agent 12345678-1234-1234-1234-EXAMPLEID012 in the contact 87654321-1234-1234-1234-EXAMPLEID345"
 
 The following table lists each event source, and the JSONPath to use for fields that support variable injection.
 

@@ -15,6 +15,12 @@ The timestamp when the contact was accepted by the agent.
 Type: Timestamp
 Required: No
 
+ ** ActiveRegion **   <a name="connect-Type-AgentInfo-ActiveRegion"></a>
+The Region where the agent was active when they handled the contact. For Amazon Connect Global Resiliency instances enabled for global routing, this indicates the Region in which the agent's session was established at the time of the contact.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+Required: No
+
  ** AfterContactWorkDuration **   <a name="connect-Type-AgentInfo-AfterContactWorkDuration"></a>
 The difference in time, in whole seconds, between `AfterContactWorkStartTimestamp` and `AfterContactWorkEndTimestamp`.
 Type: Integer

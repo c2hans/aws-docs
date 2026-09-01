@@ -51,7 +51,7 @@ In a warm pool configuration, lifecycle hooks delay instances from being stopped
 By default, Amazon EC2 Auto Scaling terminates your instances when your Auto Scaling group scales in. Then, it launches new instances into the warm pool to replace the instances that were terminated.
 If you want to return instances to the warm pool instead, you can specify an instance reuse policy. This lets you reuse instances that are already configured to serve application traffic. To make sure that your warm pool is not over-provisioned, Amazon EC2 Auto Scaling can terminate instances in the warm pool to reduce its size when it is larger than necessary based on its settings. When terminating instances in the warm pool, it uses the [default termination policy](ec2-auto-scaling-termination-policies.md#default-termination-policy) to choose which instances to terminate first.
 If you want to hibernate instances on scale in and there are existing instances in the Auto Scaling group, they must meet the requirements for instance hibernation. If they don't, when instances return to the warm pool, they will fallback to being stopped instead of being hibernated.
-Currently, you can only specify an instance reuse policy by using the AWS CLI or an SDK. This feature is not available from the console.
+You can specify an instance reuse policy when you create or update a warm pool by using the AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS SDKs. For more information, see [Create a warm pool for an Auto Scaling group](create-warm-pool.md).
 
 ## Prerequisites
 <a name="warm-pool-prerequisites"></a>

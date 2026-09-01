@@ -9,7 +9,7 @@ The solution provides an optional demo UI that you can deploy into your AWS acco
 
  **Screenshot of demo UI showing image source, original image, editing options, preview, code, and encoded URL.**
 
-![demo ui example](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/demo-ui-example.png)
+![Screenshot of the demo UI showing an example image transformation](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/demo-ui-example.png)
 
 Follow this procedure to experiment with the supported image editing features, preview the results, and create example URLs that you can use in your applications:
 
@@ -30,7 +30,7 @@ Follow this procedure to experiment with the supported image editing features, p
 1. In the **Editor** card, adjust the image settings, and select **Preview** to generate the modified image. You can select **Reset** to revert the settings back to their original values.
 
 **Note**
-The Dynamic Image Transformation for Amazon CloudFront demo UI offers a limited set of image edits and doesn’t include the full scope of capabilities offered by the Image Handler API and the image URL signature. We recommended using your own [frontend application](use-the-solution-with-a-frontend-application.md) for image modification.
+The Dynamic Image Transformation for Amazon CloudFront demo UI offers a limited set of image edits and doesn’t include the full scope of capabilities offered by the Image Handler API and the image URL signature. We recommend using your own [frontend application](use-the-solution-with-a-frontend-application.md) for image modification.
 
 ## See also
 

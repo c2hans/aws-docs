@@ -7,54 +7,33 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Disa
 
 Detaches a volume from a WorkSpace Instance.
 
-## Request Syntax
-<a name="API_DisassociateVolume_RequestSyntax"></a>
-
-```
-{
-   "Device": "{{string}}",
-   "DisassociateMode": "{{string}}",
-   "VolumeId": "{{string}}",
-   "WorkspaceInstanceId": "{{string}}"
-}
-```
-
 ## Request Parameters
 <a name="API_DisassociateVolume_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
-
-The request accepts the following data in JSON format.
-
- ** [Device](#API_DisassociateVolume_RequestSyntax) **   <a name="workspacesinstances-DisassociateVolume-request-Device"></a>
+ ** Device **
 Device path of volume to detach.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
 Required: No
 
- ** [DisassociateMode](#API_DisassociateVolume_RequestSyntax) **   <a name="workspacesinstances-DisassociateVolume-request-DisassociateMode"></a>
+ ** DisassociateMode **
 Mode for volume detachment.
 Type: String
 Valid Values: `FORCE | NO_FORCE`
 Required: No
 
- ** [VolumeId](#API_DisassociateVolume_RequestSyntax) **   <a name="workspacesinstances-DisassociateVolume-request-VolumeId"></a>
+ ** VolumeId **
 Volume to be detached.
 Type: String
 Pattern: `vol-[0-9a-zA-Z]{1,63}`
 Required: Yes
 
- ** [WorkspaceInstanceId](#API_DisassociateVolume_RequestSyntax) **   <a name="workspacesinstances-DisassociateVolume-request-WorkspaceInstanceId"></a>
+ ** WorkspaceInstanceId **
 WorkSpace Instance to detach volume from.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
-
-## Response Elements
-<a name="API_DisassociateVolume_ResponseElements"></a>
-
-If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DisassociateVolume_Errors"></a>
@@ -65,7 +44,7 @@ For information about the errors that are common to all actions, see [Common Err
 Indicates insufficient permissions to perform the requested action.
  ** Message **
 Detailed explanation of the access denial.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConflictException **
 Signals a conflict with the current state of the resource.
@@ -75,7 +54,7 @@ Description of the conflict encountered.
 Identifier of the conflicting resource.
  ** ResourceType **
 Type of the conflicting resource.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Indicates an unexpected server-side error occurred.
@@ -93,7 +72,7 @@ Details about the missing resource.
 Identifier of the resource that was not found.
  ** ResourceType **
 Type of the resource that was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 Indicates the request rate has exceeded limits.
@@ -105,7 +84,7 @@ Specific code for the throttling quota.
 Recommended wait time before retrying the request.
  ** ServiceCode **
 Code identifying the service experiencing throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 Indicates invalid input parameters in the request.

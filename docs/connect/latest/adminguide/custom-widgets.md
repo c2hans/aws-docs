@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/custom-widgets
 # Custom widgets
 <a name="custom-widgets"></a>
 
-Create tailored dashboard components from the ground up to meet your specific business needs. Custom widgets allow you to build unique visualizations without any predefined data.
+Create tailored dashboard components from the ground up to meet your specific business needs. With custom widgets, you can build unique visualizations without any predefined data.
 
 ![Add customer widgets in the Profile explorer layout.](http://docs.aws.amazon.com/connect/latest/adminguide/images/custom-widgets-1.png)
 
@@ -104,7 +104,7 @@ The custom table component provides flexible configuration options for displayin
 ## Key value pair
 <a name="key-value-pair"></a>
 
-The Key Value Pair component enables you to create organized displays of related data points in a flexible, readable format.
+With the Key Value Pair component, you can create organized displays of related data points in a flexible, readable format.
 
 ### Overview
 <a name="key-value-pair-overview"></a>
@@ -184,7 +184,7 @@ This component does not currently support `ProfileObjects` in the UI builder.
 ## Key metric
 <a name="key-metric"></a>
 
-The Key Metric component enables you to prominently display critical business metrics, KPIs, and vital statistics in an easily digestible format.
+With the Key Metric component, you can prominently display critical business metrics, KPIs, and vital statistics in an easily digestible format.
 
 ### Overview
 <a name="key-metric-overview"></a>

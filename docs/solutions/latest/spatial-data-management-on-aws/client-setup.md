@@ -67,14 +67,14 @@ The desktop application provides a graphical interface for managing spatial data
 
 Download the appropriate installer for your platform.
 +  **Windows:**
-  +  [SpatialDataPortal\_0.2.3\_x64-setup.exe](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/windows_v2/SpatialDataPortal_0.2.3_x64-setup.exe)
+  +  [SpatialDataPortal\_0.2.4\_x64-setup.exe](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/windows_v2/SpatialDataPortal_0.2.4_x64-setup.exe)
 +  **macOS:**
-  +  **Intel:** [Spatial Data Portal 0.2.3 x64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.3+x64.dmg) – For Intel-based Macs
-  +  **Apple Silicon (M1/M2/M3):** [Spatial Data Portal 0.2.3 aarch64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.3+aarch64.dmg) – Optimized for Apple Silicon
+  +  **Intel:** [Spatial Data Portal 0.2.4 x64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.4+x64.dmg) – For Intel-based Macs
+  +  **Apple Silicon (M1/M2/M3):** [Spatial Data Portal 0.2.4 aarch64.dmg](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/macos_v2/Spatial+Data+Portal+0.2.4+aarch64.dmg) – Optimized for Apple Silicon
 +  **Linux:**
-  +  **AppImage (Universal):** [spatial-data-portal\_0.2.3\_amd64.AppImage](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.3_amd64.AppImage) – No installation required, runs on any Linux distribution
-  +  **DEB Package:** [spatial-data-portal\_0.2.3\_amd64.deb](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.3_amd64.deb) – For Ubuntu, Debian, and derivatives
-  +  **RPM Package:** [spatial-data-portal-0.2.3-1.x86\_64.rpm](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal-0.2.3-1.x86_64.rpm) – For Red Hat, Fedora, SUSE, and derivatives
+  +  **AppImage (Universal):** [spatial-data-portal\_0.2.4\_amd64.AppImage](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.4_amd64.AppImage) – No installation required, runs on any Linux distribution
+  +  **DEB Package:** [spatial-data-portal\_0.2.4\_amd64.deb](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal_0.2.4_amd64.deb) – For Ubuntu, Debian, and derivatives
+  +  **RPM Package:** [spatial-data-portal-0.2.4-1.x86\_64.rpm](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/ubuntu_v2/spatial-data-portal-0.2.4-1.x86_64.rpm) – For Red Hat, Fedora, SUSE, and derivatives
 
 ### Installation instructions
 <a name="installation-instructions"></a>
@@ -120,8 +120,8 @@ Download the appropriate installer for your platform.
 1. Make executable and run:
 
    ```
-   chmod +x spatial-data-portal_0.2.3_amd64.AppImage
-   ./spatial-data-portal_0.2.3_amd64.AppImage
+   chmod +x spatial-data-portal_0.2.4_amd64.AppImage
+   ./spatial-data-portal_0.2.4_amd64.AppImage
    ```
 
 1. (Optional) Integrate with system:
@@ -129,13 +129,13 @@ Download the appropriate installer for your platform.
    ```
    # Move to applications directory
    sudo mkdir -p /opt/spatial-data-management
-   sudo mv spatial-data-portal_0.2.3_amd64.AppImage /opt/spatial-data-management/
+   sudo mv spatial-data-portal_0.2.4_amd64.AppImage /opt/spatial-data-management/
 
    # Create desktop entry
    cat > ~/.local/share/applications/spatial-data-management.desktop <<EOF
    [Desktop Entry]
    Name=Spatial Data Management
-   Exec=/opt/spatial-data-management/spatial-data-portal_0.2.3_amd64.AppImage
+   Exec=/opt/spatial-data-management/spatial-data-portal_0.2.4_amd64.AppImage
    Icon=spatial-data-management
    Type=Application
    Categories=Utility;
@@ -145,7 +145,7 @@ Download the appropriate installer for your platform.
  **Option 2: DEB Package (Ubuntu/Debian)**
 
 ```
-sudo dpkg -i spatial-data-portal_0.2.3_amd64.deb
+sudo dpkg -i spatial-data-portal_0.2.4_amd64.deb
 sudo apt-get install -f  # Fix any dependency issues if needed
 ```
 
@@ -153,13 +153,13 @@ sudo apt-get install -f  # Fix any dependency issues if needed
 
 ```
 # Red Hat/CentOS
-sudo rpm -i spatial-data-portal-0.2.3-1.x86_64.rpm
+sudo rpm -i spatial-data-portal-0.2.4-1.x86_64.rpm
 
 # Fedora (preferred method)
-sudo dnf install spatial-data-portal-0.2.3-1.x86_64.rpm
+sudo dnf install spatial-data-portal-0.2.4-1.x86_64.rpm
 
 # SUSE
-sudo zypper install spatial-data-portal-0.2.3-1.x86_64.rpm
+sudo zypper install spatial-data-portal-0.2.4-1.x86_64.rpm
 ```
 
 ### Configure desktop application
@@ -209,8 +209,8 @@ Download the wheel file (`.whl`) from your IT Administrator or from the Amazon S
 
 **Note**
 Always download the latest available version for the most recent features and bug fixes. For information about all releases, see the [Release notes](release-notes.html).
-+ Download [CLI wheel 0.1.7](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.7-py3-none-any.whl)
-+ Download [Checksum 0.1.7](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.7-py3-none-any.whl.sha256)
++ Download [CLI wheel 0.1.8](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.8-py3-none-any.whl)
++ Download [Checksum 0.1.8](https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/artifacts/cli_v2/amzn_spatial_data_mgmt-0.1.8-py3-none-any.whl.sha256)
 
 #### Step 2: Verify file integrity (recommended)
 <a name="verify-file-integrity"></a>

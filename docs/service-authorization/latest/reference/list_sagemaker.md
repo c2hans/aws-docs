@@ -74,6 +74,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   BatchRebootClusterNodes  **
+  - **SDK client:** sagemaker
+  - **IAM action:**  [sagemaker:BatchRebootClusterNodes](#list_sagemaker-action-BatchRebootClusterNodes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   BatchReplaceClusterNodes  **
+  - **SDK client:** sagemaker
+  - **IAM action:**  [sagemaker:BatchReplaceClusterNodes](#list_sagemaker-action-BatchReplaceClusterNodes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateAIBenchmarkJob  **
   - **SDK client:** sagemaker
   - **IAM action:**  [sagemaker:AddTags](#list_sagemaker-action-AddTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -1337,6 +1351,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeTrainingPlanExtensionHistory  **
+  - **SDK client:** sagemaker
+  - **IAM action:**  [sagemaker:DescribeTrainingPlanExtensionHistory](#list_sagemaker-action-DescribeTrainingPlanExtensionHistory)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   DescribeTransformJob  **
   - **SDK client:** sagemaker
   - **IAM action:**  [sagemaker:DescribeTransformJob](#list_sagemaker-action-DescribeTransformJob)
@@ -1403,6 +1424,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   EnableSagemakerServicecatalogPortfolio  **
   - **SDK client:** sagemaker
   - **IAM action:**  [sagemaker:EnableSagemakerServicecatalogPortfolio](#list_sagemaker-action-EnableSagemakerServicecatalogPortfolio)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   ExtendTrainingPlan  **
+  - **SDK client:** sagemaker
+  - **IAM action:**  [sagemaker:ExtendTrainingPlan](#list_sagemaker-action-ExtendTrainingPlan)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -2807,6 +2835,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [training-job\*](#list_sagemaker-resource-training-job) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [BatchRebootClusterNodes](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchRebootClusterNodes.html)  **
+  - **Description:** Grants permission to reboot nodes in a SageMaker HyperPod cluster
+  - **Resource types (\*required):** [cluster\*](#list_sagemaker-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [BatchReplaceClusterNodes](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchReplaceClusterNodes.html)  **
+  - **Description:** Grants permission to replace nodes in a SageMaker HyperPod cluster
+  - **Resource types (\*required):** [cluster\*](#list_sagemaker-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [BatchWriteRecord](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_BatchWriteRecord.html)  **
   - **Description:** Grants permission to put a batch of records to one or more feature groups
   - **Resource types (\*required):** [feature-group\*](#list_sagemaker-resource-feature-group)
@@ -2943,7 +2983,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateDomain](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateDomain.html)  **
   - **Description:** Grants permission to create a Domain for SageMaker Studio
   - **Resource types (\*required):** [domain\*](#list_sagemaker-resource-domain)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_sagemaker-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_sagemaker-aws_TagKeys)<br />[sagemaker:AppNetworkAccessType](#list_sagemaker-sagemaker_AppNetworkAccessType)<br />[sagemaker:DomainSharingOutputKmsKeyArn](#list_sagemaker-sagemaker_DomainSharingOutputKmsKeyArn)<br />[sagemaker:ImageArns](#list_sagemaker-sagemaker_ImageArns)<br />[sagemaker:ImageVersionArns](#list_sagemaker-sagemaker_ImageVersionArns)<br />[sagemaker:InstanceTypes](#list_sagemaker-sagemaker_InstanceTypes)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)<br />[sagemaker:StudioLifecycleConfigArns](#list_sagemaker-sagemaker_StudioLifecycleConfigArns)<br />[sagemaker:VolumeKmsKeyArn](#list_sagemaker-sagemaker_VolumeKmsKeyArn)<br />[sagemaker:VpcSecurityGroupIds](#list_sagemaker-sagemaker_VpcSecurityGroupIds)<br />[sagemaker:VpcSubnets](#list_sagemaker-sagemaker_VpcSubnets)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_sagemaker-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_sagemaker-aws_TagKeys)<br />[sagemaker:AppNetworkAccessType](#list_sagemaker-sagemaker_AppNetworkAccessType)<br />[sagemaker:AuthMode](#list_sagemaker-sagemaker_AuthMode)<br />[sagemaker:DomainSharingOutputKmsKeyArn](#list_sagemaker-sagemaker_DomainSharingOutputKmsKeyArn)<br />[sagemaker:ImageArns](#list_sagemaker-sagemaker_ImageArns)<br />[sagemaker:ImageVersionArns](#list_sagemaker-sagemaker_ImageVersionArns)<br />[sagemaker:InstanceTypes](#list_sagemaker-sagemaker_InstanceTypes)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)<br />[sagemaker:StudioLifecycleConfigArns](#list_sagemaker-sagemaker_StudioLifecycleConfigArns)<br />[sagemaker:VolumeKmsKeyArn](#list_sagemaker-sagemaker_VolumeKmsKeyArn)<br />[sagemaker:VpcSecurityGroupIds](#list_sagemaker-sagemaker_VpcSecurityGroupIds)<br />[sagemaker:VpcSubnets](#list_sagemaker-sagemaker_VpcSubnets)
   - **Access level:** Write
 
 - **   [CreateEdgeDeploymentPlan](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEdgeDeploymentPlan.html)  **
@@ -4156,6 +4196,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [DescribeTrainingPlanExtensionHistory](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html)  **
+  - **Description:** Grants permission to retrieve the extension history for a specified training plan
+  - **Resource types (\*required):** [training-plan\*](#list_sagemaker-resource-training-plan)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [DescribeTransformJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTransformJob.html)  **
   - **Description:** Grants permission to return information about a transform job
   - **Resource types (\*required):** [transform-job\*](#list_sagemaker-resource-transform-job)
@@ -4213,6 +4259,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [EnableSagemakerServicecatalogPortfolio](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EnableSagemakerServicecatalogPortfolio.html)  **
   - **Description:** Grants permission to enable a SageMaker Service Catalog Portfolio
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [ExtendTrainingPlan](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html)  **
+  - **Description:** Grants permission to extend an existing training plan by purchasing an extension offering
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Write
@@ -4923,7 +4975,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [PutRecord](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_PutRecord.html)  **
   - **Description:** Grants permission to put a record to a feature group
   - **Resource types (\*required):** [feature-group\*](#list_sagemaker-resource-feature-group)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sagemaker-aws_ResourceTag___TagKey_)<br />[sagemaker:IsUpdateRecord](#list_sagemaker-sagemaker_IsUpdateRecord)<br />[sagemaker:ResourceTag/${TagKey}](#list_sagemaker-sagemaker_ResourceTag___TagKey_)<br />[sagemaker:UpdatableFeatures](#list_sagemaker-sagemaker_UpdatableFeatures)
   - **Access level:** Write
 
 - **   [QueryLineage](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_QueryLineage.html)  **
@@ -5637,6 +5689,7 @@ Amazon SageMaker defines the following condition keys that can be used in the `C
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of all the tag key names associated with the resource in the request | ArrayOfString |
 |   [sagemaker:AcceleratorTypes](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of all accelerator types associated with the resource in the request | ArrayOfString |
 |   [sagemaker:AppNetworkAccessType](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the app network access type associated with the resource in the request | String |
+|   [sagemaker:AuthMode](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the authentication mode specified in the request | String |
 |   [sagemaker:BearerTokenType](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the type of bearer token used in the request | String |
 |   [sagemaker:CurrentCustomerMetadataProperties/${MetadataKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by a current metadata key and value pair associated with the model-package resource | String |
 |   [sagemaker:CurrentModelLifeCycleStage](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the current value of the Stage field in the model life cycle object associated with the model-package resource | String |
@@ -5666,6 +5719,7 @@ Amazon SageMaker defines the following condition keys that can be used in the `C
 |   [sagemaker:ImageVersionArns](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of all image version arns associated with the resource in the request | ArrayOfARN |
 |   [sagemaker:InstanceTypes](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of all instance types associated with the resource in the request | ArrayOfString |
 |   [sagemaker:InterContainerTrafficEncryption](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the inter container traffic encryption associated with the resource in the request | Bool |
+|   [sagemaker:IsUpdateRecord](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by whether the PutRecord authorization was triggered by an UpdateRecord API call. Set to true on UpdateRecord and false on direct PutRecord calls | Bool |
 |   [sagemaker:KeepAlivePeriod](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the keep-alive period associated with the resource in the request | Numeric |
 |   [sagemaker:MaxRuntimeInSeconds](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the max runtime in seconds associated with the resource in the request | Numeric |
 |   [sagemaker:MinimumInstanceMetadataServiceVersion](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the minimum instance metadata service version used by the resource in the request | String |
@@ -5690,6 +5744,7 @@ Amazon SageMaker defines the following condition keys that can be used in the `C
 |   [sagemaker:StudioLifecycleConfigArns](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of lifecycle configuration ARNs associated with the resource in the request | ArrayOfARN |
 |   [sagemaker:TaggingAction](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the API actions to which a user can apply tags. Uses the name of the API operation that creates a taggable resource to filter access | String |
 |   [sagemaker:TargetModel](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the target model associated with the Multi-Model Endpoint in the request | String |
+|   [sagemaker:UpdatableFeatures](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of feature names being updated by an UpdateRecord API call. Absent on direct PutRecord calls | ArrayOfString |
 |   [sagemaker:UserProfileName](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | You can use the UserProfileName as a policy variable to filter requests from specific user profiles within a SageMaker Domain. This context key is not applicable to user profiles within shared spaces | String |
 |   [sagemaker:VolumeKmsKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the volume kms key associated with the resource in the request. This key has been deprecated. It has been replaced by sagemaker:VolumeKmsKeyArn | ARN |
 |   [sagemaker:VolumeKmsKeyArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the volume kms key associated with the resource in the request. The ARN of the key-id must be used | ARN |

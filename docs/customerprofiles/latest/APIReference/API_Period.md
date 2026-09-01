@@ -13,13 +13,13 @@ Defines a limit and the time period during which it is enforced.
  ** Unit **   <a name="connect-Type-connect-customer-profiles_Period-Unit"></a>
 The unit of time.
 Type: String
-Valid Values: `HOURS | DAYS | WEEKS | MONTHS`
+Valid Values: `MINUTES | HOURS | DAYS | WEEKS | MONTHS`
 Required: Yes
 
  ** Value **   <a name="connect-Type-connect-customer-profiles_Period-Value"></a>
 The amount of time of the specified unit.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 24.
+Valid Range: Minimum value of 1. Maximum value of 60.
 Required: Yes
 
  ** MaxInvocationsPerProfile **   <a name="connect-Type-connect-customer-profiles_Period-MaxInvocationsPerProfile"></a>

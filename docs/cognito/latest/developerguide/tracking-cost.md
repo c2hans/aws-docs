@@ -10,7 +10,7 @@ Like with any other AWS service, it's important to understand the effect of your
 Amazon Cognito charges for the following dimensions of your usage.
 + User pool monthly active users (MAUs)—rate varies by [feature plan](cognito-sign-in-feature-plans.md)
 + User pool MAUs signed in with OIDC or SAML federation
-+ Request volume for machine to machine (M2M) authorization with client credentials grants
++ Request volume for machine to machine (M2M) authorization, from both `client_credentials` grants at the token endpoint and the `GetClientToken` API operation
 + Purchased usage above default quotas for some categories of user pool APIs
 
 Additionally, features of your user pool like email messages, SMS messages, and Lambda triggers can incur costs in dependent services. For a complete overview, see [Amazon Cognito Pricing](https://aws.amazon.com/cognito/pricing).
@@ -22,9 +22,9 @@ High-volume events like product launches and opening up to new userbases can inc
 
 You can view and report on your AWS costs in the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/home). You can find your most recent charges for Amazon Cognito in the **Billing and payments** section. Under **Bills**, **Charges by service**, filter on `Cognito` to view your usage. For more information, see [Viewing your bill](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/getting-viewing-bill.html) in the *AWS Billing User Guide*.
 
-To monitor API request rates, review the **Utilization** metric in the Service Quotas console. For example, client credentials requests display as **Rate of ClientAuthentication requests**. In your bill, these requests are associated with the app client that produced them. With this information, you can equitable allocate costs to the tenants in a [multi-tenant architecture](multi-tenant-application-best-practices.md).
+To monitor API request rates, review the **Utilization** metric in the Service Quotas console. For example, both `client_credentials` grant requests to the token endpoint and [GetClientToken](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetClientToken.html) API requests display as **Rate of ClientAuthentication requests**, because they share a request quota. In your bill, these requests are associated with the app client that produced them. With this information, you can equitably allocate costs to the tenants in a [multi-tenant architecture](multi-tenant-application-best-practices.md).
 
-To get a count of M2M requests for a period of time, you can also send [AWS CloudTrail events to CloudWatch Logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html) for analysis. Query your CloudTrail events for `Token_POST` events with a client credentials grant. The following CloudWatch Insights query returns this count.
+To get a count of token-endpoint M2M requests for a period of time, you can also send [AWS CloudTrail events to CloudWatch Logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html) for analysis. Query your CloudTrail events for `Token_POST` events with a client credentials grant. The following CloudWatch Insights query returns this count. To include M2M requests that you make with the `GetClientToken` API operation, use the **Rate of ClientAuthentication requests** utilization metric described earlier in this section.
 
 ```
 filter eventName = "Token_POST" and @message like '"grant_type":["client_credentials"]' | stats count(*)

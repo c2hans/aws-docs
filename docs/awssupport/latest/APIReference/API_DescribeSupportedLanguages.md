@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 Returns a list of supported languages for a specified `categoryCode`, `issueType` and `serviceCode`. The returned supported languages will include a ISO 639-1 code for the `language`, and the language display name.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 ## Request Syntax
 <a name="API_DescribeSupportedLanguages_RequestSyntax"></a>
@@ -17,6 +17,7 @@ If you call the AWS Support API from an account that doesn't have a Business, En
 ```
 {
    "categoryCode": "{{string}}",
+   "dryRun": {{boolean}},
    "issueType": "{{string}}",
    "serviceCode": "{{string}}"
 }
@@ -33,6 +34,10 @@ The request accepts the following data in JSON format.
 The category of problem for the support case. You also use the [DescribeServices](API_DescribeServices.md) operation to get the category code for a service. Each AWS service defines its own set of category codes.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 100.
+
+ ** [dryRun](#API_DescribeSupportedLanguages_RequestSyntax) **   <a name="AWSSupport-DescribeSupportedLanguages-request-dryRun"></a>
+Specifies whether to validate the request without actually returning supported languages. When set to `true`, the request is validated but no languages are returned, and the operation returns a `DryRunOperationException`. When omitted or set to `false`, the request runs normally.
+Type: Boolean
 
  ** [issueType](#API_DescribeSupportedLanguages_RequestSyntax) **   <a name="AWSSupport-DescribeSupportedLanguages-request-issueType"></a>
 The type of issue for the case. You can specify `customer-service` or `technical`.
@@ -75,6 +80,10 @@ Array Members: Minimum number of 0 items. Maximum number of 100 items.
 <a name="API_DescribeSupportedLanguages_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** DryRunOperationException **
+The request was valid, but the operation wasn't performed because `dryRun` was set to `true`.
+HTTP Status Code: 400
 
  ** InternalServerError **
 An internal server error occurred.

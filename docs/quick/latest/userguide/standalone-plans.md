@@ -5,10 +5,10 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-plans.
 # Amazon Quick plans and pricing
 <a name="standalone-plans"></a>
 
-Amazon Quick accounts created at [aws.com/quick](https://aws.com/quick) are available in two plans: **Free** and **Plus**. New accounts receive 30 days of Plus at no cost. For current pricing details, plan limits, and feature comparisons, see [Amazon Quick pricing](https://aws.amazon.com/quick/pricing/).
+Amazon Quick accounts created at [aws.com/quick](https://aws.com/quick) are available in three plans: **Free**, **Plus**, and **Max**. New accounts receive 30 days of Plus at no cost. For current pricing details, plan limits, and feature comparisons, see [Amazon Quick pricing](https://aws.amazon.com/quick/pricing/).
 
 **Note**
-This page covers pricing for Amazon Quick Free and Plus accounts created at aws.com/quick. For pricing information about Amazon Quick accessed through the AWS Management Console, see [Amazon Quick pricing](https://aws.amazon.com/quicksuite/pricing/).
+This page covers pricing for Amazon Quick Free, Plus, and Max accounts created at aws.com/quick. For pricing information about Amazon Quick accessed through the AWS Management Console, see [Amazon Quick pricing](https://aws.amazon.com/quicksuite/pricing/).
 
 **Topics**
 + [Compare plans](#standalone-plans-compare)
@@ -17,9 +17,9 @@ This page covers pricing for Amazon Quick Free and Plus accounts created at aws.
 ## Compare plans
 <a name="standalone-plans-compare"></a>
 
-Amazon Quick has two account types: Free and Plus accounts created at [aws.com/quick](https://aws.com/quick), and Enterprise accounts provisioned through the AWS Management Console. Most features, including chat with AI agents, spaces, Amazon Quick Flows, Amazon Quick Research, Apps in Amazon Quick, extensions, and integrations, are available to both account types.
+Amazon Quick has two account types: accounts created at [aws.com/quick](https://aws.com/quick) (available in the Free, Plus, and Max plans), and Enterprise accounts provisioned through the AWS Management Console, AWS Command Line Interface, or the Amazon Quick API. Most features, including chat with AI agents, spaces, Amazon Quick Flows, Amazon Quick Research, Apps in Amazon Quick, extensions, and integrations, are available to both account types.
 
-Some features are available only to accounts provisioned through the AWS Management Console. These include Amazon Quick Sight dashboards and analytics, Amazon Quick Automate, and API access.
+Some features are available only to Enterprise accounts. These include Amazon Quick Sight dashboards and analytics, Amazon Quick Automate, and API access.
 
 For a detailed comparison of features, limits, and pricing across all plans, see [Amazon Quick pricing](https://aws.amazon.com/quick/pricing/).
 

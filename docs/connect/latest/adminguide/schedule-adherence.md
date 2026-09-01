@@ -36,7 +36,7 @@ Adherence for a given shift activity is determined using the **Default** or **Cu
   An agent is considered adherent when they are scheduled for Productive activities and have the "Available" status, or when they are scheduled for Non-Productive activities and have the "Offline" status or any custom status.
 
   For example, when an agent is scheduled for the Productive activity "Back-office work" and their status in Connect Customer is "Offline," they are considered non-adherent to their schedule.
-+ The **Custom** method enables you to map specific shift activities to agent statuses for determining adherence.
++ With the **Custom** method, you can map specific shift activities to agent statuses for determining adherence.
 
   An agent is adherent when their current status matches any of the mapped statuses for their scheduled activity.
 
@@ -117,7 +117,7 @@ The following image shows an example of choosing Schedule Adherence metrics to a
 ### Published calendar view
 <a name="schedule-adherence-calendarview"></a>
 
-You can also view schedule adherence data in a calendar view. This view provides a visual and intuitive representation of adherence breaches by agent and day, for up to 30 days in the past, alongside their shifts. This visualization allows you to immediately spot adherence breaches across your team, prioritize the most critical incidents, compare with past agent behavior, and take steps to address concerns with the agent. For more information, see [How supervisors view published schedules](scheduling-view-schedule-supervisors.md).
+You can also view schedule adherence data in a calendar view. This view provides a visual and intuitive representation of adherence breaches by agent and day, for up to 30 days in the past, alongside their shifts. With this visualization, you can immediately spot adherence breaches across your team, prioritize the most critical incidents, compare with past agent behavior, and take steps to address concerns with the agent. For more information, see [How supervisors view published schedules](scheduling-view-schedule-supervisors.md).
 
 The following image shows an example of adherence on a calendar view.
 
@@ -197,7 +197,7 @@ For more information about creating rules, see [Create alerts on real-time metri
   In this scenario, the agent would be marked as non-adherent. However, if leaving training is intended, you can adjust the schedule retroactively and adherence will be re-calculated with the new shift.
 + **A historical schedule is changed**
 
-  If an agent's schedule is changed within the last 30 days from the current date (not the date of the schedule), adherence is re-calculated with the new schedule. This allows you to make real-time adjustments to an agent's shift and correctly evaluate their adherence.
+  If an agent's schedule is changed within the last 30 days from the current date (not the date of the schedule), adherence is re-calculated with the new schedule. With this re-calculation, you can make real-time adjustments to an agent's shift and correctly evaluate their adherence.
 + **An agent starts an activity within the configured threshold**
   + The agent is considered adherent.
   + Their status shows **Using thresholds** in the dashboard.

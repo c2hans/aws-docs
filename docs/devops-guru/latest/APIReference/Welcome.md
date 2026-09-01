@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/Welcome.
 
  To learn about the DevOps Guru workflow, see [How DevOps Guru works](https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html#how-it-works). To learn about DevOps Guru concepts, see [Concepts in DevOps Guru](https://docs.aws.amazon.com/devops-guru/latest/userguide/concepts.html).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

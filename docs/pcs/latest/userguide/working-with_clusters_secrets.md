@@ -13,6 +13,7 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 + [Use AWS Secrets Manager to find the cluster secret](working-with_clusters_secrets_find_secrets-manager.md)
 + [Use AWS PCS to find the cluster secret](working-with_clusters_secrets_find_pcs.md)
 + [Get the Slurm cluster secret](working-with_clusters_secrets_get.md)
++ [Use a customer managed key to encrypt the cluster secret](working-with_clusters_secrets_cmk.md)
 + [Rotating cluster secrets in AWS PCS](cluster-secret-rotation.md)
 
 ## See also

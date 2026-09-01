@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 # API reference
 <a name="api-reference"></a>
 
-The ECS architecture includes Admin APIs for managing origins, transformation policies, and mappings. These APIs are secured with AWS Cognito authentication and provide programmatic access to configuration management.
+The ECS architecture includes Admin APIs for managing origins, transformation policies, and mappings. These APIs are secured with Amazon Cognito authentication and provide programmatic access to configuration management.
 
 ## See also
 

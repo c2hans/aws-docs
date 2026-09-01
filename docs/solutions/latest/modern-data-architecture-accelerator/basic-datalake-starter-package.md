@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The Basic Data Lake Starter Package establishes a robust foundation for storing and managing large volumes of data in its native format.
 
-![basic datalake](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/basic_datalake.png)
+ **Basic Data Lake starter kit architecture**
 
-**Basic Data Lake starter kit architecture**
+![Basic Data Lake starter kit — secure S3 data lake with Glue Data Catalog and Athena querying.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/basic_datalake.png)
+
 This S3 Data Lake implementation demonstrates best practices for creating an enterprise data lake on AWS. Access to the data lake can be granted to IAM and federated principals, with comprehensive access controls.
 
 This architecture is particularly effective when:
@@ -62,7 +63,7 @@ You can deploy the Basic Data Lake Starter Package using one of two methods: 1. 
 #### Prerequisites
 <a name="prerequisites-4"></a>
 
-Before deploying using the CloudFormation installer, ensure you have:
+Before deploying using the CloudFormation installer, verify you have:
 
 1. An AWS account with permissions to create the required resources
 
@@ -106,7 +107,7 @@ Check that all CloudFormation stacks have completed successfully and the install
 #### Prerequisites
 <a name="prerequisites-5"></a>
 
-Before deploying the Basic Data Lake Starter Package using the CLI method, ensure you have:
+Before deploying the Basic Data Lake Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 
@@ -139,7 +140,7 @@ cd my_datalake_config
 organization: <your-org-name>
 ```
 
- **Step 3: Deploy the solution** \* Ensure you are authenticated to your target AWS account.
+ **Step 3: Deploy the solution** \* Verify you are authenticated to your target AWS account.
 + Optionally, run the following command to understand what stacks will be deployed:
 
 ```
@@ -156,7 +157,7 @@ npx @aws-mdaa/cli synth
 npx @aws-mdaa/cli deploy
 ```
 
- **Step 4: Verify deployment** \* Check the AWS CloudFormation console to ensure all stacks have been created successfully \* Verify the S3 buckets, Glue Crawler, IAM roles, and other resources have been created
+ **Step 4: Verify deployment** \* Check the AWS CloudFormation console to verify all stacks have been created successfully \* Verify the S3 buckets, Glue Crawler, IAM roles, and other resources have been created
 
 ## Usage Instructions
 <a name="usage-instructions-2"></a>

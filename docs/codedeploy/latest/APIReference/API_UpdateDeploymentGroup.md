@@ -145,6 +145,7 @@ Required: No
 The application name that corresponds to the deployment group to update.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [autoRollbackConfiguration](#API_UpdateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-UpdateDeploymentGroup-request-autoRollbackConfiguration"></a>
@@ -168,12 +169,14 @@ Required: No
 The current name of the deployment group.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [deploymentConfigName](#API_UpdateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-UpdateDeploymentGroup-request-deploymentConfigName"></a>
 The replacement deployment configuration name to use, if you want to change it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [deploymentStyle](#API_UpdateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-UpdateDeploymentGroup-request-deploymentStyle"></a>
@@ -205,6 +208,7 @@ Required: No
 The new name of the deployment group, if you want to change it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [onPremisesInstanceTagFilters](#API_UpdateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-UpdateDeploymentGroup-request-onPremisesInstanceTagFilters"></a>

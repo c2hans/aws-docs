@@ -244,8 +244,11 @@ Source fields must use a resource prefix or a special prefix:
 |  `asset.`  | Asset metadata field (for example, `asset.assetName`, `asset.geoLocation`). |
 |  `file.`  | File metadata field (for example, `file.path`, `file.metadataAttributes`). |
 |  `system.`  | System-generated field (for example, `system.timestamp`). |
+|  `parameters.`  | A parameter supplied when the connector was invoked (for example, `parameters.notifyEmail`). Available only while a trigger is executing. |
+|  `invocation.`  | Built-in fields for the current connector invocation: `invocation.id` and `invocation.callbackUrl`. Available only while a trigger is executing. |
 |  `geoJson:`  | Extracts a GeoJSON bounding box from a location field (for example, `geoJson:asset.geoLocation`). |
 |  `literal:`  | Uses a literal string value (for example, `literal:Feature`, `literal:Point`). |
+|  `interpolate:`  | Substitutes one or more `${variable}` expressions inside a static string template (for example, `interpolate:Run ${invocation.id} completed for ${asset.assetName}`). |
 
 **Note**
 Flat field references like `projectId` are not allowed. Always use the fully qualified form `project.projectId` to avoid ambiguity.
@@ -325,12 +328,18 @@ Examples:
 ### Invocation built-in variables
 <a name="invocation-variables"></a>
 
-SDMA injects the following variables at trigger execution time. They are available in step paths, body templates, output `uri` fields, and anywhere else that supports `${variable}` substitution.
+SDMA injects the following variables at trigger execution time. They are available in step paths, body templates, output `uri` fields, field mapping sources, and anywhere else that supports `${variable}` substitution.
 
 | Variable | Description |
 | --- | --- |
+|  `${eventName}`  | The lifecycle event that fired the trigger (for example, `create`, `uploadComplete`, `onDemand`). |
 |  `${invocation.id}`  | The connector invocation ID for the current execution. Use this to construct unique output paths (for example, an S3 prefix per invocation). |
 |  `${invocation.callbackUrl}`  | The fully-qualified URL a third party should call to resolve a `wait` step’s external completion. Resolves to the `UpdateConnectorInvocation` endpoint for this invocation. Empty if the API endpoint cannot be resolved. |
+|  `${parameters.<name>}`  | A validated parameter supplied when the connector was invoked (for example, `${parameters.notifyEmail}`). The value resolves to an empty string if the parameter was not supplied or the invocation record could not be loaded. |
+
+The caller supplies parameters when triggering a connector through the API (the `parameters` field on `TriggerConnectorOnAsset` or `TriggerConnectorOnProject`). With these parameters, connector configurations can reference truly dynamic, per-invocation values that metadata alone cannot provide.
+
+To mix variables into a mostly-static string in a field mapping source, use the `interpolate:` prefix. For example: `interpolate:Run ${invocation.id} completed for ${asset.assetName}`. You must use this prefix when the source is not a single `${variable}` expression.
 
 ### Type coercion
 <a name="type-coercion"></a>
@@ -626,20 +635,23 @@ Each mapping has a `source` and a `target`:
 ```
 
 Supported source types:
-+  **Standard path** — dot-notation path into SDMA metadata, for example `asset.assetName` or `project.projectId`.
-+  **Literal string** — prefix with `literal:` to set a static string value, for example `literal:Feature` or `literal:data`.
-+  **Literal array** — `literal:` with a JSON array, for example `literal:["data"]` or `literal:["thumbnail","overview"]`.
-+  **Literal object** — `literal:` with a JSON object, for example `literal:{"format":"GeoTIFF","compression":"deflate"}`.
-+  **File download URL** — use `file.contentUrl` or `asset.files[].contentUrl ` to generate an SDMA API-routed file download URL. Use `file.presignedUrl` or `asset.files[` to generate a direct S3 presigned URL for the file content. SDMA computes both at execution time from the file hash and asset context.
-+  **GeoJSON bounding box** — prefix with `geoJson:` to convert a geometry field to a `[minX, minY, maxX, maxY]` bounding box, for example `geoJson:asset.geoLocation`.
-+  **Timestamp** — use `system.timestamp` to insert the current UTC timestamp in ISO 8601 format.
-+  **Array iteration** — use `[] ` to iterate over arrays, for example `asset.files[` or `asset.files[*].size`.
++  **Standard path** – dot-notation path into SDMA metadata, for example `asset.assetName` or `project.projectId`.
++  **Literal string** – prefix with `literal:` to set a static string value, for example `literal:Feature` or `literal:data`.
++  **Literal array** – `literal:` with a JSON array, for example `literal:["data"]` or `literal:["thumbnail","overview"]`.
++  **Literal object** – `literal:` with a JSON object, for example `literal:{"format":"GeoTIFF","compression":"deflate"}`.
++  **File download URL** – use `file.contentUrl` or `asset.files[].contentUrl ` to generate an SDMA API-routed file download URL. Use `file.presignedUrl` or `asset.files[` to generate a direct S3 presigned URL for the file content. SDMA computes both at execution time from the file hash and asset context.
++  **GeoJSON bounding box** – prefix with `geoJson:` to convert a geometry field to a `[minX, minY, maxX, maxY]` bounding box, for example `geoJson:asset.geoLocation`.
++  **Timestamp** – use `system.timestamp` to insert the current UTC timestamp in ISO 8601 format.
++  **Invocation parameter** – use `parameters.<name>` to reference a parameter supplied when the connector was invoked, for example `parameters.connectorInvocationId`. Available only while a trigger is executing (see [Invocation built-in variables](#invocation-variables)).
++  **Invocation built-ins** – use `invocation.id` or `invocation.callbackUrl` to reference the current connector invocation. Available only while a trigger is executing (see [Invocation built-in variables](#invocation-variables)).
++  **String interpolation** – prefix with `interpolate:` to substitute one or more `${variable}` expressions inside a static string template, for example `interpolate:Run ${invocation.id} completed for ${asset.assetName}`.
++  **Array iteration** – use `[] ` to iterate over arrays, for example `asset.files[` or `asset.files[*].size`.
 
 Supported target types:
-+  **Flat field** — for example `id` or `assetName`.
-+  **Nested path** — dot-separated path that creates nested objects, for example `properties.title`.
-+  **Array index** — sets a specific position in an array, for example `geometry.coordinates[0]`.
-+  **Dynamic dictionary key** — use `${variable}` inside brackets to create dictionary entries keyed by a field value, for example `assets[${file.path}].href`.
++  **Flat field** – for example `id` or `assetName`.
++  **Nested path** – dot-separated path that creates nested objects, for example `properties.title`.
++  **Array index** – sets a specific position in an array, for example `geometry.coordinates[0]`.
++  **Dynamic dictionary key** – use `${variable}` inside brackets to create dictionary entries keyed by a field value, for example `assets[${file.path}].href`.
 
 ### Triggers
 <a name="_triggers-2"></a>

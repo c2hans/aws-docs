@@ -140,16 +140,12 @@ The following is example output.
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet and check the value of `PlatformDetails`.
 
 ```
-Get-EC2Image `
-    -ImageId {{ami-0abcdef1234567890}} | `
-    Select PlatformDetails
+(Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).PlatformDetails
 ```
 
 The following is example output.
 
 ```
-PlatformDetails
----------------
 Linux/UNIX
 ```
 

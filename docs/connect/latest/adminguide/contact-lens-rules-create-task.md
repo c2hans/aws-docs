@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-r
 # Create a rule that generates a task
 <a name="contact-lens-rules-create-task"></a>
 
-Amazon Connect rules enables you to generate tasks. This helps you create traceable actions with owners and provides you visibility on task completion and productivity out the box.
+With Connect Customer rules, you can generate tasks. This helps you create traceable actions with owners and provides you visibility on task completion and productivity out the box.
 
 Following are some examples:
 + Review a contact when the customer is fraudulent. For example, you can create a follow-up task when a customer utters words or phrases that makes them appear potentially fraudulent.
@@ -27,13 +27,13 @@ Following are some examples:
 
    1. **Description**: The description appears in the agent's Contact Control Panel (CCP). Max length: 4096 characters.
 **Note**
- In Name and Description, use **@ to add dynamic variables** that are populated during execution of the rule. For conversational analytics rules and evaluation forms rules, you can add **rule name, instance URL, contact, agent** and **queue** information for the contact that matched the rule. Evaluation forms rules additionally enable you to insert the **evaluation ID**.
+ In Name and Description, use **@ to add dynamic variables** that are populated during execution of the rule. For conversational analytics rules and evaluation forms rules, you can add **rule name, instance URL, contact, agent** and **queue** information for the contact that matched the rule. With evaluation forms rules, you can additionally insert the **evaluation ID**.
 
 ![The task action with dynamic variables.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rules-create-task-dynamic-variables.png)
 
-Other rule types support different variables::
-Real-time metrics rules enable you to enter **rule name, instance URL and list of agents, queues, flows or routing profile** that breached the threshold to trigger the alert.
-Rules for cases allow you to insert **rule name, instance URL** and **case ID**.
+Other rule types support different variables:
+With real-time metrics rules, you can enter **rule name, instance URL and list of agents, queues, flows or routing profile** that breached the threshold to trigger the alert.
+With rules for cases, you can insert **rule name, instance URL** and **case ID**.
 
    1. **Task reference name**: This is a default reference that automatically appears in the agent's CCP.
       + For real-time rules, the task reference links to the Real-time details page.
@@ -76,7 +76,7 @@ The Rules engine generates a task. In the contact record for the task, the voice
 ## About dynamic values for ContactId, AgentId, QueueId, RuleName
 <a name="rules-task-attributes"></a>
 
-The dynamic values in brackets [ ] are called [contact attributes](what-is-a-contact-attribute.md). Contact attributes enable you to store temporary information about the contact so you can use it in a flow.
+The dynamic values in brackets [ ] are called [contact attributes](what-is-a-contact-attribute.md). Contact attributes help you store temporary information about the contact so you can use it in a flow.
 
 When you add contact attributes in brackets [ ] — such as ContactId, AgentId, QueueId, or RuleName — the value is passed from one contact record to another. You can use contact attributes in your flow to branch and route the contact accordingly.
 

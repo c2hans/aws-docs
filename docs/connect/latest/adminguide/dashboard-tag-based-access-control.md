@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/dashboard-tag-
 
 You can use resource tags and access control tags to apply granular access to users, queues, routing profiles, flows, flow modules, evaluation forms, and test cases on analytics user interfaces.
 
-Tag-based access controls enable you to configure granular access to specific resources based on assigned resource tags. You can configure tag-based access controls by using the API or the Connect Customer admin website for supported resources. You must configure resource tags and access control tags before tag-based access control is applied to users, queues, routing profiles, flows, flow modules, evaluation forms, and test cases on analytics pages. For more information, see [Add tags to resources in Connect Customer](tagging.md) and [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
+With tag-based access controls, you can configure granular access to specific resources based on assigned resource tags. You can configure tag-based access controls by using the API or the Connect Customer admin website for supported resources. You must configure resource tags and access control tags before tag-based access control is applied to users, queues, routing profiles, flows, flow modules, evaluation forms, and test cases on analytics pages. For more information, see [Add tags to resources in Connect Customer](tagging.md) and [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
 
 **Topics**
 + [How to enable tag-based access control for dashboards and reports](#dashboard-tbac-enable)

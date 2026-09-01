@@ -58,6 +58,8 @@ The Data Transformation AI agent removes the manual effort of authoring and main
 
 ### What the agent does
 <a name="data-transformation-ai-agent-capabilities"></a>
+
+The Data Transformation AI agent performs the following tasks:
 + Generates conversion logic from your data. For CSV, the agent analyzes sample files you provided at profile creation and produces a base profile : inferring the target FHIR resources and fields, so you begin from a working draft rather than a blank profile. For C-CDA, it tailors the AWS Starter Profile to your documents.
 + Edits conversion logic from natural language. Describe a change in plain language and the agent updates the underlying template or mapping. For example:
   + "Add a mapping for the Medication resource."
@@ -107,6 +109,8 @@ Synchronous transform converts a single input and returns the FHIR result immedi
 
 ### How it works
 <a name="data-transformation-sync-how"></a>
+
+A synchronous transform processes a single input as follows:
 + You submit one input (a C-CDA document or a set of CSV files) against a profile and receive the converted FHIR resources as a FHIR Bundle in the response.
 + The operation is available through the REST API only: it is not exposed as an AWS CLI or SDK command. See [Accessing Data Transformation Agent](data-transformation.md#data-transformation-accessing).
 + You can enable drift detection on a sync call by setting DriftDetectionEnabled to true to see, in the response, which source elements a profile does not yet capture: useful while iterating on a mapping.
@@ -133,11 +137,15 @@ A bulk transformation job converts a large dataset from Amazon S3 using a publis
 
 ### How it works
 <a name="data-transformation-bulk-jobs-how"></a>
+
+A bulk transformation job works as follows:
 + Point a job at an Amazon S3 prefix of source files, choose a published profile, and choose an output destination. The job scans the input, converts each file (C-CDA) or set of rows (CSV), and writes the results.
 + There is no infrastructure to provision: the job scales automatically.
 
 ### Output modes
 <a name="data-transformation-bulk-jobs-output"></a>
+
+A bulk job supports the following output modes:
 + Standalone: write converted FHIR to an Amazon S3 location. Use the StartDataTransformationJob API.
 + Composite (convert and ingest): convert source files and ingest the resulting FHIR resources directly into a HealthLake datastore in a single step, so the data is immediately queryable. Use the StartFHIRImportJob API with the ProfileId, InputFormat, and optionally DriftDetectionEnabled parameters. The datastore must be in ACTIVE state. See Step 7: Convert and ingest into a HealthLake datastore for a complete example.
 
@@ -214,6 +222,8 @@ Together these mean a job fails less often for avoidable reasons: source validat
 
 ### What the report contains
 <a name="data-transformation-drift-detection-report"></a>
+
+The drift report contains the following information:
 + The overall coverage rate for the conversion.
 + A ranked list of unmapped source sections and elements, so you can prioritize the highest-impact gaps.
 + Any expected resources that were not produced.

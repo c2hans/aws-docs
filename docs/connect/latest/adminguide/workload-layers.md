@@ -47,7 +47,7 @@ The Flow/IVR layer is the primary architectural vehicle for Connect Customer and
 + Call Amazon Lex directly from the flow to invoke a Lex bot for Natural Language Understanding (NLU) and Automatic Speech Recognition (ASR).
 + Play dynamic and natural Text-to-Speech through Amazon Polly, and use SSML and Neural Text-to-Speech (NTTS) to achieve the most natural and human-like text-to-speech voices possible.
 
-Flows enable you to dynamically prompt contacts, collect and store contact attributes, and route appropriately. You can assign a flow to multiple phone numbers, and manage and configure it through Connect Customer.
+With flows, you can dynamically prompt contacts, collect and store contact attributes, and route appropriately. You can assign a flow to multiple phone numbers, and manage and configure it through Connect Customer.
 
 ![A graphic showing flows and IVR.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/contactflowivr.png)
 

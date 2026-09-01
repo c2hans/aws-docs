@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # StatefulRule
 <a name="API_StatefulRule"></a>
 
-A single Suricata rules specification, for use in a stateful rule group. Use this option to specify a simple Suricata rule with protocol, source and destination, ports, direction, and rule options. For information about the Suricata `Rules` format, see [Rules Format](https://suricata.readthedocs.io/en/suricata-7.0.8/rules/intro.html).
+A single Suricata rules specification, for use in a stateful rule group. Use this option to specify a simple Suricata rule with protocol, source and destination, ports, direction, and rule options. For information about the Suricata `Rules` format, see [Rules Format](https://suricata.readthedocs.io/en/suricata-8.0.3/rules/intro.html).
 
 ## Contents
 <a name="API_StatefulRule_Contents"></a>

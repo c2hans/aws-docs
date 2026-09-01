@@ -19,7 +19,7 @@ You can allow your customers to maintain their position in queue without requiri
 ## How callbacks keep their place in queue
 <a name="callback-how-it-works"></a>
 
-You can configure callbacks to remain in the same queue as the original inbound call or to be placed in a separate dedicated queue that you create. This separate queue enables you to get a clearer delineation between active inbound calls and callbacks in real time reports.
+You can configure callbacks to remain in the same queue as the original inbound call or to be placed in a separate dedicated queue that you create. With this separate queue, you can get a clearer delineation between active inbound calls and callbacks in real time reports.
 
 You can make sure that the callback maintains its position in queue even when you place it in a dedicated queue by configuring it at the same priority as the original inbound queue in the routing profile. This configuration makes sure that Connect Customer continues to look at the original start time of the inbound call to maintain order, regardless of whether the customer opted for a callback or to stay on the call for the next available agent.
 
@@ -34,7 +34,7 @@ Use the steps provided in the following overview to set up queued callback.
 + [Add the callback queue to a routing profile](routing-profiles.md). Set this up so that contacts waiting for a call are routed to agents.
 + [Create a flow for queued callbacks](#queued-callback-contact-flow). Set this up to offer the option for a callback to the customer.
 + [Associate a phone number with the inbound flow](associate-claimed-ported-phone-number-to-flow.md).
-+ (Optional) Create a callback creation flow. When a callback is created, this flow is run. The contact is enqueued only when there is a [Transfer to queue](transfer-to-queue.md) set on this flow. You can use the callback creation flow to [Check contact attributes](check-contact-attributes.md) to see if the callback is a duplicate or if the customer issue is resolved before queuing the contact for an agent. This flow also allows you to set a customer queue flow by adding a [Set customer queue flow](set-customer-queue-flow.md) block.
++ (Optional) Create a callback creation flow. When a callback is created, this flow is run. The contact is enqueued only when there is a [Transfer to queue](transfer-to-queue.md) set on this flow. You can use the callback creation flow to [Check contact attributes](check-contact-attributes.md) to see if the callback is a duplicate or if the customer issue is resolved before queuing the contact for an agent. With this flow, you can also set a customer queue flow by adding a [Set customer queue flow](set-customer-queue-flow.md) block.
 + (Optional) Create a customer queue flow for callback. This flow is run if you choose a [Set customer queue flow](set-customer-queue-flow.md) block for the **Set creation flow** option. You can use a [Set customer queue flow](set-customer-queue-flow.md) block to add logic to transfer a contact from one queue to another. Or, you can manually remove a callback from the queue by using the [StopContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContact.html) API.
 + (Optional) Create an outbound whisper flow. When a queued call is placed, the customer hears this message after they pick up and before they connect to the agent. For example, "Hello, this is your scheduled callback..."
 + (Optional) Create an agent whisper flow. This is what the agent hears right after they accept the contact, before they are joined to the customer. For example, "You're about to be connected to Customer John, who requested a refund for..."
@@ -132,7 +132,7 @@ We strongly recommend that you double-check the number entered in **Maximum numb
 1. In the **Optional parameters** section, choose **Set working queue** if you want to transfer the contact to a queue that you set up specifically for callbacks. This option is shown in the following image.
 ![The optional parameters, set a queue set to callback queue.](http://docs.aws.amazon.com/connect/latest/adminguide/images/transfer-to-callback-queue-tab-set-working-queue.png)
 
-   Creating a queue just for callbacks lets you view in your real-time metrics reports how many customers are waiting for callbacks.
+   By creating a queue just for callbacks, you can view in your real-time metrics reports how many customers are waiting for callbacks.
 
    If you don't set a working queue, Connect Customer uses the queue that was set previously in the flow.
 

@@ -30,8 +30,6 @@ Each extension maintains enterprise-grade security and privacy standards while p
 + [Amazon Quick Microsoft PowerPoint extension](powerpoint-extension-guide.md)
 + [Amazon Quick Slack extension](slack-extension-guide.md)
 + [Amazon Quick Microsoft Teams extension](teams-extension-guide.md)
-+ [Amazon Quick Microsoft Outlook extension (Legacy)](legacy-outlook-extension-guide.md)
-+ [Amazon Quick Microsoft Word extension (Legacy)](legacy-word-extension-guide.md)
 
 ## See also
 

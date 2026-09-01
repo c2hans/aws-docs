@@ -12,7 +12,7 @@ HealthLake supports two types of FHIR data store authorization strategies, AWS S
 
 To find the FHIR-related capabilities (behaviors) of an active HealthLake data store, retrieve its [Capability Statement](reference-fhir-capability-statement.md).
 
-The following topics describe how to use HealthLake cloud native actions to create, describe, list, update, tag, and delete FHIR data stores using the AWS CLI, AWS SDKs, and AWS Management Console.
+The following topics describe how to use HealthLake cloud native actions to create, describe, list, update, tag, delete, and restore FHIR data stores using the AWS CLI, AWS SDKs, and AWS Management Console.
 
 **Topics**
 + [Creating a data store](managing-data-stores-create.md)
@@ -21,6 +21,7 @@ The following topics describe how to use HealthLake cloud native actions to crea
 + [Updating a data store](managing-data-stores-update.md)
 + [Tagging data stores](managing-data-stores-tagging.md)
 + [Deleting a data store](managing-data-stores-delete.md)
++ [Restoring a data store](managing-data-stores-restore.md)
 
 ## See also
 

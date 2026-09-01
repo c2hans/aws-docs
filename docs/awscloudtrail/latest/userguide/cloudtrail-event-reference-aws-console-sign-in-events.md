@@ -11,7 +11,7 @@ You can use [AWS User Notifications](https://docs.aws.amazon.com/notifications/l
 
 **Note**
 The Region recorded in a `ConsoleLogin` event varies based on the user type and whether you use a global or regional endpoint to sign in.
-If you sign in as the root user, CloudTrail records the event in us-east-1.
+If you sign in as the root user, CloudTrail records the event in one of the following Regions: us-east-1, us-east-2, or us-west-2.
 If you sign in with an IAM user and use the global endpoint, CloudTrail records the Region of the `ConsoleLogin` event as follows:
 If an account alias cookie is present in the browser, CloudTrail records the `ConsoleLogin` event in one of the following regions: us-east-2, eu-north-1, or ap-southeast-2. This is because the console proxy redirects the user based on the latency from the user sign-in location.
 If an account alias cookie is not present in the browser, CloudTrail records the `ConsoleLogin` event in us-east-1. This is because the console proxy redirects back to the global sign-in.
@@ -255,7 +255,7 @@ The following shows that the sign-process checked whether multi-factor authentic
 ## Example event records for root users
 <a name="cloudtrail-event-reference-aws-console-sign-in-events-root"></a>
 
-The following examples show event records for several `root` user sign-in scenarios. When you sign-in using the root user, CloudTrail records the `ConsoleLogin` event in us-east-1.
+The following examples show event records for several `root` user sign-in scenarios. When you sign-in using the root user, CloudTrail records the `ConsoleLogin` event in one of the following Regions: us-east-1, us-east-2, or us-west-2.
 
 **Topics**
 + [Root user, successful sign-in without MFA](#cloudtrail-signin-root)

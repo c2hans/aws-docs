@@ -11,7 +11,7 @@ Deliver faster-loading, high-quality images that automatically adjust for each u
 
  **Enable seamless CDN migration**
 
-Migrate from other CDN providers with minimal application changes. Use transformation policies and origin mappings to replicate existing image transformation workflows while leveraging AWS’s global infrastructure.
+Migrate from other CDN providers with minimal application changes. Use transformation policies and origin mappings to replicate existing image transformation workflows while leveraging the AWS global infrastructure.
 
  **Reduce operational overhead**
 

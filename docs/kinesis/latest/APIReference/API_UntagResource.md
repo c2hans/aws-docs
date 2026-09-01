@@ -27,7 +27,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the Kinesis resource from which to remove tags.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*stream/\S+`
+Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel)/\S+`
 Required: Yes
 
  ** [StreamId](#API_UntagResource_RequestSyntax) **   <a name="Streams-UntagResource-request-StreamId"></a>

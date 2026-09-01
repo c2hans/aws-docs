@@ -13,6 +13,7 @@ Provides details about a specific WorkSpace Instance type.
  ** InstanceType **   <a name="workspacesinstances-Type-InstanceTypeInfo-InstanceType"></a>
 Unique identifier for the WorkSpace Instance type.
 Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `([a-z0-9-]+)\.([a-z0-9]+)`
 Required: No
 

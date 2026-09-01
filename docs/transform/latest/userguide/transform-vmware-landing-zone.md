@@ -223,7 +223,7 @@ When removing elements, order matters — you must remove children before parent
 ## Related resources
 <a name="transform-vmware-lz-related"></a>
 + [Connect target AWS accounts and regions](transform-vmware-connect-target-account.md)
-+ [Migrate your network to AWS](transform-vmware-migrate-network.md)
++ [Migrate network](transform-vmware-migrate-network.md)
 + [AWS Control Tower User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
 + [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
 + [AWS IAM Identity Center User Guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)

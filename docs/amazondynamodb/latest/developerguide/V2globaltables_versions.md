@@ -148,7 +148,7 @@ The following IAM policy grants permissions to upgrade any global table to versi
 
 ```
 {
-    "version": "2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -163,7 +163,7 @@ The following IAM policy grants permissions to upgrade only the `Music` global t
 
 ```
 {
-    "version": "2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",

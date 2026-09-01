@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/dynamic-image-transformation-
 
 Transform, optimize, and deliver images in real time at a fraction of the cost
 
-- **Version**: 8.0.6
+- **Version**: 8.1.0
 - **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 15 mins

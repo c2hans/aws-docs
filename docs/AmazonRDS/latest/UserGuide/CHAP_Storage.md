@@ -144,9 +144,9 @@ Storage performance for gp3 volumes on Amazon RDS DB engines, including the thre
 
 | DB engine | Storage size | Baseline storage performance | Range of Provisioned IOPS | Range of provisioned storage throughput |
 | --- | --- | --- | --- | --- |
-| Db2, MariaDB, MySQL, and PostgreSQL | 20–399 GiB | 3,000 IOPS/125 MiB/s | N/A | N/A |
+| Db2, MariaDB, MySQL, and PostgreSQL | 20–399 GiB | 3,000 IOPS/125 MiB/s | Not applicable | Not applicable |
 | Db2, MariaDB, MySQL, and PostgreSQL | 400–65,536 GiB | 12,000 IOPS/500 MiB/s | 12,000–64,000 IOPS | 500–4,000 MiB/s |
-| Oracle | 20–199 GiB | 3,000 IOPS/125 MiB/s | N/A | N/A |
+| Oracle | 20–199 GiB | 3,000 IOPS/125 MiB/s | Not applicable | Not applicable |
 | Oracle | 200–65,536 GiB  | 12,000 IOPS/500 MiB/s | 12,000–64,000 IOPS | 500–4,000 MiB/s |
 | SQL Server | 20–65,536 GiB | 3,000 IOPS/125 MiB/s | 3,000–80,000 IOPS | 125–2,000 MiB/s |
 
@@ -386,13 +386,13 @@ The following table shows some exceptions for maximum storage (in TiB). All RDS 
 <tbody>
   <tr><td colspan="6"><b>db.m3 – standard instance classes</b></td></tr>
   <tr><td colspan="6"><b>db.t4g – burstable-performance instance classes</b></td></tr>
-  <tr><td>db.t4g.medium</td><td>N/A</td><td>16</td><td>16</td><td>N/A</td><td>32</td></tr>
-  <tr><td>db.t4g.small</td><td>N/A</td><td>16</td><td>16</td><td>N/A</td><td>16</td></tr>
-  <tr><td>db.t4g.micro</td><td>N/A</td><td>6</td><td>6</td><td>N/A</td><td>6</td></tr>
+  <tr><td>db.t4g.medium</td><td>Not applicable</td><td>16</td><td>16</td><td>Not applicable</td><td>32</td></tr>
+  <tr><td>db.t4g.small</td><td>Not applicable</td><td>16</td><td>16</td><td>Not applicable</td><td>16</td></tr>
+  <tr><td>db.t4g.micro</td><td>Not applicable</td><td>6</td><td>6</td><td>Not applicable</td><td>6</td></tr>
   <tr><td colspan="6"><b>db.t3 – burstable-performance instance classes</b></td></tr>
   <tr><td>db.t3.medium</td><td>32</td><td>16</td><td>16</td><td>32</td><td>32</td></tr>
   <tr><td>db.t3.small</td><td>32</td><td>16</td><td>16</td><td>32</td><td>16</td></tr>
-  <tr><td>db.t3.micro</td><td>N/A</td><td>6</td><td>6</td><td>32</td><td>6</td></tr>
+  <tr><td>db.t3.micro</td><td>Not applicable</td><td>6</td><td>6</td><td>32</td><td>6</td></tr>
   <tr><td colspan="6"><b>db.t2 – burstable-performance instance classes</b></td></tr>
 </tbody>
 </table>

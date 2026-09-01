@@ -26,7 +26,7 @@ For example, consider the following voice interaction scenario: A customer call 
 
 Similarly, in email communications, multiple exchanges between customers and business representatives form comprehensive email threads. Within these threads, each incoming correspondence has the potential to generate its own contact chain, particularly when routing occurs across multiple queues or agent transfers.
 
-The following image illustrates the hierarchical relationship among initial contact ID, related contact ID, and associated contact ID within the Connect Customer contact management framework. This hierarchical relationship enables you to trace and analyze the complete lifecycle of customer interactions.
+The following image illustrates the hierarchical relationship among initial contact ID, related contact ID, and associated contact ID within the Connect Customer contact management framework. With this hierarchical relationship, you can trace and analyze the complete lifecycle of customer interactions.
 
 ![The relationship among initial contact ID related contact ID, and associated contact ID.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-chain.png)
 
@@ -40,13 +40,13 @@ There are two types of contact attributes: system-defined attributes and user-de
 
 Connect Customer defines attribute names (such as channel), and manages attribute values (such as voice and chat). You can create personalized customer experiences in your contact center by using these system-defined contact attributes.
 
-For example, you can customize welcome messages based on the customer's communication channel, for example, whether they're connecting through phone or chat. Essential system-defined attributes include customer endpoints (phone numbers or email addresses), agent names, communication channels (voice or chat), and more. These system-defined attributes enable you to build effective decision-making for processing customer interactions.
+For example, you can customize welcome messages based on the customer's communication channel, for example, whether they're connecting through phone or chat. Essential system-defined attributes include customer endpoints (phone numbers or email addresses), agent names, communication channels (voice or chat), and more. With these system-defined attributes, you can build effective decision-making for processing customer interactions.
 
 ### User-defined attributes
 <a name="user-defined-attributes-ov"></a>
 
 You can capture specific contextual information for your business through user-defined attributes. These attributes encompass details such as line-of-business names, customer account types, and contact drivers. Connect Customer offers two types of user-defined attributes:
-+ **Contact attributes**: These allow you to attach your own business attributes (key-value pairs) to a specific contact ID.
++ **Contact attributes**: With these attributes, you can attach your own business attributes (key-value pairs) to a specific contact ID.
 
   Use contact attributes in use cases that require consistent information sharing across interaction segments during transfers and conferences. For example, when a third agent discovers customer account information during a transfer scenario, storing it as contact attributes on the third agent's contact records would automatically reflect back to the first and second agents' contact records.
 

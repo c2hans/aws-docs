@@ -15,7 +15,7 @@ To automatically evaluate self-service interactions, you need to first [Enable c
 + [Step 2: Set up automation](#step-setup-automation-self-service)
 + [Step 3: Set up a rule to automatically submit evaluations of self-service interactions](#step-setup-rule-self-service)
 
-Note that after setting up automation on an evaluation form (step 2), you can use the same form for AI-assisted (human-in-the loop) evaluations. You can manually start an evaluation at which point AI fills the answers automatically. You can then review or revise answers before submission. This also enables you to test and optimize automation before you set up rules to automatically submit evaluations (step 3).
+Note that after setting up automation on an evaluation form (step 2), you can use the same form for AI-assisted (human-in-the loop) evaluations. You can manually start an evaluation at which point AI fills the answers automatically. You can then review or revise answers before submission. With this approach, you can also test and optimize automation before you set up rules to automatically submit evaluations (step 3).
 
 ## Step 1: Create a draft evaluation form
 <a name="step-create-draft-form-self-service"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sensitive-data
 # Use sensitive data redaction to protect customer privacy using conversational analytics
 <a name="sensitive-data-redaction"></a>
 
-To help you protect your customer's privacy, conversational analytics lets you automatically redact sensitive data from conversation transcripts, audio files, and email transcripts. It redacts sensitive data, such as name, address, and credit card information using Natural Language Understanding.
+To help you protect your customer's privacy, you can use conversational analytics to automatically redact sensitive data from conversation transcripts, audio files, and email transcripts. It redacts sensitive data, such as name, address, and credit card information using Natural Language Understanding.
 
 When you enable conversational analytics on the **Set recording and analytics behavior** block, you then have the option to enable redaction. For more information, see [Enable redaction of sensitive data](enable-analytics.md#enable-redaction).
 

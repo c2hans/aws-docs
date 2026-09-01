@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/optional-widge
 # Personalize the customer experience for in-app, web, and video calling in Connect Customer
 <a name="optional-widget-steps"></a>
 
-The steps in this topic are optional but recommended. They enable you to personalize the customer's experience based on their actions previously taken within your app. This option provides you more control when initiating new calls, including the ability to pass contextual information as attributes.
+The steps in this topic are optional but recommended. With these steps, you can personalize the customer's experience based on their actions previously taken within your app. This option provides you more control when initiating new calls, including the ability to pass contextual information as attributes.
 
  After doing these steps, you'll need to work with your website administrator to set up your web servers to issue JSON Web Tokens (JWTs) for new calls
 

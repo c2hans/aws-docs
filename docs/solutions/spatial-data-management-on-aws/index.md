@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/spatial-data-management-on-aw
 
 Make it easy to store, enrich, and connect your spatial and geospatial data
 
-- **Version**: 1.5.1
+- **Version**: 1.6.0
 - **Released**: 08/2026
 - **Author**: AWS
 - **Est. deployment time**: 40 mins

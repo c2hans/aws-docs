@@ -12,7 +12,7 @@ If you’ve deployed the Lambda architecture stack and have set the Use Existing
 
 1. In the CloudFront console, navigate to the distribution you indicated in the Existing CloudFront Distribution ID template parameter.
 
-1. Select the Origins tab and click **Create origin**.
+1. Select the Origins tab and choose **Create origin**.
 
 1. Set the Origin domain as the API Gateway execution link. This value can be found by placing the Physical ID of the stack’s AWS::ApiGateway::RestApi in the search field and selecting LambdaRestApi under API Gateway.
 

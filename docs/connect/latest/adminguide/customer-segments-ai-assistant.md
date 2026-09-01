@@ -150,7 +150,7 @@ The following image shows an example of this error message.
 +  Try to avoid making repeated requests in quick succession, as this might contribute to system overload.
 +  If the issue continues, reach out to customer support for further assistance.
 
- Remember, this error is typically temporary, and following the provided instructions should allow you to successfully create your desired segment.
+ Remember, this error is typically temporary, and following the provided instructions, you can successfully create your desired segment.
 
 ## Known limitations
 <a name="customer-segments-ai-known-limitations"></a>

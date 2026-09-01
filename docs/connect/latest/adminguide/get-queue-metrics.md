@@ -30,7 +30,7 @@ By default, this block returns queue metrics for the current queue. You can opti
   + [Queue estimated wait time](metrics-definitions.md#estimated-wait-time)
   + [Contact estimated wait time](metrics-definitions.md#estimated-wait-time)
   + [Contact position in queue](metrics-definitions.md#position-in-queue)
-+ You can choose to return metrics by channel, for example, voice or chat. You can also filter by queue or agent. These options enable you to know how many chat and voice contacts are in a queue and if you have agents available to handle those contacts.
++ You can choose to return metrics by channel, for example, voice or chat. You can also filter by queue or agent. With these options, you can know how many chat and voice contacts are in a queue and if you have agents available to handle those contacts.
 + You can route contacts based on queue status, such as number of contacts in queue or agents available. Queue metrics are aggregated across all channels and are returned as attributes. The current queue is used by default.
 + After a **Get metrics** block, use a [Check contact attributes](check-contact-attributes.md) to check metric values and define routing logic based on them, such as number of contacts in a queue, number of available agents, and oldest contact in a queue.
 

@@ -55,6 +55,12 @@ Type: String
 Valid Values: `CREATING | DELETING | ACTIVE | UPDATING`
 Required: Yes
 
+ ** ChannelCount **   <a name="Streams-Type-StreamDescriptionSummary-ChannelCount"></a>
+The number of channels associated with the stream.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 1000000.
+Required: No
+
  ** ConsumerCount **   <a name="Streams-Type-StreamDescriptionSummary-ConsumerCount"></a>
 The number of enhanced fan-out consumers registered with the stream.
 Type: Integer

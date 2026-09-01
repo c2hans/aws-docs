@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-guided-
 # Enable step-by-step guides in Connect Customer
 <a name="enable-guided-experiences-sg"></a>
 
-The following steps allow you to provide your users with the ability to create guided experiences, and allow agents to interact with the experiences.
+With the following steps, you can provide your users with the ability to create guided experiences, and allow agents to interact with the experiences.
 
 1. **Enable admins to create step-by-step guides**
 

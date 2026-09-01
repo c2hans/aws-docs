@@ -49,7 +49,7 @@ The `DetailsByParticipantRole` field sentiment score for contact participants is
 `DetailsByInteraction` field has `CUSTOMER` sentiment score for parts of chat interaction `WithAgent` and `WithoutAgent`. If there were no customer messages in those parts of interaction, the respective field will be absent.
 
 **Note**
-Currently, sentiment is inferred is for `text/plain`, `text/markdown` chat messages only.
+Currently, sentiment is inferred for `text/plain`, `text/markdown` chat messages only.
 
 ### Sentiment shift
 <a name="chat-sentimentshift"></a>
@@ -69,12 +69,12 @@ Sentiment shift provides information about how the participant's sentiment chang
 + `Average`: What is average response time for a participant.
 + `Maximum`: What is the longest response time for a participant. If there are multiple transcript items with the same maximum response time, which ones are they.
 
-To calculate the `Average` and `Maximum` response times for a given participant, they need to respond to a message from another participant (`AGENT` needs to responds to the `CUSTOMER`, or vice versa).
+To calculate the `Average` and `Maximum` response times for a given participant, they need to respond to a message from another participant (`AGENT` needs to respond to the `CUSTOMER`, or vice versa).
 
 For example, if there was only one message from `CUSTOMER` and then only one message from `AGENT` before the chat ended, conversational analytics will calculate a response time for the `AGENT`, but not for the `CUSTOMER`.
 
 **Note**
-Currently, response time is inferred is for ` text/plain`, `text/markdown` chat messages only.
+Currently, response time is inferred for ` text/plain`, `text/markdown` chat messages only.
 
 ## Redaction
 <a name="chat-redaction"></a>

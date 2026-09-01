@@ -17,7 +17,7 @@ To learn how Amazon Keyspaces CDC API actions are recorded with AWS CloudTrail, 
 
 To see the metrics Amazon Keyspaces CDC sends to Amazon CloudWatch, see [Amazon Keyspaces change data capture (CDC) CloudWatch metrics](https://docs.aws.amazon.com/keyspaces/latest/devguide/metrics-dimensions.html#keyspaces-cdc-metrics) in the *Amazon Keyspaces Developer Guide*.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

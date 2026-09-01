@@ -17,7 +17,7 @@ Valid Values: `BEFORE | AFTER | BETWEEN | NOT_BETWEEN | ON`
 Required: Yes
 
  ** Values **   <a name="connect-Type-connect-customer-profiles_DateDimension-Values"></a>
-The values to apply the DimensionType on.
+The values to apply the DimensionType on. To reference a calculated attribute or profile attribute as a dynamic value, use handlebar notation: `{{_profile.ProfileAttributeName}}` or `{{_calculated_attribute.CalculatedAttributeName}}`.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Required: Yes

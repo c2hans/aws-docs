@@ -9,7 +9,7 @@ Amazon Managed Grafana is a fully managed and secure data visualization service 
 
 With Amazon Managed Grafana, you create logically isolated Grafana servers called *workspaces*. In a workspace, you can create Grafana dashboards and visualizations to analyze your metrics, logs, and traces without having to build, package, or deploy any hardware to run Grafana servers.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

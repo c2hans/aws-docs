@@ -5,9 +5,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Create a SAML 2.0 application
 <a name="create-saml-app"></a>
 
+Before you launch the stacks, create the AWS IAM Identity Center SAML 2.0 application. You need its metadata URL to complete [Step 3 of Launch the stacks](step3-deploy-data-stack.md) (deploying the Data stack), so finish this task first.
+
 In this step, you federate your Identity Provider (IdP) to IAM Identity Center through SAML 2.0, and use IAM Identity Center to manage user access to the solution.
 
-1. Log in to the [AWS IAM Identity Center console](https://console.aws.amazon.com/singlesignon/).
+**Note**
+Log in to the account where IAM Identity Center is enabled (usually the **Org Management** account). Make sure that you are in the correct home Region.
+
+1. Log in to the AWS IAM Identity Center console ([console link](https://console.aws.amazon.com/singlesignon/)).
 
 1. From the left pane, under **Application assignments**, choose **Applications**.
 
@@ -17,17 +22,20 @@ In this step, you federate your Identity Provider (IdP) to IAM Identity Center t
 
 1. Under **Application type**, choose **SAML 2.0**, and choose **Next**.
 
-1. On the **Configure application** page, under **Configure application**,
-   + Enter a **Display name** for the application, such as *MyISBApp*,
+1. On the **Configure application** page, under the **Configure application** section, do the following:
+   + Enter a **Display name** for the application, such as *MyISBApp*.
    + Enter a description.
 
 1. Under **Application metadata**, choose **Manually type your metadata values**, and provide temporary placeholder values for **Application ACS URL** and **Application SAML audience**. You will replace these with the real values after the Data stack is deployed.
-   +  **Application ACS URL**: Enter a temporary placeholder URL, such as `https://placeholder.example.com/saml2/idpresponse`. You will replace this with the `CognitoAcsUrl` output from the Data stack in [Update the SAML application configuration](update-saml-app-config.md).
-   +  **Application SAML audience**: Enter a temporary placeholder value, such as `urn:amazon:cognito:sp:placeholder`. You will replace this with the `CognitoAudience` output from the Data stack in [Update the SAML application configuration](update-saml-app-config.md).
+   +  **Application ACS URL** – Enter a temporary placeholder URL, such as `https://placeholder.example.com/saml2/idpresponse`. You will replace this with the `CognitoAcsUrl` output from the Data stack in [Update the SAML application configuration](update-saml-app-config.md).
+   +  **Application SAML audience** – Enter a temporary placeholder value, such as `urn:amazon:cognito:sp:placeholder`. You will replace this with the `CognitoAudience` output from the Data stack in [Update the SAML application configuration](update-saml-app-config.md).
 
 1. Choose **Submit**. The Application details page displays.
 
 1. Copy the **IAM Identity Center SAML metadata URL** from the application details page — you supply this as the `SamlMetadataUrl` parameter when you deploy the Data stack.
+
+**Note**
+After all stacks are deployed, you complete the remaining IAM Identity Center configuration — including mapping application attributes, assigning groups and users, and replacing the placeholder ACS URL and audience with the Data stack outputs. For more information, see [Post-deployment configuration tasks](post-deployment-configuration-tasks.md).
 
 ## See also
 

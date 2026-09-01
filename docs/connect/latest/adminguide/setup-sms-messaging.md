@@ -112,7 +112,7 @@ If you can't create a policy or role, double-check that your Connect Customer in
 ## Step 3: Update flows to branch on SMS contacts
 <a name="branch-on-sms-contacts"></a>
 
-If you have existing flows that you want to branch when a contact uses SMS, add a [Check contact attributes](check-contact-attributes.md) block to your flows. This block enables you to send SMS contacts to a specific queue, or take another action.
+If you have existing flows that you want to branch when a contact uses SMS, add a [Check contact attributes](check-contact-attributes.md) block to your flows. With this block, you can send SMS contacts to a specific queue, or take another action.
 
 1. Add a [Check contact attributes](check-contact-attributes.md) block to your flow, and open the **Properties** page.
 

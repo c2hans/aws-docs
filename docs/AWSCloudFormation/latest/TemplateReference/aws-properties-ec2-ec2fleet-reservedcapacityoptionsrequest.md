@@ -26,7 +26,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[ReservationTypes](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservationtypes)" : {{[ String, ... ]}}
+  "[AllocationStrategy](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-allocationstrategy)" : {{String}},
+  "[CapacityReservationTarget](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-capacityreservationtarget)" : {{CapacityReservationTargetRequest}},
+  "[ReservationTypes](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservationtypes)" : {{[ String, ... ]}},
+  "[ReservedCapacityFallbackOptions](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservedcapacityfallbackoptions)" : {{ReservedCapacityFallbackOptionsRequest}}
 }
 ```
 
@@ -34,18 +37,42 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ec2-ec2fleet-reservedcapacityoptionsrequest-syntax.yaml"></a>
 
 ```
+  [AllocationStrategy](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-allocationstrategy): {{String}}
+  [CapacityReservationTarget](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-capacityreservationtarget): {{
+    CapacityReservationTargetRequest}}
   [ReservationTypes](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservationtypes): {{
     - String}}
+  [ReservedCapacityFallbackOptions](#cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservedcapacityfallbackoptions): {{
+    ReservedCapacityFallbackOptionsRequest}}
 ```
 
 ## Properties
 <a name="aws-properties-ec2-ec2fleet-reservedcapacityoptionsrequest-properties"></a>
 
+`AllocationStrategy`  <a name="cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-allocationstrategy"></a>
+The strategy that determines the order in which EC2 Fleet launches instances across the reservation types that you specify. The only supported value is `prioritized`, which launches instances in the priority order that you specify in your launch template overrides. If you don't specify an allocation strategy, instances are launched in a random order.
+*Required*: No
+*Type*: String
+*Allowed values*: `prioritized`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`CapacityReservationTarget`  <a name="cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-capacityreservationtarget"></a>
+The Capacity Reservations or Capacity Reservation Resource Groups to use for fulfilling the EC2 Fleet request. You can specify Capacity Reservation IDs or a Capacity Reservation Resource Group ARN, but not both.
+*Required*: No
+*Type*: [CapacityReservationTargetRequest](aws-properties-ec2-ec2fleet-capacityreservationtargetrequest.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `ReservationTypes`  <a name="cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservationtypes"></a>
 The types of Capacity Reservations to use for fulfilling the EC2 Fleet request. This is an ordered list: EC2 Fleet attempts to launch instances into each Capacity Reservation type in the order that you specify them before moving on to the next type.
 *Required*: No
 *Type*: Array of String
-*Allowed values*: `interruptible-capacity-reservation`
+*Allowed values*: `on-demand-capacity-reservation | capacity-block | interruptible-capacity-reservation`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ReservedCapacityFallbackOptions`  <a name="cfn-ec2-ec2fleet-reservedcapacityoptionsrequest-reservedcapacityfallbackoptions"></a>
+The fallback behavior for the EC2 Fleet when there is not enough reserved capacity available to meet the target capacity. This member takes a `ReservedCapacityFallbackOptionsRequest` structure, in which you set `MarketTypes` to the instance purchasing options to fall back to.
+*Required*: No
+*Type*: [ReservedCapacityFallbackOptionsRequest](aws-properties-ec2-ec2fleet-reservedcapacityfallbackoptionsrequest.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also

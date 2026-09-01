@@ -289,6 +289,9 @@ A *prefix* is similar to a directory path within an S3 bucket. It allows you to 
 
 Amazon Inspector generates the findings report, encrypts it with the KMS key that you specified, and adds it to the S3 bucket that you specified. Depending on the number of findings that you chose to include in the report, this process can take several minutes or hours. When the export is complete, Amazon Inspector displays a message indicating that your findings report was exported successfully. Optionally choose **View report** in the message to navigate to the report in Amazon S3.
 
+**Note**
+Report generation times out if it takes longer than 12 hours to complete. If your report times out, [add filter criteria](findings-managing-filtering.md) to reduce the number of findings included in the report, and then export the report again.
+
 Note that you can export only one report a time. If an export is currently in progress, wait until that export is complete before you try to export another report.
 
 ## Troubleshoot export errors

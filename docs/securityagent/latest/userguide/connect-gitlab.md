@@ -37,6 +37,9 @@ Before you begin, ensure you have:
   +  **Group** - A group access token with the `read_api` and `read_repository` scopes.
 + Permissions to configure integrations in the AWS Security Agent Management Console
 
+**Important**
+If your GitLab group or project restricts access with an allowed IP range, or a network firewall sits in front of GitLab, add the AWS Security Agent IP addresses for your AWS Region before you register the integration. For the IP addresses, see [AWS Security Agent IP addresses](about-integrations.md#agent-ip-addresses).
+
 **Note**
 Keep the following in mind when you create your GitLab access token:
  **Scope** – The `read_api` scope is sufficient only for read-only operations, such as listing repositories. The full `api` scope is required for any operation that writes to GitLab, including posting code review comments on merge requests and automated remediation (creating merge requests). The `read_repository` and `write_repository` scopes grant Git-over-HTTPS access only. They do **not** grant REST API access, and a token with only those scopes returns `401 Unauthorized` for API operations.

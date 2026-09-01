@@ -16,10 +16,10 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluationform
 ## What do Active, Draft, and Locked mean?
 <a name="evaluationform-active-draft-locked"></a>
 
-An form is in one of the following states:
+A form is in one of the following states:
 + **Active**. A published version of the form that is available to evaluators.
 + **Draft**. An inactive, locked version of the form. A draft is unlocked only when you are working on it.
-+ **Locked**. An evaluation form is locked when you activate or publish it. Even after you deactivate the form, it stays locked, and becomes a historical version of the form. However, you can activate the historical version to save it as new version.
++ **Locked**. An evaluation form is locked when you activate or publish it. Even after you deactivate the form, it stays locked, and becomes a historical version of the form. However, you can activate the historical version to save it as a new version.
 
 ## See also
 

@@ -150,6 +150,7 @@ Required: No
 The name of an AWS CodeDeploy application associated with the user or AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [autoRollbackConfiguration](#API_CreateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-CreateDeploymentGroup-request-autoRollbackConfiguration"></a>
@@ -173,12 +174,14 @@ If specified, the deployment configuration name can be either one of the predefi
 For more information about the predefined deployment configurations in AWS CodeDeploy, see [Working with Deployment Configurations in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html) in the * AWS CodeDeploy User Guide*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [deploymentGroupName](#API_CreateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-CreateDeploymentGroup-request-deploymentGroupName"></a>
 The name of a new deployment group for the specified application.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [deploymentStyle](#API_CreateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-CreateDeploymentGroup-request-deploymentStyle"></a>

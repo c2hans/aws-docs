@@ -9,7 +9,7 @@ Amazon Elastic VMware Service (Amazon EVS) is a service that you can use to depl
 
 Workloads running on Amazon EVS are fully compatible with workloads running on any standard VMware vSphere environment. This means that you can migrate any VMware-based workload to Amazon EVS without workload modification.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

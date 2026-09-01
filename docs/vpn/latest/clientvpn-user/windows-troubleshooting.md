@@ -72,7 +72,7 @@ Skipping profile due to migration error (partial migration)
 ```
 
 **Solution**
-Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for Windows](client-vpn-connect-windows-connecting-how.md).
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect using the AWS provided client](client-vpn-connect-how.md).
 
 If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 

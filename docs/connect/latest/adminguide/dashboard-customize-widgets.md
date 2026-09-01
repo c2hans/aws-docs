@@ -79,7 +79,7 @@ To re-size the columns in the dashboard, select the vertical bars in the column 
 ## Add comparisons to the Trailing performance widgets
 <a name="add-comparisons"></a>
 
-In the widget's **Edit** pane you can choose to show the comparisons in your Trailing performance widgets by choosing the **Show comparison** option. This allows you to see how your performance compares to the previous time range.
+In the widget's **Edit** pane you can choose to show the comparisons in your Trailing performance widgets by choosing the **Show comparison** option. With comparisons, you can see how your performance compares to the previous time range.
 
 ![The Show comparison option in the Edit pane, the Prior information on the chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-add-comparisons.png)
 
@@ -318,7 +318,7 @@ You can turn on compact mode to fit more data on the screen. Compact mode reduce
 When compact mode is on, the following changes apply:
 + Summary widgets use smaller fonts and are no taller than two rows.
 + Compact mode hides widget descriptions.
-+ The last updated time appears next to the widget name as a relative time, for example **Now** or **5 seconds ago**. To see the exact time, hover over it.
++ The last updated time appears next to the widget name as a relative time, for example **Now** or **5 seconds ago**. To see the exact time, pause on it.
 + Compact mode hides widget filters behind a filter icon. Choose the icon to **Show filters** or **Hide filters** for that widget.
 
 The following image shows the filter icon used to show or hide filters for a widget.

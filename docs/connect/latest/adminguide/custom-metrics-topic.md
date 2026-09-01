@@ -78,7 +78,7 @@ When creating a custom metric, you need to choose if the metric is for Service l
 ### Metrics builder
 <a name="metrics-builder"></a>
 
-The metrics builder is an interactive editor that allows you to define an advanced custom metric with metric primitives and mathematical operators. For the full list of primitives and operators, and examples of advanced custom metrics, please see [link](https://docs.aws.amazon.com/connect/latest/adminguide/metric-primitive-definitions.html)
+The metrics builder is an interactive editor that you can use to define an advanced custom metric with metric primitives and mathematical operators. For the full list of primitives and operators, and examples of advanced custom metrics, please see [link](https://docs.aws.amazon.com/connect/latest/adminguide/metric-primitive-definitions.html)
 
 **Steps to create a custom metrics with Metric Builder:**
 
@@ -207,7 +207,7 @@ You can also manage your custom metric using the action buttons on the page:
 ## Clone a custom metric
 <a name="clone-custom-metric"></a>
 
-Cloning a custom metric allows you to copy over an existing custom metric calculation, make changes, and save it as a new custom metric.
+By cloning a custom metric, you can copy over an existing custom metric calculation, make changes, and save it as a new custom metric.
 
 **To clone a custom metric**
 

@@ -49,6 +49,7 @@ The following data is returned in JSON format by the service.
 A list of application names.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 
  ** [nextToken](#API_ListApplications_ResponseSyntax) **   <a name="CodeDeploy-ListApplications-response-nextToken"></a>
 If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list applications call to return the next set of applications in the list.

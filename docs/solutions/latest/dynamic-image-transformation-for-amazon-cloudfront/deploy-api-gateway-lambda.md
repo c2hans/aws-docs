@@ -9,9 +9,7 @@ Follow the step-by-step instructions in this section to configure and deploy the
 
  **Time to deploy:** Approximately 15 minutes
 
-1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `dynamic-image-transformation-for-amazon-cloudfront-lambda` AWS CloudFormation template.
-
-1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `dynamic-image-transformation-for-amazon-cloudfront-lambda` CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=DynamicImageTransformationForAmazonCloudFront&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fdynamic-image-transformation-for-amazon-cloudfront%2Flatest%2Fdynamic-image-transformation-for-amazon-cloudfront-ecs.template&redirectId=ImplementationGuide)
+1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `dynamic-image-transformation-for-amazon-cloudfront-lambda` AWS CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=DynamicImageTransformationForAmazonCloudFront&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fdynamic-image-transformation-for-amazon-cloudfront%2Flatest%2Fdynamic-image-transformation-for-amazon-cloudfront-ecs.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar. For a list of which AWS Regions support this solution, see [Supported AWS Regions](supported-aws-regions.md).
 

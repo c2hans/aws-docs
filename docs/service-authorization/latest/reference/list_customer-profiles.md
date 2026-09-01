@@ -31,6 +31,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   AssociateStreamForSegments  **
+  - **IAM action:**  [profile:AssociateStreamForSegments](#list_customer-profiles-action-AssociateStreamForSegments)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   BatchGetCalculatedAttributeForProfile  **
   - **IAM action:**  [profile:BatchGetCalculatedAttributeForProfile](#list_customer-profiles-action-BatchGetCalculatedAttributeForProfile)
   - **Condition key:**
@@ -197,6 +203,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteSegmentSubscription  **
+  - **IAM action:**  [profile:DeleteSegmentSubscription](#list_customer-profiles-action-DeleteSegmentSubscription)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteWorkflow  **
   - **IAM action:**  [profile:DeleteWorkflow](#list_customer-profiles-action-DeleteWorkflow)
   - **Condition key:**
@@ -208,6 +220,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   DisassociateStreamForSegments  **
+  - **IAM action:**  [profile:DisassociateStreamForSegments](#list_customer-profiles-action-DisassociateStreamForSegments)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   GetAutoMergingPreview  **
   - **IAM action:**  [profile:GetAutoMergingPreview](#list_customer-profiles-action-GetAutoMergingPreview)
@@ -347,11 +365,23 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetSegmentSubscription  **
+  - **IAM action:**  [profile:GetSegmentSubscription](#list_customer-profiles-action-GetSegmentSubscription)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetSimilarProfiles  **
   - **IAM action:**  [profile:GetSimilarProfiles](#list_customer-profiles-action-GetSimilarProfiles)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
+
+- **   GetStreamForSegments  **
+  - **IAM action:**  [profile:GetStreamForSegments](#list_customer-profiles-action-GetStreamForSegments)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   GetUploadJob  **
   - **IAM action:**  [profile:GetUploadJob](#list_customer-profiles-action-GetUploadJob)
@@ -515,6 +545,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListSegmentSubscriptionEvents  **
+  - **IAM action:**  [profile:ListSegmentSubscriptionEvents](#list_customer-profiles-action-ListSegmentSubscriptionEvents)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   ListTagsForResource  **
   - **IAM action:**  [profile:ListTagsForResource](#list_customer-profiles-action-ListTagsForResource)
   - **Condition key:**
@@ -556,6 +592,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   PutProfileObjectType  **
   - **IAM action:**  [profile:PutProfileObjectType](#list_customer-profiles-action-PutProfileObjectType)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [profile:TagResource](#list_customer-profiles-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   PutSegmentSubscription  **
+  - **IAM action:**  [profile:PutSegmentSubscription](#list_customer-profiles-action-PutSegmentSubscription)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   SearchProfiles  **
   - **IAM action:**  [profile:SearchProfiles](#list_customer-profiles-action-SearchProfiles)
@@ -642,6 +684,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [AddProfileKey](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_AddProfileKey.html)  **
   - **Description:** Grants permission to add a profile key
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [AssociateStreamForSegments](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_AssociateStreamForSegments.html)  **
+  - **Description:** Grants permission to associate an Amazon Kinesis data stream to receive segment membership events for a domain
   - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -832,6 +880,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteSegmentSubscription](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteSegmentSubscription.html)  **
+  - **Description:** Grants permission to delete a segment subscription for membership events
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteWorkflow](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteWorkflow.html)  **
   - **Description:** Grants permission to delete a workflow in a domain
   - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
@@ -843,6 +897,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [DisassociateStreamForSegments](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DisassociateStreamForSegments.html)  **
+  - **Description:** Grants permission to disassociate the Amazon Kinesis data stream configured for segment membership events in a domain
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [GetAutoMergingPreview](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetAutoMergingPreview.html)  **
   - **Description:** Grants permission to get a preview of auto merging in a domain
@@ -988,11 +1048,23 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetSegmentSubscription](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentSubscription.html)  **
+  - **Description:** Grants permission to get the configuration, schedule, and status of a segment subscription for membership events
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetSimilarProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSimilarProfiles.html)  **
   - **Description:** Grants permission to get all the similar profiles in the domain
   - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** List
+
+- **   [GetStreamForSegments](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetStreamForSegments.html)  **
+  - **Description:** Grants permission to get information about the segment membership event stream configured for a domain
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
 
 - **   [GetUploadJob](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetUploadJob.html)  **
   - **Description:** Grants permission to get details of an upload job in the domain
@@ -1162,6 +1234,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListSegmentSubscriptionEvents](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListSegmentSubscriptionEvents.html)  **
+  - **Description:** Grants permission to list the most recent segment membership events for a segment
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [ListTagsForResource](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list tags for a resource
   - **Resource types (\*required):** [calculated-attributes](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
@@ -1218,6 +1296,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to put a specific profile object type in the domain
   - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [PutSegmentSubscription](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutSegmentSubscription.html)  **
+  - **Description:** Grants permission to create or update a segment subscription for membership events
+  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html)  **

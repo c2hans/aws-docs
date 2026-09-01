@@ -20,9 +20,19 @@ Required: No
 Type: [AgentSkillsDefinitionDescriptor](API_AgentSkillsDefinitionDescriptor.md) object
 Required: No
 
+ ** agui **   <a name="agentregistry-Type-Descriptors-agui"></a>
+ The AG-UI descriptor, populated when the record exposes an AG-UI protocol endpoint.
+Type: [AgUiDescriptor](API_AgUiDescriptor.md) object
+Required: No
+
  ** custom **   <a name="agentregistry-Type-Descriptors-custom"></a>
  The custom descriptor, populated when the record type is CUSTOM.
 Type: [CustomDescriptor](API_CustomDescriptor.md) object
+Required: No
+
+ ** http **   <a name="agentregistry-Type-Descriptors-http"></a>
+ The HTTP descriptor, populated when the record exposes an HTTP endpoint.
+Type: [HttpDescriptor](API_HttpDescriptor.md) object
 Required: No
 
  ** mcpServer **   <a name="agentregistry-Type-Descriptors-mcpServer"></a>
@@ -34,10 +44,10 @@ Required: No
 <a name="API_Descriptors_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/vestry-data-plane-2025-12-01/Descriptors)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/vestry-data-plane-2025-12-01/Descriptors)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/vestry-data-plane-2025-12-01/Descriptors)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/agent-registry-2025-12-01/Descriptors)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/agent-registry-2025-12-01/Descriptors)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/agent-registry-2025-12-01/Descriptors)
 
 ## See also
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AgentRegistry Data Plane API Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-registry` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Registry Data Plane API Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-registry` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

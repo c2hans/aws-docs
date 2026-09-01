@@ -2,10 +2,21 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/transformation-filter-reference.html
 ---
 
-# Transformation filter reference
+# Apply transformations using URL query parameters
 <a name="transformation-filter-reference"></a>
 
-The ECS architecture supports a comprehensive set of image transformation filters using a simplified syntax. The following table provides the complete filter reference:
+You apply transformations on demand by adding query parameters to the request URL sent to the CloudFront distribution. This is the per-request alternative to defining transformations in a transformation policy: any transformation in the following reference can be requested directly in the URL’s query string, and multiple transformations are combined with `&`. For example:
+
+```
+https://<cloudfront-domain>/<image-path>?format=webp&resize.width=200&blur=30
+```
+
+Grouped (dotted) parameters such as `resize.width` and `convolve.kernel` configure the sub-options of a single transformation.
+
+**Note**
+Query parameters are case-sensitive. Use the exact name and casing shown in the reference (for example, `smartCrop.faces`, not `smartcrop.faces` or `smartCrop.Faces`).
+
+Explicit transformations requested in query parameters take precedence over transformations defined in a transformation policy. For the full precedence order, see **Policy application precedence** in the architecture details. The following table provides the complete filter reference:
 
 | Filter Name | Filter Syntax | Notes |
 | --- | --- | --- |
@@ -22,7 +33,8 @@ The ECS architecture supports a comprehensive set of image transformation filter
 |  **Resize**  |  `resize.width=200` `resize.ratio=0.5` `resize.fit=contain` `resize.withoutEnlargement=true` `resize.background=blue`  | Must specify: height, width, or ratio |
 |  **Rotate**  |  `rotate=90`  | Integer |
 |  **Sharpen**  |  `sharpen=true` or `sharpen=sigma=5` `sharpen.m1=2` `sharpen.m2=1` `sharpen.x1=2` `sharpen.y2=20` `sharpen.y3=20`  | Accepts either boolean to perform a fast mild sharpen, or additional parameters for a slower but more accurate sharpen. See [Sharp docs](https://sharp.pixelplumbing.com/api-operation/#sharpen) for more information. |
-|  **Smart Crop**  |  `smartCrop=true` or `smartCrop.index=1` `smartCrop.padding=200`  | Accepts either boolean or index \+ padding parameters. Boolean will automatically perform cropping. |
+|  **Smart Crop**  |  `smartCrop=true` or one or more of: `smartCrop.faces=true` `smartCrop.faceIndex=0` `smartCrop.labels=Person,Car` `smartCrop.customModelArn=arn:aws:…​` `smartCrop.retainText=true` `smartCrop.retainLogo=true` `smartCrop.aspectRatio=16:9` `smartCrop.padding=10%` `smartCrop.gravity=center` `smartCrop.priorities=aspectRatio,padding` `smartCrop.fallback=cover` `smartCrop.minConfidence=80`  | Content-aware cropping. `smartCrop=true` enables face-based cropping with defaults. To use other detection methods, specify at least one of `faces`, `faceIndex`, `labels`, `customModelArn`, `retainText`, or `retainLogo`. For full parameter details, see [Smart crop parameters](ecs-smart-crop-parameters.md). |
+|  **Content Moderation**  |  `contentModeration=true` or `contentModeration.minConfidence=75` `contentModeration.blur=50` `contentModeration.moderationLabels=Violence,Gambling`  | Detects inappropriate content with Amazon Rekognition and applies a Gaussian blur to matching images. `contentModeration=true` uses defaults. See [Content moderation parameters](ecs-content-moderation-parameters.md). |
 |  **Strip ICC**  |  `stripIcc=true`  | Strip ICC and enforces sRGB color space |
 |  **Strip EXIF**  |  `stripExif=true`  | Removes image metadata |
 |  **Tint**  |  `tint=aliceblue` `tint=[0,0,255,1]`  | Accepts color names or RGBA tuples |

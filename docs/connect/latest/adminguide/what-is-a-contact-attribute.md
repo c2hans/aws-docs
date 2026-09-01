@@ -21,7 +21,7 @@ For example, here are a couple of key-value pairs for the customer name:
 | firstname | Jane |
 | lastname | Doe |
 
-The advantage of contact attributes is that they enable you to store temporary information about the contact so you can use it in the flow.
+The advantage of contact attributes is that you can use them to store temporary information about the contact so you can use it in the flow.
 
 For example, in your welcome messages, you can say their name or thank them for being a member. To do this, you need a way of retrieving data about that specific customer and using it in a flow.
 

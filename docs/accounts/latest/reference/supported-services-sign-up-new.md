@@ -154,7 +154,6 @@ The following AWS services are included in the Free Tier of Sign up for AWS (new
 + AWS Network Manager
   + Global network management across Regions is not supported.
 + AWS Payment Cryptography
-+ AWS Pricing Calculator
 + AWS PrivateLink
 + AWS Resource Access Manager (RAM)
 + AWS Resource Explorer
@@ -341,6 +340,7 @@ The following AWS services are not supported for our new AWS experience, unless 
 + AWS Panorama
 + AWS Parallel Computing Service
 + AWS Partner Network
++ AWS Pricing Calculator
 + AWS Private Certificate Authority
 + AWS Proton
 + AWS re:Post Private

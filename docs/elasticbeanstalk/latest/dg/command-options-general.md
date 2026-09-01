@@ -31,6 +31,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-optio
 + [aws:elasticbeanstalk:sns:topics](#command-options-general-elasticbeanstalksnstopics)
 + [aws:elasticbeanstalk:sqsd](#command-options-general-elasticbeanstalksqsd)
 + [aws:elasticbeanstalk:trafficsplitting](#command-options-general-elasticbeanstalktrafficsplitting)
++ [aws:elasticbeanstalk:windows:activedirectory](#command-options-general-elasticbeanstalkwindowsactivedirectory)
 + [aws:elasticbeanstalk:xray](#command-options-general-elasticbeanstalkxray)
 + [aws:elb:healthcheck](#command-options-general-elbhealthcheck)
 + [aws:elb:loadbalancer](#command-options-general-elbloadbalancer)
@@ -445,6 +446,21 @@ This namespace applies when you set the `DeploymentPolicy` option of the [aws:el
 | --- | --- | --- | --- |
 | NewVersionPercent | The initial percentage of incoming client traffic that Elastic Beanstalk shifts to environment instances running the new application version you're deploying. |  `10`  | `1` to `100` |
 | EvaluationTime | The time period, in minutes, that Elastic Beanstalk waits after an initial healthy deployment before proceeding to shift all incoming client traffic to the new application version that you're deploying. |  `5`  | `3` to `600` |
+
+## aws:elasticbeanstalk:windows:activedirectory
+<a name="command-options-general-elasticbeanstalkwindowsactivedirectory"></a>
+
+Configure the Windows Server instances in your environment to join an AWS Directory Service directory at launch. For more information, see [Joining instances to an Active Directory domain](dotnet-activedirectory.md).
+
+This namespace applies only to Windows Server platform versions released on or after [August 18, 2026](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2026-08-18-windows.html). Earlier platform versions reject these options during validation.
+
+**Namespace: `aws:elasticbeanstalk:windows:activedirectory`**
+
+| **Name**  | **Description**  | **Default**  | **Valid values**  |
+| --- | --- | --- | --- |
+| DirectoryId | The ID of the AWS Directory Service directory that the environment's instances join at launch. Setting this option turns on Active Directory domain join. `DirectoryName` is required when this option is set. | None | `d-` followed by 10 hexadecimal characters (for example, `d-1234567890`) |
+| DirectoryName | The fully qualified DNS name of the directory. Required when `DirectoryId` is set. | None | A fully qualified domain name (for example, `corp.example.com`) |
+| DirectoryOU | The distinguished name of the organizational unit (OU) that instances create their computer objects in. The OU must already exist in the directory. If you don't set this option, computer objects are created in the directory's default container. `DirectoryId` is required when this option is set. | None | An LDAP distinguished name (for example, `OU=WebServers,DC=corp,DC=example,DC=com`) |
 
 ## aws:elasticbeanstalk:xray
 <a name="command-options-general-elasticbeanstalkxray"></a>

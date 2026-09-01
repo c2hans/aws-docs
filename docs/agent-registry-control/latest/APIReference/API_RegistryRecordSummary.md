@@ -39,7 +39,7 @@ Required: Yes
  ** recordType **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-recordType"></a>
 The type of the registry record, such as MCP, AGENT, SKILL, or CUSTOM.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
 Required: Yes
 
  ** recordVersion **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-recordVersion"></a>
@@ -67,6 +67,18 @@ The timestamp when the registry record was last updated.
 Type: Timestamp
 Required: Yes
 
+ ** createdBy **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-createdBy"></a>
+The ID of the AWS account that created the registry record.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `[0-9]{12}`
+Required: No
+
+ ** createdByAutoDetection **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-createdByAutoDetection"></a>
+Specifies whether the registry record was created by auto-detection. `true` indicates the record was automatically created by the service based on the registry's auto-detection configuration; `false` indicates the record was created through a control-plane API call.
+Type: Boolean
+Required: No
+
  ** description **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-description"></a>
 A description of the registry record.
 Type: String
@@ -77,6 +89,12 @@ Required: No
 The human-readable display name of the registry record.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
+ ** provenanceSummaryList **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-provenanceSummaryList"></a>
+The condensed provenance lineage for the registry record. Each entry contains the source relation, source identifier, and source type of an auto-detection lineage entry. Populated for records created by auto-detection.
+Type: Array of [ProvenanceSummary](API_ProvenanceSummary.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
 ## See Also

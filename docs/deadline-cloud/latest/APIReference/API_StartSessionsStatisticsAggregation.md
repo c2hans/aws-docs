@@ -77,7 +77,7 @@ Valid Values: `SUM | MIN | MAX | AVG`
 Required: Yes
 
  ** [timezone](#API_StartSessionsStatisticsAggregation_RequestSyntax) **   <a name="deadlinecloud-StartSessionsStatisticsAggregation-request-timezone"></a>
-The timezone to use for the statistics. Use UTC notation such as "UTC\+8."
+The time zone to use for the statistics. Use UTC notation such as "UTC\+8."
 Type: String
 Length Constraints: Fixed length of 9.
 Pattern: `UTC[-+][01][0-9]:(30|00)`

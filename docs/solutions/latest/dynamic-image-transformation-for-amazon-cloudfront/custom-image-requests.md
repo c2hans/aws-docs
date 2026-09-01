@@ -26,11 +26,11 @@ You can customize most settings for this solution by editing and updating the en
 
 After opening the Lambda function, go to the **Environment variables** section. Use the following key-value pairs to customize the solutions settings.
 
- **Note:** The solution uses the  to determine these initial key values, except for **REWRITE\_MATCH\_PATTERN** and **REWRITE\_SUBSTITUTION**.
+ **Note:** The solution uses the [template parameter inputs](lambda-parameters.md) to determine these initial key values, except for **REWRITE\_MATCH\_PATTERN** and **REWRITE\_SUBSTITUTION**.
 
 | Variable Key | Value Type | Description |
 | --- | --- | --- |
-|  **AUTO\_WEPB**  |  `Yes/No`  | Choose whether to automatically accept webp image formats. |
+|  **AUTO\_WEBP**  |  `Yes/No`  | Choose whether to automatically accept webp image formats. |
 |  **CORS\_ENABLED**  |  `Yes/No`  | Indicates whether to return an **Access-Control-Allow-Origin** header with the image handler API response. |
 |  **CORS\_ORIGIN**  |  `String`  | This value is returned by the API in the **Access-Control-Allow-Origin** header. An asterisk value supports any origin. We recommend specifying a specific origin (Ex: `https://example.domain`) to restrict cross-site access to your API.<br /> **Note:** This value is ignored if **CORS\_ENABLED** is set to `No`. |
 |  **ENABLE\_DEFAULT\_FALLBACK\_IMAGE**  |  `Yes/No`  | Choose whether to return the default fallback image when errors occur. |

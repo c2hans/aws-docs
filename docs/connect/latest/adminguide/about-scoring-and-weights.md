@@ -12,7 +12,7 @@ When scoring is enabled for the evaluation form, you can assign *weights* to sec
 ## Example score
 <a name="example-score"></a>
 
-Let's say you are assigning the score to a question is that critically important to your business. If the answer is a Yes, the agent gets 10 points. For No they get 0 points. This is shown in the following image.
+Let's say you are assigning the score to a question that is critically important to your business. If the answer is a Yes, the agent gets 10 points. For No they get 0 points. This is shown in the following image.
 
 ![The evaluation form page, the scoring tab.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-scoringexample1.png)
 

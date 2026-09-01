@@ -16,6 +16,8 @@ This operation has a limit of one transaction per second per account.
 
 ```
 {
+   "ChannelCount": number,
+   "ChannelCountLimit": number,
    "OnDemandStreamCount": number,
    "OnDemandStreamCountLimit": number,
    "OpenShardCount": number,
@@ -29,6 +31,16 @@ This operation has a limit of one transaction per second per account.
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [ChannelCount](#API_DescribeLimits_ResponseSyntax) **   <a name="Streams-DescribeLimits-response-ChannelCount"></a>
+The number of channels in the account.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 1000000.
+
+ ** [ChannelCountLimit](#API_DescribeLimits_ResponseSyntax) **   <a name="Streams-DescribeLimits-response-ChannelCountLimit"></a>
+The maximum number of channels allowed in the account.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 1000000.
 
  ** [OnDemandStreamCount](#API_DescribeLimits_ResponseSyntax) **   <a name="Streams-DescribeLimits-response-OnDemandStreamCount"></a>
  Indicates the number of data streams with the on-demand capacity mode.

@@ -28,7 +28,7 @@ This guide also contains information to help you get details about the instances
 +  [AWS CLI Reference for AWS CodeDeploy](https://docs.aws.amazon.com/cli/latest/reference/deploy/index.html)
 +  [AWS CodeDeploy Developer Forum](https://forums.aws.amazon.com/forum.jspa?forumID=179)
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

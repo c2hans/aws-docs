@@ -297,7 +297,7 @@ Make sure that the name specified for the source attribute matches the key name 
 ### 2. Store variables as contact attributes
 <a name="store-variables"></a>
 
-If you store the variables as contact attributes, you can use them throughout your flow, and they are included in contact records.
+If you store the variables as contact attributes, you can use them throughout your flow. They are included in contact records.
 
 To store the values returned as contact attributes and then reference them, use a **Set contact attributes** block in your flow after the **Invoke AWS Lambda function** block. Choose **Use attribute**, **External** for the **Type**. Following the example we're using, set **Destination Attribute** to `MyAccountId`, and set the **attribute** to `AccountId`, and do the same for `MyBalance` and **Balance**. This configuration is shown in the following image.
 

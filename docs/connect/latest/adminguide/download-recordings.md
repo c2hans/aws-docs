@@ -47,7 +47,7 @@ In the recording, you might hear only the agent, only the customer, or both the 
    The following image shows a .json file in the Downloads folder. The name of the .json file is the contact ID.
 ![A json file transcript in the downloads folder.](http://docs.aws.amazon.com/connect/latest/adminguide/images/downloaded-json-file.png)
 
-1. To view a downloaded chat transcript, open the context menu for the .json file, and then open it with another app that enables you to view the contents in a readable format.
+1. To view a downloaded chat transcript, open the context menu for the .json file, and then open it with another app that you can use to view the contents in a readable format.
 
    The following image shows a sample downloaded transcript that has been opened using Firefox. The image shows the middle of the transcript, where the agent and customer are chatting.
 ![A json file transcript opened with Firefox.](http://docs.aws.amazon.com/connect/latest/adminguide/images/download-transcript-firefox.png)

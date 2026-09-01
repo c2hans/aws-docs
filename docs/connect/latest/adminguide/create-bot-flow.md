@@ -24,7 +24,7 @@ This topic explains how to add a previously created conversational AI bot to a f
 1. Under **Intents**, choose **Add an intent**, and then enter or search for the customer intents that should trigger the bot.
 ![The Intents section, the Add an intent button, search button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/add-intent.png)
 
-   When you search for intents, you can filter by the locale. The locale is only used for filtering, it is not tied to the locale when the bot is triggered. For example, you might find the BookHotel intent by using the English (US) locale, but the intent can be successfully returned in both English (US) and English (GB).
+   When you search for intents, you can filter by the locale. The locale is only used for filtering, it is not tied to the locale when the bot is triggered. For example, you might find the BookHotel intent by using the English (US) locale. However, the intent can be successfully returned in both English (US) and English (GB).
 
    For more information on finding intents, see [How to find intents](#find-notlisted-intents).
 

@@ -47,26 +47,31 @@ If the target is a Kinesis stream, the role used to send event data to that targ
 If the target is Systems Manager run command, and you specify one or more `InstanceIds` values for the command, the role that you specify must include a policy with the following statement:
 + **Effect**: `Allow`
 + **Action**: `ssm:SendCommand`
-+ **Resources**: `arn:aws:ec2:{{us-east-1}}:{{accountId}}:instance/{{instanceIds}}`, `arn:aws:ssm:{{us-east-1}}:*:document/{{documentName}}`
++ **Resources**:
+  + `arn:aws:ec2:{{region}}:{{accountId}}:instance/{{instanceId1}}`
+  + `arn:aws:ec2:{{region}}:{{accountId}}:instance/{{instanceId2}}`
+  + `arn:aws:ssm:{{region}}:*:document/{{documentName}}`
 
-If the target is Systems Manager run command, and you specify one or more tags for the command, the role that you specify must include a policy with the following two actions:
+If the target is Systems Manager run command and you specify one or more tags to target instances, the role must include the following statement:
 + **Effect**: `Allow`
 + **Action**: `ssm:SendCommand`
-+ **Resources**: `arn:aws:ec2:{{}}:{{accountId}}:instance/*`
-+ **Condition:**
++ **Resources**:
+  + `arn:aws:ec2:{{region}}:{{accountId}}:instance/*`
+  + `arn:aws:ssm:{{region}}:{{accountId}}:managed-instance/*`
++ **Condition**:
 
   ```
   "StringEquals": {
-    "ec2:ResourceTag/*": [
-      "[[tagValues]]"
-    ]
+    "aws:ResourceTag/{{tagKey}}": ["{{tagValues}}"]
   }
   ```
 
-And:
+The `aws:ResourceTag` condition key works for both EC2 instances and hybrid managed instances (on-premises nodes registered with Systems Manager). The `ssm:resourceTag/{{tagKey}}` condition key is also supported for the `SendCommand` action.
+
+The role must also include the following statement to grant access to the Systems Manager document:
 + **Effect**: `Allow`
 + **Action**: `ssm:SendCommand`
-+ **Resources**: `arn:aws:ssm:{{us-east-1}}:*:document/{{documentName}}`
++ **Resource**: `arn:aws:ssm:{{region}}:*:document/{{documentName}}`
 
 ### Step Functions state machines
 <a name="eb-target-permissions-step-functions"></a>

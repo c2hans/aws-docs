@@ -80,10 +80,12 @@ MDAA may be deployed using a number of patterns:
 
 Install a version of Node.js using a method appropriate to your system. MDAA requires nodejs 22.x and npm/npx version 10.x or greater.
 
+As of MDAA 1.8.0, the CLI is cross-platform: the shell commands it generates internally are emitted in the correct syntax for both POSIX shells and Windows `cmd.exe`, so the CLI runs on Windows as well as macOS and Linux. Note that the example commands shown throughout this guide (for example the chained `git clone …​ && cd …​` steps) use POSIX shell syntax; adapt them to your shell when running on Windows.
+
 #### Environment Setup
 <a name="environment-setup"></a>
 
-Ensure your credentials are populated either in your environment or in your \~/.aws/credentials file. Also, ensure your AWS region is specified either in your environment or in your \~/.aws/config file:
+Verify your credentials are populated either in your environment or in your \~/.aws/credentials file. Also, verify your AWS region is specified either in your environment or in your \~/.aws/config file:
 
 ```
 [default]
@@ -174,7 +176,7 @@ Any CLI params not recognized by MDAA CLI will be pushed down to the CDK/Terrafo
 
 MDAA can be installed from a private NPM package repo, and will also attempt to install MDAA modules from a private NPM repo. This is necessary if specific MDAA versions are specified in mdaa.yaml.
 
-Ensure that your private NPM repo is accessible and contains the appropriate MDAA NPM artifacts. If using a localhost based NPM repo (such as Verdaccio), ensure it is running on localhost and updated with the latest MDAA packages from S3 (See [PREDEPLOYMENT](https://github.com/aws/modern-data-architecture-accelerator/blob/main/PREDEPLOYMENT.md)). When executed from its NPM package, MDAA will also attempt to NPM install each MDAA module from NPM repo.
+Verify that your private NPM repo is accessible and contains the appropriate MDAA NPM artifacts. If using a localhost based NPM repo (such as Verdaccio), verify it is running on localhost and updated with the latest MDAA packages from S3 (See [PREDEPLOYMENT](https://github.com/aws/modern-data-architecture-accelerator/blob/main/PREDEPLOYMENT.md)). When executed from its NPM package, MDAA will also attempt to NPM install each MDAA module from NPM repo.
 
 Install MDAA from your private NPM repository using:
 

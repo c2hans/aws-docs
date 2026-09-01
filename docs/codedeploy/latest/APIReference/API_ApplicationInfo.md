@@ -19,6 +19,7 @@ Required: No
 The application name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** computePlatform **   <a name="CodeDeploy-Type-ApplicationInfo-computePlatform"></a>

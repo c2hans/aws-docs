@@ -16,7 +16,7 @@ You access the library components in the UI builder in the **Create** panel, the
 
 Containers are a core building block to make views. You can move UI components (including other containers) into a container to group them together logically and visually on the page.
 
-To keep the contents of the page relatively consistent as you customize the top level view settings, we recommend using containers in all of your views. Containers also come with column layout. Column layout allows you to organize the contents within a container.
+To keep the contents of the page relatively consistent as you customize the top level view settings, we recommend using containers in all of your views. Containers also come with column layout. With column layout, you can organize the contents within a container.
 
 ## Create a form
 <a name="user-interface-component-library-form-section"></a>

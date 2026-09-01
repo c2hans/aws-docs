@@ -465,9 +465,9 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 <a name="initialize-hierarchical-keyring"></a>
 
 To create a Hierarchical keyring, you must provide the following values:
-+ **A key store name**
++ **A key store**
 
-  The name of the DynamoDB table you, or your key store administrator, created to serve as your key store.
+  The key store that manages and protects your branch keys. You must create and configure your key store before you create the Hierarchical keyring. For more information, see [Key stores in the AWS Database Encryption SDK](keystores.md).
 +
 
   **A cache limit time to live (TTL)**
@@ -500,6 +500,75 @@ Your Hierarchical keyrings will share the same cache entries in a Shared cache i
 
   If you control access to the KMS key in your Hierarchical keyring with [grants](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html), you must provide all necessary grant tokens when you initialize the keyring.
 
+The following examples show how to configure a key store with a static configuration. Choose your preferred language:
+
+------
+#### [ Java ]
+
+```
+import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
+import software.amazon.awssdk.services.kms.KmsClient;
+import software.amazon.cryptography.keystore.KeyStore;
+import software.amazon.cryptography.keystore.model.KeyStoreConfig;
+import software.amazon.cryptography.keystore.model.KMSConfiguration;
+
+final KeyStore keystore = KeyStore.builder()
+        .KeyStoreConfig(KeyStoreConfig.builder()
+                .ddbClient(DynamoDbClient.create())
+                .ddbTableName({{keyStoreName}})
+                .logicalKeyStoreName({{logicalKeyStoreName}})
+                .kmsClient(KmsClient.create())
+                .kmsConfiguration(KMSConfiguration.builder()
+                        .kmsKeyArn({{kmsKeyArn}})
+                        .build())
+                .build())
+        .build();
+```
+
+------
+#### [ C\# / .NET ]
+
+```
+using Amazon.DynamoDBv2;
+using Amazon.KeyManagementService;
+using AWS.Cryptography.KeyStore;
+
+var kmsConfig = new KMSConfiguration { KmsKeyArn = {{kmsKeyArn}} };
+var keystoreConfig = new KeyStoreConfig
+{
+    KmsClient = new AmazonKeyManagementServiceClient(),
+    KmsConfiguration = kmsConfig,
+    DdbTableName = {{keyStoreName}},
+    DdbClient = new AmazonDynamoDBClient(),
+    LogicalKeyStoreName = {{logicalKeyStoreName}}
+};
+var keystore = new KeyStore(keystoreConfig);
+```
+
+------
+#### [ Rust ]
+
+```
+use aws_db_esdk::key_store::client as keystore_client;
+use aws_db_esdk::key_store::types::key_store_config::KeyStoreConfig;
+use aws_db_esdk::key_store::types::KmsConfiguration;
+
+let sdk_config = aws_config::load_defaults(aws_config::BehaviorVersion::latest()).await;
+let key_store_config = KeyStoreConfig::builder()
+    .kms_client(aws_sdk_kms::Client::new(&sdk_config))
+    .ddb_client(aws_sdk_dynamodb::Client::new(&sdk_config))
+    .ddb_table_name({{key_store_name}})
+    .logical_key_store_name({{logical_key_store_name}})
+    .kms_configuration(KmsConfiguration::KmsKeyArn({{kms_key_arn}}.to_string()))
+    .build()?;
+
+let keystore = keystore_client::Client::from_conf(key_store_config)?;
+```
+
+------
+
+After you configure your key store, use the resulting key store object to create your Hierarchical keyring. The Hierarchical keyring examples that follow use the key store object that you configured.
+
 ### Create a Hierarchical keyring with a static branch key ID
 <a name="static-branch-key-id-config"></a>
 
@@ -513,7 +582,7 @@ final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
 final CreateAwsKmsHierarchicalKeyringInput keyringInput = CreateAwsKmsHierarchicalKeyringInput.builder()
-        .keyStore({{branchKeyStoreName}})
+        .keyStore(keystore)
         .branchKeyId({{branch-key-id}})
         .ttlSeconds({{600}})
         .build();
@@ -544,7 +613,7 @@ let mpl = mpl_client::Client::from_conf(mpl_config)?;
 let hierarchical_keyring = mpl
     .create_aws_kms_hierarchical_keyring()
     .branch_key_id({{branch_key_id}})
-    .key_store({{branch_key_store_name}})
+    .key_store(keystore.clone())
     .ttl_seconds({{600}})
     .send()
     .await?;
@@ -693,7 +762,7 @@ The following procedures demonstrate how to create a Hierarchical keyring with a
    let hierarchical_keyring = mpl
        .create_aws_kms_hierarchical_keyring()
        .branch_key_id_supplier(branch_key_id_supplier)
-       .key_store(key_store)
+       .key_store(keystore.clone())
        .ttl_seconds(600)
        .send()
        .await?;
@@ -805,7 +874,7 @@ final MaterialProviders matProv = MaterialProviders.builder()
         .MaterialProvidersConfig(MaterialProvidersConfig.builder().build())
         .build();
 final CreateAwsKmsHierarchicalKeyringInput keyringInput = CreateAwsKmsHierarchicalKeyringInput.builder()
-        .keyStore(branchKeyStoreName)
+        .keyStore(keystore)
         .branchKeyIdSupplier(branchKeyIdSupplier)
         .ttlSeconds({{600}})
         .cache(CacheType.builder() //OPTIONAL
@@ -837,7 +906,7 @@ let provider_config = MaterialProvidersConfig::builder().build()?;
     let kms_keyring = mat_prov
         .create_aws_kms_hierarchical_keyring()
         .branch_key_id(branch_key_id)
-        .key_store(key_store)
+        .key_store(keystore.clone())
         .ttl_seconds({{600}})
         .send()
         .await?;

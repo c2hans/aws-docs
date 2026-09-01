@@ -13,7 +13,7 @@ Supported Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo)
 
 When you view metrics in Connect Customer, you see a consolidated view of agent and contact metrics across all your paired Regions, regardless of which Region you are currently logged into.
 
-For example, if you have 5 agents logged into us-east-1 and available for BasicQueue, and 10 agents logged into us-west-2 and available for BasicQueue, the real-time metrics page shows a total of 15 agents online. This consolidated view enables you to monitor your contact center operations within a single interface.
+For example, if you have 5 agents logged into us-east-1 and available for BasicQueue, and 10 agents logged into us-west-2 and available for BasicQueue, the real-time metrics page shows a total of 15 agents online. This consolidated view helps you monitor your contact center operations within a single interface.
 
 ## Available metrics
 <a name="available-consolidated-metrics"></a>

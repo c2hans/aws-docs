@@ -22,7 +22,7 @@ Upgrading your DB engine and adding the `TIMEZONE_FILE_AUTOUPGRADE` option to an
   modify-db-instance --engine-version {{name}} --option-group-name {{name}} ...
   ```
 
-Your update strategy depends on whether you want to upgrade your database and time zone file together or perform just one of these operations. Keep in mind that if you update your option group and then upgrade your DB engine in separate API operations, it's possible for a time zone file update to be currently in progress when you upgrade your DB engine.
+Your update strategy depends on whether you want to upgrade your database and time zone file together or perform only one of these operations. Keep in mind that if you update your option group and then upgrade your DB engine in separate API operations, it's possible for a time zone file update to be currently in progress when you upgrade your DB engine.
 
 The examples in this section assume the following:
 + You have not yet added `TIMEZONE_FILE_AUTOUPGRADE` to the option group currently associated with your DB instance.

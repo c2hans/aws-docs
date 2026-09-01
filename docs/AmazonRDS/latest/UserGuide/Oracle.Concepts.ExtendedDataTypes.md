@@ -18,7 +18,7 @@ Consider the following when you enable extended data types for your DB instance:
 + When you turn on extended data types for a new or existing DB instance, you must reboot the instance for the change to take effect.
 + After you turn on extended data types, you can't change the DB instance back to use the standard size for data types. If you set the `MAX_STRING_SIZE` parameter back to `STANDARD` it results in the `incompatible-parameters` status.
 **Important**
-Enabling extended data types is irreversible. After you set `MAX_STRING_SIZE` to `EXTENDED`, you cannot revert to `STANDARD`. This means you cannot downgrade to an engine version that does not support extended data types, and logical exports (Data Pump) of tables using extended columns may not be importable into databases using `STANDARD` mode.
+Enabling extended data types is irreversible. After you set `MAX_STRING_SIZE` to `EXTENDED`, you cannot revert to `STANDARD`. This means you cannot downgrade to an engine version that does not support extended data types, and logical exports (Data Pump) of tables using extended columns might not be importable into databases using `STANDARD` mode.
 + When you restore a DB instance that uses extended data types, you must specify a parameter group with the `MAX_STRING_SIZE` parameter set to `EXTENDED`. During restore, if you specify the default parameter group or any other parameter group with `MAX_STRING_SIZE` set to `STANDARD` it results in the `incompatible-parameters` status.
 + When the DB instance status is `incompatible-parameters` because of the `MAX_STRING_SIZE` setting, the DB instance remains unavailable until you set the `MAX_STRING_SIZE` parameter to `EXTENDED` and reboot the DB instance.
 

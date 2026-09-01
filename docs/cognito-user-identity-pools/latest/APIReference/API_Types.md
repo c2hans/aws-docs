@@ -24,6 +24,7 @@ The following data types are supported:
 +  [AuthenticationResultType](API_AuthenticationResultType.md)
 +  [AuthEventType](API_AuthEventType.md)
 +  [ChallengeResponseType](API_ChallengeResponseType.md)
++  [ClientAuthenticationResultType](API_ClientAuthenticationResultType.md)
 +  [ClientSecretDescriptorType](API_ClientSecretDescriptorType.md)
 +  [CloudWatchLogsConfigurationType](API_CloudWatchLogsConfigurationType.md)
 +  [CodeDeliveryDetailsType](API_CodeDeliveryDetailsType.md)

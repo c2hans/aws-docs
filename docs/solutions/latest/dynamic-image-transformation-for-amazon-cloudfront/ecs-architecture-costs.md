@@ -12,7 +12,7 @@ The ECS architecture has higher baseline costs due to always-running infrastruct
 
 Dynamic Image Transformation for Amazon CloudFront uses CloudFront’s pay-as-you-go pricing model by default. However, if you expect your monthly usage on your distribution to be below 50TB of data transfer and 500M image requests, you can optimize costs by switching to CloudFront’s Business or Premium fixed-pricing tiers after deployment.
 
-To switch to these tiers after deployment, navigate to the CloudFront console, select your CloudFront distribution, under the Billing section click "Switch to a plan" and select one of the available fixed pricing plans.
+To switch to these tiers after deployment, navigate to the CloudFront console, select your CloudFront distribution, under the Billing section choose "Switch to a plan" and select one of the available fixed pricing plans.
 
 The pricing estimates below reflect costs when using the fixed-pricing tiers.
 

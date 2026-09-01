@@ -18,13 +18,13 @@ You can attach `AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy` to your users, 
 <a name="AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 16, 2024, 00:08 UTC
-+ **Edited time:** February 12, 2026, 18:02 UTC
++ **Edited time:** August 28, 2026, 21:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy`
 
 ## Policy version
 <a name="AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy-version"></a>
 
-**Policy version:** v7 (default)
+**Policy version:** v8 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -52,6 +52,19 @@ The policy's default version is the version that defines the permissions for the
       "Resource" : "*"
     },
     {
+      "Sid" : "AllowGetConsoleOutput",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:GetConsoleOutput"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
       "Sid" : "AllowReadOnlyAccessSSMResource",
       "Effect" : "Allow",
       "Action" : [
@@ -65,6 +78,16 @@ The policy's default version is the version that defines the permissions for the
       "Resource" : "*"
     },
     {
+      "Sid" : "AllowReadOnlyAccessIAMResource",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetInstanceProfile",
+        "iam:GetRole",
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource" : "*"
+    },
+    {
       "Sid" : "AllowExecuteSSMAutomation",
       "Effect" : "Allow",
       "Action" : [
@@ -72,8 +95,10 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AWS-*UnmanagedEC2*",
+        "arn:aws:ssm:*:*:document/AWS-DiagnoseHybridActivationIssues",
         "arn:aws:ssm:*:*:automation-execution/*",
-        "arn:aws:ssm:*:*:automation-definition/AWS-*UnmanagedEC2*:*"
+        "arn:aws:ssm:*:*:automation-definition/AWS-*UnmanagedEC2*:*",
+        "arn:aws:ssm:*:*:automation-definition/AWS-DiagnoseHybridActivationIssues:*"
       ]
     },
     {

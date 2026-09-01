@@ -90,8 +90,7 @@ Property description not available.
 The name of the endpoint configuration.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-*Minimum*: `0`
+*Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -180,6 +179,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 ####
 <a name="aws-resource-sagemaker-endpointconfig-return-values-fn--getatt-fn--getatt"></a>
+
+`EndpointConfigArn`  <a name="EndpointConfigArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the endpoint configuration.
 
 `EndpointConfigName`  <a name="EndpointConfigName-fn::getatt"></a>
 The name of the endpoint configuration, such as `MyEndpointConfiguration`.

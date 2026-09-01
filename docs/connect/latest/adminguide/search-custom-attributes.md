@@ -23,7 +23,7 @@ By default, a custom attribute isn't indexed until someone with appropriate perm
 
 Assign the following permissions to their security profile:
 + Enable one of the following permissions to access the **Contact Search** page:
-  + **Contact search**. Allows you to search for all contacts.
+  + **Contact search**. You can search for all contacts.
   + **View my contacts**: Allows agents to view only those contacts that they handled.
 + **Contact attributes**: Allows users to view contact attributes. Also controls access to the search filters based on contact attributes.
 + **Configure searchable contact attributes** - **All**: People who have this permission determine what custom data will be searchable (by people who have the **Contact attributes** permission). It allows them to access the following configuration page:

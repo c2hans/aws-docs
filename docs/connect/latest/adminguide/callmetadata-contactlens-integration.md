@@ -31,7 +31,7 @@ For more information, see [Telephony call metadata attributes (call attributes)]
 
 Connect Customer publishes SIP, streaming, and contact events. These events include the metadata gathered from the SIPREC SIP INVITE of the calls. The metadata includes the SIPREC Metadata, SIP headers, fromNumber, toNumber, and others. Here are some things you can do with this event metadata:
 
-1. You can process the metadata in these events to determine your own unique identifier for the calls and correlate the calls with the your own system.
+1. You can process the metadata in these events to determine your own unique identifier for the calls and correlate the calls with your own system.
 
 1.  You can then add your unique identifier for the call into the call's contact attributes by using [Set contact attributes](set-contact-attributes.md) block.
 

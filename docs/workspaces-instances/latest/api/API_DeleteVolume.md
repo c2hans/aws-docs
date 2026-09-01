@@ -7,32 +7,14 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Dele
 
 Deletes a specified volume.
 
-## Request Syntax
-<a name="API_DeleteVolume_RequestSyntax"></a>
-
-```
-{
-   "VolumeId": "{{string}}"
-}
-```
-
 ## Request Parameters
 <a name="API_DeleteVolume_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
-
-The request accepts the following data in JSON format.
-
- ** [VolumeId](#API_DeleteVolume_RequestSyntax) **   <a name="workspacesinstances-DeleteVolume-request-VolumeId"></a>
+ ** VolumeId **
 Identifier of the volume to delete.
 Type: String
 Pattern: `vol-[0-9a-zA-Z]{1,63}`
 Required: Yes
-
-## Response Elements
-<a name="API_DeleteVolume_ResponseElements"></a>
-
-If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteVolume_Errors"></a>
@@ -43,7 +25,7 @@ For information about the errors that are common to all actions, see [Common Err
 Indicates insufficient permissions to perform the requested action.
  ** Message **
 Detailed explanation of the access denial.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConflictException **
 Signals a conflict with the current state of the resource.
@@ -53,7 +35,7 @@ Description of the conflict encountered.
 Identifier of the conflicting resource.
  ** ResourceType **
 Type of the conflicting resource.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Indicates an unexpected server-side error occurred.
@@ -71,7 +53,7 @@ Details about the missing resource.
 Identifier of the resource that was not found.
  ** ResourceType **
 Type of the resource that was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 Indicates the request rate has exceeded limits.
@@ -83,7 +65,7 @@ Specific code for the throttling quota.
 Recommended wait time before retrying the request.
  ** ServiceCode **
 Code identifying the service experiencing throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 Indicates invalid input parameters in the request.

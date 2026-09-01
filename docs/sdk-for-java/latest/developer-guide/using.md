@@ -84,6 +84,7 @@ You'll also find best practices for client reuse, troubleshooting guidance, Lamb
   + [Minimize dependency injection](lambda-optimize-starttime.md#lambda-quick-di)
   + [Use a Maven Archetype targeting AWS Lambda](lambda-optimize-starttime.md#lambda-quick-maven)
   + [Consider Lambda SnapStart for Java](lambda-optimize-starttime.md#lambda-quick-snapstart)
+  + [Consider warming up SDK clients with SdkWarmUp](lambda-optimize-starttime.md#lambda-quick-sdkwarmup)
   + [Version 2.x changes that affect startup time](lambda-optimize-starttime.md#example-client-configuration)
   + [Additional resources](lambda-optimize-starttime.md#lambda-quick-resources)
 + [Warm up SDK clients in the AWS SDK for Java 2.x](sdk-warmup.md)

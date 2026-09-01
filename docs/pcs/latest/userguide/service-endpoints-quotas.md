@@ -64,13 +64,13 @@ Remember to check the current AWS Region setting in the AWS Management Console.
 ### Internal quotas
 <a name="service-endpoints-quotas_internal"></a>
 
-The following quotas are internal and non-adjustable.
+The following quotas are internal. To request a quota increase, create a support case in the [AWS Support Center Console](https://console.aws.amazon.com/support/home#/case/create).
 
 |  **Name**  |  **Default**  |  **Adjustable**  |  **Description**  |
 | --- | --- | --- | --- |
 | Concurrent cluster creation | 1 | No | The maximum number of clusters in the `Creating` state per AWS Region. |
-| Compute node groups per cluster | 10 | No | The maximum number of compute node groups per cluster. |
-| Queues per cluster | 10 | No | The maximum number of queues per cluster. |
+| Compute node groups per cluster | 10 | Yes (via support case) | The maximum number of compute node groups per cluster. |
+| Queues per cluster | 10 | Yes (via support case) | The maximum number of queues per cluster. |
 
 ### Relevant quotas for other AWS services
 <a name="service-endpoints-quotas_other"></a>

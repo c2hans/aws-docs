@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/error-notifica
 
 It's important to know when a specific rule action has failed in a production environment, and what caused the failure. Then you can proactively mitigate such failures in future.
 
-To get real-time insights on the actions that failed to run, you integrate Connect Customer Rules with Amazon EventBridge events. This enables you to be notified when, for example, the "Create task" action failed to run because the maximum number of **Concurrent active tasks per instance** reached the service quota. When this happens, Connect Customer sends error notifications using Amazon EventBridge events.
+To get real-time insights on the actions that failed to run, you integrate Connect Customer Rules with Amazon EventBridge events. With this integration, you can be notified when, for example, the "Create task" action failed to run because the maximum number of **Concurrent active tasks per instance** reached the service quota. When this happens, Connect Customer sends error notifications using Amazon EventBridge events.
 
 Events are emitted on a [best effort](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event.html) basis.
 

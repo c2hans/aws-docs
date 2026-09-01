@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/individual-replicat
 | Network Bandwidth Throttling | No impact. | Supported |
 | Point in time (PIT) policy | Replication server is disconnected as a safety measure. This ensures proper handling of retention policy changes that might affect replication state. | Supported |
 | MAP program tagging | No impact. | Supported |
-| Tags | No impact. | Supported |
+| Tags | Small pause while reconnecting Source Server to new Replicator. | Supported |
 
 ## Replication server configuration
 <a name="replication-server-settings"></a>

@@ -17,7 +17,7 @@ You can group the metrics included in your reports in different ways to provide 
 
 You can group reports by queue, agent, agent hierarchy, routing profile, phone number, email address, channel, Amazon Q, or subtype. Some options are limited to instances using [service linked roles](connect-slr.md). The metric calculations, and therefore metrics values displayed in the report, are different when reports are grouped differently. For example, if you group a report by queue, the value of a metric includes all contacts associated with the queue. If you group a report by agent, the values for the metrics associated with queues might not provide much insight.
 
-When you create a report, the values for calculated metrics are displayed as rows in the report. The rows in the report are grouped by the grouping options you select. Grouping the data enables you to generate global data for your contact center, or more specific data for queues, agents, routing profiles, or agent hierarchy defined in your contact center.
+When you create a report, the values for calculated metrics are displayed as rows in the report. The rows in the report are grouped by the grouping options you select. By grouping the data, you can generate global data for your contact center, or more specific data for queues, agents, routing profiles, or agent hierarchy defined in your contact center.
 
 For example, consider the **Contacts handled** metric. This metric is a count of the contacts handled during the time range defined for the report. Here are the results based on the grouping:
 + **Queue** - The metric is the total number of contacts handled during the time range from that queue by all agents in your contact center.

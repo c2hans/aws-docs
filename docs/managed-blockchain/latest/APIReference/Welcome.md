@@ -11,7 +11,7 @@ Managed Blockchain supports the Hyperledger Fabric and Ethereum open-source fram
 
 The description for each action indicates the framework or frameworks to which it applies. Data types and properties that apply only in the context of a particular framework are similarly indicated.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

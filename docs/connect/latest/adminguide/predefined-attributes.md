@@ -26,7 +26,7 @@ You can create and manage predefined attributes manually by using the Connect Cu
 + A predefined attribute **name** can be up to 100 characters long.
 + A predefined attribute **value** can be up to 100 characters long.
 + The pattern for predefined attribute name and value is `^(?!(aws:|connect:))[\p{L}\p{Z}\p{N}_.:/=+-@']+$`. For example, it can contain any letter, numeric value, whitespace, or `_.:/=+-@'` special characters, but can't start with `aws:` or `connect:`.
-+ You cannot create duplicate predefined attribute names or values. In addition, case sensitivity does not allow you to use duplicate names. For example, a new predefined attribute with the name `language` cannot be created if a predefined attribute with name `Language` exists in your Connect Customer instance.
++ You cannot create duplicate predefined attribute names or values. In addition, case sensitivity means you cannot use duplicate names. For example, a new predefined attribute with the name `language` cannot be created if a predefined attribute with name `Language` exists in your Connect Customer instance.
 + An attribute can only be deleted if it not associated with any agent.
 
   Before deleting an attribute, ensure none of the contacts are waiting for an agent with that attribute or the contact will not find a match.

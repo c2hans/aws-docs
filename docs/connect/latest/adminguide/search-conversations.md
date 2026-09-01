@@ -23,10 +23,10 @@ Chat transcripts are indexed for search when conversational analytics is enabled
 ## Required permissions for searching conversations
 <a name="security-profile-permissions-for-search"></a>
 
-Before you can search conversations, you need the following permissions in your security profile. They allow you to do the type of search you want.
+Before you can search conversations, you need the following permissions in your security profile. With these permissions, you can do the type of search you want.
 + Enable one of the following permissions to access the **Contact Search** page:
-  + **Contact search**. Allows you to search for all contacts.
-  + **View my contacts**: Allows you to search for only those contacts that you handled as an agent.
+  + **Contact search**. You can use it to search for all contacts.
+  + **View my contacts**: You can use it to search for only those contacts that you handled as an agent.
 + **Search contacts by conversation characteristics**. This includes non-talk time, sentiment score, and contact category.
 + **Search contacts by keywords**
 
@@ -78,7 +78,7 @@ When searching by date, you can search up to 8 weeks at a time.
 ## Search for sentiment score or evaluate sentiment shift
 <a name="sentiment-search"></a>
 
-With conversational analytics, you can search conversations for sentiment scores or sentiment shifts on a scale of -5 (most negative) to \+5 (most positive). This enables you to identify patterns and factors for why calls go well or poorly.
+With conversational analytics, you can search conversations for sentiment scores or sentiment shifts on a scale of -5 (most negative) to \+5 (most positive). This helps you identify patterns and factors for why calls go well or poorly.
 
 ![The contact search page, the sentiment score filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-sentiment-score-shift.png)
 

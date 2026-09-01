@@ -72,7 +72,7 @@ In this step, connect to your instance and run Sysprep through a preinstalled ap
 1. On the taskbar, choose the Windows icon, or choose **Win** to open the Start menu.
 
 1. Choose one of these options:
-   + On Windows Server 2022, Windows Server 2019, and Windows Server 2016 instances, choose **Start**, then choose **Ec2LaunchSettings**.
+   + On Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016 instances, choose **Start**, then choose **Ec2LaunchSettings**.
 
 1. In the Administrator Password section, choose **Random (Retrieve from console)**, then choose **Shutdown with Sysprep**.
 ![The Ec2 Launch Settings application on Windows Server 2016 instances.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-ec2launchsettings.png)

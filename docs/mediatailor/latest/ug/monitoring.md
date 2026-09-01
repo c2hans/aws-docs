@@ -15,6 +15,7 @@ Monitoring is an important part of maintaining the reliability, availability, an
 + [Recording AWS Elemental MediaTailor API calls](logging-using-cloudtrail.md)
 + [Receiving AWS Elemental MediaTailor channel assembly alerts](channel-assembly-alerts.md)
 + [Tagging AWS Elemental MediaTailor resources](tagging.md)
++ [Monitoring ad insertion performance with the analytics dashboard](analytics-dashboard.md)
 + [Monitoring AWS media services with workflow monitor](monitor-with-workflow-monitor.md)
 
 ## See also

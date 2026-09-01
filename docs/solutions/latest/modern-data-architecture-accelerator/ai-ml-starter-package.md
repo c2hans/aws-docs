@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The AI/ML Starter Package establishes a comprehensive environment for developing, training, and deploying machine learning models at scale.
 
-![datascience](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/datascience.png)
+ **AI/ML (Basic Data Science) starter kit architecture**
 
-**AI/ML (Basic Data Science) starter kit architecture**
+![AI/ML starter kit — SageMaker Studio team environment integrated with a governed data lake.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/datascience.png)
+
 This implementation demonstrates AWS best practices for creating an enterprise-grade data science platform. It combines data lake capabilities with SageMaker Studio to provide data scientists with the tools they need while maintaining appropriate governance and security controls.
 
 This architecture is particularly effective when:
@@ -60,7 +61,7 @@ You can deploy the AI/ML Starter Package using one of two methods: 1. CloudForma
 #### Prerequisites
 <a name="prerequisites-2"></a>
 
-Before deploying using the CloudFormation installer, ensure you have:
+Before deploying using the CloudFormation installer, verify you have:
 
 1. An AWS account with permissions to create the required resources
 
@@ -107,7 +108,7 @@ Check that all CloudFormation stacks have completed successfully and the install
 #### Prerequisites
 <a name="prerequisites-3"></a>
 
-Before deploying the AI/ML Starter Package using the CLI method, ensure you have:
+Before deploying the AI/ML Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 
@@ -146,7 +147,7 @@ context:
   datascience_team_name: <your datascience team name>
 ```
 
- **Step 3: Deploy the solution** \* Ensure you are authenticated to your target AWS account.
+ **Step 3: Deploy the solution** \* Verify you are authenticated to your target AWS account.
 + Optionally, run the following command to understand what stacks will be deployed:
 
 ```
@@ -163,7 +164,7 @@ npx @aws-mdaa/cli synth
 npx @aws-mdaa/cli deploy
 ```
 
- **Step 4: Verify deployment** \* Check the AWS CloudFormation console to ensure all stacks have been created successfully \* Verify the SageMaker Studio Domain, IAM roles, and other resources have been created
+ **Step 4: Verify deployment** \* Check the AWS CloudFormation console to verify all stacks have been created successfully \* Verify the SageMaker Studio Domain, IAM roles, and other resources have been created
 
 ## Usage Instructions
 <a name="usage-instructions"></a>

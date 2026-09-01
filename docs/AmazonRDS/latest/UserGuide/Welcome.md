@@ -92,7 +92,7 @@ Application servers interact with RDS DB instances. An application server in AWS
 
 **RDS DB instances**
 The EC2 application servers interact with RDS DB instances. The DB instances reside in private subnets within different Availability Zones (AZs) within the same Virtual Private Cloud (VPC). Because the subnets are private, no requests from the internet are permitted.
-The primary DB instance replicates to another DB instance, called a read replica. Both DB instances are in private subnets within the VPC, which means that Internet users can't access them directly.
+The primary DB instance replicates to another DB instance, called a read replica. Both DB instances are in private subnets within the VPC, which means that internet users can't access them directly.
 
 ### DB engines
 <a name="Welcome.Concepts.DBInstance.engine"></a>

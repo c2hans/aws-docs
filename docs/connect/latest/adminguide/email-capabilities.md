@@ -94,7 +94,7 @@ If your customer replies to the latest email message in the thread, the thread f
 
 ![The email thread in a straightforward pattern.](http://docs.aws.amazon.com/connect/latest/adminguide/images/email-threading.png)
 
-If the customer replies to an older message in the email thread, an email thread tree is formed, and the email thread pattern looks something like the example in the following image:
+If the customer replies to an older message in the email thread, an email thread tree is formed. The email thread pattern looks something like the example in the following image:
 
 ![The email thread in a tree pattern.](http://docs.aws.amazon.com/connect/latest/adminguide/images/email-threading-tree.png)
 

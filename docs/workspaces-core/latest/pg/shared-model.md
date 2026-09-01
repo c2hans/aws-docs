@@ -46,6 +46,8 @@ The following responsibilities belong to your company:
 + Customers are responsible for Windows OS updates and security patches for WorkSpaces Core Managed Instances.
 + Customers must provision and attach encrypted Amazon EBS volumes for Amazon WorkSpaces Core managed instances. For more information, refer to Encryption at Rest for EBS Storage. For more information, see [Data Protection in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/data-protection.html#encryption-rest).
 + Additional monitoring, security, and analytic solutions. These solutions are also the responsibility of the customer or partner operating the solution.
++ The L1 hypervisor that you install inside a Amazon WorkSpaces Core Managed Instance when nested virtualization is enabled (for example, KVM or Hyper-V), including its configuration, patching, and security.
++ The L2 virtual machines that run on top of the L1 hypervisor, and all applications and data within the L1 and L2 layers, including their patching and security. For more information about the nested virtualization layers, see [Amazon EC2 nested virtualization](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html).
 
 The following images show the shared responsibility model and shared responsibility with AWS and your partner.
 

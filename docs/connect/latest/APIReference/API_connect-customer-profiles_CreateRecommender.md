@@ -17,6 +17,15 @@ Content-type: application/json
 {
    "Description": "{{string}}",
    "RecommenderConfig": {
+      "DiversityConfig": {
+         "DiversityColumns": [
+            {
+               "CapType": "{{string}}",
+               "Name": "{{string}}",
+               "Target": "{{string}}"
+            }
+         ]
+      },
       "EventsConfig": {
          "EventParametersList": [
             {
@@ -25,6 +34,9 @@ Content-type: application/json
                "EventWeight": {{number}}
             }
          ]
+      },
+      "ExcludedColumns": {
+         "{{string}}" : [ "{{string}}" ]
       },
       "IncludedColumns": {
          "{{string}}" : [ "{{string}}" ]

@@ -32,7 +32,7 @@ You can work with tags in AWS CodeConnections by calling the following:
 
 For information about how to use AWS CodeConnections, see the [Developer Tools User Guide](https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

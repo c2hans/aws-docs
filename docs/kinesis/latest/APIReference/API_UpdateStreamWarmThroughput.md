@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateSt
 # UpdateStreamWarmThroughput
 <a name="API_UpdateStreamWarmThroughput"></a>
 
-Updates the warm throughput configuration for the specified Amazon Kinesis Data Streams on-demand data stream. This operation allows you to proactively scale your on-demand data stream to a specified throughput level, enabling better performance for sudden traffic spikes.
+Updates the warm throughput configuration for the specified Amazon Kinesis Data Streams on-demand data stream. Updates the warm throughput configuration for the specified on-demand data stream. Use this operation to scale your stream to a specified throughput level before anticipated traffic spikes, or to release excess capacity after traffic has decreased.
 
 **Note**
 When invoking this API, you must use either the `StreamARN` or the `StreamName` parameter, or both. It is recommended that you use the `StreamARN` input parameter when you invoke this API.
@@ -13,6 +13,8 @@ When invoking this API, you must use either the `StreamARN` or the `StreamName` 
 Updating the warm throughput is an asynchronous operation. Upon receiving the request, Kinesis Data Streams returns immediately and sets the status of the stream to `UPDATING`. After the update is complete, Kinesis Data Streams sets the status of the stream back to `ACTIVE`. Depending on the size of the stream, the scaling action could take a few minutes to complete. You can continue to read and write data to your stream while its status is `UPDATING`.
 
 This operation is only supported for data streams with the on-demand capacity mode in accounts that have `MinimumThroughputBillingCommitment` enabled. Provisioned capacity mode streams do not support warm throughput configuration.
+
+To release excess capacity, call the API again and set the warm throughput to the same or a lower value.
 
 This operation has the following default limits. By default, you cannot do the following:
 + Scale to more than 10 GiBps for an on-demand stream.

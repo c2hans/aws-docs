@@ -63,6 +63,7 @@ To customize the JSON with your own values, follow these guidelines:
   + `MAXIMUM` returns maximum from the selected data.
   + `AVERAGE` returns average from the selected data.
   + `MAX_OCCURRENCE` returns the most frequently occurring value specified in the expression.
+  + `RECENT_OCCURRENCES` returns a list of recent values for the attribute specified in the expression.
 + **Range**:
   + Units: Currently supports only DAYS units.
   + ValueRange: Specify positive numbers in ValueRange’s Start or End fields to indicate how many days ago to begin from, and negative numbers to indicate how many days in the future to begin from.

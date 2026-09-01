@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/audio-device-s
 # Change your audio device settings in the CCP or agent workspace
 <a name="audio-device-settings"></a>
 
-When you're using the CCP or agent workspace, you can choose your preferred device for the audio, microphone, and ringer. This allows you to have audio notifications to ring from a desktop/laptop speaker instead of a headset, for example.
+When you're using the CCP or agent workspace, you can choose your preferred device for the audio, microphone, and ringer. With these settings, you can have audio notifications to ring from a desktop/laptop speaker instead of a headset, for example.
 
 **Important**
 Your speaker, ringer, and microphone settings are saved in your browser storage, not in Connect Customer.

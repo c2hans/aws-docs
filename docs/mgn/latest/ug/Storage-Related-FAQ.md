@@ -14,7 +14,7 @@ This section contains answers to frequently asked questions about storage option
 
 MGN supports two target storage types:
 + **Amazon EBS** – The default storage type. Source server disks are replicated to Amazon EBS volumes and launched as standard Amazon EC2 instances with Amazon EBS attached storage.
-+ **Amazon FSx for NetApp ONTAP** (Public Preview) – Data volumes are replicated to an FSx for ONTAP file system and attached to the target instance via iSCSI. The boot volume always remains on Amazon EBS.
++ **Amazon FSx for NetApp ONTAP** – Data volumes are replicated to an FSx for ONTAP file system and attached to the target instance via iSCSI. The boot volume always remains on Amazon EBS.
 
 You configure the target storage type in the replication template or per-server replication settings.
 

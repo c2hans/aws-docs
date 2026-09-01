@@ -11,14 +11,14 @@ Additional settings for a stateful rule. This is part of the [StatefulRule](API_
 <a name="API_RuleOption_Contents"></a>
 
  ** Keyword **   <a name="networkfirewall-Type-RuleOption-Keyword"></a>
-The keyword for the Suricata compatible rule option. You must include a `sid` (signature ID), and can optionally include other keywords. For information about Suricata compatible keywords, see [Rule options](https://suricata.readthedocs.io/en/suricata-7.0.8/rules/intro.html#rule-options) in the Suricata documentation.
+The keyword for the Suricata compatible rule option. You must include a `sid` (signature ID), and can optionally include other keywords. For information about Suricata compatible keywords, see [Rule options](https://suricata.readthedocs.io/en/suricata-8.0.3/rules/intro.html#rule-options) in the Suricata documentation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `.*`
 Required: Yes
 
  ** Settings **   <a name="networkfirewall-Type-RuleOption-Settings"></a>
-The settings of the Suricata compatible rule option. Rule options have zero or more setting values, and the number of possible and required settings depends on the `Keyword`. For more information about the settings for specific options, see [Rule options](https://suricata.readthedocs.io/en/suricata-7.0.8/rules/intro.html#rule-options).
+The settings of the Suricata compatible rule option. Rule options have zero or more setting values, and the number of possible and required settings depends on the `Keyword`. For more information about the settings for specific options, see [Rule options](https://suricata.readthedocs.io/en/suricata-8.0.3/rules/intro.html#rule-options).
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 8192.
 Pattern: `.*`

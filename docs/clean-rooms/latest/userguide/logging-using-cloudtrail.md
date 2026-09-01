@@ -35,6 +35,9 @@ For more information, see the [CloudTrail userIdentity element](https://docs.aws
 
 A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify. CloudTrail log files contain one or more log entries. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order.
 
+**Note**
+AWS Clean Rooms redacts only certain request parameters that its API defines. If you include additional fields that aren't part of the API, CloudTrail records them exactly as you sent them and doesn't redact them. Don't include passwords or other sensitive information in fields that aren't part of the API.
+
 ## Example AWS Clean Rooms CloudTrail events
 <a name="example-CT-events"></a>
 

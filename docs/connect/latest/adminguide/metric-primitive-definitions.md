@@ -343,7 +343,7 @@ This metric counts the number of contacts routed to an agent.
 
 This metric counts the contacts routed to an agent but not answered by that agent, including contacts abandoned by the customer.
 
-If a contact is not answered by a given agent, Amazon Connect attempts to route it to another agent to handle; the contact is not dropped. Because a single contact can be missed multiple times (including by the same agent), it can be counted multiple times: once for each time it is routed to an agent but not answered.
+If a contact is not answered by a given agent, Amazon Connect attempts to route it to another agent to handle. The contact is not dropped. Because a single contact can be missed multiple times (including by the same agent), it can be counted multiple times: once for each time it is routed to an agent but not answered.
 
 **Metric Primitive Name:** `Agent contacts missed`
 

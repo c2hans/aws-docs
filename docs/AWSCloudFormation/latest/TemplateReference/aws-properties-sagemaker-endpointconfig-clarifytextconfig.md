@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The unit of granularity for the analysis of text features. For example, if the unit is `'token'`, then each token (like a word in English) of the text is treated as a feature. SHAP values are computed for each unit/feature.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `token | sentence | paragraph`
+*Pattern*: `token|sentence|paragraph`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Language`  <a name="cfn-sagemaker-endpointconfig-clarifytextconfig-language"></a>
@@ -47,7 +47,7 @@ Specifies the language of the text features in [ISO 639-1]( https://en.wikipedia
 For a mix of multiple languages, use code `'xx'`.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `af | sq | ar | hy | eu | bn | bg | ca | zh | hr | cs | da | nl | en | et | fi | fr | de | el | gu | he | hi | hu | is | id | ga | it | kn | ky | lv | lt | lb | mk | ml | mr | ne | nb | fa | pl | pt | ro | ru | sa | sr | tn | si | sk | sl | es | sv | tl | ta | tt | te | tr | uk | ur | yo | lij | xx`
+*Pattern*: `af|sq|ar|hy|eu|bn|bg|ca|zh|hr|cs|da|nl|en|et|fi|fr|de|el|gu|he|hi|hu|is|id|ga|it|kn|ky|lv|lt|lb|mk|ml|mr|ne|nb|fa|pl|pt|ro|ru|sa|sr|tn|si|sk|sl|es|sv|tl|ta|tt|te|tr|uk|ur|yo|lij|xx`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also

@@ -73,7 +73,7 @@ To sign in users with an external directory, optionally combined with the user d
 + [Linking federated users to an existing user profile](cognito-user-pools-identity-federation-consolidate-users.md)
 
 **Machine-to-machine authorization**
-Some sessions aren’t a human-to-machine interaction. You might need a service account that can authorize a request to an API by an automated process. To generate access tokens for machine-to-machine authorization with OAuth 2.0 scopes, you can add an app client that generates [client-credentials grants](https://www.rfc-editor.org/rfc/rfc6749#section-4.4).
+Some sessions aren’t a human-to-machine interaction. You might need a service account that can authorize a request to an API by an automated process. To generate access tokens for machine-to-machine authorization with OAuth 2.0 scopes, you can add an app client that generates [client-credentials grants](https://www.rfc-editor.org/rfc/rfc6749#section-4.4) from the token endpoint, or call the `GetClientToken` API operation, which requires no user pool domain.
 
 **Related topics**
 + [Scopes, M2M, and resource servers](cognito-user-pools-define-resource-servers.md)

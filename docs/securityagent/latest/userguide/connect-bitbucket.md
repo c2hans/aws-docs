@@ -39,6 +39,9 @@ Before you begin, ensure you have:
 + Permissions to configure integrations in the AWS Security Agent Management Console
 
 **Important**
+If your Bitbucket workspace or the network in front of it restricts access with an IP allow list, add the AWS Security Agent IP addresses for your AWS Region before you register the integration. For the IP addresses, see [AWS Security Agent IP addresses](about-integrations.md#agent-ip-addresses).
+
+**Important**
 One Atlassian site can only be associated with one AWS account per region. If you need to connect the same Bitbucket site to AWS Security Agent in a different AWS account within the same region, you must first remove the existing integration.
 
 **Note**

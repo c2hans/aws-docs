@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rule-based-red
 # Rule-based redaction for agent screen recordings in Connect Customer
 <a name="rule-based-redaction-screen-recording"></a>
 
-Rule-based redaction for agent screen recordings automatically hides sensitive content from recorded agent desktops based on the browser pages and application windows that agents view during a contact. When an agent navigates to a URL or opens an application window that matches one of your redaction rules, the matching window is masked in the final recording. Redaction is applied when the recording is assembled, so the original unredacted video is not exposed to users who only have access to redacted recordings.
+Rule-based redaction for agent screen recordings automatically hides sensitive content from recorded agent desktops based on the browser pages and application windows that agents view during a contact. When an agent navigates to a URL or opens an application window that matches one of your redaction rules, the matching window is masked in the final recording. Redaction is applied when the recording is assembled. The original unredacted video is not exposed to users who only have access to redacted recordings.
 
 Use rule-based redaction to enforce internal privacy policies that prohibit capturing specific applications or pages that contain customer data.
 

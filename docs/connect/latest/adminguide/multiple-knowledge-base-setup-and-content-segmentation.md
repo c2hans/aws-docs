@@ -155,7 +155,7 @@ Your use case might require additional prompt modifications beyond the examples 
 ## Content segmentation
 <a name="w2aac30c34c15"></a>
 
-Content segmentation allows you to tag your knowledge base content and filter retrieval results based on those tags. When your LLM tool queries the knowledge base, it can specify tags to retrieve only content matching those tags, enabling targeted responses from specific content subsets.
+With content segmentation, you can tag your knowledge base content and filter retrieval results based on those tags. When your LLM tool queries the knowledge base, it can specify tags to retrieve only content matching those tags, enabling targeted responses from specific content subsets.
 
 **Note**
 Content segmentation is not available with the Web crawler data source type.
@@ -170,7 +170,7 @@ The process for tagging content varies depending on your data source type.
 
 After creating your knowledge base, you can apply tags to individual content items for segmentation. Tags are applied at the content level, meaning each piece of content must be tagged individually.
 
-To tag content, use the Amazon Connect [TagResource API](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_TagResource.html). This API allows you to programmatically add tags to knowledge base content, which can then be used for content segmentation filtering during retrieval.
+To tag content, use the Amazon Connect [TagResource API](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_TagResource.html). With this API, you can programmatically add tags to knowledge base content, which can then be used for content segmentation filtering during retrieval.
 
 For examples of tagging content, see the [content segmentation workshop](https://catalog.workshops.aws/workshops/9657f1e6-9357-4d9f-8733-d334ebec0aab/en-US/01-foundation/07-content-segmentation).
 

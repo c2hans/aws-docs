@@ -75,7 +75,7 @@ The following steps start the `EXTRACT` utility, capture the data from `EXAMPLE.
 ## Running the Oracle GoldenGate REPLICAT utility
 <a name="Appendix.OracleGoldenGate.Replicat"></a>
 
-The `REPLICAT` utility "pushes" transaction information in the trail files to the target database.
+The `REPLICAT` utility pushes transaction information in the trail files to the target database.
 
 The following steps enable and start the `REPLICAT` utility so that it can replicate the captured data to the table `EXAMPLE.TABLE` in target database `OGGTARGET`.
 

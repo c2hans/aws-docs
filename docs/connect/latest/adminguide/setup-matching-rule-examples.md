@@ -36,7 +36,7 @@ By default, profile conflicts are managed by recency. When there is a conflict b
 
 **Source with last updated timestamp**
 
-Allows you to prioritize records from a specific object type as your data source for managing profile conflicts. When there is a conflict between the values of two or more similar profiles, the most recently updated attribute from the specified object type will be chosen.
+You can prioritize records from a specific object type as your data source for managing profile conflicts. When there is a conflict between the values of two or more similar profiles, the most recently updated attribute from the specified object type will be chosen.
 
 If a timestamp is not specified in your object type, the date the record was ingested into Customer Profiles will be used. Source with last updated timestamp is unavailable when you don't have any integrations set up. When you add an integration, your object types will be available as a source for this option.
 

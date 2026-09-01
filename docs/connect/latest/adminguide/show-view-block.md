@@ -82,7 +82,7 @@ Following is a brief description of these AWS managed views. For detailed inform
 + **List view**: Display information as a list of items with titles and descriptions. Items can act as links with actions attached. It also optionally supports the standard back navigation and persistent context header.
 + **Form view**: Provide customers and agents with input fields to gather required data and submit data to backend systems. This view consists of multiple Sections with a predefined Section style with a header. The body consists of various input fields arranged in a column or a grid layout format.
 + **Confirmation view**: A page to show customers and agents after a form has been submitted or an action has been completed. In this pre-built template you can provide a summary of what has happened, any next steps, and prompts. The Confirmation view supports a persistent attribute bar, an icon or image, headline, and sub-headline, along with a back to home navigation button.
-+ **Cards view**: Allows you to guide your customers and agents by presenting them with a list of topics to choose from when the contact is presented to the agent.
++ **Cards view**: You can guide your customers and agents by presenting them with a list of topics to choose from when the contact is presented to the agent.
 
 The properties of the **Show view** block are dynamically populated depending on which **View** resource you choose. For example, if you choose **Form**, you would configure **Next** and **Previous** actions, which are displayed. These are just a couple of the actions on the view.
 

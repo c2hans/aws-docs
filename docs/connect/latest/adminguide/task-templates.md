@@ -83,7 +83,7 @@ In the Contact Control Panel, when agents choose **Create task** they must choos
 
 ![The create task button on the CCP, the two templates the agents can select.](http://docs.aws.amazon.com/connect/latest/adminguide/images/task-templates-agent-experience.png)
 
-Let's assume the agent chooses **Customer Email Template**. The following image shows the fields the agent must complete to create a task. Notice that there is no option for the agent to assign the task to others; this template has **Task assignment** set to a default value. However, the agent can opt to assign the task to themselves.
+Let's assume the agent chooses **Customer Email Template**. The following image shows the fields the agent must complete to create a task. Notice that there is no option for the agent to assign the task to others. This template has **Task assignment** set to a default value. However, the agent can opt to assign the task to themselves.
 
 ![The CCP, no option to assign a task to others, but agent can assign the task to themselves.](http://docs.aws.amazon.com/connect/latest/adminguide/images/task-templates-create-task-ccp.png)
 

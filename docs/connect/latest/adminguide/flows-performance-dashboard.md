@@ -91,7 +91,7 @@ The following metrics are displayed on this chart:
 ## Comparison to prior period charts
 <a name="flows-dashboard-comparison-to-prior-period-charts"></a>
 
- The **Top flows by dropped in flow rate** and **Top flows transferred to queue or agent rate** charts display the current period metric and the "Compare to" period metric for the top ten flows sorted (from highest to lowest) by the current period metric. These charts allow you to identify the flows contributing most to overall dropped or transferred contacts.
+ The **Top flows by dropped in flow rate** and **Top flows transferred to queue or agent rate** charts display the current period metric and the "Compare to" period metric for the top ten flows sorted (from highest to lowest) by the current period metric. With these charts, you can identify the flows contributing most to overall dropped or transferred contacts.
 
 To see all data, choose the More icon on the chart, and then choose **Expand**. The following image shows the **Top flows by dropped in flow rate**. An arrow points to the location of the More icon.
 

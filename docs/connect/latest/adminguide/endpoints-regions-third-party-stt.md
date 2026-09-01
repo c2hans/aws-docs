@@ -20,7 +20,7 @@ You can specify a different provider Region alongside your API key as part of th
 }
 ```
 
-The following regions are supported:
+The following Regions are supported:
 
 | **Provider** | **apiTokenRegion** | **Endpoint** |
 | --- | --- | --- |

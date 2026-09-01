@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluation-met
 # Evaluation metrics in Connect Customer
 <a name="evaluation-metrics"></a>
 
-You can view the following metrics on the [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md). These metrics enable you to view aggregated agent performance, and get insights across agent cohorts and over time.
+You can view the following metrics on the [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md). With these metrics, you can view aggregated agent performance, and get insights across agent cohorts and over time.
 
 ## Average evaluation score
 <a name="average-evaluation-score-hmetric"></a>

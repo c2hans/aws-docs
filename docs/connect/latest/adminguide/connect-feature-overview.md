@@ -53,7 +53,7 @@ You can help customers through text-based communication channels, such as web ch
 
   Because Connect Customer hosts the widget, it makes sure that the latest version is always live on your website.
 + **SMS**. You can [set up two-way SMS messaging](setup-sms-messaging.md) capabilities so your customers can text you from their mobile device, and your agents can respond using the same tools they already use for calls and chats. With Amazon Lex, you can detect the intent of the customer message and automate responses to their questions, saving agents valuable time and effort.
-+ **Third-party messaging apps**. To integrate with third-party messaging apps, use the [Connect Customer APIs](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) that enable you to subscribe to a real-time stream of chat messages. Using these APIs, you can:
++ **Third-party messaging apps**. To integrate with third-party messaging apps, use the [Connect Customer APIs](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) that you can use to subscribe to a real-time stream of chat messages. Using these APIs, you can:
   + Stream chat messages in real time when a new chat contact is created.
   + Extend the current Connect Customer chat functionality to support use cases like building integrations with SMS solutions and third-party messaging applications, enabling mobile push notifications, and creating analytics dashboards to monitor and track chat message activity.
 
@@ -62,7 +62,7 @@ You can help customers through text-based communication channels, such as web ch
 ### In-app, web, and video calling
 <a name="connect-intro4"></a>
 
-You can [set up the Connect Customer in-app, web, and video calling](inapp-calling.md) capabilities to enable your customers to contact you without ever leaving your web or mobile application. You can use these capabilities to pass contextual information to Connect Customer. For example, if your customer is already logged into your app, they do not need to identify or authenticate themselves when they request a call or video conversation with an agent. This enables you to personalize the customer experience based on attributes such as the customer's profile or other information, like actions previously taken within the app.
+You can [set up the Connect Customer in-app, web, and video calling](inapp-calling.md) capabilities to enable your customers to contact you without ever leaving your web or mobile application. You can use these capabilities to pass contextual information to Connect Customer. For example, if your customer is already logged into your app, they do not need to identify or authenticate themselves when they request a call or video conversation with an agent. You can use this to personalize the customer experience based on attributes such as the customer's profile or other information, like actions previously taken within the app.
 
 ### Outbound campaigns
 <a name="connect-intro-campaigns"></a>
@@ -135,7 +135,7 @@ Guides can be used for various types of customer interactions. They are presente
 
 ![The agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/whatisconnect-aw2.png)
 
-In the following image the **Review transaction history** guide is open, and the first step is displayed for the agent to choose **View transaction details** or **Choose a different account**.
+In the following image the **Review transaction history** guide is open. The first step is displayed for the agent to choose **View transaction details** or **Choose a different account**.
 
 ![The agent workspace, step-by-step guides.](http://docs.aws.amazon.com/connect/latest/adminguide/images/whatisconnect-aw1.png)
 
@@ -229,7 +229,7 @@ This next image shows a drill down into the real-time activity for Queue 4.
 ### Real-time conversational analytics
 <a name="connect-intro-rtc"></a>
 
-With [real-time speech and chat analytics](analyze-conversations.md), you can uncover trends and improve customer service by understanding sentiment, conversation characteristics, emerging contact themes, and agent compliance risks while the call or chat is in progress. You can receive an alert, for example, when a customer is getting frustrated because the agent is unable to resolve a complicated problem. This allows you to provide more immediate assistance.
+With [real-time speech and chat analytics](analyze-conversations.md), you can uncover trends and improve customer service by understanding sentiment, conversation characteristics, emerging contact themes, and agent compliance risks while the call or chat is in progress. You can receive an alert, for example, when a customer is getting frustrated because the agent is unable to resolve a complicated problem. With these alerts, you can provide more immediate assistance.
 
 The following image shows post-contact conversational analytics on the **Contact details** page. It includes a [generative AI-powered contact summary](view-generative-ai-contact-summaries.md) to help you quickly understand essential information about the contact, how customer sentiment changes as the contact progresses, and the distribution of talk time between the agent and customer.
 
@@ -295,7 +295,7 @@ Forecasting & agent scheduling are machine learning (ML)–powered features that
 ## Administrators: Configuration and flexibility
 <a name="connect-intro-admins"></a>
 
-Connect Customer provides a simple, self-service UI that enables you to make changes in minutes, not months.
+Connect Customer provides a simple, self-service UI that you can use to make changes in minutes, not months.
 
 Anyone, from non-technical business leaders to experienced contact center administrators, can immediately start innovating on behalf of their customers using an intuitive, graphical UI. All channels – voice, chat, SMS, web and video-calling, messaging, email, tasks, and others – are configured, managed, personalized, automated, recorded, and analyzed using a single *omnichannel* solution, which means you can use the same business logic and routing rules across channels, making it easy to innovate and fine-tune the experience.
 
@@ -311,7 +311,7 @@ Anyone, from non-technical business leaders to experienced contact center admini
 
 Connect Customer takes the heavy lifting of managing telephony off your hands. We manage a network of telephony providers from around the world, removing the need for you to manage multiple vendors, negotiate complex multi-year contracts, or commit to peak call volumes.
 
- The telephony service allows you to claim and then use direct inward dial (DID) and toll-free phone numbers for more than 110 countries worldwide. There are also more than 200 available outbound calling destinations. For a list of destinations, see the [Connect Customer pricing](https://aws.amazon.com/connect/pricing/) page.
+ With the telephony service, you can claim and then use direct inward dial (DID) and toll-free phone numbers for more than 110 countries worldwide. There are also more than 200 available outbound calling destinations. For a list of destinations, see the [Connect Customer pricing](https://aws.amazon.com/connect/pricing/) page.
 
 For a list of the telephony capabilities that Connect Customer provides, see the [Connect Customer Telecoms Country Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf).
 

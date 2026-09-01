@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: December 01, 2024, 22:51 UTC
-+ **Edited time:** February 12, 2026, 17:57 UTC
++ **Edited time:** September 01, 2026, 01:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy`
 
 ## Policy version
 <a name="CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy-version"></a>
 
-**Policy version:** v9 (default)
+**Policy version:** v10 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -36,16 +36,17 @@ The policy's default version is the version that defines the permissions for the
   "Version" : "2012-10-17",
   "Statement" : [
     {
+      "Sid" : "TransitGatewayAndVPNStatement",
       "Effect" : "Allow",
       "Action" : [
+        "ec2:DescribeCustomerGateways",
         "ec2:DescribeTransitGatewayAttachments",
         "ec2:DescribeTransitGatewayConnects",
         "ec2:DescribeTransitGatewayPeeringAttachments",
         "ec2:DescribeTransitGatewayRouteTables",
-        "ec2:DescribeTransitGateways",
         "ec2:DescribeTransitGatewayVpcAttachments",
+        "ec2:DescribeTransitGateways",
         "ec2:DescribeVpnConnections",
-        "ec2:DescribeCustomerGateways",
         "ec2:GetTransitGatewayRouteTableAssociations",
         "ec2:GetTransitGatewayRouteTablePropagations",
         "ec2:SearchTransitGatewayRoutes"
@@ -69,6 +70,73 @@ The policy's default version is the version that defines the permissions for the
         "ec2:DescribeVpcEndpointServiceConfigurations"
       ],
       "Resource" : "*"
+    },
+    {
+      "Sid" : "LoadBalancerStatement",
+      "Effect" : "Allow",
+      "Action" : [
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeTags",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeRules",
+        "elasticloadbalancing:DescribeTargetGroups",
+        "elasticloadbalancing:DescribeLoadBalancerAttributes",
+        "elasticloadbalancing:DescribeTargetHealth",
+        "elasticloadbalancing:DescribeTargetGroupAttributes"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "CloudWANStatement",
+      "Effect" : "Allow",
+      "Action" : [
+        "networkmanager:ListCoreNetworks",
+        "networkmanager:GetCoreNetwork",
+        "networkmanager:GetCoreNetworkPolicy",
+        "networkmanager:ListAttachments",
+        "networkmanager:GetVpcAttachment",
+        "networkmanager:GetNetworkRoutes"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "ConfigRecorderCreateDelete",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:PutServiceLinkedConfigurationRecorder",
+        "config:DeleteServiceLinkedConfigurationRecorder"
+      ],
+      "Resource" : [
+        "arn:aws:config:*:*:configuration-recorder/AWSConfigurationRecorderForNetworkFlowMonitorTopologyService/*"
+      ]
+    },
+    {
+      "Sid" : "ConfigRecorderDescribe",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:DescribeConfigurationRecorders",
+        "config:DescribeConfigurationRecorderStatus"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "ConfigRecorderSlrCreation",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "iam:AWSServiceName" : [
+            "config.amazonaws.com"
+          ]
+        }
+      }
     }
   ]
 }

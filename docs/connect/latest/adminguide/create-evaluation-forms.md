@@ -49,7 +49,7 @@ The following steps explain how to create or duplicate an evaluation form and se
    + **Sections and questions**. Add sections, questions, and answers to the form.
    + **Scoring**. Enable scoring on the form. You can also apply scoring to sections or questions.
 
-1. Choose **Save** at any time while creating your form. This enables you to navigate away from the page and return to the form later.
+1. Choose **Save** at any time while creating your form. After you save, you can navigate away from the page and return to the form later.
 
 1. Continue to the next step to add sections and questions.
 
@@ -129,7 +129,7 @@ Edit the form as needed, then activate it.
 
 Evaluation forms can have questions that are conditionally enabled or disabled, based on answers to other questions. For example, you can configure a follow-up question to appear in the form only if it is needed.
 
-1. Choose a question that needs a follow-up question. The question type must be **Single selection** or **Multiple selection**, and it must be not be an optional question (do not select the ** Optional question** checkbox).
+1. Choose a question that needs a follow-up question. The question type must be **Single selection** or **Multiple selection**, and it must not be an optional question (do not select the ** Optional question** checkbox).
 
    For example, in the following image, question 1.1 is *What was the reason for the call?* and the **Optional question** checkbox is not selected.
 ![The Question type is Single selection and the Optional question checkbox is not selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/conditionalquestions1.png)
@@ -165,7 +165,7 @@ For the default limit of the **Number of evaluation questions that can be answer
 1. Go to the top of the form. Choose the **Scoring** tab, and then select the **Enable scoring** checkbox.
 ![The evaluation forms page, the scoring tab, the Enable scoring checkbox.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-enablescoring.png)
 
-   This enables scoring for the entire form. It also enables you to add ranges for answers to **Number** question types.
+   This enables scoring for the entire form. You can also use it to add ranges for answers to **Number** question types.
 
 1. For **Scoring mode**, choose one of the following options:
    + **Percentage** – Calculate scores as percentages using weighted sections or questions.
@@ -225,7 +225,7 @@ If you selected **Point-based** scoring mode, follow these steps to configure sc
 1. For **Multiple selection** questions, assign point values to each option. When multiple options are selected, their point values are summed. Optionally, select **Set cap** to configure a maximum point value cap for the question.
 ![The Scoring tab for a multiple selection question with point values and Set cap option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-pointbased-multi-select.png)
 
-1. (Optional) Configure bonus options or bonus questions. Bonus points allow you to award extra credit without increasing the maximum possible score.
+1. (Optional) Configure bonus options or bonus questions. With bonus points, you can award extra credit without increasing the maximum possible score.
    + **Bonus options** – An individual answer option that awards extra points on top of the question's maximum base score. When a bonus option is selected, the earned points can exceed the question's normal maximum. Bonus options are only supported on single selection and numeric questions.
    + **Bonus questions** – An entire question that does not contribute to the maximum possible score. The earned points from a bonus question are added to the total, but the question's maximum points are not counted in the base total. Bonus questions cannot have automatic fail options.
 ![The Scoring tab showing the Bonus checkbox for an answer option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-pointbased-bonus-option.png)
@@ -244,7 +244,7 @@ If you selected **Point-based** scoring mode, follow these steps to configure sc
 ### Step 5.3: Assign performance thresholds
 <a name="step-assignscores-performance-thresholds"></a>
 
-Performance thresholds allow you to classify evaluation results into categories such as "Needs Improvement" or "Exceeds Expectations" based on score thresholds. This feature is supported in both percentage-based and point-based scoring modes.
+With performance thresholds, you can classify evaluation results into categories such as "Needs Improvement" or "Exceeds Expectations" based on score thresholds. This feature is supported in both percentage-based and point-based scoring modes.
 
 You can configure performance thresholds at the form level, section level, or question level.
 
@@ -255,7 +255,7 @@ Performance thresholds are not inherited. If you set thresholds at the form leve
 ## Step 6: Enable automated evaluations
 <a name="step-automate"></a>
 
-Connect Customer enables you to automatically answer questions within evaluation forms (for example, did the agent adhere to the greeting script?) using insights and metrics from conversational analytics. Automation can be used to:
+With Connect Customer, you can automatically answer questions within evaluation forms (for example, did the agent adhere to the greeting script?) using insights and metrics from conversational analytics. Automation can be used to:
 + **Assist evaluators with performance evaluations**: Evaluators receive automated answers to questions on evaluation forms while performing evaluations. Evaluators can override automated answers before submission.
 + **Automatically fill and submit evaluations**: Administrators can configure evaluation forms to automate responses to all questions within an evaluation form and automatically submit evaluations for up to 100% of customer interactions. Evaluators can edit and re-submit evaluations (if needed).
 
@@ -271,7 +271,7 @@ Both for assisting evaluators, and for automated submission of evaluations, you 
 Following are examples of each type of automation for each type of question.
 
 **Example automation for a Single selection question using conversational analytics categories**
-+ The following image shows that the answer to the evaluation question is yes when conversational analytics has categorized the contact with a label **ProperGreeting**. To label contacts as **ProperGreeting**, you must first setup a rule that detects the words or phrases expected as part of a proper greeting, for example, the agent mentioned "Thank you for calling" in the first 30 seconds of the interaction. For more information, see [Automatically categorize contacts](rules.md).
++ The following image shows that the answer to the evaluation question is yes when conversational analytics has categorized the contact with a label **ProperGreeting**. To label contacts as **ProperGreeting**, you must first set up a rule that detects the words or phrases expected as part of a proper greeting, for example, the agent mentioned "Thank you for calling" in the first 30 seconds of the interaction. For more information, see [Automatically categorize contacts](rules.md).
 ![A question section, the automation tab with conversational analytics categories.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-automation1.png)
 
   For information about setting up contact categories, see [Automatically categorize contacts](rules.md).
@@ -312,7 +312,7 @@ After an evaluation form is activated with automation configured on some of the 
 
 1. Activate the evaluation form.
 
-1. Upon activation you will be asked to create a rule in conversational analytics that submits an automated evaluation. For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md). The rule enables you to specify which contacts should be automatically evaluated using the evaluation form.
+1. Upon activation you will be asked to create a rule in conversational analytics that submits an automated evaluation. For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md). With the rule, you can specify which contacts should be automatically evaluated using the evaluation form.
 
 ## Step 7: Preview the evaluation form
 <a name="step-preview"></a>

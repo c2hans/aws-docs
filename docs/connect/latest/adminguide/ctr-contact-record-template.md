@@ -54,7 +54,7 @@ By using the CTR-AutoAssociateOnly template, organizations can use auto-associat
 
 **Description**
 
-The CTR template relies solely on the `_ctrContactId` key to search for an existing profile, and it automatically associates the contact event with the profile if a match is found. However, in cases where no existing profile is found, the template creates an inferred profile and populates it with the contact event meta-data.
+The CTR template relies solely on the `_ctrContactId` key to search for an existing profile. It automatically associates the contact event with the profile if a match is found. However, in cases where no existing profile is found, the template creates an inferred profile and populates it with the contact event meta-data.
 
 Although this behavior makes sure that contact events are captured even when no pre-existing profile exists, it can potentially result in the creation of numerous inferred profiles. This abundance of inferred profiles might lead to the issue of duplicate profiles within the system.
 

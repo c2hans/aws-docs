@@ -43,6 +43,9 @@ Aurora DSQL supports the following PostgreSQL DDL commands.
 | `DROP` | `TABLE` |  |
 | `CREATE` | `[UNIQUE] INDEX ASYNC` | Index keys can be column names or expressions. You can also use `INCLUDE`, `NULLS FIRST`, `NULLS LAST`, and `NULLS [NOT] DISTINCT`.<br />See [`CREATE INDEX`](create-index-syntax-support.md) for the supported syntax. |
 | `DROP` | `INDEX` |  |
+| `CREATE` | `STATISTICS` | For information about the supported syntax of the `CREATE STATISTICS` command, see [`CREATE STATISTICS`](create-statistics-syntax-support.md). |
+| `ALTER` | `STATISTICS` | For information about the supported syntax of the `ALTER STATISTICS` command, see [`ALTER STATISTICS`](alter-statistics-syntax-support.md). |
+| `DROP` | `STATISTICS` | For information about the supported syntax of the `DROP STATISTICS` command, see [`DROP STATISTICS`](drop-statistics-syntax-support.md). |
 | `CREATE` | `VIEW` | For more information about the supported syntax of the `CREATE VIEW` command, see [`CREATE VIEW`](create-view.md).  |
 | ALTER | VIEW | For information about the supported syntax of the `ALTER VIEW` command, see [`ALTER VIEW`](alter-view-syntax-support.md). |
 | DROP | VIEW | For information about the supported syntax of the DROP VIEW command, see [`DROP VIEW`](drop-view-overview.md). |

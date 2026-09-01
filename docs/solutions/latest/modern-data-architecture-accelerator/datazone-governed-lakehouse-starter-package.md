@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The DataZone Governed Lakehouse Starter Package delivers an enterprise-ready data lakehouse with comprehensive governance capabilities using Amazon DataZone and AWS Lake Formation. This package provides fine-grained access control, data product management, and multi-team collaboration features essential for modern data governance.
 
-![governed lakehouse](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/governed_lakehouse.png)
+ **DataZone Governed Lakehouse starter kit architecture**
 
-**DataZone Governed Lakehouse starter kit architecture**
+![DataZone Governed Lakehouse starter kit — enterprise lakehouse governed by DataZone and Lake Formation.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/governed_lakehouse.png)
+
 Built on AWS best practices, this package combines the flexibility of a data lake with the governance and structure of a data warehouse. It enables organizations to implement data mesh architectures while maintaining centralized governance and compliance controls.
 
 This architecture is particularly effective when:
@@ -61,7 +62,7 @@ You can deploy the DataZone Governed Lakehouse Starter Package using Manual CLI 
 #### Prerequisites
 <a name="prerequisites-7"></a>
 
-Before deploying the DataZone Governed Lakehouse Starter Package using the CLI method, ensure you have:
+Before deploying the DataZone Governed Lakehouse Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 
@@ -94,7 +95,7 @@ cd my_governed_lakehouse
 organization: <your-unique-org-name>
 ```
 
- **Step 3: Deploy the solution** \* Ensure you are authenticated to your target AWS account.
+ **Step 3: Deploy the solution** \* Verify you are authenticated to your target AWS account.
 + Optionally, run the following command to understand what stacks will be deployed:
 
 ```
@@ -111,7 +112,7 @@ npx @aws-mdaa/cli synth
 npx @aws-mdaa/cli deploy
 ```
 
- **Step 4: Verify deployment** \* Check the AWS CloudFormation console to ensure all stacks have been created successfully \* Verify the DataZone domain, Lake Formation settings, S3 buckets, and other resources have been created
+ **Step 4: Verify deployment** \* Check the AWS CloudFormation console to verify all stacks have been created successfully \* Verify the DataZone domain, Lake Formation settings, S3 buckets, and other resources have been created
 
 ## Usage Instructions
 <a name="usage-instructions-4"></a>
@@ -137,7 +138,7 @@ Once the MDAA deployment is complete, follow these steps to interact with the go
      + Raw data: `${org}-${env}-data1-datalake-raw`
      + Transformed data: `${org}-${env}-data1-datalake-transformed`
      + Curated data: `${org}-${env}-data1-datalake-curated`
-   + Ensure data is uploaded with KMS encryption
+   + Verify data is uploaded with KMS encryption
 
 ### Data Discovery and Governance
 <a name="data-discovery-and-governance"></a>

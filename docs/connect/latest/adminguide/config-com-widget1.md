@@ -57,7 +57,7 @@ The communications widget preview in the customization page will not display the
 ## Step 3: Add your domain for the widget
 <a name="widgetdomain"></a>
 
-This step enables you to secure the communications widget so that it can be launched only from your website.
+With this step, you can secure the communications widget so that it can be launched only from your website.
 
 1. Enter the website domains where you want to place the communications widget. The communications widget loads only on websites that you select in this step.
 

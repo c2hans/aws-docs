@@ -17,7 +17,7 @@ Before you can connect to your DB instance, it has to be available and accessibl
 1. Make sure that its status is `available`. You can check this on the details page for your instance in the AWS Management Console or by using the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) AWS CLI command.
 ![Check that the DB instance is available.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/sqlserver-available.png)
 
-1. Make sure that it is accessible to your source. Depending on your scenario, it may not need to be publicly accessible. For more information, see [Amazon VPC and Amazon RDS](USER_VPC.md).
+1. Make sure that it is accessible to your source. Depending on your scenario, it might not need to be publicly accessible. For more information, see [Amazon VPC and Amazon RDS](USER_VPC.md).
 
 1. Make sure that the inbound rules of your VPC security group allow access to your DB instance. For more information, see [Can't connect to Amazon RDS DB instance](CHAP_Troubleshooting.md#CHAP_Troubleshooting.Connecting).
 

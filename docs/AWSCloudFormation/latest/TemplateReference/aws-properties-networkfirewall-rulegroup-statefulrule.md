@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::NetworkFirewall::RuleGroup StatefulRule
 <a name="aws-properties-networkfirewall-rulegroup-statefulrule"></a>
 
-A single Suricata rules specification, for use in a stateful rule group. Use this option to specify a simple Suricata rule with protocol, source and destination, ports, direction, and rule options. For information about the Suricata `Rules` format, see [Rules Format](https://suricata.readthedocs.io/en/suricata-7.0.8/rules/intro.html).
+A single Suricata rules specification, for use in a stateful rule group. Use this option to specify a simple Suricata rule with protocol, source and destination, ports, direction, and rule options. For information about the Suricata `Rules` format, see [Rules Format](https://suricata.readthedocs.io/en/suricata-8.0.3/rules/intro.html).
 
 ## Syntax
 <a name="aws-properties-networkfirewall-rulegroup-statefulrule-syntax"></a>

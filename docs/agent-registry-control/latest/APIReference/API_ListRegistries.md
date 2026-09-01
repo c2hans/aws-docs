@@ -66,6 +66,14 @@ Content-type: application/json
    "nextToken": "string",
    "registries": [
       {
+         "autoDetection": {
+            "configuration": {
+               "enabled": boolean,
+               "scope": "string"
+            },
+            "status": "string",
+            "statusReason": "string"
+         },
          "createdAt": "string",
          "description": "string",
          "discoveryConfiguration": {

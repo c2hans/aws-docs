@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/calculated-att
 # Set up event filters
 <a name="calculated-attributes-admin-website-event-filters"></a>
 
-Event filters allow you to filter the profile objects to be used in the calculated attribute. For example, an event filter might filter the customer's standard asset objects so that only the assets with **Status is Installed OR Registered** are included in the calculation.
+With event filters, you can filter the profile objects to be used in the calculated attribute. For example, an event filter might filter the customer's standard asset objects so that only the assets with **Status is Installed OR Registered** are included in the calculation.
 
 **Note**
 You cannot edit event filters after creating a calculated attribute definition.

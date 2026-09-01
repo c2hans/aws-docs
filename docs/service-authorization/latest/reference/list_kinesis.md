@@ -31,6 +31,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
+- **   CreateChannel  **
+  - **IAM action:**  [kinesis:TagResource](#list_kinesis-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** kinesis.amazonaws.com / **Access level:** Write
+
 - **   CreateStream  **
   - **IAM action:**  [kinesis:AddTagsToStream](#list_kinesis-action-AddTagsToStream)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [kinesis:CreateStream](#list_kinesis-action-CreateStream)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

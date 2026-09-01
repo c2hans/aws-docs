@@ -25,7 +25,7 @@ Required: Yes
  ** SequenceNumber **   <a name="Streams-Type-Record-SequenceNumber"></a>
 The unique identifier of the record within its shard.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: Yes
 
  ** ApproximateArrivalTimestamp **   <a name="Streams-Type-Record-ApproximateArrivalTimestamp"></a>

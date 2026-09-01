@@ -10,8 +10,8 @@ Returns the results for the AWS Trusted Advisor check summaries for the check ID
 The response contains an array of [TrustedAdvisorCheckSummary](API_TrustedAdvisorCheckSummary.md) objects.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 To call the AWS Trusted Advisor operations in the AWS Support API, you must use the US East (N. Virginia) endpoint. Currently, the US West (Oregon) and Europe (Ireland) endpoints don't support the Trusted Advisor operations. For more information, see [About the AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html#endpoint) in the * AWS Support User Guide*.
 

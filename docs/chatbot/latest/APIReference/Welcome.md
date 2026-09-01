@@ -22,7 +22,7 @@ The Amazon Q Developer in chat applications console can only be used in US East 
 **Note**
 Your AWS CloudTrail events are logged in whatever Region you call from, not US East (N. Virginia) by default.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

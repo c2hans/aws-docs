@@ -13,11 +13,11 @@ Object that segments on Customer Profile's Calculated Attributes.
  ** DimensionType **   <a name="connect-Type-connect-customer-profiles_CalculatedAttributeDimension-DimensionType"></a>
 The action to segment with.
 Type: String
-Valid Values: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH | BEFORE | AFTER | BETWEEN | NOT_BETWEEN | ON | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL`
+Valid Values: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH | BEFORE | AFTER | BETWEEN | NOT_BETWEEN | ON | GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL | LIST_CONTAINS | LIST_CONTAINS_ALL`
 Required: Yes
 
  ** Values **   <a name="connect-Type-connect-customer-profiles_CalculatedAttributeDimension-Values"></a>
-The values to apply the DimensionType with.
+The values to apply the DimensionType with. To reference a calculated attribute or profile attribute as a dynamic value, use handlebar notation: `{{_profile.ProfileAttributeName}}` or `{{_calculated_attribute.CalculatedAttributeName}}`.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.

@@ -16,6 +16,13 @@ Type: String to double map
 Valid Keys: `hit | coverage | recall | popularity | freshness | similarity | mean_reciprocal_rank_at_25 | normalized_discounted_cumulative_gain_at_5 | normalized_discounted_cumulative_gain_at_10 | normalized_discounted_cumulative_gain_at_25 | precision_at_5 | precision_at_10 | precision_at_25`
 Required: No
 
+ ** RecommenderVersionName **   <a name="connect-Type-connect-customer-profiles_TrainingMetrics-RecommenderVersionName"></a>
+The name of the recommender version that produced these training metrics.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[a-zA-Z0-9_-]+/\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}Z`
+Required: No
+
  ** Time **   <a name="connect-Type-connect-customer-profiles_TrainingMetrics-Time"></a>
 The timestamp when these training metrics were recorded.
 Type: Timestamp

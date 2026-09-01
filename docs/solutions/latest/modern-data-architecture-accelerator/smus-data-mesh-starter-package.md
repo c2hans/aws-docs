@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The SMUS Data Mesh Starter Package deploys a production-ready, multi-account SageMaker Unified Studio deployment with cross-account data sharing, custom blueprints, and team-based isolation. It is designed for medium to large organizations implementing a data mesh, with multiple business units that need to collaborate on data while maintaining security boundaries and governance controls.
 
-![smus comprehensive](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/smus_comprehensive.png)
+ **SMUS Data Mesh starter kit architecture**
 
-**SMUS Data Mesh starter kit architecture**
+![SMUS Data Mesh starter kit — multi-account SageMaker Unified Studio with cross-account data sharing.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/smus_comprehensive.png)
+
 This architecture is particularly effective when:
 
 1. You have multiple business units in separate AWS accounts that need to collaborate on data.
@@ -48,7 +49,7 @@ This architecture is particularly effective when:
 #### Prerequisites
 <a name="prerequisites-13"></a>
 
-Before deploying the SMUS Data Mesh Starter Package using the CLI method, ensure you have:
+Before deploying the SMUS Data Mesh Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials for the deployment account
 

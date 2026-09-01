@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The GAIA Chatbot Starter Package deploys a production-ready GenAI chatbot backend using Amazon Bedrock Knowledge Bases, Guardrails, and serverless APIs. You provide the frontend application and documents for the knowledge base; the starter kit deploys the full backend.
 
-![ai gaia](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/ai-gaia.png)
+ **GAIA Chatbot starter kit architecture**
 
-**GAIA Chatbot starter kit architecture**
+![GAIA Chatbot starter kit — GenAI backend with Cognito auth and AppSync streaming.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/ai-gaia.png)
+
 This architecture is particularly effective when:
 
 1. You need a RAG-powered chatbot with enterprise authentication.
@@ -44,7 +45,7 @@ This architecture is particularly effective when:
 #### Prerequisites
 <a name="prerequisites-11"></a>
 
-Before deploying the GAIA Chatbot Starter Package using the CLI method, ensure you have:
+Before deploying the GAIA Chatbot Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 

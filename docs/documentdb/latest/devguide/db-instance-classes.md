@@ -151,34 +151,34 @@ A particular instance class may or may not be supported in a given Region. The f
   <tr><td>US East (N. Virginia)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>US West (Oregon)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Africa (Cape Town)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>South America (São Paulo)</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
+  <tr><td>South America (São Paulo)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Hong Kong)</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Hyderabad)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Asia Pacific (Malaysia)</td><td></td><td></td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Asia Pacific (Malaysia)</td><td></td><td></td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Mumbai)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Asia Pacific (Osaka)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Asia Pacific (Osaka)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Seoul)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Sydney)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Asia Pacific (Jakarta)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
-  <tr><td>Asia Pacific (Melbourne)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Asia Pacific (Jakarta)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
+  <tr><td>Asia Pacific (Melbourne)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Singapore)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Asia Pacific (Thailand)</td><td></td><td></td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Asia Pacific (Thailand)</td><td></td><td></td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Asia Pacific (Tokyo)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Canada (Central)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Canada West (Calgary)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Canada West (Calgary)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Europe (Frankfurt)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Europe (Zurich)</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Europe (Zurich)</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Europe (Ireland)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Europe (London)</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
+  <tr><td>Europe (London)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Europe (Milan)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Europe (Paris)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Europe (Spain)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Europe (Stockholm)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
-  <tr><td>Mexico (Central)</td><td></td><td></td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Europe (Stockholm)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
+  <tr><td>Mexico (Central)</td><td></td><td></td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>Middle East (UAE)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>China (Beijing)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>China (Ningxia)</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
-  <tr><td>Israel (Tel Aviv)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td></td></tr>
+  <tr><td>Israel (Tel Aviv)</td><td></td><td></td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
   <tr><td>AWS GovCloud (US-West)</td><td>Supported</td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td></td><td>Supported</td><td>Supported</td></tr>
   <tr><td>AWS GovCloud (US-East)</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td><td></td><td>Supported</td><td>Supported</td><td>Supported</td></tr>
 </tbody>

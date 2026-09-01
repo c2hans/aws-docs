@@ -12,7 +12,7 @@ In cases where impact cannot be determined for a resource, the severity is based
 ## Risk matrix
 <a name="exposure-findings-severity-risk-matrix"></a>
 
-The following table shows how likelihood and impact combine to produce the final severity of an exposure finding. Likelihood establishes a baseline severity, and impact adjusts it: high impact increases severity by one level (capped at Critical), medium impact leaves severity unchanged, and low impact decreases severity by one level (floored at Low).
+The following table shows how likelihood and impact combine to produce the final severity of an exposure finding. Likelihood establishes a baseline severity, and impact adjusts it: high impact increases severity by one level (capped at `CRITICAL`), medium impact leaves severity unchanged, and low impact decreases severity by one level (floored at `INFORMATIONAL`). Impact only adjusts the severity that likelihood establishes. Impact alone doesn't generate an exposure finding.
 
 **Severity risk matrix**
 
@@ -21,7 +21,10 @@ The following table shows how likelihood and impact combine to produce the final
 | **Very High** | HIGH | CRITICAL | CRITICAL |
 | **High** | MEDIUM | HIGH | CRITICAL |
 | **Moderate** | LOW | MEDIUM | HIGH |
-| **Low** | LOW | LOW | MEDIUM |
+| **Low** | INFORMATIONAL | LOW | MEDIUM |
+
+**Note**
+Low likelihood combined with low impact results in a severity of `INFORMATIONAL`. Security Hub doesn't publish exposure findings with this severity, so they don't appear on the **Exposures** page or in [GetFindingsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingsV2.html) results.
 
 ## Likelihood
 <a name="exposure-findings-severity-likelihood"></a>

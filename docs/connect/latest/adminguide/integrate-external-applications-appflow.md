@@ -84,7 +84,7 @@ For more information on the setup of external application and many other support
 ### Set up data mappings to define how external application data is mapped to a Customer Profile
 <a name="integrate-ea-appflow-mappings"></a>
 
-Once Amazon AppFlow integration has been set up, you need to set up data mappings in Customer Profiles to define how data from the external application will be mapped to the Customer Profile. This will allow you to customize the data that you want to use to build your unified customer profile. Choose your mapping carefully, as you will not be able to choose a different mapping after creating the integration.
+Once Amazon AppFlow integration has been set up, you need to set up data mappings in Customer Profiles to define how data from the external application will be mapped to the Customer Profile. With data mappings, you can customize the data that you want to use to build your unified customer profile. Choose your mapping carefully, as you will not be able to choose a different mapping after creating the integration.
 
 For more detailed information on data mappings, see [Object type mapping](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-object-type-mapping.html).
 

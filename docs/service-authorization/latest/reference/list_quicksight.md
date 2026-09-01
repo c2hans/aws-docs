@@ -272,6 +272,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteApp  **
+  - **IAM action:**  [quicksight:DeleteApp](#list_quicksight-action-DeleteApp)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteApprovalPolicy  **
   - **IAM action:**  [quicksight:DeleteApprovalPolicy](#list_quicksight-action-DeleteApprovalPolicy)
   - **Condition key:**
@@ -544,6 +550,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeAnalysisPermissions  **
   - **IAM action:**  [quicksight:DescribeAnalysisPermissions](#list_quicksight-action-DescribeAnalysisPermissions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeApp  **
+  - **IAM action:**  [quicksight:DescribeApp](#list_quicksight-action-DescribeApp)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeAppPermissions  **
+  - **IAM action:**  [quicksight:DescribeAppPermissions](#list_quicksight-action-DescribeAppPermissions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -961,6 +979,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListApps  **
+  - **IAM action:**  [quicksight:ListApps](#list_quicksight-action-ListApps)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListAssetBundleExportJobs  **
   - **IAM action:**  [quicksight:ListAssetBundleExportJobs](#list_quicksight-action-ListAssetBundleExportJobs)
   - **Condition key:**
@@ -1254,6 +1278,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   SearchApps  **
+  - **IAM action:**  [quicksight:SearchApps](#list_quicksight-action-SearchApps)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   SearchDashboards  **
   - **IAM action:**  [quicksight:SearchDashboards](#list_quicksight-action-SearchDashboards)
   - **Condition key:**
@@ -1399,6 +1429,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateAnalysisPermissions  **
   - **IAM action:**  [quicksight:UpdateAnalysisPermissions](#list_quicksight-action-UpdateAnalysisPermissions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
+- **   UpdateAppPermissions  **
+  - **IAM action:**  [quicksight:UpdateAppPermissions](#list_quicksight-action-UpdateAppPermissions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write

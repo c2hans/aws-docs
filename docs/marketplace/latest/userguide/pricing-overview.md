@@ -11,7 +11,7 @@ Products can take many forms, so the pricing models also take many forms. For ex
 
 Flexible pricing options include free trial, hourly, monthly, annual, multi-year, and bring your own license (BYOL). AWS handles billing and payments, and charges appear on your customers’ AWS bills.
 
-When you list a product or service, you must also include an end user license agreement and terms of service. That combination of product and license becomes an* offer*. You can use a standard EULA for public offers, isted price using an ISV’s standard end user license agreement (EULA). In addition, software products can be offered with custom pricing and EULA through private offers. Products can also be purchased under a contract with specifed time or usage boundaries.
+When you list a product or service, you must also include an end user license agreement and terms of service. That combination of product and license becomes an* offer*. You can use a standard EULA for public offers, listed price using an ISV’s standard end user license agreement (EULA). In addition, software products can be offered with custom pricing and EULA through private offers. Products can also be purchased under a contract with specifed time or usage boundaries.
 
 ## See also
 

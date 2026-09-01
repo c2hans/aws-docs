@@ -10,6 +10,8 @@ We're currently releasing our new experience to a limited number of customers. Y
 
 When you activate advanced features, you take complete control of the AWS Organization, management account, and delegated administrator account that are used to manage the projects you created and team members you invited. You will directly manage the security, governance, and team membership of your AWS environment. You have access to additional AWS services, multi-Region capabilities, and enhanced administrative and billing controls.
 
+You must upgrade your account before you activate advanced features. For more information, see [Upgrade your account in AWS Settings](upgrade-account.md).
+
 ## What happens when you activate advanced features
 <a name="activate-advanced-features-what-happens"></a>
 

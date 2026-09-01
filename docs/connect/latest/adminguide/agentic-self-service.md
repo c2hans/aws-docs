@@ -223,7 +223,7 @@ To create a Constant tool:
 
 1. Choose **Create**, then choose **Publish** to save your AI agent.
 
-For example, you can create a Constant tool named **getOrderStatus** that returns a sample JSON response. This lets you test how your AI agent handles order status requests before connecting to your actual order management system through an MCP tool.
+For example, you can create a Constant tool named **getOrderStatus** that returns a sample JSON response. With this Constant tool, you can test how your AI agent handles order status requests before connecting to your actual order management system through an MCP tool.
 
 ## See also
 

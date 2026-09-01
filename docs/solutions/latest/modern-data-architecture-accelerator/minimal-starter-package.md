@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The Minimal Starter Package deploys the foundational governance layer required by all MDAA architectures: IAM roles, Glue Catalog encryption, and Lake Formation settings. Use this as a starting point when you want to build your own architecture from scratch by adding modules incrementally.
 
-![minimal](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/minimal.png)
+ **Minimal starter kit architecture**
 
-**Minimal starter kit architecture**
+![Minimal starter kit — foundational governance with IAM roles and Lake Formation settings.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/minimal.png)
+
 This architecture is particularly effective when:
 
 1. You are starting a new MDAA project from scratch and want to add modules incrementally.
@@ -34,7 +35,7 @@ You can deploy the Minimal Starter Package using the Manual CLI Deploy Method.
 #### Prerequisites
 <a name="prerequisites-8"></a>
 
-Before deploying the Minimal Starter Package using the CLI method, ensure you have:
+Before deploying the Minimal Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 
@@ -64,7 +65,7 @@ cd my_minimal_config
 ```
 organization: <your-unique-org-name>
 ```
-+ Review and address CDK Nag suppression TODOs in `govern/roles.yaml`.
++ Review and address the commented-out CDK Nag suppression blocks in `govern/roles.yaml`.
 
  **Step 3: Deploy the solution**
 

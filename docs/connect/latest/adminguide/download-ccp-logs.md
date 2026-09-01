@@ -18,7 +18,7 @@ This topic is for IT admins and developers who need to troubleshoot issues with 
 ## Review CCP logs using Connect Customer CCP Log Parser
 <a name="step-review-ccp-logs"></a>
 
-After downloading the agent's CCP logs, you can use the Connect Customer CCP Log Parser to troubleshoot further and get a better view of the errors and verbose details on how the error occurs. Viewing CCP logs will also enable you to identify errors and resolve where possible.
+After downloading the agent's CCP logs, you can use the Connect Customer CCP Log Parser to troubleshoot further and get a better view of the errors and verbose details on how the error occurs. By viewing CCP logs, you can also identify errors and resolve where possible.
 
 **To load the CCP log file into the CCP log parser and view logs**
 

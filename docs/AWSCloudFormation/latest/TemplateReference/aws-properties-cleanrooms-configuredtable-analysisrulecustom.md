@@ -20,8 +20,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AdditionalAnalyses](#cfn-cleanrooms-configuredtable-analysisrulecustom-additionalanalyses)" : {{String}},
+  "[AggregationThresholds](#cfn-cleanrooms-configuredtable-analysisrulecustom-aggregationthresholds)" : {{[ AggregationThreshold, ... ]}},
   "[AllowedAnalyses](#cfn-cleanrooms-configuredtable-analysisrulecustom-allowedanalyses)" : {{[ String, ... ]}},
   "[AllowedAnalysisProviders](#cfn-cleanrooms-configuredtable-analysisrulecustom-allowedanalysisproviders)" : {{[ String, ... ]}},
+  "[ComparisonControls](#cfn-cleanrooms-configuredtable-analysisrulecustom-comparisoncontrols)" : {{ComparisonControls}},
   "[DifferentialPrivacy](#cfn-cleanrooms-configuredtable-analysisrulecustom-differentialprivacy)" : {{DifferentialPrivacy}},
   "[DisallowedOutputColumns](#cfn-cleanrooms-configuredtable-analysisrulecustom-disallowedoutputcolumns)" : {{[ String, ... ]}}
 }
@@ -32,10 +34,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AdditionalAnalyses](#cfn-cleanrooms-configuredtable-analysisrulecustom-additionalanalyses): {{String}}
+  [AggregationThresholds](#cfn-cleanrooms-configuredtable-analysisrulecustom-aggregationthresholds): {{
+    - AggregationThreshold}}
   [AllowedAnalyses](#cfn-cleanrooms-configuredtable-analysisrulecustom-allowedanalyses): {{
     - String}}
   [AllowedAnalysisProviders](#cfn-cleanrooms-configuredtable-analysisrulecustom-allowedanalysisproviders): {{
     - String}}
+  [ComparisonControls](#cfn-cleanrooms-configuredtable-analysisrulecustom-comparisoncontrols): {{
+    ComparisonControls}}
   [DifferentialPrivacy](#cfn-cleanrooms-configuredtable-analysisrulecustom-differentialprivacy): {{
     DifferentialPrivacy}}
   [DisallowedOutputColumns](#cfn-cleanrooms-configuredtable-analysisrulecustom-disallowedoutputcolumns): {{
@@ -52,6 +58,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Allowed values*: `ALLOWED | REQUIRED | NOT_ALLOWED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`AggregationThresholds`  <a name="cfn-cleanrooms-configuredtable-analysisrulecustom-aggregationthresholds"></a>
+The aggregation thresholds that each query output group must satisfy. AWS Clean Rooms filters out any group that represents fewer than the specified number of distinct identities. You can specify at most one threshold. You can't use aggregation thresholds with differential privacy, or when `allowedAnalyses` allows only jobs.
+*Required*: No
+*Type*: Array of [AggregationThreshold](aws-properties-cleanrooms-configuredtable-aggregationthreshold.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `AllowedAnalyses`  <a name="cfn-cleanrooms-configuredtable-analysisrulecustom-allowedanalyses"></a>
 The ARN of the analysis templates that are allowed by the custom analysis rule.
 *Required*: Yes
@@ -64,6 +78,12 @@ The IDs of the AWS accounts that are allowed to query by the custom analysis rul
 *Required*: No
 *Type*: Array of String
 *Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ComparisonControls`  <a name="cfn-cleanrooms-configuredtable-analysisrulecustom-comparisoncontrols"></a>
+The controls that restrict how a query can compare the columns in the configured table. You can't use comparison controls with differential privacy, or when `allowedAnalyses` allows only jobs.
+*Required*: No
+*Type*: [ComparisonControls](aws-properties-cleanrooms-configuredtable-comparisoncontrols.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DifferentialPrivacy`  <a name="cfn-cleanrooms-configuredtable-analysisrulecustom-differentialprivacy"></a>

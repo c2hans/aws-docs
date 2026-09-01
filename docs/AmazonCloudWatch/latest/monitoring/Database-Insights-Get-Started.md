@@ -20,8 +20,11 @@ For information about enabling the Advanced mode or the Standard mode of Databas
 + [Turning on the Advanced mode of Database Insights for Aurora PostgreSQL Limitless Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless-monitoring.cwdbi.advanced.html) in the *Amazon Aurora User Guide*
 + [Turning on the Standard mode of Database Insights for Aurora PostgreSQL Limitless Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless-monitoring.cwdbi.standard.html) in the *Amazon Aurora User Guide*
 
+For information about setting up monitoring for a self-managed database, see the following topic.
++ [Monitoring Self-Managed PostgreSQL](Database-Insights-Self-Managed-PostgreSQL.md)
+
 ## Required permissions for Database Insights
-<a name="w2aac23c13c31c17"></a>
+<a name="w2aac23c13c33c21"></a>
 
 Certain IAM permissions are required to use Database Insights. Database Insights requires permissions for CloudWatch, CloudWatch Logs, Amazon RDS, and Amazon RDS Performance Insights. You might not need to provide these permissions to your user or role if you have broader permissions.
 

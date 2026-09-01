@@ -19,6 +19,12 @@ Content-type: application/json
    "Context": {
       "{{string}}" : "{{string}}"
    },
+   "DiversityConfig": {
+      "Enabled": {{boolean}},
+      "Values": {
+         "{{string}}" : {{number}}
+      }
+   },
    "MaxResults": {{number}},
    "MetadataConfig": {
       "MetadataColumns": [ "{{string}}" ]
@@ -79,6 +85,11 @@ Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 64.
 Key Pattern: `^[a-zA-Z0-9_.-]+$`
 Value Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
+ ** [DiversityConfig](#API_connect-customer-profiles_GetProfileRecommendations_RequestSyntax) **   <a name="connect-connect-customer-profiles_GetProfileRecommendations-request-DiversityConfig"></a>
+Runtime diversity configuration for this request. Enables diversity-aware recommendations and optionally supplies values for placeholder-based diversity caps configured on the recommender.
+Type: [RecommendationDiversityConfig](API_connect-customer-profiles_RecommendationDiversityConfig.md) object
 Required: No
 
  ** [MaxResults](#API_connect-customer-profiles_GetProfileRecommendations_RequestSyntax) **   <a name="connect-connect-customer-profiles_GetProfileRecommendations-request-MaxResults"></a>

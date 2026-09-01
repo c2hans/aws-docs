@@ -43,7 +43,7 @@ If you delete this service-linked role, and then need to create it again, you ca
 ## Editing a service-linked role for Connect Customer Customer Profiles
 <a name="edit-slr-customerprofiles"></a>
 
-Connect Customer Customer Profiles does not allow you to edit the **AWSServiceRoleForProfile** prefixed service-linked role. After you create a service-linked role, you cannot change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
+With Connect Customer Customer Profiles, you can't edit the **AWSServiceRoleForProfile** prefixed service-linked role. After you create a service-linked role, you cannot change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
 
 ## Deleting a service-linked role for Connect Customer Customer Profiles
 <a name="delete-slr-customerprofiles"></a>
@@ -65,7 +65,7 @@ Use the AWS CLI or the AWS API to delete the **AWSServiceRoleForProfile** prefix
 ## Supported regions for Connect Customer Customer Profiles service-linked roles
 <a name="slr-regions-customerprofiles"></a>
 
-Connect Customer Customer Profiles supports using service-linked roles in all of the regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
+Connect Customer Customer Profiles supports using service-linked roles in all of the Regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
 | Region name | Region identity | Support in Connect Customer |
 | --- | --- | --- |

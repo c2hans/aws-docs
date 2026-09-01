@@ -75,7 +75,7 @@ The Connect Customer admin website uses the entered name as the `DisplayName` of
  When you choose multiple segments as the starting audience, the segments are connected by `OR` relationships. For example, if you choose **Premium membership customers** and **Basic membership customers** segments as the starting audiences, all profiles who are in either of the segments will be the included.
 ![A Starting audience dropdown list.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1.png)
 
-1. To create a segment with ProfileType, start by using **All Accounts from Customer Profiles** as your initial audience. This approach allows you to filter account-based profiles effectively. It's important to note that unless you specify otherwise, the segmentation process will automatically export all profiles within the customer profiles domain. This default behavior ensures comprehensive coverage but can be adjusted to meet specific targeting needs.
+1. To create a segment with ProfileType, start by using **All Accounts from Customer Profiles** as your initial audience. With this approach, you can filter account-based profiles effectively. It's important to note that unless you specify otherwise, the segmentation process will automatically export all profiles within the customer profiles domain. This default behavior ensures comprehensive coverage but can be adjusted to meet specific targeting needs.
 
    The following is an example of how a segment definition can be created (either account- or standard-profiles based):
 
@@ -141,9 +141,27 @@ We store up to 1000 most recent profile attributes within the domain. If your do
   - **Operator:**  On  / **Description:**  Filters the audience whose attribute value matches with a specific date. For example, customer’s whose Attributes.NextReservation is on 2024/10/01.
   - **Operator:**  After  / **Description:**  Filters the audience whose attribute has a date value that is after a specific date. For example, customer’s whose Attributes.NextReservation is after 2024/10/01.
   - **Operator:**  Time range is / **Description:**  Filters the audience whose attribute has a date value that is between a specific time range. You can either specify the time range in absolute time mode or relative time mode.
-  - **Description:**  Absolute time mode: allows you to specify an absolute time range. For example, between 2024/10/01 12:00 AM and 2024/10/07 12:00 AM.
-  - **Description:**  Relative time mode: allows you to specify the relative time range of furture or past X hours, days, weeks, months, or years.   - Future time direction: will filter audience whose attribute has a date value that is between now and a speficied future time. For example, within the next 2 days.   - Past time direction: will filter audience whose attribute has a date value that is between a speficied past time and now. For example, within the last 2 days.
+  - **Description:**  Absolute time mode: you can specify an absolute time range. For example, between 2024/10/01 12:00 AM and 2024/10/07 12:00 AM.
+  - **Description:**  Relative time mode: you can specify the relative time range of furture or past X hours, days, weeks, months, or years.   - Future time direction: will filter audience whose attribute has a date value that is between now and a speficied future time. For example, within the next 2 days.   - Past time direction: will filter audience whose attribute has a date value that is between a speficied past time and now. For example, within the last 2 days.
   - **Operator:**  Time range is not  / **Description:**  Filters the audience whose attribute has a date value that is not between a specific time range. You can either specify the time range in absolute time mode or relative time mode. See "Time range is" operator in this table for more details.
+
+- ** List**
+  - **Operator:**  Contains any of  / **Description:**  Filters the audience whose list attribute contains any of the given values. For example, a customer’s calculated attribute contains US or USA.
+  - **Operator:**  Contains all of  / **Description:**  Filters the audience whose list attribute contains all of the given values. For example, a customer’s calculated attribute contains both US and USA.
+
+**Note**
+The **Contains any of** and **Contains all of** operators apply to list attributes. The admin website shows these operators for a calculated attribute only when its statistic is recent occurrences.
+
+**Note**
+When you set the **Value** for a calculated attribute or profile attribute filter, you can choose one of the following options:
+
+**Static values**
+Compare against fixed values that you enter.
+
+**Attribute references**
+Reference another attribute's value, evaluated individually for each customer. Choose the profile attribute or calculated attribute that you want to reference from the list.
+
+![A filter group with the Value drop-down expanded, showing the Static values and Attribute references options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-building-segments-2.png)
 
 **Note**
 Customer segments in the Connect Customer admin website uses UTC timezone and a default time of 00:00:00 UTC for all time-based filters. You can filter on dates but times are recorded as the same value. If you enter a date of 2024-01-01, the console passes the time as 2024-01-01T00:00:00Z.
@@ -191,7 +209,7 @@ Values are case-sensitive. For example, *Address.Country is US* returns differen
 ### Step 6: Enable Sorting (optional)
 <a name="step-6-enable-sorting-optional"></a>
 
- Optionally configure sorting for your segment results. Sorting allows you to control the order in which profiles appear in your segment output. You can sort by up to 10 attributes. Attributes are evaluated from top to bottom. When multiple profiles share the same value for an attribute, the next attribute in the list is used as a tiebreaker, and so on.
+ Optionally configure sorting for your segment results. You can use sorting to control the order in which profiles appear in your segment output. You can sort by up to 10 attributes. Attributes are evaluated from top to bottom. When multiple profiles share the same value for an attribute, the next attribute in the list is used as a tiebreaker, and so on.
 
 Outbound campaigns and journeys respect this sort order when executing, which means profiles are processed and dialed in the order defined by the segment. For more information about using sorted segments with outbound campaigns, see [Outbound campaign best practices](https://docs.aws.amazon.com/connect/latest/adminguide/outbound-campaign-best-practices.html). Sorting segments is useful when you want to:
 + Prioritize high-value customers by sorting on attributes such as lifetime value or account tier.
@@ -212,9 +230,9 @@ Segment sort order is respected only for voice campaigns and voice activities in
 ![The Enable Sorting configuration for segment results.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-sorting.png)
 
 ## Creating segments powered by Spark SQL
-<a name="w2aac38c53c13c15"></a>
+<a name="w2aac40c53c13c15"></a>
 
-Segments powered by Spark SQL enables you to use complete Customer Profile data and expanded functionality to define segments. You can use standard profile object attributes and custom object attributes. You can also used SQL-based functionality such as joining standard and custom objects together to use data from various objects, filtering segments with statistics such as percentiles and standardizing date fields to make comparisons.
+With segments powered by Spark SQL, you can use complete Customer Profile data and expanded functionality to define segments. You can use standard profile object attributes and custom object attributes. You can also used SQL-based functionality such as joining standard and custom objects together to use data from various objects, filtering segments with statistics such as percentiles and standardizing date fields to make comparisons.
 
 You can start by entering in a natural language prompt into Segment Assistant AI. Segment AI assistant will define the segment including its translation into Spark SQL. Segment Assistant AI will provide the steps it took to define the segment and you can validate it matches what you were aiming to create. You can also view the SQL, the SQL steps in natural language and a AI-generated summary of the Spark SQL to further help validate. If you want to make changes, you can update your natural language prompt or make edits to the Spark SQL directly.
 
@@ -228,14 +246,14 @@ When you use a Spark SQL segment in a segment membership call, Flow block, or Ou
 **SQL segmentation runs on Data store which has up to 10 years data. Classic segmentation uses latest data (data updated in past 3 years)**
 
 ### Step 1: Build a new segment
-<a name="w2aac38c53c13c15c15"></a>
+<a name="w2aac40c53c13c15c15"></a>
 
 In the Segment AI assistant, select “How to create a segment” for more guidance on creating valuable segments or “I want to generate a segment” to enter a natural language prompt to create the segment.
 
 Alternatively, use SQL to define a new segment in the query editor.
 
 ### Step 2: Specify a name and description
-<a name="w2aac38c53c13c15c17"></a>
+<a name="w2aac40c53c13c15c17"></a>
 
 For Name, enter a name for the customer segment to make it easy to recognize later.
 
@@ -245,7 +263,7 @@ The Amazon Connect admin website uses the entered name as the `DisplayName` of t
 For Description, optionally enter a description for the customer segment.
 
 ### Step 3: Review and validate the segment
-<a name="w2aac38c53c13c15c19"></a>
+<a name="w2aac40c53c13c15c19"></a>
 
 Review the data the Segment AI assistant used and the steps the AI model it took to generate your segment. You can also review the SQL it created to define the segment in the query editor. If it was not able to create the segment, address the feedback it provided to help it create an accurate segment. After it has generated a segment, Customer Profiles will automatically create a segment estimate for you.
 
@@ -257,7 +275,7 @@ If you are not using the Segment AI assistant, you can validate the query and cr
 Segments powered by Spark SQL will take time depending on the amount of profile data you use in the segment and the SQL used, similar to other query engines (for example, multiple joins across objects usually take more time).
 
 ### Step 4: Create segment
-<a name="w2aac38c53c13c15c21"></a>
+<a name="w2aac40c53c13c15c21"></a>
 
 After you have build a segment and are satisfied, select “Create segment” button on the top right. After you have created the segment, you can select Actions - exporting to .csv, using the segment in Flows and using the segment in Outbound Campaigns.
 

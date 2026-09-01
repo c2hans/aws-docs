@@ -141,7 +141,7 @@ Certificate verification error with error code 67 and depth 1: CA certificate ke
 ## Issue: ML-DSA is not supported on FIPS-mode clusters
 <a name="ki-all-17"></a>
 + **Impact: **ML-DSA (Module-Lattice-Based Digital Signature Algorithm) key generation, signing, and verification are not currently supported on FIPS-mode clusters.
-+ **Resolution status: **We are working to add FIPS-mode support for ML-DSA. Any updates will be announced on the version history page.
++ **Resolution: **This issue has been resolved. Customers can now use ML-DSA in both FIPS and non-FIPS modes in AWS CloudHSM Client SDK 5.18.
 
 ## See also
 

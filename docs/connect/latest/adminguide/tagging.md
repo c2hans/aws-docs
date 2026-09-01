@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/tagging.html
 
 A *tag* is a custom metadata label that you can add to a resource in order to make it easier to identify, organize, and find in a search. Tags are comprised of two individual parts: A tag key and a tag value. This is referred to as a *key:value* pair.
 
-A *tag key* typically represents a larger category, while a tag value represents a subset of that category. For example you could have *tag key=Color *and *tag value=Blue*, which would produce the key:value pair `Color:Blue`. Note that you can set the value of a tag to an empty string, but you can't set the value of a tag to null. Omitting the tag value is the same as using an empty string.
+A *tag key* typically represents a larger category, while a tag value represents a subset of that category. For example you could have *tag key=Color *and *tag value=Blue*, which would produce the key:value pair `Color:Blue`. Note that you can set the value of a tag to an empty string. However, you can't set the value of a tag to null. Omitting the tag value is the same as using an empty string.
 
 Tag keys can be up to 128 characters in length and tag values can be up to 256 characters in length; both are case sensitive. For more information, see:
 +  [Connect Customer TagResource](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResource.html)

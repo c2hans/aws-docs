@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 # Connect Customer Customer Profiles data limits
 <a name="customer-profiles-data-limits"></a>
 
-Connect Customer Customer Profiles allows you to customize your data onboarding by setting data ingestion limits on various types of customer data that you use to create a unified profile. Setting limits on your data mappings enables you to prioritize how much data to ingest across mappings. The default maximum limit across all mappings per profile is 1000.
+With Connect Customer Customer Profiles, you can customize your data onboarding by setting data ingestion limits on various types of customer data that you use to create a unified profile. By setting limits on your data mappings, you can prioritize how much data to ingest across mappings. The default maximum limit across all mappings per profile is 1000.
 
 A per-object-type limit (also referred to as `MaxProfileObjectCount`) does more than cap how many objects of a type are stored. It also determines how Connect Customer chooses which objects to remove when a profile reaches its total object limit. For more information, see [How data limits control object eviction](#customer-profiles-data-limits-eviction).
 

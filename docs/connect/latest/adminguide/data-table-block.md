@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-table-blo
 ## Description
 <a name="data-table-block-description"></a>
 
-The Data Table block in Connect Customer enables you to evaluate, list, or write data from data tables within your contact flows. This block helps dynamic decision-making, personalized customer experiences, and data management by interacting with structured data stored in your Connect Customer data tables.
+With the Data Table block in Connect Customer, you can evaluate, list, or write data from data tables within your contact flows. This block helps dynamic decision-making, personalized customer experiences, and data management by interacting with structured data stored in your Connect Customer data tables.
 
 ## Use cases
 <a name="data-table-block-use-cases"></a>
@@ -187,7 +187,7 @@ The following image shows the **Properties** page of the **Data Table** block co
          + Use default value – Uses the default value defined in the data table schema. No additional value input is required when this option is selected.
      + **Configure Lock Version** – The lock version setting controls how concurrent write operations to datatable are handled:
        + Use Latest option – Always writes to the most recent version of the record. Suitable for most use cases where concurrent updates are unlikely or acceptable.
-       + Set dynamically option – Allows you to specify the version number dynamically at runtime through Lambda or module.
+       + Set dynamically option – You can specify the version number dynamically at runtime through Lambda or module.
 
 ### Attribute limit for Write
 <a name="data-table-write-attribute-limit"></a>

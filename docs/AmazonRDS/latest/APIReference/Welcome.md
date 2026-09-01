@@ -21,7 +21,7 @@ This interface reference for Amazon RDS contains documentation for a programming
 + For a summary of the Amazon RDS interfaces, see [Available RDS Interfaces](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html#Welcome.Interfaces).
 + For more information about how to use the Query API, see [Using the Query API](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Using_the_Query_API.html).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

@@ -15,7 +15,7 @@ Distributes requests across multiple ECS tasks for high availability with health
 
  **Scaling configuration**
 
-The minimum task count ensures baseline capacity while the maximum task count prevents runaway scaling costs. Target CPU utilization triggers scale-out events, and scale-in cooldown periods prevent thrashing to maintain stable performance.
+The minimum task count helps maintain baseline capacity while the maximum task count prevents runaway scaling costs. Target CPU utilization triggers scale-out events, and scale-in cooldown periods prevent thrashing to maintain stable performance.
 
 ## See also
 

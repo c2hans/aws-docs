@@ -312,10 +312,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateExtractionDefinition  **
   - **SDK client:** connect
-  - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Tagging, Write
+  - **IAM action:**  [connect:CreateExtractionDefinition](#list_connect-action-CreateExtractionDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateHoursOfOperation  **
   - **SDK client:** connect
@@ -550,6 +548,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DeleteEvaluationForm  **
   - **SDK client:** connect
   - **IAM action:**  [connect:DeleteEvaluationForm](#list_connect-action-DeleteEvaluationForm)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteExtractionDefinition  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:DeleteExtractionDefinition](#list_connect-action-DeleteExtractionDefinition)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -809,6 +814,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DescribeEvaluationForm  **
   - **SDK client:** connect
   - **IAM action:**  [connect:DescribeEvaluationForm](#list_connect-action-DescribeEvaluationForm)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeExtractionDefinition  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:DescribeExtractionDefinition](#list_connect-action-DescribeExtractionDefinition)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -1367,6 +1379,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ListEvaluationForms  **
   - **SDK client:** connect
   - **IAM action:**  [connect:ListEvaluationForms](#list_connect-action-ListEvaluationForms)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListExtractionDefinitions  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:ListExtractionDefinitions](#list_connect-action-ListExtractionDefinitions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -2198,6 +2217,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateExtractionDefinition  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:UpdateExtractionDefinition](#list_connect-action-UpdateExtractionDefinition)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateHoursOfOperation  **
   - **SDK client:** connect
   - **IAM action:**  [connect:UpdateHoursOfOperation](#list_connect-action-UpdateHoursOfOperation)
@@ -2815,6 +2841,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
+- **   [CreateExtractionDefinition](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateExtractionDefinition.html)  **
+  - **Description:** Grants permission to create an extraction definition in an Amazon Connect instance
+  - **Resource types (\*required):** [extraction-definition\*](#list_connect-resource-extraction-definition)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
 - **   [CreateHoursOfOperation](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateHoursOfOperation.html)  **
   - **Description:** Grants permission to create hours of operation in an Amazon Connect instance
   - **Resource types (\*required):** [hours-of-operation\*](#list_connect-resource-hours-of-operation)
@@ -3052,6 +3084,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
+- **   [DeleteExtractionDefinition](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteExtractionDefinition.html)  **
+  - **Description:** Grants permission to delete an extraction definition in an Amazon Connect instance
+  - **Resource types (\*required):** [extraction-definition\*](#list_connect-resource-extraction-definition)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
 - **   [DeleteHoursOfOperation](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteHoursOfOperation.html)  **
   - **Description:** Grants permission to delete hours of operation in an Amazon Connect instance
   - **Resource types (\*required):** [hours-of-operation\*](#list_connect-resource-hours-of-operation)
@@ -3271,6 +3309,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DescribeEvaluationForm](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeEvaluationForm.html)  **
   - **Description:** Grants permission to describe an evaluation form in the specified Amazon Connect instance. If the version property is not provided, the latest version of the evaluation form is described
   - **Resource types (\*required):** [evaluation-form\*](#list_connect-resource-evaluation-form)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Read
+
+- **   [DescribeExtractionDefinition](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeExtractionDefinition.html)  **
+  - **Description:** Grants permission to describe an extraction definition in an Amazon Connect instance
+  - **Resource types (\*required):** [extraction-definition\*](#list_connect-resource-extraction-definition)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Read
 
@@ -3762,6 +3806,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** List
 
+- **   [ListExtractionDefinitions](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListExtractionDefinitions.html)  **
+  - **Description:** Grants permission to list extraction definitions associated with an Amazon Connect instance
+  - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** List
+
 - **   [ListFlowAssociations](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListFlowAssociations.html)  **
   - **Description:** Grants permission to list summary information about the flow associations for the specified Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
@@ -3949,6 +3999,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [contact-flow](#list_connect-resource-contact-flow) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [contact-flow-module](#list_connect-resource-contact-flow-module) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [evaluation-form](#list_connect-resource-evaluation-form) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [extraction-definition](#list_connect-resource-extraction-definition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [hierarchy-group](#list_connect-resource-hierarchy-group) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [hours-of-operation](#list_connect-resource-hours-of-operation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integration-association](#list_connect-resource-integration-association) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)
@@ -4411,6 +4462,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [customer-managed-view](#list_connect-resource-customer-managed-view) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [email-address](#list_connect-resource-email-address) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [evaluation-form](#list_connect-resource-evaluation-form) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
+  - **Resource types (\*required):** [extraction-definition](#list_connect-resource-extraction-definition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [hierarchy-group](#list_connect-resource-hierarchy-group) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [hours-of-operation](#list_connect-resource-hours-of-operation) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [instance](#list_connect-resource-instance) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_connect-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
@@ -4453,6 +4505,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [customer-managed-view](#list_connect-resource-customer-managed-view) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [email-address](#list_connect-resource-email-address) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [evaluation-form](#list_connect-resource-evaluation-form) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
+  - **Resource types (\*required):** [extraction-definition](#list_connect-resource-extraction-definition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [hierarchy-group](#list_connect-resource-hierarchy-group) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [hours-of-operation](#list_connect-resource-hours-of-operation) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
   - **Resource types (\*required):** [instance](#list_connect-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_connect-aws_TagKeys)
@@ -4584,6 +4637,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateEvaluationForm](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateEvaluationForm.html)  **
   - **Description:** Grants permission to update details about a specific evaluation form version in the specified Amazon Connect instance. Question and section identifiers cannot be duplicated within the same evaluation form
   - **Resource types (\*required):** [evaluation-form\*](#list_connect-resource-evaluation-form)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
+  - **Access level:** Write
+
+- **   [UpdateExtractionDefinition](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateExtractionDefinition.html)  **
+  - **Description:** Grants permission to update an extraction definition in an Amazon Connect instance
+  - **Resource types (\*required):** [extraction-definition\*](#list_connect-resource-extraction-definition)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_)<br />[connect:InstanceId](#list_connect-connect_InstanceId)
   - **Access level:** Write
 
@@ -4936,6 +4995,7 @@ The following resource types are defined by this service and can be used in the 
 |  [data-table](https://docs.aws.amazon.com/connect/latest/adminguide/data-tables.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/data-table/${DataTableId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [email-address](https://docs.aws.amazon.com/connect/latest/adminguide/create-email-address1.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/email-address/${EmailAddressId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [evaluation-form](https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/evaluation-form/${FormId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
+|  [extraction-definition](https://docs.aws.amazon.com/connect/latest/adminguide/extraction-definitions.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/extraction-definition/${ExtractionDefinitionId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [hierarchy-group](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-group/${HierarchyGroupId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [hours-of-operation](https://docs.aws.amazon.com/connect/latest/adminguide/set-hours-operation.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/operating-hours/${HoursOfOperationId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
 |  [instance](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-instances.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |

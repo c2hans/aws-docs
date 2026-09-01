@@ -21,7 +21,7 @@ This reference guide describes the low-level service API for Amazon GameLift Ser
 +  [Amazon GameLift Servers API operations listed by tasks](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html)
 +  [ Amazon GameLift Servers tools and resources](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-components.html)
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

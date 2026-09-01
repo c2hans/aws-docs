@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enabling-profi
 # Enable Profile explorer
 <a name="enabling-profile-explorer"></a>
 
-The following steps will allow you to enable Profile explorer for your administrators and users. This process involves setting up permissions for both layout configuration and viewing access.
+By following these steps, you can enable Profile explorer for your administrators and users. This process involves setting up permissions for both layout configuration and viewing access.
 
 **Topics**
 + [Enable administrators to define a layout](#enable-administrators-define-layout)

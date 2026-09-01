@@ -11,17 +11,16 @@ This solution is available in the following AWS Regions:
 
 | Region name |  |
 | --- | --- |
-| US East (Ohio) | Canada (Central) |
-| US East (N. Virginia) | China (Beijing) |
-| US West (Northern California) | China (Ningxia) |
-| US West (Oregon) | Europe (Frankfurt) |
-| Africa (Cape Town) | Europe (Ireland) |
-| Asia Pacific (Hong Kong) | Europe (London) |
-| Asia Pacific (Mumbai) | Europe (Milan) |
-| Asia Pacific (Seoul) | Europe (Paris) |
-| Asia Pacific (Singapore) | Europe (Stockholm) |
-| Asia Pacific (Sydney) | Middle East (Bahrain) |
-| Asia Pacific (Tokyo) | South America (São Paulo) |
+| US East (Ohio) | Asia Pacific (Tokyo) |
+| US East (N. Virginia) | Canada (Central) |
+| US West (Northern California) | Europe (Frankfurt) |
+| US West (Oregon) | Europe (Ireland) |
+| Africa (Cape Town) | Europe (London) |
+| Asia Pacific (Hong Kong) | Europe (Milan) |
+| Asia Pacific (Mumbai) | Europe (Paris) |
+| Asia Pacific (Seoul) | Europe (Stockholm) |
+| Asia Pacific (Singapore) | Middle East (Bahrain) |
+| Asia Pacific (Sydney) | South America (São Paulo) |
 
 ## See also
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/one-bot-voice-
 # How to use the same Amazon Lex bot for voice and chat
 <a name="one-bot-voice-chat"></a>
 
-You can use the same bot for voice and chat. However, you might want the bot to respond differently based on the channel. For example, you want to return SSML for voice so a number is read as a phone number, but you want to return normal text to chat. You can do this by passing the **Channel** attribute.
+You can use the same bot for voice and chat. However, you might want the bot to respond differently based on the channel. For example, you want to return SSML for voice so a number is read as a phone number. However, you want to return normal text to chat. You can do this by passing the **Channel** attribute.
 
 1. In the **Get customer input** block, choose the **Amazon Lex** tab.
 

@@ -17,13 +17,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 1. Go to the **Invalidations** tab
 
-1. Click **Create invalidation**
+1. Choose **Create invalidation**
 
 1. Enter the path pattern for images to invalidate:
    + For all images: `/*`
-   + For specific paths: `/images/ ` or `/mobile/`
+   + For specific paths: `/images/*` or `/mobile/*`
 
-1. Click **Create invalidation**
+1. Choose **Create invalidation**
 
 The invalidation will clear cached images, forcing CloudFront to request fresh images with the new configuration applied.
 

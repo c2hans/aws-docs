@@ -82,6 +82,13 @@ In this example, the console only displays six used nodes, and fourteen unused n
 
 The pricing benefits of Reserved Nodes are shared when the purchasing account is part of a set of accounts billed under one consolidated billing payer account. The hourly usage across all sub-accounts is aggregated in the payer account every month. This is typically useful for companies in which there are different functional teams or groups; then, the normal Reserved Nodes logic is applied to calculate the bill. For more information, see [Consolidated Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html) in the AWS Billing User Guide.
 
+## Things to consider before changing node type on a cluster that uses Reserved Instances
+<a name="reserved-nodes-change-node-type"></a>
+
+You can change the node type of a cluster by changing either the node family or the node size using the resize feature (elastic or classic). When you change the node type, the reserved node purchases that are associated with the cluster don't change automatically. The existing reservations remain tied to the original node type. You continue to be billed for these reservations until their term ends. Meanwhile, the nodes of the new type might be billed at the on-demand rate.
+
+Because of this, for changes to your Reserved Instances, we recommend that you contact your AWS account team or [AWS Billing Support](https://console.aws.amazon.com/support/home) before you change the node type of a cluster that uses reserved nodes. They can guide you appropriately.
+
 ## Reserved node examples
 <a name="reserved-node-examples"></a>
 

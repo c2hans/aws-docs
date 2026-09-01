@@ -57,7 +57,7 @@ As a prerequisite, add the appropriate extension hosting URLs to your firewall a
 ## Deploy the extension through enterprise policy
 <a name="extension-deploy-policy"></a>
 
-The Connect Customer browser extension is deployed at user scope. This lets you target the extension to the specific users or groups who handle recorded contacts, without modifying per-machine settings on agent workstations.
+The Connect Customer browser extension is deployed at user scope. With user-scope deployment, you can target the extension to the specific users or groups who handle recorded contacts, without modifying per-machine settings on agent workstations.
 
 Use any enterprise policy tool that can push per-user browser extension settings. Common options include:
 + Microsoft Group Policy Preferences, scoped to **User Configuration** and filtered to a security group of agent users.
@@ -126,7 +126,7 @@ All values use the `REG_SZ` type.
 <a name="extension-gpo-step1"></a>
 
 **Note**
-We recommend that you create a new, separate GPO rather than editing your primary domain policy. This allows you to link or unlink the Connect Customer extension safely.
+We recommend that you create a new, separate GPO rather than editing your primary domain policy. With a separate GPO, you can link or unlink the Connect Customer extension safely.
 + Open **Group Policy Management** (`gpmc.msc`).
 + Right-click **Group Policy Objects** and select **New**. For the name, enter `PII-AmazonConnect` (or similar).
 ![Creating a new Group Policy Object.](http://docs.aws.amazon.com/connect/latest/adminguide/images/deploy-browser-extension-gpo-new.png)

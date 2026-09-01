@@ -163,7 +163,7 @@ The following image shows an example of a List view. It has one column with thre
 ------
 #### [ Form view ]
 
-The **Form view** allows you to provide your agents with input fields to gather required data and submit data to backend systems. This view consists of multiple *Sections* with a predefined *Section* style with a header. The body consists of various input fields arranged in a column or a grid layout format.
+With the **Form view**, you can provide your agents with input fields to gather required data and submit data to backend systems. This view consists of multiple *Sections* with a predefined *Section* style with a header. The body consists of various input fields arranged in a column or a grid layout format.
 
 Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-form--with-all) for **Form view**
 
@@ -456,7 +456,7 @@ The following image shows an example of a confirmation.
 ------
 #### [ Cards view ]
 
-The **Cards view** allows you to guide your agent by presenting them with a list of topics to choose from as soon as they accept the contact.
+With the **Cards view**, you can guide your agent by presenting them with a list of topics to choose from as soon as they accept the contact.
 
 Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-cards--with-all) for **Cards view**
 

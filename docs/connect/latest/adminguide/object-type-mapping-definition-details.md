@@ -31,7 +31,7 @@ The field definition defines the source, destination (target), and type of field
   Use the Handlebar macro solution for generating constants and combining multiple source object fields into a single field. This is useful for indexing.
 + `Target`: Specifies where in a standard object type the data of this field should be mapped.
 
-  Populating the standard profile allows you to use data ingested from any data source with applications built on top of Customer Profiles without any specific knowledge of the format of the data being ingested.
+  By populating the standard profile, you can use data ingested from any data source with applications built on top of Customer Profiles without any specific knowledge of the format of the data being ingested.
 
   This field is optional. You might want to define fields solely for the purpose of including them in a key.
 
@@ -62,7 +62,7 @@ To phrase this in another way: keys should have the same key name in a domain if
 
 Keys definitions are used in two ways:
 + Inside of Customer Profiles during ingestion, they are used to figure out what profile the object should be assigned to.
-+ They allow you to use the [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) API to search for the key value and find the profile.
++ You can use the [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) API to search for the key value and find the profile.
 
 ## Default search keys
 <a name="object-type-mapping-default-search-keys"></a>

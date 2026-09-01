@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 1. Install NPM/Node
 
-1. NPM Install CDK, Lerna
+1. NPM Install CDK
 
 1. Authenticate to the MDAA NPM Repo
 
@@ -22,13 +22,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
    npm install
    ```
 
-1. After making code changes, run a build/test using lerna:
+1. After making code changes, run a build/test from the root of the repo:
 
    ```
-   lerna run build && lerna run test
+   npm run build && npm run test
    ```
 
-   Alternatively, you can run `npm run build && npm run test` in each individual package you have modified.
+   Task orchestration uses nx (invoked through these npm scripts). `npm run build` and `npm run test` build and test only the affected packages; use `npm run build:all` and `npm run test:all` to run against every package without the nx cache. Alternatively, you can run `npm run build && npm run test` in each individual package you have modified.
 
 ### Version Requirements
 <a name="version-requirements"></a>
@@ -44,12 +44,12 @@ MDAA has specific version requirements for development:
 ### Testing Overview
 <a name="testing-overview"></a>
 
-The testing approach for MDAA changes varies depending on the type of package being tested (App, Stack, or Construct). Before testing, ensure that the entire MDAA repo is cloned, bootstrapped, and built.
+The testing approach for MDAA changes varies depending on the type of package being tested (App, Stack, or Construct). Before testing, verify that the entire MDAA repo is cloned, bootstrapped, and built.
 
 ### Testing Constructs and Stacks
 <a name="testing-constructs-and-stacks"></a>
 
-Constructs and Stacks should be tested via unit testing using the CDK Assertions framework. This framework can be used to ensure that the CFN resources produced by a MDAA construct or stack are defined as expected in the resulting CFN template. Specific attention should be paid in these unit tests to any resource property which has compliance implications.
+Constructs and Stacks should be tested via unit testing using the CDK Assertions framework. This framework can be used to verify that the CFN resources produced by a MDAA construct or stack are defined as expected in the resulting CFN template. Specific attention should be paid in these unit tests to any resource property which has compliance implications.
 
 #### Example Construct/Stack Unit Tests
 <a name="example-constructstack-unit-tests"></a>
@@ -114,7 +114,7 @@ describe( 'MDAA Construct Compliance Tests', () => {
 ### Testing Apps
 <a name="testing-apps"></a>
 
-MDAA Apps can be developed and tested like any other CDK app. This typically involves a `cdk list/synth/diff/deploy` from within the App source directory, while also providing the necessary context values which would otherwise be provided by the MDAA framework. Executing the cdk command will result in the application source code being built. However, any changes made in underlying dependencies (such as stacks and constructs) would require either a `lerna run build` at the root of the MDAA repo, or `npm run build` in the package folder for each of the modified dependencies.
+MDAA Apps can be developed and tested like any other CDK app. This typically involves a `cdk list/synth/diff/deploy` from within the App source directory, while also providing the necessary context values which would otherwise be provided by the MDAA framework. Executing the cdk command will result in the application source code being built. However, any changes made in underlying dependencies (such as stacks and constructs) would require either a `npm run build` at the root of the MDAA repo, or `npm run build` in the package folder for each of the modified dependencies.
 
 #### Example CDK Command Invoking a MDAA App
 <a name="example-cdk-command-invoking-a-mdaa-app"></a>

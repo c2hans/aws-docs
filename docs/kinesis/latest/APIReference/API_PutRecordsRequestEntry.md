@@ -25,7 +25,7 @@ Required: Yes
  ** ExplicitHashKey **   <a name="Streams-Type-PutRecordsRequestEntry-ExplicitHashKey"></a>
 The hash value used to determine explicitly the shard that the data record is assigned to by overriding the partition key hash.
 Type: String
-Pattern: `0|([1-9]\d{0,38})`
+Pattern: `^(0|([1-9]\d{0,38}))$`
 Required: No
 
 ## See Also

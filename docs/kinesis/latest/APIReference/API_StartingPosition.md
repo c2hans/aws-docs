@@ -24,7 +24,7 @@ Required: Yes
  ** SequenceNumber **   <a name="Streams-Type-StartingPosition-SequenceNumber"></a>
 The sequence number of the data record in the shard from which to start streaming. To specify a sequence number, set `StartingPosition` to `AT_SEQUENCE_NUMBER` or `AFTER_SEQUENCE_NUMBER`.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: No
 
  ** Timestamp **   <a name="Streams-Type-StartingPosition-Timestamp"></a>

@@ -14,9 +14,9 @@ The first step of building an analytics platform with MDAA is to decide on an in
 
 As an example, the following is the architecture for the Basic Datalake.
 
-![basic datalake](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/basic_datalake.png)
+ **Basic Datalake on AWS architecture**
 
-**Basic Datalake on AWS architecture**
+![Basic Datalake reference architecture — S3 data lake with Glue Data Catalog and Lake Formation governance.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/basic_datalake.png)
 
 1. You use AWS CloudFormation to install MDAA into your environment. Your environment must meet prerequisites before deploying the solution. (See [PREDEPLOYMENT](https://github.com/aws/modern-data-architecture-accelerator/blob/main/PREDEPLOYMENT.md).) The provided CloudFormation template deploys an AWS CodePipeline that contains the MDAA installation engine for building analytics platforms.
 

@@ -38,7 +38,7 @@ POST /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
        ],
        "Expression": "string",
     },
-    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE",
+    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE" | "RECENT_OCCURRENCES",
     "Conditions": {
         "Range": {
              "Value": "number",
@@ -70,7 +70,7 @@ POST /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
        ],
        "Expression": "string",
     },
-    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE"
+    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE" | "RECENT_OCCURRENCES"
     "Conditions": {
         "Range": {
              "Value": "number",
@@ -202,6 +202,7 @@ POST /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
     + MAXIMUM
     + AVERAGE
     + MAX\_OCCURRENCE
+    + RECENT\_OCCURRENCES
 
 ------
 #### [ UpdateCalculatedAttributeDefinition ]
@@ -255,7 +256,7 @@ PUT /domains/{{DomainName}}/calculated-attributes/{{CalculatedAttributeName}}
        ],
        "Expression": "string",
     },
-    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE"
+    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE" | "RECENT_OCCURRENCES"
     "Conditions": {
         "Range": {
              "Value": "number",
@@ -375,7 +376,7 @@ The request does not have a request body.
        ],
        "Expression": "string",
     },
-    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE"
+    "Statistic": "AVERAGE" | "COUNT" | "SUM" | "FIRST_OCCURRENCE" | "LAST_OCCURRENCE" | "MINIMUM" | "MAXIMUM" | "MAX_OCCURRENCE" | "RECENT_OCCURRENCES"
 "Conditions": {
 "Range": {
       "Unit": "string",

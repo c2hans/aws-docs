@@ -73,7 +73,7 @@ The following steps explain how to use the console.
 ## Step 2: Configure an inbound contact flow on your phone number
 <a name="inbound-contact-flow"></a>
 
-You can create an inbound contact flow for use with your WhatsApp phone number, or you can reuse an existing flow. If you reuse a flow, you can add a `CheckContactAttribute` block and enable branching for the flow. The block enables you to send WhatsApp contacts to a specific queue, or take another action.
+You can create an inbound contact flow for use with your WhatsApp phone number, or you can reuse an existing flow. If you reuse a flow, you can add a `CheckContactAttribute` block and enable branching for the flow. With the block, you can send WhatsApp contacts to a specific queue, or take another action.
 
 For more information about building your contact flow, including interactive messages and rich link previews, see [WhatsApp Business messaging capabilities and limitations with Connect Customer](whatsapp-messaging-capabilities.md) later in this section.
 

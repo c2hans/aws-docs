@@ -43,11 +43,11 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 | --- | --- |
 |  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](guardrails.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](tool-use.html)  |  + ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Structured outputs](structured-outputs.html)  |
 
-**Prompt caching using `bedrock-runtime` endpoint**
+**Implicit and Explicit Prompt Caching using `bedrock-runtime` endpoint**
 
 For more information, see [Prompt caching for faster model inference](prompt-caching.html).
 
-| **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
+| **Explicit Prompt Caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
 | --- | --- | --- | --- | --- |
 | Yes | 1K\* | 4 | 5 minutes | system and messages |
 

@@ -8,8 +8,10 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Opera
 The following actions are supported:
 +  [AddAttachmentsToSet](API_AddAttachmentsToSet.md)
 +  [AddCommunicationToCase](API_AddCommunicationToCase.md)
++  [CompleteAttachmentUpload](API_CompleteAttachmentUpload.md)
 +  [CreateCase](API_CreateCase.md)
 +  [DescribeAttachment](API_DescribeAttachment.md)
++  [DescribeAttachmentUploadStatus](API_DescribeAttachmentUploadStatus.md)
 +  [DescribeCases](API_DescribeCases.md)
 +  [DescribeCommunications](API_DescribeCommunications.md)
 +  [DescribeCreateCaseOptions](API_DescribeCreateCaseOptions.md)
@@ -20,6 +22,8 @@ The following actions are supported:
 +  [DescribeTrustedAdvisorCheckResult](API_DescribeTrustedAdvisorCheckResult.md)
 +  [DescribeTrustedAdvisorChecks](API_DescribeTrustedAdvisorChecks.md)
 +  [DescribeTrustedAdvisorCheckSummaries](API_DescribeTrustedAdvisorCheckSummaries.md)
++  [GetAttachmentDownloadLink](API_GetAttachmentDownloadLink.md)
++  [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md)
 +  [RefreshTrustedAdvisorCheck](API_RefreshTrustedAdvisorCheck.md)
 +  [ResolveCase](API_ResolveCase.md)
 

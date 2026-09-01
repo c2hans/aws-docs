@@ -54,8 +54,34 @@ Content-type: application/json
          "data": "{{string}}",
          "dataSchemaVersion": "{{string}}"
       },
+      "agui": {
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "{{string}}"
+                  }
+               ],
+               "url": "{{string}}"
+            }
+         }
+      },
       "custom": {
          "data": "{{string}}"
+      },
+      "http": {
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "{{string}}"
+                  }
+               ],
+               "url": "{{string}}"
+            }
+         }
       },
       "mcpServer": {
          "additionalData": {
@@ -81,6 +107,14 @@ Content-type: application/json
    },
    "displayName": "{{string}}",
    "name": "{{string}}",
+   "provenance": [
+      {
+         "relation": "{{string}}",
+         "sourceDetails": { ... },
+         "sourceId": "{{string}}",
+         "sourceType": "{{string}}"
+      }
+   ],
    "recordType": "{{string}}",
    "recordVersion": "{{string}}",
    "tags": {
@@ -136,10 +170,16 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9_\-\.\/]*`
 Required: Yes
 
+ ** [provenance](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-provenance"></a>
+The provenance lineage entries for the registry record. This field is reserved for the AWS Agent Registry auto-detection service principal. Requests that include this field from other callers are rejected.
+Type: Array of [Provenance](API_Provenance.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Required: No
+
  ** [recordType](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-recordType"></a>
 The type of the registry record, which determines the descriptor format
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
 Required: Yes
 
  ** [recordVersion](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-recordVersion"></a>

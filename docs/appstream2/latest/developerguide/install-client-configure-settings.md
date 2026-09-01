@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/install-client-configure-settings.html
 ---
 
-# Tutorial: Install the Amazon WorkSpaces Applications Client And Customize the Client Experience for Your Users
+# Tutorial: Install the Amazon WorkSpaces Applications Client and Customize the Client Experience for Your Users
 <a name="install-client-configure-settings"></a>
 
 The following sections describe how to install the WorkSpaces Applications client and customize the client experience for your users. If you plan to download and install the client for your users, first download the Enterprise Deployment Tool. You can then run PowerShell scripts to install the WorkSpaces Applications client and configure client settings remotely.
@@ -33,34 +33,29 @@ The Enterprise Deployment Tool includes the WorkSpaces Applications client insta
 
 1. To download the Enterprise Deployment Tool, on the bottom right of the [WorkSpaces Applications supported clients](https://clients.amazonappstream.com) page, select the **Enterprise Deployment Tool** link. This link opens a .zip file that contains the required files for the latest version of the tool.
 
-1. To extract the required files, navigate to the location where you downloaded the tool, right-click the **AmazonAppStreamClient\_EnterpriseSetup\_<version>** folder, and choose **Extract All**. The folder contains two installation programs and a Group Policy administrative template:
-   + WorkSpaces Applications client installer (AmazonAppStreamClientSetup\_<version>.msi) — Installs the WorkSpaces Applications client.
+1. To extract the required files, navigate to the location where you downloaded the tool, right-click the **AmazonWorkSpacesApplicationsClient\_EnterpriseSetup\_<version>.zip** file, and choose **Extract All**. The .zip file contains two installation programs and a Group Policy administrative template:
+   + WorkSpaces Applications client installer (AmazonWorkSpacesApplicationsClientSetup\_<version>.msi) — Installs the WorkSpaces Applications client.
    + WorkSpaces Applications USB driver installer (AmazonAppStreamUsbDriverSetup\_<version>.exe) — Installs the WorkSpaces Applications USB driver that is required to use USB devices with applications streamed through WorkSpaces Applications.
    + WorkSpaces Applications client Group Policy administrative template (as2\_client\_config.adm) — Lets you configure the WorkSpaces Applications client through Group Policy.
 
 ## Install the WorkSpaces Applications Client and USB Driver
 <a name="run-powershell-script-install-client-usb-driver-silently"></a>
 
-After you download the WorkSpaces Applications client installation files, run the following PowerShell script on users' computers to install the WorkSpaces Applications client installation file, AppStreamClient.exe, and the USB driver silently.
+After you download the WorkSpaces Applications client installation files, run the following PowerShell script on your users' computers to install the WorkSpaces Applications client and the USB driver silently.
 
 **Note**
 To run this script, you must be logged in to the applicable computer with Administrator permissions. You can also run the script remotely under the System account on startup.
 
-```
-Start-Process msiexec.exe -Wait -ArgumentList  '/i AmazonAppStreamClientSetup_<version>.msi /quiet'
-
-Start-Process AmazonAppStreamUsbDriverSetup_<version>.exe -Wait -ArgumentList  '/quiet'
-```
-
-After you install the Enterprise Deployment Tool on a user's computer, the WorkSpaces Applications client is installed as follows:
-
-1. The WorkSpaces Applications client installation file is copied to the following path on the user's computer: C:\\Program Files (x86)\\Amazon WorkSpaces Applications Client Installer\\AppStreamClient.exe.
-
-1. The first time the user logs on to their computer after the Enterprise Deployment Tool is installed, the WorkSpaces Applications client is installed.
 **Note**
-If the Enterprise Deployment Tool detects that the WorkSpaces Applications Client folder, **AppStreamClient**, already exists in **%localappdata%**, the tool does not install the client.
+The WorkSpaces Applications client requires a 64-bit (x64) version of Windows.
 
-If a user uninstalls the WorkSpaces Applications client, the client isn’t installed again until you update the WorkSpaces Applications Enterprise Deployment Tool.
+```
+Start-Process msiexec.exe -Wait -ArgumentList '/i AmazonWorkSpacesApplicationsClientSetup_<version>.msi ALLUSERS=1 /quiet'
+
+Start-Process AmazonAppStreamUsbDriverSetup_<version>.exe -Wait -ArgumentList '/quiet'
+```
+
+After installation completes, the installer places the WorkSpaces Applications client in the following location on your users' computers: `C:\Program Files\Amazon Web Services, Inc\Amazon WorkSpaces Applications\`. The installer automatically registers and starts the auto-update service.
 
 ## Accessing WorkSpaces Applications with the WorkSpaces Applications Client
 <a name="access-appstream-with-client"></a>
@@ -155,7 +150,7 @@ Keep in mind the following requirements and considerations for creating a DNS TX
 ## Disable DNS TXT Record Lookup for Trusted Domains
 <a name="disable-DNS-TXT-record-lookup-client"></a>
 
-By default, when users launch the WorkSpaces Applications and specify a URL that is not an WorkSpaces Applications domain, the client performs a DNS TXT record lookup. The lookup is performed on the second-level domain of the URL so that the client can determine whether the domain is included in the `AS2TrustedDomains` list. This behavior lets users connect to domains that are not specified in the `StartURL` or `TrustedDomains` registry keys, or WorkSpaces Applications domains.
+By default, when users launch the WorkSpaces Applications client and specify a URL that is not an WorkSpaces Applications domain, the client performs a DNS TXT record lookup. The lookup is performed on the second-level domain of the URL so that the client can determine whether the domain is included in the `AS2TrustedDomains` list. This behavior lets users connect to domains that are not specified in the `StartURL` or `TrustedDomains` registry keys, or WorkSpaces Applications domains.
 
 You can disable this behavior by setting the value for the `DnsTxtRecordQueryDisabled` registry key to `true`. You can create this registry key when you install the WorkSpaces Applications client. That way, the client connects only to URLs that are specified by the `StartURL` or `TrustedDomains` registry keys.
 
@@ -246,7 +241,7 @@ New-ItemProperty -Path $registryPath -Name "PrinterRedirectionDisabled" -Value "
 
 By default, smart card redirection is enabled for the WorkSpaces Applications client. When this feature is enabled, users can use smart card readers that are connected to their local computers and their smart cards during WorkSpaces Applications streaming sessions without USB redirection. During WorkSpaces Applications streaming sessions, users' smart card readers and smart cards remain accessible for use with local applications. The client redirects the smart card API calls from users’ streaming applications to their local smart card. You can disable smart card redirection by setting the value for the `SmartCardRedirectionDisabled` registry key to `true`. You can create this HKLM registry key when you install the WorkSpaces Applications client.
 
-If the value is set to `true`, your users can't use their smart card readers and smart cards during an WorkSpaces Applications streaming session without USB redirection. In this case, users can't sign in to their streaming applications by using a smart card that is connected to their local computer unless you [qualify the device](qualify-usb-devices.md). After you qualify the device, users must [share the device with WorkSpaces Applications](client-application-windows-how-to-share-usb-devices-user.md). When smart card redirection is disabled, during users' WorkSpaces Applications streaming sessions, their smart card readers and smart cards are not accessible for use with local applications.
+If the value is set to `true`, your users can't use their smart card readers and smart cards during a WorkSpaces Applications streaming session without USB redirection. In this case, users can't sign in to their streaming applications by using a smart card that is connected to their local computer unless you [qualify the device](qualify-usb-devices.md). After you qualify the device, users must [share the device with WorkSpaces Applications](client-application-windows-how-to-share-usb-devices-user.md). When smart card redirection is disabled, during users' WorkSpaces Applications streaming sessions, their smart card readers and smart cards are not accessible for use with local applications.
 
 After you install the WorkSpaces Applications client, you can run the following PowerShell script to create this registry key. Or, you can use the administrative template that is included in the WorkSpaces Applications client Enterprise Deployment Tool to configure the client through Group Policy.
 
@@ -267,7 +262,7 @@ The WorkSpaces Applications client uses registry keys to configure the following
 + WorkSpaces Applications client End-User License Agreement (EULA) acceptance
 + WorkSpaces Applications client EULA version accepted
 + Automatic diagnostic log uploads for the WorkSpaces Applications client
-+ Automatic updates for the USB driver that is used to pass USB drivers to WorkSpaces Applications
++ Automatic updates for the USB driver that is used to pass USB devices to WorkSpaces Applications
 + Enabling hardware rendering in the WorkSpaces Applications client
 + Setting custom folder paths for file system redirection in the WorkSpaces Applications client
 + Opening URL for your identity provider (IdP) in system default browser
@@ -283,7 +278,7 @@ These values are case sensitive.
 | EULAAccepted | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to accept the WorkSpaces Applications client EULA on behalf of your users. | true/false |
 | AcceptedEULAVersion | HKCU\\Software\\Amazon\\Appstream Client | String | The version of EULA that is accepted. If the current version of the WorkSpaces Applications client EULA is different from the version of the EULA that is accepted, users are prompted to accept the current version of the EULA. | 1.0 |
 | DiagnosticInfoCollectionAllowed | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable WorkSpaces Applications to automatically send diagnostic logs from the WorkSpaces Applications client to WorkSpaces Applications (AWS). | true/false |
-| USBDriverOptIn | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable WorkSpaces Applications to automatically update the USB driver that is used to pass USB drivers to WorkSpaces Applications. | true/false |
+| USBDriverOptIn | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable WorkSpaces Applications to automatically update the USB driver that is used to pass USB devices to WorkSpaces Applications. | true/false |
 | HardwareRenderingEnabled | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable hardware rendering in the WorkSpaces Applications client. | true/false |
 | FileRedirectionCustomDefaultFolders | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to include at least one folder path for file system redirection. Separate multiple folder paths by using '\|'. By default, the following folder paths are specified: %USERPROFILE%\\Desktop\|%USERPROFILE%\\Documents\|%USERPROFILE%\\Downloads | {{Valid folder path}} |
 | OpenIdpUrlInSystemBrowser | HKCU\\Software\\Amazon\\Appstream Client | String | Set this value to true to enable the WorkSpaces Applications client to open the IdP URL in a system default browser. This feature is supported on client version 1.1.1360 and later. | true/false |

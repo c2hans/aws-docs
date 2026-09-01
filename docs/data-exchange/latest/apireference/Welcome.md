@@ -49,7 +49,7 @@ For information about AWS Regions and endpoints that are supported for AWS Data 
 
 For information about the quotas for using AWS Data Exchange, see [AWS Data Exchange endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/dataexchange.html#quotas-dataexchange) in the * AWS General Reference *.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

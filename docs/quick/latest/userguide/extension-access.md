@@ -29,8 +29,6 @@ Here's what you need to know about extension access:
 + [Amazon Quick Microsoft PowerPoint extension](powerpoint-extension.md)
 + [Amazon Quick Slack extension](slack-extension.md)
 + [Amazon Quick Microsoft Teams extension](teams-extension.md)
-+ [Amazon Quick Microsoft Outlook extension (Legacy)](legacy-outlook-extension.md)
-+ [Amazon Quick Microsoft Word extension (Legacy)](legacy-word-extension.md)
 
 ## See also
 

@@ -39,6 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: String
+*Pattern*: `capacity-reservations-only`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MlReservationArn`  <a name="cfn-sagemaker-endpointconfig-capacityreservationconfig-mlreservationarn"></a>

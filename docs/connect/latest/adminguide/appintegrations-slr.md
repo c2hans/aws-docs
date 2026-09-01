@@ -119,7 +119,7 @@ You can also use the IAM console to create a service-linked role with the **AppI
 ## Editing a service-linked role for Amazon AppIntegrations
 <a name="edit-slr-appinteg"></a>
 
-Amazon AppIntegrations does not allow you to edit the AWSServiceRoleForAppIntegrations service-linked role. After you create a service-linked role, you cannot change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
+You can't edit the AWSServiceRoleForAppIntegrations service-linked role with Amazon AppIntegrations. After you create a service-linked role, you cannot change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
 
 ## Deleting a service-linked role for Amazon AppIntegrations
 <a name="delete-slr-appinteg"></a>
@@ -170,9 +170,9 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 ## Supported regions for Amazon AppIntegrations service-linked roles
 <a name="slr-regions-appinteg"></a>
 
-Amazon AppIntegrations supports using service-linked roles in all of the regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
+Amazon AppIntegrations supports using service-linked roles in all of the Regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
-You can use the AWSServiceRoleForAppIntegrations role in the following regions.
+You can use the AWSServiceRoleForAppIntegrations role in the following Regions.
 
 | Region name | Region identity | Support in Amazon AppIntegrations |
 | --- | --- | --- |

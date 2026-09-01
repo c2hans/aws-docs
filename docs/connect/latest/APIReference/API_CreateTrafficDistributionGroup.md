@@ -57,7 +57,7 @@ Required: No
 The identifier of the Connect Customer instance that has been replicated. You can find the `instanceId` in the ARN of the instance.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 250.
-Pattern: `^(arn:(aws|aws-us-gov):connect:[a-z]{2}-[a-z]+-[0-9]{1}:[0-9]{1,20}:instance/)?[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+Pattern: `^(arn:([a-zA-Z0-9-]+):connect:[a-z]+-[a-z-]+-[0-9]+:[0-9]+:instance/)?[a-zA-Z0-9_-]+$`
 Required: Yes
 
  ** [Name](#API_CreateTrafficDistributionGroup_RequestSyntax) **   <a name="connect-CreateTrafficDistributionGroup-request-Name"></a>
@@ -99,12 +99,12 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_CreateTrafficDistributionGroup_ResponseSyntax) **   <a name="connect-CreateTrafficDistributionGroup-response-Arn"></a>
 The Amazon Resource Name (ARN) of the traffic distribution group.
 Type: String
-Pattern: `^arn:(aws|aws-us-gov):connect:[a-z]{2}-[a-z]+-[0-9]{1}:[0-9]{1,20}:traffic-distribution-group/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+Pattern: `^arn:([a-zA-Z0-9-]+):connect:[a-z]+-[a-z-]+-[0-9]+:[0-9]+:traffic-distribution-group/[a-zA-Z0-9_-]+$`
 
  ** [Id](#API_CreateTrafficDistributionGroup_ResponseSyntax) **   <a name="connect-CreateTrafficDistributionGroup-response-Id"></a>
 The identifier of the traffic distribution group. This can be the ID or the ARN of the traffic distribution group.
 Type: String
-Pattern: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+Pattern: `^[a-zA-Z0-9_-]+$`
 
 ## Errors
 <a name="API_CreateTrafficDistributionGroup_Errors"></a>

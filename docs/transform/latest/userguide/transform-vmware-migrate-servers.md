@@ -215,7 +215,7 @@ You choose how IP addresses are assigned to your migrated servers:
 + **Dynamic IP (DHCP)** – Each server is assigned a new IP address from the subnet's IP pool.
 
 **Note**
-If you selected the MAP security groups mapping strategy during network migration, only static IP assignment is available. For more details, see [Security groups mapping](transform-vmware-migrate-network.md#transform-vmware-security-group-association).
+If you selected the MAP security groups mapping strategy during network migration, only static IP assignment is available. For more details, see [Security groups mapping](transform-vmware-migrate-network-new-vpcs.md#transform-vmware-security-group-association).
 
 ### Step 2: Validate and confirm inventory
 <a name="transform-vmware-ms-validate-inventory"></a>

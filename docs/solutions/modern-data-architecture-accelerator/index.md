@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/modern-data-architecture-acce
 
 Rapidly deploy and manage sophisticated data foundation on AWS
 
-- **Version**: 1.7.0
-- **Released**: 7/2026
+- **Version**: 1.8.0
+- **Released**: 8/2026
 - **Author**: AWS
 - **Estimated cost**: [See details](/solutions/latest/modern-data-architecture-accelerator/cost.html)
 
@@ -69,6 +69,10 @@ You can automatically deploy this architecture using the implementation guide an
 - **CloudFormation template**: View or modify the CloudFormation template to customize your deployment.
 
 [Download template](https://s3.amazonaws.com/solutions-reference/modern-data-architecture-accelerator/latest/MdaaInstallerStack.template)
+
+- **Hands-on workshop**: Learn how to deploy and use MDAA with a guided, hands-on workshop.
+
+[Go to workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6e7289c7-5662-494d-8b56-b8706412c3a6/en-US?target=_blank)
 
 ---
 

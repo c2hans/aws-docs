@@ -66,8 +66,8 @@ Required: Yes
  ** [SegmentTypes](#API_ListRealtimeContactAnalysisSegmentsV2_RequestSyntax) **   <a name="connect-ListRealtimeContactAnalysisSegmentsV2-request-SegmentTypes"></a>
 Enum with segment types . Each value corresponds to a segment type returned in the segments list of the API. Each segment type has its own structure. Different channels may have different sets of supported segment types.
 Type: Array of strings
-Array Members: Maximum number of 6 items.
-Valid Values: `Transcript | Categories | Issues | Event | Attachments | PostContactSummary`
+Array Members: Maximum number of 7 items.
+Valid Values: `Transcript | Categories | Issues | Event | Attachments | PostContactSummary | ExtractedInformation`
 Required: Yes
 
 ## Response Syntax

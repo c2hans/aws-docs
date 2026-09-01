@@ -20,7 +20,7 @@ You must deploy these four stacks for the Innovation Sandbox solution in the fol
 1.  [Step 4: Deploy the `Compute` stack](step4-deploy-compute-stack.md)
 
 **Important**
-Before you deploy the **Data** stack (Step 3), create the AWS IAM Identity Center SAML 2.0 application (see [Create a SAML 2.0 application](create-saml-app.md)). Copy the metadata URL from that application — you supply it as the `SamlMetadataUrl` parameter when you deploy the Data stack. After all stacks are deployed, return to [Update the SAML application configuration](update-saml-app-config.md) to replace the placeholder ACS URL and audience with the Data stack outputs.
+Before you deploy the **Data** stack ([Step 3 of Launch the stacks](step3-deploy-data-stack.md)), you must have completed [Create a SAML 2.0 application](create-saml-app.md) and copied its metadata URL — you supply it as the `SamlMetadataUrl` parameter when you deploy the Data stack. After all stacks are deployed, return to [Update the SAML application configuration](update-saml-app-config.md) to replace the placeholder ACS URL and audience with the Data stack outputs.
 
 ## See also
 

@@ -19,7 +19,7 @@ This topic explains the steps for agents to view and acknowledge an evaluation.
    + Someone might have shared the contact URL with you.
 
    - OR -
-   + You might have been assigned a task or received an email notification containing the URL for the contact that received an evaluations.
+   + You might have been assigned a task or received an email notification containing the URL for the contact that received an evaluation.
 
    - OR -
    + You might have the contact ID and evaluation form name. You can use this information to search for the contact that received the evaluations using the following steps.

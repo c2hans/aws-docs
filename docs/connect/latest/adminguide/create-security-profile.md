@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-securit
 # Create a security profile in Connect Customer
 <a name="create-security-profile"></a>
 
-Creating a security profile enables you to grant your users only the permissions that they need.
+By creating a security profile, you can grant your users only the permissions that they need.
 
 For each permission group, there is a set of resources and supported set of actions. For example, users are part of the **Users and permissions** group, which supports the following actions: view, edit, create, remove, enable/disable, and edit permission.
 

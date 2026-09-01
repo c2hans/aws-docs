@@ -29,7 +29,7 @@ If you see the **Session expired** message while logging in, you probably just n
 + If the agent is configured for [cross-channel concurrency](channels-and-concurrency.md), they must clear the missed contact before any other contacts on any other channel can be routed to them. For example, if they are configured to handle voice and chats at the same time, and they miss a chat, they must clear that contact before any other voice or chat contacts are routed to them.
 
 **Panic logout**
-+ If the browser window where the CCP is running is closed, the call remains connected, but opening the browser and logging back in will not allow you to re-establish the media connection. You are still able to transfer or end the call, but no audio path is established between the agent and caller.
++ If the browser window where the CCP is running is closed, the call remains connected, but you can't re-establish the media connection by opening the browser and logging back in. You are still able to transfer or end the call, but no audio path is established between the agent and caller.
 
 ## See also
 

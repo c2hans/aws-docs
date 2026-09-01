@@ -26,7 +26,7 @@ To enable the recording of voice conversations, you need to add a [Set recording
      + **On** starts recording customer and IVR audio immediately.
      + **Off** pauses any ongoing IVR recording.
    + Agent and customer voice recording
-     + When **On**, you can select from Agent and Customer, Agent only, or Customer only. This only take effect after the agent joins the call.
+     + When **On**, you can select from Agent and Customer, Agent only, or Customer only. This only takes effect after the agent joins the call.
      + When **Off**, no recording is captured when the agent joins the call.
    + To record chat conversations, choose **Agent and Customer**.
 **Important**

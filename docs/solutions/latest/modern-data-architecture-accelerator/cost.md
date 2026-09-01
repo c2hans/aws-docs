@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 # Cost
 <a name="cost"></a>
 
-You are responsible for the cost of AWS services used while running this solution. As of July 2026, costs primarily depend on the resources used, data processed, transferred, and stored.
+You are responsible for the cost of AWS services used while running this solution. As of August 2026, costs primarily depend on the resources used, data processed, transferred, and stored.
 
 S3 costs vary based on storage class, data volume, request types, data retrieval, transfer rates, and additional features. IAM is provided at no additional cost. For KMS, costs depend on the encryption type: SSE-S3 (default encryption) incurs no additional charge, while SSE-KMS incurs both a monthly fee ($1/month per key) and per-request charges ($0.03 per 10,000 requests). If using SSE-KMS, enabling S3 Bucket Keys can reduce KMS costs by up to 99%.
 

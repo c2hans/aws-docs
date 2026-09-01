@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 # Information extraction
 <a name="information-extraction"></a>
 
-Information extraction uses generative AI to extract information from conversations. That information could be verbatim — such as preferred name, invoice number, or reservation ID; or it could be derived – such as reason for contact, resolution provided, or next steps promised. Information can be extracted from chat contacts or voice contacts with human agents. The extracted information is associated with the contact as structured data.
+Information extraction uses generative AI to extract information from conversations. That information could be verbatim — such as preferred name, invoice number, or reservation ID. Alternatively, it could be derived – such as reason for contact, resolution provided, or next steps promised. Information can be extracted from chat contacts or voice contacts with human agents. The extracted information is associated with the contact as structured data.
 
 **Note**
 Information extraction is only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.

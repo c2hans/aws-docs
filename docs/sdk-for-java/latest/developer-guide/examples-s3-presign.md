@@ -580,6 +580,189 @@ Bob uses one of the following three code options to upload a file.
 
 See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/d73001daea05266eaa9e074ccb71b9383832369a/javav2/example_code/s3/src/main/java/com/example/s3/GeneratePresignedUrlAndPutFileWithMetadata.java) and [test](https://github.com/awsdocs/aws-doc-sdk-examples/blob/d73001daea05266eaa9e074ccb71b9383832369a/javav2/example_code/s3/src/test/java/com/example/s3/presignurl/GeneratePresignedPutUrlTests.java) on GitHub.
 
+## Include request fields as URL query parameters
+<a name="presign-query-parameters"></a>
+
+Some request fields on [GetObjectRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/model/GetObjectRequest.html) and [PutObjectRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/model/PutObjectRequest.html) map to HTTP headers rather than to URL query parameters. For example, `requestPayer`, `acl`, `metadata`, `serverSideEncryption`, and `storageClass` map to `x-amz-*` headers. When you pre-sign a request that sets one of these fields, the signature covers the headers. However, the pre-signed URL that [S3Presigner](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/presigner/S3Presigner.html) returns does not contain the header values.
+
+The caller of the pre-signed URL must send the same `x-amz-*` headers with the request. Otherwise, Amazon S3 returns `SignatureDoesNotMatch`. HTTP clients that can set custom headers send those headers directly. For example, the `HttpURLConnection`, `HttpClient`, and [SdkHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/SdkHttpClient.html) examples shown earlier all do this. However, if the caller cannot set custom headers, the request fails. Common examples include a web browser opening the URL as a link, an HTML form uploading directly to Amazon S3, and any HTTP client that only receives the URL as input.
+
+To make the URL work without extra headers, pass the value as a signed query parameter instead of setting the typed field. Use [putRawQueryParameter](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.Builder.html#putRawQueryParameter(java.lang.String,java.lang.String)) on [AwsRequestOverrideConfiguration](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/AwsRequestOverrideConfiguration.html).
+
+### Pre-sign a GET request with requester-pays
+<a name="presign-query-parameters-get-example"></a>
+
+The following example generates a pre-signed URL for a `GetObjectRequest` with the requester-pays setting. Because the value is a query parameter, any caller can use the URL without sending an `x-amz-request-payer` header.
+
+```
+try (S3Presigner presigner = S3Presigner.create()) {
+    GetObjectRequest getObjectRequest = GetObjectRequest.builder()
+            .bucket("amzn-s3-demo-bucket")
+            .key("example-key")
+            .overrideConfiguration(o -> o.putRawQueryParameter("x-amz-request-payer", "requester"))
+            .build();
+
+    GetObjectPresignRequest presignRequest = GetObjectPresignRequest.builder()
+            .signatureDuration(Duration.ofMinutes(10))
+            .getObjectRequest(getObjectRequest)
+            .build();
+
+    PresignedGetObjectRequest presigned = presigner.presignGetObject(presignRequest);
+    logger.info("Pre-signed URL: [{}]", presigned.url());
+
+    // Confirm the URL requires no headers at request time:
+    logger.info("Signed headers: {}", presigned.signedHeaders().keySet());  // [host]
+}
+```
+
+### Pre-sign a PUT request with metadata
+<a name="presign-query-parameters-put-example"></a>
+
+The following example generates a pre-signed URL for a `PutObjectRequest` with two metadata values as signed query parameters. Because the values are query parameters, any caller can use the URL without sending `x-amz-meta-*` headers.
+
+```
+try (S3Presigner presigner = S3Presigner.create()) {
+    PutObjectRequest putObjectRequest = PutObjectRequest.builder()
+            .bucket("amzn-s3-demo-bucket")
+            .key("example-key")
+            .overrideConfiguration(o -> o
+                    .putRawQueryParameter("x-amz-meta-author", "alice")
+                    .putRawQueryParameter("x-amz-meta-purpose", "demo"))
+            .build();
+
+    PutObjectPresignRequest presignRequest = PutObjectPresignRequest.builder()
+            .signatureDuration(Duration.ofMinutes(10))
+            .putObjectRequest(putObjectRequest)
+            .build();
+
+    PresignedPutObjectRequest presigned = presigner.presignPutObject(presignRequest);
+    logger.info("Pre-signed URL: [{}]", presigned.url());
+
+    // Confirm the URL requires no headers at upload time:
+    logger.info("Signed headers: {}", presigned.signedHeaders().keySet());  // [host]
+}
+```
+
+### Pre-sign a PUT request and upload a file
+<a name="presign-query-parameters-helper"></a>
+
+The following example shows the full workflow: a method that pre-signs a PUT request with any `x-amz-*` names and values you supply as a map, and a method that uploads the file with `SdkHttpClient`. Because the values are already part of the signed URL, the upload method does not set any `x-amz-*` headers. In contrast, the earlier upload examples set `x-amz-meta-*` headers explicitly.
+
+#### Imports
+<a name="presign-query-parameters-helper-imports"></a>
+
+```
+import com.example.s3.util.PresignUrlUtils;
+import org.slf4j.Logger;
+import software.amazon.awssdk.awscore.AwsRequestOverrideConfiguration;
+import software.amazon.awssdk.core.internal.sync.FileContentStreamProvider;
+import software.amazon.awssdk.http.HttpExecuteRequest;
+import software.amazon.awssdk.http.HttpExecuteResponse;
+import software.amazon.awssdk.http.SdkHttpClient;
+import software.amazon.awssdk.http.SdkHttpMethod;
+import software.amazon.awssdk.http.SdkHttpRequest;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.s3.model.PutObjectRequest;
+import software.amazon.awssdk.services.s3.presigner.S3Presigner;
+import software.amazon.awssdk.services.s3.presigner.model.PresignedPutObjectRequest;
+import software.amazon.awssdk.services.s3.presigner.model.PutObjectPresignRequest;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.file.Paths;
+import java.time.Duration;
+import java.util.Map;
+import java.util.UUID;
+```
+
+Generate the URL.
+
+```
+    /**
+     *  Creates a presigned URL to use in a subsequent HTTP PUT request. The code adds query parameters
+     *  to the request instead of using headers. By using query parameters, you do not need to add the
+     *  the parameters as headers when the PUT request is eventually sent.
+     *
+     * @param bucketName Bucket name where the object will be uploaded.
+     * @param keyName Key name of the object that will be uploaded.
+     * @param queryParams Query string parameters to be added to the presigned URL.
+     * @return
+     */
+    public String createPresignedUrl(String bucketName, String keyName, Map<String, String> queryParams) {
+        try (S3Presigner presigner = S3Presigner.create()) {
+            // Create an override configuration to store the query parameters.
+            AwsRequestOverrideConfiguration.Builder overrideConfigurationBuilder = AwsRequestOverrideConfiguration.builder();
+
+            queryParams.forEach(overrideConfigurationBuilder::putRawQueryParameter);
+
+            PutObjectRequest objectRequest = PutObjectRequest.builder()
+                    .bucket(bucketName)
+                    .key(keyName)
+                    .overrideConfiguration(overrideConfigurationBuilder.build()) // Add the override configuration.
+                    .build();
+
+            PutObjectPresignRequest presignRequest = PutObjectPresignRequest.builder()
+                    .signatureDuration(Duration.ofMinutes(10))  // The URL expires in 10 minutes.
+                    .putObjectRequest(objectRequest)
+                    .build();
+
+            PresignedPutObjectRequest presignedRequest = presigner.presignPutObject(presignRequest);
+            String myURL = presignedRequest.url().toString();
+            logger.info("Presigned URL to upload a file to: [{}]", myURL);
+            logger.info("HTTP method: [{}]", presignedRequest.httpRequest().method());
+
+            return presignedRequest.url().toExternalForm();
+        }
+    }
+```
+
+Upload the file with `SdkHttpClient`.
+
+```
+    /**
+     * Use the AWS SDK for Java V2 SdkHttpClient class to execute the PUT request. Since the
+     * URL contains the query parameters, no headers are needed for metadata, SSE settings, or ACL settings.
+     *
+     * @param presignedUrlString The URL for the PUT request.
+     * @param fileToPut File to uplaod
+     */
+    public void useSdkHttpClientToPut(String presignedUrlString, File fileToPut) {
+        logger.info("Begin [{}] upload", fileToPut.toString());
+
+        try {
+            URL presignedUrl = new URL(presignedUrlString);
+
+            SdkHttpRequest.Builder requestBuilder = SdkHttpRequest.builder()
+                    .method(SdkHttpMethod.PUT)
+                    .uri(presignedUrl.toURI());
+
+            SdkHttpRequest request = requestBuilder.build();
+
+            HttpExecuteRequest executeRequest = HttpExecuteRequest.builder()
+                    .request(request)
+                    .contentStreamProvider(new FileContentStreamProvider(fileToPut.toPath()))
+                    .build();
+
+            try (SdkHttpClient sdkHttpClient = ApacheHttpClient.create()) {
+                HttpExecuteResponse response = sdkHttpClient.prepareRequest(executeRequest).call();
+                logger.info("Response code: {}", response.httpResponse().statusCode());
+            }
+        } catch (URISyntaxException | IOException e) {
+            logger.error(e.getMessage(), e);
+        }
+    }
+```
+
+See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/0a2b7b1db35fa7b8fd362222c449f43881d67895/javav2/example_code/s3/src/main/java/com/example/s3/GeneratePresignedUrlAndPutFileWithQueryParams.java) and [test](https://github.com/awsdocs/aws-doc-sdk-examples/blob/0a2b7b1db35fa7b8fd362222c449f43881d67895/javav2/example_code/s3/src/test/java/com/example/s3/presignurl/GeneratePresignedPutUrlTests.java) on GitHub.
+
+### Check which headers a pre-signed request requires
+<a name="presign-query-parameters-verify"></a>
+
+To check which headers a specific pre-signed request requires the caller to send, call [signedHeaders()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/presigner/PresignedRequest.html#signedHeaders()) on the returned [PresignedRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/presigner/PresignedRequest.html). Any `x-amz-*` name in the returned map is a header the caller must send. If you want to remove a header from the requirement, pass its value through `putRawQueryParameter` instead of setting the typed field.
+
 ## See also
 
 * **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

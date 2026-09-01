@@ -17,6 +17,15 @@ Content-type: application/json
 {
    "Description": "{{string}}",
    "RecommenderConfig": {
+      "DiversityConfig": {
+         "DiversityColumns": [
+            {
+               "CapType": "{{string}}",
+               "Name": "{{string}}",
+               "Target": "{{string}}"
+            }
+         ]
+      },
       "EventsConfig": {
          "EventParametersList": [
             {
@@ -26,6 +35,9 @@ Content-type: application/json
             }
          ]
       },
+      "ExcludedColumns": {
+         "{{string}}" : [ "{{string}}" ]
+      },
       "IncludedColumns": {
          "{{string}}" : [ "{{string}}" ]
       },
@@ -33,7 +45,8 @@ Content-type: application/json
          "MinProvisionedTPS": {{number}}
       },
       "TrainingFrequency": {{number}}
-   }
+   },
+   "RecommenderVersionName": "{{string}}"
 }
 ```
 
@@ -68,6 +81,13 @@ Required: No
  ** [RecommenderConfig](#API_connect-customer-profiles_UpdateRecommender_RequestSyntax) **   <a name="connect-connect-customer-profiles_UpdateRecommender-request-RecommenderConfig"></a>
 The new configuration settings to apply to the recommender, including updated parameters and settings that define its behavior.
 Type: [RecommenderConfig](API_connect-customer-profiles_RecommenderConfig.md) object
+Required: No
+
+ ** [RecommenderVersionName](#API_connect-customer-profiles_UpdateRecommender_RequestSyntax) **   <a name="connect-connect-customer-profiles_UpdateRecommender-request-RecommenderVersionName"></a>
+The name of a specific recommender version to activate as part of this update (for example, to roll back to a previously trained version).
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[a-zA-Z0-9_-]+/\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}Z`
 Required: No
 
 ## Response Syntax

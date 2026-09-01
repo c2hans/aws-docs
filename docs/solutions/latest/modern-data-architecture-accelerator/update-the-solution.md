@@ -10,7 +10,7 @@ MDAA follows semantic versioning. Minor releases (for example, 1.6.0 to 1.7.0) a
 ## Before you upgrade
 <a name="before-you-upgrade"></a>
 
-1. Review the [CHANGELOG](https://github.com/aws/modern-data-architecture-accelerator/blob/main/CHANGELOG.md) for the target version to understand new features, bug fixes, and dependency updates.
+1. Review the [release notes](https://github.com/aws/modern-data-architecture-accelerator/releases/) for the target version to understand new features, bug fixes, and dependency updates.
 
 1. Run `diff` to preview the CloudFormation changes the upgrade will introduce. To diff against the latest published version:
 
@@ -23,6 +23,16 @@ MDAA follows semantic versioning. Minor releases (for example, 1.6.0 to 1.7.0) a
    ```
    npx @aws-mdaa/cli@1.7.0 --mdaa-version 1.7.0 diff -c ./mdaa.yaml
    ```
+
+## Notable changes in 1.8.0
+<a name="notable-changes-in-1-8-0"></a>
+
+Review the following before upgrading from 1.7.0 to 1.8.0:
++  **Terraform configuration now resolves child-over-parent (breaking change)**: when a `terraform` key is set at more than one level of the configuration hierarchy (global, domain, environment, module), the more specific level now takes effect. Previously the parent level took effect. This aligns `terraform` with every other cascaded field, including `context`, `tag_config_data`, `custom_aspects`, `custom_naming` and `permissions_boundary_arn`. A project that sets the same `terraform. ` key, for example `terraform.override.`, at both a parent and a child level resolves to the opposite value it did in 1.7.0, which can retarget Terraform state. Review those configurations before you deploy.
++  ** `@mdaaIncludeEnvInSsmPath` naming flag**: this new opt-in flag lets you deploy multiple MDAA environments into one AWS account by including `env` in SSM parameter paths and CloudFormation export names. It defaults to `false`, so existing deployments are unaffected. Enabling it on an existing deployment is not backward compatible, because the parameter paths and export names change. See the naming utility documentation for migration steps.
++  **AgentCore Runtime `enforceVpcOnly` now denies out-of-VPC IAM callers**: in 1.7.0 the VPC-only resource policy allowed rather than denied, so an IAM caller whose identity policy already authorized the action could invoke the runtime from outside the VPC. JWT and OAuth callers were correctly blocked. The policy now adds explicit deny statements and covers all invoke variants. Out-of-VPC IAM invocations that previously succeeded are now denied.
++  **AgentCore Runtime agent spans move to the runtime’s own log group**: agent spans now route to the runtime’s own CloudWatch log group instead of the account-shared `aws/spans` log group, so they inherit the module’s KMS encryption, retention, and PII masking. This is on by default. The destination takes effect only from `aws-opentelemetry-distro` 0.18.0, so raise that dependency in the runtime container image before upgrading; an earlier version silently keeps delivering to `aws/spans`. The change also creates a new runtime version on deploy. To opt out, set `UNIFIED_TRACES_DESTINATION_ENABLED` to `'false'` under `environmentVariables`.
++  ** `mdaa upgrade` CLI command**: the CLI gains an `upgrade` action that bumps `mdaa_version` in `mdaa.yaml` and regenerates the project’s `.mdaa/` assets — JSON schemas, module documentation, and AI steering files — pruning the directories for older versions as it goes. Use it in place of editing `mdaa_version` by hand, so that the schemas your editor validates against match the version you deploy.
 
 ## Notable changes in 1.7.0
 <a name="notable-changes-in-1-7-0"></a>
@@ -37,7 +47,21 @@ Review the following before upgrading from 1.6.0 to 1.7.0:
 ## Upgrading to the latest version
 <a name="upgrading-to-the-latest-version"></a>
 
-To upgrade to the latest published version, simply run the CLI without specifying a version or `--mdaa-version`:
+Starting with MDAA 1.8.0, the CLI has an `upgrade` action. Run it from the project root, the directory that holds `mdaa.yaml`:
+
+```
+npx @aws-mdaa/cli@1.8.0 upgrade
+```
+
+ `upgrade` updates `mdaa_version` in `mdaa.yaml`, regenerates `.mdaa/<version>/` with the schemas and module documentation for the new version, rewrites the `$schema` directives in your config files to point at it, prunes the directories for older versions, and refreshes the AI steering files. MDAA-owned files are always regenerated; a user-owned file such as `CLAUDE.md` that you have edited since MDAA generated it prompts first. Pass `--overwrite` to replace those files without prompting, or `--no-prompt` to leave them untouched.
+
+The version argument has to match the CLI that runs, because the schemas and documentation are generated from the installed CLI. Omit it to upgrade the project to the CLI version already installed:
+
+```
+mdaa upgrade
+```
+
+Then deploy with the same version. To deploy the latest published version, run the CLI without specifying a version or `--mdaa-version`:
 
 ```
 npx @aws-mdaa/cli deploy -c ./mdaa.yaml

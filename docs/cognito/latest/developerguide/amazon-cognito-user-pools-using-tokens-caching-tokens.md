@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cog
 
 Your app must successfully complete one of the following requests each time you want to get a new JSON Web Token (JWT).
 + Request a client credentials or authorization code [grant](https://www.rfc-editor.org/rfc/rfc6749#section-1.3) from the [Token endpoint](token-endpoint.md).
++ Request a client-credentials access token with the [GetClientToken](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_GetClientToken.html) API operation, which requires no user pool domain.
 + Request an implicit grant from your managed login pages.
 + Authenticate a local user in an Amazon Cognito API request like [InitiateAuth](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html).
 

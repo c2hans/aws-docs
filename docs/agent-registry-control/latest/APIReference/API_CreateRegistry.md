@@ -18,11 +18,18 @@ Content-type: application/json
    "approvalConfiguration": {
       "autoApprovalRules": [ "{{string}}" ]
    },
+   "autoDetectionConfiguration": {
+      "enabled": {{boolean}},
+      "scope": "{{string}}"
+   },
    "clientToken": "{{string}}",
    "description": "{{string}}",
    "discoveryConfiguration": {
       "authorizerConfiguration": { ... },
       "authorizerType": "{{string}}"
+   },
+   "encryptionConfiguration": {
+      "kmsKeyArn": "{{string}}"
    },
    "name": "{{string}}",
    "tags": {
@@ -46,8 +53,13 @@ Approval configuration for registry records
 Type: [ApprovalConfiguration](API_ApprovalConfiguration.md) object
 Required: No
 
+ ** [autoDetectionConfiguration](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-autoDetectionConfiguration"></a>
+The optional auto-detection configuration for the registry. When provided, the registry is automatically populated with resources discovered according to the configuration. Omit this field for registries whose records are managed exclusively through the Agent Registry Control API.
+Type: [AutoDetectionConfiguration](API_AutoDetectionConfiguration.md) object
+Required: No
+
  ** [clientToken](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-clientToken"></a>
-Client token for idempotency
+A unique, case-sensitive identifier to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error.
 Type: String
 Length Constraints: Minimum length of 33. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,256}`
@@ -62,6 +74,11 @@ Required: No
  ** [discoveryConfiguration](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-discoveryConfiguration"></a>
 Discovery configuration for the registry
 Type: [DiscoveryConfiguration](API_DiscoveryConfiguration.md) object
+Required: No
+
+ ** [encryptionConfiguration](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-encryptionConfiguration"></a>
+The optional server-side encryption configuration for the registry. When you provide this field, the specified customer-managed AWS KMS key encrypts the registry's content. Omit this field to use an AWS-owned encryption key. You cannot change the encryption configuration after registry creation.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 Required: No
 
  ** [name](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-name"></a>

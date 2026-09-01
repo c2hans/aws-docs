@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 
 A *customer profile* is a record that stores contact history combined with information about customers, such as account number, additional information, birth date, email, multiple addresses, name, and party type. An *account-based profile* is expected to have underlying sub-profiles.
 
-After you enable Connect Customer Customer Profiles, a unique customer profile is created for every contact. This allows you to create a customer profile that has all the information agents need during customer interactions in a single place at no charge.
+After you enable Connect Customer Customer Profiles, a unique customer profile is created for every contact. With Connect Customer Customer Profiles, you can create a customer profile that has all the information agents need during customer interactions in a single place at no charge.
 
 To access customer profiles in your flows, use the [Customer profiles](customer-profiles-block.md) block. [Agents access customer profiles](customer-profile-access.md) in their agent workspace.
 

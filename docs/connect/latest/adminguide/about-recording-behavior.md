@@ -30,7 +30,7 @@ This topic explains when conversations are recorded, where recordings are stored
 
 Agents and contacts are stored on separate, stereo audio channels.
 + For automated (IVR) interactions, the stereo file contains customer audio in the right channel and system prompts in the left channel.
-+ For agent interactions, the agent audio is stored in the right channel and customer (as well conferenced third parties) audio in the left channel.
++ For agent interactions, the agent audio is stored in the right channel and customer (as well as conferenced third parties) audio in the left channel.
 
 Recordings are stored in the Amazon S3 bucket that are [created for your instance](amazon-connect-instances.md#get-started-data-storage). Any user or application with the appropriate permissions can access the recordings in the Amazon S3 bucket.
 
@@ -50,7 +50,7 @@ Even though many call recordings for specific contact IDs might be named with th
 ## When are recordings available?
 <a name="when-are-recordings-available"></a>
 
-When the recording for an agent interaction is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected. When IVR recording is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected or after the call is answered by an agent. You can [review the recording](review-recorded-conversations.md) for both agent interactions and automated interactions (IVR)..
+When the recording for an agent interaction is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected. When IVR recording is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected or after the call is answered by an agent. You can [review the recording](review-recorded-conversations.md) for both agent interactions and automated interactions (IVR).
 
 **Important**
 You can also access the recording from the customer's [contact record](sample-ctr.md). The recording is available in the contact record, however, only after the contact has left the [After Contact Work (ACW) state](metrics-agent-status.md#agent-status-acw). The IVR recording becomes available shortly after the call gets connected to the agent or contact is disconnected.

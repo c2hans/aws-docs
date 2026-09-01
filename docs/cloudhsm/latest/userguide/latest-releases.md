@@ -221,7 +221,7 @@ Download version 5.18.0 software for Windows Server 2016 on x86\_64 architecture
 + Added support for ML-DSA key generation, signing, and verification, and for EdDSA (Ed25519 and Ed25519ph). For more information, see [Supported mechanisms for JCE provider for AWS CloudHSM Client SDK 5](java-lib-supported_5.md).
 
 **OpenSSL Provider**
-+ Added support for PureEdDSA (Ed25519) and ML-DSA (ML-DSA-44, ML-DSA-65, and ML-DSA-87) key types for TLS offload on non-FIPS clusters. For more information, see [Supported key types for OpenSSL Provider for AWS CloudHSM Client SDK 5](openssl-provider-key-types.md) and [OpenSSL Provider Supported Mechanisms](openssl-provider-mechanisms.md).
++ Added support for PureEdDSA (Ed25519) key types for TLS offload on non-FIPS clusters, and ML-DSA (ML-DSA-44, ML-DSA-65, and ML-DSA-87) key types for TLS offload on both FIPS and non-FIPS clusters. For more information, see [Supported key types for OpenSSL Provider for AWS CloudHSM Client SDK 5](openssl-provider-key-types.md) and [OpenSSL Provider Supported Mechanisms](openssl-provider-mechanisms.md).
 + The OpenSSL Provider now supports OpenSSL CLI operations, including certificate signing request (CSR) creation and certificate signing, for all supported key types.
 
 **Bug fixes/Improvements**

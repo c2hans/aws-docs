@@ -36,49 +36,12 @@ Before you begin, ensure you have:
 + Understanding of which repositories you want to connect for code review, threat modeling, and penetration testing
 
 **Important**
-A GitHub App can only be installed once to a GitHub account or GitHub organization. If you need to connect the same GitHub organization to AWS Security Agent, you must use the same AWS account where the integration was first registered.
+Multiple AWS accounts can connect to the same GitHub organization or user account. Each account gets an independent integration. However, only one account can enable **Code review comments** or **Code remediation** per repository. If a second account tries to enable these features for a repository already owned by another account, it receives the error "Code review comments or code remediation is already enabled for this repository by another account."
 
 **Important**
-Your GitHub organization might use an IP allow list. If so, add the AWS Security Agent IP addresses for your AWS Region to the IP allow list. Wait a few minutes for GitHub to apply them, then register the integration.
+Your GitHub organization might use an IP allow list. If so, add the AWS Security Agent IP addresses for your AWS Region to the IP allow list. Wait a few minutes for GitHub to apply them, then register the integration. For the IP addresses, see [AWS Security Agent IP addresses](about-integrations.md#agent-ip-addresses).
 Do not rely on the GitHub **Enable IP allow list configuration for installed GitHub Apps** setting. This setting adds IP addresses only for app-installation requests, not for the requests that AWS Security Agent makes during registration. As a result, registration fails even when those addresses appear in your IP allow list.
 For more information about enabling allowed IP addresses for your GitHub organization, see [Enabling allowed IP addresses](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization#enabling-allowed-ip-addresses) in the GitHub documentation.
-The following IP addresses are used to access your GitHub resources:
-US East (N. Virginia) (us-east-1)
- `34.228.181.128`
- `44.219.176.187`
- `54.226.244.221`
-US West (Oregon) (us-west-2)
- `34.212.16.133`
- `52.89.67.212`
- `54.187.135.61`
-Asia Pacific (Mumbai) (ap-south-1)
- `13.126.209.199`
- `13.234.6.24`
- `35.154.102.216`
-Asia Pacific (Singapore) (ap-southeast-1)
- `18.139.13.125`
- `47.130.240.215`
- `54.179.238.173`
-Asia Pacific (Sydney) (ap-southeast-2)
- `13.237.95.197`
- `13.238.84.102`
- `52.64.174.242`
-Asia Pacific (Tokyo) (ap-northeast-1)
- `13.192.12.233`
- `35.74.181.230`
- `57.183.50.158`
-Europe (Frankfurt) (eu-central-1)
- `18.158.110.140`
- `52.57.96.160`
- `52.59.55.56`
-Europe (Ireland) (eu-west-1)
- `34.251.85.24`
- `52.30.157.157`
- `52.51.192.222`
-South America (São Paulo) (sa-east-1)
- `54.94.247.213`
- `54.207.222.14`
- `54.232.201.242`
 
 ## Authorize and register the AWS Security Agent GitHub App
 <a name="_authorize_and_register_the_aws_security_agent_github_app"></a>
@@ -154,17 +117,19 @@ If you were unable to complete the registration process (for example, your brows
 Registration fails with an error such as "Security token validation error. Please try again." or "Access Denied." The failure occurs even when the AWS Security Agent IP addresses already appear in your IP allow list. The GitHub **Enable IP allow list configuration for installed GitHub Apps** setting added them automatically.
 
 **Resolution**
-Manually add the AWS Security Agent IP addresses for your AWS Region (see [Prerequisites](#connect-github-prerequisites)) to your organization’s IP allow list. Wait a few minutes for GitHub to apply them, then register the integration again.
+Manually add the AWS Security Agent IP addresses for your AWS Region (see [AWS Security Agent IP addresses](about-integrations.md#agent-ip-addresses)) to your organization’s IP allow list. Wait a few minutes for GitHub to apply them, then register the integration again.
 
-### Multiple AWS accounts trying to integrate the same GitHub organization
-<a name="_multiple_aws_accounts_trying_to_integrate_the_same_github_organization"></a>
+### Multiple AWS accounts connecting to the same GitHub organization
+<a name="_multiple_aws_accounts_connecting_to_the_same_github_organization"></a>
 
-A GitHub App can only be installed once to a GitHub account or GitHub organization. If you need to use repositories from a GitHub organization that is already integrated with a different AWS Security Agent account, you must use the AWS account where the integration was first registered.
+Multiple AWS accounts can connect to the same GitHub organization or user account. When a second account connects to a GitHub organization where the app is already installed, GitHub shows only the authorization page—no re-installation is needed. The user authorizes and receives an independent integration.
+
+However, only one account can enable **Code review comments** or **Code remediation** per repository. If a second account tries to enable these features for a repository that is already owned by another account, it receives an error: "Code review comments or code remediation is already enabled for this repository by another account."
 
  **Resolution:**
-+ Identify which AWS Security Agent account has the GitHub integration registered
-+ Use that AWS account to create Agent Spaces and connect repositories
-+ If you need to move the integration to a different AWS account, uninstall the GitHub App from the original AWS account first, then integrate it with the new account
++ On-demand features (code review, penetration testing, threat modeling) work for all connected accounts regardless of ownership.
++ To transfer automated scanning ownership, the current owner must disable code review comments for the repository. The new account can then enable it.
++ All accounts can list and access repositories from the shared GitHub organization independently.
 
 ## Next steps
 <a name="_next_steps"></a>

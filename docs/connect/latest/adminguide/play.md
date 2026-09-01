@@ -162,7 +162,7 @@ Store as many prompts as you need in an S3 bucket and then refer to them by spec
 ![The S3 file path specified manually using attributes.](http://docs.aws.amazon.com/connect/latest/adminguide/images/playprompt-properties-s3-jsonpath.png)
 
 —OR—
-+ You can provide the S3 path with concatenation, as shown in the following example. This enables you to personalize the prompt, for example, by line of business and language. For example: `https://example.s3.amazon.aws.com/$['Attributes']['Language']/$['Attributes']['LOB']/1.wav`
++ You can provide the S3 path with concatenation, as shown in the following example. With concatenation, you can personalize the prompt, for example, by line of business and language. For example: `https://example.s3.amazon.aws.com/$['Attributes']['Language']/$['Attributes']['LOB']/1.wav`
 
   The following code sample shows how this same configuration would be represented by the [MessageParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/participant-actions-messageparticipant.html) action in the Flow language:
 

@@ -40,6 +40,7 @@ The following actions are supported:
 +  [GetWorkloadAccessToken](API_GetWorkloadAccessToken.md)
 +  [GetWorkloadAccessTokenForJWT](API_GetWorkloadAccessTokenForJWT.md)
 +  [GetWorkloadAccessTokenForUserId](API_GetWorkloadAccessTokenForUserId.md)
++  [IngestData](API_IngestData.md)
 +  [InvokeAgentRuntime](API_InvokeAgentRuntime.md)
 +  [InvokeAgentRuntimeCommand](API_InvokeAgentRuntimeCommand.md)
 +  [InvokeBrowser](API_InvokeBrowser.md)

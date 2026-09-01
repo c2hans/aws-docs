@@ -20,7 +20,7 @@ const signature = crypto.createHmac('sha256', secret).update(to_sign).digest('he
 ```
 
 **Note**
-If the expires query parameter is being used in conjunction with any query parameter based edits. When generating a signature, please ensure that the query parameters are sorted. For more information, see .
+If the expires query parameter is being used in conjunction with any query parameter based edits. When generating a signature, ensure that the query parameters are sorted. For more information, see [Image URL signature](lambda-architecture-features.md#image-url-signature).
 
 ## See also
 

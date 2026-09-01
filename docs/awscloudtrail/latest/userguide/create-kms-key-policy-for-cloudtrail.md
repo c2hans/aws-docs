@@ -66,7 +66,7 @@ If encryption is enabled on a trail, and the KMS key is disabled, or the KMS key
 
 1. Enable CloudTrail to describe KMS key properties. For more information, see [Enable CloudTrail to describe KMS key properties](#create-kms-key-policy-for-cloudtrail-describe).
 
-The `aws:SourceArn` and `aws:SourceAccount` condition keys are not supported in KMS key policies for event data stores.
+CloudTrail Lake supports the `aws:SourceAccount` and `aws:SourceArn` condition keys in KMS key policies for event data stores.
 
 **Important**
 When you add the new sections to your KMS key policy, do not change any existing sections in the policy.
@@ -108,7 +108,7 @@ The following example policy statement illustrates how another account can use y
 
 In the policy, you add one or more accounts that encrypt with your key to the CloudTrail **EncryptionContext**. This restricts CloudTrail to using your key to encrypt log files and digest files only for the accounts that you specify. When you give the root of account {{222222222222}} permission to encrypt log files and digest files, it delegates permission to the account administrator to encrypt the necessary permissions to other users in that account. The account administrator does this by changing the policies associated with those IAM users.
 
-As a security best practice, add an `aws:SourceArn` condition key to the KMS key policy. The IAM global condition key `aws:SourceArn` helps ensure that CloudTrail uses the KMS key only for the specified trails. This condition isn't supported in KMS key policies for event data stores.
+As a security best practice, add an `aws:SourceArn` condition key to the KMS key policy. The IAM global condition key `aws:SourceArn` helps ensure that CloudTrail uses the KMS key only for the specified trails.
 
 KMS key policy statement:
 
@@ -140,7 +140,7 @@ For more information about editing a KMS key policy for use with CloudTrail, see
 ## Granting encrypt permissions for event data stores
 <a name="create-kms-key-policy-for-cloudtrail-encrypt-eds"></a>
 
-A policy for a KMS key used to encrypt a CloudTrail Lake event data store cannot use the condition keys `aws:SourceArn` or `aws:SourceAccount`. The following is an example of a KMS key policy for an event data store.
+CloudTrail Lake supports the `aws:SourceAccount` and `aws:SourceArn` condition keys in KMS key policies for event data stores. Add these conditions after you create the event data store. The following example allows one event data store to use the KMS key.
 
 ```
 {
@@ -153,9 +153,17 @@ A policy for a KMS key used to encrypt a CloudTrail Lake event data store cannot
         "kms:GenerateDataKey",
         "kms:Decrypt"
       ],
-      "Resource": "*"
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "{{account-id}}",
+          "aws:SourceArn": "arn:aws:cloudtrail:{{region}}:{{account-id}}:eventdatastore/{{event-data-store-id}}"
+        }
+      }
 }
 ```
+
+For a same-account, same-Region query that joins multiple event data stores, set `aws:SourceArn` to an array of every participating event data store ARN on each KMS key used by the query.
 
 ## Granting decrypt permissions for trails
 <a name="create-kms-key-policy-for-cloudtrail-decrypt"></a>
@@ -355,7 +363,7 @@ A decrypt policy for a KMS key that is used with a CloudTrail Lake event data st
 
 ```
 {
-      "Sid": "EnableUserKeyPermissionsEds"
+      "Sid": "EnableUserKeyPermissionsEds",
       "Effect": "Allow",
       "Principal": {
           "AWS": "arn:aws:iam::{{account-id}}:user/{{username}}"

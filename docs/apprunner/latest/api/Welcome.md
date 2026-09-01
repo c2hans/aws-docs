@@ -17,7 +17,7 @@ For more information about App Runner, see the [AWS App Runner Developer Guide](
 
 For a list of Region-specific endpoints that App Runner supports, see [AWS App Runner endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/apprunner.html) in the * AWS General Reference*.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

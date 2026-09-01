@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/get-started-w
 **Did you know?**
  Lightsail stores seven daily snapshots and automatically replaces the oldest with the newest when you enable automatic snapshots for your instance. For more information, see [ Configure automatic snapshots for Lightsail instances and disks ](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-configuring-automatic-snapshots.html) .
 
-Create Lightsail instances that run the Windows Server operating system (OS). We have three OS blueprints available: Windows Server 2022, Windows Server 2019, and Windows Server 2016. In addition, we have blueprints that come preconfigured with SQL Server 2022, 2019, and 2016 Express.
+Create Lightsail instances that run the Windows Server operating system (OS). We have four OS blueprints available: Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016. In addition, we have blueprints that come preconfigured with SQL Server 2022, 2019, and 2016 Express.
 
 This topic provides information about choosing your software, creating your Windows Server-based instance, and connecting to it.
 
@@ -17,20 +17,25 @@ Learn more about [Windows Server on AWS](https://aws.amazon.com/windows/)
 ## Choose a Windows Server-based instance
 <a name="choose-windows-based-instance-lightsail"></a>
 
-There are three options for creating a Windows Server-based instance in Lightsail.
+There are four options for creating a Windows Server-based instance in Lightsail.
+
+**Windows Server 2025**
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. With Lightsail, you can run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS Cloud computing platform. Common Windows use cases include enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
+ [Learn more about the Windows Server 2025 image](https://aws.amazon.com/marketplace/pp/prodview-g76csvka4r3by)
 
 **Windows Server 2022**
-Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. With Lightsail, you can run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS Cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
+Unless you need to run Windows Server 2022 for some reason, we recommend using the latest version of Windows Server 2025.
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. With Lightsail, you can run any compatible Windows-based solution on the high-performance, reliable, cost-effective AWS Cloud computing platform. Common Windows use cases include enterprise Windows-based application hosting, website and web service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
  [Learn more about the Windows Server 2022 image](https://aws.amazon.com/marketplace/pp/prodview-dq4sxno5vuy7m)
 
  **Windows Server 2019**
-Unless you need to run Windows Server 2016 or Windows Server 2019 for some reason, we recommend using the latest version of Windows Server 2022.
-Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on AWS' high-performance, reliable, cost-effective, cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web-service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
+Unless you need to run Windows Server 2016 or Windows Server 2019 for some reason, we recommend using the latest version of Windows Server 2025.
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on AWS' high-performance, reliable, cost-effective, cloud computing platform. Common Windows use cases include enterprise Windows-based application hosting, website and web-service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
  [Learn more about the Windows Server 2019 image](https://aws.amazon.com/marketplace/pp/B07QZ4XZ8F)
 
  **Windows Server 2016**
-Unless you need to run Windows Server 2016 or Windows Server 2019 for some reason, we recommend using the latest version of Windows Server 2022.
-Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on AWS' high-performance, reliable, cost-effective, cloud computing platform. Common Windows use cases include Enterprise Windows-based application hosting, website and web-service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
+Unless you need to run Windows Server 2016 or Windows Server 2019 for some reason, we recommend using the latest version of Windows Server 2025.
+Lightsail running Windows Server is a fast and dependable environment for deploying applications using the Microsoft Web Platform. Lightsail enables you to run any compatible Windows-based solution on AWS' high-performance, reliable, cost-effective, cloud computing platform. Common Windows use cases include enterprise Windows-based application hosting, website and web-service hosting, data processing, distributed testing, ASP.NET application hosting, and any other application requiring Windows software.
  [Learn more about the Windows Server 2016 image](https://aws.amazon.com/marketplace/pp/B01M7SJEU7)
 
  **SQL Server Express 2022**
@@ -62,7 +67,7 @@ You can create a Windows Server-based instance using the Lightsail console or by
 
 1. Select the **Microsoft Windows** platform.
 
-1. To choose the Windows Server 2022, Windows Server 2019, Windows Server 2016 blueprint, choose **OS Only**.
+1. To choose the Windows Server 2025, Windows Server 2022, Windows Server 2019, or Windows Server 2016 blueprint, choose **OS Only**.
 
    To choose the SQL Server Express blueprint, choose **Apps \+ OS**.
 
@@ -102,10 +107,10 @@ Some instance plans aren't available for some blueprints. For example, the SQL S
 
 1. If you haven't done so already, configure the AWS CLI using `aws configure` and select the AWS Region where you want to create your Lightsail resources.
 
-1. Type the following AWS CLI command to create a $44 USD per month Windows Server 2022 instance running in the Ohio region:
+1. Type the following AWS CLI command to create a $44 USD per month Windows Server 2025 instance running in the Ohio region:
 
    ```
-   aws lightsail create-instances --instance-names {{InstanceName}} --availability-zone us-east-2a --blueprint-id windows_server_2022 --bundle-id medium_win_3_0
+   aws lightsail create-instances --instance-names {{InstanceName}} --availability-zone us-east-2a --blueprint-id windows_server_2025 --bundle-id medium_win_3_0
    ```
 
    In the command, replace {{InstanceName}} with the name of your new instance.

@@ -91,7 +91,7 @@ If you're setting up on a brand new Windows Amazon Elastic Compute Cloud (Amazon
 
 Many of the steps below may create files that exceed the default Windows maximum path length. Before you build and install the Deadline Cloud for Unreal Engine submitter or adapter on a Windows machine, we recommend that you enable Windows long path support. To do this, follow the instructions on the [Maximum file path limitation](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) page, for example by running the [PowerShell command](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#tabpanel_1_powershell).
 
-There is also an [open issue on the worker agent](https://github.com/aws-deadline/deadline-cloud-worker-agent/issues/520) caused by a dependency that does not ship configured to support Windows long paths. When you set up your workers, follow the workaround steps in the linked issue to fully support Windows long paths until the issue is resolved.
+Long path support where you build the submitter is separate from long path support at render time. Windows honors `LongPathsEnabled` only for applications that declare `longPathAware` in their manifest, so enabling it on a worker host doesn't lift the limit for every application. If jobs fail on Windows workers with missing-file errors, see [Why does my job fail on Windows when my file paths are long?](troubleshooting.md#troubleshooting-windows-long-paths).
 
 ### Installing build tools
 <a name="unreal-engine-install-build-tools"></a>

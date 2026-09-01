@@ -28,7 +28,7 @@ The ability to search for in-progress contacts varies by channel (see [Contact e
   + You can search for in-progress queued callbacks after they are queued, connected to an agent or disconnected.
   + For other voice contacts, you can search them only after they are connected to an agent, or have been disconnected. Queued in-progress voice contacts (with the exception of callbacks) are not shown on the **Contact search** page.
 + **Chat**: You can search for contacts after they are connected to system, queued, connected to an agent or disconnected.
-+ **Tasks** and **Email**: You can search for all in-progress after they are initiated.
++ **Tasks** and **Email**: You can search for all in-progress contacts after they are initiated.
 
 ## How to search for in-progress contacts
 <a name="howto-search-inprogress"></a>
@@ -49,12 +49,12 @@ The following timestamp types are supported: initiated, connected (to agent), di
 
 **Important**
 The **Time range** filter on the **Contact search** page has **Timestamp type** set to ** Initiated** by default. Before the Timestamp type selection was introduced, the Timestamp type used by the **Time range** filter was **Disconnected**.
-Saved searches on **Contact search** created before to the launch of the ability to search for in-progress contacts (launched September 2023) have been updated with the filters **Contact status = Completed** and **Timestamp type = Disconnected**. These selections were implied before the launch of in-progress contacts.
+Saved searches on **Contact search** created before the launch of the ability to search for in-progress contacts (launched September 2023) have been updated with the filters **Contact status = Completed** and **Timestamp type = Disconnected**. These selections were implied before the launch of in-progress contacts.
 
 ## View in progress contacts
 <a name="view-inprogress-contacts"></a>
 
-You can choose on a Contact ID within the **Contact search** results to view details of an in-progress contact.
+You can choose a Contact ID within the **Contact search** results to view details of an in-progress contact.
 
 ![View an in-progress contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-in-progress-view.png)
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rule-real-time
 # Create alerts on real-time metrics in Connect Customer
 <a name="rule-real-time-metrics"></a>
 
-You can create rules that automatically send emails or tasks to managers based on the values of real-time metrics. This enables you to alert managers on contact center operations that could potentially impact the end-customer experience. For example, you can set up an alert that sends an email to a manager when one or more agents on their team have been on break for longer than 30 minutes.
+You can create rules that automatically send emails or tasks to managers based on the values of real-time metrics. With these rules, you can alert managers on contact center operations that could potentially impact the end-customer experience. For example, you can set up an alert that sends an email to a manager when one or more agents on their team have been on break for longer than 30 minutes.
 
 **Topics**
 + [Step 1: Define rule conditions](#conditions-rtm)
@@ -24,7 +24,7 @@ You can create rules that automatically send emails or tasks to managers based o
 1. Choose **Add condition**. The **Metrics** card is added automatically, as shown in the following image.
 ![The condition for when a real-time metric is updated.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-rule-condition-all.png)
 **Note**
-You can add up to 2 Metrics cards. This enables you to create a condition where one card evaluates real-time metrics and another evaluates trailing windows of time. For example, you might want an alert when several agents on are lunch break (Agent activity = Lunch break for 1 hour) and Average handle time is greater than 5 minutes.
+You can add up to 2 Metrics cards. With these cards, you can create a condition where one card evaluates real-time metrics and another evaluates trailing windows of time. For example, you might want an alert when several agents on are lunch break (Agent activity = Lunch break for 1 hour) and Average handle time is greater than 5 minutes.
 You can add up to 10 metrics to each **Metrics** card.
 
    Following are the available real-time metrics you can add, depending on the event source.

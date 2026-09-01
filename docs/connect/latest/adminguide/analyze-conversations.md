@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conver
 # Analyze conversations using conversational analytics in Connect Customer conversational analytics
 <a name="analyze-conversations"></a>
 
-With conversational analytics, you can analyze conversations between customers and agents or customers and conversational AI, across voice, chat, and email, using natural language processing. Conversational analytics performs sentiment analysis, detects issues, and enables you to automatically categorize contacts.
+With conversational analytics, you can analyze conversations between customers and agents or customers and conversational AI, across voice, chat, and email, using natural language processing. Conversational analytics performs sentiment analysis and detects issues. You can also automatically categorize contacts.
 
 **Speech analytics support**
-+ **Real-time call analytics**: Use to detect and resolve customer issues more proactively while the call is in progress. For example, it can [analyze and alert](add-rules-for-alerts.md) you when a customer is getting frustrated because the agent is unable to resolve a complicated problem. This allows you to provide more immediate assistance.
++ **Real-time call analytics**: Use to detect and resolve customer issues more proactively while the call is in progress. For example, it can [analyze and alert](add-rules-for-alerts.md) you when a customer is getting frustrated because the agent is unable to resolve a complicated problem. With real-time call analytics, you can provide more immediate assistance.
 + **Post-call analytics**: Use to understand trends of customer conversations, self-service interactions, and agent compliance. This helps you identify opportunities to improve conversational AI and coach agents after the call.
 
 **Chat analytics support**
-+ **Real-time chat analytics**: As with real-time call analytics, you can detect and resolve customer issues more proactively while the chat is progress and [receive an alert](add-rules-for-alerts-chat.md). For example, managers can get a real-time email alert when customer sentiment for a chat contact turns negative, allowing them to join the in-progress contact and help resolve the customer issue.
++ **Real-time chat analytics**: As with real-time call analytics, you can detect and resolve customer issues more proactively while the chat is in progress and [receive an alert](add-rules-for-alerts-chat.md). For example, managers can get a real-time email alert when customer sentiment for a chat contact turns negative, allowing them to join the in-progress contact and help resolve the customer issue.
 + **Post-chat analytics**: Use to understand trends of customer conversations with both bots and agents. It provides information specific to a chat interaction, such as the agent greeting time, and agent and customer response times. The response times and sentiments help you investigate the customer's experience with the bot versus the agent, and identify areas for improvement.
 + Each processed chat message is charged the same way. While not all messages might have all features applied (for example, summarization is applied to `text/plain` messages only), if conversational analytics is enabled on the contact, the message is counted for billing. For more information about pricing, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
 

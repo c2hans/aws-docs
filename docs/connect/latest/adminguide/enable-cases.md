@@ -63,7 +63,7 @@ After your cases domain is created, do the following:
 **Note**
 Make sure that you have the `cases:CreateRelatedItem ` permission for your IAM entity. For more information on Cases permissions, see [Actions, resources, and condition keys for Connect Customer Cases](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectcases.html).
 
-1. Optionally, add the [Cases](cases-block.md) block to your flows. This block enables you to get, update, or create cases automatically.
+1. Optionally, add the [Cases](cases-block.md) block to your flows. With this block, you can get, update, or create cases automatically.
 
 1. Optionally, set up [case event streams](case-event-streams.md) to get near real-time updates when cases are created or modified.
 

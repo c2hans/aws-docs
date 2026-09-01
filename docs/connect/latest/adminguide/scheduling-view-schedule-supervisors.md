@@ -49,7 +49,7 @@ To see which agents have exceeded a specified adherence duration, you can filter
 ![An example the breach duration filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-breach-duration.png)
 
 **Note**
-If an agent's schedule is changed within the last 30 days from the current date (not the date of the schedule), adherence is re-calculated with the new schedule. This enables you to make real-time adjustments to an agent's shift and correctly evaluate their adherence.
+If an agent's schedule is changed within the last 30 days from the current date (not the date of the schedule), adherence is re-calculated with the new schedule. With this re-calculation, you can make real-time adjustments to an agent's shift and correctly evaluate their adherence.
 
 ## Display Week schedule view
 <a name="scheduling-view-schedule-supervisors-weekly"></a>

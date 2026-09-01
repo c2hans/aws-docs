@@ -23,13 +23,12 @@ If you can't edit your domain's DNS database, you must use [email validation](em
 HTTP validation is available for certificates used with CloudFront. This method uses HTTP redirects to prove domain ownership and offers automatic renewal similar to DNS validation.
 
 **Note**
-You can migrate an existing email-validated public certificate to DNS validation while preserving the certificate ARN. For more information, see [Migrating from email to DNS validation](email-to-dns-migration.md).
+After you create a certificate with email validation, you cannot switch to validating it with DNS. To use DNS validation, delete the certificate and then create a new one that uses DNS validation.
 
 **Topics**
 + [AWS Certificate Manager DNS validation](dns-validation.md)
 + [AWS Certificate Manager email validation](email-validation.md)
 + [AWS Certificate Manager HTTP validation](http-validation.md)
-+ [Migrating from email to DNS validation](email-to-dns-migration.md)
 
 ## See also
 

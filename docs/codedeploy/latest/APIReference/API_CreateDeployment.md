@@ -19,6 +19,7 @@ Deploys an application revision through the specified deployment group.
    },
    "deploymentConfigName": "{{string}}",
    "deploymentGroupName": "{{string}}",
+   "deploymentMode": "{{string}}",
    "description": "{{string}}",
    "fileExistsBehavior": "{{string}}",
    "ignoreApplicationStopFailures": {{boolean}},
@@ -89,6 +90,7 @@ The request accepts the following data in JSON format.
 The name of an AWS CodeDeploy application associated with the user or AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [autoRollbackConfiguration](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-autoRollbackConfiguration"></a>
@@ -101,12 +103,27 @@ The name of a deployment configuration associated with the user or AWS account.
 If not specified, the value configured in the deployment group is used as the default. If the deployment group does not have a deployment configuration associated with it, `CodeDeployDefault`.`OneAtATime` is used by default.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [deploymentGroupName](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-deploymentGroupName"></a>
 The name of the deployment group.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
+Required: No
+
+ ** [deploymentMode](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-deploymentMode"></a>
+The type of deployment to create. Valid values are:
++  `STANDARD`: Deploys the specified revision. This is the default behavior if `deploymentMode` is not specified.
++  `RESTART`: Restarts the application on the target instances using the revision from the deployment group's last successful deployment, without downloading a new revision. `RESTART` is supported only for EC2/On-premises in-place deployments.
+
+  When `deploymentMode` is `RESTART`, the following apply:
+  + The call is rejected for Amazon ECS and AWS Lambda deployments.
+  + The `revision` parameter (including its `s3Location` and `gitHubLocation`) must not be specified, and is rejected if provided. The revision is resolved by the service from the deployment group's last successful deployment.
+  + The `updateOutdatedInstancesOnly` parameter must not be set to `true`, and is rejected if provided.
+Type: String
+Valid Values: `STANDARD | RESTART`
 Required: No
 
  ** [description](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-description"></a>
@@ -231,12 +248,20 @@ HTTP Status Code: 400
 The Auto Scaling group was specified in an invalid format or does not exist.
 HTTP Status Code: 400
 
+ ** InvalidComputePlatformException **
+The computePlatform is invalid. The computePlatform should be `Lambda`, `Server`, or `ECS`.
+HTTP Status Code: 400
+
  ** InvalidDeploymentConfigNameException **
 The deployment configuration name was specified in an invalid format.
 HTTP Status Code: 400
 
  ** InvalidDeploymentGroupNameException **
 The deployment group name was specified in an invalid format.
+HTTP Status Code: 400
+
+ ** InvalidECSServiceException **
+ The Amazon ECS service identifier is not valid.
 HTTP Status Code: 400
 
  ** InvalidFileExistsBehaviorException **
@@ -249,6 +274,10 @@ HTTP Status Code: 400
 
  ** InvalidIgnoreApplicationStopFailuresValueException **
 The IgnoreApplicationStopFailures value is invalid. For AWS Lambda deployments, `false` is expected. For EC2/On-premises deployments, `true` or `false` is expected.
+HTTP Status Code: 400
+
+ ** InvalidInputException **
+The input was specified in an invalid format.
 HTTP Status Code: 400
 
  ** InvalidLoadBalancerInfoException **

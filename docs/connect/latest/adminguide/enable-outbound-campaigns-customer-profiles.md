@@ -56,7 +56,7 @@ The KMS configuration will only be used for the outbound campaigns configuration
 
 1.  If outbound campaigns was previously enabled, the **Upgrade** button will be displayed.
 **Note**
- Upgrading outbound campaigns will allow you to use segmentation and orchestration capabilities in the Connect Customer admin website
+ By upgrading outbound campaigns, you can use segmentation and orchestration capabilities in the Connect Customer admin website
  Upgrading outbound campaigns will update the current outbound campaigns page to new experience.
 
 ![Outbound campaigns page showing the Upgrade button for previously enabled campaigns.](http://docs.aws.amazon.com/connect/latest/adminguide/images/existing-customers-enable-outbound-campaigns-5.png)

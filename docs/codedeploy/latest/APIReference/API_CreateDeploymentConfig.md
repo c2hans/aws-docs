@@ -57,6 +57,7 @@ Required: No
 The name of the deployment configuration to create.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [minimumHealthyHosts](#API_CreateDeploymentConfig_RequestSyntax) **   <a name="CodeDeploy-CreateDeploymentConfig-request-minimumHealthyHosts"></a>

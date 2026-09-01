@@ -11,6 +11,8 @@ To add increased security when communicating with AWS services, configure the AW
 
 Transport Layer Security (TLS) is a protocol used by web browsers and other applications to ensure the privacy and integrity of data exchanged over a network.
 
+To use post-quantum cryptography, you must first enable TLS 1.3. For more information, see [Enabling hybrid post-quantum TLS](https://docs.aws.amazon.com/sdkref/latest/guide/pqtls-details.html).
+
 **Important**
 As of June 10, 2024, we [announced](https://aws.amazon.com/blogs/security/faster-aws-cloud-connections-with-tls-1-3/) that TLS 1.3 is available on AWS service API endpoints across each of the AWS Regions. The AWS SDK for JavaScript v2 does not negotiate the TLS version itself. Instead, it uses the TLS version determined by Node.js, which is configurable via `https.Agent`. AWS recommends using the current Active LTS version of Node.js.
 

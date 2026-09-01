@@ -48,6 +48,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "ActiveRecommenderVersionName": "string",
    "CreatedAt": number,
    "Description": "string",
    "FailureReason": "string",
@@ -57,6 +58,15 @@ Content-type: application/json
       "FailureReason": "string",
       "LastUpdatedAt": number,
       "RecommenderConfig": {
+         "DiversityConfig": {
+            "DiversityColumns": [
+               {
+                  "CapType": "string",
+                  "Name": "string",
+                  "Target": "string"
+               }
+            ]
+         },
          "EventsConfig": {
             "EventParametersList": [
                {
@@ -66,6 +76,9 @@ Content-type: application/json
                }
             ]
          },
+         "ExcludedColumns": {
+            "string" : [ "string" ]
+         },
          "IncludedColumns": {
             "string" : [ "string" ]
          },
@@ -74,9 +87,19 @@ Content-type: application/json
          },
          "TrainingFrequency": number
       },
+      "RecommenderVersionName": "string",
       "Status": "string"
    },
    "RecommenderConfig": {
+      "DiversityConfig": {
+         "DiversityColumns": [
+            {
+               "CapType": "string",
+               "Name": "string",
+               "Target": "string"
+            }
+         ]
+      },
       "EventsConfig": {
          "EventParametersList": [
             {
@@ -85,6 +108,9 @@ Content-type: application/json
                "EventWeight": number
             }
          ]
+      },
+      "ExcludedColumns": {
+         "string" : [ "string" ]
       },
       "IncludedColumns": {
          "string" : [ "string" ]
@@ -106,6 +132,7 @@ Content-type: application/json
          "Metrics": {
             "string" : number
          },
+         "RecommenderVersionName": "string",
          "Time": number
       }
    ]
@@ -118,6 +145,12 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [ActiveRecommenderVersionName](#API_connect-customer-profiles_GetRecommender_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetRecommender-response-ActiveRecommenderVersionName"></a>
+The name of the recommender version currently serving recommendations. Omitted when no active recommender version is set.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[a-zA-Z0-9_-]+/\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}Z`
 
  ** [CreatedAt](#API_connect-customer-profiles_GetRecommender_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetRecommender-response-CreatedAt"></a>
 The timestamp of when the recommender was created.

@@ -43,12 +43,12 @@ SAML users must have a secondary email configured in order to get it. If a secon
 
 1. In **Subject**, add the email subject. In **Body**, add the contents of the email notification.
 
-   Use **@ to add dynamic variables** that are populated during execution of the rule. For conversational analytics rules and evaluation forms rules, you can add **rule name, instance URL, contact, agent** and **queue** information for the contact that matched the rule. Evaluation forms rules additionally enable you to insert the **evaluation ID**.
+   Use **@ to add dynamic variables** that are populated during execution of the rule. For conversational analytics rules and evaluation forms rules, you can add **rule name, instance URL, contact, agent** and **queue** information for the contact that matched the rule. With evaluation forms rules, you can additionally insert the **evaluation ID**.
 ![The body of the email, the list of available variables.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rules-send-email-dynamic-variables.png)
 **Note**
 Other rule types support different variables:
-Real-time metrics rules enable you to enter **rule name, instance URL** and list of **agents, queues, flows or routing profile** that breached the threshold to trigger the alert.
-Rules for cases allow you to insert **rule name, instance URL** and **case ID**.
+With real-time metrics rules, you can enter **rule name, instance URL** and list of **agents, queues, flows or routing profile** that breached the threshold to trigger the alert.
+With rules for cases, you can insert **rule name, instance URL** and **case ID**.
 
 1. Choose **Next**. Review your selections, and then choose **Save**.
 
@@ -62,7 +62,7 @@ Rules for cases allow you to insert **rule name, instance URL** and **case ID**.
 + All emails are sent from `no-reply@amazonconnect.com`, which you cannot customize.
 + SAML users do not have primary email addresses or passwords. They use a username to log in. A username is typically an email address but it does not have to be. For these users the field label **Email address** is empty inside Connect Customer. When email notifications are sent for SAML users, they must have a secondary email configured in order to get it. If a secondary email is not configured, the user will not receive the email.
 
-If the default option for sending emails does not meeting your requirements, please contact your Technical Account Manager or Support to discuss with the Connect Customer service team.
+If the default option for sending emails does not meet your requirements, please contact your Technical Account Manager or Support to discuss with the Connect Customer service team.
 
 ## See also
 

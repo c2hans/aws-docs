@@ -38,7 +38,7 @@ Required: Yes
 The Amazon Resource Name (ARN) of the data stream or consumer.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*stream/\S+`
+Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel)/\S+`
 Required: Yes
 
  ** [StreamId](#API_PutResourcePolicy_RequestSyntax) **   <a name="Streams-PutResourcePolicy-request-StreamId"></a>

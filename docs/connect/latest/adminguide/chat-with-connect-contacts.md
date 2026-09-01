@@ -65,7 +65,7 @@ You can clear the slots so that chats are routed to you again. For each missed c
 ## How to format messages
 <a name="format-chats"></a>
 
-When composing a chat message, you have the ability to format your message. This enables you to add structure and clarity to your support messages. You can add the following formatting:
+When composing a chat message, you have the ability to format your message. With message formatting, you can add structure and clarity to your support messages. You can add the following formatting:
 + Bold
 + Italic
 + Bulleted list

@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/identity.html
 | --- |
 |    Intended audience:  System administrators and Amazon Quick administrators  |
 
-You can use the following tools for identity and access to Quick:
+The following topics describe how to set up identity and access for Quick.
 + [Using IAM Identity Center](setting-up-sso.md)
 + [IAM federation](iam-federation.md)
 + [Using Active Directory with Amazon Quick Enterprise edition](aws-directory-service.md)
@@ -33,9 +33,7 @@ In the following AWS Regions, Amazon Quick accounts can only use [IAM Identity C
 
 The following sections help you configure the identity management method of your choice for Quick.
 
-Access to some sections of the Amazon Quick administration console is restricted by IAM permissions. The following table summarizes the admin actions that you can perform in Amazon Quick based on the access type that you choose.
-
-The following table lists admin actions and whether they require IAM permissions.
+IAM permissions control access to some sections of the Amazon Quick administration console. The following table lists admin actions and whether they require IAM permissions.
 
 | Admin action | IAM permissions required |
 | --- | --- |

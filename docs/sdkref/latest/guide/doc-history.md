@@ -9,6 +9,7 @@ The following table describes important additions and updates to the *AWS SDKs a
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Adding protocol support changes for AWS service clients](#doc-history) | Added information about service-client protocol support changes, previews, and releases. | August 14, 2026 |
 | [Adding new S3 Express One Zone setting](#doc-history) | Adding new S3 Express One Zone setting to disable of session authentication. | October 13, 2025 |
 | [Adding new authentication decision tree](#doc-history) | Adding new decision tree to assist in authentication decisions between options.  | September 23, 2025 |
 | [Adding new authentication scheme feature](#doc-history) | Adding new authentication scheme feature. Updates to AWS STS Regional endpoints.  | August 18, 2025 |

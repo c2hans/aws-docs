@@ -42,7 +42,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Application Integration
 <a name="saa-03-in-scope-application-integration"></a>
 + Amazon AppFlow
-+ AWS AppSync
 + Amazon EventBridge
 + Amazon MQ
 + Amazon SNS
@@ -101,7 +100,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Machine Learning
 <a name="saa-03-in-scope-machine-learning"></a>
 + Amazon Comprehend
-+ Amazon Kendra
 + Amazon Lex
 + Amazon Polly
 + Amazon Rekognition
@@ -160,7 +158,6 @@ The following list contains AWS services and features that are in scope for the 
 ## Security, Identity, and Compliance
 <a name="saa-03-in-scope-security"></a>
 + AWS Artifact
-+ AWS Audit Manager
 + AWS Certificate Manager (ACM)
 + AWS CloudHSM
 + Amazon Cognito
@@ -182,7 +179,6 @@ The following list contains AWS services and features that are in scope for the 
 
 ## Serverless
 <a name="saa-03-in-scope-serverless"></a>
-+ AWS AppSync
 + AWS Fargate
 + AWS Lambda
 

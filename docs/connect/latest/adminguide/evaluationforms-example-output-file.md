@@ -236,7 +236,7 @@ Name of the user who last updated the evaluation.
 **evaluationDefinitionId**
 The unique identifier for the evaluation form.
 *Type* – String
-*Length contraints* – Minimum length of 1, maximum length of 500
+*Length constraints* – Minimum length of 1, maximum length of 500
 **evaluationDefinitionVersion**
 The version of the evaluation form.
 *Type* – Integer
@@ -252,7 +252,7 @@ The evaluation's submission timestamp.
 **score**
 The evaluation's score.
 **creator**
- The entity that created the evaluation the very first time (as opposed to "evaluator" which represents the entity that last submitted the evaluation). When the call is made from the Connect Customer admin website it contains the username. Wen the call comes from the API it contains the ARN of the caller.
+ The entity that created the evaluation the very first time (as opposed to "evaluator" which represents the entity that last submitted the evaluation). When the call is made from the Connect Customer admin website it contains the username. When the call comes from the API it contains the ARN of the caller.
 *Type* – String
 **autoEvaluated **
  Indicates whether the evaluation was submitted using fully automated evaluations.
@@ -349,7 +349,7 @@ The identifier of the parent section.
 *Length constraints* – Minimum length of 1, maximum length of 40
 **questionType**
 The type of the question.
-*Type* – StrThe combined notes in an evaluation have a limit of *N* x 1024 characters, where *N* is the number of questions in the evaluation.ing
+*Type* – String
 *Valid values* – `TEXT | SINGLESELECT | NUMERIC`
 **questionText**
 The title of the question.
@@ -387,7 +387,7 @@ The [score](#score) for the question.
 + automaticFail - The flag that marks the item as critical for the form and the full form will fail (marked with zero score) when the item fails. If the item or a child item gets an automatic fail answer, this flag will be true and the full form will also fail.
 
   *Type* – Boolean
-+ notApplicable - The flag that mark the item as not applicable for scoring, it will be excluded from scoring calculations.
++ notApplicable - The flag that marks the item as not applicable for scoring, it will be excluded from scoring calculations.
 
   *Type* – Boolean
 

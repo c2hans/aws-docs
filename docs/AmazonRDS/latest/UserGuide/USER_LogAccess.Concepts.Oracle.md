@@ -118,7 +118,7 @@ The following example creates an external table in the current schema with the l
 ### Purging trace files
 <a name="USER_LogAccess.Concepts.Oracle.WorkingWithTracefiles.Purging"></a>
 
-Trace files can accumulate and consume disk space. Amazon RDS purges trace files by default and log files that are older than seven days. You can view and set the trace file retention period using the `show_configuration` procedure. You should run the command `SET SERVEROUTPUT ON` so that you can view the configuration results.
+Trace files can accumulate and consume disk space. Amazon RDS purges trace files by default and log files that are older than seven days. You can view and set the trace file retention period using the `show_configuration` procedure. Run the command `SET SERVEROUTPUT ON` so that you can view the configuration results.
 
 The following example shows the current trace file retention period, and then sets a new trace file retention period.
 

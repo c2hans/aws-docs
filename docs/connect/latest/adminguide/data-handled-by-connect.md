@@ -29,7 +29,7 @@ Connect Customer stores the following Personally Identifiable Information (PII) 
 ## External application data
 <a name="external-application-data"></a>
 
-Amazon AppIntegrations enables you to integrate with external applications. It stores references to other AWS resources and client-service specified metadata. No data is stored other than incidentally while being processed. When syncing data periodically with a Connect Customer service, data is encrypted using a customer managed key and stored temporarily for one month.
+With Amazon AppIntegrations, you can integrate with external applications. It stores references to other AWS resources and client-service specified metadata. No data is stored other than incidentally while being processed. When syncing data periodically with a Connect Customer service, data is encrypted using a customer managed key and stored temporarily for one month.
 
 ## Phone call media
 <a name="phone-call-media-handling"></a>
@@ -85,7 +85,7 @@ The capabilities of Amazon S3, AWS KMS, and IAM put you in full control of who h
 ## Contact metadata
 <a name="contact-metadata"></a>
 
-Connect Customer stores metadata related to contacts that flow through the system and allows authorized users to access this information. The Contact Search feature allows you to search and view contact data, such as origination phone numbers or other attributes set by the flow, that are associated with a contact for diagnostics or reporting purposes.
+Connect Customer stores metadata related to contacts that flow through the system and allows authorized users to access this information. With the Contact Search feature, you can search and view contact data, such as origination phone numbers or other attributes set by the flow, that are associated with a contact for diagnostics or reporting purposes.
 
 Contact data classified as PII that is stored by Connect Customer is encrypted at rest using a key that is time-limited and specific to the Connect Customer instance. Specifically, the customer origination phone number is cryptographically hashed with a key that is specific to the instance to allow for use in contact search. For contact search, the encryption key is not time-sensitive.
 

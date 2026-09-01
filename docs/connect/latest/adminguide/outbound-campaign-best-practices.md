@@ -159,7 +159,7 @@ Forty to 60-percent of calls to consumers go to voicemail. AMD helps eliminate t
 ### The pros, cons, and best uses of Answering Machine Detection
 <a name="amd-pros-cons-oc"></a>
 
-The use of Answering Machine Detection (AMD) might not comply with telemarketing laws. You are responsible for implementing AMD in a manner that is compliant with applicable laws, and you should always consult your legal advisor regarding your specific use case.
+The use of Answering Machine Detection (AMD) might not comply with telemarketing laws. You are responsible for implementing AMD in a manner that is compliant with applicable laws. You should always consult your legal advisor regarding your specific use case.
 
 Use case 1: AMD is on and leaving automatic voicemails
 + **Pros** – Agents primarily interact with live calls 95-percent of the time, maximizing talk time. AMD can leave automatic voicemails if a voicemail is detected.

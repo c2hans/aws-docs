@@ -56,7 +56,7 @@ For information about enabling Object Lock on an existing bucket, see [ Enable O
 1. Open the Amazon S3 console, select the bucket you created in Step 1, and follow the path prefix. The path to the call recording includes the year, month, and day the recording was made. After you're in the correct path prefix, search for the contact ID of the call recording.
 ![The Amazon S3 console, the search box, the path prefix.](http://docs.aws.amazon.com/connect/latest/adminguide/images/s3-objectlock-pathprefix.png)
 
-1. Select the **Show versions** toggle next to the **Search** box. This option allows you to attempt to delete the object instead of only applying a delete marker. Applying a delete marker is the standard behavior when you delete an object from an S3 bucket with versioning enabled.
+1. Select the **Show versions** toggle next to the **Search** box. With this option, you can attempt to delete the object instead of only applying a delete marker. Applying a delete marker is the standard behavior when you delete an object from an S3 bucket with versioning enabled.
 
 1. Select the call recording (the box to the left of the recording name), and then choose **Delete**. In the confirmation box, enter **permanently delete** and select **Delete objects**.
 

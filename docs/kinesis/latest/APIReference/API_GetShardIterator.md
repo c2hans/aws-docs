@@ -64,7 +64,7 @@ Required: Yes
  ** [StartingSequenceNumber](#API_GetShardIterator_RequestSyntax) **   <a name="Streams-GetShardIterator-request-StartingSequenceNumber"></a>
 The sequence number of the data record in the shard from which to start reading. Used with shard iterator type AT\_SEQUENCE\_NUMBER and AFTER\_SEQUENCE\_NUMBER.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: No
 
  ** [StreamARN](#API_GetShardIterator_RequestSyntax) **   <a name="Streams-GetShardIterator-request-StreamARN"></a>

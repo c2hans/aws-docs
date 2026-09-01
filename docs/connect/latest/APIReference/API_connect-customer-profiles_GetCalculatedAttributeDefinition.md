@@ -156,7 +156,7 @@ Type: [Readiness](API_connect-customer-profiles_Readiness.md) object
  ** [Statistic](#API_connect-customer-profiles_GetCalculatedAttributeDefinition_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetCalculatedAttributeDefinition-response-Statistic"></a>
 The aggregation operation to perform for the calculated attribute.
 Type: String
-Valid Values: `FIRST_OCCURRENCE | LAST_OCCURRENCE | COUNT | SUM | MINIMUM | MAXIMUM | AVERAGE | MAX_OCCURRENCE`
+Valid Values: `FIRST_OCCURRENCE | LAST_OCCURRENCE | COUNT | SUM | MINIMUM | MAXIMUM | AVERAGE | MAX_OCCURRENCE | RECENT_OCCURRENCES`
 
  ** [Status](#API_connect-customer-profiles_GetCalculatedAttributeDefinition_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetCalculatedAttributeDefinition-response-Status"></a>
 Status of the Calculated Attribute creation (whether all historical data has been indexed).

@@ -118,7 +118,7 @@ In Agent Workspace, contextual apps such as Customer Profiles continue to displa
 
 After the agent accepts the interrupt contact, the original contact is automatically placed on hold and contextual apps such as Customer Profiles update to reflect the new contact.
 
-Both calls remain assigned to the agent, but the agent is only active on one call at a time; the other call will remain on hold until the agent explicitly resumes it. To resume the other contact, the agent must first select the call and then choose **Resume** in its contact card.
+Both calls remain assigned to the agent, but the agent is only active on one call at a time. The other call will remain on hold until the agent explicitly resumes it. To resume the other contact, the agent must first select the call and then choose **Resume** in its contact card.
 
 ### Transfers and multi-party conferencing
 <a name="interrupt-agent-dual-calls-transfers"></a>

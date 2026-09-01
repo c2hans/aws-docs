@@ -78,6 +78,9 @@ For other scenarios, see [Security group rules for different use cases](security
 
    1. Choose **Save rules**.
 
+**Important**
+The self-referencing inbound and outbound rules (allowing all traffic to and from the security group itself) are mandatory for EFA to function. Without these rules, EFA traffic between instances will be blocked.
+
 ## Step 2: Launch a temporary instance
 <a name="efa-start-tempinstance"></a>
 
@@ -566,7 +569,7 @@ After you have installed the required software components, you create an AMI tha
 
 1. In the navigation pane, choose **AMIs**.
 
-1. Locate the AMI tht you created in the list. Wait for the status to change from `pending` to `available` before continuing to the next step.
+1. Locate the AMI that you created in the list. Wait for the status to change from `pending` to `available` before continuing to the next step.
 
 ## Step 10: Launch EFA-enabled instances into a cluster placement group
 <a name="efa-start-instances"></a>

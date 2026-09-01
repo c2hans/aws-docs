@@ -29,8 +29,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[LessThanOrEqual](#cfn-guardduty-filter-condition-lessthanorequal)" : {{Integer}},
   "[Lt](#cfn-guardduty-filter-condition-lt)" : {{Integer}},
   "[Lte](#cfn-guardduty-filter-condition-lte)" : {{Integer}},
+  "[Matches](#cfn-guardduty-filter-condition-matches)" : {{[ String, ... ]}},
   "[Neq](#cfn-guardduty-filter-condition-neq)" : {{[ String, ... ]}},
-  "[NotEquals](#cfn-guardduty-filter-condition-notequals)" : {{[ String, ... ]}}
+  "[NotEquals](#cfn-guardduty-filter-condition-notequals)" : {{[ String, ... ]}},
+  "[NotMatches](#cfn-guardduty-filter-condition-notmatches)" : {{[ String, ... ]}}
 }
 ```
 
@@ -50,9 +52,13 @@ To declare this entity in your CloudFormation template, use the following syntax
   [LessThanOrEqual](#cfn-guardduty-filter-condition-lessthanorequal): {{Integer}}
   [Lt](#cfn-guardduty-filter-condition-lt): {{Integer}}
   [Lte](#cfn-guardduty-filter-condition-lte): {{Integer}}
+  [Matches](#cfn-guardduty-filter-condition-matches): {{
+    - String}}
   [Neq](#cfn-guardduty-filter-condition-neq): {{
     - String}}
   [NotEquals](#cfn-guardduty-filter-condition-notequals): {{
+    - String}}
+  [NotMatches](#cfn-guardduty-filter-condition-notmatches): {{
     - String}}
 ```
 
@@ -119,6 +125,15 @@ Represents the less than or equal condition to apply to a single field when quer
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Matches`  <a name="cfn-guardduty-filter-condition-matches"></a>
+Represents the *match* condition to be applied to a single field when querying for findings.
+ The *matches* condition is available only for create-filter and update-filter APIs.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Neq`  <a name="cfn-guardduty-filter-condition-neq"></a>
 Represents the not equal condition to apply to a single field when querying for findings.
 *Required*: No
@@ -129,6 +144,15 @@ Represents the not equal condition to apply to a single field when querying for 
 Represents a *not equal***** condition to be applied to a single field when querying for findings.
 *Required*: No
 *Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NotMatches`  <a name="cfn-guardduty-filter-condition-notmatches"></a>
+Represents the *not match* condition to be applied to a single field when querying for findings.
+ The *not-matches* condition is available only for create-filter and update-filter APIs.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `5`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also

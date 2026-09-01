@@ -13,7 +13,7 @@ Configuration settings for inference behavior of the recommender.
  ** MinProvisionedTPS **   <a name="connect-Type-connect-customer-profiles_InferenceConfig-MinProvisionedTPS"></a>
 The minimum provisioned transactions per second (TPS) that the recommender supports. The default value is 1. A high MinProvisionedTPS will increase your cost.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 500.
+Valid Range: Minimum value of 1. Maximum value of 1000.
 Required: No
 
 ## See Also

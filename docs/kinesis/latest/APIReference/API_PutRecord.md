@@ -58,7 +58,7 @@ Required: Yes
  ** [ExplicitHashKey](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-ExplicitHashKey"></a>
 The hash value used to explicitly determine the shard the data record is assigned to by overriding the partition key hash.
 Type: String
-Pattern: `0|([1-9]\d{0,38})`
+Pattern: `^(0|([1-9]\d{0,38}))$`
 Required: No
 
  ** [PartitionKey](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-PartitionKey"></a>
@@ -70,7 +70,7 @@ Required: Yes
  ** [SequenceNumberForOrdering](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-SequenceNumberForOrdering"></a>
 Guarantees strictly increasing sequence numbers, for puts from the same client and to the same partition key. Usage: set the `SequenceNumberForOrdering` of record *n* to the sequence number of record *n-1* (as returned in the result when putting record *n-1*). If this parameter is not set, records are coarsely ordered based on arrival time.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: No
 
  ** [StreamARN](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-StreamARN"></a>
@@ -122,7 +122,7 @@ Valid Values: `NONE | KMS`
  ** [SequenceNumber](#API_PutRecord_ResponseSyntax) **   <a name="Streams-PutRecord-response-SequenceNumber"></a>
 The sequence number identifier that was assigned to the put data record. The sequence number for the record is unique across all records in the stream. A sequence number is the identifier associated with every record put into the stream.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 
  ** [ShardId](#API_PutRecord_ResponseSyntax) **   <a name="Streams-PutRecord-response-ShardId"></a>
 The shard ID of the shard where the data record was placed.

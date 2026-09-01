@@ -22,7 +22,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[BaseInferenceComponentName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-baseinferencecomponentname)" : {{String}},
   "[ComputeResourceRequirements](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-computeresourcerequirements)" : {{InferenceComponentComputeResourceRequirements}},
   "[Container](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-container)" : {{InferenceComponentContainerSpecification}},
+  "[CurrentDataCacheConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-currentdatacacheconfig)" : {{InferenceComponentDataCacheConfig}},
+  "[DataCacheConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-datacacheconfig)" : {{InferenceComponentDataCacheConfig}},
   "[ModelName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-modelname)" : {{String}},
+  "[SchedulingConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-schedulingconfig)" : {{InferenceComponentSchedulingConfig}},
   "[StartupParameters](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-startupparameters)" : {{InferenceComponentStartupParameters}}
 }
 ```
@@ -36,7 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
     InferenceComponentComputeResourceRequirements}}
   [Container](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-container): {{
     InferenceComponentContainerSpecification}}
+  [CurrentDataCacheConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-currentdatacacheconfig): {{
+    InferenceComponentDataCacheConfig}}
+  [DataCacheConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-datacacheconfig): {{
+    InferenceComponentDataCacheConfig}}
   [ModelName](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-modelname): {{String}}
+  [SchedulingConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-schedulingconfig): {{
+    InferenceComponentSchedulingConfig}}
   [StartupParameters](#cfn-sagemaker-inferencecomponent-inferencecomponentspecification-startupparameters): {{
     InferenceComponentStartupParameters}}
 ```
@@ -68,12 +77,30 @@ Defines a container that provides the runtime environment for a model that you d
 *Type*: [InferenceComponentContainerSpecification](aws-properties-sagemaker-inferencecomponent-inferencecomponentcontainerspecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`CurrentDataCacheConfig`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-currentdatacacheconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [InferenceComponentDataCacheConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentdatacacheconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DataCacheConfig`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-datacacheconfig"></a>
+Settings that affect how the inference component caches data.
+*Required*: No
+*Type*: [InferenceComponentDataCacheConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentdatacacheconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `ModelName`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-modelname"></a>
 The name of an existing SageMaker AI model object in your account that you want to deploy with the inference component.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9](-*[a-zA-Z0-9])*$`
 *Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SchedulingConfig`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-schedulingconfig"></a>
+The scheduling configuration that determines how inference component copies are placed across available instances when copies are added or removed.
+*Required*: No
+*Type*: [InferenceComponentSchedulingConfig](aws-properties-sagemaker-inferencecomponent-inferencecomponentschedulingconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StartupParameters`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentspecification-startupparameters"></a>

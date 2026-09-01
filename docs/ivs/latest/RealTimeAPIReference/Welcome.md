@@ -34,7 +34,7 @@ The Amazon IVS real-time API has these tag-related operations: [TagResource](API
 
 At most 50 tags can be applied to a resource.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

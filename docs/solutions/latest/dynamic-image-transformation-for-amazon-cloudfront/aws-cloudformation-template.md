@@ -9,7 +9,7 @@ This solution provides two CloudFormation templates, each designed for a specifi
 
  **Lambda Architecture Template** [**dynamic-image-transformation-for-amazon-cloudfront-lambda.template**](https://solutions-reference.s3.amazonaws.com/dynamic-image-transformation-for-amazon-cloudfront/latest/dynamic-image-transformation-for-amazon-cloudfront-lambda.template) - Use this template for cost-optimized deployments with images up to 6 MB. The configuration deploys CloudFront, API Gateway, Lambda, CloudWatch, and EventBridge.
 
- **ECS Architecture Template** [**dynamic-image-transformation-for-amazon-cloudfront-ecs.template**](https://solutions-reference.s3.amazonaws.com/dynamic-image-transformation-for-amazon-cloudfront/latest/dynamic-image-transformation-for-amazon-cloudfront-ecs.template) - Use this template for high-performance deployments with images up to 100 MB. The configuration deploys CloudFront, Application Load Balancer, ECS with Fargate, DynamoDB, Amplify Admin UI, Cognito, CloudWatch, and EventBridge.
+ **ECS Architecture Template** [**dynamic-image-transformation-for-amazon-cloudfront-ecs.template**](https://solutions-reference.s3.amazonaws.com/dynamic-image-transformation-for-amazon-cloudfront/latest/dynamic-image-transformation-for-amazon-cloudfront-ecs.template) - Use this template for high-performance deployments with images up to 100 MB. The configuration deploys CloudFront, Application Load Balancer, ECS with Fargate, DynamoDB, AWS Secrets Manager, Amplify Admin UI, Cognito, CloudWatch, and EventBridge.
 
 **Note**
 CloudFormation resources are created from AWS CDK constructs.

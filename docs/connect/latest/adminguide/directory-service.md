@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/directory-serv
 If you are already using a Directory Service directory to manage users, you can use the same directory to manage user accounts in Connect Customer. You can also create a new directory in Directory Service to use for Connect Customer. The directory you choose must be associated with your AWS account, and must be active in the AWS Region in which you create your instance. You can associate an Directory Service directory with only one Connect Customer instance at a time. To use the directory with a different instance, you must delete the instance with which it is already associated.
 
 The following Directory Service directories are supported in Connect Customer:
-+ [Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)—Directory Service lets you run Microsoft Active Directory as a managed service.
++ [Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)—with Directory Service, you can run Microsoft Active Directory as a managed service.
 + [Active Directory Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html)—AD Connector is a directory gateway you can use to redirect directory requests to your on-premises Microsoft Active Directory.
 + [Simple Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html)—Simple AD is a standalone managed directory that is powered by a Samba 4 Active Directory compatible server.
 

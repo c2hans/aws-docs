@@ -34,7 +34,7 @@ Ensure users are assigned the appropriate security profile permissions:
 
  Grant managers the appropriate security profile permissions:
 + **Access metrics - Access permission** or the **Dashboard - Access permission**. For information about the difference in behavior, see [Assign permissions to view dashboards and reports in Connect Customer](dashboard-required-permissions.md).
-+ **Users - View**: This permission enables you to view users, such as agents receiving evaluations and managers performing evaluations.
++ **Users - View**: With this permission, you can view users, such as agents receiving evaluations and managers performing evaluations.
 + **Evaluation forms - perform evaluations - View**: This permission enables users to view performance evaluation results.
 + **Evaluation forms - manage form definitions - View**: This permission enables users to view evaluation form definitions such as form structure, scoring weights, and more.
 + **Saved reports - Create, View, Publish [optional]**: Grants managers permissions to create custom saved dashboards and publish them to agents and other managers.
@@ -156,7 +156,7 @@ You can drill-down into agents to view their score across the different evaluati
 
 The table provides evaluations performed so you can assess if the agent has received enough evaluations for the **Avg. evaluation score** to be representative of their performance. You can also check if the agent received any automatic fails on their performance evaluations.
 
-You can set custom thresholds that enable you to get an at-a-glance view of agents that are below the desirable threshold for their average evaluation score. For more information, see [Modify thresholds for summary widgets and tables](dashboard-customize-widgets.md#dashboard-thresholds).
+You can set custom thresholds that you can use to get an at-a-glance view of agents that are below the desirable threshold for their average evaluation score. For more information, see [Modify thresholds for summary widgets and tables](dashboard-customize-widgets.md#dashboard-thresholds).
 
 The following image shows an example **Agent performance evaluation metrics** table.
 

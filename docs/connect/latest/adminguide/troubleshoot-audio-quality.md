@@ -107,7 +107,7 @@ Then branch on what you found:
 
 Abnormal `PacketLoss`, `JitterBuffer`, `RoundTripTime`, or a high `ToInstancePacketLossRate` point to the agent network. Check:
 + **Virtual private network (VPN)**—does the issue reproduce without VPN (direct connection)? If VPN is required, is split-tunneling enabled for real-time traffic?
-+ **Wi-Fi vs. wired**—does it reproduce on a wired connection?
++ **Wi-Fi compared to wired**—does it reproduce on a wired connection?
 + **Firewall/proxy/NAT**—is UDP 3478 (media), TCP 443, and websocket traffic allowed? Use static NAT with keep-alives where possible.
 + **Bandwidth contention**—are large file transfers or bandwidth-heavy apps running concurrently?
 + **Distance to Region**—is the agent far from the AWS Region of the instance? (Correlates with high `RoundTripTime`.)
@@ -118,7 +118,7 @@ Full procedure: [Troubleshoot your network for call quality and disconnect probl
 <a name="troubleshoot-audio-quality-workstation"></a>
 
 No abnormal network metrics points to the headset, device, or software. Check:
-+ **Headset**—wired vs. wireless; does a wired headset resolve it? Confirm it meets the [minimum headset requirements](ccp-agent-hardware.md#ccp-agent-headset).
++ **Headset**—wired compared to wireless; does a wired headset resolve it? Confirm it meets the [minimum headset requirements](ccp-agent-hardware.md#ccp-agent-headset).
 + **Audio Enhancement**—if enabled, does disabling it resolve the issue? Note these constraints:
   + **Voice Isolation must only be used with a wired headset.** For wireless or mixed setups, use **Noise Suppression** instead.
   + Audio Enhancement requires a **4-core CPU / 4 vCPU minimum**.
@@ -153,7 +153,7 @@ If the issue persists after troubleshooting, [open a case](open-case-troubleshoo
 + For end-customer issues: the end-customer phone number (last 4 digits might be masked) and the Connect Customer phone number.
 + Test results: browsers tested, networks tested, alternate-machine test, **Endpoint Test Utility JSON export**, and your **observations after running Ping and MTR**.
 + Agent environment details: VPN/firewall/VDI configuration, headset type, and Audio Enhancement mode.
-+ CCP type (default vs. custom) and the downloaded CCP logs for the affected calls.
++ CCP type (default compared to custom) and the downloaded CCP logs for the affected calls.
 + Frequency of the issue and the date/time it started (UTC).
 
 **Download CCP logs immediately after affected calls**

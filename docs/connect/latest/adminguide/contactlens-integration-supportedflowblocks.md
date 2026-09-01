@@ -14,7 +14,7 @@ The following tables list the flow blocks that you can use to specify how Connec
 | Set Working Queue | No Effect | Sets Working Queue |
 | Set Contact Attributes | Supported | Stores key-value pairs as contact attributes. You set a value that is later referenced in a flow. |
 | Get Queue Metrics | No Effect | Gets queue metrics |
-| Change routing priority/age | No Effect | change routing prioroty of contact |
+| Change routing priority/age | No Effect | change routing priority of contact |
 | Set Hold Flow | No Effect | Specifies the flow to invoke when a customer or agent is put on hold. |
 | Set Whisper Flow | No Effect | Specifies the flow to invoke when a customer or agent joined in a voice or chat conversation. |
 | Set callback Number | No Effect | Specify the attribute to set the callback number. |
@@ -52,9 +52,9 @@ The following tables list the flow blocks that you can use to specify how Connec
 | Flow block | Effect | Description |
 | --- | --- | --- |
 | Create Task | Supported | Creates a new task manually or by using a task template. |
-| Customer profiles | Supported | Enables you to retrieve, create, and update a customer profile. |
+| Customer profiles | Supported | You can retrieve, create, and update a customer profile. |
 | Invoke AWS Lambda | Supported | Calls AWS Lambda, and optionally returns key-value pairs. |
-| Invoke module | Supported | Calls a published module, which enables you create reusable sections of a contact flow. |
+| Invoke module | Supported | Calls a published module, which you can use to create reusable sections of a contact flow. |
 
 **Terminate/Transfer blocks**
 

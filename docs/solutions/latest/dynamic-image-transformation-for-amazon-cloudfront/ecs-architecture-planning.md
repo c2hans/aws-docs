@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 # ECS Architecture
 <a name="ecs-architecture-planning"></a>
 
-This high-performance container-based architecture supports demanding workloads and provides access to all v8.0.0 features.
+This high-performance container-based architecture supports demanding workloads and provides access to the solution’s full feature set.
 
  **Key characteristics:**
 +  **Image size limit**: Up to 100 MB per image
 +  **Pricing model**: Fixed infrastructure costs with usage-based scaling
 +  **Scaling**: Configurable auto-scaling with t-shirt sizing options
-+  **Feature set**: Complete v8.0.0 feature set including policies and non-S3 origins
++  **Feature set**: Complete feature set including transformation policies, smart cropping, content moderation, multi-tier device detection, and non-S3 origins
 +  **Management**: Administrative web interface included
 
  **Best suited for:**

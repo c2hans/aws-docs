@@ -17,7 +17,7 @@ Following are requirements and considerations for enabling your users to use dra
 + Some applications, such GIMP, must detect drawing tablets on the streaming instance to support pressure sensitivity. If this is the case, your users must use the WorkSpaces Applications client to access WorkSpaces Applications and stream these applications. In addition, you must qualify your users' drawing tablets, and users must share their drawing tablets with WorkSpaces Applications every time they start a new streaming session. For more information, see [Qualify USB Devices for Use with Streaming Applications](qualify-usb-devices.md).
 + This feature is not supported on Chromebooks.
 
-To get started with using drawing tablets during application streaming sessions, users connect their drawing tablet to their local computer with USB, share the device with WorkSpaces Applications if required for pressure sensitivity detection, and then use the WorkSpaces Applications client or a [supported web browser](drawing-tablet-support-web-access-admin.md) to start an WorkSpaces Applications streaming session.
+To get started with using drawing tablets during application streaming sessions, users connect their drawing tablet to their local computer with USB, share the device with WorkSpaces Applications if required for pressure sensitivity detection, and then use the WorkSpaces Applications client or a [supported web browser](drawing-tablet-support-web-access-admin.md) to start a WorkSpaces Applications streaming session.
 
 ## See also
 

@@ -24,7 +24,7 @@ Amazon RDS supports database version upgrades. For more information, see [Upgrad
 ## Before you begin
 <a name="Oracle.Resources.Siebel.BeforeYouBegin"></a>
 
-Before you begin, you need an Amazon VPC. Because your Amazon RDS DB instance needs to be available only to your Siebel Enterprise Server, and not to the public Internet, your Amazon RDS DB instance is hosted in a private subnet, providing greater security. For information about how to create an Amazon VPC for use with Siebel CRM, see [Creating and connecting to an Oracle DB instance](CHAP_GettingStarted.CreatingConnecting.Oracle.md).
+Before you begin, you need an Amazon VPC. Because your Amazon RDS DB instance needs to be available only to your Siebel Enterprise Server, and not to the public internet, your Amazon RDS DB instance is hosted in a private subnet, providing greater security. For information about how to create an Amazon VPC for use with Siebel CRM, see [Creating and connecting to an Oracle DB instance](CHAP_GettingStarted.CreatingConnecting.Oracle.md).
 
 Before you begin, you also need an Oracle DB instance. For information about how to create an Oracle DB instance for use with Siebel CRM, see [Creating an Amazon RDS DB instance](USER_CreateDBInstance.md).
 

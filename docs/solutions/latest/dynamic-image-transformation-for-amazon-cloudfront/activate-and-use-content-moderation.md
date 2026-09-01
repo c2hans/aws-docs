@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 <a name="activate-and-use-content-moderation"></a>
 
 This solution can detect inappropriate content using Amazon Rekognition. To activate content moderation, add the **contentModeration** property to the **edits** property in the [image request](use-the-solution-with-a-frontend-application.md).
-+  **contentModeration (optional, boolean \|\| object)** - Activates the content moderation feature for an original image. If the value is true, then the feature detects inappropriate content using Amazon Rekognition with a minimum confidence that’s set higher than 75%. If Amazon Rekognition finds inappropriate content, the solution blurs the image. For example:
++  **contentModeration (optional, boolean \|\| object)** - Activates the content moderation feature for an original image. If the value is true, then the feature detects inappropriate content using Amazon Rekognition with a minimum confidence that’s set to 75%. If Amazon Rekognition finds inappropriate content, the solution blurs the image. For example:
 
   ```
   const imageRequest = JSON.stringify({

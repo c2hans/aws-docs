@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/build-rules-fo
 # Create conversational analytics rules using the Connect Customer admin website
 <a name="build-rules-for-contact-lens"></a>
 
-Conversational analytics rules allow you to automatically categorize contacts, receive alerts, or generate tasks based on keywords that are used during a call, chat, or email, sentiment scores, customer attributes, and other criteria.
+With Conversational analytics rules, you can automatically categorize contacts, receive alerts, or generate tasks based on keywords that are used during a call, chat, or email, sentiment scores, customer attributes, and other criteria.
 
 This topic explains how to create rules using the Connect Customer admin website. To create and manage rules programmatically, see [Rules actions](https://docs.aws.amazon.com/connect/latest/APIReference/rules-api.html) and the [Connect Customer Rules Function language](https://docs.aws.amazon.com/connect/latest/APIReference/connect-rules-language.html) in the *Connect Customer API Reference Guide*.
 

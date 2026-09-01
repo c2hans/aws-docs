@@ -42,7 +42,7 @@ You need to configure an allowlist of Connect Customer domains that are allowed 
 #### Programmatic installation by using software distribution tools
 <a name="programmatic-installation"></a>
 + Download the latest version of the **Amazon.Connect.Client.Service.Setup.msi** file.
-+ Use your organization's software distribution mechanism, such as Software Center, to install the A**mazon.Connect.Client.Service** client app on agent desktops.
++ Use your organization's software distribution mechanism, such as Software Center, to install the **Amazon.Connect.Client.Service** client app on agent desktops.
 + Deploy using your organization's enterprise software distribution system such as Microsoft System Center Configuration Manager, SCCM, or other automated deployment tools.
 + Include the `ALLOWED_CONNECT_DOMAINS` parameter by using the following syntax:
 
@@ -164,7 +164,7 @@ Complete the following steps on the Google Enterprise Admin Console. Apply the p
    + Navigate to **Devices**, **Chrome**, **Web capabilities**, **Add Origin**.
    + input `ajbye5keylrcyakugr3zttu6f524eoamjc7mc6ubw3x3547xu3hxqaacai`, and then choose **Save**.
 
-   The following image shows where Devices, ChromeS, and Web capabilities are located in the left navigation menu in Chrome.
+   The following image shows where Devices, Chrome, and Web capabilities are located in the left navigation menu in Chrome.
 ![The left navigation menu in the Chrome OS.](http://docs.aws.amazon.com/connect/latest/adminguide/images/allorigins.png)
 
 The following image shows the location of **Direct sockets**, **Screen recording**, and **Window management** on the Web capabilities page.

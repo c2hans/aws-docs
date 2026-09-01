@@ -11,12 +11,12 @@ A routing profile determines what types of contacts an agent can receive and the
 
 ![A graphic that shows a group of agents mapped to one routing profile.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agents-routing-profile.png)
 
-Connect Customer uses routing profiles to allow you to manage your contact center at scale. To quickly change what a group of agents does, you only need to make an update in one place: the routing profile.
+Connect Customer uses routing profiles so that you can manage your contact center at scale. To quickly change what a group of agents does, you only need to make an update in one place: the routing profile.
 
 ## Default routing profile: Basic routing profile
 <a name="concepts-default-routing-profile"></a>
 
-Connect Customer includes a default routing profile named **Basic routing profile**. Along with the [default flows](contact-flow-default.md) and default queue (named **BasicQueue**), it powers your contact center so you don't need to do any customization. This is what enables you to get started quickly.
+Connect Customer includes a default routing profile named **Basic routing profile**. Along with the [default flows](contact-flow-default.md) and default queue (named **BasicQueue**), it powers your contact center so you don't need to do any customization. This is what you can use to get started quickly.
 
 ## Routing Profiles Link Queues and Agents
 <a name="concepts-routing-profiles-queues"></a>

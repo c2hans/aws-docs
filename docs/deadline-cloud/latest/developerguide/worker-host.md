@@ -86,7 +86,7 @@ When your Windows worker host requires long path names (greater than 250 charact
 #### To enable long paths for Windows worker hosts
 <a name="long-path"></a>
 
-1. Make sure that the long path registry key is enabled. For more information, see [Registry setting to enable log paths](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#registry-setting-to-enable-long-paths) on the Microsoft website.
+1. Make sure that the long path registry key is enabled. For more information, see [Registry setting to enable long paths](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#registry-setting-to-enable-long-paths) on the Microsoft website.
 
 1. Install the Windows SDK for Desktop C\+\+ x86 Apps. For more information, see [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/) in the Windows Dev Center.
 
@@ -121,6 +121,8 @@ When your Windows worker host requires long path names (greater than 250 charact
    ```
 
 The worker is now able to access long paths. To clean up, remove the `pythonservice.exe.manifest` file and uninstall the SDK.
+
+If jobs still fail with missing-file errors after you complete this procedure, the limit is being applied by the rendering application rather than by the worker agent. For more information, see [Why does my job fail on Windows when my file paths are long?](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/troubleshooting.html#troubleshooting-windows-long-paths) in the *AWS Deadline Cloud User Guide*.
 
 ## Configure the Deadline Cloud worker agent
 <a name="worker-agent-config"></a>

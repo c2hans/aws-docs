@@ -31,7 +31,7 @@ The request uses the following URI parameters.
  ** [InstanceId](#API_ReplicateInstance_RequestSyntax) **   <a name="connect-ReplicateInstance-request-uri-InstanceId"></a>
 The identifier of the Connect Customer instance. You can [find the instance ID](https://docs.aws.amazon.com/connect/latest/adminguide/find-instance-arn.html) in the Amazon Resource Name (ARN) of the instance. You can provide the `InstanceId`, or the entire ARN.
 Length Constraints: Minimum length of 1. Maximum length of 250.
-Pattern: `^(arn:(aws|aws-us-gov):connect:[a-z]{2}-[a-z]+-[0-9]{1}:[0-9]{1,20}:instance/)?[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+Pattern: `^(arn:([a-zA-Z0-9-]+):connect:[a-z]+-[a-z-]+-[0-9]+:[0-9]+:instance/)?[a-zA-Z0-9_-]+$`
 Required: Yes
 
 ## Request Body

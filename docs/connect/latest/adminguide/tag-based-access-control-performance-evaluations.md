@@ -10,7 +10,7 @@ Connect Customer enables businesses to restrict access to specific performance e
 You can start by tagging evaluation forms, for example "Department: New customer". When you tag an evaluation form, all subsequent evaluations filled with the evaluation form also carry the same tag. You can then enable tag-based access controls to evaluation forms and evaluations within the security profiles of users for whom you wish to restrict access to specific evaluation forms and evaluations. Once tag-based-access control on evaluation forms is enabled, users will be able to modify only specific evaluation forms on the **Evaluation forms** page. On Contact Search, users will only be able to search for evaluation forms for which they have access, and use the evaluation forms to start evaluations. Similarly within Connect Customer **Dashboards**, users will only be able to view aggregated scores for evaluation forms for which they have access. Tag-based access control on evaluations restricts users to only be able to view specific evaluations on the **Contact Details** page. For example, if a specific evaluation should only be visible to certain personas, such as fraud investigation, then you can restrict agents from viewing those evaluations on the Contact Details page.
 
 **Important Notes**
-After you enable tag based access control on evaluations, users will lose access to any evaluations before tagging the evaluation form. If you are already using performance evaluations, we recommend to first tag evaluation forms and accumulate evaluations over several months, before enabling tag based access to evaluations.
+After you enable tag based access control on evaluations, users will lose access to any evaluations before tagging the evaluation form. If you are already using performance evaluations, we recommend that you first tag evaluation forms and accumulate evaluations over several months, before enabling tag based access to evaluations.
 We recommend using a single tag on an evaluation form (for example, "Department: New customer") while configuring tag-based access. While assigning and permitting access on multiple tags is possible, it creates complexity. This is discussed in more detail below.
 
 ## Tagging evaluation forms
@@ -31,7 +31,7 @@ Below are the steps to add tags to an evaluation form.
 
 1. Open the evaluation form with a security profile that has the permission **Evaluation forms - manage form definitions** - **Edit**.
 
-1. Choose on the edit icon next to the Tags.
+1. Choose the edit icon next to the Tags.
 ![The edit tags icon in the evaluation form.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-tags-edit-form-tags.png)
 
 1. Update the tags.
@@ -88,7 +88,7 @@ Before enabling tag-based-access-control, you might want sufficient history to a
 ## Tag Based Access Control while setting up rules to submit automated evaluations
 <a name="tag-based-access-automated-evaluations"></a>
 
-You can only create a rule to submit automated evaluations using a form that you have access to. For example, suppose there is an automated evaluation form **Auto Insurance Sales Scorecard** with the tags "Department: New customer", "Product: Auto Insurance", and your security profile grants you access to the tag "Department: New customer" for evaluation forms. Then you would be able to setup a rule to auto-submit evaluations using the form **Auto Insurance Sales Scorecard**.
+You can only create a rule to submit automated evaluations using a form that you have access to. For example, suppose there is an automated evaluation form **Auto Insurance Sales Scorecard** with the tags "Department: New customer", "Product: Auto Insurance", and your security profile grants you access to the tag "Department: New customer" for evaluation forms. Then you would be able to set up a rule to auto-submit evaluations using the form **Auto Insurance Sales Scorecard**.
 
 ## Tag Based Access Control while setting up Calibration Sessions
 <a name="tag-based-access-calibration-sessions"></a>

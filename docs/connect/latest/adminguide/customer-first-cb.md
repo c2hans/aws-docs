@@ -82,7 +82,7 @@ To ensure retry contacts are routed appropriately, use the callback creation flo
 
 1. **Adjust routing priority if retrying** – If the `retry` attribute is present, use a [Set routing criteria](set-routing-criteria.md) or [Change routing priority / age](change-routing-priority.md) block to enqueue the contact with an adjusted priority before it enters the working queue.
 
-This approach allows you to differentiate first-attempt callbacks from retries and apply custom prioritization logic without relying on external state.
+With this approach, you can differentiate first-attempt callbacks from retries and apply custom prioritization logic without relying on external state.
 
 **Note**
 Retry contacts (C4) are placed at the back of the queue – they do not retain their original position. You can compensate for this by adjusting routing priority or routing age in C4's callback creation flow as described above.
@@ -95,7 +95,7 @@ The [Set routing criteria](set-routing-criteria.md) block can be used in the out
 
 By default, retry timing is not system-controlled for customer first callbacks – you have full control over when a retry is initiated.
 
-To introduce a delay between retry attempts, add a **Wait** block in the C4 creation flow before transferring to queue. This allows you to define a specific interval (for example, wait 5 minutes before queueing), preventing immediate back-to-back dial attempts.
+To introduce a delay between retry attempts, add a **Wait** block in the C4 creation flow before transferring to queue. With the **Wait** block, you can define a specific interval (for example, wait 5 minutes before queueing), preventing immediate back-to-back dial attempts.
 
 A typical retry flow with timing control looks like:
 

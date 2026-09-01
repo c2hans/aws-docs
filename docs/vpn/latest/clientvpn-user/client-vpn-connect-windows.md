@@ -22,15 +22,17 @@ This application includes background processes that utilize Arm64 emulation. Thi
 **Windows x64 operating systems**
 + Windows 11 (64-bit operating system, x64 processor)
 + .NET Framework 4.7.2 or higher
++ Endpoint security software might require exclusions to allow the AWS provided client to function. For more information, see [Endpoint security software compatibility](client-vpn-connect-endpoint-security.md).
 
 **Note**
 For both Windows x64 and Arm64 operating systems, Client VPN endpoints that use SAML-based federated authentication (single sign-on), the client reserves TCP ports 8096-8115 on your computer.
 
 Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html). If you want to connect to multiple profiles simultaneously, you'll need a configuration file for each profile.
 
+For instructions on using the client, see [Connect using the AWS provided client](client-vpn-connect-how.md).
+
 **Topics**
 + [Requirements](#client-vpn-connect-windows-req)
-+ [Connect using the client](client-vpn-connect-windows-connecting-how.md)
 + [Release notes](client-vpn-connect-windows-release-notes.md)
 
 ## See also

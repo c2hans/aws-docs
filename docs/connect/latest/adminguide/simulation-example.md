@@ -29,6 +29,9 @@ The open interaction group runs independently of the others, making sure that qu
 
 Under **Channel**, select **Chat**, then select the contact flow you want to simulate. This test case supports both **Voice call** and **Chat** channels. Depending on your selection, the simulation will initiate a call or a chat session. The following steps use Chat simulation for demonstration purposes.
 
+**Lex bot simulation results might not match real voice calls**
+Lex V2 bot intent resolution might differ between simulation and real voice calls. If you observe unexpected `FallbackIntent` results, use **Mock Response** overrides on the Lex bot for deterministic results. For more information about configuring these overrides, see [Lex bot override](testing-simulation-action-override.md#testing-simulation-action-override-lex).
+
 ![Settings tab showing Channel set to Chat, Starting point to Flow.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-case-settings.png)
 
 **Configure interaction groups**

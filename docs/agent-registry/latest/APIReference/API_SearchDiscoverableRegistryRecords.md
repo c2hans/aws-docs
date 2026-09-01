@@ -94,8 +94,22 @@ Content-type: application/json
                "data": "string",
                "dataSchemaVersion": "string"
             },
+            "agui": {
+               "source": {
+                  "fromUrl": {
+                     "url": "string"
+                  }
+               }
+            },
             "custom": {
                "data": "string"
+            },
+            "http": {
+               "source": {
+                  "fromUrl": {
+                     "url": "string"
+                  }
+               }
             },
             "mcpServer": {
                "additionalData": {
@@ -175,17 +189,17 @@ HTTP Status Code: 400
 <a name="API_SearchDiscoverableRegistryRecords_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/vestry-data-plane-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/agent-registry-2025-12-01/SearchDiscoverableRegistryRecords)
 
 ## See also
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AgentRegistry Data Plane API Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-registry` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Registry Data Plane API Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-registry` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

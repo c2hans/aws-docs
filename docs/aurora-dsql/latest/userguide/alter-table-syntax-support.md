@@ -106,7 +106,7 @@ After this command is executed, the index is "owned" by the constraint, in the s
 This form validates a constraint that was previously created with the `NOT VALID` option. This command is an asynchronous DDL operation that doesn't block other transactions. When you run `ALTER TABLE ASYNC ... VALIDATE CONSTRAINT`, Aurora DSQL immediately returns a `job_id`.
 You can monitor the status of this asynchronous job using the `sys.jobs` system view. You can also use `sys.wait_for_job({{'job_id'}})` to block the current session until the validation completes or fails.
 The validation job scans the entire table to verify that all existing rows satisfy the constraint. Once validation completes successfully, Aurora DSQL marks the constraint as valid and the query planner enforces it for all queries. If validation fails because existing rows violate the constraint, the job fails and the constraint remains in the `NOT VALID` state.
-This command validates only constraints that you created with the `NOT VALID` option. Attempting to validate an already-valid constraint results in an error.
+This command validates only constraints that you created with the `NOT VALID` option. If you validate an already-valid constraint, Aurora DSQL succeeds without making changes.
 
 **`DROP CONSTRAINT [ IF EXISTS ]`**
 This form drops the specified constraint on a table, along with any index underlying the constraint. If `IF EXISTS` is specified and the constraint does not exist, no error is thrown. In this case a notice is issued instead.

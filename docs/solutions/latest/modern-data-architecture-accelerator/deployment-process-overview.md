@@ -12,7 +12,7 @@ This solution uses AWS CloudFormation templates and stacks to automate its deplo
 ## Prerequisites
 <a name="prerequisites"></a>
 
-Before you deploy the Modern Data Architecture Accelerator, ensure you have the following prerequisites in place:
+Before you deploy the Modern Data Architecture Accelerator, verify you have the following prerequisites in place:
 
 ### AWS Account Requirements
 <a name="aws-account-requirements"></a>
@@ -174,7 +174,7 @@ The stack name must be unique within your AWS account. Consider including the sa
 ## Await initial environment deployment
 <a name="await-initial-environment-deployment"></a>
 
-Use the following procedure to ensure the Modern Data Architecture Accelerator deploys the configuration to your environment.
+Use the following procedure to confirm the Modern Data Architecture Accelerator deploys the configuration to your environment.
 
 1. Sign in to the AWS Management Console and navigate to the **AWS CodePipeline** console. The pipeline with the name you designated should show a status of either `In Progress` or `Complete`. If `In Progress`, wait for the pipeline to complete.
 

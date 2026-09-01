@@ -8,11 +8,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 This cost-optimized serverless architecture is suitable for most image transformation workloads with images up to 6 MB.
 
 **Important**
-This solution is intended for customers with public applications who want to provide an option to dynamically change or manipulate their public images. Because of these public requirements, this template creates a publicly accessible, unauthenticated CloudFront distribution and [Amazon API Gateway](https://aws.amazon.com/api-gateway/) endpoint in your account, allowing anyone to access it. For more information on API Gateway authorization, refer to the [Security](security.md) section. This solution supports signing requests, which can serve to restrict unauthorized requests, for more information, refer to the .
+This solution is intended for customers with public applications who want to provide an option to dynamically change or manipulate their public images. Because of these public requirements, this template creates a publicly accessible, unauthenticated CloudFront distribution and [Amazon API Gateway](https://aws.amazon.com/api-gateway/) endpoint in your account, allowing anyone to access it. For more information on API Gateway authorization, refer to the [Security](security.md) section. This solution supports signing requests, which can serve to restrict unauthorized requests, for more information, refer to the [Image URL Signature section](lambda-architecture-features.md#image-url-signature).
 
  **Lambda architecture for cost-optimized image processing**
 
-![serverless image handler architecture](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/serverless-image-handler-architecture.png)
+![Lambda architecture diagram showing CloudFront](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/serverless-image-handler-architecture.png)
 
 **Note**
 AWS CloudFormation resources are created from [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) (AWS CDK) constructs.

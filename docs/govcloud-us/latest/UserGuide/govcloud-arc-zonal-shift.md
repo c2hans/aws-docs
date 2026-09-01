@@ -8,17 +8,18 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ar
  Amazon Application Recovery Controller (ARC) (ARC) provides capabilities that help you prepare for and accomplish faster recovery operations for applications running on AWS. With ARC, you can gain insights into whether your applications and resources are prepared for recovery, and quickly mitigate impairments for a multi-Availability Zone or multi-Region application. ARC includes readiness checks, routing controls, zonal shifts, and zonal autoshift.
 
 ## Region availability
-<a name="_region_availability"></a>
+<a name="region-availability"></a>
 
-This service is available in the following AWS GovCloud (US) Regions:
-+  AWS GovCloud (US-West)
+Amazon Application Recovery Controller is available in the following AWS GovCloud (US) Regions:
 +  AWS GovCloud (US-East)
++  AWS GovCloud (US-West)
 
-## How Amazon Application Recovery Controller (ARC) differs
-<a name="_how_amazon_application_recovery_controller_arc_differs"></a>
+## How Amazon Application Recovery Controller differs
+<a name="feature-diffs"></a>
 
-The following differences apply to Amazon Application Recovery Controller (ARC):
-+ The routing control, and readiness check features of the ARC service are not available in AWS GovCloud (US-West).
+The following differences apply to Amazon Application Recovery Controller:
++ Readiness Checks is not available.
++ Routing Control is not available.
 
 ## Zonal Shift
 <a name="_zonal_shift"></a>

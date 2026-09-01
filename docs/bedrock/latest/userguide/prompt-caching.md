@@ -5,26 +5,53 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.
 # Prompt caching for faster model inference
 <a name="prompt-caching"></a>
 
-Prompt caching is an optional feature that you can use with supported models on Amazon Bedrock to reduce inference response latency and input token costs. By adding portions of your context to a cache, the model can use the cache to skip recomputation of inputs, allowing Bedrock to share in the compute savings and lower your response latencies.
+Prompt caching is an optional feature that you can use with supported models on Amazon Bedrock to reduce inference response latency and input token costs. Amazon Bedrock supports two types of prompt caching: [Implicit Prompt Caching](#prompt-caching-implicit) and [Explicit Prompt Caching](#prompt-caching-explicit). Support for each type varies by model and API.
 
 Prompt caching can help when you have workloads with long and repeated contexts that are frequently reused for multiple queries. For example, if you have a chatbot where users can upload documents and ask questions about them, it can be time consuming for the model to process the document every time the user provides input. With prompt caching, you can cache the document so that future queries containing the document don't need to reprocess it.
 
-When using prompt caching, you're charged at a reduced rate for tokens read from cache. Depending on the model, tokens written to cache may be charged at a rate that is higher than that of uncached input tokens. Any tokens not read from or written to cache, are charged at the standard input token rate for that model. For more information, see the [Amazon Bedrock pricing page](https://aws.amazon.com/bedrock/pricing/).
-
-## How it works
+## Types of prompt caching
 <a name="prompt-caching-overview"></a>
 
-If you opt to use prompt caching, Amazon Bedrock creates a cache composed of *cache checkpoints*. These are markers that define the contiguous subsection of your prompt that you wish to cache (often referred to as a prompt prefix). These prompt prefixes should be static between requests, alterations to the prompt prefix in subsequent requests will result in cache misses.
+The two types differ in how reusable prompt content is selected:
 
-Cache checkpoints have a minimum and maximum number of tokens, dependent on the specific model you're using. You can only create a cache checkpoint if your total prompt prefix meets the minimum number of tokens. For example, Claude Opus 5 requires at least 512 tokens per cache checkpoint, Claude Sonnet 5 requires at least 1,024 tokens per cache checkpoint, and Claude Haiku 4.5 requires at least 4,096 tokens per cache checkpoint. That means that for a model with a 1,024-token minimum, your first cache checkpoint can be defined after 1,024 tokens and your second cache checkpoint can be defined after 2,048 tokens. If you try to add a cache checkpoint before meeting the minimum number of tokens, your inference will still succeed, but your prefix will not be cached. The cache has a Time To Live (TTL), which resets with each successful cache hit. During this period, the context in the cache is preserved. If no cache hits occur within the TTL window, your cache expires. Many models support a 5-minute TTL. Check the model card for your model to see the exact TTL conditions.
+| Type | How it works | Request configuration |
+| --- | --- | --- |
+| [Implicit Prompt Caching](#prompt-caching-implicit) | Amazon Bedrock and the model automatically attempt to reuse eligible prompt prefixes. | No cache controls or breakpoints are required in your request. |
+| [Explicit Prompt Caching](#prompt-caching-explicit) | You identify reusable prompt prefixes by adding model-specific cache controls or breakpoints. | Your request must include the cache controls supported by the model and API. |
 
-You can use prompt caching anytime you get model inference in Amazon Bedrock for supported models. Prompt caching is supported by the following Amazon Bedrock features:
+### Implicit Prompt Caching
+<a name="prompt-caching-implicit"></a>
+
+Implicit Prompt Caching automatically attempts to reuse eligible prompt prefixes without requiring cache controls in your request. Keep static content at the beginning of your prompt and dynamic content at the end to increase the likelihood of an exact prefix match.
+
+Implicit Prompt Caching is best effort. Repeating an identical prompt doesn't guarantee a cache hit, and cache-hit rates can vary.
+
+### Explicit Prompt Caching
+<a name="prompt-caching-explicit"></a>
+
+Explicit Prompt Caching lets you identify reusable prompt prefixes using model-specific cache controls or *cache checkpoints*. Cache checkpoints are markers that define the contiguous subsection of your prompt that you want to cache. Prompt prefixes should remain static between requests. Changes to a prompt prefix in subsequent requests result in cache misses.
+
+Cache checkpoints have a minimum and maximum number of tokens, depending on the model. You can only create a cache checkpoint if your total prompt prefix meets the minimum number of tokens. For example, Claude Opus 5 requires at least 512 tokens per cache checkpoint, Claude Sonnet 5 requires at least 1,024 tokens per cache checkpoint, and Claude Haiku 4.5 requires at least 4,096 tokens per cache checkpoint. For a model with a 1,024-token minimum, your first cache checkpoint can be defined after 1,024 tokens and your second cache checkpoint can be defined after 2,048 tokens. If you add a cache checkpoint before meeting the minimum number of tokens, your inference still succeeds, but your prefix isn't cached.
+
+The cache has a Time To Live (TTL), which resets with each successful cache hit. During this period, the context in the cache is preserved. If no cache hits occur within the TTL window, your cache expires. Many models support a 5-minute TTL. Check the model card for your model to see the exact TTL conditions.
+
+Explicit Prompt Caching provides control over which prompt content is eligible for caching. It doesn't guarantee that an eligible request results in a cache hit.
+
+### Billing for cached tokens
+<a name="prompt-caching-billing"></a>
+
+For both Implicit Prompt Caching and Explicit Prompt Caching, tokens successfully read from cache are reported as cached tokens and billed at the model's cache-read rate. Tokens that aren't read from cache are billed at the standard input token rate. Depending on the model, tokens written to cache can be billed at a rate that is higher than the standard input token rate. For more information, see the [Amazon Bedrock pricing page](https://aws.amazon.com/bedrock/pricing/).
+
+**Important**
+Support for prompt caching doesn't guarantee a cache hit for any request. Check the cache usage fields in the model response to determine whether tokens were read from or written to cache.
+
+You can use prompt caching when you run inference in Amazon Bedrock with supported models. Availability of each prompt caching type varies by model and API. Prompt caching is available through the following Amazon Bedrock features:
 
 **Converse and ConverseStream APIs**
-You can carry on a conversation with a model where you specify cache checkpoints in your prompts.
+You can carry on a conversation with a supported model. For Explicit Prompt Caching, specify cache checkpoints in your prompts.
 
 **InvokeModel and InvokeModelWithResponseStream APIs**
-You can submit single prompt requests in which you enable prompt caching and specify your cache checkpoints.
+You can submit single-prompt requests to supported models. For Explicit Prompt Caching, enable prompt caching and specify your cache checkpoints.
 
 **Prompt Caching with Cross-region Inference**
 Prompt caching can be used in conjunction with cross region inference. Cross-region inference automatically selects the optimal AWS Region within your geography to serve your inference request, thereby maximizing available resources and model availability. At times of high demand, these optimizations may lead to increased cache writes.
@@ -35,19 +62,21 @@ When you [create](prompt-management-create.md) or [modify](prompt-management-mod
 **Note**
 Prompt caching is only supported for on-demand inference endpoints. It is not supported with the batch inference API.
 
-The APIs provide you with the most flexibility and granular control over the prompt cache. You can set an individual cache checkpoint within your prompts. You can add to the cache by creating more cache checkpoints, up to the maximum number of cache checkpoints allowed for the specific model. For more information, see [Supported models, Regions, and limits](#prompt-caching-models).
+For models that support Explicit Prompt Caching, the APIs provide granular control over the prompt cache. You can set individual cache checkpoints within your prompts and add checkpoints up to the maximum allowed for the model. For more information, see [Supported models, Regions, and explicit caching limits](#prompt-caching-models).
 
-## Supported models, Regions, and limits
+## Supported models, Regions, and explicit caching limits
 <a name="prompt-caching-models"></a>
 
-Prompt caching is available in all AWS Regions where the supported models are available. To check model availability by Region, see [Regional availability by models](models-region-compatibility.md).
+Prompt caching support varies by model and API. Model cards identify whether a model supports Implicit Prompt Caching, Explicit Prompt Caching, or both. Prompt caching is available in all AWS Regions where the supported models are available. To check model availability by Region, see [Regional availability by models](models-region-compatibility.md).
 
-The following table lists the supported models along with their token minimums, maximum number of cache checkpoints, and fields that allow cache checkpoints.
+The following table lists models that support Explicit Prompt Caching, along with their token minimums, maximum number of cache checkpoints, and fields that allow cache checkpoints.
 
-To see which models support prompt caching, please refer to [Models at a glance](model-cards.md) and then choose the model you are interested in. The following table shows prompt caching for models that are not present in models-at-a-glance.
+To see which prompt caching types a model supports, refer to [Models at a glance](model-cards.md), and then choose the model that you're interested in.
 
 | Model name | Model ID | Release Type | Minimum number of tokens per cache checkpoint | Maximum number of cache checkpoints per request | Supported TTL | Fields that accept prompt cache checkpoints |
 | --- | --- | --- | --- | --- | --- | --- |
+| Claude Fable 5.1 | anthropic.claude-fable-5-1 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Mythos 5.1 | anthropic.claude-mythos-5-1 | Gated | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Fable 5 | anthropic.claude-fable-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Mythos 5 | anthropic.claude-mythos-5 | Gated | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Mythos Preview | anthropic.claude-mythos-preview | Gated | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
@@ -68,12 +97,14 @@ To see which models support prompt caching, please refer to [Models at a glance]
 
 To use the 1-hour TTL option with supported models (Claude Fable 5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 5, Claude Sonnet 4.6, Claude Sonnet 4.5, and Claude Haiku 4.5), specify the `ttl` field in your cache checkpoint. In the Converse API, add `"ttl": "1h"` to your `cachePoint` object. In the InvokeModel API for Claude models, add `"ttl": "1h"` to your `cache_control` object. If no `ttl` value is provided, the default 5-minute caching behavior applies. The 1-hour TTL is useful for longer-running sessions or batch processing scenarios where you want to maintain the cache across extended periods.
 
-Amazon Nova offers automatic prompt caching for all text prompts, including `User` and `System` messages. This mechanism can provide latency benefits when prompts begin with repetitive parts, even without explicit configuration. However, to unlock cost savings and ensure more consistent performance benefits, we recommend opting in to **Explicit Prompt Caching**.
+Amazon Nova offers Implicit Prompt Caching for all text prompts, including `User` and `System` messages. This mechanism can provide latency benefits when prompts begin with repetitive parts, without explicit configuration. Amazon Nova models shown as supporting Explicit Prompt Caching in their model cards also let you specify cache checkpoints for more control over cache eligibility.
 
-## Cache Management for Models from Anthropic
+## Prompt caching for models from Anthropic
 <a name="prompt-caching-simplified"></a>
 
-For Claude models, Amazon Bedrock offers a simplified approach to cache management that reduces the complexity of manually placing cache checkpoints. Instead of requiring you to specify exact cache checkpoint locations, you can use automatic cache management with a single breakpoint at the end of your static content.
+Anthropic models that support prompt caching on Amazon Bedrock support both Implicit Prompt Caching and Explicit Prompt Caching. Implicit Prompt Caching automatically attempts to reuse eligible prompt prefixes without requiring cache controls in your request.
+
+For Explicit Prompt Caching, Amazon Bedrock offers a simplified approach to cache management that reduces the complexity of manually placing cache checkpoints. Instead of requiring you to specify exact cache checkpoint locations, you can use automatic cache management with a single breakpoint at the end of your static content.
 
 When you enable simplified cache management, the system automatically checks for cache hits at previous content block boundaries, looking back up to approximately 20 content blocks from your specified breakpoint. This allows the model to find the longest matching prefix from your cache without requiring you to predict the optimal checkpoint locations. To use this, place a single cache checkpoint at the end of your static content, before any dynamic or variable content. The system will automatically find the best cache match.
 
@@ -94,15 +125,15 @@ The 1-hour cache is best used in the following scenarios:
 
 You can use both 1-hour and 5-minute cache controls in the same request, but with an important constraint: Cache entries with longer TTL must appear before shorter TTLs (i.e., a 1-hour cache entry must appear before any 5-minute cache entries).
 
-## Cache Management for Models from OpenAI
+## Prompt caching for models from OpenAI
 <a name="prompt-caching-openai"></a>
 
-OpenAI models on Amazon Bedrock support prompt caching through the Responses API, which is available on both the `bedrock-runtime` and `bedrock-mantle` endpoints. The caching behavior differs depending on the model generation.
+OpenAI models on Amazon Bedrock support Implicit Prompt Caching through the Responses API. GPT-5.6 models also support Explicit Prompt Caching. The Responses API is available on both the `bedrock-runtime` and `bedrock-mantle` endpoints.
 
 ### GPT-5.6 models
 <a name="prompt-caching-openai-56"></a>
 
-GPT-5.6 Sol (`openai.gpt-5.6-sol`), Terra (`openai.gpt-5.6-terra`), and Luna (`openai.gpt-5.6-luna`) introduce explicit prompt cache breakpoints, giving you precise control over which portions of your prompt are cached. This is especially valuable for agentic workflows where system instructions, tool definitions, and reference files repeat across many calls while only the latest input changes.
+GPT-5.6 Sol (`openai.gpt-5.6-sol`), Terra (`openai.gpt-5.6-terra`), and Luna (`openai.gpt-5.6-luna`) support both Implicit Prompt Caching and Explicit Prompt Caching. Explicit prompt cache breakpoints give you precise control over which portions of your prompt are eligible for caching. This is especially valuable for agentic workflows where system instructions, tool definitions, and reference files repeat across many calls while only the latest input changes.
 
 Key characteristics:
 + **Explicit cache breakpoints** — Mark the exact end of a reusable prompt prefix by adding `"prompt_cache_breakpoint": {"mode": "explicit"}` to a supported content block.
@@ -132,10 +163,10 @@ When `cached_tokens` is greater than zero and `cache_write_tokens` is zero, your
 ### GPT-5.5 and earlier models
 <a name="prompt-caching-openai-pre56"></a>
 
-For OpenAI models prior to GPT-5.6 (such as `openai.gpt-5.5` and `openai.gpt-5.4`), prompt caching is automatic. You do not need to add any special parameters — the system automatically caches eligible prompt prefixes of 1,024 tokens or longer. Cache writes have no additional fee on these models.
+For OpenAI models prior to GPT-5.6 (such as `openai.gpt-5.5` and `openai.gpt-5.4`), Implicit Prompt Caching is automatic. You don't need to add any special parameters. The system automatically attempts to cache eligible prompt prefixes of 1,024 tokens or longer. Cache writes have no additional fee on these models.
 
 Key characteristics:
-+ **Automatic caching** — No code changes required. The system caches prefixes automatically based on exact prefix matching.
++ **Implicit Prompt Caching** — No code changes are required. The system attempts to cache prefixes automatically based on exact prefix matching.
 + **Minimum prefix length** — 1,024 tokens.
 + **No cache write fee** — Only cache reads are billed at a discounted rate.
 + **Cached tokens do not count toward rate limits** — Cached input tokens read through prompt caching do not count against the input-tokens-per-minute quota.
@@ -154,7 +185,7 @@ The following sections show you a brief overview of how to use the prompt cachin
 ### Converse API
 <a name="prompt-caching-converse"></a>
 
-The [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API provides advanced and flexible options for implementing prompt caching in multi-turn conversations. For more information about the prompt requirements for each model, see the preceding section [Supported models, Regions, and limits](#prompt-caching-models).
+The [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API provides advanced and flexible options for implementing prompt caching in multi-turn conversations. For more information about the prompt requirements for each model, see the preceding section [Supported models, Regions, and explicit caching limits](#prompt-caching-models).
 
 **Example request**
 

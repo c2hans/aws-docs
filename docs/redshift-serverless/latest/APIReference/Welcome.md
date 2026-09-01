@@ -11,7 +11,7 @@ Amazon Redshift Serverless automatically provisions data warehouse capacity and 
 
  To learn more about Amazon Redshift Serverless, see [What is Amazon Redshift Serverless?](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-whatis.html).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

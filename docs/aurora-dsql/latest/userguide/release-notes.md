@@ -13,6 +13,9 @@ This page describes new features, service launches, and important updates for Au
 ### August 2026
 <a name="release-notes-2026-08"></a>
 
+August 27, 2026
+🐘 *PostgreSQL Compatibility* — **Extended statistics** — Aurora DSQL now supports the `CREATE STATISTICS`, `ALTER STATISTICS`, and `DROP STATISTICS` commands. You can create extended statistics on correlated columns and expressions so that the query planner produces more accurate row estimates. For more information, see [CREATE STATISTICS](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-statistics-syntax-support.html), [ALTER STATISTICS](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-statistics-syntax-support.html), and [DROP STATISTICS](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/drop-statistics-syntax-support.html).
+
 August 26, 2026
 🐘 *PostgreSQL Compatibility* — **Foreign key constraints** — Aurora DSQL now supports foreign key constraints. You can define foreign key constraints when you create a table, or add them to an existing table with `ALTER TABLE ... ADD CONSTRAINT ... NOT VALID`. For more information, see [Working with foreign key constraints](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-with-foreign-key-constraints.html).
 

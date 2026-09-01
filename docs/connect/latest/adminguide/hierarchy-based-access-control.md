@@ -19,7 +19,7 @@ This topic information about configuring hierarchy-based access controls.
 ## Overview
 <a name="hierarchy-based-access-control-background"></a>
 
-Hierarchy-based access control enables you to configure granular access to specific resources based on the [agent hierarchy](agent-hierarchy.md) that is assigned to a user. You can configure hierarchy-based access controls by using the API/SDK or the Connect Customer admin website.
+With hierarchy-based access control, you can configure granular access to specific resources based on the [agent hierarchy](agent-hierarchy.md) that is assigned to a user. You can configure hierarchy-based access controls by using the API/SDK or the Connect Customer admin website.
 
 The only resource that supports hierarchy-based access control is users. This authorization model works with [tag-based access control](tag-based-access-control.md) so you can restrict access to users, allowing them to see only other users who belong to their same hierarchy group and who have specific tags associated to them.
 

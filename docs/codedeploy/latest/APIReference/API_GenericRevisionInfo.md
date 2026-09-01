@@ -14,6 +14,7 @@ Information about an application revision.
 The deployment groups for which this is the current target revision.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** description **   <a name="CodeDeploy-Type-GenericRevisionInfo-description"></a>

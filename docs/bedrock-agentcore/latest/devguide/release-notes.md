@@ -10,6 +10,36 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## August 2026
 <a name="_august_2026"></a>
 
+### AWS Agent Registry is now generally available, with auto-detection and customer managed key encryption
+<a name="shared_aws_agent_registry_is_now_generally_available_with_auto_detection_and_customer_managed_key_encryption"></a>
+
+ AWS Agent Registry is now generally available. This launch introduces two new features:
++  **Auto-detection with AWS Organizations** — Automatically discover and catalog AgentCore Runtimes and Gateways across your organization’s member accounts into a single registry, with no per-account setup. The catalog stays in sync as resources are created, updated, or deleted and as accounts join or leave the organization. For more information, see [Using AWS Agent Registry with AWS Organizations](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-organizations.html).
++  **Customer managed key encryption** — Encrypt registry data at rest with a customer managed key from AWS KMS that you own and control. Specify the key at registry creation time. For more information, see [Data encryption in AWS Agent Registry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-data-encryption.html).
+
+### Memory: Ingest content directly into long-term memory
+<a name="_memory_ingest_content_directly_into_long_term_memory_2"></a>
+
+AgentCore Memory now supports direct ingestion into long-term memory via IngestData API. See [Ingest content into long-term memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-term-ingest-data.html).
+
+### Memory: Flexible Namespaces
+<a name="_memory_flexible_namespaces_2"></a>
+
+AgentCore Memory now supports flexible namespace variables. See [Specify long-term memory organization with namespaces](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/specify-long-term-memory-organization.html).
+
+### AWS Agent Registry: AWS PrivateLink support
+<a name="shared_aws_agent_registry_shared_aws_privatelink_support"></a>
+
+ AWS Agent Registry now supports AWS PrivateLink for private connectivity from your VPC to the service. You can access the registry over an interface VPC endpoint without an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
+
+ AWS Agent Registry exposes two AWS PrivateLink endpoints:
++ Control plane — `com.amazonaws.region.agent-registry-control` — for registry and record management.
++ Data plane — `com.amazonaws.region.agent-registry` — for record discovery and the registry MCP endpoint.
+
+Endpoint policies match callers by IAM principal. For registries that use SigV4 authorization, you can scope policies to specific IAM principals. For registries that use JWT authorization, set `Principal` to `*` so bearer-token requests can reach the service.
+
+For more information, see [VPC and AWS PrivateLink with AWS Agent Registry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-privatelink.html).
+
 ### AWS Agent Registry: Cross-account sharing with AWS RAM
 <a name="shared_aws_agent_registry_cross_account_sharing_with_shared_aws_ram"></a>
 

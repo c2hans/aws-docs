@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 **Note**
 AWS announced that the end-of-life date for Performance Insights was July 31, 2026, and has migrated Performance Insights users to Database Insights. Standard mode supports flexible retention of 1–24 months at the same price as Performance Insights. Advanced mode supports flexible retention of 1–24 months, at no extra cost.
 
-Use CloudWatch Database Insights to monitor and troubleshoot Amazon Aurora MySQL, Amazon Aurora PostgreSQL, Amazon Aurora PostgreSQL Limitless, Amazon Aurora DSQL, Amazon RDS for SQL Server, RDS for MySQL, RDS for PostgreSQL, RDS for Oracle, and RDS for MariaDB databases at scale.
+Use CloudWatch Database Insights to monitor and troubleshoot Amazon Aurora MySQL, Amazon Aurora PostgreSQL, Amazon Aurora PostgreSQL Limitless, Amazon Aurora DSQL, Amazon RDS for SQL Server, RDS for MySQL, RDS for PostgreSQL, RDS for Oracle, RDS for MariaDB, and self-managed PostgreSQL databases at scale.
 
 With Database Insights, you can monitor your database fleet with pre-built, opinionated dashboards. To help you analyze the performance of your fleet, the Database Insights dashboards display curated metrics and visualizations, and you can customize these dashboards. By presenting metrics in a single dashboard for all databases in your fleet, Database Insights allows you to monitor your databases simultaneously.
 
@@ -17,6 +17,8 @@ For example, you can use Database Insights to find a database that is performing
 For information about engine, AWS Region, and instance class support, see [Aurora DB engine, Region, and instance class support for Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.Engines.html) and [Amazon RDS DB engine, Region, and instance class support for Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.Engines.html).
 
 For information about monitoring Amazon Aurora DSQL, see [Monitoring and logging for Aurora DSQL](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/monitoring-overview.html).
+
+Database Insights also supports monitoring self-managed databases running on Amazon Elastic Compute Cloud. The supported engine for self-managed databases is PostgreSQL, see [Monitoring Self-Managed Databases](Database-Insights-Self-Managed.md).
 
 Database Insights supports monitoring workloads across multiple accounts and regions. To learn more about the cross-account cross-region monitoring feauture of Database Insights see [Set up cross-account cross-region monitoring for CloudWatch Database Insights ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Database-Insights-Cross-Account-Cross-Region.html)
 
@@ -54,6 +56,9 @@ The following table shows which features CloudWatch supports for the Advanced mo
 | Import Performance Insights counter metrics into CloudWatch automatically | Not supported | Supported |
 | View Amazon RDS events in CloudWatch | Not supported | Supported |
 | Analyze database performance for a time period of your choice with on‐demand analysis | Not supported | Supported |
+
+**Note**
+The Standard mode and Advanced mode apply to Amazon RDS and Amazon Aurora databases. Self-managed databases do not use modes. They provide a single monitoring experience with 15 months of metric retention, configured through the CloudWatch agent. For more information, see [Monitoring Self-Managed Databases](Database-Insights-Self-Managed.md).
 
 **Note**
 Database Insights feature availability differs in different AWS Regions, because not all Advanced Mode features are available in all Regions.

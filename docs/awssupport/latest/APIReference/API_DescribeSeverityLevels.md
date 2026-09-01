@@ -8,14 +8,15 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 Returns the list of severity levels that you can assign to a support case. The severity level for a case is also a field in the [CaseDetails](API_CaseDetails.md) data type that you include for a [CreateCase](API_CreateCase.md) request.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 ## Request Syntax
 <a name="API_DescribeSeverityLevels_RequestSyntax"></a>
 
 ```
 {
+   "dryRun": {{boolean}},
    "language": "{{string}}"
 }
 ```
@@ -26,6 +27,10 @@ If you call the AWS Support API from an account that doesn't have a Business, En
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [dryRun](#API_DescribeSeverityLevels_RequestSyntax) **   <a name="AWSSupport-DescribeSeverityLevels-request-dryRun"></a>
+Specifies whether to validate the request without actually returning severity levels. When set to `true`, the request is validated but no severity levels are returned, and the operation returns a `DryRunOperationException`. When omitted or set to `false`, the request runs normally.
+Type: Boolean
 
  ** [language](#API_DescribeSeverityLevels_RequestSyntax) **   <a name="AWSSupport-DescribeSeverityLevels-request-language"></a>
 The language in which AWS Support handles the case. AWS Support currently supports Chinese (“zh”), English ("en"), Japanese ("ja") , Chinese ("zh"), Spanish ("es"), Portuguese ("pt"), French ("fr"), Korean (“ko”), and Turkish ("tr"). You must specify the ISO 639-1 code for the `language` parameter if you want support in that language.
@@ -60,6 +65,10 @@ Type: Array of [SeverityLevel](API_SeverityLevel.md) objects
 <a name="API_DescribeSeverityLevels_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** DryRunOperationException **
+The request was valid, but the operation wasn't performed because `dryRun` was set to `true`.
+HTTP Status Code: 400
 
  ** InternalServerError **
 An internal server error occurred.

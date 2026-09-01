@@ -13,7 +13,7 @@ Amazon Web Services (AWS), Amazon Lightsail, and third-party application vendors
 The following list of Amazon Lightsail platforms and blueprints links to each vendor’s support page. There, you can view information such as how-to guides, and keeping your operating system and application up to date. You can use any automatic update service or recommended process for installing updates that are provided by the application vendor.
 
 **Windows**
-+ [Windows Server 2022, Windows Server 2019, Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/)
++ [Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/)
 + [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/)
 
 **Linux and Unix** – Operating system only

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/plugin-
 # Session Manager plugin latest version and release history
 <a name="plugin-version-history"></a>
 
-Your local machine must be running a supported version of the Session Manager plugin. The current minimum supported version is 1.1.17.0. If you're running an earlier version, your Session Manager operations might not succeed.
+Your local machine must be running a supported version of the Session Manager plugin. The current minimum supported version is 1.2.764.0. If you're running an earlier version, your Session Manager operations might not succeed.
 
 To see if you have the latest version, run the following command in the AWS CLI.
 

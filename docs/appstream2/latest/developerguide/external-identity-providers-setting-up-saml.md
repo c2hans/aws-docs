@@ -237,18 +237,21 @@ Table 1 below lists the relay state endpoints for the Regions where WorkSpaces A
 | US East (Ohio) | https://appstream2.euc-sso.us-east-2.aws.amazon.com/saml |
 | US West (Oregon) | `https://appstream2.euc-sso.us-west-2.aws.amazon.com/saml`<br />(FIPS) `https://appstream2.euc-sso-fips.us-west-2.aws.amazon.com/saml` |
 | Asia Pacific (Malaysia) | https://appstream2.euc-sso.ap-southeast-5.aws.amazon.com/saml |
+| Asia Pacific (Osaka) | https://appstream2.euc-sso.ap-northeast-3.aws.amazon.com/saml |
 | Asia Pacific (Mumbai) | https://appstream2.euc-sso.ap-south-1.aws.amazon.com/saml |
 | Asia Pacific (Seoul) | https://appstream2.euc-sso.ap-northeast-2.aws.amazon.com/saml |
 | Asia Pacific (Singapore) | https://appstream2.euc-sso.ap-southeast-1.aws.amazon.com/saml |
 | Asia Pacific (Sydney) | https://appstream2.euc-sso.ap-southeast-2.aws.amazon.com/saml |
 | Asia Pacific (Tokyo) | https://appstream2.euc-sso.ap-northeast-1.aws.amazon.com/saml |
 | Canada (Central) | https://appstream2.euc-sso.ca-central-1.aws.amazon.com/saml |
+| Canada West (Calgary) | https://appstream2.euc-sso.ca-west-1.aws.amazon.com/saml |
 | Europe (Frankfurt) | https://appstream2.euc-sso.eu-central-1.aws.amazon.com/saml |
 | Europe (Ireland) | https://appstream2.euc-sso.eu-west-1.aws.amazon.com/saml |
 | Europe (London) | https://appstream2.euc-sso.eu-west-2.aws.amazon.com/saml |
 | Europe (Milan) | https://appstream2.euc-sso.eu-south-1.aws.amazon.com/saml |
 | Europe (Paris) | https://appstream2.euc-sso.eu-west-3.aws.amazon.com/saml |
 | Europe (Spain) | https://appstream2.euc-sso.eu-south-2.aws.amazon.com/saml |
+| Europe (Zurich) | https://appstream2.euc-sso.eu-central-2.aws.amazon.com/saml |
 | AWS GovCloud (US-East) | `https://appstream2.euc-sso.us-gov-east-1.amazonaws-us-gov.com/saml`<br />(FIPS) `https://appstream2.euc-sso-fips.us-gov-east-1.amazonaws-us-gov.com/saml` For more information about using WorkSpaces Applications in AWS GovCloud (US) Regions, see [Amazon WorkSpaces Applications](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-appstream2.html) in the *AWS GovCloud (US) User Guide*.  |
 | AWS GovCloud (US-West) | `https://appstream2.euc-sso.us-gov-west-1.amazonaws-us-gov.com/saml`<br />(FIPS) `https://appstream2.euc-sso-fips.us-gov-west-1.amazonaws-us-gov.com/saml` For more information about using WorkSpaces Applications in AWS GovCloud (US) Regions, see [Amazon WorkSpaces Applications](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-appstream2.html) in the *AWS GovCloud (US) User Guide*.  |
 | South America (São Paulo) | https://appstream2.euc-sso.sa-east-1.aws.amazon.com/saml |

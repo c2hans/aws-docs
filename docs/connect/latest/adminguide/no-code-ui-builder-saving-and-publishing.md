@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/no-code-ui-bui
 # Save and publish views to use in a step-by-step guide in Connect Customer
 <a name="no-code-ui-builder-saving-and-publishing"></a>
 
-View resources have versioning support. Versioning enables you to audit and even re-use the previous iterations of a view you have created or used in step-by-step guides.
+View resources have versioning support. With versioning, you can audit and even re-use the previous iterations of a view you have created or used in step-by-step guides.
 
 1. Enter a name for your view, if you haven't already done so. You can't save a view until it is assigned a name.
 

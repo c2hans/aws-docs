@@ -73,7 +73,7 @@ Type: Timestamp
  ** [Fields](#API_connect-customer-profiles_GetRecommenderSchema_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetRecommenderSchema-response-Fields"></a>
 A map of dataset type to column definitions included in the schema.
 Type: String to array of [RecommenderSchemaField](API_connect-customer-profiles_RecommenderSchemaField.md) objects map
-Map Entries: Maximum number of 1 item.
+Map Entries: Maximum number of 2 items.
 Array Members: Minimum number of 1 item. Maximum number of 9 items.
 
  ** [RecommenderSchemaName](#API_connect-customer-profiles_GetRecommenderSchema_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetRecommenderSchema-response-RecommenderSchemaName"></a>

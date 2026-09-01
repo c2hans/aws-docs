@@ -48,7 +48,7 @@ The following sections discuss DB *instance* read replicas. For information abou
 
 Deploying one or more read replicas for a given source DB instance might make sense in a variety of scenarios, including the following:
 + Scaling beyond the compute or I/O capacity of a single DB instance for read-heavy database workloads. You can direct this excess read traffic to one or more read replicas.
-+ Serving read traffic while the source DB instance is unavailable. In some cases, your source DB instance might not be able to take I/O requests, for example due to I/O suspension for backups or scheduled maintenance. In these cases, you can direct read traffic to your read replicas. For this use case, keep in mind that the data on the read replica might be "stale" because the source DB instance is unavailable.
++ Serving read traffic while the source DB instance is unavailable. In some cases, your source DB instance might not be able to take I/O requests, for example due to I/O suspension for backups or scheduled maintenance. In these cases, you can direct read traffic to your read replicas. For this use case, keep in mind that the data on the read replica might be stale because the source DB instance is unavailable.
 + Business reporting or data warehousing scenarios where you might want business reporting queries to run against a read replica, rather than your production DB instance.
 + Implementing disaster recovery. You can promote a read replica to a standalone instance as a disaster recovery solution if the primary DB instance fails.
 

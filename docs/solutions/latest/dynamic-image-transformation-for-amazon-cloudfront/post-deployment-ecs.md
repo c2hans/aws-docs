@@ -10,9 +10,16 @@ After deploying the ECS template, additional configuration steps are required to
  **Admin UI Access:** The Admin UI link is available in the CloudFormation stack outputs section. Access the Admin UI from there and sign in using the provided Cognito credentials.
 
  **Initial Configuration:**
-+  **Configure Origins**: Use the Admin UI to add your S3 buckets and external origins
-+  **Create Mappings**: Set up path-based or host-header mappings to route requests to origins
-+  **Define Policies**: Create transformation policies for consistent image processing
+
+Configure the solution in the Admin UI in the following order, because each step builds on the previous one:
+
+1.  **Configure Origins**: Add the S3 buckets and external servers where your source images live.
+
+1.  **Define Policies**: Create transformation policies that describe how images are processed (this step is optional; a mapping can route to an origin without a policy).
+
+1.  **Create Mappings**: Set up path-based or host-header mappings that route incoming requests to an origin and, optionally, a policy.
+
+For worked examples of each entity, the exact Admin UI navigation, and an end-to-end walkthrough, see [Configuration overview and setup order](ecs-configuration-overview.md) in *Use the solution*.
 
 ## See also
 

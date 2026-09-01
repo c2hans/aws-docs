@@ -46,7 +46,7 @@ The details of the policy. It must be formatted in JSON, and you must use backsl
 *Type*: Json
 *Pattern*: `[\u0009\u000A\u000D\u0020-\u00FF]+`
 *Minimum*: `1`
-*Maximum*: `5120`
+*Maximum*: `51200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PolicyName`  <a name="cfn-logs-resourcepolicy-policyname"></a>

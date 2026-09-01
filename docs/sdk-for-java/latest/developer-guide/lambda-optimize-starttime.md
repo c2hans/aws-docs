@@ -133,6 +133,15 @@ To learn more about the archetype and work through an example deployment, see th
 
 If your runtime requirements are compatible, AWS offers [Lambda SnapStart for Java](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html). Lambda SnapStart is an infrastructure-based solution that improves startup performance for Java functions. When you publish a new version of a function, Lambda SnapStart initializes it and takes an immutable, encrypted snapshot of the memory and disk state. SnapStart then caches the snapshot for reuse.
 
+To gain the full startup benefit from SnapStart, use the [SdkWarmUp](https://docs.aws.amazon.com/java/api/latest/software/amazon/awssdk/core/warmup/SdkWarmUp.html) API to warm up all your SDK clients before Lambda takes the snapshot. The snapshot then captures the warmed clients, so every restored function starts with them ready. For more information, see [Consider warming up SDK clients with SdkWarmUp](#lambda-quick-sdkwarmup).
+
+## Consider warming up SDK clients with SdkWarmUp
+<a name="lambda-quick-sdkwarmup"></a>
+
+The [SdkWarmUp](https://docs.aws.amazon.com/java/api/latest/software/amazon/awssdk/core/warmup/SdkWarmUp.html) API in the AWS SDK for Java 2.x warms up your SDK clients during application initialization. As a result, your first service API call is faster. The warm-up builds a client and invokes an operation to exercise the SDK request path. This happens before your application handles real traffic. With a single call, you can warm all SDK clients on your classpath, or only the specific clients that your application uses.
+
+You can use the `SdkWarmUp` API with Lambda features that reduce cold starts, such as Lambda SnapStart and provisioned concurrency. For more information about configuring and using `SdkWarmUp`, see [Warm up SDK clients in the AWS SDK for Java 2.x](sdk-warmup.md).
+
 ## Version 2.x changes that affect startup time
 <a name="example-client-configuration"></a>
 

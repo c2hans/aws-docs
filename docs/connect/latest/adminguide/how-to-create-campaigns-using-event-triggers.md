@@ -41,7 +41,7 @@ Examples:
 
    Recommenders are only available when you select the **View** notification type and the selected view has a **Web Notification Service** integration type. If you select the **Action** notification type, or if your selected view does not have this integration, the recommender option does not appear.
 
-1. (Optional) Configure the **Recommendations** section to integrate Predictive Insights with your event-triggered campaign. This enables you to deliver personalized template content through email and SMS channels.
+1. (Optional) Configure the **Recommendations** section to integrate Predictive Insights with your event-triggered campaign. With Predictive Insights, you can deliver personalized template content through email and SMS channels.
 ![Recommendations section in Amazon Connect console showing Recommender dropdown with frequently_paired_items selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/how-to-create-campaigns-recommendations.png)
 
    Configure the following settings:

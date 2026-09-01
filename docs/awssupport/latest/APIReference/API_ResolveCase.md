@@ -8,15 +8,16 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Resol
 Resolves a support case. This operation takes a `caseId` and returns the initial and final state of the case.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 ## Request Syntax
 <a name="API_ResolveCase_RequestSyntax"></a>
 
 ```
 {
-   "caseId": "{{string}}"
+   "caseId": "{{string}}",
+   "dryRun": {{boolean}}
 }
 ```
 
@@ -30,6 +31,10 @@ The request accepts the following data in JSON format.
  ** [caseId](#API_ResolveCase_RequestSyntax) **   <a name="AWSSupport-ResolveCase-request-caseId"></a>
 The support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-*12345678910-exen-2025-c4c1d2bf33c5cf47*
 Type: String
+
+ ** [dryRun](#API_ResolveCase_RequestSyntax) **   <a name="AWSSupport-ResolveCase-request-dryRun"></a>
+Specifies whether to validate the request without actually resolving the case. When set to `true`, the request is validated but the case isn't resolved, and the operation returns a `DryRunOperationException`. When omitted or set to `false`, the request runs normally.
+Type: Boolean
 
 ## Response Syntax
 <a name="API_ResolveCase_ResponseSyntax"></a>
@@ -65,6 +70,10 @@ For information about the errors that are common to all actions, see [Common Err
 The requested `caseId` couldn't be located.
  ** message **
 The requested `CaseId` could not be located.
+HTTP Status Code: 400
+
+ ** DryRunOperationException **
+The request was valid, but the operation wasn't performed because `dryRun` was set to `true`.
 HTTP Status Code: 400
 
  ** InternalServerError **

@@ -27,6 +27,7 @@ The request accepts the following data in JSON format.
 A list of application names separated by spaces. The maximum number of application names you can specify is 100.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
 ## Response Syntax

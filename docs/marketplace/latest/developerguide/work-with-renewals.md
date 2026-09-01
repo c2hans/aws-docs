@@ -17,7 +17,7 @@ There are four types of renewals in AWS Marketplace:
 
   This support applies to software as a service (SaaS) products, including those with contract and consumption-based pricing (CCP), whether they offer flexible payment options or not.
 + **New private offer**: Sellers can [create a new private offer](work-with-private-offers.md#create-offer) with new terms (for AMI hourly, AMI annual, and SaaS pay-as-you-go subscriptions) that can be accepted anytime to renew an existing agreement.
-+ **Auto-renewal**: Customers can enable auto-renewal for public offers and AWS Data Exchange products with private offers to automatically create a new agreement when a previous agreement ends.
++ **Auto-renewal**: Customers can enable auto-renewal for contract-based offers, public or private, so that a new agreement starts automatically when the current agreement ends.
 
 **Topics**
 + [Replacement offers](#replacement-offers)

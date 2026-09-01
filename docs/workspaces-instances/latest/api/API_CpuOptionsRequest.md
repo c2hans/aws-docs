@@ -22,6 +22,12 @@ Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
+ ** NestedVirtualization **   <a name="workspacesinstances-Type-CpuOptionsRequest-NestedVirtualization"></a>
+Specifies whether to enable or disable nested virtualization.
+Type: String
+Valid Values: `enabled | disabled`
+Required: No
+
  ** ThreadsPerCore **   <a name="workspacesinstances-Type-CpuOptionsRequest-ThreadsPerCore"></a>
 Number of threads per CPU core.
 Type: Integer

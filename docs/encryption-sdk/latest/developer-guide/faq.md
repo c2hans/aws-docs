@@ -102,7 +102,7 @@ To encrypt data under multiple wrapping keys, create a keyring or master key pro
 
 When you encrypt data with multiple wrapping keys, the AWS Encryption SDK uses one wrapping key to generate a plaintext data key. The data key is unique and mathematically unrelated to the wrapping key. The operation returns the plaintext data key and a copy of the data key encrypted by the wrapping key. Then the encryption method, encrypts the data key with the other wrapping keys. The resulting [encrypted message](concepts.md#message) includes the encrypted data and one encrypted data key for each wrapping key.
 
-The encryptypted message can be decrypted by using any one of the wrapping keys used in the encryption operation. The AWS Encryption SDK uses a wrapping key to decrypt an encrypted data key. Then, it uses the plaintext data key to decrypt the data.
+The encrypted message can be decrypted by using any one of the wrapping keys used in the encryption operation. The AWS Encryption SDK uses a wrapping key to decrypt an encrypted data key. Then, it uses the plaintext data key to decrypt the data.
 
 ## Which data types can I encrypt with the AWS Encryption SDK?
 <a name="data-types"></a>

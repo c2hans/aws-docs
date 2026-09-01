@@ -10,15 +10,15 @@ The capability is meant for advanced users. When you implement the changes descr
 Image transformations can continue to be supplied either through individual query strings in the request or through `/?policyId=123456` or by leveraging default policy.
 
 **Warning**
-These changes can have undesired security implication like sending requests to origin that are not onboarded on DIT. \*\*Consider using the host header mapping feature unless it is not feasible for you to enumerate every host mapping in the DIT config.
+These changes can have undesired security implications like sending requests to origin that are not onboarded on DIT. **Consider using the host header mapping feature unless it is not feasible for you to enumerate every host mapping in the DIT config.**
 
-To use this capability following steps need to be taken:
+To use this capability, follow these steps:
 
-1. Update **Origin Override Header** parameter in CloudFormation stack - this identifies the custom header that will be added by CF function and used by the image processing layer to route requests to the targeted origin. All solution specific custom headers are prepended with `dit-` we recommend the same for this header for eg. `dit-origin`.
+1. Update **Origin Override Header** parameter in CloudFormation stack - this identifies the custom header that will be added by CloudFront function and used by the image processing layer to route requests to the targeted origin. All solution specific custom headers are prepended with `dit-` we recommend the same for this header for example, `dit-origin`.
 
    This change updates the implemented cache policy and ECS environment variable to use the identified custom header.
 
-1. Update CF function in CloudFront console
+1. Update CloudFront function in CloudFront console
 
    1. Use same header that was supplied in the CloudFormation stack parameters:
 

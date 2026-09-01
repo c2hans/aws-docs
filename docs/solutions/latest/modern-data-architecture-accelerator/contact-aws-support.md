@@ -19,7 +19,7 @@ If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans
 
 AWS Support now uses an AI-powered assistant to help route and resolve your case.
 
-![AI-assisted support in AWS Support Center](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/AI-assisted-support.png)
+![AI-assisted support in AWS Support Center.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/AI-assisted-support.png)
 
 Describe your issue in natural language, including relevant details such as:
 + The solution name (**Modern Data Architecture Accelerator**)
@@ -34,7 +34,7 @@ The AI assistant will guide you through the resolution process or connect you wi
 
 If you prefer the form-based case creation workflow, choose **Use the old experience**.
 
-![Use the old experience link in AWS Support Center](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/use-the-old-experience.png)
+![Use the old experience link in AWS Support Center.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/use-the-old-experience.png)
 
 Then provide the following information:
 

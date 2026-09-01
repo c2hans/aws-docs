@@ -23,7 +23,7 @@ Required: No
  ** SequenceNumber **   <a name="Streams-Type-PutRecordsResultEntry-SequenceNumber"></a>
 The sequence number for an individual record result.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: No
 
  ** ShardId **   <a name="Streams-Type-PutRecordsResultEntry-ShardId"></a>

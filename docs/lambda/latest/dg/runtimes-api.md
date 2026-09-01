@@ -52,7 +52,7 @@ The runtime sends this message to Lambda to request an invocation event. The res
   For example, `Root=1-5bef4de7-ad49b0e87f6ef6c87fc2e700;Parent=9a9197af755a6419;Sampled=1`.
 + `Lambda-Runtime-Client-Context` – For invocations from the AWS Mobile SDK, data about the client application and device.
 + `Lambda-Runtime-Cognito-Identity` – For invocations from the AWS Mobile SDK, data about the Amazon Cognito identity provider.
-+ `Lambda-Runtime-Invocation-Id` – A unique identifier for this invocation attempt. A single request ID might result in multiple invocation attempts (for example, retries), each with a different invocation ID. Lambda uses each invocation ID exactly once and never reuses it. Echo this value back when calling `/response` or `/error`. Omitting the header is accepted for backward compatibility; only a present header with a mismatched value results in `400 InvalidInvocationId`.
++ `Lambda-Runtime-Invocation-Id` – A unique identifier for this invocation attempt.
 
 Do not set a timeout on the `GET` request as the response may be delayed. Between when Lambda bootstraps the runtime and when the runtime has an event to return, the runtime process might be frozen for several seconds.
 

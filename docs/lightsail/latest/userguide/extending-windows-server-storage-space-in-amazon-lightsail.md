@@ -22,7 +22,7 @@ This scenario happens only when you create a Windows Server instance using a sna
 
 1. On the taskbar, choose the Windows icon, then choose one of the following options:
 
-   1. On Windows Server 2022, Windows Server 2019 and Windows Server 2016 instances, choose **Start**, then choose **Windows Administrative Tools**.
+   1. On Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016 instances, choose **Start**, then choose **Windows Administrative Tools**.
 
 1. Choose **Computer Management**.
 

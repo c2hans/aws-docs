@@ -13,13 +13,13 @@ The range of possible sequence numbers for the shard.
  ** StartingSequenceNumber **   <a name="Streams-Type-SequenceNumberRange-StartingSequenceNumber"></a>
 The starting sequence number for the range.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: Yes
 
  ** EndingSequenceNumber **   <a name="Streams-Type-SequenceNumberRange-EndingSequenceNumber"></a>
 The ending sequence number for the range. Shards that are in the OPEN state have an ending sequence number of `null`.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: No
 
 ## See Also

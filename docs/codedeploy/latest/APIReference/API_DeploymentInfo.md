@@ -20,6 +20,7 @@ Required: No
 The application name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** autoRollbackConfiguration **   <a name="CodeDeploy-Type-DeploymentInfo-autoRollbackConfiguration"></a>
@@ -62,12 +63,14 @@ Required: No
  The deployment configuration name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** deploymentGroupName **   <a name="CodeDeploy-Type-DeploymentInfo-deploymentGroupName"></a>
  The deployment group name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** deploymentId **   <a name="CodeDeploy-Type-DeploymentInfo-deploymentId"></a>

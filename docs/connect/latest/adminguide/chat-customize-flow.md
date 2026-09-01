@@ -39,7 +39,7 @@ A custom participant is not permitted to access attachments a customer might upl
 
 We recommend configuring how long a custom participant can chat with a contact:
 + Set the **Timeout** property on the [Wait](wait.md) block for the `ParticipantRole` = `CUSTOM_BOT`.
-+ If the custom bot participant is not disconnected before the timeout, then the contact is routed down the **Time Expired** branch. This allows you to decide which block to run next to resolve the customer's query.
++ If the custom bot participant is not disconnected before the timeout, then the contact is routed down the **Time Expired** branch. You can use this to decide which block to run next to resolve the customer's query.
 
 **Note**
 If a contact is routed down the **Time Expired** branch, they are not disconnected from the contact. You must call the [ DisconnectParticipant](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_DisconnectParticipant.html) API to disconnect the participant.
@@ -47,7 +47,7 @@ If a contact is routed down the **Time Expired** branch, they are not disconnect
 ## Activate timers for customers who are joined to a custom participant
 <a name="integrate-bot-extension-client"></a>
 
-You can activate timers on customers who are joined to custom participants, such as custom bots. This enables you to detect when a customer stops responding so you can then terminate that bot conversation, and perform the next step in the flow. By terminating idle participants, you can reduce the number of open chats where there is a non-responsive customer engaged with a custom participant.
+You can activate timers on customers who are joined to custom participants, such as custom bots. With timers, you can detect when a customer stops responding so you can then terminate that bot conversation, and perform the next step in the flow. By terminating idle participants, you can reduce the number of open chats where there is a non-responsive customer engaged with a custom participant.
 
 Perform the following steps to integrate an Idle Participant Custom Bot Extension and optionally set custom timer values. These steps assume that the you already use the custom participant feature for chat.
 

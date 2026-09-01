@@ -22,16 +22,45 @@ Data retention is controlled by a **mode** rather than a simple on/off toggle:
 
 | **Mode** | **Behavior** |
 | --- | --- |
-| default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior; if ZDR applied previously, then ZDR still applies. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer through `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
-| provider\_data\_share | This mode allows Amazon Bedrock to retain and share your inference data with model providers per their requirements. It is required for access to certain models. See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
 | none | Zero data retention. No request or response data is written to durable storage by AWS or shared with the model provider. On the Responses API, store defaults to false and store=true is rejected. Background mode is not available. Chat Completions and Messages requests are never retained. |
+| default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior; if ZDR applied previously, then ZDR still applies. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer through `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
+| aws\_review | This mode allows your inputs and outputs to be retained for human review by AWS. Review is carried out by AWS within the AWS boundary — the model provider does not review your content, and your content is not shared with the provider. Some model providers require Amazon to conduct human review as a condition of access to their models, and this mode is required for access to those models. If a model does not require human review, AWS will not review your content.<br />See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
+| `provider_data_share`<br />**(legacy)** | **This mode is legacy, and Amazon Bedrock does not share your content with model providers today.** Setting this mode does not cause your inputs or outputs to be shared with a model provider. New configurations should use `aws_review`.<br />**If you are already set to `provider_data_share`, you do not need to change anything** — it sits above `aws_review` in the ordering below, so it continues to satisfy every model that requires human review. See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
 | inherit | No opinion at this scope — defer to a broader scope. This is the default for new accounts and projects. |
 
+**Human review: `aws_review` and legacy `provider_data_share`**
+Some model providers require that inputs and outputs be available for human review as a condition of access to their models. Two modes grant that permission, differing in who performs the review and in whether your content leaves AWS. `aws_review` is the current mechanism; `provider_data_share` is legacy.
+
+| **Mode** | **Who reviews your content** | **Does your content leave AWS?** |
+| --- | --- | --- |
+| aws\_review | AWS | No |
+| provider\_data\_share (legacy) | No one — provider review is not supported today | No |
+AWS reviews content only for models whose provider requires human review. Sharing content with model providers is not supported today, so `provider_data_share` grants a permission that is not exercised — use `aws_review` instead.
+
+## How modes are ordered
+<a name="data-retention-mode-ordering"></a>
+
+Retention modes form an ordered scale, from least to most permissive:
+
+```
+none  <  default  <  aws_review  <  provider_data_share
+```
+
+A model is available to you when your effective mode is at or above the mode that model requires. A more permissive setting subsumes a less permissive one: if you have authorized AWS to share your content with the model provider, you have also authorized AWS to review it itself.
+
+`inherit` is not part of this ordering — it expresses no opinion at its scope and defers to a broader one. See [How your retention mode is determined](#data-retention-resolution).
+
+**Existing `provider_data_share` configurations keep working**
+If your account or project is already set to `provider_data_share`, you do not need to take any action to continue using models that require `aws_review`, including Claude Fable 5 and Claude Fable 5.1. Because `provider_data_share` is the more permissive setting, it continues to satisfy those models' requirement.
+Moving from `provider_data_share` to `aws_review` is nonetheless worth doing where you can: it states the behavior that actually applies, since content sharing with model providers is not supported today.
+
 **Important**
-Configuring your account or project to `provider_data_share` does *not* mean all models will start sharing data with their providers. Your configured mode sets what you allow — each model independently declares which modes it supports through `allowed_modes`. Most models currently do not require or request `provider_data_share`. The interaction works as follows:
+Configuring your account or project to `aws_review` does *not* mean all models will start retaining your content for review. Your configured mode sets what you allow — each model independently declares which modes it supports through `allowed_modes`. Most models currently do not require human review. The interaction works as follows:
 If a model's `allowed_modes` includes `none`, we won't persist anything.
 If a model's `allowed_modes` includes `default` but not `none`, AWS retains the data — the model provider does not receive it.
-If a model's only allowed mode is `provider_data_share`, data will be shared with the provider — but only if your effective mode permits it. If your effective mode is `none` or `default`, the model will appear as unavailable.
+If a model's `allowed_modes` includes `aws_review`, AWS retains the data and AWS may review it — the model provider does not receive it. AWS reviews content only for models whose provider requires human review.
+If a model's minimum requirement is `aws_review`, the model is available only when your effective mode is `aws_review` or higher. If your effective mode is `none` or `default`, the model will appear as unavailable.
+Setting the legacy `provider_data_share` does not cause your content to be shared with a model provider — content sharing is not supported today.
 
 ## How your retention mode is determined
 <a name="data-retention-resolution"></a>
@@ -59,14 +88,14 @@ For example, if your project is set to `inherit` and your account is set to `non
 curl -X PUT https://bedrock-mantle.us-east-1.api.aws/v1/data_retention \
   -H "x-api-key: $BEDROCK_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{ "mode": "provider_data_share" }'
+  -d '{ "mode": "aws_review" }'
 ```
 
 **Response:**
 
 ```
 {
-  "mode": "provider_data_share",
+  "mode": "aws_review",
   "updated_at": 1733529600
 }
 ```
@@ -77,14 +106,14 @@ curl -X PUT https://bedrock-mantle.us-east-1.api.aws/v1/data_retention \
 curl -X PUT https://bedrock.us-east-1.amazonaws.com/data-retention \
   -H "Authorization: Bearer $AWS_BEARER_TOKEN_BEDROCK" \
   -H "Content-Type: application/json" \
-  -d '{ "mode": "provider_data_share" }'
+  -d '{ "mode": "aws_review" }'
 ```
 
 **Response:**
 
 ```
 {
-  "mode": "provider_data_share",
+  "mode": "aws_review",
   "updated_at": "2026-06-07T20:19:44.723Z"
 }
 ```
@@ -96,7 +125,7 @@ curl -X PUT https://bedrock.us-east-1.amazonaws.com/data-retention \
 curl https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects/proj_abc123 \
   -H "x-api-key: $BEDROCK_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{ "data_retention": { "mode": "provider_data_share" } }'
+  -d '{ "data_retention": { "mode": "aws_review" } }'
 ```
 
 ### Check your current configuration
@@ -137,9 +166,9 @@ curl https://bedrock-mantle.us-east-1.api.aws/v1/models/anthropic.claude-fable-5
   "owned_by": "system",
   "status": "available",
   "data_retention": {
-    "mode": "provider_data_share",
+    "mode": "aws_review",
     "source": "account",
-    "allowed_modes": ["provider_data_share"]
+    "allowed_modes": ["aws_review", "provider_data_share"]
   }
 }
 ```
@@ -147,11 +176,11 @@ curl https://bedrock-mantle.us-east-1.api.aws/v1/models/anthropic.claude-fable-5
 ## Model availability and data retention
 <a name="data-retention-model-availability"></a>
 
-Each model specifies which retention modes it permits through `allowed_modes`. If your effective mode is not in a model's `allowed_modes`, the model will appear as `status: "unavailable"` in the models list and requests to it will be blocked.
+Each model declares the retention modes that satisfy its requirement through `allowed_modes`, which lists every mode at or above the minimum the model needs. If your effective mode sits below what the model requires — see [How modes are ordered](#data-retention-mode-ordering) — the model will appear as `status: "unavailable"` in the models list and requests to it will be blocked.
 
-**Example:** Claude Fable 5 and Claude Mythos 5 require provider data sharing (`allowed_modes: ["provider_data_share"]`). Customers must explicitly set their data retention mode to `provider_data_share` before they can invoke these models. If your effective mode is `none` or `default`, these models will be unavailable.
+**Example:** Claude Fable 5 and Claude Fable 5.1 require human review (`allowed_modes: ["aws_review", "provider_data_share"]`). You must explicitly set your data retention mode to `aws_review`, or to the legacy `provider_data_share`, before you can invoke these models. If your effective mode is `none` or `default`, these models will be unavailable.
 
-By setting `provider_data_share`, you are explicitly acknowledging instructing us to retain and share data with model providers per their requirements. It is required for access to certain models. See the [Abuse Detection page](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
+By setting `aws_review`, you are explicitly instructing us to retain your inputs and outputs so that AWS can perform the human review the model provider requires as a condition of access. Your content is not shared with the model provider. See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
 
 **Note**
 At launch, there is no console UI for configuring data retention. Customers must use the API (see "Configuring data retention" above) or the Bedrock SDK.
@@ -168,7 +197,7 @@ At launch, there is no console UI for configuring data retention. Customers must
   "data_retention": {
     "mode": "default",
     "source": "account",
-    "allowed_modes": ["provider_data_share"]
+    "allowed_modes": ["aws_review", "provider_data_share"]
   }
 }
 ```
@@ -176,29 +205,28 @@ At launch, there is no console UI for configuring data retention. Customers must
 ### How to opt in
 <a name="data-retention-opt-in"></a>
 
-To enable Claude Fable 5 and Claude Mythos 5 for your account:
+To enable Claude Fable 5 and Claude Fable 5.1 for your account:
 
 ```
 curl https://bedrock-mantle.us-east-1.api.aws/v1/data_retention \
   -H "x-api-key: $BEDROCK_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{ "mode": "provider_data_share" }'
+  -d '{ "mode": "aws_review" }'
 ```
 
-Or at the project level (if you want to limit provider data sharing to a specific project):
+Or at the project level (if you want to limit human review to a specific project):
 
 ```
 curl https://bedrock-mantle.us-east-1.api.aws/v1/organization/projects/proj_abc123 \
   -H "x-api-key: $BEDROCK_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{ "data_retention": { "mode": "provider_data_share" } }'
+  -d '{ "data_retention": { "mode": "aws_review" } }'
 ```
 
 **Mixed-model projects**
-Setting a project to `provider_data_share` does not mean all model traffic in that project is shared with the model provider. Each model's `allowed_modes` determines what actually happens to your data:
-A model whose `allowed_modes` is `["provider_data_share"]` (for example, Claude Fable 5)—provider sharing is the only permitted behavior. Data is retained and shared with the provider on every request.
-A model whose `allowed_modes` is `["none", "default", "provider_data_share"]` (for example, Claude Opus 4.8)—`provider_data_share` is accepted as a valid mode but data is not required to leave the AWS boundary.
-When a Claude Fable 5 request is declined by a safety classifier and the fallback credit is redeemed on Claude Opus 4.8, the fallback invocation follows Opus 4.8 data-handling rules, not the rules for Fable 5. The Opus 4.8 response is not retained or shared with Anthropic, even though the originating Fable 5 request would have been.
+Setting a project to `aws_review` does not mean all model traffic in that project is retained for review. Each model's `allowed_modes` determines what actually happens to your data:
+A model whose `allowed_modes` is `["aws_review", "provider_data_share"]` (for example, Claude Fable 5)—human review is required, so data is retained within the AWS boundary and may be reviewed by AWS on any request. It is not shared with the model provider.
+A model whose `allowed_modes` is `["none", "default", "aws_review", "provider_data_share"]` (for example, Claude Opus 4.8)—the model permits `none`, so data is not retained whatever mode you set. A more permissive account or project setting does not cause its content to be retained, reviewed, or shared.
 
 ## Zero data retention (ZDR) access
 <a name="data-retention-zdr"></a>
@@ -251,10 +279,35 @@ You can enforce a data retention policy across your organization using IAM polic
 
 This prevents anyone in the organization from setting data retention to anything other than `none`, ensuring no inference data is ever retained.
 
+**Example SCP — permit AWS retention but not human review:**
+
+```
+{
+    "Effect": "Deny",
+    "Action": [
+        "bedrock-mantle:PutAccountDataRetention",
+        "bedrock-mantle:CreateProject",
+        "bedrock-mantle:UpdateProject"
+    ],
+    "Condition": {
+        "ForAnyValue:StringEquals": {
+            "bedrock-mantle:DataRetentionMode": [
+                "aws_review",
+                "provider_data_share"
+            ]
+        }
+    }
+}
+```
+
+Use this when your organization accepts retention for abuse detection but cannot permit human review of its content. Models that require human review will appear as `status: "unavailable"` to accounts under this policy.
+
 ## What data is retained and for how long
 <a name="data-retention-what-is-retained"></a>
 
-For models requiring `provider_data_share` (currently Claude Mythos 5 and Claude Fable 5): user prompts and completions are shared with Anthropic and retained for up to 30 days for trust and safety purposes.
+For models requiring `aws_review` (currently Claude Fable 5 and Claude Fable 5.1): user prompts and completions are retained within the AWS boundary for up to 30 days and may be reviewed by AWS to meet the human review requirement the model provider imposes as a condition of access. Your content is not shared with the model provider.
+
+For the legacy `provider_data_share` mode: Amazon Bedrock does not share your content with model providers today, so this mode results in the same handling as `aws_review` — retained within the AWS boundary for up to 30 days, and reviewed by AWS only where the model requires it.
 
 For models under `default` mode: data may be retained for abuse detection purposes — see [Amazon Bedrock abuse detection](abuse-detection.html) for required retention details. For retention beyond abuse detection (e.g., Responses API with `store=true`), consult the model's documentation and terms.
 

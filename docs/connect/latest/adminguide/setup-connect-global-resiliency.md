@@ -16,12 +16,12 @@ To obtain access to this feature, contact your Connect Customer Solutions Archit
 **Important**
 Connect Customer Global Resiliency (ACGR) is the only AWS-supported solution for multi-region resiliency in Connect Customer. AWS does not support third-party or custom-built alternatives for achieving global resiliency. Deploying unsupported solutions might result in denied or reduced service limits on the secondary instance and could impact SLA coverage if downtime is attributed to the unsupported deployment.
 
-Connect Customer Global Resiliency enables you to provide customer service anywhere in the world with the highest reliability, performance, and efficiency. With its distributed telephony features, your contact center can meet international regulatory requirements.
+With Connect Customer Global Resiliency, you can provide customer service anywhere in the world with the highest reliability, performance, and efficiency. With its distributed telephony features, your contact center can meet international regulatory requirements.
 
 Connect Customer Global Resiliency provides a set of APIs that you use to:
 + Provision a linked Connect Customer instance in another AWS Region.
 + Provision and manage phone numbers that are global and accessible in both Regions.
-+ Distribute telephony traffic and agents across Connect Customer instances and Regions in 10% increments, or shift them all at once. This enables you to slowly shift inbound voice contacts and agents across Regions or shift them all at the same time.
++ Distribute telephony traffic and agents across Connect Customer instances and Regions in 10% increments, or shift them all at once. With traffic distribution, you can slowly shift inbound voice contacts and agents across Regions or shift them all at the same time.
 
   For example, you can distribute inbound voice contacts and agents 100% in US East (N. Virginia) and 0% in US West (Oregon), or 50% in each Region.
 + Access reserved capacity across Regions.

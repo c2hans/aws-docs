@@ -222,7 +222,7 @@ The following image shows a **Get customer input** block. **Initialize bot with 
 #### Configurable time-outs for voice input
 <a name="get-customer-input-configurable-timeouts"></a>
 
-To configure time-out values for voice contacts, use the following session attributes in the **Get customer input** block that calls your Lex bot. These attributes allow you to specify how long to wait for the customer to finish speaking before Amazon Lex collects speech input from callers, such as answering a yes/no question, or providing a date or credit card number.
+To configure time-out values for voice contacts, use the following session attributes in the **Get customer input** block that calls your Lex bot. With these attributes, you can specify how long to wait for the customer to finish speaking before Amazon Lex collects speech input from callers, such as answering a yes/no question, or providing a date or credit card number.
 
 ------
 #### [ Amazon Lex ]

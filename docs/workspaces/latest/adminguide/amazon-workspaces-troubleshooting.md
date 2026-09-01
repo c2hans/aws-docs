@@ -51,6 +51,25 @@ To get AWS review of advanced logging files, and to receive technical support fo
 
 1. In the Safari Web Inspector panel, choose the **Console** tab to find the log files.
 
+### To enable advanced logging for 2023.x and later Linux clients
+<a name="logging-linux-2023x"></a>
+
+For 2023.x and later Linux clients, the client binary is installed at `/usr/bin/workspacesclient`.
+
+The Linux client logs are stored in the following location:
+
+`~/.local/share/Amazon Web Services/Amazon WorkSpaces/logs`
+
+**To enable advanced logging for Linux clients**
+
+1. Close the Amazon WorkSpaces client.
+
+1. Open Terminal.
+
+1. Run the following command.
+
+   `/usr/bin/workspacesclient --l3`
+
 ### To enable advanced logging for 4.0\+ clients
 <a name="logging-new-clients"></a>
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 
 In this step, you map application attributes to the user attribute in IAM Identity Center, using the email address for authentication.
 
-1. From the list of applications, choose the SAML application you set up in the previous step.
+1. From the list of applications, choose the SAML application you created in [Create a SAML 2.0 application](create-saml-app.md).
 
 1. Under **Actions**, choose **Edit attribute mappings**.
 

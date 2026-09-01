@@ -83,7 +83,7 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/Welcome
 +  `UpdatePackageVersionsStatus`: Updates the status of one or more versions of a package.
 +  `UpdateRepository`: Updates the properties of a repository.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

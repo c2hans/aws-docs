@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-custome
 # Enable Customer Profiles for your Connect Customer instance
 <a name="enable-customer-profiles"></a>
 
-Connect Customer provides pre-built integrations so you can quickly combine customer information from multiple external applications, with contact history from Connect Customer. This allows you to create a customer profile that has all the information agents need during customer interactions in a single place.
+Connect Customer provides pre-built integrations so you can quickly combine customer information from multiple external applications, with contact history from Connect Customer. With these integrations, you can create a customer profile that has all the information agents need during customer interactions in a single place.
 
 ## Before you begin
 <a name="enable-customer-profiles-requirements"></a>

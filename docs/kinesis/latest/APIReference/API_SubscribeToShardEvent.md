@@ -13,7 +13,7 @@ After you call [SubscribeToShard](API_SubscribeToShard.md), Kinesis Data Streams
  ** ContinuationSequenceNumber **   <a name="Streams-Type-SubscribeToShardEvent-ContinuationSequenceNumber"></a>
 Use this as `SequenceNumber` in the next call to [SubscribeToShard](API_SubscribeToShard.md), with `StartingPosition` set to `AT_SEQUENCE_NUMBER` or `AFTER_SEQUENCE_NUMBER`. Use `ContinuationSequenceNumber` for checkpointing because it captures your shard progress even when no data is written to the shard.
 Type: String
-Pattern: `0|([1-9]\d{0,128})`
+Pattern: `^(0|([1-9]\d{0,128}))$`
 Required: Yes
 
  ** MillisBehindLatest **   <a name="Streams-Type-SubscribeToShardEvent-MillisBehindLatest"></a>

@@ -16,7 +16,7 @@ To obtain a more detailed view of your bill and usage, you can add cost allocati
   + **aws:connect:instanceId**: This represents the ID of the Connect Customerinstance. If you have multiple instances under multiple AWS accounts for each line-of-business, you can view usage bills aggregated against different instances.
   +  (**aws:connect:systemEndpoint**): This represents the your contact center number (the endpoint) that the customer reaches (inbound) or is reached from (outbound).
 
-    This AWS generated tag helps if you have multiple phone numbers used within your contact center. It enables you to group the costs associated against different phone numbers. For example, group inbound phone numbers for incoming calls, and group outbound numbers that are used for making outbound calls.
+    This AWS generated tag helps if you have multiple phone numbers used within your contact center. With this tag, you can group the costs associated against different phone numbers. For example, group inbound phone numbers for incoming calls, and group outbound numbers that are used for making outbound calls.
   + **aws:connect:transferredFromEndpoint**: This represents the outbound caller ID that the call was transferred from. You can see the third-party transfer call's usage bills aggregated against the telephone numbers that the calls were transferred from. Currently, this AWS generated tag is only added to contacts for third-party external transfer calls.
 + You can add up to 6 user-defined tags. For example, department, cost center, or business unit. Use these tags to organize your AWS bill to reflect your own cost structure.
 

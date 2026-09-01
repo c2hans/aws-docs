@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 
  To get started, create a CloudWatch dashboard. You can create multiple dashboards, and you can add dashboards to a favorites list. You aren't limited to the number of dashboards that you can have in your AWS account. All dashboards are global. They are not Region-specific.
 
+**Opt-in Region propagation delay**
+You might have recently enabled an [opt-in Region (Region that is disabled by default)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#optinregion) for your account. If so, your existing dashboards can take up to 24 hours to be available in that Region. During this period, `GetDashboard` and `ListDashboards` requests might return an access denied error. This does not indicate a problem with your permissions. Because dashboards are global, you can view them from any other enabled Region while propagation completes. Creating and updating dashboards in the new Region works immediately.
+
  The following procedure shows you how to create a dashboard from the CloudWatch console. You can use the `PutDashboard` API operation to create a dashboard from the command line interface. The API operation contains a JSON string that defines your dashboard content. For more information about creating a dashboard with the `PutDashboard` API operation, see [PutDashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutDashboard.html) in the *Amazon CloudWatch API Reference*.
 
 **Tip**

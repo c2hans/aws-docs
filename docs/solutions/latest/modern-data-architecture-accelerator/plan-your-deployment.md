@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 This section describes the Region, cost, security, quota, and other considerations for planning your deployment.
 
+New to MDAA? We recommend starting with the [MDAA Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6e7289c7-5662-494d-8b56-b8706412c3a6/en-US) for a guided, hands-on introduction.
+
 ## Supported AWS Regions
 <a name="regional-deployments"></a>
 

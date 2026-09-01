@@ -39,7 +39,7 @@ Matching rules are processed by priority. For example, the first rule should be 
 ### Attribute Type Selector
 <a name="rule-based-attribute-type-selector"></a>
 
-The Attribute Types Selector holds vital configuration information for rule-based identity resolution, facilitating profile matching. This allows you to fine-tune the comparison of profiles across attribute types and select the key attributes for matching within each type. Within this feature, you have the flexibility to configure three distinct attribute types, enabling precise control over the matching process.
+The Attribute Types Selector holds vital configuration information for rule-based identity resolution, facilitating profile matching. You can use this to fine-tune the comparison of profiles across attribute types and select the key attributes for matching within each type. Within this feature, you have the flexibility to configure three distinct attribute types, enabling precise control over the matching process.
 + **Email type**
   + You can choose from EmailAddress, BusinessEmailAddress, and PersonalEmailAddress
 + **PhoneNumber type**

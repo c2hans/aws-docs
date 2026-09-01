@@ -119,7 +119,7 @@ By deploying SageMaker Unified Studio as part of the broader MDAA platform, orga
 ## Generative AI
 <a name="genai"></a>
 
-MDAA provides comprehensive support for building and deploying generative AI applications through Amazon Bedrock and Bedrock Agentcore Runtime. These modules extend the Data Science, AI/ML layer of the platform, enabling organizations to build, deploy, and operate generative AI solutions that leverage the governed data assets in the platform’s data lake.
+MDAA provides comprehensive support for building and deploying generative AI applications through Amazon Bedrock and Bedrock Agentcore Runtime. These modules extend the Data Science, AI/ML layer of the platform, enabling organizations to build, deploy, and operate generative AI solutions that use the governed data assets in the platform’s data lake.
 
 ### Bedrock
 <a name="bedrock"></a>
@@ -183,7 +183,7 @@ To make the most of your Bedrock Builder deployment:
 + Regularly review and update your execution policies
 + Enable CloudWatch observability for Lambda functions to monitor performance and troubleshoot issues
 
-The Bedrock Builder CDK application simplifies the deployment and management of secure Bedrock Agents. By automating the configuration process and providing flexible integration options, you can focus on building generative AI solutions that leverage your platform’s governed data assets rather than managing infrastructure.
+The Bedrock Builder CDK application simplifies the deployment and management of secure Bedrock Agents. By automating the configuration process and providing flexible integration options, you can focus on building generative AI solutions that use your platform’s governed data assets rather than managing infrastructure.
 
 ### GAIA v2 Chatbot Backend
 <a name="gaia-v2-chatbot-backend"></a>
@@ -202,39 +202,20 @@ Existing GAIA v1 deployments continue to function but will not receive new featu
 
 MDAA’s Bedrock AgentCore Runtime module applies built-in data protection to service-created runtime log groups on every deployment. Customer-managed KMS encryption and a CloudWatch Data Protection policy with a comprehensive PII identifier baseline (email addresses, credit card numbers, SSNs, names, addresses, US phone numbers, IP addresses) are always applied. The baseline can be extended via `dataProtection.additionalIdentifiers` but cannot be narrowed. The module also supports:
 + Optional `allowedModelArns` to scope execution role Bedrock permissions to specific model ARNs
-+ Optional `enforceVpcOnly` to restrict JWT/OAuth callers to VPC-only invocation via an auto-generated resource-based policy
++ Optional `enforceVpcOnly` to deny invocation from outside the VPC for every caller type — IAM/SigV4 as well as JWT/OAuth — through explicit deny statements in an auto-generated resource-based policy that covers all `bedrock-agentcore:InvokeAgentRuntime*` variants
++ Optional `networkConfiguration.vpcEndpoint` to create the AgentCore interface VPC endpoint with Private DNS, an app-security-group-scoped security group, and an invoke-only endpoint policy; `enforceVpcOnly` requires this endpoint to be satisfiable
 + Optional `logRetentionDays` for CloudWatch Logs retention on runtime log groups (defaults to 30 days)
 + Typed `CfnRuntime`/`CfnRuntimeEndpoint` constructs for compile-time validation
 
-## SageMaker MLOps
-<a name="sagemaker-mlops"></a>
+## Module-Level Configuration
+<a name="module-level-configuration"></a>
 
-The SageMaker MLOps module (`@aws-mdaa/sagemaker-mlops`) provides unified training, deployment, batch inference, and monitoring pipelines for the model lifecycle. Companion modules (`@aws-mdaa/sagemaker-endpoint`, `@aws-mdaa/sagemaker-pipeline`) deploy the runtime resources.
+MDAA ships a broad and growing catalog of deployable modules spanning the ingest, storage, governance, DataOps, analytics, data science, and generative AI layers described above. Each module is configuration-driven and documented in the MDAA documentation site, which is the authoritative reference for each module’s configuration schema, defaults, and behavior.
 
-MDAA’s MLOps capability deploys and configures the following:
-+ CodePipeline pipelines for training and deployment, orchestrated by CodeBuild with configurable custom IAM policies via `buildPolicies`
-+ SageMaker Pipeline (preprocess → train → register) seeded from CodeCommit repositories
-+ SageMaker Endpoint with model quality monitoring schedule
-+ Model Package Group for versioned model registry with EventBridge-triggered deployment on approval
-+ Optional cross-account deployment (dev → pre-prod → prod) with manual approval gates
-+ Optional CodeArtifact integration for private package registries alongside public npm
-+ KMS-encrypted S3 bucket for model artifacts
-
-## SageMaker Ground Truth
-<a name="sagemaker-ground-truth"></a>
-
-The SageMaker Ground Truth module (`@aws-mdaa/sagemaker-ground-truth`) automates continuous data labeling pipelines. The architecture uses EventBridge \+ SQS \+ Step Functions to batch S3 ingest into SageMaker labeling jobs, persists labeled data to SageMaker Feature Groups, and supports optional verification labeling jobs with automatic re-queue of rejected items. Configurable EventBridge Scheduler triggers, DLQs, and CloudWatch alarms round out the deployment.
-
-## DataOps Aurora
-<a name="dataops-aurora"></a>
-
-The DataOps Aurora module (`@aws-mdaa/dataops-aurora`) deploys Aurora Serverless v2 clusters with enterprise security defaults, suitable for operational data stores in a DataOps pipeline. It supports:
-+ Multiple named PostgreSQL clusters per module (MySQL support planned)
-+ KMS encryption (project key or a dedicated shared key), VPC isolation, and enhanced monitoring
-+ IAM database authentication, CloudWatch log exports, and automatic admin password rotation
-+ Per-cluster access managed policy with `rds-db:connect`, `rds:Describe*`, and Secrets Manager access
-+ Top-level `dataAdminRoles` for cross-cluster admin access, per-cluster `clusterAccessRoles`
-+ DataOps project integration for shared KMS key auto-wiring via `projectName`
+For the current list of modules and starter kits and their per-module configuration details, refer to:
++ The [MDAA module and starter kit documentation](https://aws.github.io/modern-data-architecture-accelerator/index.html).
++ The [MDAA release notes](https://github.com/aws/modern-data-architecture-accelerator/releases/) for modules and capabilities added or changed in each release.
++ The JSON schemas and module documentation generated under `.mdaa/<version>/` when you scaffold or enhance a project with `mdaa init` (see [Scaffold a project with `mdaa init`](scaffold-a-project-with-mdaa-init.md)).
 
 ## See also
 

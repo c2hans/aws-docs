@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/end-flow-resum
 <a name="end-flow-resume-description"></a>
 
 **Important**
-The End flow / Resume block is a terminal flow block. It enables you to end a paused flow and return the contact without terminating the overall interaction. However, if you place the **End flow / Resume** block in an inbound flow or disconnect flow, it functions identically to the **Disconnect** block, and terminates the contact.
+The End flow / Resume block is a terminal flow block. With the **End flow / Resume** block, you can end a paused flow and return the contact without terminating the overall interaction. However, if you place the **End flow / Resume** block in an inbound flow or disconnect flow, it functions identically to the **Disconnect** block, and terminates the contact.
 + Ends the current flow without disconnecting the contact.
 + This block is often used for the **Success** branch of the **Transfer to queue** block. The flow doesn't end until the call is picked up by an agent.
 + You also might use this block when a **Loop prompts** block is interrupted. You can return the customer to the **Loop prompts** block. This block works only with the **Loop prompts** block. It does not work with the **Loop** block.

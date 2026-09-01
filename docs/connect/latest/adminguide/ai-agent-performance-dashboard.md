@@ -46,7 +46,7 @@ Use the **Time range** filter to specify the date and time period for which you 
 
 By default, the dashboard displays data for the last week. You can customize the time range to view data from as recent as the last 15 minutes or going back up to 3 months in history.
 
-Use the **Compare to** filter to select a time period to compare your current data against. This allows you to identify trends and track improvements or issues over time.
+Use the **Compare to** filter to select a time period to compare your current data against. With the **Compare to** filter, you can identify trends and track improvements or issues over time.
 
 ## Self-service AI performance summary
 <a name="self-service-ai-agent-performance-summary"></a>

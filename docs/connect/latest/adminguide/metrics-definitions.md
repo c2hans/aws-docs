@@ -529,7 +529,7 @@ If a contact is not answered by a given agent, Connect Customer attempts to rout
 
 This metric counts the voice contacts routed to an agent but not answered by that agent, excluding contacts abandoned by the customer.
 
-If a voice contact is not answered by a given agent, Connect Customer attempts to route it to another agent to handle; the contact is not dropped. Because a single contact can be missed multiple times (including by the same agent), it can be counted multiple times: once for each time it is routed to an agent but not answered.
+If a voice contact is not answered by a given agent, Connect Customer attempts to route it to another agent to handle. The contact is not dropped. Because a single contact can be missed multiple times (including by the same agent), it can be counted multiple times: once for each time it is routed to an agent but not answered.
 
 This metric supports only voice contacts. For chat, task, and email contacts, use the **Agent non-response** metric.
 
@@ -1600,7 +1600,7 @@ This metric measures the average time between when a callback contact is initiat
 
 This metric measures the ratio of an agent's concurrent handle time to their total handle and idle time. It indicates how much of an agent's staffed time involves handling contacts concurrently across different channels.
 
-You can use Average agent concurrency alongside Average agent response time to assess whether concurrency levels allow agents to respond to chat contacts in a timely manner. A higher concurrency load or different channel mix might affect chat response times. A value close to 1 indicates agents are primarily handling contacts sequentially; a higher value indicates more time is spent handling contacts in parallel (for example, multiple chat conversations at once).
+You can use Average agent concurrency alongside Average agent response time to assess whether concurrency levels allow agents to respond to chat contacts in a timely manner. A higher concurrency load or different channel mix might affect chat response times. A value close to 1 indicates agents are primarily handling contacts sequentially. A higher value indicates more time is spent handling contacts in parallel (for example, multiple chat conversations at once).
 
 **Metric type**: Double
 + Min value: 0.0
@@ -3432,7 +3432,7 @@ This column heading appears on Real-time metrics reports. It's not a metric exac
 
 For queued callbacks, the contact state can also **Callback incoming** or **Callback dialing**.
 
-If a manager is using the Manager Monitor feature to monitor a particular agent as they interact with a customer, the manager's contact state is Monitoring; the agent's contact state is Connected.
+If a manager is using the Manager Monitor feature to monitor a particular agent as they interact with a customer, the manager's contact state is Monitoring. The agent's contact state is Connected.
 
 ## Contact volume
 <a name="contact-volume"></a>

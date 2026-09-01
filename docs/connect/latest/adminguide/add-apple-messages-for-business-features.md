@@ -60,7 +60,7 @@ Following is an example of what the URL might look like for a customer with a cr
 ## Add list pickers, time pickers, forms, attachments, and quick replies
 <a name="add-list-pickers-time-pickers"></a>
 
-A list picker prompts your customer to select an item, such as a product or the reason for their inquiry. A time picker prompts your customer to choose an available time slot, such as to schedule an appointment. A quick reply prompts your customer to select a simple, inline response. Forms allow you to create rich, multiple page, interactive flows for customers.
+A list picker prompts your customer to select an item, such as a product or the reason for their inquiry. A time picker prompts your customer to choose an available time slot, such as to schedule an appointment. A quick reply prompts your customer to select a simple, inline response. With forms, you can create rich, multiple page, interactive flows for customers.
 
 For information about how to set up list pickers, time pickers, forms, and quick replies, see [Add Amazon Lex interactive messages for customers in chat](interactive-messages.md).
 
@@ -111,7 +111,7 @@ When you first use the rich link feature, we recommend that you send the URL in 
 ## Use Apple Messages for Business contact attributes in contact flows
 <a name="apple-messages-for-business-flows"></a>
 
-Contact attributes enable you to store temporary information about the contact so you can use it in the flow.
+With contact attributes, you can store temporary information about the contact so you can use it in the flow.
 
 For example, if you have different lines of business using Apple Messages for Business, you can branch to different flows based on the **AppleBusinessChatGroup** contact attribute. Or, if you want to route Apple Messages for Business messages differently from other chat messages, you can branch based on MessagingPlatform.
 

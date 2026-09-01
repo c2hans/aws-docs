@@ -43,7 +43,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 A JMESPath boolean expression used to filter which records to explain. Explanations are activated by default. See [`EnableExplanations`](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-explainability-create-endpoint.html#clarify-online-explainability-create-endpoint-enable)for additional information.
 *Required*: No
 *Type*: String
-*Pattern*: `.*`
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

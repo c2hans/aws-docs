@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-
 **Note**
 **Powered by Amazon Bedrock**: AWS implements automated abuse detections. Because generative AI features in conversational analytics are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
- Managers can specify their evaluation criteria in natural language, and use generative AI for automating evaluations of up to 100% of customer interactions. Generative AI can enable you to automate evaluations of additional agent behaviors (for example, was the agent able to resolve the customer's issue?), enabling managers to comprehensively monitor and improve regulatory compliance, agent adherence to quality standards and sensitive data collection, while reducing the time spent on evaluating agent performance. Along with answers, you are also provided with context and justification, and references to specific points in the transcript that you can use to provide agent coaching.
+ Managers can specify their evaluation criteria in natural language, and use generative AI for automating evaluations of up to 100% of customer interactions. With generative AI, you can automate evaluations of additional agent behaviors (for example, was the agent able to resolve the customer's issue?), enabling managers to comprehensively monitor and improve regulatory compliance, agent adherence to quality standards and sensitive data collection, while reducing the time spent on evaluating agent performance. Along with answers, you are also provided with context and justification, and references to specific points in the transcript that you can use to provide agent coaching.
 
 You can use generative AI to assist managers with filling evaluations or use it to automatically fill and submitting evaluations. For more information about setting up automated evaluations, see [Step 6: Enable automated evaluations](create-evaluation-forms.md#step-automate).
 
@@ -27,9 +27,9 @@ The following is the overview of the automation process:
 
 1. After you have a good understanding of which questions can be accurately answered with generative AI, you can do a broader rollout by pre-configuring on the evaluation form, whether a question will receive an automated answer using generative AI.
 
-1. After you have setup automation, any user performing evaluations using the evaluation form will get automated generative AI answers to the pre-configured questions (without requiring additional permissions). For more information, see [Step 6: Enable automated evaluations](create-evaluation-forms.md#step-automate).
+1. After you have set up automation, any user performing evaluations using the evaluation form will get automated generative AI answers to the pre-configured questions (without requiring additional permissions). For more information, see [Step 6: Enable automated evaluations](create-evaluation-forms.md#step-automate).
 
-1. You can setup automation such that an evaluator first reviews the generative AI answers before submission or you can automatically fill and submit evaluations.
+1. You can set up automation such that an evaluator first reviews the generative AI answers before submission or you can automatically fill and submit evaluations.
 
 **Note**
 AI-generated evaluations are not 100% accurate. Before acting on AI outputs (such as providing rewards, agent coaching, and so on), we recommend that you review a sample of evaluations. This helps confirm the performance trends that AI provides. You can override AI-filled evaluations and make any corrections before sharing them with the agent or using them for performance reviews. We also recommend keeping a manual evaluation process in place. This helps you catch any drift between AI-filled evaluations and manager-filled evaluations over time.
@@ -74,7 +74,7 @@ To learn more about setting up automated evaluations using generative AI, see [G
 
 By default, if you do not set the language of an evaluation form, the generative AI model automatically detects the language of your evaluation form questions and tries to provide answers in the same language, if the AI model understands that language. By default, generative AI answer justifications are typically provided in English.
 
-To consistently receive both AI-generated answers and answer justifications in your preferred language, you can set the language of an evaluation form, choosing from **English**, **Spanish**, **Portuguese**, **French**, **German**, **Italian**, **Chinese**, **Japanese**, **Korean**, and **Malay**. By explicitly setting the language of an evaluation, you can also perform cross-language evaluations, where generative AI fills a evaluation form in English, even when the conversation transcript is in another language, say Spanish. This enables multilingual contact centers to use a standardized evaluation framework across languages.
+To consistently receive both AI-generated answers and answer justifications in your preferred language, you can set the language of an evaluation form, choosing from **English**, **Spanish**, **Portuguese**, **French**, **German**, **Italian**, **Chinese**, **Japanese**, **Korean**, and **Malay**. By explicitly setting the language of an evaluation, you can also perform cross-language evaluations, where generative AI fills an evaluation form in English, even when the conversation transcript is in another language, say Spanish. This enables multilingual contact centers to use a standardized evaluation framework across languages.
 
 To set the language of the evaluation form:
 

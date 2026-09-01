@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/edit-forecast.
 
 In the Connect Customer admin website, there are two ways you can edit a forecast at the queue channel level: you can make your edits directly in the user interface, or you can upload a CSV file that contains your edits.
 
-Editing the forecast allows you to modify the forecast values to better reflect changes in contact patterns, such as a special event that could increase volume by 10 percent during a specific week. If the edited forecast is no longer applicable, you can also remove the changes.
+By editing the forecast, you can modify the forecast values to better reflect changes in contact patterns, such as a special event that could increase volume by 10 percent during a specific week. If the edited forecast is no longer applicable, you can also remove the changes.
 
 **Important**
 Editing a forecast is not available when viewing data at the demand group level. However, edits that you make at the queue level do impact demand group level forecasts.
@@ -39,7 +39,7 @@ Editing a forecast is not available when viewing data at the demand group level.
    1. **Date range**:
       + For short-term forecasts, you can select a 31-day range for editing at a time. The changes are applied to each interval (either 15 minutes or 30 minutes, depending on your default settings) within the selected date range.
 
-        You can also limit the edits to a specific time range by clearing **All day** and instead selecting a start and end time. This feature allows you to adjust the forecast for a specific time window.
+        You can also limit the edits to a specific time range by clearing **All day** and instead selecting a start and end time. With this feature, you can adjust the forecast for a specific time window.
 
         The following image shows the **Data range** section of the **Edit forecast - Short term** pane.
 ![The Edit forecast pane, the Date range section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/forecasts-edit2.png)
@@ -47,7 +47,7 @@ Editing a forecast is not available when viewing data at the demand group level.
 
    1. **Queues and channels**: You can choose **All queues** or search and add individual queues one by one. You also have the option of removing any selected queues. Similarly, you can select channels such as **Voice** or **Chat** as needed.
 
-   1. **Metrics**: Metrics allow you to apply specific operations to your selection based on the type of edit you want to make. You can apply these operations to either [Contact volume](metrics-definitions.md#contact-volume), [Average handle time](metrics-definitions.md#average-handle-time), or both, depending on your needs.
+   1. **Metrics**: With metrics, you can apply specific operations to your selection based on the type of edit you want to make. You can apply these operations to either [Contact volume](metrics-definitions.md#contact-volume), [Average handle time](metrics-definitions.md#average-handle-time), or both, depending on your needs.
 
       The following image shows the location of **Metrics** on the page, and the dropdown list of options.
 ![The dropdown list of Metrics options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/forecasts-edit3.png)

@@ -7,51 +7,22 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 
 Retrieves tags for a WorkSpace Instance.
 
-## Request Syntax
-<a name="API_ListTagsForResource_RequestSyntax"></a>
-
-```
-{
-   "WorkspaceInstanceId": "{{string}}"
-}
-```
-
 ## Request Parameters
 <a name="API_ListTagsForResource_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
-
-The request accepts the following data in JSON format.
-
- ** [WorkspaceInstanceId](#API_ListTagsForResource_RequestSyntax) **   <a name="workspacesinstances-ListTagsForResource-request-WorkspaceInstanceId"></a>
+ ** WorkspaceInstanceId **
 Unique identifier of the WorkSpace Instance.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
 
-## Response Syntax
-<a name="API_ListTagsForResource_ResponseSyntax"></a>
-
-```
-{
-   "Tags": [
-      {
-         "Key": "string",
-         "Value": "string"
-      }
-   ]
-}
-```
-
 ## Response Elements
 <a name="API_ListTagsForResource_ResponseElements"></a>
 
-If the action is successful, the service sends back an HTTP 200 response.
+The following element is returned by the service.
 
-The following data is returned in JSON format by the service.
-
- ** [Tags](#API_ListTagsForResource_ResponseSyntax) **   <a name="workspacesinstances-ListTagsForResource-response-Tags"></a>
+ ** Tags **
 Collection of tags associated with the WorkSpace Instance.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
@@ -65,7 +36,7 @@ For information about the errors that are common to all actions, see [Common Err
 Indicates insufficient permissions to perform the requested action.
  ** Message **
 Detailed explanation of the access denial.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Indicates an unexpected server-side error occurred.
@@ -83,7 +54,7 @@ Details about the missing resource.
 Identifier of the resource that was not found.
  ** ResourceType **
 Type of the resource that was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 Indicates the request rate has exceeded limits.
@@ -95,7 +66,7 @@ Specific code for the throttling quota.
 Recommended wait time before retrying the request.
  ** ServiceCode **
 Code identifying the service experiencing throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 Indicates invalid input parameters in the request.

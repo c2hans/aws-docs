@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html
 The Domain Name System (DNS) is a directory service for resources that are connected to a network. Your DNS provider maintains a database containing records that define your domain. When you choose DNS validation, ACM provides you with one or more CNAME records that must be added to this database. These records contain a unique key-value pair that serves as proof that you control the domain.
 
 **Note**
-You can migrate an existing email-validated public certificate to DNS validation while preserving the certificate ARN. For more information, see [Migrating from email to DNS validation](email-to-dns-migration.md).
+After you create a certificate with email validation, you cannot switch to validating it with DNS. To use DNS validation, delete the certificate and then create a new one that uses DNS validation.
 
 For example, if you request a certificate for the `example.com` domain with `www.example.com` as an additional name, ACM creates two CNAME records for you. Each record, created specifically for your domain and your account, contains a name and a value. The value is an alias that points to an AWS domain that ACM uses to automatically renew your certificate. The CNAME records must be added to your DNS database only once. ACM automatically renews your certificate as long as the certificate is in use and your CNAME record remains in place.
 

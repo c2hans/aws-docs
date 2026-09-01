@@ -20,6 +20,7 @@ The following table describes stream and shard quotas and limits for Amazon Kine
   <tr><td>Data read rate per shard</td><td colspan="2"> Each shard can support up to a maximum total data read rate of 2 MB per second via <a href="https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html">GetRecords</a>. If a call to <code>GetRecords</code> returns 10 MB, subsequent calls made within the next 5 seconds throw an exception.</td></tr>
   <tr><td>Number of registered consumers per data stream</td><td colspan="2"> With Kinesis On-demand Advantage mode, you can create up to 50 registered consumers (Enhanced Fan-out). With Kinesis On-Demand Standard and Kinesis Provisioned modes, you can create up to 20 registered consumers (Enhanced Fan-out Limit) for each data stream.</td></tr>
   <tr><td>Switching between provisioned and on-demand modes </td><td colspan="2"> For each data stream in your AWS account, you can switch between the on-demand and provisioned capacity modes twice within 24 hours.  </td></tr>
+  <tr><td>Streaming tables and Amazon S3 delivery</td><td>For quotas and limits that apply to streaming tables and Amazon S3 delivery, see <a href="data-delivery-quotas.md">Delivery quotas and limits</a>.</td><td>Not supported. Streaming tables and Amazon S3 delivery require on-demand capacity mode.</td></tr>
 </tbody>
 </table>
 

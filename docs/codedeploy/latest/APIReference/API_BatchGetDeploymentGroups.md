@@ -28,12 +28,14 @@ The request accepts the following data in JSON format.
 The name of an AWS CodeDeploy application associated with the applicable user or AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [deploymentGroupNames](#API_BatchGetDeploymentGroups_RequestSyntax) **   <a name="CodeDeploy-BatchGetDeploymentGroups-request-deploymentGroupNames"></a>
 The names of the deployment groups.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
 ## Response Syntax

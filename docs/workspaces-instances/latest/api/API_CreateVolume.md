@@ -7,117 +7,75 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Crea
 
 Creates a new volume for WorkSpace Instances.
 
-## Request Syntax
-<a name="API_CreateVolume_RequestSyntax"></a>
-
-```
-{
-   "AvailabilityZone": "{{string}}",
-   "ClientToken": "{{string}}",
-   "Encrypted": {{boolean}},
-   "Iops": {{number}},
-   "KmsKeyId": "{{string}}",
-   "SizeInGB": {{number}},
-   "SnapshotId": "{{string}}",
-   "TagSpecifications": [
-      {
-         "ResourceType": "{{string}}",
-         "Tags": [
-            {
-               "Key": "{{string}}",
-               "Value": "{{string}}"
-            }
-         ]
-      }
-   ],
-   "Throughput": {{number}},
-   "VolumeType": "{{string}}"
-}
-```
-
 ## Request Parameters
 <a name="API_CreateVolume_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
-
-The request accepts the following data in JSON format.
-
- ** [AvailabilityZone](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-AvailabilityZone"></a>
+ ** AvailabilityZone **
 Availability zone for the volume.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: Yes
 
- ** [ClientToken](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-ClientToken"></a>
+ ** ClientToken **
 Unique token to prevent duplicate volume creation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[\x20-\x7E]+`
 Required: No
 
- ** [Encrypted](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-Encrypted"></a>
+ ** Encrypted **
 Indicates if the volume should be encrypted.
 Type: Boolean
 Required: No
 
- ** [Iops](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-Iops"></a>
+ ** Iops **
 Input/output operations per second for the volume.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
- ** [KmsKeyId](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-KmsKeyId"></a>
+ ** KmsKeyId **
 KMS key for volume encryption.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 Required: No
 
- ** [SizeInGB](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-SizeInGB"></a>
+ ** SizeInGB **
 Volume size in gigabytes.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
- ** [SnapshotId](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-SnapshotId"></a>
+ ** SnapshotId **
 Source snapshot for volume creation.
 Type: String
 Pattern: `snap-[0-9a-zA-Z]{1,63}`
 Required: No
 
- ** [TagSpecifications](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-TagSpecifications"></a>
+ ** TagSpecifications **
 Metadata tags for the volume.
 Type: Array of [TagSpecification](API_TagSpecification.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 30 items.
 Required: No
 
- ** [Throughput](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-Throughput"></a>
+ ** Throughput **
 Volume throughput performance.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
- ** [VolumeType](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-VolumeType"></a>
+ ** VolumeType **
 Type of EBS volume.
 Type: String
 Valid Values: `standard | io1 | io2 | gp2 | sc1 | st1 | gp3`
 Required: No
 
-## Response Syntax
-<a name="API_CreateVolume_ResponseSyntax"></a>
-
-```
-{
-   "VolumeId": "string"
-}
-```
-
 ## Response Elements
 <a name="API_CreateVolume_ResponseElements"></a>
 
-If the action is successful, the service sends back an HTTP 200 response.
+The following element is returned by the service.
 
-The following data is returned in JSON format by the service.
-
- ** [VolumeId](#API_CreateVolume_ResponseSyntax) **   <a name="workspacesinstances-CreateVolume-response-VolumeId"></a>
+ ** VolumeId **
 Unique identifier for the new volume.
 Type: String
 Pattern: `vol-[0-9a-zA-Z]{1,63}`
@@ -131,7 +89,7 @@ For information about the errors that are common to all actions, see [Common Err
 Indicates insufficient permissions to perform the requested action.
  ** Message **
 Detailed explanation of the access denial.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConflictException **
 Signals a conflict with the current state of the resource.
@@ -141,7 +99,7 @@ Description of the conflict encountered.
 Identifier of the conflicting resource.
  ** ResourceType **
 Type of the conflicting resource.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Indicates an unexpected server-side error occurred.
@@ -163,7 +121,7 @@ Identifier of the resource related to the quota.
 Type of resource related to the quota.
  ** ServiceCode **
 Code identifying the service with the quota limitation.
-HTTP Status Code: 400
+HTTP Status Code: 402
 
  ** ThrottlingException **
 Indicates the request rate has exceeded limits.
@@ -175,7 +133,7 @@ Specific code for the throttling quota.
 Recommended wait time before retrying the request.
  ** ServiceCode **
 Code identifying the service experiencing throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 Indicates invalid input parameters in the request.

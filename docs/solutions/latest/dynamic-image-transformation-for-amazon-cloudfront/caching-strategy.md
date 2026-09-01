@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 # Caching strategy
 <a name="caching-strategy"></a>
 
-The ECS architecture implements a multi-layer caching strategy to optimize performance and reduce latency.
+The ECS architecture implements a multi-layer caching strategy to optimize performance and reduce latency. In addition to the CloudFront edge cache for processed images, the architecture maintains an in-memory configuration cache in each ECS task and a DynamoDB-backed Amazon Rekognition result cache (v8.1\+) that deduplicates detection API calls.
 
  **In-memory cache**
 + Each ECS task maintains local caches for transformation policies and origin mappings

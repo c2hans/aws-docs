@@ -138,6 +138,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [codestar-connections:UpdateRepositoryLink](https://docs.aws.amazon.com/codestar-connections/latest/APIReference/API_UpdateRepositoryLink.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [codestar-connections:UseConnection](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-use)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
+- **   UpdateSyncBlocker  **
+  - **IAM action:**  [codeconnections:UpdateSyncBlocker](#list_codeconnections-action-UpdateSyncBlocker)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [codestar-connections:UpdateSyncBlocker](https://docs.aws.amazon.com/codestar-connections/latest/APIReference/API_UpdateSyncBlocker.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
 - **   UpdateSyncConfiguration  **
   - **IAM action:**  [codeconnections:PassRepository](#list_codeconnections-action-PassRepository)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [codeconnections:UpdateSyncConfiguration](#list_codeconnections-action-UpdateSyncConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

@@ -21,7 +21,7 @@ The throttling retry setting works alongside the existing `maxAttempts` step pro
 
 1. Choose the **Preferences** tab, and then choose **Edit**.
 
-1. In the **Throttling retry time limit** field, enter a value between 0 and 3600 seconds. This specifies the maximum time that the system retries a step that is throttled.
+1. In the **Throttled retry time limit** field, enter a value between 0 and 3600 seconds. This specifies the maximum time that the system retries a step that is throttled.
 
 1. Choose **Save**.
 

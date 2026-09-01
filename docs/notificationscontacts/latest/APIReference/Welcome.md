@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 **Note**
 For information about descriptions, API request parameters, and the JSON response for all other AWS User Notifications related API actions, see the [AWS User Notifications API Reference Guide](https://docs.aws.amazon.com/notifications/latest/APIReference/Welcome.html).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

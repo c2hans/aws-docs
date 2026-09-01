@@ -302,7 +302,7 @@ Connect Customer throttling quotas are by account, and per Region, not by user a
 
 | Operation | Rate limit | Burst limit |
 | --- | --- | --- |
-| For all [Evaluations actions](https://docs.aws.amazon.com/connect/latest/APIReference/evaluation-api.html) | 1 request per second |  |
+| For all [Evaluations actions](https://docs.aws.amazon.com/connect/latest/APIReference/evaluation-api.html) | 3 | 5 |
 | \*[GetMetricData ](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricData.html) | 5 | 8 |
 | \*[GetMetricDataV2 ](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) | 10 | 10 |
 | \*[GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html) | 5 | 8 |

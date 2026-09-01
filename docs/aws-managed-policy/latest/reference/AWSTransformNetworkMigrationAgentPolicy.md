@@ -18,13 +18,13 @@ You can attach `AWSTransformNetworkMigrationAgentPolicy` to your users, groups, 
 <a name="AWSTransformNetworkMigrationAgentPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: August 06, 2026, 15:27 UTC
-+ **Edited time:** August 06, 2026, 15:27 UTC
++ **Edited time:** September 01, 2026, 10:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSTransformNetworkMigrationAgentPolicy`
 
 ## Policy version
 <a name="AWSTransformNetworkMigrationAgentPolicy-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -623,10 +623,11 @@ The policy's default version is the version that defines the permissions for the
       }
     },
     {
-      "Sid" : "LambdaViaCfnNetworkMigrationFunctionOperationsReadOnly",
+      "Sid" : "LambdaViaCfnNetworkMigrationFunctionReadOnly",
       "Effect" : "Allow",
       "Action" : [
-        "lambda:GetFunction"
+        "lambda:GetFunction",
+        "lambda:ListTags"
       ],
       "Resource" : "arn:aws:lambda:*:*:function:network-migration*",
       "Condition" : {
@@ -770,6 +771,7 @@ The policy's default version is the version that defines the permissions for the
         "mgn:ListNetworkMigrationExecutions",
         "mgn:ListNetworkMigrationMapperSegmentConstructs",
         "mgn:ListNetworkMigrationMapperSegments",
+        "mgn:ListNetworkMigrationExecutionArtifacts",
         "mgn:ListNetworkMigrationMappings"
       ],
       "Resource" : "*",
@@ -1198,9 +1200,7 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "ssm:DeleteParameter",
         "ssm:DeleteResourcePolicy",
-        "ssm:GetResourcePolicies",
-        "ssm:ListTagsForResource",
-        "ssm:PutResourcePolicy"
+        "ssm:ListTagsForResource"
       ],
       "Resource" : "arn:aws:ssm:*:*:parameter/network-migration/*",
       "Condition" : {
@@ -1213,6 +1213,26 @@ The policy's default version is the version that defines the permissions for the
           "aws:RequestedRegion" : "${aws:PrincipalTag/TargetRegion}",
           "aws:ResourceAccount" : "${aws:PrincipalAccount}",
           "aws:ResourceTag/CreatedBy" : "AWSApplicationMigrationService"
+        }
+      }
+    },
+    {
+      "Sid" : "SsmParametersViaCfnRamSharingOperations",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:GetResourcePolicies",
+        "ssm:PutResourcePolicy"
+      ],
+      "Resource" : "arn:aws:ssm:*:*:parameter/network-migration/*",
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
+        "StringEquals" : {
+          "aws:RequestedRegion" : "${aws:PrincipalTag/TargetRegion}",
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
         }
       }
     },

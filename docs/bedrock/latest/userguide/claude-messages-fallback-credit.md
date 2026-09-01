@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 # Fallback credit for refused requests (beta)
 <a name="claude-messages-fallback-credit"></a>
 
+**Warning**
+**This feature is deprecated.** The `fallback_credit_token` field is no longer present in refusal responses on any model. If a request is refused, retry client-side without a token using a different model.
+
 When Claude Fable 5 refuses a request, customers who retry the same conversation on a different model (such as Claude Opus 4.8) normally re-pay cache-write rates for the conversation prefix that was already cached on Fable 5. Fallback credit eliminates this double-charge by issuing a one-time credit token on refusal that can be redeemed on the retry.
 
 This feature requires the beta flag `fallback-credit-2026-06-01` in the `anthropic_beta` array on both the original request and the retry.

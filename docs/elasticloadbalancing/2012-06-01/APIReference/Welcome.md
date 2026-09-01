@@ -15,7 +15,7 @@ To get started, create a load balancer with one or more listeners using [CreateL
 
 All Elastic Load Balancing operations are idempotent, which means that they complete at most one time. If you repeat an operation, it succeeds.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

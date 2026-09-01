@@ -13,7 +13,7 @@ You can save valuable time with generative AI-powered post-contact summaries tha
 You can access generative AI-powered post-contact summaries multiple ways:
 + **Agents** can access post-contact summaries for voice and email contacts on the Contact Control Panel (CCP). They can use the summaries to quickly complete their After Contact Work (ACW). To learn about the agent's experience, see [View post-contact summaries on the CCP](#summaries-on-agentws).
 + **Managers and supervisors** can access summaries for voice, chat, and email contacts on the Connect Customer admin website, on the **Contact details** and the **Contact search** pages. They can use the summaries to quickly understand the issues and outcomes for the contacts they are reviewing. To learn about the managers experience, see [View post-contact summaries on the Connect Customer admin website](#summaries-on-website).
-+ **Developers** can directly ingest the summaries from the [APIs](contact-lens-api.md) into third-party systems. They can also [integrate with Amazon Kinesis Data Streams](contact-analysis-segment-streams.md) for streaming. This latter option is useful when you have higher loads and you want avoid having the TPS throttled.
++ **Developers** can directly ingest the summaries from the [APIs](contact-lens-api.md) into third-party systems. They can also [integrate with Amazon Kinesis Data Streams](contact-analysis-segment-streams.md) for streaming. This latter option is useful when you have higher loads and you want to avoid having the TPS throttled.
 
 **Topics**
 + [Enable post-contact summaries](#gen-ai-getstarted)

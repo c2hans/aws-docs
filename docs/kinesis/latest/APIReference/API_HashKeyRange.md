@@ -13,13 +13,13 @@ The range of possible hash key values for the shard, which is a set of ordered c
  ** EndingHashKey **   <a name="Streams-Type-HashKeyRange-EndingHashKey"></a>
 The ending hash key of the hash key range.
 Type: String
-Pattern: `0|([1-9]\d{0,38})`
+Pattern: `^(0|([1-9]\d{0,38}))$`
 Required: Yes
 
  ** StartingHashKey **   <a name="Streams-Type-HashKeyRange-StartingHashKey"></a>
 The starting hash key of the hash key range.
 Type: String
-Pattern: `0|([1-9]\d{0,38})`
+Pattern: `^(0|([1-9]\d{0,38}))$`
 Required: Yes
 
 ## See Also

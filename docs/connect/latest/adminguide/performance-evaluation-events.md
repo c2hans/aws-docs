@@ -32,7 +32,7 @@ This is a guide on how to create an EventBridge rule to log Connect Customer fai
      + `"Contact Lens Evaluation Export Failed"`
 ![The event pattern with Amazon Connect selected as the AWS service.](http://docs.aws.amazon.com/connect/latest/adminguide/images/perf-eval-eventbridge-event-pattern.png)
 
-1. The next step allows you to configure the target(s) to process/receive the matched events. For simplicity, select the **CloudWatch log group** option under **Select a target** and choose a log group.
+1. In the next step, you can configure the target(s) to process/receive the matched events. For simplicity, select the **CloudWatch log group** option under **Select a target** and choose a log group.
 
 1. Choose **Next** and advance to the final **Review and create** step. Choose **Create rule** once more to complete the rule creation process.
 

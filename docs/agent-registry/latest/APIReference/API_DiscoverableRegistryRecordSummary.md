@@ -39,7 +39,7 @@ Required: Yes
  ** recordType **   <a name="agentregistry-Type-DiscoverableRegistryRecordSummary-recordType"></a>
  The type of the registry record. `MCP` is a Model Context Protocol server record, `AGENT` is an Agent-to-Agent (A2A) agent card record, `SKILL` is an agent skills definition record, and `CUSTOM` is a record with a custom descriptor.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
 Required: Yes
 
  ** recordVersion **   <a name="agentregistry-Type-DiscoverableRegistryRecordSummary-recordVersion"></a>
@@ -73,6 +73,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
 
+ ** descriptorTypes **   <a name="agentregistry-Type-DiscoverableRegistryRecordSummary-descriptorTypes"></a>
+ The descriptor types that are present on this registry record. Each value corresponds to a descriptor entry key on the approved record.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
+
  ** displayName **   <a name="agentregistry-Type-DiscoverableRegistryRecordSummary-displayName"></a>
  The human-readable display name of the registry record.
 Type: String
@@ -83,10 +89,10 @@ Required: No
 <a name="API_DiscoverableRegistryRecordSummary_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/vestry-data-plane-2025-12-01/DiscoverableRegistryRecordSummary)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/vestry-data-plane-2025-12-01/DiscoverableRegistryRecordSummary)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/vestry-data-plane-2025-12-01/DiscoverableRegistryRecordSummary)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/agent-registry-2025-12-01/DiscoverableRegistryRecordSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/agent-registry-2025-12-01/DiscoverableRegistryRecordSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/agent-registry-2025-12-01/DiscoverableRegistryRecordSummary)
 
 ## See also
 
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AgentRegistry Data Plane API Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-registry` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Registry Data Plane API Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-registry` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

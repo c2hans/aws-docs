@@ -16,8 +16,8 @@ An origin defines the source location where original images are stored. The solu
 
 Origins are configured with the following properties:
 +  **Origin name**: A descriptive identifier for management purposes
-+  **Origin domain**: A valid S3 endpoint URL or external domain (e.g., `images.example.com`)
-+  **Origin path** (optional): A path prefix appended to all requests (e.g., `/assets/images`)
++  **Origin domain**: A valid S3 endpoint URL or external domain (for example, `images.example.com`)
++  **Origin path** (optional): A path prefix appended to all requests (for example, `/assets/images`)
 +  **Origin headers** (optional): Custom headers sent with each origin request for authentication or routing
 
 ## Transformation policies

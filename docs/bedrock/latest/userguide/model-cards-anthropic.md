@@ -9,6 +9,8 @@ The following Anthropic models are available in Amazon Bedrock:
 
 | **Model** | **Description** |
 | --- | --- |
+| [Claude Fable 5.1](model-card-anthropic-claude-fable-5-1.md) | Claude Fable 5.1 is Anthropic's frontier model for ambitious coding, long-horizon agents, and enterprise knowledge work. |
+| [Claude Mythos 5.1](model-card-anthropic-claude-mythos-5-1.md) | Claude Mythos 5.1 is Anthropic's most capable model for cybersecurity defense and life sciences research, including threat intelligence, vulnerability discovery, red teaming, drug discovery, and biodefense screening. |
 | [Claude Opus 5](model-card-anthropic-claude-opus-5.md) | Claude Opus 5 is Anthropic's most advanced Opus model, powering long-running agents while delivering improvements in coding and professional work. |
 | [Claude Sonnet 5](model-card-anthropic-claude-sonnet-5.md) | Claude Sonnet 5 is Anthropic's most capable Sonnet model yet, built for coding, agents, and professional work at scale. |
 | [Claude Mythos 5](model-card-anthropic-claude-mythos-5.md) | Claude Mythos 5 is Anthropic's most capable model for cybersecurity and life sciences, including vulnerability discovery, drug design, and biodefense screening. |

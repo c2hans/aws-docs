@@ -31,6 +31,11 @@ This diagram illustrates the high level interaction between the different agentl
 
 ![Architecture showing data flow from corporate data center through MGN Connector to staging area and migrated resources in AWS.](http://docs.aws.amazon.com/mgn/latest/ug/images/agentless-architecture.png)
 
+## Prerequisites
+<a name="installing-vcenter-prereques-mgn"></a>
+
+1. Ensure that you have initialized AWS Transform MGN before installing the MGN vCenter Client.
+
 ## See also
 
 * **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

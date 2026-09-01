@@ -10,8 +10,13 @@ A communication associated with a support case. The communication consists of th
 ## Contents
 <a name="API_Communication_Contents"></a>
 
+ ** attachments **   <a name="AWSSupport-Type-Communication-attachments"></a>
+Information about all attachments on the case communication. This includes attachments added through `AddAttachmentsToSet` and attachments uploaded through `GetAttachmentUploadLinks`.
+Use this field to enumerate every attachment on the communication. To download an attachment listed in this field, use [GetAttachmentDownloadLink](API_GetAttachmentDownloadLink.md). `GetAttachmentDownloadLink` returns a presigned URL that works for attachments of any size.
+Type: Array of [AttachmentDetails](API_AttachmentDetails.md) objects
+
  ** attachmentSet **   <a name="AWSSupport-Type-Communication-attachmentSet"></a>
-Information about the attachments to the case communication.
+Information about the attachments to the case communication that are 5 MB or smaller. This field doesn't include attachments larger than 5 MB. To enumerate every attachment on the communication, including attachments larger than 5 MB, use the `attachments` field instead.
 Type: Array of [AttachmentDetails](API_AttachmentDetails.md) objects
 
  ** body **   <a name="AWSSupport-Type-Communication-body"></a>

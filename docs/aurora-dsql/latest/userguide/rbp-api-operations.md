@@ -39,6 +39,16 @@ The *Supports RBP* column indicates whether the API operation is subject to reso
 | [PutMultiRegionProperties](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_PutMultiRegionProperties.html) | Sets multi-region properties for a cluster | Yes |
 | [PutWitnessRegion](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_PutWitnessRegion.html) | Sets the witness region for a multi-region cluster | Yes |
 
+## Stream APIs
+<a name="rbp-stream-apis"></a>
+
+| API Operation | Description | Supports RBP |
+| --- | --- | --- |
+| [CreateStream](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_CreateStream.html) | Creates a new change data capture stream | Yes |
+| [DeleteStream](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_DeleteStream.html) | Deletes a change data capture stream | No |
+| [GetStream](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_GetStream.html) | Retrieves information about a change data capture stream | No |
+| [ListStreams](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_ListStreams.html) | Lists the change data capture streams in your account | Yes |
+
 ## Resource-based policy APIs
 <a name="rbp-policy-apis"></a>
 

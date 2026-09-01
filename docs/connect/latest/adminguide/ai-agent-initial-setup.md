@@ -570,7 +570,7 @@ Connect Customer automatically adds an `AmazonConnectEnabled:True` tag to the AI
 ## Step 4: Configure your flow for agent assist
 <a name="enable-ai-agents-step4"></a>
 
-1. Add a [Connect assistant](connect-assistant-block.md) block to your flow. The block associates an agent assist domain to the current contact. This enables you to display information from a specific domain, based on criteria about the contact.
+1. Add a [Connect assistant](connect-assistant-block.md) block to your flow. The block associates an agent assist domain to the current contact. With this block, you can display information from a specific domain, based on criteria about the contact.
 
    If you choose to [customize](customize-connect-ai-agents.md) the experience, you will instead create a Lambda and then use an [AWS Lambda function](invoke-lambda-function-block.md) block to add it to your flows.
 
@@ -589,7 +589,7 @@ To confirm the last date and time that your knowledge base was updated (meaning 
 ## Cross-region inference service
 <a name="enable-ai-agents-cross-region-inference-service"></a>
 
-agent assist uses [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to automatically select the optimal AWS Region for processing your data, improving the customer experience by maximizing available resources and model availability. If you do not want your data processed in a different region from what you selected, you can contact AWS Support.
+agent assist uses [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to automatically select the optimal AWS Region for processing your data, improving the customer experience by maximizing available resources and model availability. If you do not want your data processed in a different Region from what you selected, you can contact AWS Support.
 
 **Note**
 While existing Custom prompts will continue using in-region inference, we recommend upgrading to the latest supported models to benefit from cross-region inference capabilities. You can contact AWS Support for migration assistance of your existing prompts.

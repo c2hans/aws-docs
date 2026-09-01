@@ -62,7 +62,7 @@ If you are unable to pause, rewind or fast-forward recordings on the **Contact s
 ## Review recordings and transcripts of automated voice interactions (with IVR and bots)
 <a name="review-automated-voice-recordings"></a>
 
-IVR recordings and logs enable you to monitor and improve your automated experiences to better resolve the needs of the end-customer and maintain audio and system execution records of the interaction for compliance purposes. To review automated interaction (IVR) recordings and logs:
+With IVR recordings and logs, you can monitor and improve your automated experiences to better resolve the needs of the end-customer and maintain audio and system execution records of the interaction for compliance purposes. To review automated interaction (IVR) recordings and logs:
 
 1. Log in to Connect Customer with a user account that has permissions to access [the contact search page](contact-search.md#required-permissions-search-contacts) and to [access recordings](assign-permissions-to-review-recordings.md). Note that to view information on flow execution, you would need permissions to view **Flows** and **Flow modules**.
 

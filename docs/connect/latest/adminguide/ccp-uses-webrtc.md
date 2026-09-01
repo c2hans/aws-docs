@@ -25,7 +25,7 @@ WebRTC uses peering techniques for real-time data exchange between connected pee
 
 The WebRTC specification includes a set of IETF protocols including [Interactive Connectivity Establishment](https://www.ietf.org/rfc/rfc5245.txt), [Traversal Using Relay around NAT (TURN)](https://datatracker.ietf.org/doc/html/rfc5766), and [Session Traversal Utilities for NAT (STUN)](https://www.ietf.org/rfc/rfc5389.txt) for establishing peer-to-peer connectivity. These are in addition to protocol specifications for reliable and secure real-time media and data streaming.
 
-Because Connect Customer uses WebRTC, you don't need to build and maintain complex infrastructure for real-time communication. It enables you to rapidly deploy omnichannel customer engagement solutions through Connect Customer, while benefiting from the low latency, high-quality media streaming, and secure peer-to-peer connectivity that WebRTC offers.
+Because Connect Customer uses WebRTC, you don't need to build and maintain complex infrastructure for real-time communication. With WebRTC, you can rapidly deploy omnichannel customer engagement solutions through Connect Customer, while benefiting from the low latency, high-quality media streaming, and secure peer-to-peer connectivity that WebRTC offers.
 
 ## Terminology
 <a name="ccp-uses-webrtc-terminology"></a>

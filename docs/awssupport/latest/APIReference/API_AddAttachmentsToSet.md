@@ -10,8 +10,8 @@ Adds one or more attachments to an attachment set.
 An attachment set is a temporary container for attachments that you add to a case or case communication. The set is available for 1 hour after it's created. The `expiryTime` returned in the response is when the set expires.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 ## Request Syntax
 <a name="API_AddAttachmentsToSet_RequestSyntax"></a>
@@ -24,7 +24,8 @@ If you call the AWS Support API from an account that doesn't have a Business, En
          "fileName": "{{string}}"
       }
    ],
-   "attachmentSetId": "{{string}}"
+   "attachmentSetId": "{{string}}",
+   "dryRun": {{boolean}}
 }
 ```
 
@@ -43,6 +44,10 @@ Type: Array of [Attachment](API_Attachment.md) objects
  ** [attachmentSetId](#API_AddAttachmentsToSet_RequestSyntax) **   <a name="AWSSupport-AddAttachmentsToSet-request-attachmentSetId"></a>
 The ID of the attachment set. If an `attachmentSetId` is not specified, a new attachment set is created, and the ID of the set is returned in the response. If an `attachmentSetId` is specified, the attachments are added to the specified set, if it exists.
 Type: String
+
+ ** [dryRun](#API_AddAttachmentsToSet_RequestSyntax) **   <a name="AWSSupport-AddAttachmentsToSet-request-dryRun"></a>
+Specifies whether to validate the request without actually adding the attachments. When set to `true`, the request is validated but no attachments are stored, and the operation returns a `DryRunOperationException`. When omitted or set to `false`, the request runs normally.
+Type: Boolean
 
 ## Response Syntax
 <a name="API_AddAttachmentsToSet_ResponseSyntax"></a>
@@ -96,6 +101,10 @@ HTTP Status Code: 400
 A limit for the size of an attachment set has been exceeded. The limits are three attachments and 5 MB per attachment.
  ** message **
 A limit for the size of an attachment set has been exceeded. The limits are three attachments and 5 MB per attachment.
+HTTP Status Code: 400
+
+ ** DryRunOperationException **
+The request was valid, but the operation wasn't performed because `dryRun` was set to `true`.
 HTTP Status Code: 400
 
  ** InternalServerError **

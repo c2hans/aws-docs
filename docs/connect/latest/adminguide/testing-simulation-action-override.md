@@ -35,7 +35,7 @@ Test Configuration:
   + The most recent override (returning "Suspended") is now used
   + Your flow receives "Suspended" status.
 
-What happens: Even though you configured two overrides for the same Lambda function, each override is consumed only once, in sequential order of configuration. This allows you to test how your flow handles different responses from the same resource at different points in the test.
+What happens: Even though you configured two overrides for the same Lambda function, each override is consumed only once, in sequential order of configuration. With sequential overrides, you can test how your flow handles different responses from the same resource at different points in the test.
 
 ![Test case designer showing three interaction groups with Lambda function overrides configured in sequence.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-override-example.png)
 
@@ -116,6 +116,10 @@ Configuration options for Response:
 + **Raw JSON** (optional) – Enter the data that should be returned (in JSON format)
 
 ![Action block configuration showing Lex bot override with mock response options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-override-lex.png)
+
+**Lex V2 bot intent resolution might differ during simulation**
+During simulation, Text/Utterance input sends customer utterances to the Lex V2 bot as text. On a real voice call, the bot uses a voice-optimized path. This path might produce different confidence scores for the same words. As a result, the bot might return `FallbackIntent` during simulation for utterances that resolve correctly on a real call.
+To get deterministic results, use the **Mock Response** option. This bypasses the live Lex invocation and provides consistent test outcomes.
 
 ### Queue override
 <a name="testing-simulation-action-override-queue"></a>

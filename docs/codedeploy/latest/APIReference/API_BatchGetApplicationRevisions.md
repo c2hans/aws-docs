@@ -51,6 +51,7 @@ The request accepts the following data in JSON format.
 The name of an AWS CodeDeploy application about which to get revision information.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [revisions](#API_BatchGetApplicationRevisions_RequestSyntax) **   <a name="CodeDeploy-BatchGetApplicationRevisions-request-revisions"></a>
@@ -112,6 +113,7 @@ The following data is returned in JSON format by the service.
 The name of the application that corresponds to the revisions.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 
  ** [errorMessage](#API_BatchGetApplicationRevisions_ResponseSyntax) **   <a name="CodeDeploy-BatchGetApplicationRevisions-response-errorMessage"></a>
 Information about errors that might have occurred during the API call.

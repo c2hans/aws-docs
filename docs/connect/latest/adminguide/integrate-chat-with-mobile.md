@@ -25,7 +25,7 @@ This section provides a description of each integration option to help you decid
 ### WebView integration
 <a name="webview"></a>
 
-The Connect Customer Chat WebView integration allows you to embed the full chat experience into your mobile applications with minimal development effort. This method uses `WebView` on Android and `WKWebView` on iOS to provide a seamless and comprehensive chat interface. It is ideal for teams looking for a quick, out-of-the-box solution to integrate chat functionality without extensive customizations.
+With the Connect Customer Chat WebView integration, you can embed the full chat experience into your mobile applications with minimal development effort. This method uses `WebView` on Android and `WKWebView` on iOS to provide a seamless and comprehensive chat interface. It is ideal for teams looking for a quick, out-of-the-box solution to integrate chat functionality without extensive customizations.
 
 This approach ensures secure communication and uses the web-based Connect Customer chat interface. However, you will need to configure your app to handle cookies and JavaScript properly.
 
@@ -38,7 +38,7 @@ For more information on implementing WebView integration, see the Connect Custom
 
 The Connect Customer Chat SDKs for iOS and Android simplify the integration of Connect Customer chat for native mobile applications. The SDKs help handle client side chat logic and back-end communications similar to the Amazon Connect ChatJS Library.
 
-The Connect Customer Chat SDKs wrap the Connect Customer Participant Service APIs and abstracts away the management of the chat session and WebSocket. This allows you to focus on the user interface and experience while relying on the Connect Customer Chat SDK to interact with all the back-end services. This approach still requires you to use your own chat back end to call the Connect Customer `StartChatContact` API to initiate contact.
+The Connect Customer Chat SDKs wrap the Connect Customer Participant Service APIs and abstracts away the management of the chat session and WebSocket. This helps you to focus on the user interface and experience while relying on the Connect Customer Chat SDK to interact with all the back-end services. This approach still requires you to use your own chat back end to call the Connect Customer `StartChatContact` API to initiate contact.
 + For more information on the Swift-based iOS SDK, see the [Connect Customer Chat SDK for iOS](https://github.com/amazon-connect/amazon-connect-chat-ios) GitHub page.
 + For more information on the Kotlin-based Android SDK, see the [Connect Customer Chat SDK for Android ](https://github.com/amazon-connect/amazon-connect-chat-android) GitHub page.
 

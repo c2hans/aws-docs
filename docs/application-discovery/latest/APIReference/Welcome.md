@@ -34,7 +34,7 @@ This guide is intended for use with the [AWS Application Discovery Service User 
 **Important**
 All data is handled according to the [AWS Privacy Policy](https://aws.amazon.com/privacy/). You can operate Application Discovery Service offline to inspect collected data before it is shared with the service.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

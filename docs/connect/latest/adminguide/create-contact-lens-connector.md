@@ -17,7 +17,7 @@ This topic explains how to create a conversational analytics connector to integr
 
 1. On the **conversational analytics connector** page, type a friendly name for the connector.
 
-1. Under **Connector source type**, use the dropdown menu to select from a list of available connector source types. Usually this is an external Session Boarder Controller (SBC) that will initiate the SIPREC session. The following image shows a sample dropdown list of source types.
+1. Under **Connector source type**, use the dropdown menu to select from a list of available connector source types. Usually this is an external Session Border Controller (SBC) that will initiate the SIPREC session. The following image shows a sample dropdown list of source types.
 ![The conversational analytics connector page, the Connect source type dropdown list.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-connector-source-types.png)
 
 1. Under **Voice system type**, use the dropdown list to select the voice system used for the call. Usually this is your external contact center system. The following image shows a sample dropdown list of voice system types.

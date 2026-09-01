@@ -41,7 +41,7 @@ Create a secret with the appropriate key-value pairs for your authentication typ
 Use `CreateReplicator` API with `EARLIEST` starting position, Identical topic name replication, and `synchroniseConsumerGroupOffsets` set to `true`. The IAM principal that calls `CreateReplicator` must have the API caller permissions described in [IAM permissions required to create an MSK Replicator](msk-replicator-create-iam-perms.md). If you plan to set up bidirectional replication for rollback capability (Step 6), also set `consumerGroupOffsetSyncMode` to `ENHANCED` on both the forward and reverse Replicators. Allow approximately 30 minutes for the Replicator to reach RUNNING status. See [CreateReplicator API examples for self-managed Kafka clusters](msk-replicator-external-api-examples.md).
 
 **Step 6: (Optional) Set up bidirectional replication**
-Create a reverse Replicator from the MSK Provisioned cluster back to the self-managed cluster for rollback capabilities. See [CreateReplicator API examples for self-managed Kafka clusters](msk-replicator-external-api-examples.md).
+Create a reverse Replicator from the MSK Provisioned cluster back to the self-managed cluster for rollback capabilities. Identify both clusters in the reverse Replicator exactly as you identified them in the forward Replicator. See [Bidirectional replication example](msk-replicator-external-api-examples.md#msk-replicator-external-bidirectional).
 
 **Step 7: Monitor replication progress**
 Monitor the following metrics:

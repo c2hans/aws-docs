@@ -42,7 +42,7 @@ If an inbound contact needs to reach an agent, the contact is put into a queue a
 ## Outbound
 <a name="outbound"></a>
 
-Connect Customer allows you the ability to programmatically make outbound contact attempts to local and international endpoints, reduce agent set-up time between contacts, and improve agent productivity. By using the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) API and [StartOutboundVoiceContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundVoiceContact.html), you can develop your own outbound solution or take advantage of existing partner integrations that work with your CRM data to create dynamic, personalized experiences for your contacts and empowering your agents with the tools and resources they need to service those contacts.
+With Connect Customer, you can programmatically make outbound contact attempts to local and international endpoints, reduce agent set-up time between contacts, and improve agent productivity. By using the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) API and [StartOutboundVoiceContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOutboundVoiceContact.html), you can develop your own outbound solution or take advantage of existing partner integrations that work with your CRM data to create dynamic, personalized experiences for your contacts and empowering your agents with the tools and resources they need to service those contacts.
 
 Outbound campaigns are typically driven by contact data exported from CRMs and separated into contact lists. Those contacts are prioritized and either delivered to the agents to initiate after a period of preview or programmatically contacted using the Connect Customer Outbound API, driven by your flow logic, and connecting to agents as needed. Typical outbound contact center use cases include fraud and service alerts, collections, and appointment confirmations.
 
@@ -102,12 +102,12 @@ In this scenario, you might have your IVR and agents operating in parallel on Co
 ## Legacy contact center migration
 <a name="legacy-contact-center-migration"></a>
 
-When you are evaluating Connect Customer for new or existing workloads, there are several strategies you can consider. For situations that require contact details to be included when contacts are transferred between Connect Customer and your legacy contact center solution, a Hybrid model architecture will be required until the migration is complete. The approaches described in this section allow you to move specific lines of business in phases, manage training and support, and mitigate risks associated with change.
+When you are evaluating Connect Customer for new or existing workloads, there are several strategies you can consider. For situations that require contact details to be included when contacts are transferred between Connect Customer and your legacy contact center solution, a Hybrid model architecture will be required until the migration is complete. With the approaches described in this section, you can move specific lines of business in phases, manage training and support, and mitigate risks associated with change.
 
 ### New workload
 <a name="new-workload"></a>
 
-You might decrease risk associated with changes to existing business units and increase flexibility and digital innovation potential by adopting a net new workload on Connect Customer. Net new workloads that do not require the Hybrid model architecture are less complex, are not affected by change in business process or agent routine, and have a faster time to market. Adopting a net new workload allows you to take advantage of usage-based, pay-as-you-go pricing. Your contact center resources are available to create a new experience for their end users, test and implement it to evaluate the platform, gain confidence, and build the skills and operational mechanisms to prepare for larger migration across existing workloads.
+You might decrease risk associated with changes to existing business units and increase flexibility and digital innovation potential by adopting a net new workload on Connect Customer. Net new workloads that do not require the Hybrid model architecture are less complex, are not affected by change in business process or agent routine, and have a faster time to market. Adopting a net new workload helps you take advantage of usage-based, pay-as-you-go pricing. Your contact center resources are available to create a new experience for their end users, test and implement it to evaluate the platform, gain confidence, and build the skills and operational mechanisms to prepare for larger migration across existing workloads.
 
 ### IVR First
 <a name="ivr-first"></a>
@@ -137,7 +137,7 @@ While you can use the Connect Customer Contact Control Panel (CCP) within Virtua
 ### VDI client with local browser access
 <a name="vdi-with-browser"></a>
 
-You can build a custom CCP with the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) API by creating a CCP with no media for call signaling. This way, the media is handled on the local desktop using standard CCP, and the signaling and call controls are handled on the remote connection with the CCP with no media. The following diagram describes this approach.
+You can build a custom CCP with the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) API by creating a CCP with no media for call signaling. This way, the media is handled on the local desktop using standard CCP. The signaling and call controls are handled on the remote connection with the CCP with no media. The following diagram describes this approach.
 
 ![VDI client with local browser access.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/vdi.png)
 

@@ -105,9 +105,9 @@ The version of the registry record.
 The identifier of the registry in which to create the record. You can specify either the registry ID or the registry Amazon Resource Name (ARN).
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/)?[a-zA-Z0-9]{12,16}$`
-*Minimum*: `1`
-*Maximum*: `2048`
+*Pattern*: `^[a-zA-Z0-9]{12,16}$`
+*Minimum*: `12`
+*Maximum*: `16`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-agentregistry-registryrecord-tags"></a>

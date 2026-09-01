@@ -457,7 +457,7 @@ Ed25519 is only available on non-FIPS clusters. Ed25519 supports TLS 1.3 only.
   ```
 + To generate an ML-DSA private key on an HSM
 **ML-DSA availability and requirements**
-ML-DSA is only available on non-FIPS clusters and requires OpenSSL 3.5 or later for CSR creation, certificate creation, and TLS offload. ML-DSA supports TLS 1.3 only.
+ML-DSA requires OpenSSL 3.5 or later for CSR creation, certificate creation, and TLS offload. ML-DSA supports TLS 1.3 only.
 For ML-DSA TLS offload on Amazon Linux 2023 and RHEL platforms, you might need to enable the post-quantum (PQ) crypto sub-policy. For more information, see [Issue: ML-DSA TLS handshake fails on Amazon Linux 2023 and RHEL with "no shared signature algorithms"](ki-openssl-provider-sdk.md#ki-openssl-provider-5).
 
   Use the `key generate-asymmetric-pair ml-dsa` command to generate an ML-DSA key pair. This example generates an ML-DSA-44 key pair with a public key label of {{tls\_mldsa44\_pub}} and a private key label of {{tls\_mldsa44\_private}}. You can also use `ML-DSA-65` or `ML-DSA-87` for higher security levels.

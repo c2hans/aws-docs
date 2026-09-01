@@ -13,7 +13,7 @@ This solution allows you to include headers you’d like returned alongside the 
       bucket: "<myImageBucket>",
       key: "<myImage.jpeg>",
       headers: {
-          "Cache-Control":"max-age=86400,public"
+          "Cache-Control":"max-age=86400,public",
           "Custom-Header":"some-custom-value"
       }
   })

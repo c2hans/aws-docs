@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/m2/latest/APIReference/Welcome.html
 
  AWS Mainframe Modernization provides tools and resources to help you plan and implement migration and modernization from mainframes to AWS managed runtime environments. It provides tools for analyzing existing mainframe applications, developing or updating mainframe applications using COBOL or PL/I, and implementing an automated pipeline for continuous integration and continuous delivery (CI/CD) of the applications.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/web-and-mobile
 **Important**
 **Trying to contact Amazon for support?** See [Amazon Customer Service](https://www.amazon.com/gp/help/customer/display.html?icmpid=docs_connect_messagingcap_customerservice) (Amazon orders and deliveries) or [AWS Support](https://aws.amazon.com/premiumsupport/?icmpid=docs_connect_messagingcap_premiumsupport) (Amazon Web Services).
 
-Connect Customer lets you build chat messaging features—mobile chat, web chat, SMS, and third-party messaging services— into your website and mobile apps. It enables your customers to start chatting with contact center agents from any of your business applications, web or mobile.
+With Connect Customer, you can build chat messaging features—mobile chat, web chat, SMS, and third-party messaging services— into your website and mobile apps. It enables your customers to start chatting with contact center agents from any of your business applications, web or mobile.
 
 Interactions are asynchronous, enabling your customers to start a chat with an agent or Amazon Lex bot, step away from it, and then resume the conversation again. They can even switch devices and continue the chat.
 

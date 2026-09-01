@@ -10,7 +10,7 @@ This topic defines the flow block for calling a published module to create reusa
 ## Description
 <a name="invoke-module-block-description"></a>
 
-Calls a published module, which enables you create reusable sections of a contact flow.
+Calls a published module, which you can use to create reusable sections of a contact flow.
 
 For more information, see [Flow modules for reusable functions in Connect Customer](contact-flow-modules.md).
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MariaDB.Conce
 # Local time zone for MariaDB DB instances
 <a name="MariaDB.Concepts.LocalTimeZone"></a>
 
-By default, the time zone for a MariaDB DB instance is Universal Time Coordinated (UTC). You can set the time zone for your DB instance to the local time zone for your application instead.
+By default, the time zone for a MariaDB DB instance is UTC. You can set the time zone for your DB instance to the local time zone for your application instead.
 
 To set the local time zone for a DB instance, set the `time_zone` parameter in the parameter group for your DB instance to one of the supported values listed later in this section. When you set the `time_zone` parameter for a parameter group, all DB instances and read replicas that are using that parameter group change to use the new local time zone. For information on setting parameters in a parameter group, see [Parameter groups for Amazon RDS](USER_WorkingWithParamGroups.md).
 

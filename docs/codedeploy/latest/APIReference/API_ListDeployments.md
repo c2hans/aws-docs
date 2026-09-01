@@ -36,6 +36,7 @@ The name of an AWS CodeDeploy application associated with the user or AWS accoun
 If `applicationName` is specified, then `deploymentGroupName` must be specified. If it is not specified, then `deploymentGroupName` must not be specified.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [createTimeRange](#API_ListDeployments_RequestSyntax) **   <a name="CodeDeploy-ListDeployments-request-createTimeRange"></a>
@@ -48,6 +49,7 @@ The name of a deployment group for the specified application.
 If `deploymentGroupName` is specified, then `applicationName` must be specified. If it is not specified, then `applicationName` must not be specified.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [externalId](#API_ListDeployments_RequestSyntax) **   <a name="CodeDeploy-ListDeployments-request-externalId"></a>

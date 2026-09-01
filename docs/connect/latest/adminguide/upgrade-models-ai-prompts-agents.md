@@ -21,7 +21,7 @@ Before upgrading models, make sure you have the following:
 ## When to upgrade
 <a name="upgrade-models-when-to-upgrade"></a>
 
-Amazon Connect notifies you when a model is scheduled for deprecation. Amazon Connect automatically redirects LLM inference to a supported model after any model passes its deprecation date, so there is no service disruption. However, upgrading manually before the deprecation date lets you choose the replacement model and test it in your environment. Use the following steps to determine which scenarios apply to you.
+Amazon Connect notifies you when a model is scheduled for deprecation. Amazon Connect automatically redirects LLM inference to a supported model after any model passes its deprecation date, so there is no service disruption. However, by upgrading manually before the deprecation date, you can choose the replacement model and test it in your environment. Use the following steps to determine which scenarios apply to you.
 
 **Step 1: Check for custom AI agents.** In the admin website, navigate to *AI agent designer*, *AI agents*. Look at the *Type* column. System agents display *- System* after the type name (for example, "Answer Recommendation - System"). Agents without this suffix are custom agents you created.
 + If you have a custom AI agent with one or more custom AI prompts assigned to it → Scenario 1 (if you only overrode some prompt types, the unset prompts auto-upgrade; you only need to upgrade the custom prompts)

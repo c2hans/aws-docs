@@ -37,7 +37,8 @@ The AWS Workload Credentials Provider returns secret values in the same format a
 **Topics**
 + [How the AWS Workload Credentials Provider works](#provider-overview)
 + [Understanding AWS Workload Credentials Provider caching](#provider-caching)
-+ [Build the AWS Workload Credentials Provider](#workload-credentials-provider-build)
++ [Download the AWS Workload Credentials Provider](#workload-credentials-provider-download)
++ [Build the AWS Workload Credentials Provider from source](#workload-credentials-provider-build)
 + [Install the AWS Workload Credentials Provider](#workload-credentials-provider-install)
 + [Retrieve secrets with the AWS Workload Credentials Provider](#workload-credentials-provider-call)
 + [Understanding the `refreshNow` parameter](#workload-credentials-provider-refresh)
@@ -48,10 +49,21 @@ The AWS Workload Credentials Provider returns secret values in the same format a
 + [Logging](#workload-credentials-provider-log)
 + [Security considerations](#workload-credentials-provider-security)
 
-## Build the AWS Workload Credentials Provider
+## Download the AWS Workload Credentials Provider
+<a name="workload-credentials-provider-download"></a>
+
+To download a pre-built binary of the AWS Workload Credentials Provider, use the following links. Releases for Windows are signed.
+
+| Platform | Architecture | Download URL | Checksum (SHA-256) |
+| --- | --- | --- | --- |
+| Linux | x86-64 | [Download for Linux x86-64 (3.1.1)](https://artifacts.awcp.global.on.aws/3.1.1/x86_64-unknown-linux-gnu/aws-workload-credentials-provider) | 471c1978f8bf63a0aeefb425e974ac3c816c7e04feb302236512eea375160de4 |
+| Linux | AArch64 | [Download for Linux AArch64 (3.1.1)](https://artifacts.awcp.global.on.aws/3.1.1/aarch64-unknown-linux-gnu/aws-workload-credentials-provider) | 8b09dc4e58b84379f580a9ae179940bcb3de0338421f638a43376bf73380ffb6 |
+| Windows | x86-64 | [Download for Windows x86-64 (3.1.1)](https://artifacts.awcp.global.on.aws/3.1.1/x86_64-pc-windows-msvc/aws-workload-credentials-provider.exe) | 5fbdac4017e630556b94b90e5ed9ed11be69ac7a47e67655e20181ce990dbe12 |
+
+## Build the AWS Workload Credentials Provider from source
 <a name="workload-credentials-provider-build"></a>
 
-Before you begin, ensure you have the standard development tools and Rust tools installed for your platform.
+Alternatively, you can build the AWS Workload Credentials Provider from source. Before you begin, make sure you have the standard development tools and Rust tools installed for your platform.
 
 **Note**
 Building the provider with the `fips` feature enabled on macOS currently requires the following workaround:

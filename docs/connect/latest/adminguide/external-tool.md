@@ -12,9 +12,9 @@ The **External Tool** block is only available in [Amazon Connect Customer](https
 
 ## Description
 <a name="external-tool-description"></a>
-+ Invokes a tool from an external application, such as Salesforce or ServiceNow, that is integrated with your Connect Customer instance through an Amazon Bedrock AgentCore gateway. Your flow can send data to and read data from third-party applications without maintaining custom Lambda functions.
-+ Runs a tool synchronously, where the flow pauses until the tool returns, or asynchronously, where the flow continues. For an asynchronous invocation, add a second **External Tool** block set to **Load tool result** to retrieve the result.
-+ Stores the result in the `$.ExternalTool` namespace.
++ Use this block to invoke a tool from an external application integrated with your Connect Customer instance through an Amazon Bedrock AgentCore gateway. Your flow can send data to and read data from third-party applications, resolving customer issues with fewer steps instead of relying on custom Lambda functions.
++ Run a tool synchronously (the flow pauses until the tool returns) or asynchronously (the flow continues). For an asynchronous invocation, add a second **External Tool** block set to **Load tool result** to retrieve the result.
++ Results are stored in the `$.ExternalTool` namespace.
 
 ## Supported channels
 <a name="external-tool-channels"></a>
@@ -39,13 +39,13 @@ You can use this block in the following [flow types](create-contact-flow.md#cont
 
 Before you can use this block, you must [integrate an external application with your Connect Customer instance as an MCP server](https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps-mcp-server.html#3p-apps-mcp-server-how-to-integrate). To set up the integration:
 
-1. Open the Connect Customer console.
+1. Navigate to the Connect Customer console within your AWS console.
 
-1. Add a new integration and select **MCP server** as the integration type.
+1. In the Connect Customer console, add a new integration and select **MCP server** as the integration type.
 
 1. Select a Bedrock AgentCore gateway to connect with your instance. If no gateway exists, [create one in Bedrock AgentCore](https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps-mcp-server.html#3p-apps-mcp-server-how-to-integrate) first.
 
-1. In the gateway's inbound identity configuration, add the gateway ID to the **Allowed audiences** field. The gateway ID is required for tool invocations to succeed.
+1. In the gateway's inbound identity configuration, add the gateway ID to the **Allowed audiences** field. This is required because if the gateway ID is missing, tool invocations will fail.
 
 1. Associate your Connect Customer instance with the integration by selecting the instance that is configured with the gateway's Discovery URL.
 
@@ -103,7 +103,7 @@ Each new invocation overwrites the previous `$.ExternalTool` result. To keep a r
 ## Example
 <a name="external-tool-example"></a>
 
-An outbound campaign tailors its message to each customer's spend tier. After integrating Amazon Bedrock AgentCore and a third-party integration that exposes each account's spend tier, the flow uses an **External Tool** block to read the tier from the third-party application, and then branches to the matching message.
+When a customer contacts a financial institution about a recent transaction, a flow can use the **External Tool** block to retrieve previous case history or recent transactions from an integrated third-party application. The flow can then use the returned data in `$.ExternalTool.ResultData` to determine the next step, such as routing the contact to a specialist or continuing on a standard support path.
 
 ## Configured
 <a name="external-tool-configured"></a>

@@ -30,7 +30,7 @@ This topic is for administrators and contact center managers who need to search 
     + You can search for in-progress queued callbacks after they are queued, connected to an agent or disconnected.
     + For other voice contacts, you can search them only after they are connected to an agent, or have been disconnected. Queued in-progress voice contacts (with the exception of callbacks) are not shown on the **Contact search** page.
   + **Chat**: You can search for contacts after they are connected to system, queued, connected to an agent or disconnected.
-  + **Tasks** and **Email**: You can search for all in-progress after they are initiated.
+  + **Tasks** and **Email**: You can search for all in-progress contacts after they are initiated.
 + The search results for a given query are limited to the first 10K results returned.
 + You cannot search for multiple contact IDs at the same time.
 
@@ -38,7 +38,7 @@ This topic is for administrators and contact center managers who need to search 
 <a name="key-search-features"></a>
 + [Search by custom contact attributes](search-custom-attributes.md) (user-defined attributes).
 + [Search for contacts that are in progress](search-in-progress-contacts.md) or completed using the **Contact status** filter.
-+ Search a time range up to 8 weeks. Within the time range filter, you can specify the **Timestamp type**. This enables you to specify the time range. You can choose from initiated, connected to agent, disconnected, and scheduled timestamps.
++ Search a time range up to 8 weeks. Within the time range filter, you can specify the **Timestamp type**. With this timestamp type, you can specify the time range. You can choose from initiated, connected to agent, disconnected, and scheduled timestamps.
 **Important**
 Time range filter on Contact search has Timestamp type set to "Initiated" by default. Before the Timestamp type selection was introduced, the Timestamp type used by the Time Range filter was "Disconnected".
 Saved searches on Contact search created before the launch of the ability to search for in-progress contacts (launched September 2023) have been updated with the filters Contact status = "Completed" and Timestamp type = "Disconnected". These selections were implied before the launch of in-progress contacts.
@@ -47,8 +47,8 @@ Saved searches on Contact search created before the launch of the ability to sea
 **Note**
 When you select multiple values at any hierarchy level, you cannot filter on the next hierarchy level(s).
 + Filter contacts by channel and channel subtype, such as SMS.
-+ Filter to search for email contacts using email address (To, From and CC) and email subject. Searching on an email subject is not case sensitive. Also, searching for a subset of words within an email subject provides search results. For example, if you enter **inquiry**, Connect Customer return emails with the subject **Customer Inquiry**.
-+ Filters for [conversation analytics](analyze-conversations.md). You can search for contacts that have conversational analytics enabled. for example, **Conversational analytics: Voice - Agent interaction** returns contacts where the agent interaction has been analyzed by conversational analytics. You can [search for Contact categories](search-conversations.md#contact-category-search) by specifying the full category name. Choose to search using **Match any** or **Match all** or **Match none**. For example, you can search contacts with both "category A" and "category B", or with either one of the two categories.
++ Filter to search for email contacts using email address (To, From and CC) and email subject. Searching on an email subject is not case sensitive. Also, searching for a subset of words within an email subject provides search results. For example, if you enter **inquiry**, Connect Customer returns emails with the subject **Customer Inquiry**.
++ Filters for [conversation analytics](analyze-conversations.md). You can search for contacts that have conversational analytics enabled. For example, **Conversational analytics: Voice - Agent interaction** returns contacts where the agent interaction has been analyzed by conversational analytics. You can [search for Contact categories](search-conversations.md#contact-category-search) by specifying the full category name. Choose to search using **Match any** or **Match all** or **Match none**. For example, you can search contacts with both "category A" and "category B", or with either one of the two categories.
 
    For the complete list of conversational analytics filters, see [Search conversations analyzed by conversational analytics](search-conversations.md). You can apply these filters only if your organization has enabled conversational analytics.
 
@@ -87,7 +87,7 @@ Before users can search for contacts in Connect Customer, or access detailed con
 Deleting a hierarchy level severs the link to existing contacts. This action can not be reversed.
 When you change a user's hierarchy group, it might take a couple of minutes for their contact search results to reflect their new permissions.
 
-  The following table lists the typical permissions and what contacts can be views on **Contact search** and **Contact details** pages.
+  The following table lists the typical permissions and what contacts can be viewed on **Contact search** and **Contact details** pages.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/contact-search.html)
 **Important**
 We do not recommend assigning permissions in any other combination than what is shown in the preceding table.

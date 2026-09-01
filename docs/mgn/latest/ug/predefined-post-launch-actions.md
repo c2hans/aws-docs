@@ -56,7 +56,7 @@ This action installs the AWS Elastic Disaster Recovery Replication Agent on your
 
 You must select the target disaster recovery region, which is the AWS Region in which the Recovery instances are deployed. AWS Elastic Disaster Recovery must be available in the selected Region and initiated in your account. You must initialize Elastic Disaster Recovery for this action to work.
 
-**Important**
+**Note**
 Ensure that you review the costs associated with AWS Elastic Disaster Recovery in the [service pricing documentation](https://aws.amazon.com/disaster-recovery/pricing/).
 
  [Learn more about Elastic Disaster Recovery AWS Regions.](https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.html)
@@ -117,7 +117,7 @@ To check a specific process that should run multiple times, include it several t
 ## Convert MS-SQL license
 <a name="predefined-windows-ms-sql-conversion"></a>
 
-Use the **Windows MS-SQL license conversion** feature to easily convert Windows MS-SQL BYOL to an AWS license.
+Use the **Windows MS-SQL license conversion** feature to easily convert Windows MS-SQL BYOL to an AWS license. MGN detects SQL Server installed as either the default instance (MSSQLSERVER) or as a named instance (for example, MSSQL$SQLPROD).
 
 MGN:
 + Checks the SQL edition (Enterprise, Standard, or Web) as part of the launch process

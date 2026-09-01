@@ -255,7 +255,7 @@ For more information about users, groups, roles, and permissions, see [IAM ident
 For each AWS Organizations resource, the service defines a set of API operations, or actions, that can interact with or manipulate that resource in some way. To grant permissions for these operations, AWS Organizations defines a set of actions that you can specify in a policy. For example, for the OU resource, AWS Organizations defines actions like the following:
 + `AttachPolicy` and `DetachPolicy`
 + `CreateOrganizationalUnit` and `DeleteOrganizationalUnit`
-+ `ListOrganizationalUnits` and `DescribeOrganizationalUnit`
++ `ListOrganizationalUnitsForParent` and `DescribeOrganizationalUnit`
 
 In some cases, performing an API operation might require permissions to more than one action and might require permissions to more than one resource.
 

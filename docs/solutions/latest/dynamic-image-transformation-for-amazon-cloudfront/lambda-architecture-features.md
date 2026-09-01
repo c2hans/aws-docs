@@ -25,7 +25,7 @@ You can use this image request option to detect and blur inappropriate images. T
 **Note**
 Amazon Rekognition supports only JPEG and PNG file formats for content moderation. When using the Amazon Rekognition features with an image that isn’t JPEG or PNG, the solution automatically converts the image to PNG for use with Amazon Rekognition, then converts it back to the original format.
 
- **Cross-origin resource sharing**
+<a name="cross-origin-resource-sharing"></a> **Cross-origin resource sharing**
 
 This solution’s template contains two parameters that activate Cross-origin resource sharing (CORS) for your image handler API: CorsEnabledParameter and CorsOriginParameter. CORS defines how client web applications loaded in one domain can interact with resources in a different domain. You can activate CORS for your image handler API to make requests to your image handler API from outside the domain space of the API.
 
@@ -34,7 +34,7 @@ For example, if you have a public web application hosted on either a custom doma
 **Note**
 If you want to change your CORS configuration after deployment, you can activate or deactivate CORS by editing the CORS\_ENABLED (Yes/No) and CORS\_ORIGIN environment variables of the Lambda image handler function. See Using AWS Lambda environment variables in the AWS Lambda Developer Guide for more information.
 
- **Image URL signature**
+<a name="image-url-signature"></a> **Image URL signature**
 
 This solution’s template contains three parameters that are required for the image URL signature functionality: EnableSignatureParameter, SecretsManagerSecretParameter, and SecretsManagerKeyParameter. To activate this feature:
 + Set the EnableSignatureParameter parameter to Yes
@@ -68,9 +68,9 @@ If you update your existing solution deployment and activate the image URL signa
 **Note**
 If you plan to use the Expires query parameter alongside signed requests, ensure you include the expiration when creating your signature. For more information, refer to Include request expiration.
 
- **Default fallback image**
+<a name="default-fallback-image"></a> **Default fallback image**
 
-This solution provides a default fallback image feature that returns the specified fallback image as a result of errors occur during processing, rather than a JSON object error message. This solution’s template contains three parameters that are required for the default fallback image feature: EnableDefaultFallbackImageParameter, FallbackImageS3BucketParameter, and FallbackImageS3KeyParameters.
+This solution provides a default fallback image feature that returns the specified fallback image when errors occur during processing, rather than a JSON object error message. This solution’s template contains three parameters that are required for the default fallback image feature: EnableDefaultFallbackImageParameter, FallbackImageS3BucketParameter, and FallbackImageS3KeyParameters.
 
 By default, this feature is deactivated. To activate this feature:
 + Set the EnableDefaultFallbackImageParameter parameter to Yes

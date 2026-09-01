@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 # DateTimeFilterExpression
 <a name="API_DateTimeFilterExpression"></a>
 
-The time stamp in date-time format.
+The timestamp in date-time format.
 
 ## Contents
 <a name="API_DateTimeFilterExpression_Contents"></a>

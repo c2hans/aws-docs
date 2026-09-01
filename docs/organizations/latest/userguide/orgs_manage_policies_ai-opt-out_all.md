@@ -45,6 +45,7 @@ Additional steps are required to opt out from Amazon Monitron. For more informat
 
 The following is a list of AWS services supported by the AI services opt-out policy:
 + [Amazon AI Operations](https://aws.amazon.com/what-is/aiops)
++ [Amazon Bio Discovery](https://aws.amazon.com/biodiscovery/)
 + [Amazon Chime SDK voice analytics](https://docs.aws.amazon.com/chime-sdk/latest/dg/voice-analytics.html)
 + [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch)
 + [Amazon CodeGuru Profiler](https://docs.aws.amazon.com/codeguru)
@@ -70,6 +71,7 @@ The following is a list of AWS services supported by the AI services opt-out pol
 + [Amazon Q](https://docs.aws.amazon.com/amazonq)
 + [Amazon Quick](https://docs.aws.amazon.com/quicksight)
 + [Amazon Rekognition](https://docs.aws.amazon.com/rekognition)
++ [Scenario Discovery](https://docs.aws.amazon.com/iot-sitewise)
 + [Amazon Security Lake](https://docs.aws.amazon.com/security-lake/)
 + [AWS Supply Chain](https://aws.amazon.com/products/connect/decisions/)
 + [Amazon Textract](https://docs.aws.amazon.com/textract)

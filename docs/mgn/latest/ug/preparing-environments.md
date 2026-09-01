@@ -61,6 +61,11 @@ If your source servers are domain-joined to an Active Directory, ensure that the
 
 For details on configuring DNS and network connectivity for domain-joined servers, see [Target instance cannot connect to Active Directory after migration](ad-connectivity-after-migration.md).
 
+**Important**
+Isolate your test VPC from your production network. If you launch a domain controller into a test VPC that has a network route back to your on-premises or production environment, production clients might bind to the launched domain controller instead of your production Active Directory, which can disrupt production workloads. When testing, we recommend that you do not launch Active Directory domain controllers into an environment that has connectivity to production, and that you remove any routes between your test VPC and your production network.
+Cutover is different. A cutover instance is intended to replace your production server, so connectivity to your existing environment is expected. When you cut over a domain controller, plan the timing carefully: coordinate the shutdown of the corresponding on-premises or source domain controller with the cutover so that clients transition to the migrated domain controller in a controlled way, rather than having two active domain controllers serve the same clients at once.
+If you plan to operate in a hybrid configuration, where your on-premises environment remains online alongside servers migrated to the cloud, plan network connectivity between the two environments carefully. Ensure that clients resolve and connect to the intended Active Directory domain controllers so that you avoid unexpected results, such as clients binding to the wrong domain controller.
+
 ## Required connectivity settings
 <a name="Network-Requirements"></a>
 

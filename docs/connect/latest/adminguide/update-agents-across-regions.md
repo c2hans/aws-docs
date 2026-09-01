@@ -37,7 +37,7 @@ When you call `UpdateTrafficDistribution` from the source AWS Region you can use
 ## Enable both AWS Regions during regular operations
 <a name="change-signin-weights"></a>
 
-The `UpdateTrafficDistribution` API includes a distribution called `SignInConfig`. It allows you to choose which backend sign-in servers are used to help the agent signing in to their instance group. Regardless of the `SignInConfig` set in your traffic distribution group, agents will be signed in to both instances in the traffic distribution group.
+The `UpdateTrafficDistribution` API includes a distribution called `SignInConfig`. With this distribution, you can choose which backend sign-in servers are used to help the agent signing in to their instance group. Regardless of the `SignInConfig` set in your traffic distribution group, agents will be signed in to both instances in the traffic distribution group.
 
 For the best experience, we recommend having both AWS Regions enabled during regular operations. To achieve this pass `true` to both `SignInConfig` distributions. If you need to shift your entire telephony traffic and agents across to one AWS Region, we recommend changing the `SignInConfig` to `false` for the Region you are shifting traffic away from.
 

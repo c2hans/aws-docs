@@ -17,7 +17,9 @@ The following data types are supported:
 +  [Category](API_Category.md)
 +  [Communication](API_Communication.md)
 +  [CommunicationTypeOptions](API_CommunicationTypeOptions.md)
++  [CompletedUpload](API_CompletedUpload.md)
 +  [DateInterval](API_DateInterval.md)
++  [DownloadUrl](API_DownloadUrl.md)
 +  [RecentCaseCommunications](API_RecentCaseCommunications.md)
 +  [Service](API_Service.md)
 +  [SeverityLevel](API_SeverityLevel.md)
@@ -32,6 +34,9 @@ The following data types are supported:
 +  [TrustedAdvisorCostOptimizingSummary](API_TrustedAdvisorCostOptimizingSummary.md)
 +  [TrustedAdvisorResourceDetail](API_TrustedAdvisorResourceDetail.md)
 +  [TrustedAdvisorResourcesSummary](API_TrustedAdvisorResourcesSummary.md)
++  [UploadProgress](API_UploadProgress.md)
++  [UploadRange](API_UploadRange.md)
++  [UploadUrl](API_UploadUrl.md)
 
 ## See also
 

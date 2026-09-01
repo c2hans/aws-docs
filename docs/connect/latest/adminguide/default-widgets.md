@@ -61,12 +61,12 @@ The widget automatically connects to your Customer Profiles domain and pulls inf
 ## Calculated attribute
 <a name="calculated-attribute"></a>
 
-The Calculated Attribute widget enables you to display a key metrics component using data from your customer profiles' calculated attributes.
+With the Calculated Attribute widget, you can display a key metrics component using data from your customer profiles' calculated attributes.
 
 ### Overview
 <a name="calculated-attribute-overview"></a>
 
-The Calculated Attribute widget enables you to display a key metrics component using data from your customer profiles' calculated attributes.
+With the Calculated Attribute widget, you can display a key metrics component using data from your customer profiles' calculated attributes.
 
 ### Component Features
 <a name="component-features"></a>

@@ -141,7 +141,7 @@ For a list of IAM permission to update your Connect Customer instance, see the r
 ## Edit a service-linked role for Connect Customer
 <a name="edit-slr"></a>
 
-Connect Customer does not allow you to edit the AWSServiceRoleForAmazonConnect prefixed service-linked role. After you create a service-linked role, you cannot change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
+You cannot edit the AWSServiceRoleForAmazonConnect prefixed service-linked role. After you create a service-linked role, you cannot change the name of the role because various entities might reference the role. However, you can edit the description of the role using IAM. For more information, see [Editing a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#edit-service-linked-role) in the *IAM User Guide*.
 
 ## Checking a service-linked role has permissions for Amazon Lex
 <a name="check-slr"></a>
@@ -158,7 +158,7 @@ You don't need to manually delete the AWSServiceRoleForAmazonConnect prefixed ro
 ## Supported Regions for Connect Customer service-linked roles
 <a name="slr-regions"></a>
 
-Connect Customer supports using service-linked roles in all of the regions where the service is available. For more information, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#connect_region).
+Connect Customer supports using service-linked roles in all of the Regions where the service is available. For more information, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#connect_region).
 
 ## See also
 

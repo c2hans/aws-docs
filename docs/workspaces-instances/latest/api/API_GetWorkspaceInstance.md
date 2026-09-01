@@ -7,87 +7,43 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_GetW
 
 Retrieves detailed information about a specific WorkSpace Instance.
 
-## Request Syntax
-<a name="API_GetWorkspaceInstance_RequestSyntax"></a>
-
-```
-{
-   "WorkspaceInstanceId": "{{string}}"
-}
-```
-
 ## Request Parameters
 <a name="API_GetWorkspaceInstance_RequestParameters"></a>
 
-For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
-
-The request accepts the following data in JSON format.
-
- ** [WorkspaceInstanceId](#API_GetWorkspaceInstance_RequestSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-request-WorkspaceInstanceId"></a>
+ ** WorkspaceInstanceId **
 Unique identifier of the WorkSpace Instance to retrieve.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
 
-## Response Syntax
-<a name="API_GetWorkspaceInstance_ResponseSyntax"></a>
-
-```
-{
-   "BillingConfiguration": {
-      "BillingMode": "string"
-   },
-   "EC2InstanceErrors": [
-      {
-         "EC2ErrorCode": "string",
-         "EC2ErrorMessage": "string",
-         "EC2ExceptionType": "string"
-      }
-   ],
-   "EC2ManagedInstance": {
-      "InstanceId": "string"
-   },
-   "ProvisionState": "string",
-   "WorkspaceInstanceErrors": [
-      {
-         "ErrorCode": "string",
-         "ErrorMessage": "string"
-      }
-   ],
-   "WorkspaceInstanceId": "string"
-}
-```
-
 ## Response Elements
 <a name="API_GetWorkspaceInstance_ResponseElements"></a>
 
-If the action is successful, the service sends back an HTTP 200 response.
+The following elements are returned by the service.
 
-The following data is returned in JSON format by the service.
-
- ** [BillingConfiguration](#API_GetWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-response-BillingConfiguration"></a>
+ ** BillingConfiguration **
 Returns the current billing configuration for the WorkSpace Instance, indicating the active billing mode.
 Type: [BillingConfiguration](API_BillingConfiguration.md) object
 
- ** [EC2InstanceErrors](#API_GetWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-response-EC2InstanceErrors"></a>
+ ** EC2InstanceErrors **
 Includes any underlying EC2 instance errors encountered.
 Type: Array of [EC2InstanceError](API_EC2InstanceError.md) objects
 
- ** [EC2ManagedInstance](#API_GetWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-response-EC2ManagedInstance"></a>
+ ** EC2ManagedInstance **
 Details of the associated EC2 managed instance.
 Type: [EC2ManagedInstance](API_EC2ManagedInstance.md) object
 
- ** [ProvisionState](#API_GetWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-response-ProvisionState"></a>
+ ** ProvisionState **
 Current provisioning state of the WorkSpaces Instance.
 Type: String
 Valid Values: `ALLOCATING | ALLOCATED | DEALLOCATING | DEALLOCATED | ERROR_ALLOCATING | ERROR_DEALLOCATING`
 
- ** [WorkspaceInstanceErrors](#API_GetWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-response-WorkspaceInstanceErrors"></a>
+ ** WorkspaceInstanceErrors **
 Captures any errors specific to the WorkSpace Instance lifecycle.
 Type: Array of [WorkspaceInstanceError](API_WorkspaceInstanceError.md) objects
 
- ** [WorkspaceInstanceId](#API_GetWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-GetWorkspaceInstance-response-WorkspaceInstanceId"></a>
+ ** WorkspaceInstanceId **
 Unique identifier of the retrieved WorkSpaces Instance.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
@@ -102,7 +58,7 @@ For information about the errors that are common to all actions, see [Common Err
 Indicates insufficient permissions to perform the requested action.
  ** Message **
 Detailed explanation of the access denial.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Indicates an unexpected server-side error occurred.
@@ -120,7 +76,7 @@ Details about the missing resource.
 Identifier of the resource that was not found.
  ** ResourceType **
 Type of the resource that was not found.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 Indicates the request rate has exceeded limits.
@@ -132,7 +88,7 @@ Specific code for the throttling quota.
 Recommended wait time before retrying the request.
  ** ServiceCode **
 Code identifying the service experiencing throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 Indicates invalid input parameters in the request.

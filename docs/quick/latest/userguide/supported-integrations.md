@@ -17,6 +17,7 @@ Amazon Quick supports integrations with various third-party applications and ser
 | Asana | ✓ | — |
 | Atlassian Confluence Cloud | ✓ | ✓ |
 | Atlassian Jira Cloud | ✓ | — |
+| AWS Agent Registry | ✓ | — |
 | BambooHR | ✓ | — |
 | Box | ✓ | — |
 | Canva | ✓ | — |

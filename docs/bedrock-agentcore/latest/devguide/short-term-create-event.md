@@ -23,6 +23,9 @@ This operation is useful for:
 
 For example code, see [Scenario: A customer support AI agent using AgentCore Memory](memory-customer-scenario.md).
 
+**Note**
+If you want to feed content into long-term memory without retaining it as a retrievable short-term event, use the [IngestData](long-term-ingest-data.md) operation instead.
+
 ## Event payload types
 <a name="event-payload-types"></a>
 

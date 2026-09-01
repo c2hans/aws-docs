@@ -22,7 +22,7 @@ A centralized contact center operation with shared infrastructure and unified cu
 ### Cons
 <a name="single-instance-cons"></a>
 + **Data/tenant isolation design** – Data isolation across business units, brands, or regions must be designed.
-+ **Single Geographic Location** – Latency can be high in regions far away from the instance.
++ **Single Geographic Location** – Latency can be high in Regions far away from the instance.
 + **Service Quota Management** – Service quota management can be more challenging due to difficulty in anticipating usage and growth across multiple business units.
 
 ## Multiple instances of Connect Customer
@@ -51,7 +51,7 @@ Enterprises with geographic, regulatory, or security requirements infeasible to 
 ## Summary
 <a name="single-multiple-instances-summary"></a>
 
-The decision of single- vs. multiple-instance architecture is nuanced, and highly dependent on the nature of the customer's requirements. Considering the scalability, customizability, programmability, and security of Connect Customer, we generally recommend single-instance Connect Customer architectures (including a single Connect Customer Global Resiliency pair) in the absence of compelling requirements requiring multiple regions.
+The decision of single-instance compared to multiple-instance architecture is nuanced, and highly dependent on the nature of the customer's requirements. Considering the scalability, customizability, programmability, and security of Connect Customer, we generally recommend single-instance Connect Customer architectures (including a single Connect Customer Global Resiliency pair) in the absence of compelling requirements requiring multiple Regions.
 
 ## See also
 

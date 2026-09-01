@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 # Overlay an image
 <a name="overlay-an-image"></a>
 
-This solution can overlay images on top of others, for cases like watermarking copyrighted image. To overlay an image, add the **overlayWith** property to the **edits** property in the [image request](use-the-solution-with-a-frontend-application.md).
+This solution can overlay images on top of others, for cases like watermarking a copyrighted image. To overlay an image, add the **overlayWith** property to the **edits** property in the [image request](use-the-solution-with-a-frontend-application.md).
 
  **overlayWith(optional, object)** - Overlays an image on top of the original. For example:
 
@@ -35,8 +35,8 @@ The following **overlayWith** variables are shown in the previous code sample:
 +  **overlayWith.alpha (optional, number)** - Specifies the opacity that should be used for the overlay image. This can be set from 0 (fully opaque) and 100 (fully transparent).
 +  **overlayWith.wRatio (required, number)** - Specifies the percentage of the width of underlying image that the overlay image should be sized to. This can be set from 0 and 100, where 100 indicates that the overlay image has the same width as the underlying image.
 +  **overlayWith.hRatio (required, number)** - Specifies the percentage of the height of underlying image that the overlay image should be sized to. This can be set from 0 and 100, where 100 indicates that the overlay image has the same height as the underlying image.
-+  **overlayWith.options.top (optional, number \| string)** - Speciﬁes the distance in pixels from the top edge of the underlying photo that the overlay should be placed. A number formatted as a string with a `p` at the end is treated as a percentage.
-+  **overlayWith.options.left (optional, number \| string)** - Speciﬁes the distance in pixels from the left edge of the underlying photo that the overlay should be placed. A number formatted as a string with a `p` at the end is treated as a percentage.
++  **overlayWith.options.top (optional, number \| string)** - Specifies the distance in pixels from the top edge of the underlying photo that the overlay should be placed. A number formatted as a string with a `p` at the end is treated as a percentage.
++  **overlayWith.options.left (optional, number \| string)** - Specifies the distance in pixels from the left edge of the underlying photo that the overlay should be placed. A number formatted as a string with a `p` at the end is treated as a percentage.
 
 **Note**
  **overlayWith** is not fully supported for animated (such as, GIF) images. Instead, only the first frame will receive an overlay.

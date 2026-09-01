@@ -38,7 +38,7 @@ The following sections describe the two primary connectivity options for using t
 ## Option 1 (recommended): Replace Amazon EC2 and CloudFront IP range requirements with a domain allowlist
 <a name="option1"></a>
 
-This first option lets you significantly reduce your blast radius.
+With this first option, you can significantly reduce your blast radius.
 
 We recommend trying Option 1 and testing it with more than 200 calls. Test for softphone errors, dropped calls, and conference/transfer functionality. If your error rate is greater than 2 percent, there might be an issue with proxy resolution. If that's the case, consider using Option 2.
 
@@ -231,7 +231,7 @@ When rerouting audio to an existing device, consider the location of the device 
 ## Using Direct Connect
 <a name="using-directconnect"></a>
 
-Contact Control Panel (CCP) network connectivity issues are most often rooted in your route to AWS using private WAN/LAN, ISP, or both. While Direct Connect does not solve issues specific to private LAN/WAN traversal to your edge router, it can help solve for latency and connectivity issues between your edge router and AWS resources. Direct Connect provides a durable, consistent connection rather than relying on your ISP to dynamically route requests to AWS resources. It also allows you to configure your edge router to redirect AWS traffic across dedicated fiber rather than traversing the public WAN.
+Contact Control Panel (CCP) network connectivity issues are most often rooted in your route to AWS using private WAN/LAN, ISP, or both. While Direct Connect does not solve issues specific to private LAN/WAN traversal to your edge router, it can help solve for latency and connectivity issues between your edge router and AWS resources. Direct Connect provides a durable, consistent connection rather than relying on your ISP to dynamically route requests to AWS resources. You can also use it to configure your edge router to redirect AWS traffic across dedicated fiber rather than traversing the public WAN.
 
 ## See also
 

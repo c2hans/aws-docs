@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[InferenceComponentName](#cfn-sagemaker-inferencecomponent-inferencecomponentname)" : {{String}},
       "[RuntimeConfig](#cfn-sagemaker-inferencecomponent-runtimeconfig)" : {{InferenceComponentRuntimeConfig}},
       "[Specification](#cfn-sagemaker-inferencecomponent-specification)" : {{InferenceComponentSpecification}},
+      "[Specifications](#cfn-sagemaker-inferencecomponent-specifications)" : {{[ InferenceComponentSpecificationForInstanceType, ... ]}},
       "[Tags](#cfn-sagemaker-inferencecomponent-tags)" : {{[ Tag, ... ]}},
       "[VariantName](#cfn-sagemaker-inferencecomponent-variantname)" : {{String}}
     }
@@ -48,6 +49,8 @@ Properties:
     InferenceComponentRuntimeConfig}}
   [Specification](#cfn-sagemaker-inferencecomponent-specification): {{
     InferenceComponentSpecification}}
+  [Specifications](#cfn-sagemaker-inferencecomponent-specifications): {{
+    - InferenceComponentSpecificationForInstanceType}}
   [Tags](#cfn-sagemaker-inferencecomponent-tags): {{
     - Tag}}
   [VariantName](#cfn-sagemaker-inferencecomponent-variantname): {{String}}
@@ -94,8 +97,16 @@ Runtime settings for the inference component, including the number of copies to 
 
 `Specification`  <a name="cfn-sagemaker-inferencecomponent-specification"></a>
 The specification for the inference component, including the model and container configuration.
-*Required*: Yes
+*Required*: No
 *Type*: [InferenceComponentSpecification](aws-properties-sagemaker-inferencecomponent-inferencecomponentspecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Specifications`  <a name="cfn-sagemaker-inferencecomponent-specifications"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [InferenceComponentSpecificationForInstanceType](aws-properties-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype.md)
+*Minimum*: `2`
+*Maximum*: `5`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-sagemaker-inferencecomponent-tags"></a>
@@ -153,6 +164,9 @@ The number of runtime copies of the model container that are currently deployed.
 
 `RuntimeConfig.DesiredCopyCount`  <a name="RuntimeConfig.DesiredCopyCount-fn::getatt"></a>
 The number of runtime copies of the model container that you requested to deploy with the inference component.
+
+`RuntimeConfig.PlacementStatus`  <a name="RuntimeConfig.PlacementStatus-fn::getatt"></a>
+The placement status of the inference component across instance types. Shows how the inference component copies are distributed across instance types.
 
 ## See also
 

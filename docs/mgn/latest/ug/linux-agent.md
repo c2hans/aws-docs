@@ -94,8 +94,25 @@ This flag may only be used when adding new source servers to MGN. You cannot use
 
 1. The installer prompts you to enter your **AWS Region Name**, the **AWS Access Key ID**, the **AWS Secret Access Key**, and the **AWS Session Token** that you previously generated. Enter the complete AWS Region name (for example, eu-central-1) and the full credentials.
 ![Terminal window showing AWS Replication Agent installation with region and credential inputs.](http://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent2.png)
+
+   If you want to install the Agent without answering the interactive prompts, you can pass your credentials to the installer through environment variables instead. We recommend that you use temporary credentials from AWS Security Token Service (AWS STS). First, set the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_SESSION_TOKEN` environment variables. Then, run the installer with the `sudo -E` command (to preserve the environment variables) and the `--no-prompt` option. For example:
+
+   ```
+   export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+   export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+   export AWS_SESSION_TOKEN=AQoDYXdzEJr//////////wEa8AMDSomethingEXAMPLE
+   chmod +x aws-replication-installer-init
+   sudo -E ./aws-replication-installer-init --region us-east-1 --no-prompt
+   ```
 **Note**
-You can also enter these values as part of the installation script command parameters. If you do not enter these parameters as part of the installation script, you are prompted to enter them one by one as described above. (for example: `sudo chmod +x aws-replication-installer-init; sudo ./aws-replication-installer-init --region regionname --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`).
+You can also pass the AWS Access Key ID and AWS Secret Access Key as command-line parameters. In the following example, replace `<region>` with the AWS Region into which you are replicating:
+
+     ```
+     sudo chmod +x aws-replication-installer-init
+     sudo ./aws-replication-installer-init --region <region> --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+     ```
+Credentials that you pass as command-line parameters are visible to other users on the source server through the process list (for example, through the `ps` command). To avoid exposing your credentials, use the environment variable method described in the previous step. If you do pass credentials as command-line parameters, use temporary credentials from AWS STS and rotate them after installation.
+If you do not enter these parameters as part of the installation script, you are prompted to enter them one by one as described in the previous step.
 The AWS Access Key ID and AWS Secret Access Key values are hidden when entered into the installer.
 
 1. After you enter your credentials, the installer identifies volumes for replication. The installer displays the identified disks and prompts you to choose the disks you want to replicate.

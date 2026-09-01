@@ -28,12 +28,14 @@ The request accepts the following data in JSON format.
 The current name of the application you want to change.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** [newApplicationName](#API_UpdateApplication_RequestSyntax) **   <a name="CodeDeploy-UpdateApplication-request-newApplicationName"></a>
 The new name to give the application.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
 ## Response Elements

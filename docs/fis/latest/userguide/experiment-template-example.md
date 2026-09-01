@@ -375,7 +375,7 @@ The following permission allows you to run the `aws:kinesis:stream-provisioned-t
         {
             "Effect": "Allow",
             "Action": "kinesis:InjectApiError",
-            "Resource": "*"
+            "Resource": "*",
             "Condition": {
                 "ForAllValues:StringEquals": {
                     "kinesis:FisActionId": [
@@ -384,7 +384,7 @@ The following permission allows you to run the `aws:kinesis:stream-provisioned-t
                     ],
                     "kinesis:FisTargetArns": [
                         "arn:aws:kinesis:us-east-1:111122223333:stream/stream-name"
-                    ],
+                    ]
                 },
                 "NumericEquals": {
                     "kinesis:FisInjectPercentage": "50"
@@ -393,7 +393,7 @@ The following permission allows you to run the `aws:kinesis:stream-provisioned-t
         },
         {
              "Action": [
-                   "kinesis:DescribeStreamSummary",
+                   "kinesis:DescribeStreamSummary"
               ],
              "Resource": "*",
              "Effect": "Allow"

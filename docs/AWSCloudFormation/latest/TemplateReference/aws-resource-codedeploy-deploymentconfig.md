@@ -61,6 +61,7 @@ The destination platform type for the deployment (`Lambda`, `Server`, or `ECS`).
  If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
 *Required*: No
 *Type*: String
+*Pattern*: `[A-Za-z0-9+=,.@_-]*`
 *Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

@@ -15,6 +15,8 @@ Think of modules as specialized building blocks. For example:
 + If you need to query data using Amazon Athena, there’s a module that sets up Athena workgroups with resource controls, configures query result locations, connects with your datalake and establishes necessary IAM permissions for query execution
 + If you want to add AWS Lake Formation settings to your tables, there’s a module that configures Lake Formation permissions and security settings, sets up database and table-level access controls, etc.
 
+For the complete list of available modules and starter kits, along with their configuration options, see the [MDAA documentation](https://aws.github.io/modern-data-architecture-accelerator/index.html).
+
 ## How Modules Work Together
 <a name="how-modules-work-together"></a>
 

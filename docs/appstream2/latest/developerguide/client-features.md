@@ -9,7 +9,7 @@ The following table compares the features that are supported by the different ac
 
 | Feature | Browser-Based Access | Client-Based Access for Windows | Client-Based Access for macOS | Notes |
 | --- | --- | --- | --- | --- |
-| Enterprise Deployement Tool | ✗ | ✓ | ✗ | For more information, see [Tutorial: Install the Amazon WorkSpaces Applications Client And Customize the Client Experience for Your Users](install-client-configure-settings.md). |
+| Enterprise Deployement Tool | ✗ | ✓ | ✗ | For more information, see [Tutorial: Install the Amazon WorkSpaces Applications Client and Customize the Client Experience for Your Users](install-client-configure-settings.md). |
 | HIPAA/PCI compliance | ✓ | ✓ | ✓ | For more information, see [Compliance](https://aws.amazon.com/appstream2/faqs/#Compliance). |
 | Active Directory authentication | ✓ | ✓ | ✓ | For more information, see [Using Active Directory with WorkSpaces Applications](active-directory.md). |
 | MFA (multi-factor authentication) | ✓ | ✓ | ✓ | For WorkSpaces Applications, MFA is supported via SAML 2.0. |

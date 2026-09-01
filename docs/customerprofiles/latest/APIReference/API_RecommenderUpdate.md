@@ -30,6 +30,13 @@ The updated configuration settings applied to the recommender during this update
 Type: [RecommenderConfig](API_connect-customer-profiles_RecommenderConfig.md) object
 Required: No
 
+ ** RecommenderVersionName **   <a name="connect-Type-connect-customer-profiles_RecommenderUpdate-RecommenderVersionName"></a>
+The name of the recommender version associated with this update operation.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[a-zA-Z0-9_-]+/\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}Z`
+Required: No
+
  ** Status **   <a name="connect-Type-connect-customer-profiles_RecommenderUpdate-Status"></a>
 The current status of the recommender update operation.
 Type: String

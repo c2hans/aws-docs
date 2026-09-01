@@ -134,7 +134,7 @@ Amazon RDS supports the following new features for your DB instances running Mar
   + Logging `ALTER` in two phases to decrease replication latency. The `binlog_alter_two_phase` parameter is disabled by default, but can be enabled through parameter groups.
   + Logging `explicit_defaults_for_timestamp`.
   + No longer logging `INCIDENT_EVENT` if the transaction can be safely rolled back.
-+ **Replication** **improvement**s – MariaDB version 10.11 DB instances use GTID replication by default if the master supports it. Also, `Seconds_Behind_Master` is more precise.
++ **Replication** **improvement**s – MariaDB version 10.11 DB instances use GTID replication by default if the source supports it. Also, `Seconds_Behind_Master` is more precise.
 + **Clients** – You can use new command-line options for `mysqlbinglog` and `mariadb-dump`. You can use `mariadb-dump` to dump and restore historical data.
 + **System versioning **– You can modify history. MariaDB automatically creates new partitions.
 + **Atomic DDL** – `CREATE OR REPLACE` is now atomic. Either the statement succeeds or it's completely reversed.

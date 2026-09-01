@@ -11,18 +11,12 @@ AWS Transform MGN allows you to perform agentless snapshot replication from your
 
 **Topics**
 + [Agentless replication overview](installing-vcenter-overview-mgn.md)
-+ [Prerequisites](#installing-vcenter-prereques-mgn)
 + [VMware limitations](installing-vcenter-reques-mgn.md)
 + [Generating vCenter Client IAM credentials](vcenter-credentials-mgn.md)
 + [Installing the MGN vCenter Client](installing-vcenter-appliance-mgn.md)
 + [Replicating servers from vCenter to AWS](replicating-vcenter-aws-mgn.md)
 + [Updating the vCenter or AWS Credentials](updating-vcenter-or-aws-credentials.md)
 + [Differentiating agentless and agent-based servers](differences-vcenter-aws.md)
-
-## Prerequisites
-<a name="installing-vcenter-prereques-mgn"></a>
-
-1. Ensure that you have initialized AWS Transform MGN.
 
 ## See also
 

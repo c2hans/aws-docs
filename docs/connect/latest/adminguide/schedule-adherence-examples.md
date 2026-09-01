@@ -43,7 +43,7 @@ Use Case 1: Agent Group 1 has been set up to use the shift profile shown in the 
 </tbody>
 </table>
 
-Use Case 2: Agent Group 2 has been setup to use the shift profile in the previous image, and the administrator has setup a shift profile override as shown in the following table.
+Use Case 2: Agent Group 2 has been set up to use the shift profile in the previous image. The administrator has set up a shift profile override as shown in the following table.
 
 **Agent Group 2, Shift profile is overridden**
 <a name="agent-group-2-override"></a>

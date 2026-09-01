@@ -12,7 +12,7 @@ For notification about these updates, you can subscribe to the Amazon WorkSpaces
 
 | Change | Description | Date |
 | --- |--- |--- |
-| [Added FAQ page for supported protocols](#doc-history) | Added a new FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/appstream2/latest/dg/cbor-faq.html). | July 23, 2026 |
+| [Added FAQ page for supported protocols](#doc-history) | Added an FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/appstream2/latest/dg/cbor-faq.html). | July 23, 2026 |
 | [New agent access guidance](https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html) | WorkSpaces Applications agent access public preview | May 1, 2026 |
 | [Updated AmazonAppStreamServiceAccess](https://docs.aws.amazon.com/appstream2/latest/developerguide/managed-policies-required-to-access-appstream-resources.html) | Updated the AmazonAppStreamServiceAccess managed policy | November 17, 2025 |
 | [Updated AmazonAppStreamReadOnlyAccess](https://docs.aws.amazon.com/appstream2/latest/developerguide/managed-policies-required-to-access-appstream-resources.html) | Updated the AmazonAppStreamReadOnlyAccess managed policy | October 22, 2025 |

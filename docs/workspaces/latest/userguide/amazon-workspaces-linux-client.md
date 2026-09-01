@@ -36,15 +36,19 @@ The WorkSpaces Linux client version 2023.0.4395 for Ubuntu 22.04 is only availab
 
 Download and install the WorkSpaces Linux client application from [Amazon WorkSpaces Client Downloads](https://clients.amazonworkspaces.com/). Detailed installation instructions are included on the Linux client page on the Client Downloads site.
 
-### 2023.x clients
+### 2023.x and later clients
 <a name="w2aab9c20b9c13b1"></a>
 
 To launch the Linux client from the command line, use:
 
-`workspacesclient`
+`/usr/bin/workspacesclient`
+
+To enable advanced logging, use:
+
+`/usr/bin/workspacesclient --l3`
 
 **Note**
-When running a new client application, you will be prompted for your registration code, which is can be found in your welcome email. For existing customers, you can find the registration code under `/home/UserName/.local/share/Amazon Web Services/Amazon WorkSpaces/RegisterationList.json`.
+When running a new client application, you will be prompted for your registration code, which can be found in your welcome email. For existing customers, you can find the registration code under `/home/UserName/.local/share/Amazon Web Services/Amazon WorkSpaces/RegisterationList.json`.
 
 ### 3.x and 4.x clients
 <a name="w2aab9c20b9c13b3"></a>
@@ -52,6 +56,10 @@ When running a new client application, you will be prompted for your registratio
 To launch the Linux client from the command line, use:
 
 `/opt/workspacesclient/workspacesclient`
+
+To enable advanced logging, use:
+
+`/opt/workspacesclient/workspacesclient -l3`
 
 ## Connecting to your WorkSpace
 <a name="linux_connecting"></a>

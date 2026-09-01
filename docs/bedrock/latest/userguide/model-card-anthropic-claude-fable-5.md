@@ -67,7 +67,7 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Prompt caching](prompt-caching.html)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Count tokens](count-tokens.html)  |  + [Intelligent prompt routing](prompt-routing.html)  |
+|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Count tokens](count-tokens.html)  |  + [Intelligent prompt routing](prompt-routing.html)  |
 
 ***Bedrock Features***
 
@@ -75,13 +75,13 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Prompt caching](prompt-caching.html)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Count tokens](count-tokens.html)  |  + [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
+|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Count tokens](count-tokens.html)  |  + [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
 
-***Prompt caching using `bedrock-runtime` and `bedrock-mantle` endpoints***
+***Implicit and Explicit Prompt Caching using `bedrock-runtime` and `bedrock-mantle` endpoints***
 
 For more information, see [Prompt caching for faster model inference](prompt-caching.html).
 
-| **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoint** |
+| **Explicit Prompt Caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoint** |
 | --- | --- | --- | --- | --- |
 | Yes | 512 | 4 | 5 minutes, 1 hour | system, messages, and tools |
 
@@ -174,7 +174,7 @@ Availability differs by endpoint.
 ## Data Retention
 <a name="model-card-anthropic-claude-fable-5-data-retention"></a>
 
-To use this model, you must opt in to provider data sharing by setting your data retention mode to `provider_data_share` via the Data Retention API. There is no console UI for this setting at launch. For more information, see [Amazon Bedrock abuse detection](abuse-detection.html).
+To use this model, you must opt in to AWS review by setting your data retention mode to `aws_review` via the Data Retention API. For more information, see [Amazon Bedrock abuse detection](abuse-detection.html).
 
 ## Quotas and Limits
 <a name="model-card-anthropic-claude-fable-5-quotas"></a>

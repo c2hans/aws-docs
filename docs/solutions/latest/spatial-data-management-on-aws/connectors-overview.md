@@ -70,6 +70,8 @@ A publisher can be a single operation (one REST call, one S3 write, one EventBri
 
 Each step type is a reusable primitive. The same `rest` step type that powers a simple single-step publisher also participates in multi-step compositions alongside `s3PutObject`, `lambdaInvoke`, `eventBridgePutEvents`, `deadlineJob`, and `wait` steps.
 
+Publisher step configuration and field mappings support `${variable}` substitution against resource metadata, invocation parameters, and built-in invocation fields—see [Invocation built-in variables](connector-configuration.md#invocation-variables) in [Connector configuration](connector-configuration.md).
+
 #### Derivers
 <a name="_derivers"></a>
 

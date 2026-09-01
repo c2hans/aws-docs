@@ -11,7 +11,7 @@ Following are the possible category outcomes when a rule or category is evaluate
 
 1. **Successfully matched and applied to the contact**. When categories are displayed on the **Contact details** page, it indicates they were successfully matched and applied to the contact.
 
-1. **Successfully evaluated and but they don't apply to the contact**. When categories are absent from the **Contact details** page, it indicates they don't apply to the contact but were successfully evaluated by conversational analytics rules.
+1. **Successfully evaluated but they don't apply to the contact**. When categories are absent from the **Contact details** page, it indicates they don't apply to the contact but were successfully evaluated by conversational analytics rules.
 
 1. **The contact analysis was completed but a specific category was not evaluated**. When a category fails to be evaluated, it doesn't mean the category doesn't apply to the contact (based on its criteria), but rather that conversational analytics completed the contact analysis without evaluating this specific category.
 

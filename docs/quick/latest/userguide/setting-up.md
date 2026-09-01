@@ -17,7 +17,7 @@ If your IAM Identity Center instance is replicated to multiple AWS Regions, you 
 
 For a comparison of features available with each account type, see [Pricing and availability](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html#pricing).
 
-For more information on administering your account after setup, see [Administering Amazon Quick (Free/Plus)](https://docs.aws.amazon.com/quicksuite/latest/userguide/standalone-admin-guide.html) or [Administering Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/qsysadmin.html) for accounts provisioned through the AWS Management Console.
+For more information on administering your account after setup, see [Administering Amazon Quick (Free/Plus/Max)](https://docs.aws.amazon.com/quicksuite/latest/userguide/standalone-admin-guide.html) or [Administering Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/qsysadmin.html) for accounts provisioned through the AWS Management Console.
 
 **Topics**
 + [Complete initial configuration tasks](#setting-up-create-iam-user)
@@ -29,7 +29,7 @@ For more information on administering your account after setup, see [Administeri
 <a name="setting-up-create-iam-user"></a>
 
 **Note**
-The following configuration tasks apply to AWS Console accounts only. If you are signing up for Free/Plus with email at [aws.com/quick](https://aws.com/quick), these steps are handled automatically. See [Signing up at aws.com/quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/standalone-signup.html) instead.
+The following configuration tasks apply to AWS Console accounts only. If you are signing up for Free/Plus/Max with email at [aws.com/quick](https://aws.com/quick), these steps are handled automatically. See [Signing up at aws.com/quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/standalone-signup.html) instead.
 
  To use Amazon Quick you must first complete the following tasks:
 

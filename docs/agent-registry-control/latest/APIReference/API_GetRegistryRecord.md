@@ -45,6 +45,8 @@ Content-type: application/json
 
 {
    "createdAt": "string",
+   "createdBy": "string",
+   "createdByAutoDetection": boolean,
    "description": "string",
    "descriptors": {
       "a2aAgentCard": {
@@ -83,8 +85,34 @@ Content-type: application/json
          "data": "string",
          "dataSchemaVersion": "string"
       },
+      "agui": {
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "string"
+                  }
+               ],
+               "url": "string"
+            }
+         }
+      },
       "custom": {
          "data": "string"
+      },
+      "http": {
+         "source": {
+            "fromUrl": {
+               "credentialProviderConfigurations": [
+                  {
+                     "credentialProvider": { ... },
+                     "credentialProviderType": "string"
+                  }
+               ],
+               "url": "string"
+            }
+         }
       },
       "mcpServer": {
          "additionalData": {
@@ -110,6 +138,14 @@ Content-type: application/json
    },
    "displayName": "string",
    "name": "string",
+   "provenance": [
+      {
+         "relation": "string",
+         "sourceDetails": { ... },
+         "sourceId": "string",
+         "sourceType": "string"
+      }
+   ],
    "recordArn": "string",
    "recordId": "string",
    "recordType": "string",
@@ -132,6 +168,16 @@ The following data is returned in JSON format by the service.
 The timestamp when the registry record was created.
 Type: Timestamp
 
+ ** [createdBy](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-createdBy"></a>
+The ID of the AWS account that created the registry record.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `[0-9]{12}`
+
+ ** [createdByAutoDetection](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-createdByAutoDetection"></a>
+Specifies whether the registry record was created by auto-detection. `true` indicates the record was automatically created by the service based on the registry's auto-detection configuration; `false` indicates the record was created through a control-plane API call.
+Type: Boolean
+
  ** [description](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-description"></a>
 A description of the registry record.
 Type: String
@@ -152,6 +198,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9_\-\.\/]*`
 
+ ** [provenance](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-provenance"></a>
+The provenance lineage entries for the registry record. Populated for records created by auto-detection; each entry identifies the upstream source that the record was detected from.
+Type: Array of [Provenance](API_Provenance.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+
  ** [recordArn](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-recordArn"></a>
 The Amazon Resource Name (ARN) of the registry record.
 Type: String
@@ -167,7 +218,7 @@ Pattern: `[a-zA-Z0-9]{12}`
  ** [recordType](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-recordType"></a>
 The type of the registry record, such as MCP, AGENT, SKILL, or CUSTOM.
 Type: String
-Valid Values: `MCP | AGENT | CUSTOM | SKILL`
+Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
 
  ** [recordVersion](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-recordVersion"></a>
 The version identifier of the registry record.

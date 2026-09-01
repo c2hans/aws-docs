@@ -15,12 +15,12 @@ Consider the following areas to prepare for a Connect Customer workload.
 ### AWS account
 <a name="awsaccount"></a>
 
-With AWS Organizations, you can set up multiple AWS accounts for each level of your development, staging, and quality assurance environments. This allows you to centrally govern your environment as you grow and scale your workloads on AWS. Whether you are a growing startup or a large enterprise, Organizations helps you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts. This is the starting point for consuming AWS services along with a cloud adoption framework.
+With AWS Organizations, you can set up multiple AWS accounts for each level of your development, staging, and quality assurance environments. This helps you centrally govern your environment as you grow and scale your workloads on AWS. Whether you are a growing startup or a large enterprise, Organizations helps you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts. This is the starting point for consuming AWS services along with a cloud adoption framework.
 
 ### Region selection
 <a name="regionselection"></a>
 
-Connect Customer Region selection is contingent upon data governance requirements, use case, services available in each Region, telephony costs in each region, and latency in relation to your agents, contacts, and external transfer endpoint geography.
+Connect Customer Region selection is contingent upon data governance requirements, use case, services available in each Region, telephony costs in each Region, and latency in relation to your agents, contacts, and external transfer endpoint geography.
 
 ### Telephony
 <a name="telephony-bp"></a>
@@ -79,7 +79,7 @@ See [Monitoring your Connect Customer instance using CloudWatch](monitoring-clou
 ### Contact attributes
 <a name="contactattributes-bp"></a>
 
-Connect Customer allows you to dynamically set and reference contact attributes within flows to create dynamic and personalized experiences for your contacts, create powerful self-service applications, data-driven IVRs, integrations with other AWS services, simplify phone number management, and allows for custom real-time and historical reporting and analytics. The following are Best practices and considerations you can follow to reduce complexity, prevent data loss, and ensure a consistent quality of experience for your contacts.
+With Connect Customer, you can dynamically set and reference contact attributes within flows to create dynamic and personalized experiences for your contacts, create powerful self-service applications, data-driven IVRs, integrations with other AWS services, simplify phone number management, and allows for custom real-time and historical reporting and analytics. The following are Best practices and considerations you can follow to reduce complexity, prevent data loss, and ensure a consistent quality of experience for your contacts.
 
 Note the following considerations:
 + Data size – To prevent truncation, the size limitation for contact attributes you can set in a Set contact attributes block varies depending on the charset, encoding, and language used. While this is generally enough data to play a short story for a contact, it is possible to exceed this limit, truncating any attributes set over the 32KB.
@@ -114,7 +114,7 @@ Rather than having separate AWS Lambda functions, each with their own polling re
 
 ![Endpoints pointing to DynamoDB instead of retrieving data from the API.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/amazonconnectapis2-oe.png)
 
-This architecture allows you to change polling intervals and add endpoints, as needed, without worrying about exceeding service quotas, giving you the ability to scale to however many concurrent connections your database solution supports. You can use this same concept with querying any real-time data feeds from Connect Customer. For situations where you need to perform an API action, like an Outbound API call, you can use this same concept in combination with Amazon Simple Queue Service to queue API requests Using AWS Lambda with SQS.
+With this architecture, you can change polling intervals and add endpoints, as needed, without worrying about exceeding service quotas, giving you the ability to scale to however many concurrent connections your database solution supports. You can use this same concept with querying any real-time data feeds from Connect Customer. For situations where you need to perform an API action, like an Outbound API call, you can use this same concept in combination with Amazon Simple Queue Service to queue API requests Using AWS Lambda with SQS.
 
 #### Exponential back off and retry strategies
 <a name="retrystrategies"></a>

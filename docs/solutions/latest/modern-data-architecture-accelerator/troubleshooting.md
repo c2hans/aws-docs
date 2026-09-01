@@ -38,7 +38,7 @@ Known issue resolution provides instructions to mitigate known errors. If these 
 
  **Resolution:** User Profile Name Issues:
 + Modify the user profile name in datascience-team.yaml
-+ Please change the <my-own-data-science-profile-name> to something custom that you can identify
++ Change the <my-own-data-science-profile-name> to something custom that you can identify
 
 ```
      userProfiles:
@@ -72,7 +72,7 @@ Error: ENOENT: no such file or directory
 
 1. Create a file named datascience-team.yaml inside the folder
 
-1. Please add the sample configuration values as below:
+1. Add the sample configuration values as below:
 
 ```
 # List of roles which will be provided admin access to the team resources
@@ -128,14 +128,14 @@ at /Users/xxxx/Documents/MDAA/packages/utilities/mdaa-config/lib/config.ts:165:3
 
 1. Go to `mdaa.yaml` file
 
-1. Please check if you have vpc\_id configured in the file
+1. Check if you have vpc\_id configured in the file
 
 1. The below values should go after organization in the config file.
 
-1. Please run the deployment again after the values are changed
+1. Run the deployment again after the values are changed
 
 ```
-# TODO: Set an appropriate, unique organization name
+# Set a unique organization name, for example: acme-datalake
 # Failure to do so may result in global naming conflicts.
 organization: trial-datalake-lk
 context:
@@ -153,9 +153,9 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 ```
 
  **Resolution:**
-+ Ensure Docker is installed and running
-+ Verify Docker daemon is active before deployment
-+ Check Docker configuration settings
++ Install Docker on the machine running the deployment, and start the Docker daemon
++ Run `docker info` to confirm the daemon is reachable. If it reports a permission error on `/var/run/docker.sock`, grant your user access to that socket
++ Leave the daemon running for the whole deployment. Container image assets are built locally, so the deploy runs `docker build` on your machine
 
 ### Cross-Account Lake Formation Region Issues
 <a name="cross-account-lake-formation-region-issues"></a>
@@ -166,11 +166,11 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 
  **Resolution:**
 
-1. Ensure Lake Formation settings are configured in the same region across accounts
+1. Deploy the Lake Formation Settings module to the same region in every participating account
 
-1. Verify resource links are created in the correct region
+1. Create the resource links in the region that holds the shared Glue catalog resources
 
-1. Check that IAM roles have permissions for the target region
+1. Grant the roles used for cross-account access the Lake Formation permissions they need in the target region
 
 1. Update Lake Formation resource shares to include the correct region
 
@@ -194,7 +194,7 @@ DuplicateAccountLevelModulesException {
 
 1. Review your `mdaa.yaml` to identify which environments share the same AWS account
 
-1. Ensure account-level modules only appear once per account/region:
+1. Confirm account-level modules only appear once per account/region:
    + Define the module in only ONE environment per account, OR
    + Use different AWS accounts for different domains/environments
 
@@ -213,7 +213,7 @@ The `-e` (environment) and `-d` (domain) CLI flags do NOT bypass this validation
 
  **Resolution:**
 
-1. Ensure Bedrock Knowledge Base and OpenSearch Serverless are in the same VPC
+1. Verify Bedrock Knowledge Base and OpenSearch Serverless are in the same VPC
 
 1. If separate VPCs are required, configure VPC peering:
    + Create VPC peering connection between the VPCs
@@ -229,7 +229,7 @@ The `-e` (environment) and `-d` (domain) CLI flags do NOT bypass this validation
 + Use private subnets for both services
 + Configure security groups to allow communication between services
 
- **Additional Notes:** \* Ensure you’re using the latest version for automatic resolution
+ **Additional Notes:** \* Verify you’re using the latest version for automatic resolution
 
 ### Lambda `python3.13` runtime rejected after upgrade to 1.7.0
 <a name="lambda-python3-13-runtime-rejected-after-upgrade-to-1-7-0"></a>
@@ -284,6 +284,87 @@ The `-e` (environment) and `-d` (domain) CLI flags do NOT bypass this validation
  **Resolution:**
 + This is fixed in MDAA 1.7.0. Upgrade to 1.7.0 and redeploy.
 + Note: changing immutable properties (`AuthMode`, `DomainName`, `KmsKeyId`, `VpcId`) still requires manual domain recreation.
+
+### Terraform configuration resolves to a different value after upgrade to 1.8.0
+<a name="terraform-configuration-resolves-to-a-different-value-after-upgrade-to-1-8-0"></a>
+
+ **Issue:** After upgrading to MDAA 1.8.0, a Terraform-backed deployment targets different state than it did on 1.7.0, or a `terraform.override.*` setting appears to have changed.
+
+ **Reason:** MDAA 1.8.0 changed how `terraform` keys cascade through the configuration hierarchy. The more specific level (module, then environment, then domain, then global) now takes effect, where previously the parent level did. This aligns `terraform` with the other cascaded fields. A configuration that sets the same key at two levels resolves to the opposite value it did in 1.7.0.
+
+ **Resolution:**
+
+1. Search your configurations for `terraform` keys set at more than one level of the hierarchy.
+
+1. For each, confirm which value you intend. The child value now wins.
+
+1. Run `npx @aws-mdaa/cli diff -c ./mdaa.yaml` and confirm the plan targets the state you expect before deploying.
+
+### SSM parameter paths change after enabling `@mdaaIncludeEnvInSsmPath`
+<a name="ssm-parameter-paths-change-after-enabling-mdaaincludeenvinssmpath"></a>
+
+ **Issue:** After setting `@mdaaIncludeEnvInSsmPath` on an existing deployment, the producer stack fails to deploy with an error stating that an export cannot be updated because it is in use by another stack. Consumer stacks may also fail to resolve references.
+
+ **Reason:** The flag includes `env` in SSM parameter paths and CloudFormation export names, so those identifiers change while the underlying logical IDs do not. CloudFormation does not allow an export name to change while another stack still imports it with `Fn::ImportValue`, so the producer deploy fails until no stack imports the old name. The SSM parameters themselves are replaced in place by the same deploy, so there is no leftover parameter to clean up and no window in which both the old and new names resolve. The flag exists to allow multiple MDAA environments in one AWS account and defaults to `false`. Enabling it on an existing deployment is not backward compatible.
+
+ **Resolution:**
+
+1. If you do not need multiple environments in one account, leave the flag unset.
+
+1. Update every config reference to the affected parameters and exports to the env-aware paths **before** you redeploy the producers, so that no stack imports the old export name. An `ssm-env:` reference prepends the env segment for you; with `ssm-domain:`, `ssm-org:`, or a literal `resolve:ssm:` reference, write the env segment yourself.
+
+1. Set `@mdaaIncludeEnvInSsmPath: true` and redeploy. See the naming utility documentation for the full migration steps.
+
+### AgentCore Runtime invocation denied after upgrade to 1.8.0
+<a name="agentcore-runtime-invocation-denied-after-upgrade-to-1-8-0"></a>
+
+ **Issue:** After upgrading to MDAA 1.8.0, an IAM caller that could previously invoke an AgentCore runtime from outside the VPC now receives an access-denied error.
+
+ **Reason:** With `enforceVpcOnly` set, MDAA 1.7.0 applied an allow-only resource policy, which could not deny a caller whose identity policy already authorized the action. Out-of-VPC IAM invocations therefore succeeded, although JWT and OAuth callers were correctly blocked. MDAA 1.8.0 adds explicit deny statements and covers all invoke variants, so the control now behaves as documented.
+
+ **Resolution:**
+
+1. Confirm whether the caller is expected to reach the runtime from outside the VPC.
+
+1. If it is, move the caller into the VPC, or reach the runtime through a VPC endpoint.
+
+1. If out-of-VPC access is genuinely required, set `enforceVpcOnly` to `false` and accept that the runtime is reachable outside the VPC.
+
+### AgentCore Runtime spans still land in `aws/spans` after upgrade to 1.8.0
+<a name="agentcore-runtime-spans-still-land-in-awsspans-after-upgrade-to-1-8-0"></a>
+
+ **Issue:** After upgrading to MDAA 1.8.0, an AgentCore runtime deploys and reports healthy, but agent spans continue to appear in the account-shared `aws/spans` log group instead of the runtime’s own log group.
+
+ **Reason:** MDAA 1.8.0 sets `UNIFIED_TRACES_DESTINATION_ENABLED` to `'true'` on every runtime so that spans go to the runtime’s own log group, where the module’s KMS encryption, retention policy, and PII masking already apply. The setting takes effect only from `aws-opentelemetry-distro` 0.18.0. A container image that pins an earlier version installs and runs normally but ignores the setting and keeps delivering to `aws/spans`, so span content stays outside those protections. The deployment does not fail and CloudWatch reports no error.
+
+ **Resolution:**
+
+1. Raise `aws-opentelemetry-distro` to 0.18.0 or later in the runtime container image and rebuild the image.
+
+1. Confirm the image entrypoint runs under `opentelemetry-instrument`. Without it the container emits no spans at all, with no error to indicate it.
+
+1. Redeploy the module. The deploy creates a new runtime version, and only spans emitted after it lands go to the new destination.
+
+1. Repoint any dashboard, saved query, or SIEM ingestion that reads `aws/spans` directly at the runtime’s own log group.
+
+1. If you cannot rebuild the image yet, set `UNIFIED_TRACES_DESTINATION_ENABLED` to `'false'` under `environmentVariables` to make the shared destination explicit rather than accidental.
+
+### `mdaa upgrade` rejects the version you asked for
+<a name="mdaa-upgrade-rejects-the-version-you-asked-for"></a>
+
+ **Issue:** Running `mdaa upgrade 1.8.0` exits with `Cannot generate 1.8.0 assets from CLI <installed-version>`, or with `No mdaa.yaml found in the current directory`.
+
+ **Reason:** `upgrade` writes the schemas, module docs, and steering files under `.mdaa/<version>/` from the CLI that is actually installed, so an explicit version argument has to match that CLI. Pinning a different version would write one version’s assets into another version’s directory. The command also operates on the project in the current directory, so it requires an `mdaa.yaml` there.
+
+ **Resolution:**
+
+1. Run the command from the project root, the directory that holds `mdaa.yaml`.
+
+1. Install the version you want and let it upgrade the project: `npx @aws-mdaa/cli@1.8.0 upgrade`.
+
+1. To upgrade to the CLI version already installed, omit the version argument: `mdaa upgrade`.
+
+1. If `upgrade` prompts about a modified file such as `CLAUDE.md`, choose whether to keep your edits. Pass `--overwrite` to replace those files without prompting, or `--no-prompt` to leave them untouched.
 
 ## See also
 

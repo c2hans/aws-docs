@@ -274,19 +274,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Agent Registry but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-- **   [DeleteResourcePolicy](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  **
+- **   [DeleteResourcePolicy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html)  **
   - **Description:** Grants permission to delete the resource-based policy from a specified resource
   - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [GetResourcePolicy](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  **
+- **   [GetResourcePolicy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html)  **
   - **Description:** Grants permission to retrieve the resource-based policy for a specified resource
   - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [PutResourcePolicy](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  **
+- **   [PutResourcePolicy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html)  **
   - **Description:** Grants permission to set a resource-based policy for a specified resource
   - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
@@ -310,6 +310,7 @@ AWS Agent Registry defines the following condition keys that can be used in the 
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [agent-registry:RecordCreatorAccount](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  | Filters access by the AWS account ID of the principal that created the registry record | String |
+|   [agent-registry:RecordSourceAccount](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  | Filters access by the AWS account ID of the source resource associated with a registry record | String |
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by creating requests based on the allowed set of values for each of the mandatory tags | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by having actions based on the tag value associated with the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by creating requests based on the presence of mandatory tags in the request | ArrayOfString |

@@ -19,7 +19,7 @@ Alternatively, you can use one of the AWS SDKs to access an API that's tailored 
 
 For descriptions of Network Firewall features, including and step-by-step instructions on how to use them through the Network Firewall console, see the [Network Firewall Developer Guide](https://docs.aws.amazon.com/network-firewall/latest/developerguide/).
 
-Network Firewall is a stateful, managed, network firewall and intrusion detection and prevention service for Amazon Virtual Private Cloud (Amazon VPC). With Network Firewall, you can filter traffic at the perimeter of your VPC. This includes filtering traffic going to and coming from an internet gateway, NAT gateway, or over VPN or Direct Connect. Network Firewall uses rules that are compatible with Suricata, a free, open source network analysis and threat detection engine. AWS Network Firewall supports Suricata version 7.0.8. For information about Suricata, see the [Suricata website](https://suricata.io/) and the [Suricata User Guide](https://suricata.readthedocs.io/en/suricata-7.0.8/).
+Network Firewall is a stateful, managed, network firewall and intrusion detection and prevention service for Amazon Virtual Private Cloud (Amazon VPC). With Network Firewall, you can filter traffic at the perimeter of your VPC. This includes filtering traffic going to and coming from an internet gateway, NAT gateway, or over VPN or Direct Connect. Network Firewall uses rules that are compatible with Suricata, a free, open source network analysis and threat detection engine. AWS Network Firewall supports Suricata version 8.0.3. For information about Suricata, see the [Suricata website](https://suricata.io/) and the [Suricata User Guide](https://suricata.readthedocs.io/en/suricata-8.0.3/).
 
 You can use Network Firewall to monitor and protect your VPC traffic in a number of ways. The following are just a few examples:
 + Allow domains or IP addresses for known AWS service endpoints, such as Amazon S3, and block all other forms of traffic.
@@ -47,7 +47,7 @@ To start using Network Firewall, do the following:
 
 After your firewall is established, you can add firewall endpoints for new Availability Zones by following the prior steps for the Amazon VPC setup and firewall subnet definitions. You can also add endpoints to Availability Zones that you're using in the firewall, either for the same VPC or for another VPC, by following the prior steps for the Amazon VPC setup, and defining the new VPC subnets as VPC endpoint associations.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

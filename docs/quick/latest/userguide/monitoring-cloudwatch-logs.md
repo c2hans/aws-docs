@@ -31,6 +31,18 @@ Amazon Quick can deliver logs to the following destinations:
 + **Amazon S3** – For long-term storage and batch processing
 + **Amazon Data Firehose** – For streaming analytics and data transformation
 
+## Supported log types
+<a name="quicksuite-chat-feedback-supported-log-types"></a>
+
+Amazon Quick supports the following log types. You specify one of these values as the `logType` when you create a delivery source.
++ `CHAT_LOGS` – Chat conversation interactions, including the user message, system response, and status.
++ `FEEDBACK_LOGS` – User feedback on chat responses, such as usefulness ratings and reasons.
++ `AGENT_HOURS_LOGS` – Agent hours usage for each agent.
++ `AGENT_METADATA_LOGS` – Lifecycle events for chat agents, such as creation, updates, and deletion.
++ `INDEX_USAGE_LOGS` – Per-source index storage metrics for knowledge bases and Spaces.
++ `KB_FILE_SYNC_LOGS` – Per-document knowledge base sync status, including crawl and indexing failures.
++ `DLP_LOGS` – Data loss prevention enforcement decisions and configuration changes.
+
 ## Prerequisites
 <a name="quicksuite-chat-feedback-logging-prerequisites"></a>
 
@@ -80,7 +92,7 @@ You must also allow the `delivery.logs.amazonaws.com` service principal in your 
     ],
     "Resource": "*",
     "Condition": {
-        "StringEquals": {
+        "StringLike": {
             "kms:EncryptionContext:SourceArn": "arn:partition:logs:region:account-id:*"
         }
     }
@@ -92,7 +104,7 @@ You must also allow the `delivery.logs.amazonaws.com` service principal in your 
 
 For example IAM policies with all the required permissions for your specific logging destination, see [Enable logging from AWS services](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html) in the *Amazon CloudWatch Logs User Guide*.
 
-Create a delivery source with the [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) CloudWatch Logs API operation. Give the delivery source a name and for `resourceArn`, specify the ARN of your application. For `logType`, specify `CHAT_LOGS`, `AGENT_HOURS_LOGS`, `AGENT_METADATA_LOGS`, `FEEDBACK_LOGS`, `INDEX_USAGE_LOGS`, or `KB_FILE_SYNC_LOGS`.
+Create a delivery source with the [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) CloudWatch Logs API operation. Give the delivery source a name and for `resourceArn`, specify the ARN of your application. For `logType`, specify one of the supported log types (see [Supported log types](#quicksuite-chat-feedback-supported-log-types)).
 
 ```
 {
@@ -142,6 +154,14 @@ Create a delivery source with the [PutDeliverySource](https://docs.aws.amazon.co
 }
 ```
 
+```
+{
+    "logType": "DLP_LOGS",
+    "name": "my-quick-dlp-delivery-source",
+    "resourceArn": "arn:aws:quicksight:your-region:your-account-id:account/account-id"
+}
+```
+
 To enable user conversation logging with the CloudWatch Logs API operations, you call the `PutDeliverySource`, `PutDeliveryDestination`, and `CreateDelivery` API operations.
 
 **Note**
@@ -159,17 +179,7 @@ After you configure log delivery, verify that logs are being delivered to your d
 ## Log schema and format
 <a name="quicksuite-chat-feedback-log-schema-format"></a>
 
-Amazon Quick logs follow a structured schema with common fields shared across all log types and specific fields for chat and feedback logs.
-
-### Common fields
-<a name="quicksuite-chat-feedback-common-fields"></a>
-
-All log events include these common fields:
-+ `resource_arn` – Resource ARN of your Amazon Quick account (for example, `arn:aws:quicksight:us-east-1:111122223333:account/111122223333:`)
-+ `event_timestamp` – Unix epoch time in milliseconds (for example, `1763532110061`)
-+ `logType` – Type of log (for example, `CHAT_LOGS` or `FEEDBACK_LOGS`)
-+ `accountId` – AWS account ID (for example, `123456789012`)
-+ `user_arn` – Amazon Quick user ARN associated with the event (for example, `"arn:aws:quicksight:us-west-2:111122223333:user/default/user"`)
+Each Amazon Quick log type has its own schema. The field names, including the log type and account identifiers, vary by log type – for example, chat and feedback logs use `logType` and `accountId`, while other log types use `log_type` and `account_id`. The fields for each log type are listed in the following sections.
 
 ### Chat logs
 <a name="quicksuite-chat-logs"></a>
@@ -265,7 +275,7 @@ The following is an example of feedback logs:
 ## Agent hours logs
 <a name="quicksuite-agent-hours-logs"></a>
 
-This log type captures the usage logs for different agents within your Quick account used for pricing:
+This log type captures the usage logs for different agents within your Quick account:
 + `user_arn` – Amazon Quick user ARN associated with the event
 + `subscription_type` – Subscription tier of the user. Values: `ENTERPRISE`, `PROFESSIONAL`.
 + `reporting_service` – The Quick surface that consumed agent hours. Current values include `FLOW`, `AUTOMATION`, and `RESEARCH`. New values might appear as additional Quick features begin metering agent hours.
@@ -459,6 +469,106 @@ The following example shows a skipped document log where crawling was skipped du
     "knowledge_base_id": "b0bd0a47-8095-439d-9dff-c64bd5fe3fa3"
 }
 ```
+
+## DLP logs
+<a name="quicksuite-dlp-logs"></a>
+
+Data loss prevention (DLP) logs capture DLP activity: the enforcement decision for each scanned file, and changes to your DLP configurations. Use them to audit policy changes and to monitor enforcement. The specific event is identified by `event_type`.
+
+Every `DLP_LOGS` record includes these common fields:
++ `resource_arn` – Resource ARN of your Amazon Quick account
++ `event_timestamp` – Unix epoch time in milliseconds
++ `log_type` – `DLP_LOGS`
++ `account_id` – AWS account ID
++ `event_type` – The DLP event: `DLP_FILE_BLOCKED`, `DLP_FILE_WARNED`, `DLP_INSPECTION_FAILED`, `DLP_SETTING_CREATED`, `DLP_SETTING_UPDATED`, or `DLP_SETTING_DELETED`
++ `request_id` – Unique identifier for the event
++ `user_arn` – Amazon Quick user ARN associated with the event (`system` for service-initiated events)
+
+Enforcement events (`DLP_FILE_BLOCKED`, `DLP_FILE_WARNED`, `DLP_INSPECTION_FAILED`) add these fields:
++ `dlp_job_id` – Unique ID of the DLP scan job
++ `dlp_setting_id` – ID of the DLP configuration that evaluated the file
++ `policy_action` – Enforcement action applied (`BLOCK`, `WARN`)
++ `file_name` – Name of the scanned file (customer content; see the note that follows)
++ `file_size` – Size of the scanned file, in bytes
++ `failure_type` – (`DLP_INSPECTION_FAILED` only) Category of the failure, for example `CUSTOMER_ERROR`
++ `policy_message` – (`DLP_FILE_WARNED` and `DLP_INSPECTION_FAILED`) The warning message shown to the user, or the reason the inspection failed
+
+Configuration events (`DLP_SETTING_CREATED`, `DLP_SETTING_UPDATED`, `DLP_SETTING_DELETED`) add these fields:
++ `dlp_setting_id` – ID of the DLP configuration
++ `dlp_setting_name` – Display name of the configuration
++ `status` – Configuration status (`ACTIVE`, `INACTIVE`) – reflects whether enforcement is enabled or disabled
++ `provider_type` – DLP provider (for example, `MICROSOFT_PURVIEW`)
++ `auth_type` – Provider authentication type (for example, `CLIENT_SECRET`)
++ `provider_outage_mode` – Action applied when the provider is unavailable (for example, `BLOCK`)
++ `unmapped_action` – Default action for files with no mapped label (for example, `BLOCK`)
++ `last_updated_by` – ARN of the principal that made the change
++ `changes` – (`DLP_SETTING_UPDATED` only) The fields that changed
+
+The following is an example of a blocked file event:
+
+```
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1786510225000,
+    "log_type": "DLP_LOGS",
+    "account_id": "111122223333",
+    "event_type": "DLP_FILE_BLOCKED",
+    "request_id": "422518600001076813548728842",
+    "dlp_setting_id": "dlp-config-prod-01",
+    "dlp_job_id": "dlpjob-internal-1c5e20d9-8af4-4ad9-95ee-18c34cd62c76",
+    "policy_action": "BLOCK",
+    "file_name": "confidential.docx",
+    "file_size": 64,
+    "user_arn": "arn:aws:quicksight:us-east-1:111122223333:user/default/johndoe"
+}
+```
+
+The following is an example of an inspection failed event:
+
+```
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1786488697000,
+    "log_type": "DLP_LOGS",
+    "account_id": "111122223333",
+    "event_type": "DLP_INSPECTION_FAILED",
+    "request_id": "421276000001518855116675749",
+    "dlp_setting_id": "dlp-config-prod-01",
+    "dlp_job_id": "dlpjob-internal-f25e8e10-d831-4479-8f0d-e32d7b12b123",
+    "policy_action": "BLOCK",
+    "failure_type": "CUSTOMER_ERROR",
+    "policy_message": "The QuickSight service role for SECRETS_MANAGER access is not configured. Verify your account's QuickSight service role setup.",
+    "file_name": "confidential.docx",
+    "file_size": 64,
+    "user_arn": "system"
+}
+```
+
+The following is an example of a configuration updated event:
+
+```
+{
+    "resource_arn": "arn:aws:quicksight:us-east-1:111122223333:account/111122223333",
+    "event_timestamp": 1786492367000,
+    "log_type": "DLP_LOGS",
+    "account_id": "111122223333",
+    "event_type": "DLP_SETTING_UPDATED",
+    "request_id": "327788200001887837483925731",
+    "dlp_setting_id": "dlp-config-prod-01",
+    "dlp_setting_name": "Production DLP policy",
+    "status": "ACTIVE",
+    "provider_type": "MICROSOFT_PURVIEW",
+    "auth_type": "CLIENT_SECRET",
+    "provider_outage_mode": "BLOCK",
+    "unmapped_action": "BLOCK",
+    "last_updated_by": "arn:aws:sts::111122223333:assumed-role/DlpAdmin/jane",
+    "changes": { "unmapped_action": { "old": "WARN", "new": "BLOCK" } },
+    "user_arn": "system"
+}
+```
+
+**Note**
+The `file_name` field is customer content. When you configure a customer managed AWS KMS key for delivery, this field is encrypted. Without a key, Quick delivers it in cleartext.
 
 ## Security considerations
 <a name="quicksuite-chat-feedback-security-considerations"></a>

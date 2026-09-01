@@ -80,12 +80,12 @@ Type: [AgentConfig](API_AgentConfig.md) object
  ** [Arn](#API_GetTrafficDistribution_ResponseSyntax) **   <a name="connect-GetTrafficDistribution-response-Arn"></a>
 The Amazon Resource Name (ARN) of the traffic distribution group.
 Type: String
-Pattern: `^arn:(aws|aws-us-gov):connect:[a-z]{2}-[a-z]+-[0-9]{1}:[0-9]{1,20}:traffic-distribution-group/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+Pattern: `^arn:([a-zA-Z0-9-]+):connect:[a-z]+-[a-z-]+-[0-9]+:[0-9]+:traffic-distribution-group/[a-zA-Z0-9_-]+$`
 
  ** [Id](#API_GetTrafficDistribution_ResponseSyntax) **   <a name="connect-GetTrafficDistribution-response-Id"></a>
 The identifier of the traffic distribution group. This can be the ID or the ARN if the API is being called in the Region where the traffic distribution group was created. The ARN must be provided if the call is from the replicated Region.
 Type: String
-Pattern: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$`
+Pattern: `^[a-zA-Z0-9_-]+$`
 
  ** [SignInConfig](#API_GetTrafficDistribution_ResponseSyntax) **   <a name="connect-GetTrafficDistribution-response-SignInConfig"></a>
 The distribution that determines which AWS Regions should be used to sign in agents in to both the instance and its replica(s).

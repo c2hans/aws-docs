@@ -74,6 +74,7 @@ Content-type: application/json
       },
       "AgentInfo": {
          "AcceptedByAgentTimestamp": number,
+         "ActiveRegion": "string",
          "AfterContactWorkDuration": number,
          "AfterContactWorkEndTimestamp": number,
          "AfterContactWorkStartTimestamp": number,

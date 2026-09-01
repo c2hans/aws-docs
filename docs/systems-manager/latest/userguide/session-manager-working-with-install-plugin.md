@@ -7,6 +7,13 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 # Install the Session Manager plugin for the AWS CLI
 <a name="session-manager-working-with-install-plugin"></a>
 
+**Minimum plugin version required**
+Update your Session Manager plugin to version 1.2.764.0 or later. Session Manager will soon stop supporting earlier versions, and your operations might not succeed. To check your installed version, run the following command.
+
+```
+session-manager-plugin --version
+```
+
 To initiate Session Manager sessions with your managed nodes by using the AWS Command Line Interface (AWS CLI), you must install the *Session Manager plugin* on your local machine. You can install the plugin on supported versions of Microsoft Windows Server, macOS, Linux, and Ubuntu Server.
 
 **Note**

@@ -103,6 +103,7 @@ Information about the Amazon CloudWatch alarms that are associated with the depl
  The name of an existing CodeDeploy application to associate this deployment group with.
 *Required*: Yes
 *Type*: String
+*Pattern*: `[A-Za-z0-9+=,.@_-]*`
 *Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -135,6 +136,7 @@ Information about blue/green deployment options for a deployment group.
  A deployment configuration name or a predefined configuration name. With predefined configurations, you can deploy application revisions to one instance at a time (`CodeDeployDefault.OneAtATime`), half of the instances at a time (`CodeDeployDefault.HalfAtATime`), or all the instances at once (`CodeDeployDefault.AllAtOnce`). For more information and valid values, see [Working with Deployment Configurations](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html) in the *AWS CodeDeploy User Guide*.
 *Required*: No
 *Type*: String
+*Pattern*: `[A-Za-z0-9+=,.@_-]*`
 *Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -144,6 +146,7 @@ Information about blue/green deployment options for a deployment group.
  If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.
 *Required*: No
 *Type*: String
+*Pattern*: `[A-Za-z0-9+=,.@_-]*`
 *Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

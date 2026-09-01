@@ -10,7 +10,7 @@ A Universal International Freephone number (UIFN) is a unique **inbound only** f
 You can use UIFN with Connect Customer in [many countries](#list-of-uifn-countries) registered with the International Telecommunications Union (ITU). The ITU supports the administration of the UIFN service. Availability depends on carrier support and might vary by country.
 
 **Note**
-Connect Customer allows you to enable UIFNs in as many countries as you need, however, it requires a minimum of 5 countries.
+With Connect Customer, you can enable UIFNs in as many countries as you need, however, it requires a minimum of 5 countries.
 
 A UIFN is composed of a 3-digit country code for a global service application, such as **800**, and an 8-digit Global Subscriber Number (GSN). This results in an 11-digit fixed format.
 

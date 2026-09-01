@@ -10,8 +10,8 @@ Returns information about all available AWS Trusted Advisor checks, including th
 The response contains a [TrustedAdvisorCheckDescription](API_TrustedAdvisorCheckDescription.md) object for each check. You must set the AWS Region to us-east-1.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API.
+If you call the AWS Support API from an account that doesn't have a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 The names and descriptions for Trusted Advisor checks are subject to change. We recommend that you specify the check ID in your code to uniquely identify a check.
 
 To call the AWS Trusted Advisor operations in the AWS Support API, you must use the US East (N. Virginia) endpoint. Currently, the US West (Oregon) and Europe (Ireland) endpoints don't support the Trusted Advisor operations. For more information, see [About the AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html#endpoint) in the * AWS Support User Guide*.

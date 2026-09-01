@@ -28,6 +28,7 @@ The request accepts the following data in JSON format.
 The name of an AWS CodeDeploy application associated with the user or AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [nextToken](#API_ListDeploymentGroups_RequestSyntax) **   <a name="CodeDeploy-ListDeploymentGroups-request-nextToken"></a>
@@ -57,11 +58,13 @@ The following data is returned in JSON format by the service.
 The application name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 
  ** [deploymentGroups](#API_ListDeploymentGroups_ResponseSyntax) **   <a name="CodeDeploy-ListDeploymentGroups-response-deploymentGroups"></a>
 A list of deployment group names.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 
  ** [nextToken](#API_ListDeploymentGroups_ResponseSyntax) **   <a name="CodeDeploy-ListDeploymentGroups-response-nextToken"></a>
 If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list deployment groups call to return the next set of deployment groups in the list.

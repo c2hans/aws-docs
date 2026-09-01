@@ -34,6 +34,7 @@ The request accepts the following data in JSON format.
 The name of the application. This name must be unique with the applicable user or AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [computePlatform](#API_CreateApplication_RequestSyntax) **   <a name="CodeDeploy-CreateApplication-request-computePlatform"></a>
@@ -94,6 +95,10 @@ HTTP Status Code: 400
 
  ** InvalidTagsToAddException **
  The specified tags are not valid.
+HTTP Status Code: 400
+
+ ** ThrottlingException **
+An API function was called too frequently.
 HTTP Status Code: 400
 
 ## Examples

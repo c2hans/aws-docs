@@ -7,9 +7,9 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Edit connector
 <a name="edit-connector"></a>
 
-To edit an MGN connector, choose **Edit**. When the **Edit MGN connector** page opens, you can modify the MGN connector name and tags.
+To edit an MGN connector, click **Edit**. When the **Edit MGN connector** page opens, you can modify the MGN connector name and tags.
 
-To finalize your changes, choose **Save changes**.
+To finalize your changes, click **Save changes**.
 
 ## See also
 

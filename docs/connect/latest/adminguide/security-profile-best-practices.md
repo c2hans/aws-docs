@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security-profi
   Doing these things would enable someone to lock out those who need to access Connect Customer, and allow in others who can steal customer data and damage your business.
 
   To reduce the risk, as a best practice we recommend limiting the number of people who have **Users - Edit or Create** permissions.
-+ [Use AWS CloudTrail](logging-using-cloudtrail.md) to log the requests and responses of [UpdateUserIdentityInfo](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUserIdentityInfo.html). This enables you to track changes made to user information. Someone who has the ability to call the `UpdateUserIdentityInfo` API can change a user's email address to one owned by an attacker, and then reset the password through email.
++ [Use AWS CloudTrail](logging-using-cloudtrail.md) to log the requests and responses of [UpdateUserIdentityInfo](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUserIdentityInfo.html). With AWS CloudTrail, you can track changes made to user information. Someone who has the ability to call the `UpdateUserIdentityInfo` API can change a user's email address to one owned by an attacker, and then reset the password through email.
 + [Understand inherited permissions](inherited-permissions.md)
 
   Some security profiles included inherited permissions: when you assign dedicated permissions to one object, by default permissions are granted to sub-objects. For example, when you grant dedicated permission to edit users, you also grant them permission to list all security profiles for your Connect Customer instance. This is because to edit users, the person has access to the drop-down list of security profiles.

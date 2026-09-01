@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ArtifactUrl](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-artifacturl)" : {{String}},
+  "[ContainerMetricsConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-containermetricsconfig)" : {{ContainerMetricsConfig}},
   "[DeployedImage](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-deployedimage)" : {{DeployedImage}},
   "[Environment](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-environment)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Image](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-image)" : {{String}}
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ArtifactUrl](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-artifacturl): {{String}}
+  [ContainerMetricsConfig](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-containermetricsconfig): {{
+    ContainerMetricsConfig}}
   [DeployedImage](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-deployedimage): {{
     DeployedImage}}
   [Environment](#cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-environment): {{
@@ -47,6 +50,12 @@ The Amazon S3 path where the model artifacts, which result from model training, 
 *Type*: String
 *Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
 *Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ContainerMetricsConfig`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-containermetricsconfig"></a>
+The configuration for container metrics scraping. Specifies the metrics endpoint path and publishing frequency for the inference component's container. If not specified when `EnableDetailedObservability` is `True`, the default path `/metrics` on port `8080` is used. For first-party and Deep Learning Containers (DLC), the endpoint path is determined automatically and this configuration is optional.
+*Required*: No
+*Type*: [ContainerMetricsConfig](aws-properties-sagemaker-inferencecomponent-containermetricsconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DeployedImage`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentcontainerspecification-deployedimage"></a>

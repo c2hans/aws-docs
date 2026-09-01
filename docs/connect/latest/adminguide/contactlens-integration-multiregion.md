@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contactlens-in
 # Set up multi-region redundancy for conversational analytics integration
 <a name="contactlens-integration-multiregion"></a>
 
-Multi-region redundancy enables you to scale your external voice system for highest reliability, performance, and efficiency. You can support multi-region redundancy using Connect Customer replica instance.
+With multi-region redundancy, you can scale your external voice system for highest reliability, performance, and efficiency. You can support multi-region redundancy using Connect Customer replica instance.
 
 ## Active/Passive redundancy configuration
 <a name="contactlens-multiregion-ap"></a>

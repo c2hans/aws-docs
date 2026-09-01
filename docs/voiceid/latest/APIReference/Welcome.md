@@ -14,7 +14,7 @@ Connect Customer Voice ID provides real-time caller authentication and fraud ris
 
 For more information about the Voice ID feature, see [Use real-time caller authentication with Voice ID](https://docs.aws.amazon.com/connect/latest/adminguide/voice-id.html) in the *Connect Customer Administrator Guide*.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

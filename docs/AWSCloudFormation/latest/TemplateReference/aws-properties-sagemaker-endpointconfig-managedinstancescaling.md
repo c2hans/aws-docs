@@ -62,6 +62,8 @@ Property description not available.
 Property description not available.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `10`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also

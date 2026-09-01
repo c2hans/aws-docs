@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-post-ch
 # Enable post-chat survey
 <a name="enable-post-chat-survey"></a>
 
-Post-chat survey enables you to collect end customer feedback immediately after a chat conversation ends. With the **`DisconnectOnCustomerExit`** parameter in the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API, you can configure automatic agent disconnection when end customer disconnects, making sure that disconnect flow is triggered consistently regardless of which participant disconnects first.
+With post-chat survey, you can collect end customer feedback immediately after a chat conversation ends. With the **`DisconnectOnCustomerExit`** parameter in the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API, you can configure automatic agent disconnection when end customer disconnects, making sure that disconnect flow is triggered consistently regardless of which participant disconnects first.
 
 ## Implementation options
 <a name="post-chat-survey-implementation"></a>

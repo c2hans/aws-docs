@@ -10,7 +10,7 @@ This topic defines the flow block for creating a persistent contact association,
 ## Description
 <a name="create-persistent-contact-association-description"></a>
 + Enables persistent chat experience on the current chat.
-+ This allows you to select the required rehydration mode. For more information about chat rehydration, see [Enable customers to resume chat conversations in Connect Customer](chat-persistence.md).
++ With persistent chat, you can select the required rehydration mode. For more information about chat rehydration, see [Enable customers to resume chat conversations in Connect Customer](chat-persistence.md).
 
 ## Supported channels
 <a name="create-persistent-contact-association-channels"></a>

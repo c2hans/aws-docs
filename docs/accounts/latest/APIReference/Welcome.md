@@ -43,7 +43,7 @@ The JSON returned by Account Management in response to your requests is a single
 
 Account Management supports CloudTrail, a service that records AWS API calls for your AWS account and delivers log files to an Amazon S3 bucket. By using information collected by CloudTrail, you can determine which requests were successfully made to Account Management, who made the request, when it was made, and so on. For more about Account Management and its support for CloudTrail, see [Logging AWS Account Management API calls using AWS CloudTrail](https://docs.aws.amazon.com/accounts/latest/reference/monitoring-cloudtrail.html). To learn more about CloudTrail, including how to turn it on and find your log files, see the [CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

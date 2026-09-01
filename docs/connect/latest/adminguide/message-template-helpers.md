@@ -362,7 +362,7 @@ This section describes the following **string** helpers:
 + `yesno` – Replaces true, false, and no with Yes, No, and Maybe.
 
 *abbreviate*
-Truncates a value if the value exceeds the number specified. White spaces are included in the length count. An ellipsis displays in the response to indicate a truncated value. The ellipsis counts towards the truncated value in the response. This type of helper is useful if you have a large table and minimal space. Truncating values in a cell allows you to have a more uniform look to the table.
+Truncates a value if the value exceeds the number specified. White spaces are included in the length count. An ellipsis displays in the response to indicate a truncated value. The ellipsis counts towards the truncated value in the response. This type of helper is useful if you have a large table and minimal space. By truncating values in a cell, you can have a more uniform look to the table.
 **Usage**
  `{{abbreviate {{value}} {{X}}}}`, replacing {{X}} with a numeric value indicating the number of characters to keep. Negative numbers are not supported.
 **Example**

@@ -86,7 +86,7 @@ Configuration options:
 ### Flow action started event
 <a name="testing-simulation-observe-flow-action-started"></a>
 
-This event observes when specific actions within your contact flow begin execution. It allows you to detect and respond to operations happening in your flow, such as Lambda function calls, hours of operation checks, queue transfers, or bot initialization.
+This event observes when specific actions within your contact flow begin execution. With this event, you can detect and respond to operations happening in your flow, such as Lambda function calls, hours of operation checks, queue transfers, or bot initialization.
 
 Configuration options:
 + **Event Type** – Select "Action Triggered" from the dropdown

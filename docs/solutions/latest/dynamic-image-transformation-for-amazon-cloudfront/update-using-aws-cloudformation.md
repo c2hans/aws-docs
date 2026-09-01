@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 **Important**
 Dynamic Image Transformation for Amazon CloudFront version 6.0 and newer include significant changes, and you can’t update the solution from versions prior to 6.0 to version 6.0 or later. To use version 6.0 or later, launch a new stack using version 6.x of the CloudFormation template and [uninstall](uninstall-the-solution.md) your previous version of this solution.
-S3 Object Lambda has been deprecated. Amazon S3 Object Lambda will no longer be open to new customers starting on November 7, 2025. If you were not an existing user of S3 Object Lambda before November 7, 2025, select ‘No'. For more information, please visit https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazons3-ol-change.html.
+S3 Object Lambda has been deprecated. Amazon S3 Object Lambda will no longer be open to new customers starting on November 7, 2025. If you were not an existing user of S3 Object Lambda before November 7, 2025, select ‘No'. For more information, see [Amazon S3 Object Lambda changes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazons3-ol-change.html).
 Modifying the architecture of an existing deployment by changing the value of the `Enable S3 Object Lambda` template parameter will cause a deletion and recreation of the CloudFront distribution associated with the deployment. This recreation will result in a new API endpoint URL and an empty cache. For information on a workaround to use an alternate architecture type while maintaining the current endpoint URL and cache, refer to the instructions on [maintaining the existing endpoint and cache when modifying architecture type](maintain-endpoint-cache-architecture.md).
 
 **Important**

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/dashboard-acce
 
 You can use agent hierarchies to control who has access to view specific agents and their performance related metrics in dashboards and reports.
 
-Hierarchy-based access control enables you to configure granular access to users based on the [agent hierarchy](agent-hierarchy.md) that is assigned to a user. You can [configure](hierarchy-based-access-control.md) hierarchy-based access controls by using the API/SDK or the Connect Customer admin website.
+With hierarchy-based access control, you can configure granular access to users based on the [agent hierarchy](agent-hierarchy.md) that is assigned to a user. You can [configure](hierarchy-based-access-control.md) hierarchy-based access controls by using the API/SDK or the Connect Customer admin website.
 
 The only resource that supports hierarchy-based access control is agents. This authorization model works with [tag-based access control](tag-based-access-control.md), so you can restrict access to users, allowing them to see only other agents who belong to the same hierarchy group and who have specific tags associated to them.
 

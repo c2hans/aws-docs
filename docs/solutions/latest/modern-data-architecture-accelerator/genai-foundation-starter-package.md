@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The GenAI Foundation Starter Package delivers a production-ready foundation for building sophisticated AI agents using Amazon Bedrock. Out of the box, it demonstrates a customer support assistant that can understand queries, search knowledge bases, and take actions - but this is just the beginning.
 
-![genai foundation](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/genai_foundation.png)
+ **GenAI Foundation starter kit architecture**
 
-**GenAI Foundation starter kit architecture**
+![GenAI Foundation starter kit — Bedrock agent with RAG knowledge bases and guardrails.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/genai_foundation.png)
+
 Built on AWS best practices, this package provides the building blocks to create any type of agentic AI application. Whether you need sales assistants, technical troubleshooters, or domain-specific experts, the modular architecture adapts to your unique requirements.
 
 This architecture is particularly effective when:
@@ -33,7 +34,7 @@ The GenAI Foundation Starter Package provides a complete environment for develop
 +  **Bedrock Agents** - Intelligent agents with custom instructions and action groups
 +  **Knowledge Bases** - RAG-enabled knowledge bases with vector stores for efficient retrieval
 +  **Lambda Functions** - Custom functions for agent action groups and document processing
-+  **Guardrails** - Content safety measures to ensure appropriate AI responses
++  **Guardrails** - Content safety controls that filter prompts and model responses and block content that violates policy
 +  **Vector Stores** - Efficient knowledge retrieval using Amazon OpenSearch Serverless
 
 This package accelerates your agentic AI initiatives by providing a ready-to-use environment with AWS best practices built in. It’s ideal for organizations looking to establish or enhance their AI capabilities with autonomous agents, intelligent task execution, and enterprise-grade AI governance.
@@ -51,7 +52,7 @@ You can deploy the GenAI Foundation Starter Package using Manual CLI Deploy Meth
 #### Prerequisites
 <a name="prerequisites-6"></a>
 
-Before deploying the GenAI Foundation Starter Package using the CLI method, ensure you have:
+Before deploying the GenAI Foundation Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 
@@ -100,7 +101,7 @@ context:
 +  **Cross-region inference**: Use inference profile ARN in llm\_model (e.g., `arn:aws:bedrock:us-east-1:<account_id>:inference-profile/anthropic.claude-3-7-sonnet-20250219-v1:0`)
 +  **Single region**: Use model ID directly
 
- **Step 3: Deploy the solution** \* Ensure you are authenticated to your target AWS account.
+ **Step 3: Deploy the solution** \* Verify you are authenticated to your target AWS account.
 + Optionally, run the following command to understand what stacks will be deployed:
 
 ```
@@ -117,7 +118,7 @@ npx @aws-mdaa/cli synth
 npx @aws-mdaa/cli deploy
 ```
 
- **Step 4: Verify deployment** \* Check the AWS CloudFormation console to ensure all stacks have been created successfully \* Verify the Bedrock agents, knowledge bases, S3 buckets, and other resources have been created
+ **Step 4: Verify deployment** \* Check the AWS CloudFormation console to verify all stacks have been created successfully \* Verify the Bedrock agents, knowledge bases, S3 buckets, and other resources have been created
 
 ## Usage Instructions
 <a name="usage-instructions-3"></a>
@@ -136,7 +137,7 @@ Once the MDAA deployment is complete, follow these steps to interact with the Ge
 1.  **Upload documents to knowledge base buckets**
    + Upload documents to the support-docs prefix for customer support materials
    + Upload documents to the product-docs prefix for product documentation
-   + Ensure documents are uploaded with KMS encryption
+   + Verify documents are uploaded with KMS encryption
 
 ### Using Bedrock Agents
 <a name="using-bedrock-agents"></a>

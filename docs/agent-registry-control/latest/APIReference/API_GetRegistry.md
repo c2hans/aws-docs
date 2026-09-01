@@ -41,11 +41,22 @@ Content-type: application/json
    "approvalConfiguration": {
       "autoApprovalRules": [ "string" ]
    },
+   "autoDetection": {
+      "configuration": {
+         "enabled": boolean,
+         "scope": "string"
+      },
+      "status": "string",
+      "statusReason": "string"
+   },
    "createdAt": "string",
    "description": "string",
    "discoveryConfiguration": {
       "authorizerConfiguration": { ... },
       "authorizerType": "string"
+   },
+   "encryptionConfiguration": {
+      "kmsKeyArn": "string"
    },
    "name": "string",
    "registryArn": "string",
@@ -67,6 +78,10 @@ The following data is returned in JSON format by the service.
 Approval configuration for registry records
 Type: [ApprovalConfiguration](API_ApprovalConfiguration.md) object
 
+ ** [autoDetection](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-autoDetection"></a>
+The registry's auto-detection properties, including the requested configuration and the current detection status. Present only when auto-detection was configured for the registry.
+Type: [AutoDetection](API_AutoDetection.md) object
+
  ** [createdAt](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-createdAt"></a>
 The timestamp when the registry was created
 Type: Timestamp
@@ -79,6 +94,10 @@ Length Constraints: Minimum length of 1. Maximum length of 4096.
  ** [discoveryConfiguration](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-discoveryConfiguration"></a>
 Discovery configuration for the registry
 Type: [DiscoveryConfiguration](API_DiscoveryConfiguration.md) object
+
+ ** [encryptionConfiguration](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-encryptionConfiguration"></a>
+The server-side encryption configuration for the registry. Appears only when a customer-managed AWS KMS key encrypts the registry.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 
  ** [name](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-name"></a>
 The name of the registry

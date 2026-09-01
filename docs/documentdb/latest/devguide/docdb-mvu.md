@@ -15,7 +15,7 @@ Once upgraded, you cannot downgrade to a previous version. You can restore your 
 + [Supported upgrade paths](#mvu-upgrade-paths)
 + [Prerequisites](#mvu-prerequisites)
 + [Best practices](#mvu-best-practices)
-+ [What changes after upgrading from Amazon DocumentDB 5.0 to 8.0](#mvu-50-to-80-differences)
++ [What changes after upgrading to Amazon DocumentDB 8.0](#mvu-50-to-80-differences)
 + [Post-upgrade considerations for clusters upgraded from 3.6 or 4.0](#mvu-36-to-50-differences)
 + [Performing the upgrade](#perform-an-mvu)
 + [Troubleshooting](#mvu-troubleshooting)
@@ -28,14 +28,16 @@ The following table lists every supported in-place major version upgrade path. Y
 | Source major version | Target major version | Notes |
 | --- | --- | --- |
 | Amazon DocumentDB 3.6 | Amazon DocumentDB 5.0 (any published minor version) | See [Post-upgrade considerations for clusters upgraded from 3.6 or 4.0](#mvu-36-to-50-differences) for post-upgrade considerations. |
+| Amazon DocumentDB 3.6 | Amazon DocumentDB 8.0 (any published minor version) | See [Post-upgrade considerations for clusters upgraded from 3.6 or 4.0](#mvu-36-to-50-differences) and [What changes after upgrading to Amazon DocumentDB 8.0](#mvu-50-to-80-differences) for post-upgrade considerations. |
 | Amazon DocumentDB 4.0 | Amazon DocumentDB 5.0 (any published minor version) | See [Post-upgrade considerations for clusters upgraded from 3.6 or 4.0](#mvu-36-to-50-differences) for post-upgrade considerations. |
-| Amazon DocumentDB 5.0 (any published minor version) | Amazon DocumentDB 8.0 (any published minor version) | See [What changes after upgrading from Amazon DocumentDB 5.0 to 8.0](#mvu-50-to-80-differences) for feature changes. |
+| Amazon DocumentDB 4.0 | Amazon DocumentDB 8.0 (any published minor version) | See [Post-upgrade considerations for clusters upgraded from 3.6 or 4.0](#mvu-36-to-50-differences) and [What changes after upgrading to Amazon DocumentDB 8.0](#mvu-50-to-80-differences) for post-upgrade considerations. |
+| Amazon DocumentDB 5.0 (any published minor version) | Amazon DocumentDB 8.0 (any published minor version) | See [What changes after upgrading to Amazon DocumentDB 8.0](#mvu-50-to-80-differences) for feature changes. |
 
 To view the minor versions available in your AWS Region, use the AWS CLI command `aws docdb describe-db-engine-versions`. For a list of released minor versions, see [Release notes](release-notes.md).
 
 **Note**
-Each MVU can target any published minor version on the destination major. For example, upgrading from Amazon DocumentDB 3.6 or 4.0 can go directly to the latest published 5.0 minor version; there is no requirement to first upgrade to 5.0.0 and then apply a minor version upgrade.
-To reach 8.0 from 3.6 or 4.0, perform two MVUs: first to a 5.0 minor version of your choice, then to an 8.0 minor version of your choice. There is no direct 3.6→8.0 or 4.0→8.0 MVU path.
+Each MVU can target any published minor version on the destination major. For example, upgrading from Amazon DocumentDB 3.6 or 4.0 can go directly to the latest published 5.0 or 8.0 minor version; there is no requirement to first upgrade to the `.0` minor version and then apply a minor version upgrade.
+You can upgrade from Amazon DocumentDB 3.6 or 4.0 directly to 8.0 in a single MVU. Upgrading in stages through 5.0 (first to a 5.0 minor version, then to an 8.0 minor version) is also supported.
 
 **Note**
 In-place MVU is not supported for global clusters or elastic clusters. To upgrade a global cluster, remove the secondary clusters, convert the primary to a regional cluster, perform the MVU, then recreate the global cluster by adding secondary clusters using the same names to retain your endpoints. You will incur I/O charges while the upgraded primary replicates data to the new secondaries. For detailed steps, see [Removing a cluster from an Amazon DocumentDB global cluster](global-clusters.manage.md#global-clusters.remove).
@@ -166,15 +168,15 @@ Contact AWS support if the index metadata refresh process hasn't completed withi
 
 1. **Test thoroughly.** Validate your application against the upgraded cluster.
 
-## What changes after upgrading from Amazon DocumentDB 5.0 to 8.0
+## What changes after upgrading to Amazon DocumentDB 8.0
 <a name="mvu-50-to-80-differences"></a>
 
-After performing a major version upgrade from Amazon DocumentDB 5.0 to 8.0, the following features are enabled or changed:
+After performing a major version upgrade to Amazon DocumentDB 8.0 (from Amazon DocumentDB 5.0, or directly from 3.6 or 4.0), the following features are enabled or changed:
 + **Collation.** Amazon DocumentDB 8.0 supports [collation](collation.md). After the upgrade, new collections and their indexes, and new indexes on existing collections, have collation enabled by default.
 + **Text index.** New text indexes are created using Text Index V2, which uses an updated text search parser for improved MongoDB compatibility. Existing text indexes are not affected.
 + **Query planner version.** If you did not have a custom parameter group, a new default parameter group is created for Amazon DocumentDB 8.0 with Planner Version 3 automatically selected. With query planner version 3, [views](views.md) are also available.
 + **Compression.** Amazon DocumentDB 8.0 supports dictionary-based document compression using the Zstd algorithm. After the upgrade, new collections are created with Zstd compression enabled by default. Existing collections from 5.0 retain their compression settings. To take advantage of Zstd compression on existing collections, you can modify their compression settings. For more information, see [Managing dictionary-based compression in Amazon DocumentDB 8.0](dict-compression.md).
-+ **Index rebuild.** If you are upgrading from Amazon DocumentDB 5.0 to Amazon DocumentDB 8.0, no index rebuild is needed.
++ **Index rebuild.** If you are upgrading from Amazon DocumentDB 5.0 to Amazon DocumentDB 8.0, no index rebuild is needed. If you are upgrading directly from Amazon DocumentDB 3.6 or 4.0 to 8.0, rebuild your indexes as described in [Post-upgrade considerations for clusters upgraded from 3.6 or 4.0](#mvu-36-to-50-differences).
 
 **Important**
 Amazon DocumentDB 8.0 requires TLS 1.2 or higher. TLS 1.0 and TLS 1.1 are no longer supported.
@@ -184,7 +186,7 @@ For a full list of functional differences, see [Amazon DocumentDB compatibility 
 
 ## Post-upgrade considerations for clusters upgraded from 3.6 or 4.0
 <a name="mvu-36-to-50-differences"></a>
-+ **Index rebuild.** An MVU retains original indexes. Amazon DocumentDB 5.0 has improved index maintenance and garbage collection, especially for low-cardinality indexes. After upgrading from 3.6 or 4.0, rebuild your indexes to ensure optimal query performance (optional, involves additional I/O). See [Index maintenance using `reIndex`](managing-indexes.md#reIndex).
++ **Index rebuild.** An MVU retains original indexes. Amazon DocumentDB 5.0 and later have improved index maintenance and garbage collection, especially for low-cardinality indexes. After upgrading from 3.6 or 4.0 (to either 5.0 or 8.0), rebuild your indexes to ensure optimal query performance (optional, involves additional I/O). See [Index maintenance using `reIndex`](managing-indexes.md#reIndex).
 + **Subdocument numeric comparison (3.6 only).** Clusters upgraded from 3.6 inherit the 3.6 behavior where numeric types in subdocuments are not compared across types. For example, `{a: {b: NumberLong(1)}}` does not equal `{a: {b: 1}}` in 3.6, but they are equal in 4.0 and later. This behavior affects any clusters upgraded from 3.6.
 
 ## Performing the upgrade

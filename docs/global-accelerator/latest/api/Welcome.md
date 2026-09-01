@@ -25,7 +25,7 @@ For standard accelerators, Global Accelerator uses the AWS global network to rou
 
 For more information about understanding and using Global Accelerator, see the [AWS Global Accelerator Developer Guide](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html).
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

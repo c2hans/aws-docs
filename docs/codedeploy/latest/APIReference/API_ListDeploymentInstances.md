@@ -87,8 +87,16 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** ApplicationDoesNotExistException **
+The application does not exist with the user or AWS account.
+HTTP Status Code: 400
+
  ** DeploymentDoesNotExistException **
 The deployment with the user or AWS account does not exist.
+HTTP Status Code: 400
+
+ ** DeploymentGroupDoesNotExistException **
+The named deployment group with the user or AWS account does not exist.
 HTTP Status Code: 400
 
  ** DeploymentIdRequiredException **

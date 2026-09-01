@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 # Sample configurations
 <a name="sample-configs"></a>
 
-Modern Data Architecture Accelerator (MDAA) on AWS includes example sample configurations that allow you to quickly deploy analytics workloads and data platforms across your organisation. The repository includes sample configurations and detailed documentation that provide guidance for implementing various modules including analytics platform, ML workloads and data architectures across different AWS Regions.
+Modern Data Architecture Accelerator (MDAA) on AWS includes example sample configurations that allow you to quickly deploy analytics workloads and data platforms across your organization. The repository includes sample configurations and detailed documentation that provide guidance for implementing various modules including analytics platform, ML workloads and data architectures across different AWS Regions.
 
 MDAA is designed to deploy data environments across multiple domains and environments. Each domain/environment is constituted by one or more configured MDAA modules. Each MDAA module references a CDK app and corresponding configuration. During deployment, MDAA executes a module’s underlying CDK application, providing all necessary configuration details as CDK context.
 
-We built these sample configurations based on AWS best practices and common analytics use cases across industries. This solution provides automated deployment of analytics infrastructure while maintaining flexibility to customise based on your specific data requirements, security needs, and compliance standards
+We built these sample configurations based on AWS best practices and common analytics use cases across industries. This solution provides automated deployment of analytics infrastructure while maintaining flexibility to customize based on your specific data requirements, security needs, and compliance standards
 
 These sample MDAA configurations (starter kits) are provided as a starting point for common data platform architectures. They live under the `starter_kits/` directory of the MDAA repository.
 +  [Minimal](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/minimal) - Foundational governance layer (IAM roles, Glue Catalog encryption, Lake Formation settings) for building custom architectures
@@ -22,6 +22,7 @@ These sample MDAA configurations (starter kits) are provided as a starting point
 +  [MLOps Platform](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/mlops_platform) - End-to-end ML lifecycle: training, deployment, and monitoring with CI/CD
 +  [GenAI Foundation](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/genai_foundation) - Bedrock-based customer support agent with RAG, knowledge bases, and guardrails
 +  [GAIA Chatbot](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/genai_gaia_chatbot) - Production-ready GenAI chatbot backend with Cognito auth, AppSync streaming, and CloudFront
++  [Health Data Accelerator](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/health_data_accelerator) - Healthcare-focused data lake with AWS DMS change-data-capture ingestion, three-zone S3 storage, and Step Functions-orchestrated Glue ETL pipelines
 
 Additional customization of the baselines will likely be required to align with your organization’s specific analytics needs and compliance requirements. Example configurations are also available in the external [sample configurations repository](https://github.com/aws-samples/sample-config-modern-data-architecture-accelerator).
 
@@ -55,7 +56,7 @@ In this scenario, each domain is in its own MDAA config.
 ## Module Configurations
 <a name="mod-config"></a>
 
-Each MDAA Module/CDK App has its own configuration schema, which is documented in their respective READMEs. There are some common configuration behaviours and capabilities, however, which can be used across all MDAA Module configs.
+Each MDAA Module/CDK App has its own configuration schema, which is documented in their respective READMEs. There are some common configuration behaviors and capabilities, however, which can be used across all MDAA Module configs.
 
  **Dynamic References**
 
@@ -92,7 +93,7 @@ key_arn: arn:{{partition}}:kms:{{region}}:{{account}}:key/{{context:key_id}}
 
  **Configuration Sharing Across Domains, Envs, Modules**
 
-MDAA modules may share identical config files across multiple domains, envs, and modules. Because MDAA automatically injects the domain/env/module names into resource naming, each resulting deployment will result in uniquely named resources but with otherwise identical behaviours.
+MDAA modules may share identical config files across multiple domains, envs, and modules. Because MDAA automatically injects the domain/env/module names into resource naming, each resulting deployment will result in uniquely named resources but with otherwise identical behaviors.
 
 ```
 # Example MDAA Config With Shared Configs

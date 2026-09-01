@@ -119,7 +119,7 @@ If you plan to modify the AWS Transform MGN template to enable post-launch actio
 }
 ```
 
-### Supported target regions
+## Supported target regions
 <a name="transform-vmware-cta-supported-regions"></a>
 
 A migration target region is the AWS Region where migrated resources are deployed, including landing zones, network infrastructure, and server rehosting. When you create the connector, specify a target AWS Region. You can use any of the following AWS Regions:

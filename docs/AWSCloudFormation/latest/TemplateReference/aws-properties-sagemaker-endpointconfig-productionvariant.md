@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[InferenceAmiVersion](#cfn-sagemaker-endpointconfig-productionvariant-inferenceamiversion)" : {{String}},
   "[InitialInstanceCount](#cfn-sagemaker-endpointconfig-productionvariant-initialinstancecount)" : {{Integer}},
   "[InitialVariantWeight](#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight)" : {{Number}},
-  "[InstancePools](#cfn-sagemaker-endpointconfig-productionvariant-instancepools)" : {{[ InstancePools, ... ]}},
+  "[InstancePools](#cfn-sagemaker-endpointconfig-productionvariant-instancepools)" : {{[ InstancePool, ... ]}},
   "[InstanceType](#cfn-sagemaker-endpointconfig-productionvariant-instancetype)" : {{String}},
   "[ManagedInstanceScaling](#cfn-sagemaker-endpointconfig-productionvariant-managedinstancescaling)" : {{ManagedInstanceScaling}},
   "[ModelDataDownloadTimeoutInSeconds](#cfn-sagemaker-endpointconfig-productionvariant-modeldatadownloadtimeoutinseconds)" : {{Integer}},
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [InitialInstanceCount](#cfn-sagemaker-endpointconfig-productionvariant-initialinstancecount): {{Integer}}
   [InitialVariantWeight](#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight): {{Number}}
   [InstancePools](#cfn-sagemaker-endpointconfig-productionvariant-instancepools): {{
-    - InstancePools}}
+    - InstancePool}}
   [InstanceType](#cfn-sagemaker-endpointconfig-productionvariant-instancetype): {{String}}
   [ManagedInstanceScaling](#cfn-sagemaker-endpointconfig-productionvariant-managedinstancescaling): {{
     ManagedInstanceScaling}}
@@ -139,12 +139,13 @@ Number of instances to launch initially.
 Determines initial traffic distribution among all of the models that you specify in the endpoint configuration. The traffic to a production variant is determined by the ratio of the `VariantWeight` to the sum of all `VariantWeight` values across all ProductionVariants. If unspecified, it defaults to 1.0.
 *Required*: No
 *Type*: Number
+*Minimum*: `0`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InstancePools`  <a name="cfn-sagemaker-endpointconfig-productionvariant-instancepools"></a>
 A list of instance pools for the production variant. Each instance pool specifies an instance type and its priority for provisioning. Use instance pools to configure heterogeneous endpoints that deploy models across multiple instance types.
 *Required*: No
-*Type*: [Array](aws-properties-sagemaker-endpointconfig-instancepools.md) of [InstancePools](aws-properties-sagemaker-endpointconfig-instancepools.md)
+*Type*: Array of [InstancePool](aws-properties-sagemaker-endpointconfig-instancepool.md)
 *Minimum*: `1`
 *Maximum*: `5`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -174,8 +175,7 @@ The timeout value, in seconds, to download and extract the model that you want t
 The name of the model that you want to host. This is the name that you specified when creating the model.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
-*Minimum*: `0`
+*Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -204,8 +204,7 @@ Valid values: 300 to 3600.
 The name of the production variant.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-*Minimum*: `0`
+*Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 

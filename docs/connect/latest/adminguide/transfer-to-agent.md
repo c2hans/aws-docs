@@ -18,7 +18,7 @@ There are two ways to route contacts directly to an agent:
 
   This topic explains how to route contacts for this second scenario.
 
-Agent queues enable you to route contacts directly to a specific agent. Following are a couple of scenarios where you might want to do this:
+With agent queues, you can route contacts directly to a specific agent. Following are a couple of scenarios where you might want to do this:
 + Route contacts to the last agent the customer interacted with. This provides a consistent customer experience.
 + Route contacts to agents who have specific responsibilities. For example, you might route all billing questions to Jane.
 

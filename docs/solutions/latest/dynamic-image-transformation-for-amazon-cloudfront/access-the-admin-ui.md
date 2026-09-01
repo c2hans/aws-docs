@@ -11,7 +11,7 @@ After deployment completes:
 
 1. Find the `AdminUIUrl` output value and open the link.
 
-1. Sign in using the Cognito credentials sent to the admin email address specified during deployment.
+1. Sign in using the Amazon Cognito credentials sent to the admin email address specified during deployment.
 
 ## See also
 

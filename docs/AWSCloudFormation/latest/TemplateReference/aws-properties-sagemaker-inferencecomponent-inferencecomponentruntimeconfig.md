@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[CopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-copycount)" : {{Integer}},
   "[CurrentCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-currentcopycount)" : {{Integer}},
-  "[DesiredCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-desiredcopycount)" : {{Integer}}
+  "[DesiredCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-desiredcopycount)" : {{Integer}},
+  "[PlacementStatus](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-placementstatus)" : {{[ InferenceComponentPlacementStatus, ... ]}}
 }
 ```
 
@@ -32,6 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [CopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-copycount): {{Integer}}
   [CurrentCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-currentcopycount): {{Integer}}
   [DesiredCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-desiredcopycount): {{Integer}}
+  [PlacementStatus](#cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-placementstatus): {{
+    - InferenceComponentPlacementStatus}}
 ```
 
 ## Properties
@@ -56,6 +59,12 @@ The desired number of copies of the model to deploy for the inference component.
 *Required*: No
 *Type*: Integer
 *Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PlacementStatus`  <a name="cfn-sagemaker-inferencecomponent-inferencecomponentruntimeconfig-placementstatus"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [InferenceComponentPlacementStatus](aws-properties-sagemaker-inferencecomponent-inferencecomponentplacementstatus.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also

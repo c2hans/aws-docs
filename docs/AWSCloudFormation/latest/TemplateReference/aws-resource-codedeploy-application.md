@@ -48,6 +48,7 @@ Properties:
  Updates to `ApplicationName` are not supported.
 *Required*: No
 *Type*: String
+*Pattern*: `[A-Za-z0-9+=,.@_-]*`
 *Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

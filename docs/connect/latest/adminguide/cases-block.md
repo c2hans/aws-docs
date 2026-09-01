@@ -90,7 +90,7 @@ When configuring properties to get a case id:
   + **Current contact** is the contact on which the current flow is being executed.
   + **Related contact** is the contact that is [related](https://docs.aws.amazon.com/connect/latest/adminguide/chat-persistence.html#relatedcontactid) to this contact.
 + If you link the contact to the case, then the contact and a link to contact details appear on the case that the agent sees in the agent application.
-+ You can specify the **Contact to search** to fetch a case linked to another contact in the current contact's [contact chain](https://docs.aws.amazon.com/connect/latest/adminguide/contacts-contact-chains-attributes.html#contact-chains). This enables you to link follow-up contacts such as email replies, call transfers, persistent chats, and queued callbacks to the same case more easily.
++ You can specify the **Contact to search** to fetch a case linked to another contact in the current contact's [contact chain](https://docs.aws.amazon.com/connect/latest/adminguide/contacts-contact-chains-attributes.html#contact-chains). You can then link follow-up contacts such as email replies, call transfers, persistent chats, and queued callbacks to the same case more easily.
   + **Current contact**
   + **Initial contact**
   + **Task contact**

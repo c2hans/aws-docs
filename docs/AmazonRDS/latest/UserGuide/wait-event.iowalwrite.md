@@ -24,7 +24,7 @@ Activity in the database that's generating write-ahead log data fills up the WAL
 ## Likely causes of increased waits
 <a name="wait-event.iowalwrite.causes"></a>
 
-If this wait event occurs often, you should review your workload and the type of updates that your workload performs and their frequency. In particular, look for the following types of activity.
+If this wait event occurs often, review your workload and the type of updates that your workload performs and their frequency. In particular, look for the following types of activity.
 
 **Heavy DML activity**
 Changing data in database tables doesn't happen instantaneously. An insert to one table might need to wait for an insert or an update to the same table from another client. The data manipulation language (DML) statements for changing data values (INSERT, UPDATE, DELETE, COMMIT, ROLLBACK TRANSACTION) can result in contention that causes the write-ahead logfile to be waiting for the buffers to be flushed. This situation is captured in the following detailed per-query and database counter metrics, which are exposed through the Performance Insights API and indicate heavy DML activity.

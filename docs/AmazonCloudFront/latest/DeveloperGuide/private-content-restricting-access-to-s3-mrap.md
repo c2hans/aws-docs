@@ -159,7 +159,7 @@ You must add this key policy statement to the KMS key in every Region where an u
 To create an origin access control (OAC), you can use the AWS Management Console, CloudFormation, the AWS CLI, or the CloudFront API.
 
 **Note**
-Lambda@Edge origin request triggers are incompatible with origins that use a SigV4a OAC, whether the origin is accessed directly or through an origin group.
+Lambda@Edge origin triggers (both origin request and origin response) are incompatible with origins that use a SigV4a OAC, whether the origin is accessed directly or through an origin group.
 
 ------
 #### [ Console ]

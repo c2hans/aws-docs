@@ -57,6 +57,7 @@ Required: No
 ```
 {
    "StreamDescriptionSummary": {
+      "ChannelCount": number,
       "ConsumerCount": number,
       "EncryptionType": "string",
       "EnhancedMonitoring": [

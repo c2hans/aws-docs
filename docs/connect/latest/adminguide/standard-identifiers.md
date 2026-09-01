@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-ident
 # Standard identifiers for setting attributes on the key in Customer Profiles
 <a name="standard-identifiers"></a>
 
-Standard identifiers allow you to set attributes on the key. Decide which identifiers to use based on how you want the data to be ingested in the profiles. For example, you mark phone number with the identifier PROFILE. This means phone number is to be treated as unique identifier. If Customer Profiles gets two contacts with the same phone number, the contacts are going to be merged into a single profile.
+With standard identifiers, you can set attributes on the key. Decide which identifiers to use based on how you want the data to be ingested in the profiles. For example, you mark phone number with the identifier PROFILE. This means phone number is to be treated as unique identifier. If Customer Profiles gets two contacts with the same phone number, the contacts are going to be merged into a single profile.
 
 | Identifier name | Description |
 | --- | --- |

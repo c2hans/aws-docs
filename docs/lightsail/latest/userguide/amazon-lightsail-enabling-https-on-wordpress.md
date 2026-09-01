@@ -45,6 +45,8 @@ While setup is in progress, do not stop or make changes to your instance. It can
 
 1. After the website setup is complete, verify that the URLs that you specified in the domain assignments step open your WordPress site.
 
+1. Your WordPress instance is automatically configured to redirect HTTP connections into encrypted HTTPS. You can verify that automatic redirection is configured by going to `http://{{<DomainName>}}`. You should see that once your site loads, you will be redirected to `https://{{<DomainName>}}`.
+
 ## Step 2: Get the admin password for your WordPress website
 <a name="tutorial-launching-and-configuring-wordpress-connecting-to-your-instance-via-ssh"></a>
 

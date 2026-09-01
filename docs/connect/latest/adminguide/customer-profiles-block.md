@@ -9,12 +9,12 @@ This topic defines the flow block for retrieving, creating, and updating a custo
 
 ## Description
 <a name="customer-profiles-block-description"></a>
-+ Enables you to retrieve, create, and update a customer profile.
++ You can retrieve, create, and update a customer profile.
   + You can configure the block to retrieve profiles using up to five search identifiers of your choice.
-+ Enables you to retrieve a Customer Profile's object and calculated attributes.
++ You can retrieve a Customer Profile's object and calculated attributes.
   + You can configure the block to retrieve objects using a search identifier of your choice.
   + You must provide a profile ID in this block. You can provide a **profileID** manually, or use the **profileID** saved in the Customer namespace after you have found a profile using the **Get profile** action.
-+ Enables you to associate the contact, such as voice, chat, and tasks, to an existing customer profile.
++ You can associate the contact, such as voice, chat, and tasks, to an existing customer profile.
 + When customer profile data is retrieved, the **Response fields** are stored in the [contact attributes for that customer](connect-attrib-list.md#customer-profiles-attributes), allowing you to use them in subsequent blocks.
 + You can also reference the **Response fields** by using the following JSONPath: `$.Customer.` For example, `$.Customer.City` and `$.Customer.Asset.Status`.
 + The following examples show how you might use this block:

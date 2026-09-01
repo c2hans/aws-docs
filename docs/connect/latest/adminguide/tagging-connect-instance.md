@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/tagging-connec
 
 Instance Tagging provides the ability for you to tag Connect Customer instances and build tailored authorization through tag-based access control (TBAC). To help you manage your Connect Customer instances, you can assign your own metadata in the form of tags to the instance. If you have multiple Connect Customer instances in a single AWS account, each serving different functions or catering to specific lines of business, using tags can help you better organize and apply tag-based access control (TBAC) policies to these instances for improved management and control.
 
-[AWS Tags](tagging.md) serve as a useful tool for organizing your AWS resources. They consist of key-value pairs that help you categorize resources based on criteria like purpose, owner, or environment. This enables you to identify and manage your resources. Connect Customer, allows you to add tags to your instances directly from the AWS console, or by using public APIs.
+[AWS Tags](tagging.md) serve as a useful tool for organizing your AWS resources. They consist of key-value pairs that help you categorize resources based on criteria like purpose, owner, or environment. With tags, you can identify and manage your resources. With Connect Customer, you can add tags to your instances directly from the AWS console, or by using public APIs.
 
 ## Tagging Connect Customer instances at creation
 <a name="tagging-connect-instance-at-creation"></a>
@@ -130,7 +130,7 @@ For TBAC on instances, you can define IAM policies based on instance tags and as
 ## Additional information about instance tagging
 <a name="tagging-connect-instance-additional-info"></a>
 
-**Replicating instances:** When you create a [replica of your existing Connect Customer instance](create-replica-connect-instance.md) to another region using the [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API, tags from the source instance will not be automatically tagged to the newly replicated instance. You will have to tag the replicated instance manually.
+**Replicating instances:** When you create a [replica of your existing Connect Customer instance](create-replica-connect-instance.md) to another Region using the [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) API, tags from the source instance will not be automatically tagged to the newly replicated instance. You will have to tag the replicated instance manually.
 
 **Tag inheritance:** When you tag an Connect Customer instance, all underlying resources in Connect Customer, such as routing profiles, queues, will not inherit the instance tags. To learn how to control granular access to specific resources in Connect Customer, see how to configure more granular access by using [ tag-based access control](tag-based-access-control.md).
 

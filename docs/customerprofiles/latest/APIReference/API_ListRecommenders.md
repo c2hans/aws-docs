@@ -58,6 +58,15 @@ Content-type: application/json
             "FailureReason": "string",
             "LastUpdatedAt": number,
             "RecommenderConfig": {
+               "DiversityConfig": {
+                  "DiversityColumns": [
+                     {
+                        "CapType": "string",
+                        "Name": "string",
+                        "Target": "string"
+                     }
+                  ]
+               },
                "EventsConfig": {
                   "EventParametersList": [
                      {
@@ -67,6 +76,9 @@ Content-type: application/json
                      }
                   ]
                },
+               "ExcludedColumns": {
+                  "string" : [ "string" ]
+               },
                "IncludedColumns": {
                   "string" : [ "string" ]
                },
@@ -75,10 +87,20 @@ Content-type: application/json
                },
                "TrainingFrequency": number
             },
+            "RecommenderVersionName": "string",
             "Status": "string"
          },
          "RecipeName": "string",
          "RecommenderConfig": {
+            "DiversityConfig": {
+               "DiversityColumns": [
+                  {
+                     "CapType": "string",
+                     "Name": "string",
+                     "Target": "string"
+                  }
+               ]
+            },
             "EventsConfig": {
                "EventParametersList": [
                   {
@@ -87,6 +109,9 @@ Content-type: application/json
                      "EventWeight": number
                   }
                ]
+            },
+            "ExcludedColumns": {
+               "string" : [ "string" ]
             },
             "IncludedColumns": {
                "string" : [ "string" ]

@@ -68,6 +68,7 @@ AI services opt-out policy syntax includes the following elements:
     + `aiops`
     + `aidevops`
     + `awssupplychain`
+    + `biodiscovery`
     + `chimesdkvoiceanalytics`
     + `cloudwatch`
     + `codeguruprofiler`
@@ -93,6 +94,7 @@ AI services opt-out policy syntax includes the following elements:
     + `q`
     + `quicksightq`
     + `rekognition`
+    + `scenariodiscovery`
     + `securitylake`
     + `textract`
     + `transcribe`

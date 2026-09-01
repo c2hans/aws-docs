@@ -21,7 +21,7 @@ With metadata filtering, you can:
 + [Prerequisites](#long-term-memory-metadata-prerequisites)
 + [Step 1: Create a memory with indexed keys and a metadata schema](#long-term-memory-metadata-configure)
 + [Step 2: Verify the configuration](#long-term-memory-metadata-configure-step2)
-+ [Step 3: Ingest data with metadata](#long-term-memory-metadata-ingest)
++ [Step 3: Add metadata during ingestion](#long-term-memory-metadata-ingest)
 + [Step 4: Query with metadata filters](#long-term-memory-metadata-query)
 + [Step 5: Evolve your metadata schema](#long-term-memory-metadata-evolve)
 + [Quotas](#long-term-memory-metadata-quotas)
@@ -38,7 +38,7 @@ Setting up metadata filtering involves five steps:
 
 1.  **Verify the configuration** — Use `GetMemory` to confirm your indexed keys and strategy metadata schemas are set up correctly.
 
-1.  **Ingest data with metadata** — Send events using `CreateEvent` with optional metadata, or supply metadata directly on records using `BatchCreateMemoryRecords`. For event-driven ingestion, the LLM automatically extracts and populates metadata on the resulting memory records. This extraction is based on the strategy’s metadata schema and conversation content, even when no metadata is attached to the events.
+1.  **Add metadata during ingestion** — Send events using `CreateEvent`, or submit content directly with `IngestData`, attaching optional metadata; or supply metadata directly on records using `BatchCreateMemoryRecords`. For extraction-based ingestion (`CreateEvent` and `IngestData`), the LLM automatically extracts and populates metadata on the resulting memory records. This extraction is based on the strategy’s metadata schema and the submitted content, even when no metadata is attached.
 
 1.  **Query with metadata filters** — Use `metadataFilters` on `RetrieveMemoryRecords` (semantic search with pre-filtering) or `ListMemoryRecords` (metadata-only filtering) to scope results.
 
@@ -269,7 +269,7 @@ You do not need to declare these as indexed keys — they are always available f
 <a name="long-term-memory-metadata-prerequisites"></a>
 
 Before configuring metadata filtering, verify you have:
-+ An AWS account with permissions to call `CreateMemory`, `UpdateMemory`, `CreateEvent`, `ListMemoryRecords`, `RetrieveMemoryRecords`, `BatchCreateMemoryRecords`, and `BatchUpdateMemoryRecords`
++ An AWS account with permissions to call `CreateMemory`, `UpdateMemory`, `CreateEvent`, `IngestData`, `ListMemoryRecords`, `RetrieveMemoryRecords`, `BatchCreateMemoryRecords`, and `BatchUpdateMemoryRecords`
 + Amazon Bedrock AgentCore access
 + A clear view of the 3–5 filter dimensions your agent most needs (department, priority, region, project, and so on)
 
@@ -353,15 +353,18 @@ Use `GetMemory` to confirm that the indexed keys and metadata schema were accept
 aws bedrock-agentcore-control get-memory --memory-id "<memory-id>"
 ```
 
-## Step 3: Ingest data with metadata
+## Step 3: Add metadata during ingestion
 <a name="long-term-memory-metadata-ingest"></a>
 
-There are two pathways for getting metadata onto memory records.
+There are two pathways for getting metadata onto memory records. With extraction-based ingestion (`CreateEvent` or `IngestData`), the LLM populates metadata on the records it extracts. With direct record creation (`BatchCreateMemoryRecords` or `BatchUpdateMemoryRecords`), you supply metadata explicitly.
 
 ### Event-driven ingestion
 <a name="long-term-memory-metadata-ingest-events"></a>
 
 Attach `stringValue` metadata to events at creation time. The LLM uses the strategy’s metadata schema to extract and populate metadata on the resulting memory records. Only keys defined in the strategy’s `metadataSchema` are populated on the resulting records — event metadata keys not in the schema are ignored during extraction.
+
+**Note**
+ `IngestData` accepts the same `metadata` and feeds the same extraction pipeline, so metadata behaves identically to `CreateEvent`. The difference is that `IngestData` does not retain a short-term event.
 
 ```
 aws bedrock-agentcore create-event \

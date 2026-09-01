@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html
 ---
 
-# AWS Agent Registry: Discover and manage agents, tools, and resources (Preview)
+# AWS Agent Registry: Discover and manage agents, tools, and resources
 <a name="registry"></a>
 
 **Topics**
@@ -21,9 +21,12 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 + [Curating the registry](registry-curating.md)
 + [Discovering the registry](registry-searching.md)
 + [Notifications (Amazon EventBridge)](registry-eventbridge.md)
++ [Using AWS Agent Registry with AWS Organizations](registry-organizations.md)
 + [Sharing a registry across accounts with AWS RAM](registry-cross-account-sharing.md)
 + [Log Registry API calls with AWS CloudTrail](registry-cloudtrail.md)
++ [VPC and AWS PrivateLink with AWS Agent Registry](registry-privatelink.md)
 + [IAM Permissions](registry-iam-permissions.md)
++ [Data protection in AWS Agent Registry](registry-data-protection.md)
 + [Using service-linked roles for AWS Agent Registry](using-service-linked-role-agent-registry.md)
 + [Troubleshooting](registry-troubleshooting.md)
 + [Comprehensive registry migration guide](registry-faq.md)

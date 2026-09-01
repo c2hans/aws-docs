@@ -49,6 +49,7 @@ The request accepts the following data in JSON format.
 The name of the application that corresponds to the revision.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: Yes
 
  ** [revision](#API_GetApplicationRevision_RequestSyntax) **   <a name="CodeDeploy-GetApplicationRevision-request-revision"></a>
@@ -105,6 +106,7 @@ The following data is returned in JSON format by the service.
 The name of the application that corresponds to the revision.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 
  ** [revision](#API_GetApplicationRevision_ResponseSyntax) **   <a name="CodeDeploy-GetApplicationRevision-response-revision"></a>
 Additional information about the revision, including type and location.

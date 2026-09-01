@@ -16,7 +16,7 @@ Following are two use cases for the call and chat analytics API.
 ## Better contact transfers
 <a name="contact-lens-api-transfers"></a>
 
-When a contact is transferred from one agent to another agent, you can transfer a transcript of the conversation to the new agent. The new agent then has context for why the customer is contacting your contact center, and the customer doesn't need to repeat information they already provided. Use the [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_ListRealtimeContactAnalysisSegments.html) API for voice contacts and the [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) API for chats to get the entire transcript of the conversation up to a certain point, and share it with the new agent.
+When a contact is transferred from one agent to another agent, you can transfer a transcript of the conversation to the new agent. The new agent then has context for why the customer is contacting your contact center. The customer doesn't need to repeat information they already provided. Use the [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_ListRealtimeContactAnalysisSegments.html) API for voice contacts and the [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) API for chats to get the entire transcript of the conversation up to a certain point, and share it with the new agent.
 
 ## Highlight key parts of the conversation as labels, issues, action items, and outcomes
 <a name="contact-lens-api-call-summary"></a>

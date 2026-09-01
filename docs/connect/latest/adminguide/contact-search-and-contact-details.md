@@ -24,7 +24,7 @@ When you access the Contact Search page, you see contacts from your paired Conne
 ### Active Region Filter
 <a name="active-region-filter"></a>
 
-You'll see a new 'Active region' filter in the filters dropdown. This allows you to narrow your search specific to a region when needed.
+You'll see a new 'Active region' filter in the filters dropdown. With the Active region filter, you can narrow your search specific to a region when needed.
 
 To use the Active region filter:
 
@@ -39,7 +39,7 @@ To use the Active region filter:
 ### Region-Specific Resource Filters
 <a name="region-specific-resource-filters"></a>
 
-When you use the following filters, the dropdown options display only resources that were created in your logged in region:
+When you use the following filters, the dropdown options display only resources that were created in your logged in Region:
 + Custom contact attributes
 + Contact categories
 + Evaluation filters
@@ -96,7 +96,7 @@ You can perform contact actions such as Transfer, Reschedule, or End contact reg
 ### Contact evaluations
 <a name="contact-evaluations-across-regions"></a>
 
-Contact evaluations are only available for contacts that are active in your logged in region. You cannot view or perform evaluations for replicated contacts from other regions.
+Contact evaluations are only available for contacts that are active in your logged in Region. You cannot view or perform evaluations for replicated contacts from other regions.
 
 ### SearchContacts API
 <a name="searchcontacts-api-across-regions"></a>

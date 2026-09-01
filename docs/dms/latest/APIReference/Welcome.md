@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
 
 For more information about AWS DMS, see [What Is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html) in the * AWS Database Migration Service User Guide.*
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

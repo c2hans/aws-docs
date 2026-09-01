@@ -29,11 +29,11 @@ Claude 3.5 Haiku is Anthropic's next-generation fast model with improved coding 
 | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Text | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Text |
 | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Video | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Video |
 
-**Prompt caching using `bedrock-runtime` endpoint**
+**Implicit and Explicit Prompt Caching using `bedrock-runtime` endpoint**
 
 For more information, see [Prompt caching for faster model inference](prompt-caching.html).
 
-| **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
+| **Explicit Prompt Caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
 | --- | --- | --- | --- | --- |
 | Yes | 2,048 | 4 | 5 minutes | system, messages, and tools |
 

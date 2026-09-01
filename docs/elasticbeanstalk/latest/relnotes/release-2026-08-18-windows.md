@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 # Release: Elastic Beanstalk Windows Server platform update on August 18, 2026
 <a name="release-2026-08-18-windows"></a>
 
-This release provides new Windows Server platform versions for AWS Elastic Beanstalk. The release applies Windows security updates. It also updates framework and AWS components.
+This release provides new Windows Server platform versions for AWS Elastic Beanstalk. The release applies Windows security updates. It also updates framework and AWS components. In addition, this release adds support for automatically joining Windows Server instances to an Active Directory domain.
 
 **Release date:** August 18, 2026
 
@@ -47,6 +47,7 @@ Be aware that at the time these release notes are published, the new platform ve
 </tbody>
 </table>
  </td></tr>
+  <tr><td><b>Additional changes with this release</b></td><td> <ul><li> Windows Server environments can now automatically join their instances to an Active Directory domain that you manage with AWS Directory Service. For more information, see <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-activedirectory.html">Joining instances to an Active Directory domain</a>. </li></ul> </td></tr>
 </tbody>
 </table>
 

@@ -56,7 +56,6 @@ Security is enforced through:
 <a name="monitor-metrics"></a>
 
 The solution includes:
-+ Anonymous operational metrics collection (with opt-out capability)
 + Integration with AWS native security monitoring services
 + Compliance validation capabilities
 

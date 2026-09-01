@@ -34,6 +34,7 @@ For more information about IAM and Amazon CloudWatch, see [Controlling User Acce
 + [Share your data stream with another account](#sharing-data-streams)
 + [Configure an AWS Lambda function to read from Kinesis Data Streams in another account](#sharing-data-streams-example)
 + [Share access using resource-based policies](resource-based-policy-examples.md)
++ [Access control for streaming tables and Amazon S3 delivery](controlling-access-data-delivery.md)
 
 ## Policy syntax
 <a name="policy-syntax"></a>

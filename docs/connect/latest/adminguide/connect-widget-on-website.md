@@ -25,7 +25,7 @@ In this step, you create and customize a View that determines the behavior for c
 1. Select **Create View**.
 
 1. Here you can configure a contact form for your customers using the [no-code builder](no-code-ui-builder.md). Some important tips:
-   + Using the Form component will allow you to link Form Inputs to your contact on creation. Form linking will allow you to take input directly from anyone interacting with your widget and use the information they include in the form during contact creation.
+   + By using the Form component, you can link Form Inputs to your contact on creation. With form linking, you can take input directly from anyone interacting with your widget and use the information they include in the form during contact creation.
    + The Connect Action component is the most important element in the form for creating a contact. This component should be used without any other button type components in the form.
    + Exactly one Connect Action component must be present to use the View with a Contact Form widget.
    + There are three options supported for ConnectActionType for the Connect Action component:
@@ -76,8 +76,8 @@ The preview does not display the View contact form that you've created. Only the
 <a name="display-types"></a>
 
 You might choose between two display types for Contact Form widgets:
-+ *Floating action button* allows you to pin your widget as an interactable button on the bottom right corner of the web page
-+ *Embedded inline* allows you to embed your widget directly in the web page without requiring a button push to load it
++ With *Floating action button*, you can pin your widget as an interactable button on the bottom right corner of the web page
++ With *Embedded inline*, you can embed your widget directly in the web page without requiring a button push to load it
 
 ### Button styles
 <a name="button-styles"></a>

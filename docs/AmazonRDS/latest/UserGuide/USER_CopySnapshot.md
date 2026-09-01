@@ -48,7 +48,7 @@ The following procedure copies an encrypted or unencrypted DB snapshot, in the s
 **Note**
 The destination AWS Region must have the same database engine version available as the source AWS Region.
 
-1. For **New DB snapshot identifier**, type the name of the DB snapshot copy.
+1. For **New DB snapshot identifier**, enter the name of the DB snapshot copy.
 
    You can make multiple copies of an automated backup or manual snapshot, but each copy must have a unique identifier.
 

@@ -13,7 +13,7 @@ A cost-optimized serverless architecture suitable for most image transformation 
 
  **ECS Architecture**
 
-A high-performance container-based architecture for demanding workloads. This architecture supports images up to 100 MB in size and includes all new v8.0.0 features such as transformation policies, non-S3 origins, and the Admin UI. It offers configurable resource allocation with t-shirt sizing (S, M, L, XL) and is optimized for high-throughput and large image processing.
+A high-performance container-based architecture for demanding workloads. This architecture supports images up to 100 MB in size and includes the solution’s advanced capabilities such as transformation policies, content-aware smart cropping, content moderation, multi-tier device detection, non-S3 origins, and the Admin UI. It offers configurable resource allocation with t-shirt sizing (S, M, L, XL) and is optimized for high-throughput and large image processing.
 
 Both architectures leverage Amazon CloudFront for global content delivery and caching, ensuring optimal performance for end users regardless of their geographic location.
 

@@ -11,7 +11,7 @@ If you can't use a blue/green deployment and your MySQL DB instance is currently
 
 By using a read replica, you can perform most of the maintenance steps ahead of time and minimize the necessary changes during the actual outage. With this technique, you can test and prepare the new DB instance without making any changes to your existing DB instance.
 
-The following procedure shows an example of upgrading from MySQL version 5.7 to MySQL version 8.0. You can use the same general steps for upgrades to other major versions. You can use the same general steps for upgrades to other major versions.
+The following procedure shows an example of upgrading from MySQL version 5.7 to MySQL version 8.0. You can use the same general steps for upgrades to other major versions.
 
 **Note**
 When you are upgrading from MySQL version 5.7 to MySQL version 8.0, or from MySQL version 8.0 to MySQL version 8.4, complete the prechecks before performing the upgrade. For more information, see [Prechecks for upgrades from MySQL 5.7 to 8.0](USER_UpgradeDBInstance.MySQL.Major.md#USER_UpgradeDBInstance.MySQL.57to80Prechecks) and [Prechecks for upgrades from MySQL 8.0 to 8.4](USER_UpgradeDBInstance.MySQL.Major.md#USER_UpgradeDBInstance.MySQL.80to84Prechecks).

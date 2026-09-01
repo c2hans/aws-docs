@@ -51,8 +51,8 @@ The following table shows the different architecture options for creating and up
 
 | Release | Database creation options | Architecture conversion options | Major version upgrade targets |
 | --- | --- | --- | --- |
-| Oracle Database 26ai | CDB architecture only | N/A | N/A |
-| Oracle Database 21c | CDB architecture only | N/A | Oracle Database 26ai CDB |
+| Oracle Database 26ai | CDB architecture only | Not applicable | Not applicable |
+| Oracle Database 21c | CDB architecture only | Not applicable | Oracle Database 26ai CDB |
 | Oracle Database 19c | CDB or non-CDB architecture | Non-CDB to CDB architecture (April 2021 RU or higher) | Oracle Database 21c CDB, Oracle Database 26ai CDB |
 
 As shown in the preceding table, you can't directly upgrade a non-CDB to a CDB in a new major database version. But you can convert an Oracle Database 19c non-CDB to an Oracle Database 19c CDB, and then upgrade the Oracle Database 19c CDB to an Oracle Database 21c or Oracle Database 26ai CDB. For more information, see [Converting an RDS for Oracle non-CDB to a CDB](oracle-cdb-converting.md).
@@ -64,9 +64,9 @@ The following table shows the different options for converting the architecture 
 
 | Current architecture and configuration | Conversion to the single-tenant configuration of the CDB architecture | Conversion to the multi-tenant configuration of the CDB architecture | Conversion to the non-CDB architecture |
 | --- | --- | --- | --- |
-| Non-CDB | Supported | Supported\* | N/A |
-| CDB using the single-tenant configuration | N/A | Supported | Not supported |
-| CDB using the multi-tenant configuration | Not supported | N/A | Not supported |
+| Non-CDB | Supported | Supported\* | Not applicable |
+| CDB using the single-tenant configuration | Not applicable | Supported | Not supported |
+| CDB using the multi-tenant configuration | Not supported | Not applicable | Not supported |
 
 \* You can't convert a non-CDB to the multi-tenant configuration in a single operation. When you convert a non-CDB to a CDB, the CDB is in the single-tenant configuration. You can then convert the single-tenant to the multi-tenant configuration in a separate operation.
 

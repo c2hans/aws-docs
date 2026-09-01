@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-contact
 # Use the flow designer in Connect Customer to create flows
 <a name="create-contact-flow"></a>
 
-The starting point for creating all flows is the flow designer. It's a drag-and-drop work surface that enables you to link together blocks of actions. For example, when a customer first enters your contact center, you can ask for some input and then play a prompt such as "Thank you."
+The starting point for creating all flows is the flow designer. It's a drag-and-drop work surface that you can use to link together blocks of actions. For example, when a customer first enters your contact center, you can ask for some input and then play a prompt such as "Thank you."
 
 For descriptions of the available flow blocks, see [Flow block definitions in the flow designer in Connect Customer](contact-block-definitions.md).
 

@@ -20,6 +20,12 @@ Content-type: application/json
          "autoApprovalRules": [ "{{string}}" ]
       }
    },
+   "autoDetectionConfiguration": {
+      "optionalValue": {
+         "enabled": {{boolean}},
+         "scope": "{{string}}"
+      }
+   },
    "description": {
       "optionalValue": "{{string}}"
    },
@@ -53,6 +59,11 @@ The updated approval configuration. The change applies only to records that move
 Type: [UpdatedApprovalConfiguration](API_UpdatedApprovalConfiguration.md) object
 Required: No
 
+ ** [autoDetectionConfiguration](#API_UpdateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-request-autoDetectionConfiguration"></a>
+The updated auto-detection configuration for the registry, with PATCH semantics. Omit this field to leave the current configuration unchanged. Supply an empty wrapper to unset it. Supply `optionalValue` to replace it.
+Type: [UpdatedAutoDetectionConfiguration](API_UpdatedAutoDetectionConfiguration.md) object
+Required: No
+
  ** [description](#API_UpdateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-request-description"></a>
 The updated description of the registry
 Type: [UpdatedDescription](API_UpdatedDescription.md) object
@@ -81,11 +92,22 @@ Content-type: application/json
    "approvalConfiguration": {
       "autoApprovalRules": [ "string" ]
    },
+   "autoDetection": {
+      "configuration": {
+         "enabled": boolean,
+         "scope": "string"
+      },
+      "status": "string",
+      "statusReason": "string"
+   },
    "createdAt": "string",
    "description": "string",
    "discoveryConfiguration": {
       "authorizerConfiguration": { ... },
       "authorizerType": "string"
+   },
+   "encryptionConfiguration": {
+      "kmsKeyArn": "string"
    },
    "name": "string",
    "registryArn": "string",
@@ -107,6 +129,10 @@ The following data is returned in JSON format by the service.
 Approval configuration for registry records
 Type: [ApprovalConfiguration](API_ApprovalConfiguration.md) object
 
+ ** [autoDetection](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-autoDetection"></a>
+The registry's auto-detection properties, including the requested configuration and the current detection status. Present only when auto-detection was configured for the registry.
+Type: [AutoDetection](API_AutoDetection.md) object
+
  ** [createdAt](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-createdAt"></a>
 The timestamp when the registry was created
 Type: Timestamp
@@ -119,6 +145,10 @@ Length Constraints: Minimum length of 1. Maximum length of 4096.
  ** [discoveryConfiguration](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-discoveryConfiguration"></a>
 Discovery configuration for the registry
 Type: [DiscoveryConfiguration](API_DiscoveryConfiguration.md) object
+
+ ** [encryptionConfiguration](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-encryptionConfiguration"></a>
+The server-side encryption configuration for the registry. Appears only when a customer-managed AWS KMS key encrypts the registry.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 
  ** [name](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-name"></a>
 The name of the registry

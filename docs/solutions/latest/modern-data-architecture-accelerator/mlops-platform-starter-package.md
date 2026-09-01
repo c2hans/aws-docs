@@ -7,9 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 
 The MLOps Platform Starter Package deploys an end-to-end ML lifecycle platform covering training, deployment, and monitoring — governed through MDAA with CDK Nag compliance (AWS Solutions, NIST 800-53, HIPAA, PCI-DSS).
 
-![mlops](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/mlops.png)
+ **MLOps Platform starter kit architecture**
 
-**MLOps Platform starter kit architecture**
+![MLOps Platform starter kit — end-to-end SageMaker training and deployment with CI/CD.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/mlops.png)
+
 This architecture is particularly effective when:
 
 1. You need automated ML model training pipelines with a versioned model registry.
@@ -41,7 +42,7 @@ This architecture is particularly effective when:
 #### Prerequisites
 <a name="prerequisites-10"></a>
 
-Before deploying the MLOps Platform Starter Package using the CLI method, ensure you have:
+Before deploying the MLOps Platform Starter Package using the CLI method, verify you have:
 
 1. AWS CLI configured with appropriate credentials
 

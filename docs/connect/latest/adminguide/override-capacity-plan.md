@@ -25,7 +25,7 @@ You might want to do this, for example, to give your team of agents a buffer.
 1. On the detailed page for the capacity plan, choose **Actions**, **Upload plan override**, and then choose **download the CSV template file**. This option is shown in the following image.
 ![The apply override section, the link to download the .csv template file.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-capacity-planning-download-override-template2.png)
 
-   The .csv file template has one row, and it contains the values that were displayed in the **Required FTEs (without Shrinkage)** row of the **Plan outputs** table. The following image shows an example of this data in a .csv file
+   The .csv file template has one row. It contains the values that were displayed in the **Required FTEs (without Shrinkage)** row of the **Plan outputs** table. The following image shows an example of this data in a .csv file
 ![A csv file, the data for the Required FTEs without shrinkage.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-capacity-planning-override-template.png)
 
 1. Make your changes, and save the template file with a different name. Return to the **Upload override** dialog box (you might need to choose **Actions**, **Upload plan override** to redisplay the dialog box), choose **Upload CSV**, and then choose **Override**.

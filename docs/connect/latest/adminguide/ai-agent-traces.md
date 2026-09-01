@@ -28,7 +28,7 @@ Currently, Connect Customer doesn't support S3 buckets with [Object Lock](https:
 **Note**
 If you previously enabled **Bot Analytics, Transcripts, and AI Agent Traces in Amazon Connect** (prior to June 5, 2026), you must disable and re-enable this setting to activate the AI agent traces feature.
 
-1. Under the **Automated interaction logs** section, select **Enable Automated Interaction Logs**. This enables you to view Flow details, Lex bot, and AI agent traces on the **Contact details** page.
+1. Under the **Automated interaction logs** section, select **Enable Automated Interaction Logs**. With Automated Interaction Logs enabled, you can view Flow details, Lex bot, and AI agent traces on the **Contact details** page.
 
 ## Permissions for automated interaction logs
 <a name="permissions-ai-agent-traces"></a>

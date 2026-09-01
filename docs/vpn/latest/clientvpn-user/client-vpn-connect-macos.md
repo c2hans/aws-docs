@@ -14,10 +14,12 @@ To use the AWS provided client for macOS, the following is required:
 + macOS Sonoma (14.0), Sequoia (15.0), or Tahoe (26.0)
 + x86\_64 or ARM64 processor compatible.
 + For Client VPN, endpoints that use SAML-based federated authentication (single sign-on), The client reserves TCP ports 8096-8115 on your computer.
++ Endpoint security software might require exclusions to allow the AWS provided client to function. For more information, see [Endpoint security software compatibility](client-vpn-connect-endpoint-security.md).
+
+For instructions on using the client, see [Connect using the AWS provided client](client-vpn-connect-how.md).
 
 **Topics**
 + [Requirements](#client-vpn-connect-macos-req)
-+ [Connect using the client](client-vpn-connect-macos-connecting-how.md)
 + [Release notes](client-vpn-connect-macos-release-notes.md)
 
 ## See also

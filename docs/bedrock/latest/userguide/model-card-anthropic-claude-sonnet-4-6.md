@@ -68,11 +68,11 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 | --- | --- |
 |  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Abuse detection](abuse-detection.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](guardrails.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Prompt optimization](prompt-management-optimize.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Count tokens](count-tokens.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Knowledge base](knowledge-base.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Model evaluation](evaluation.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Prompt management](prompt-management.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Flows](flows.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Agents](agents.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs](structured-outputs.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](tool-use.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Computer use](computer-use.html)  |  + ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Intelligent prompt routing](prompt-routing.html)  |
 
-**Prompt caching using `bedrock-runtime` endpoint**
+**Implicit and Explicit Prompt Caching using `bedrock-runtime` endpoint**
 
 For more information, see [Prompt caching for faster model inference](prompt-caching.html).
 
-| **Prompt caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
+| **Explicit Prompt Caching supported** | **Min tokens per cache checkpoint** | **Max cache checkpoints per request** | **Supported TTL** | **Fields that accept prompt cache checkpoints** |
 | --- | --- | --- | --- | --- |
 | Yes | 1,024 | 4 | 5 minutes, 1 hour | system, messages, and tools |
 
@@ -246,7 +246,7 @@ import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')
 response = client.invoke_model(
-    modelId='anthropic.claude-sonnet-4-6',
+    modelId='global.anthropic.claude-sonnet-4-6',
     body=json.dumps({
             'anthropic_version': 'bedrock-2023-05-31',
             'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
@@ -264,7 +264,7 @@ import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')
 response = client.converse(
-    modelId='anthropic.claude-sonnet-4-6',
+    modelId='global.anthropic.claude-sonnet-4-6',
     messages=[
         {
             'role': 'user',

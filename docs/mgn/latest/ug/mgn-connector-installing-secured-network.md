@@ -16,7 +16,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
  If you are using the [Global view](global-view.md) feature, which provides cross-account view and operations, you will have at least one staging VPC per member account.
 
- You will also need to designate a VPC in the management account to allow the MGN connector to communicate with AWS services via PrivateLink. If you are migrating some of your source servers into the management account, you can use the same VPC as a staging VPC.
+ You will also need to designate a VPC in the management account in order to allow the MGN connector to communicate with AWS services via PrivateLink. If you are migrating some of your source servers into the management account, you can use the same VPC as a staging VPC.
 
  **The following sections apply to the MGN connector VPC as well as to each staging VPC.**
 
@@ -64,7 +64,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
    }
    ```
 
- For more information, see [ Creating an interface endpoint ](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint) in the *Amazon VPC User Guide*.
+ For more information, see [ Creating an interface endpoint ](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint.html) in the *Amazon VPC User Guide*.
 
 ## Create a Route 53 inbound endpoint
 <a name="mgn-connector-create-route53-endpoint"></a>
@@ -80,7 +80,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 ## Modify replication settings
 <a name="mgn-connector-replication-settings"></a>
 
- To allow the AWS Replication Agent to communicate with the replication server without using the public internet, you must use Private IP for data replication. The replication server requires access to the EC2 service. Therefore:
+ In order to allow the AWS Replication Agent to communicate with the replication server without using the public internet, you must use Private IP for data replication. The replication server requires access to the EC2 service. Therefore:
 +  If your staging area VPC has a VPC endpoint for **`com.amazonaws.{{region}}.ec2`** with private DNS names enabled, or if your staging area subnet has a route to the public internet via a NAT gateway, then the replication server can communicate with EC2 over its private IP. Choose the option:
 
    **Use private IP for data replication**
@@ -93,7 +93,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 ## Verify VPC endpoints are being used
 <a name="mgn-connector-verify-vpc-endpoints"></a>
 
- Use CloudTrail to verify that calls to AWS services from the MGN connector and its associated source servers, are made via the **vpcEndpointId** values of the VPC endpoints you have created.
+ Use CloudTrail to verify that calls to AWS services from the MGN connector and its associated source servers, are made via the **vpcEndpointId**s of the VPC endpoints you have created.
 
 ## See also
 

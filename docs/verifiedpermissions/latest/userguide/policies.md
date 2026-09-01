@@ -27,6 +27,7 @@ Where you use a UUID for an entity, we recommend that you follow it with the // 
 + [Editing Amazon Verified Permissions static policies](policies-edit.md)
 + [Adding context](context.md)
 + [Using the Amazon Verified Permissions test bench](test-bench.md)
++ [Policy size per resource](policy-size-per-resource.md)
 + [Amazon Verified Permissions example policies](policies-examples.md)
 
 ## See also

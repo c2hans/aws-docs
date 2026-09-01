@@ -25,7 +25,7 @@ The following table lists all available flow blocks that you can use. Choose any
 |  [Contact tags](contact-tags-block.md)  | Create and apply user-defined tags (key:value pairs) to your contacts. |
 |  [Create persistent contact association](create-persistent-contact-association-block.md)  | Specify an attribute to create a persistent contact association, enabling conversations to continue from where they left off. |
 |  [Create task](create-task-block.md)  | Creates a new task, sets the tasks attributes, and initiates a contact flow to start the task. To learn more about Connect Customer Tasks, see [The task channel in Connect Customer](tasks.md).  |
-|  [Customer profiles](customer-profiles-block.md)  | Enables you to retrieve, create, and update a customer profile. |
+|  [Customer profiles](customer-profiles-block.md)  | You can retrieve, create, and update a customer profile. |
 |  [Data Table](data-table-block.md)  | Evaluate, list, or write data from data tables within your contact flows. |
 |  [Disconnect / hang up](disconnect-hang-up.md)  | Disconnects a contact. |
 |  [Distribute by percentage](distribute-by-percentage.md)  | Routes customers randomly based on a percentage. |

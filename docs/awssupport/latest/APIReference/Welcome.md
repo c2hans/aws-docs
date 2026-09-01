@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/Welcome.h
 The * AWS Support API Reference* is intended for programmers who need detailed information about the Support operations and data types. You can use the API to manage your support cases programmatically. The AWS Support API uses HTTP methods that return results in JSON format.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
 
 You can also use the Support API to access features for [AWS Trusted Advisor](http://aws.amazon.com/premiumsupport/trustedadvisor/). You can return a list of checks and their descriptions, get check results, specify checks to refresh, and get the refresh status of checks.
 
@@ -24,7 +24,7 @@ For authentication of requests, Support uses [Signature Version 4 Signing Proces
 
 For more information about this service and the endpoints to use, see [About the AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html) in the * AWS Support User Guide*.
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 

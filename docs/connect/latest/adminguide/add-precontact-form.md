@@ -13,7 +13,7 @@ After you capture the information, you can display it to the agent through the C
 
 To create the form, you create a custom view and use the connect action button component. For more information on views, see [Use the UI builder in Connect Customer for resources in step-by-step guides](no-code-ui-builder.md).
 
-The connect action button allows you to take in user input from the form and select what action to take when the form is submitted - start a task/email or chat.
+With the connect action button, you can take in user input from the form and select what action to take when the form is submitted - start a task/email or chat.
 
 ## See also
 

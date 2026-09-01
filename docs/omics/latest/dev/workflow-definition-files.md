@@ -24,10 +24,8 @@ You specify the following types of information in the workflow definition:
 **Topics**
 + [HealthOmics workflow definition requirements](workflow-defn-requirements.md)
 + [Version support for HealthOmics workflow definition languages](workflows-lang-versions.md)
-+ [Compute and memory requirements for HealthOmics tasks](memory-and-compute-tasks.md)
 + [Task outputs in a HealthOmics workflow definition](workflows-task-outputs.md)
-+ [Task resources in a HealthOmics workflow definition](task-resources.md)
-+ [Task accelerators in a HealthOmics workflow definition](task-accelerators.md)
++ [Task compute and resources](task-compute-resources.md)
 + [WDL workflow definition specifics](workflow-languages-wdl.md)
 + [Nextflow workflow definition specifics](workflow-definition-nextflow.md)
 + [CWL workflow definition specifics](workflow-languages-cwl.md)

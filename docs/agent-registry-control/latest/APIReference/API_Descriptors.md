@@ -20,9 +20,19 @@ The agent skills definition descriptor, populated when the record type is SKILL.
 Type: [AgentSkillsDefinitionDescriptor](API_AgentSkillsDefinitionDescriptor.md) object
 Required: No
 
+ ** agui **   <a name="agentregistrycontrol-Type-Descriptors-agui"></a>
+The AG-UI descriptor, populated for records detected from an AG-UI protocol source.
+Type: [AgUiDescriptor](API_AgUiDescriptor.md) object
+Required: No
+
  ** custom **   <a name="agentregistrycontrol-Type-Descriptors-custom"></a>
 The custom descriptor, populated when the record type is CUSTOM.
 Type: [CustomDescriptor](API_CustomDescriptor.md) object
+Required: No
+
+ ** http **   <a name="agentregistrycontrol-Type-Descriptors-http"></a>
+The HTTP descriptor, populated for records detected from an HTTP protocol source.
+Type: [HttpDescriptor](API_HttpDescriptor.md) object
 Required: No
 
  ** mcpServer **   <a name="agentregistrycontrol-Type-Descriptors-mcpServer"></a>

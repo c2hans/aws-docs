@@ -30,6 +30,7 @@ Required: No
 The deployment configuration name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[A-Za-z0-9+=,.@_-]*`
 Required: No
 
  ** minimumHealthyHosts **   <a name="CodeDeploy-Type-DeploymentConfigInfo-minimumHealthyHosts"></a>

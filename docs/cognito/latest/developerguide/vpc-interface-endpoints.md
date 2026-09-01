@@ -13,7 +13,7 @@ For more information, see [Access AWS services through AWS PrivateLink](https://
 
 **Important**
 The following authentication types aren't currently supported through AWS PrivateLink:
-Machine to machine (M2M) authorization with the OAuth 2.0 client credentials flow
+Machine to machine (M2M) authorization with the OAuth 2.0 client credentials flow from the token endpoint. M2M authorization with the `GetClientToken` API operation is supported, because it doesn't require a user pool domain.
 Sign-in with managed login and the classic hosted UI.
 
 **Topics**
@@ -33,7 +33,7 @@ The following table describes the authentication flows available to clients in V
 | Resource | Authentication flow | Policies evaluated when client transits a VPC endpoint | Policies evaluated when client origin is public |
 | --- | --- | --- | --- |
 | User pool | [Managed login & classic hosted UI sign-in](cognito-user-pools-managed-login.md) | None (no access)[1](#privatelink-vpc-endpoint-note) | None[2](#privatelink-domain-note) |
-| User pool | [Machine-to-machine authorization](cognito-user-pools-define-resource-servers.md#cognito-user-pools-define-resource-servers-about-m2m) | None (no access)[1](#privatelink-vpc-endpoint-note) | None[2](#privatelink-domain-note) |
+| User pool | [Machine-to-machine authorization](cognito-user-pools-define-resource-servers.md#cognito-user-pools-define-resource-servers-about-m2m) from the token endpoint (M2M authorization with the GetClientToken API operation is covered by the SDK and REST API unauthenticated requests row) | None (no access)[1](#privatelink-vpc-endpoint-note) | None[2](#privatelink-domain-note) |
 | User pool | SDK and REST API unauthenticated requests | RCPs, VPC endpoint policies[3](#privatelink-no-domain-note) | RCPs |
 | User pool | SDK and REST API SigV4 [authenticated](authentication-flows-public-server-side.md#amazon-cognito-user-pools-server-side-authentication-flow) requests | RCPs, VPC endpoint policies, identity-based policies[3](#privatelink-no-domain-note) | RCPs, identity-based policies |
 | Identity pool | SDK and REST API unauthenticated requests ([basic](authentication-flow.md#authentication-flow-basic) and [enhanced](authentication-flow.md#authentication-flow-enhanced) flows) | RCPs, VPC endpoint policies | RCPs |

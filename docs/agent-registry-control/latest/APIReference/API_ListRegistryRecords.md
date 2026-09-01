@@ -73,9 +73,18 @@ Content-type: application/json
    "registryRecords": [
       {
          "createdAt": "string",
+         "createdBy": "string",
+         "createdByAutoDetection": boolean,
          "description": "string",
          "displayName": "string",
          "name": "string",
+         "provenanceSummaryList": [
+            {
+               "relation": "string",
+               "sourceId": "string",
+               "sourceType": "string"
+            }
+         ],
          "recordArn": "string",
          "recordId": "string",
          "recordType": "string",

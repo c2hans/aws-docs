@@ -30,7 +30,7 @@ For more information, see [Object type mapping for Item Catalog](standard-loyalt
 ## Step 3: Creating Predictive Insights
 <a name="create-predictive-insights"></a>
 
-Connect Customer enables you to build and deploy specialized AI models tailored to your specific product recommendation needs. These models can be configured through either the Connect Web UI or programmatically through APIs to match your unique business scenarios. Predictive Insights offers several types of recommendations:
+With Connect Customer, you can build and deploy specialized AI models tailored to your specific product recommendation needs. These models can be configured through either the Connect Web UI or programmatically through APIs to match your unique business scenarios. Predictive Insights offers several types of recommendations:
 
 1. **Recommended for you** - provides personalized recommendations tailored to a specific user. Recommendations are based on the user’s past behavior such as clickstream events, purchase events, consumed content, and so on.
 
@@ -183,7 +183,7 @@ When it comes to updating the agent's prompt, administrators have two primary op
 
 **Flow Configuration and Integration**
 
-After finalizing the agent configuration and publishing it, the next step involves creating a Amazon Lex bot under Flows. The inbound flow needs to be updated to include the GetCustomerInput block with the created Lex bot, and the new SalesAgent should be selected in additional options. You will need to add both the Customer Profile flow block for profile ID retrieval and the Set-Contact Attributes flow block, setting CustomerId as the key for the profile ID and value as $Customer.ProfileId.
+After finalizing the agent configuration and publishing it, the next step involves creating a Amazon Lex bot under Flows. The inbound flow needs to be updated to include the GetCustomerInput block with the created Lex bot. The new SalesAgent should be selected in additional options. You will need to add both the Customer Profile flow block for profile ID retrieval and the Set-Contact Attributes flow block, setting CustomerId as the key for the profile ID and value as $Customer.ProfileId.
 
 The implementation supports both chat contacts and voice calls, with customer input seamlessly passing to the QIC agent on the Lex bot. This comprehensive setup enables AI-driven sales recommendations and upsell opportunities within your Connect Customer environment. The system's flexibility allows for customization based on specific industry needs while maintaining the core functionality of intelligent sales assistance. This solution provides a framework for enhancing customer interactions with AI-powered recommendations, ultimately supporting more effective sales and customer service operations. Administrators can further refine the implementation by adding domain-specific instructions and customizing recommendation types to match their business requirements.
 

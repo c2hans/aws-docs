@@ -46,8 +46,8 @@ After your service quotas are requested and approved, conversational analytics i
 + [Create a conversational analytics connector](create-contact-lens-connector.md) in the Connect Customer console.
 + [Configure your SBC](configure-external-voice-system.md) to send SIPREC audio to that connector host along with call metadata.
 + [Enable the conversational analytics connector on the Connect Customer admin website](enable-contactlens-integration.md). You do this by assigning the following security profiles permissions to Admins and other users who need to access the conversational analytics connectors:
-  + **Analytics and Optimization - conversational analytics connectors - View** and **Edit**. The **View** permission allows you see the list of available conversational analytics connectors. The **Edit** permission allows you to associate flows with a conversational analytics connector.
-  + **Channels and Flows - Flows - View**: This permission enables you to see the available flows you can associate with a conversational analytics connector.
+  + **Analytics and Optimization - conversational analytics connectors - View** and **Edit**. The **View** permission helps you see the list of available conversational analytics connectors. The **Edit** permission helps you associate flows with a conversational analytics connector.
+  + **Channels and Flows - Flows - View**: This permission helps you see the available flows you can associate with a conversational analytics connector.
 
   Only users who have these permissions will be able to access the conversational analytics connector on the Connect Customer admin website.
 + Create a flow to specify how to process the call audio including recording, live or post call analytics, and [associate the flow with the conversational analytics connector](associate-contactlens-integration.md).

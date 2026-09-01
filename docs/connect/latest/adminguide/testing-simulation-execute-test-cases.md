@@ -9,9 +9,9 @@ When you run a test, you are simulating a real interaction with your contact cen
 
 In a test flow with multiple interaction groups, whether connected or not, if an interaction group does not result in a successful validation where the observe block fails to match an event from the contact flow, the test will eventually time out after 5 minutes with a failure status.
 
-When interaction groups are connected in sequence, each group depends on the successful validation of the prior group. If a prior interaction group fails to observe its expected event, subsequent interaction groups will not be executed, and the test will eventually time out after 5 minutes with a failure status.
+When interaction groups are connected in sequence, each group depends on the successful validation of the prior group. If a prior interaction group fails to observe its expected event, subsequent interaction groups will not be executed. The test will eventually time out after 5 minutes with a failure status.
 
-When an interaction group is not connected to any other interaction groups, it is triggered when a matching event occurs independently of any dependent groups. This allows you to validate experiences that might occur in an undetermined sequence.
+When an interaction group is not connected to any other interaction groups, it is triggered when a matching event occurs independently of any dependent groups. With independent interaction groups, you can validate experiences that might occur in an undetermined sequence.
 
 During test execution, please be aware of the following limitations and behaviors:
 + **Test Execution Record Retention:** Test execution results and their respective records are retained for 30 days from the execution date for any test cases run before February 9th, 2026. Tests run on or after that date will have their records kept indefinitely.

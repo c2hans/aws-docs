@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 Manage image transformation policies that define how images are processed.
 
+The `policyJSON` field is a string containing the JSON-encoded policy. The decoded policy is an object with optional `transformations` and `outputs` arrays; for its full structure, see [Transformation policy schema reference](transformation-policy-schema.md).
+
  **List Policies**
 
 ```
@@ -39,7 +41,7 @@ POST /policies
 {
   "policyName": "mobile-optimized",
   "description": "Mobile device optimization policy",
-  "policyJSON": "{\"transformations\":[{\"condition\":\"width > 800\",\"operations\":[{\"resize\":{\"width\":800,\"height\":600,\"fit\":\"cover\"}},{\"format\":\"webp\"},{\"quality\":85}]}]}",
+  "policyJSON": "{\"transformations\":[{\"transformation\":\"resize\",\"value\":{\"width\":800,\"height\":600,\"fit\":\"cover\"}}],\"outputs\":[{\"type\":\"format\",\"value\":\"auto\",\"fallback\":{\"format\":\"jpeg\"}},{\"type\":\"quality\",\"value\":[85]}]}",
   "isDefault": false
 }
 ```

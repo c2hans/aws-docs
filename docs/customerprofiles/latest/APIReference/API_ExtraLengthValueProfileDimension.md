@@ -17,7 +17,7 @@ Valid Values: `INCLUSIVE | EXCLUSIVE | CONTAINS | BEGINS_WITH | ENDS_WITH`
 Required: Yes
 
  ** Values **   <a name="connect-Type-connect-customer-profiles_ExtraLengthValueProfileDimension-Values"></a>
-The values to apply the DimensionType on.
+The values to apply the DimensionType on. To reference a calculated attribute or profile attribute as a dynamic value, use handlebar notation: `{{_profile.ProfileAttributeName}}` or `{{_calculated_attribute.CalculatedAttributeName}}`.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 1000.

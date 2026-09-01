@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-d
 <a name="dd-detect-metrics-export"></a>
 
 **Note**
-The AWS IoT Device Defender detect feature will no longer be available to new customers starting August 31, 2026. If you would like to use the detect feature, sign up prior to August 31, 2026. To learn about alternatives to AWS IoT Device Defender detect, see [AWS IoT Device Defender detect feature availability change](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-detect-availability-change.html). There is no change to AWS IoT Device Defender audit availability.
+The AWS IoT Device Defender detect feature is no longer available to new customers. To learn about alternatives to AWS IoT Device Defender detect, see [AWS IoT Device Defender detect feature availability change](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-detect-availability-change.html). There is no change to AWS IoT Device Defender audit availability.
 
 With metrics export, you can export cloud-side, device-side, or custom metrics from AWS IoT Device Defender and publish them to an MQTT topic that you configure. This feature supports the bulk export of Detect metrics, which not only allows for more efficient data reporting and analysis, but also helps control costs. You can choose your MQTT topic as an AWS IoT Rules Basic Ingest Topic or create and subscribe to your own MQTT topic. Configure metrics export by using the AWS IoT Device Defender console, API, or CLI. This feature is available in all [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) where AWS IoT Device Defender is available.
 

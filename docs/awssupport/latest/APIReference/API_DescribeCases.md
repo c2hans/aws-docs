@@ -14,8 +14,14 @@ The response returns the following in JSON format:
 Case data is available for 24 months after creation. If a case was created more than 24 months ago, a request might return an error.
 
 **Note**
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan to use the AWS Support API.
-If you call the AWS Support API from an account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+You must have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan to use the AWS Support API. If you're in an AWS Region that doesn't offer one of these AWS Support plans, or if you haven't transitioned to one of these plans, you can use the AWS Support API with a Business, Enterprise On-Ramp, or Enterprise Support plan.
+If you call the AWS Support API from an account that doesn't have an AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, the `SubscriptionRequiredException` error message appears. For information about changing your support plan, see [AWS Support](http://aws.amazon.com/premiumsupport/).
+
+**Important**
+Each [Communication](API_Communication.md) returned by this operation includes attachment information in two fields:
+ `attachmentSet`: returns only attachments that are 5 MB or smaller. Attachments larger than 5 MB are not included in this field.
+ `attachments`: returns all attachments regardless of size.
+ AWS recommends that you use the `attachments` field and download each attachment with [GetAttachmentDownloadLink](API_GetAttachmentDownloadLink.md), which supports attachments of any size. The `attachmentSet` field and [DescribeAttachment](API_DescribeAttachment.md) return only attachments that are 5 MB or smaller.
 
 ## Request Syntax
 <a name="API_DescribeCases_RequestSyntax"></a>
@@ -26,6 +32,7 @@ If you call the AWS Support API from an account that doesn't have a Business, En
    "beforeTime": "{{string}}",
    "caseIdList": [ "{{string}}" ],
    "displayId": "{{string}}",
+   "dryRun": {{boolean}},
    "includeCommunications": {{boolean}},
    "includeResolvedCases": {{boolean}},
    "language": "{{string}}",
@@ -57,6 +64,10 @@ Array Members: Minimum number of 0 items. Maximum number of 100 items.
  ** [displayId](#API_DescribeCases_RequestSyntax) **   <a name="AWSSupport-DescribeCases-request-displayId"></a>
 The ID displayed for a case in the AWS Support Center user interface.
 Type: String
+
+ ** [dryRun](#API_DescribeCases_RequestSyntax) **   <a name="AWSSupport-DescribeCases-request-dryRun"></a>
+Specifies whether to validate the request without actually returning case data. When set to `true`, the request is validated but no cases are returned, and the operation returns a `DryRunOperationException`. When omitted or set to `false`, the request runs normally.
+Type: Boolean
 
  ** [includeCommunications](#API_DescribeCases_RequestSyntax) **   <a name="AWSSupport-DescribeCases-request-includeCommunications"></a>
 Specifies whether to include communications in the `DescribeCases` response. By default, communications are included.
@@ -94,6 +105,12 @@ Type: String
          "recentCommunications": {
             "communications": [
                {
+                  "attachments": [
+                     {
+                        "attachmentId": "string",
+                        "fileName": "string"
+                     }
+                  ],
                   "attachmentSet": [
                      {
                         "attachmentId": "string",
@@ -144,6 +161,10 @@ For information about the errors that are common to all actions, see [Common Err
 The requested `caseId` couldn't be located.
  ** message **
 The requested `CaseId` could not be located.
+HTTP Status Code: 400
+
+ ** DryRunOperationException **
+The request was valid, but the operation wasn't performed because `dryRun` was set to `true`.
 HTTP Status Code: 400
 
  ** InternalServerError **

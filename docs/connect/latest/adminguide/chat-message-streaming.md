@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-message-s
 # Enable real-time chat message streaming in Connect Customer
 <a name="chat-message-streaming"></a>
 
-Connect Customer Chat provides [APIs](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) that enable you to subscribe to a real-time stream of chat messages. Using these APIs, you can:
+Connect Customer Chat provides [APIs](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) that you can use to subscribe to a real-time stream of chat messages. Using these APIs, you can:
 + Stream chat messages in real time when a new chat contact is created.
 + Extend the current Connect Customer Chat functionality to support use cases like building integrations with SMS solutions and third-party messaging applications, enabling mobile push notifications, and creating analytics dashboards to monitor and track chat message activity.
 

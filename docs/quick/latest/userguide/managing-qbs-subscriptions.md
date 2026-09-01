@@ -21,6 +21,7 @@ You can edit an existing set of user subscriptions to change whether it autorene
 + [Editing a subscription](#edit-subscriptions)
 + [Delete a subscription](#delete-subscriptions)
 + [Upgrading or downgrading user subscriptions](#upgrading-subscription)
++ [Understanding Amazon Quick user billing](understanding-quick-user-billing.md)
 
 ## Viewing current subscriptions
 <a name="view-subscriptions"></a>

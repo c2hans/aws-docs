@@ -77,7 +77,7 @@ For new jobs, choose `Glue 6.0` when you create a job.
 
 To help migrate your jobs, you can use [Generative AI upgrades for Apache Spark](https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html) to upgrade your AWS Glue ETL jobs from older AWS Glue versions (2.0 and later) to the latest AWS Glue version.
 
-**Troubleshooting**
+**Note**
 You can use the [Spark Troubleshooting Agent](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troubleshoot.html) to troubleshoot your AWS Glue ETL jobs.
 
 ## Migration checklist

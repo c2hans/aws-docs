@@ -62,6 +62,7 @@ When `EnableEnhancedMetrics` is set to `False`, this interval applies to utiliza
 When `EnableDetailedObservability` is set to `True`, this interval applies to per-GPU metrics, per-instance host metrics, container metrics, and fleet-level inference component lifecycle and placement metrics.
 *Required*: No
 *Type*: Integer
+*Allowed values*: `10 | 30 | 60 | 120 | 180 | 240 | 300`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## See also

@@ -54,7 +54,7 @@ Monitor results: [GetHookResult](API_GetHookResult.md) \| [ListHookResults](API_
 Register privately: [DescribeTypeRegistration](API_DescribeTypeRegistration.md) \| [DeregisterType](API_DeregisterType.md) \| [ListTypeRegistrations](API_ListTypeRegistrations.md) \| [RegisterType](API_RegisterType.md)
 Publish: [DescribePublisher](API_DescribePublisher.md) \| [PublishType](API_PublishType.md) \| [RegisterPublisher](API_RegisterPublisher.md) \| [TestType](API_TestType.md)
 
-This document was last published on August 28, 2026.
+This document was last published on September 1, 2026.
 
 ## See also
 
